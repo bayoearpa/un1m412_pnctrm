@@ -1,0 +1,48 @@
+[08-Jan-2018 02:48:46 UTC] PHP Fatal error:  Call to a member function input_data() on a non-object in /home/stimarta/public_html/pencatarma/application/controllers/Welcome.php on line 82
+[08-Jan-2018 02:48:56 UTC] PHP Fatal error:  Call to a member function input_data() on a non-object in /home/stimarta/public_html/pencatarma/application/controllers/Welcome.php on line 82
+[08-Jan-2018 02:50:52 UTC] PHP Fatal error:  Call to a member function input_data() on a non-object in /home/stimarta/public_html/pencatarma/application/controllers/Welcome.php on line 82
+[08-Jan-2018 02:57:18 UTC] PHP Fatal error:  Call to a member function input_data() on a non-object in /home/stimarta/public_html/pencatarma/application/controllers/Welcome.php on line 82
+[08-Jan-2018 03:24:12 UTC] PHP Fatal error:  Call to a member function load() on a non-object in /home/stimarta/public_html/pencatarma/application/controllers/Welcome.php on line 91
+[18-Jan-2018 04:44:10 UTC] PHP Fatal error:  Call to a member function set_rules() on a non-object in /home/stimarta/public_html/pencatarma/application/controllers/Administrasi.php on line 19
+[09-Apr-2018 05:08:03 UTC] PHP Fatal error:  Call to undefined method m_pdf::loadf() in /home/stimarta/public_html/pencatarma/application/controllers/Baak.php on line 539
+[09-Apr-2018 05:08:17 UTC] PHP Fatal error:  Call to undefined method m_pdf::loadf() in /home/stimarta/public_html/pencatarma/application/controllers/Baak.php on line 539
+[09-Apr-2018 05:08:32 UTC] PHP Fatal error:  Call to undefined method m_pdf::loadf() in /home/stimarta/public_html/pencatarma/application/controllers/Baak.php on line 539
+[09-Apr-2018 05:09:31 UTC] PHP Fatal error:  Call to undefined method m_pdf::loadf() in /home/stimarta/public_html/pencatarma/application/controllers/Baak.php on line 539
+[09-Apr-2018 05:11:05 UTC] PHP Fatal error:  Call to undefined method m_pdf::loadf() in /home/stimarta/public_html/pencatarma/application/controllers/Baak.php on line 586
+[09-Apr-2018 05:13:20 UTC] PHP Fatal error:  Call to undefined method m_pdf::loadf() in /home/stimarta/public_html/pencatarma/application/controllers/Baak.php on line 492
+[09-Apr-2018 05:13:34 UTC] PHP Fatal error:  Call to undefined method m_pdf::loadf() in /home/stimarta/public_html/pencatarma/application/controllers/Baak.php on line 492
+[10-Apr-2018 00:54:51 UTC] PHP Fatal error:  Call to undefined method m_pdf::loadf() in /home/stimarta/public_html/pencatarma/application/controllers/Baak.php on line 539
+[10-Apr-2018 01:02:06 UTC] PHP Fatal error:  Call to undefined method m_pdf::loadf() in /home/stimarta/public_html/pencatarma/application/controllers/Baak.php on line 445
+[10-Apr-2018 01:02:21 UTC] PHP Fatal error:  Call to undefined method m_pdf::loadf() in /home/stimarta/public_html/pencatarma/application/controllers/Baak.php on line 445
+[10-Apr-2018 01:02:39 UTC] PHP Fatal error:  Call to undefined method m_pdf::loadf() in /home/stimarta/public_html/pencatarma/application/controllers/Baak.php on line 445
+[10-Apr-2018 01:02:56 UTC] PHP Fatal error:  Call to undefined method m_pdf::loadf() in /home/stimarta/public_html/pencatarma/application/controllers/Baak.php on line 445
+[10-Apr-2018 01:27:11 UTC] PHP Fatal error:  Call to undefined method m_pdf::loadf() in /home/stimarta/public_html/pencatarma/application/controllers/Baak.php on line 445
+[10-Apr-2018 02:02:54 UTC] PHP Fatal error:  Call to undefined method m_pdf::loadf() in /home/stimarta/public_html/pencatarma/application/controllers/Baak.php on line 445
+[10-Apr-2018 13:12:28 UTC] PHP Fatal error:  Call to undefined method m_pdf::loadf() in /home/stimarta/public_html/pencatarma/application/controllers/Baak.php on line 539
+[20-Feb-2019 00:12:44 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/stimarta/public_html/pencatarma/system/libraries/Session/drivers/Session_files_driver.php on line 263
+[20-Feb-2019 00:47:14 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/stimarta/public_html/pencatarma/system/libraries/Session/drivers/Session_files_driver.php on line 263
+[[09-Aug-2019 09:10:00 UTC] PHP Fatal error:  Call to a member function load() on null in /home/stimartamni/public_html/pencatarma/application/controllers/Baak.php on line 234
+[09-Aug-2019 09:46:36 UTC] PHP Fatal error:  Class 'mPDF' not found in /home/stimartamni/public_html/pencatarma/application/libraries/M_pdf.php on line 19
+[06-Dec-2021 16:25:36 Asia/Jakarta] PHP Fatal error:  Cannot declare class Error, because the name is already in use in /home/penb7489/public_html/application/controllers/Error.php on line 0
+[06-Dec-2021 16:25:43 Asia/Jakarta] PHP Fatal error:  Cannot declare class Error, because the name is already in use in /home/penb7489/public_html/application/controllers/Error.php on line 0
+[06-Dec-2021 16:26:28 Asia/Jakarta] PHP Fatal error:  Cannot declare class Error, because the name is already in use in /home/penb7489/public_html/application/controllers/Error.php on line 0
+[06-Dec-2021 16:27:07 Asia/Jakarta] PHP Fatal error:  Cannot declare class Error, because the name is already in use in /home/penb7489/public_html/application/controllers/Error.php on line 0
+[06-Dec-2021 16:48:25 Asia/Jakarta] PHP Fatal error:  Cannot declare class Error, because the name is already in use in /home/penb7489/public_html/application/controllers/Error.php on line 0
+[06-Dec-2021 16:48:49 Asia/Jakarta] PHP Fatal error:  Cannot declare class Error, because the name is already in use in /home/penb7489/public_html/application/controllers/Error.php on line 0
+[06-Dec-2021 16:48:52 Asia/Jakarta] PHP Fatal error:  Cannot declare class Error, because the name is already in use in /home/penb7489/public_html/application/controllers/Error.php on line 0
+[06-Dec-2021 16:49:36 Asia/Jakarta] PHP Fatal error:  Cannot declare class Error, because the name is already in use in /home/penb7489/public_html/application/controllers/Error.php on line 0
+[06-Dec-2021 17:02:43 Asia/Jakarta] PHP Fatal error:  Cannot declare class Error, because the name is already in use in /home/penb7489/public_html/application/controllers/Error.php on line 0
+[06-Dec-2021 17:04:16 Asia/Jakarta] PHP Fatal error:  Cannot declare class Error, because the name is already in use in /home/penb7489/public_html/application/controllers/Error.php on line 0
+[06-Dec-2021 17:04:19 Asia/Jakarta] PHP Fatal error:  Cannot declare class Error, because the name is already in use in /home/penb7489/public_html/application/controllers/Error.php on line 0
+[06-Dec-2021 17:09:24 Asia/Jakarta] PHP Fatal error:  Cannot declare class Error, because the name is already in use in /home/penb7489/public_html/application/controllers/Error.php on line 0
+[06-Dec-2021 17:22:49 Asia/Jakarta] PHP Fatal error:  Cannot declare class Error, because the name is already in use in /home/penb7489/public_html/application/controllers/Error.php on line 0
+[06-Dec-2021 17:22:57 Asia/Jakarta] PHP Fatal error:  Cannot declare class Error, because the name is already in use in /home/penb7489/public_html/application/controllers/Error.php on line 0
+[07-Dec-2021 09:41:02 Asia/Jakarta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; m_pdf has a deprecated constructor in /home/penb7489/public_html/application/libraries/M_pdf.php on line 2
+[07-Dec-2021 10:00:43 Asia/Jakarta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; m_pdf has a deprecated constructor in /home/penb7489/public_html/application/libraries/M_pdf.php on line 2
+[07-Dec-2021 10:06:43 Asia/Jakarta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; m_pdf has a deprecated constructor in /home/penb7489/public_html/application/libraries/M_pdf.php on line 2
+[07-Dec-2021 10:27:05 Asia/Jakarta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; m_pdf has a deprecated constructor in /home/penb7489/public_html/application/libraries/M_pdf.php on line 2
+[07-Dec-2021 11:00:48 Asia/Jakarta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; m_pdf has a deprecated constructor in /home/penb7489/public_html/application/libraries/M_pdf.php on line 2
+[08-Dec-2021 15:33:41 Asia/Jakarta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; m_pdf has a deprecated constructor in /home/penb7489/public_html/application/libraries/M_pdf.php on line 2
+[08-Dec-2021 15:39:59 Asia/Jakarta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; M_pdf has a deprecated constructor in /home/penb7489/public_html/application/libraries/M_pdf.php on line 2
+[08-Dec-2021 15:43:13 Asia/Jakarta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; M_pdf has a deprecated constructor in /home/penb7489/public_html/application/libraries/M_pdf.php on line 2
+[08-Dec-2021 15:47:33 Asia/Jakarta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; M_pdf has a deprecated constructor in /home/penb7489/public_html/application/libraries/M_pdf.php on line 2
