@@ -66,5 +66,7 @@ $route['biaya_download'] = 'welcome/biaya_download';
 $route['cekstatusp/(:num)'] = 'welcome/cekstatusp/$1';
 $route['download/(:num)'] = 'welcome/download/$1';
 
+$route['getkabkota'] = 'welcome/get_kabkota';
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

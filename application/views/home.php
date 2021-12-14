@@ -74,7 +74,7 @@
         <div class="row">
           <div class="col-lg-16 ml-auto">
             <div class="text-center mt-4">
-         <center><img src="<?php echo base_url() ?>assets/front1/img/poster2.jpeg" width="100%"></center>
+         <!-- <center><img src="<?php //echo base_url() ?>assets/front1/img/poster2.jpeg" width="100%"></center> -->
           </div>
             <p class="lead">UNIMAR AMNI Semarang adalah sebuah Perguruan Tinggi yang diselenggarakan oleh masyrakat yang mengembangkan studi di bidang maritim dan transpor. Awalnya bernama “AMNI” ( Akademi Maritim Nasional Indonesia ) yang didirikan pada tanggal 9 September 1963. Sejalan dengan perkembangan kebutuhan dibidang  maritim dan transpor, maka pada tanggal 17 April 2007 , AMNI mengembangkan diri menjadi  Sekolah  Tinggi Maritim dan Transpor “ AMNI “ ( UNIMAR “ AMNI “) Semarang, sesuai dengan SK Mendiknas No. 53/D/O/2007.</p>
              <p class="lead">UNIMAR AMNI Semarang bersertifikat ISO 9001:2015, semua Program Studi Terakreditasi Badan Akreditasi Nasional Perguruan Tinggi ( BAN PT ) Direktorat Jendral Pendidikan Tinggi dan Approval Direktorat Jendral Perhubungan Laut / Internasional Maritime Organization ( IMO ), dengan Program Studi:</p>
@@ -113,18 +113,21 @@
               </ol> 
 
               <br>
-              <center><h4 class="text-uppercase"> BIAYA PENDIDIKAN MAHASISWA / TARUNA T.A 2021 - 2022 DAN TUTORIAL</h4></center>
+              <center><h4 class="text-uppercase"> BIAYA PENDIDIKAN MAHASISWA / TARUNA T.A 2022 - 2023 DAN TUTORIAL</h4></center>
 
              <div class="col-lg-16 mr-auto">
-            <p class="lead">Berikut lampiran biaya pendidikan Mahasiswa / Taruna UNIMAR AMNI Semarang tahun ajaran 2021 - 2022 yang dapat di download di bawah ini.</p>
+            <p class="lead">Berikut lampiran biaya pendidikan Mahasiswa / Taruna UNIMAR AMNI Semarang tahun ajaran 2022 - 2023 yang dapat di download di bawah ini.</p>
                <div class="col-lg-16 mr-auto text-center">
-                <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="<?php echo base_url() ?>biaya_download">
+                <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="#">
                 <i class="fa fa-money mr-2"></i>
                 <font color="black">Biaya Pendidikan</font>
                 </a>
-                <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="http://bit.ly/tutorial-daftar-UNIMARamni" target="_blank">
+                <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="#" target="_blank">
                 <i class="fa fa-book mr-2"></i>
                 <font color="black">Tutorial Pendaftaran</font>
+                <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="https://linktr.ee/UNIMARAMNI" target="_blank">
+                <i class="fa fa-info mr-2"></i>
+                <font color="black">Informasi Selengkapnya</font>
                 </a>
               </div>
             </div>
@@ -256,12 +259,51 @@
           </div>
         </div>
         <div class="text-center mt-4">
-         <center><img src="<?php echo base_url() ?>assets/front1/img/alur2021.PNG" width="100%"></center>
+         <center><img src="<?php echo base_url() ?>assets/front1/img/alur2022.PNG" width="100%"></center>
         </div>
       <!--   <div class="text-center mt-4">
          <center><img src="<?php //echo base_url() ?>assets/front1/img/alur.jpg" width="100%"></center>
         </div>
       </div> -->
+    </section>
+      <!-- About Section -->
+    <section class="bg-primary text-white mb-0" id="testimoni">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Testimoni</h2><br>
+        
+        <!-- slider -->
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+              <!-- Indicators -->
+              <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+              </ul>
+              
+              <!-- The slideshow -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="<?php echo base_url() ?>assets/front1/img/testi1.PNG" alt="Los Angeles" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                  <img src="<?php echo base_url() ?>assets/front1/img/testi2.PNG" alt="Chicago" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                  <img src="<?php echo base_url() ?>assets/front1/img/testi3.PNG" alt="New York" width="1100" height="500">
+                </div>
+              </div>
+              
+              <!-- Left and right controls -->
+              <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+       
+      </div>
     </section>
     <!-- Footer -->
     <footer class="footer text-center">
@@ -272,10 +314,10 @@
             <p class="lead mb-0">Jl. Soekarno-Hatta No.180
               <br>Semarang, 50199</p>
           </div>
-          <div class="col-md-4 mb-2">
+          <!-- <div class="col-md-4 mb-2">
             <h4 class="text-uppercase mb-4">website</h4>
             <ul class="list-inline mb-0">
-             <!--  <li class="list-inline-item">
+              <li class="list-inline-item">
                 <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
                   <i class="fa fa-fw fa-facebook"></i>
                 </a>
@@ -294,24 +336,32 @@
                 <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
                   <i class="fa fa-fw fa-linkedin"></i>
                 </a>
-              </li> -->
+              </li>
               <li class="list-inline-item">
                 <a class="btn btn-outline-light btn-social text-center rounded-circle" href="http://unimar-amni.ac.id/new/">
                   <i class="fa fa-fw fa-dribbble"></i>
                 </a>
               </li>
             </ul>
-          </div>
+          </div> -->
           <div class="col-md-4 mb-2">
             <h4 class="text-uppercase mb-4">Contact Person</h4>
           
-            <p class="lead mb-0">Evi : 085 328 346 822 </p>
+            <p class="lead mb-0">CP1 : 0851 6161 0180 </p>
+            <p class="lead mb-0">CP2 : 0822 9977 5575 </p>
               <!-- <a href="http://startbootstrap.com">Start Bootstrap</a>.</p> -->
           </div>
        <div class="col-md-4 mb-2">
             <h4 class="text-uppercase mb-4">Email</h4>
       <p class="lead mb-0">info@unimar-amni.ac.id</p>
             <p class="lead mb-0">pencatarma@unimar-amni.ac.id</p>
+              <!-- <a href="http://startbootstrap.com">Start Bootstrap</a>.</p> -->
+          </div>
+
+
+           <div class="col-md-12 mb-2">
+            <h4 class="text-uppercase mb-4">Kerjasama</h4>
+            <center><img src="<?php echo base_url() ?>assets/front1/img/mou.png" width="100%"></center>
               <!-- <a href="http://startbootstrap.com">Start Bootstrap</a>.</p> -->
           </div>
         </div>
@@ -345,11 +395,11 @@
               <h2 class="text-secondary text-uppercase mb-0  text-center">D3 KETATALAKSANAAN PELAYARAN NIAGA DAN KEPELABUHAN</h2>
               <!-- <hr class="star-dark mb-5">
               <img class="img-fluid mb-5" src="img/portfolio/cabin.png" alt=""> -->
-               <img class="img-fluid mb-5" src="<?php echo base_url() ?>assets/front1/img/flyer/kpn1.png" alt="">
-               <img class="img-fluid mb-5" src="<?php echo base_url() ?>assets/front1/img/flyer/kpn2.png" alt="">
+               <!-- <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/kpn1.png" alt="">
+               <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/kpn2.png" alt=""> -->
                <p><i class="fa fa-question-circle"></i>Syarat :</p>
               <ul>
-                <li>Usia max 23 tahun pada bulan September 2020.</li>
+                <li>Usia max 23 tahun pada bulan September 2021.</li>
                 <li>Pria atau wanita</li>
                 <li>Belum menikah dan sanggup tidak menikah selama masa pendidikan yang dibuktikan dengan surat keterangan belum pernah menikah.</li> 
                 <li>Tinggi badan minimal Pria 160 Cm dan Wanita 155 Cm.</li>
@@ -433,11 +483,11 @@
               <!-- <hr class="star-dark mb-5">
               <img class="img-fluid mb-5" src="img/portfolio/cake.png" alt="">
               <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p> -->
-               <img class="img-fluid mb-5" src="<?php echo base_url() ?>assets/front1/img/flyer/t1.png" alt="">
-               <img class="img-fluid mb-5" src="<?php echo base_url() ?>assets/front1/img/flyer/t2.png" alt="">
+               <!-- <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/t1.png" alt="">
+               <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/t2.png" alt=""> -->
              <p><i class="fa fa-question-circle"></i>Syarat :</p>
               <ul>
-                <li>Usia max 23 tahun pada bulan September 2020.</li>
+                <li>Usia max 23 tahun pada bulan September 2021.</li>
                 <li>Pria atau wanita</li>
                 <li>Belum menikah dan sanggup tidak menikah selama masa pendidikan yang dibuktikan dengan surat keterangan belum pernah menikah.</li> 
                 <li>Tinggi badan minimal Pria 160 Cm dan Wanita 155 Cm.</li>
@@ -525,11 +575,11 @@
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
                 Close Project</a> -->
-                 <img class="img-fluid mb-5" src="<?php echo base_url() ?>assets/front1/img/flyer/nt1.png" alt="">
-               <img class="img-fluid mb-5" src="<?php echo base_url() ?>assets/front1/img/flyer/nt2.png" alt="">
+                 <!-- <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/nt1.png" alt="">
+               <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/nt2.png" alt=""> -->
                <p><i class="fa fa-question-circle"></i>Syarat :</p>
                 <ul>
-                <li>Usia max 23 tahun pada bulan September 2020.</li>
+                <li>Usia max 23 tahun pada bulan September 2021.</li>
                 <li>Pria atau wanita</li>
                 <li>Belum menikah dan sanggup tidak menikah selama masa pendidikan yang dibuktikan dengan surat keterangan belum pernah menikah.</li> 
                 <li>Tinggi badan minimal Pria 160 Cm dan Wanita 155 Cm.</li>
@@ -616,11 +666,11 @@
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
                 Close Project</a> -->
-                <img class="img-fluid mb-5" src="<?php echo base_url() ?>assets/front1/img/flyer/tra1.png" alt="">
-               <img class="img-fluid mb-5" src="<?php echo base_url() ?>assets/front1/img/flyer/tra2.png" alt="">
+               <!--  <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/tra1.png" alt="">
+               <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/tra2.png" alt=""> -->
                <p><i class="fa fa-question-circle"></i>Syarat :</p>
                 <ul>
-                <li>Usia max 23 tahun pada bulan September 2020.</li>
+                <li>Usia max 23 tahun pada bulan September 2021.</li>
                 <li>Pria atau wanita</li>
                 <li>Belum menikah dan sanggup tidak menikah selama masa pendidikan yang dibuktikan dengan surat keterangan belum pernah menikah.</li> 
                 <li>Tinggi badan minimal Pria 160 Cm dan Wanita 155 Cm.</li>
@@ -685,7 +735,7 @@
                 Isi Biodata (Registrasi Reguler)</a>
                 <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_eks">
                 <i class="fa fa-sign-in"></i>
-                Isi Biodata (Registrasi Ekstensi/Weekend)</a>
+                Isi Biodata (Registrasi Kelas Sore Karyawan)</a>
               </center>
             </div>
           </div>
@@ -706,11 +756,11 @@
               <!-- <hr class="star-dark mb-5">
               <img class="img-fluid mb-5" src="img/portfolio/cake.png" alt="">
               <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p> -->
-               <img class="img-fluid mb-5" src="<?php echo base_url() ?>assets/front1/img/flyer/tm1.png" alt="">
-               <img class="img-fluid mb-5" src="<?php echo base_url() ?>assets/front1/img/flyer/tm2.png" alt="">
+              <!--  <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/tm1.png" alt="">
+               <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/tm2.png" alt=""> -->
              <p><i class="fa fa-question-circle"></i>Syarat :</p>
               <ul>
-                <li>Usia max 23 tahun pada bulan September 2020.</li>
+                <li>Usia max 23 tahun pada bulan September 2021.</li>
                 <li>Pria atau wanita</li>
                 <li>Belum menikah dan sanggup tidak menikah selama masa pendidikan yang dibuktikan dengan surat keterangan belum pernah menikah.</li> 
                 <li>Copy Ijazah:</li>
@@ -777,7 +827,7 @@
                 Isi Biodata (Registrasi Reguler)</a> <br>
                 <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_eks">
                 <i class="fa fa-sign-in"></i>
-                Isi Biodata (Registrasi Ekstensi/Weekend)</a>
+                Isi Biodata (Registrasi Kelas Sore Karyawan)</a>
               </center>
             </div>
           </div>
@@ -800,11 +850,11 @@
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
                 Close Project</a> -->
-                 <img class="img-fluid mb-5" src="<?php echo base_url() ?>assets/front1/img/flyer/ttl1.png" alt="">
-               <img class="img-fluid mb-5" src="<?php echo base_url() ?>assets/front1/img/flyer/ttl2.png" alt="">
+                <!--  <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/ttl1.png" alt="">
+               <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/ttl2.png" alt=""> -->
                <p><i class="fa fa-question-circle"></i>Syarat :</p>
                 <ul>
-                <li>Usia max 23 tahun pada bulan September 2020.</li>
+                <li>Usia max 23 tahun pada bulan September 2021.</li>
                 <li>Pria atau wanita</li>
                 <li>Belum menikah dan sanggup tidak menikah selama masa pendidikan yang dibuktikan dengan surat keterangan belum pernah menikah.</li> 
                 <li>Copy Ijazah:</li>
@@ -868,7 +918,7 @@
                 Isi Biodata (Registrasi Reguler)</a> <br>
                 <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_eks">
                 <i class="fa fa-sign-in"></i>
-                Isi Biodata (Registrasi Ekstensi/Weekend)</a>
+                Isi Biodata (Registrasi Kelas Sore Karyawan)</a>
               </center>
             </div>
           </div>
@@ -891,11 +941,11 @@
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
                 Close Project</a> -->
-                 <img class="img-fluid mb-5" src="<?php echo base_url() ?>assets/front1/img/flyer/tk1.png" alt="">
-               <img class="img-fluid mb-5" src="<?php echo base_url() ?>assets/front1/img/flyer/tk2.png" alt="">
+                 <!-- <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/tk1.png" alt="">
+               <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/tk2.png" alt=""> -->
                <p><i class="fa fa-question-circle"></i>Syarat :</p>
                 <ul>
-                <li>Usia max 23 tahun pada bulan September 2020.</li>
+                <li>Usia max 23 tahun pada bulan September 2021.</li>
                 <li>Pria atau wanita</li>
                 <li>Belum menikah dan sanggup tidak menikah selama masa pendidikan yang dibuktikan dengan surat keterangan belum pernah menikah.</li> 
                 <li>Copy Ijazah:</li>
@@ -959,7 +1009,7 @@
                 Isi Biodata (Registrasi Reguler)</a> <br>
                 <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_eks">
                 <i class="fa fa-sign-in"></i>
-                Isi Biodata (Registrasi Ekstensi/Weekend)</a>
+                Isi Biodata (Registrasi Kelas Sore Karyawan)</a>
               </center>
             </div>
           </div>
@@ -982,11 +1032,11 @@
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
                 Close Project</a> -->
-                 <img class="img-fluid mb-5" src="<?php echo base_url() ?>assets/front1/img/flyer/pi1.png" alt="">
-               <img class="img-fluid mb-5" src="<?php echo base_url() ?>assets/front1/img/flyer/pi2.png" alt="">
+                <!--  <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/pi1.png" alt="">
+               <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/pi2.png" alt=""> -->
                <p><i class="fa fa-question-circle"></i>Syarat :</p>
                 <ul>
-                <li>Usia max 23 tahun pada bulan September 2020.</li>
+                <li>Usia max 23 tahun pada bulan September 2021.</li>
                 <li>Pria atau wanita</li>
                 <li>Belum menikah dan sanggup tidak menikah selama masa pendidikan yang dibuktikan dengan surat keterangan belum pernah menikah.</li> 
                 <li>Copy Ijazah:</li>
@@ -1050,29 +1100,8 @@
                 Isi Biodata (Registrasi Reguler)</a> <br>
                 <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_eks">
                 <i class="fa fa-sign-in"></i>
-                Isi Biodata (Registrasi Ekstensi/Weekend)</a>
+                Isi Biodata (Registrasi Kelas Sore Karyawan)</a>
               </center>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Portfolio Modal 6 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/submarine.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
             </div>
           </div>
         </div>
@@ -1093,6 +1122,23 @@
 
     <!-- Custom scripts for this template -->
     <script src="<?php echo base_url() ?>assets/front1/js/freelancer.min.js"></script>
+
+    <script type="text/javascript">
+     (function($) {
+    $(window).on('load', function () {
+        // retrieved this line of code from http://dimsemenov.com/plugins/magnific-popup/documentation.html#api
+        $.magnificPopup.open({
+            items: {
+                src: '<?php echo base_url() ?>assets/front1/img/peringatan.png'
+            },
+            type: 'image'
+
+          // You may add options here, they're exactly the same as for $.fn.magnificPopup call
+          // Note that some settings that rely on click event (like disableOn or midClick) will not work here
+        }, 0);
+    });
+        })(jQuery);
+    </script>
 
   </body>
 

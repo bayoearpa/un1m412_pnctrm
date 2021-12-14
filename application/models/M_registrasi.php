@@ -40,6 +40,10 @@ class m_registrasi extends CI_Model
 		$this->db->where($where);
 		$this->db->delete($table);
 	}
+	function get_kabkota($id){
+        $hasil=$this->db->query("SELECT * FROM tbl_kabkota WHERE id_induk_wil='$id'");
+        return $hasil->result();
+    }
 	function get_data_ta($where){		
 		   $this->db->select('ta');
 		   $this->db->from('tbl_gelombang');

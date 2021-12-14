@@ -178,18 +178,20 @@
                   <textarea class="form-control" name="alamat" id="alamat" rows="3" placeholder="Masukkan Alamat Anda"></textarea>
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Kota / Kabupaten</label>
-                  <input type="text" class="form-control" id="ktkb" name="ktkb" placeholder="Masukan Kota atau Kabupaten Anda">
-                </div>
-                <div class="form-group">
                   <label for="exampleInputEmail1">Provinsi</label>
-                  <select class="form-control" name="provinsi" id="provinsi">
+                  <select class="form-control" name="provinsi" id="provinsi" class="provinsi">
                   <option> </option>
                   <?php foreach ($provinsi as $p) {
                     # code...
                   ?>
-                    <option value="<?php echo $p->id_provinsi;?>"><?php echo $p->provinsi;?></option>
+                    <option value="<?php echo $p->id_wil;?>"><?php echo $p->nm_wil;?></option>
                   <?php }?>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Kota / Kabupaten</label>
+                  <select class="form-control ktkb" name="ktkb" id="ktkb">
+                  <option> </option>
                   </select>
                 </div>
                 <div class="form-group">
@@ -207,7 +209,7 @@
                 </div>
                    <!-- /.form-group -->
                 <div class="form-group">
-                  <label>Jurusan (SMA/SMK)</label>
+                  <label>Jurusan SLTA/SMK</label>
                   <select class="form-control select2" id="prodi_lama" name="prodi_lama" style="width: 100%;">
                     <option> </option>
                     <?php foreach ($jurusan as $j): ?>
@@ -221,11 +223,11 @@
                   <input type="text" class="form-control" id="thn_lulus" name="thn_lulus" placeholder="Masukan Tahun Lulus Anda">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Asal Sekolah</label>
+                  <label for="exampleInputEmail1">Asal Sekolah SLTA/SMK</label>
                   <input type="text" class="form-control" id="asek" name="asek" placeholder="Masukan Asal Sekolah Anda">
                 </div>
                 <div class="form-group">
-                  <label>Alamat Sekolah</label>
+                  <label>Alamat Sekolah SLTA/SMK</label>
                   <textarea class="form-control" name="alamat_sek" id="alamat_sek" rows="3" placeholder="Masukkan Alamat Sekolah Anda"></textarea>
                 </div>
                 <div class="form-group">
@@ -288,15 +290,15 @@
                   <label>Periode</label>
                   <select class="form-control" name="gelombang" id="gelombang">
                     <option> </option>
-                    <!-- <option value="1">Januari</option> -->
-                    <!-- <option value="2">Februari</option> -->
-                    <!-- <option value="3">Maret</option> -->
-                    <!-- <option value="4">April</option> -->
-                    <!-- <option value="5">Mei</option> -->
-                    <!-- <option value="6">Juni</option> -->
-                    <!-- <option value="7">Juli</option> -->
-                    <!-- <option value="8">Agustus</option> -->
-                    <!-- <option value="9">September</option> -->
+                    <option value="1">Januari</option>
+                    <option value="2">Februari</option>
+                    <option value="3">Maret</option>
+                    <option value="4">April</option>
+                    <option value="5">Mei</option>
+                    <option value="6">Juni</option>
+                    <option value="7">Juli</option>
+                    <option value="8">Agustus</option>
+                    <option value="9">September</option>
                     <option value="10">Oktober</option>
                   </select>
                 </div>
@@ -360,6 +362,29 @@
 <script src="<?php echo base_url() ?>assets/front2/plugins/validate/jquery.validate.min.js"></script>
 <!-- Select2 -->
 <script src="<?php echo base_url() ?>assets/front2/bower_components/select2/dist/js/select2.full.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+        $('#provinsi').change(function(){
+            var id=$(this).val();
+            $.ajax({
+                url : "<?php echo base_url();?>getkabkota",
+                method : "POST",
+                data : {id: id},
+                async : false,
+                dataType : 'json',
+                success: function(data){
+                    var html = '';
+                    var i;
+                    for(i=0; i<data.length; i++){
+                        html += '<option value='+data[i].id_wil+'>'+data[i].nm_wil+'</option>';
+                    }
+                    $('.ktkb').html(html);
+                     
+                }
+            });
+        });
+    });
+</script>
 <script type="text/javascript">
  
       jQuery(function($) {
@@ -479,6 +504,7 @@
     $('.select2').select2()
  
       });
+
   </script>
 </body>
 </html>

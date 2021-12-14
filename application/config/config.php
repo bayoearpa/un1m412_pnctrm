@@ -24,6 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $config['base_url'] = 'https://pencatarma.unimar-amni.ac.id/';
+// $config['base_url'] = 'http://localhost/pencatarma/';
 
 /*
 |--------------------------------------------------------------------------

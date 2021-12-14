@@ -32,6 +32,11 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('home');
 	}
+	public function get_kabkota(){
+        $id=$this->input->post('id');
+        $data=$this->m_registrasi->get_kabkota($id);
+        echo json_encode($data);
+    }
 	public function cekstatus()
 	{
 		// If captcha form is submitted
@@ -139,19 +144,19 @@ class Welcome extends CI_Controller {
 	public function registrasi()
 	{
 		$data['jurusan'] = $this->m_registrasi->get_data_all('tbl_jurusan')->result();
-		$data['provinsi'] = $this->m_registrasi->get_data_all('tbl_provinsi')->result();
+		$data['provinsi'] = $this->m_registrasi->get_data_all('tbl_propinsi')->result();
 		$this->load->view('registrasi',$data);
 	}
 	public function registrasid3()
 	{
 		$data['jurusan'] = $this->m_registrasi->get_data_all('tbl_jurusan')->result();
-		$data['provinsi'] = $this->m_registrasi->get_data_all('tbl_provinsi')->result();
+		$data['provinsi'] = $this->m_registrasi->get_data_all('tbl_propinsi')->result();
 		$this->load->view('registrasi_d3',$data);
 	}
 	public function registrasieks()
 	{
 		$data['jurusan'] = $this->m_registrasi->get_data_all('tbl_jurusan')->result();
-		$data['provinsi'] = $this->m_registrasi->get_data_all('tbl_provinsi')->result();
+		$data['provinsi'] = $this->m_registrasi->get_data_all('tbl_propinsi')->result();
 		$this->load->view('registrasi_eks',$data);
 	}
 	public function registrasi2()
