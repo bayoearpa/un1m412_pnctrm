@@ -275,10 +275,10 @@ class Welcome extends CI_Controller {
 			);
 
 
-		$this->m_registrasi->input_data($data,'tbl_catar_2021');
+		$this->m_registrasi->input_data($data,'tbl_catar_2022');
 		$lastid = $this->db->insert_id();
 		$where = array('no' => $lastid);
-		$data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2021')->result();
+		$data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2022')->result();
 		foreach ($data['catar'] as $key) {
 			# code...
 			$po = $key->provinsi;
@@ -292,7 +292,7 @@ class Welcome extends CI_Controller {
 		$this->load->view('cetakReg',$data);
 
 		//pdf
-		$pdfFilePath="cetak_registrasi_".$namafil."_2021.pdf";
+		$pdfFilePath="cetak_registrasi_".$namafil."_2022.pdf";
 		$html=$this->load->view('cetakReg',$data, TRUE);
 		$pdf = $this->m_pdf->load();
  
@@ -458,7 +458,7 @@ class Welcome extends CI_Controller {
 	public function biaya_download()
 	{
 		# code...
-		force_download('assets/download/biaya_pendidikan_2021.pdf',NULL);
+		force_download('assets/download/biaya_pendidikan_2022.pdf',NULL);
 		redirect(base_url());
 	}
 }
