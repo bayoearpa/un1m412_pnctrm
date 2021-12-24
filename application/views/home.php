@@ -436,7 +436,7 @@
                     <td><b>Rp. 500.000,-</b></td>
                   </tr>
                 </table>
-                <li>Bukti Pembayaran dapat dikirim melalui :</li>
+                <!-- <li>Bukti Pembayaran dapat dikirim melalui :</li>
                 <table>
                   <tr>
                     <td><b>No. WA</b></td>
@@ -454,7 +454,7 @@
                     <td>:</td>
                     <td><b>1234_Rian Ardianto_Transportasi_Januari</b></td>
                   </tr>
-                </table>
+                </table> -->
                 <li>Pemberkasan dilaksanakan setelah pendaftaran dinyatakan <b>DITERIMA</b></li>
               </ul>
 
