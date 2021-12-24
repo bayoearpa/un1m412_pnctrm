@@ -196,35 +196,35 @@ class Welcome extends CI_Controller {
 		$prodi2 = $this->input->post('prodi2');
 		$gelombang = $this->input->post('gelombang');
 		$kelas = $this->input->post('kelas');
-		$thn_pel="2021";
+		$thn_pel="2022";
  
 		
 		
-		$namagabungan1 = judul_seo("ijasah".$nama." ".$prodi." ".$tgl_l);
+		// $namagabungan1 = judul_seo("ijasah".$nama." ".$prodi." ".$tgl_l);
 		// $namagabungan2 = judul_seo("sk".$nama." ".$prodi." ".$tgl_l);
-		$nmfile1 = $namagabungan1.".pdf";
+		// $nmfile1 = $namagabungan1.".pdf";
 		// $nmfile2 = $namagabungan2.".pdf";
         #upload file1
-        $config['upload_path'] = FCPATH.'assets/upload';
-		$config['allowed_types'] = 'pdf';
+  //       $config['upload_path'] = FCPATH.'assets/upload';
+		// $config['allowed_types'] = 'pdf';
 		// $config['max_size']  = '5024';
 		// $config['max_width']  = '1024';
 		// $config['max_height']  = '768';
 
-        if($_FILES["ijasah"]["name"]){
-        $config["file_name"] = $nmfile1;
-        $this->load->library('upload', $config);
-        $abstrak = $this->upload->do_upload('ijasah');
-        if (!$abstrak){
-            $error = array('error' => $this->upload->display_errors());
-            // $this->session->set_flashdata("error", ".");
-        }else{
-            $abstrak = $this->upload->data("file_name");
-            $data = array('upload_data' => $this->upload->data());
-            // $this->session->set_flashdata("success", ".");
-        	}
+     //    if($_FILES["ijasah"]["name"]){
+     //    $config["file_name"] = $nmfile1;
+     //    $this->load->library('upload', $config);
+     //    $abstrak = $this->upload->do_upload('ijasah');
+     //    if (!$abstrak){
+     //        $error = array('error' => $this->upload->display_errors());
+     //        // $this->session->set_flashdata("error", ".");
+     //    }else{
+     //        $abstrak = $this->upload->data("file_name");
+     //        $data = array('upload_data' => $this->upload->data());
+     //        // $this->session->set_flashdata("success", ".");
+     //    	}
         	
-    	}
+    	// }
 
     	// if($_FILES["sk"]["name"]){
         // $config["file_name"] = $nmfile2;
