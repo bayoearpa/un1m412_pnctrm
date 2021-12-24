@@ -18,7 +18,7 @@
 		<td width="12%"><img src="<?php echo base_url() ?>assets/front1/img/amni-png-doc.png" width="15%"></td>
 		<td align="center">
 		<p style="margin: 0px;padding: 0px;"><b>FORMULIR PENDAFTARAN PENCATARMA</b></p>
-		<p style="margin: 0px;padding: 0px;"><b>TAHUN AKADEMIK 2021 / 2022 </b></p>
+		<p style="margin: 0px;padding: 0px;"><b>TAHUN AKADEMIK 2022 / 2023 </b></p>
 		<p style="margin: 0px;padding: 0px;"><b>UNIVERSITAS MARITIM AMNI SEMARANG</b></p>
 		<p style="margin: 0px;padding: 0px;"><b>UNIMAR AMNI SEMARANG</b></p>
 		<p style="margin: 0px;padding: 0px;">Jl. Soekarno-Hatta No. 180 Semarang 50199</p>
@@ -183,7 +183,7 @@
                 </table> -->
 <!-- <p style="margin: 0px;padding: 0px;"><small>*Tes seleksi 30 Mei - 4 Agustus 2020.</small></p> -->
 <p style="margin: 0px;padding: 0px;"><small>*Pemberkasan dilaksanakan setelah pendaftaran dinyatakan <b>DITERIMA</b></small></p>
-<p style="margin: 0px;padding: 0px;"><small>*<b><i>follow ig official kami @unimaramnisemarang</i></b></small></p>
+<p style="margin: 0px;padding: 0px;"><small>*<b><i>follow ig official kami @unimar.amni.semarang</i></b></small></p>
 <table>
 <!-- halaman 2 -->
 <div style="page-break-before:always; ">
@@ -192,7 +192,7 @@
 		<td width="12%"><img src="<?php echo base_url() ?>assets/front1/img/amni-png-doc.png" width="15%"></td>
 		<td align="center">
 		<p style="margin: 0px;padding: 0px;"><b>FORMULIR PENDAFTARAN PENCATARMA</b></p>
-		<p style="margin: 0px;padding: 0px;"><b>TAHUN AKADEMIK 2020 / 2021 </b></p>
+		<p style="margin: 0px;padding: 0px;"><b>TAHUN AKADEMIK 2022 / 2023 </b></p>
 		<p style="margin: 0px;padding: 0px;"><b>UNIVERSITAS MARITIM AMNI SEMARANG</b></p>
 		<p style="margin: 0px;padding: 0px;"><b>UNIMAR AMNI SEMARANG</b></p>
 		<p style="margin: 0px;padding: 0px;">Jl. Soekarno-Hatta No. 180 Semarang 50199</p>
@@ -380,7 +380,7 @@
 		<td width="12%"><img src="<?php echo base_url() ?>assets/front1/img/amni-png-doc.png" width="15%"></td>
 		<td align="center">
 		<p style="margin: 0px;padding: 0px;"><b>FORMULIR PENDAFTARAN PENCATARMA</b></p>
-		<p style="margin: 0px;padding: 0px;"><b>TAHUN AKADEMIK 2020 / 2021 </b></p>
+		<p style="margin: 0px;padding: 0px;"><b>TAHUN AKADEMIK 2022 / 2023 </b></p>
 		<p style="margin: 0px;padding: 0px;"><b>UNIVERSITAS MARITIM AMNI SEMARANG</b></p>
 		<p style="margin: 0px;padding: 0px;"><b>UNIMAR AMNI SEMARANG</b></p>
 		<p style="margin: 0px;padding: 0px;">Jl. Soekarno-Hatta No. 180 Semarang 50199</p>
