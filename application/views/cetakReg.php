@@ -149,7 +149,7 @@
                   <tr>
                     <td style="margin: 0px;padding: 0px;"><b><small>BANK BNI</small></b></td>
                     <td style="margin: 0px;padding: 0px;"><b><small>:</small></b></td>
-                    <td style="margin: 0px;padding: 0px;"><b><small>an. STIMART AMNI</small></b></td>
+                    <td style="margin: 0px;padding: 0px;"><b><small>an. UNIMAR AMNI</small></b></td>
                   </tr>
                   <tr>
                     <td style="margin: 0px;padding: 0px;"><b><small>No. Rekening</small></b></td>
@@ -162,7 +162,7 @@
                     <td style="margin: 0px;padding: 0px;"><b><small>Rp. 500.000,-</small></b></td>
                   </tr>
                 </table>
-<p style="margin: 0px;padding: 0px;"><small>*Bukti Pembayaran dapat dikirim melalui :</small></p>
+<!-- <p style="margin: 0px;padding: 0px;"><small>*Bukti Pembayaran dapat dikirim melalui :</small></p>
  <table>
                   <tr>
                     <td style="margin: 0px;padding: 0px;" width="14%"><b><small>No. WA</small></b></td>
@@ -180,7 +180,7 @@
                     <td style="margin: 0px;padding: 0px;" width="1%"><small>:</small></td>
                     <td style="margin: 0px;padding: 0px;"><b><small>1234_Rian Ardianto_Nautika_Januari</small></b></td>
                   </tr>
-                </table>
+                </table> -->
 <!-- <p style="margin: 0px;padding: 0px;"><small>*Tes seleksi 30 Mei - 4 Agustus 2020.</small></p> -->
 <p style="margin: 0px;padding: 0px;"><small>*Pemberkasan dilaksanakan setelah pendaftaran dinyatakan <b>DITERIMA</b></small></p>
 <p style="margin: 0px;padding: 0px;"><small>*<b><i>follow ig official kami @unimaramnisemarang</i></b></small></p>
