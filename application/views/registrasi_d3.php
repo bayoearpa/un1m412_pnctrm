@@ -291,7 +291,7 @@
                   <select class="form-control" name="gelombang" id="gelombang">
                     <option> </option>
                     <option value="1">Januari</option>
-                    <option value="2">Februari</option>
+                   <!--  <option value="2">Februari</option>
                     <option value="3">Maret</option>
                     <option value="4">April</option>
                     <option value="5">Mei</option>
@@ -299,7 +299,7 @@
                     <option value="7">Juli</option>
                     <option value="8">Agustus</option>
                      <option value="9">September</option>
-                    <option value="10">Oktober</option>
+                    <option value="10">Oktober</option> -->
                   </select>
                 </div>
                 <input type="hidden" name="kelas" value="reg">
