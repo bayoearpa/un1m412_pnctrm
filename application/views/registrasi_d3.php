@@ -302,7 +302,21 @@
                     <option value="10">Oktober</option> -->
                   </select>
                 </div>
-                <input type="hidden" name="kelas" value="reg">
+                <div class="form-group">
+                  <label>Jalur Pendaftaran</label>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="kelas" id="optionsRadios1" value="reg">
+                      Reguler
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="kelas" id="optionsRadios2" value="pmdk">
+                      PMDK
+                    </label>
+                  </div>
+                </div>
                <!--  <div class="form-group">
                   <label>Kelas</label><br>
                   
