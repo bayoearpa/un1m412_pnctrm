@@ -21,7 +21,7 @@ class Bau extends CI_Controller {
         $where = array(
             'gelombang' => $gelombang       
         );
-        $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2021')->result();
+        $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2022')->result();
         // $data['catar'] = $this->m_registrasi->get_data_all('tbl_catar_2021')->result(); 
         $this->load->view('bau/header');
         $this->load->view('bau/index',$data);
@@ -37,7 +37,7 @@ class Bau extends CI_Controller {
         $where = array(
             'tbl_catar_2021.no' => $id       
         );
-        $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2021')->result();
+        $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2022')->result();
         // $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
 
         // $this->db->select('aktif');
@@ -61,10 +61,10 @@ class Bau extends CI_Controller {
         $jml_byr = $this->input->post('jml_byr');
         $thn_pel=$this->input->post('thn_pel');
 
-        $cekReg=$this->m_registrasi->get_data(array('prodi'=>$prodi,'gelombang'=>$gelombang),'tbl_catar_validasi_2021')->num_rows();
+        $cekReg=$this->m_registrasi->get_data(array('prodi'=>$prodi,'gelombang'=>$gelombang),'tbl_catar_validasi_2022')->num_rows();
         $this->db->select_max('no_reg');
         $this->db->where(array('prodi'=>$prodi,'thn_pel'=>$thn_pel));
-        $cekReg = $this->db->get('tbl_catar_validasi_2021');
+        $cekReg = $this->db->get('tbl_catar_validasi_2022');
             foreach($cekReg->result() as $row)
         {
             $selNoReg = $row->no_reg;
@@ -94,11 +94,11 @@ class Bau extends CI_Controller {
             );
 
         // $this->m_registrasi->update_data($where,$data,'tbl_catar_2021_validasi');
-        $this->m_registrasi->input_data($data,'tbl_catar_validasi_2021');
+        $this->m_registrasi->input_data($data,'tbl_catar_validasi_2022');
         $lastid = $this->db->insert_id();
 
         $where = array('val_id' => $lastid);
-        $data['validasi'] = $this->m_registrasi->get_data($where,'tbl_catar_validasi_2021')->result();
+        $data['validasi'] = $this->m_registrasi->get_data($where,'tbl_catar_validasi_2022')->result();
         $where2 = array('no' => $no);
         $data['catar'] = $this->m_registrasi->get_data($where2,'tbl_catar_2021')->result();
 
