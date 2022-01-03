@@ -189,7 +189,7 @@
             'aktif' => '1'      
             );
              ?>
-              <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data($where,'tbl_catar_validasi_2021')->num_rows(); ?></span>
+              <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data($where,'tbl_catar_validasi_2022')->num_rows(); ?></span>
             </div>
             <!-- /.box-body -->
           </div>
@@ -217,7 +217,7 @@
             'gelombang' => $gelombang,
             'aktif' => '1'      
             ); ?>
-              <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data($where,'tbl_catar_validasi_2021')->num_rows(); ?></span>
+              <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data($where,'tbl_catar_validasi_2022')->num_rows(); ?></span>
             </div>
              <div class="box-body" style="">
               Ekstensi
@@ -249,7 +249,7 @@
             'gelombang' => $gelombang,
             'aktif' => '1'      
             ); ?>
-              <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data($where,'tbl_catar_validasi_2021')->num_rows(); ?></span>
+              <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data($where,'tbl_catar_validasi_2022')->num_rows(); ?></span>
             </div>
              <div class="box-body" style="">
               Ekstensi
@@ -281,7 +281,7 @@
             'gelombang' => $gelombang,
             'aktif' => '1'      
             ); ?>
-              <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data($where,'tbl_catar_validasi_2021')->num_rows(); ?></span>
+              <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data($where,'tbl_catar_validasi_2022')->num_rows(); ?></span>
             </div>
              <div class="box-body" style="">
               Ekstensi
@@ -309,10 +309,10 @@
               Reguler
               <?php 
             $where = array(
-            'tbl_catar_2021.prodi' => '4',
-            'tbl_catar_2021.gelombang' => $gelombang,
-            'tbl_catar_validasi_2021.aktif' => '1',
-            'tbl_catar_2021.kelas' => 'reg'      
+            'tbl_catar_2022.prodi' => '4',
+            'tbl_catar_2022.gelombang' => $gelombang,
+            'tbl_catar_validasi_2022.aktif' => '1',
+            'tbl_catar_2022.kelas' => 'reg'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
@@ -320,10 +320,10 @@
               Ekstensi
               <?php 
             $where = array(
-            'tbl_catar_2021.prodi' => '4',
-            'tbl_catar_2021.gelombang' => $gelombang,
-            'tbl_catar_validasi_2021.aktif' => '1',
-            'tbl_catar_2021.kelas' => 'eks'      
+            'tbl_catar_2022.prodi' => '4',
+            'tbl_catar_2022.gelombang' => $gelombang,
+            'tbl_catar_validasi_2022.aktif' => '1',
+            'tbl_catar_2022.kelas' => 'eks'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
@@ -349,10 +349,10 @@
               Reguler
               <?php 
             $where = array(
-            'tbl_catar_2021.prodi' => '5',
-            'tbl_catar_2021.gelombang' => $gelombang,
-            'tbl_catar_validasi_2021.aktif' => '1',
-            'tbl_catar_2021.kelas' => 'reg'      
+            'tbl_catar_2022.prodi' => '5',
+            'tbl_catar_2022.gelombang' => $gelombang,
+            'tbl_catar_validasi_2022.aktif' => '1',
+            'tbl_catar_2022.kelas' => 'reg'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
@@ -360,10 +360,10 @@
               Ekstensi
               <?php 
             $where = array(
-            'tbl_catar_2021.prodi' => '5',
-            'tbl_catar_2021.gelombang' => $gelombang,
-            'tbl_catar_validasi_2021.aktif' => '1',
-            'tbl_catar_2021.kelas' => 'eks'      
+            'tbl_catar_2022.prodi' => '5',
+            'tbl_catar_2022.gelombang' => $gelombang,
+            'tbl_catar_validasi_2022.aktif' => '1',
+            'tbl_catar_2022.kelas' => 'eks'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
@@ -389,10 +389,10 @@
               Reguler
               <?php 
             $where = array(
-            'tbl_catar_2021.prodi' => '6',
-            'tbl_catar_2021.gelombang' => $gelombang,
-            'tbl_catar_validasi_2021.aktif' => '1',
-            'tbl_catar_2021.kelas' => 'reg'      
+            'tbl_catar_2022.prodi' => '6',
+            'tbl_catar_2022.gelombang' => $gelombang,
+            'tbl_catar_validasi_2022.aktif' => '1',
+            'tbl_catar_2022.kelas' => 'reg'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
@@ -400,10 +400,10 @@
               Ekstensi
               <?php 
             $where = array(
-            'tbl_catar_2021.prodi' => '6',
-            'tbl_catar_2021.gelombang' => $gelombang,
-            'tbl_catar_validasi_2021.aktif' => '1',
-            'tbl_catar_2021.kelas' => 'eks'      
+            'tbl_catar_2022.prodi' => '6',
+            'tbl_catar_2022.gelombang' => $gelombang,
+            'tbl_catar_validasi_2022.aktif' => '1',
+            'tbl_catar_2022.kelas' => 'eks'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
@@ -429,10 +429,10 @@
               Reguler
               <?php 
             $where = array(
-            'tbl_catar_2021.prodi' => '7',
-            'tbl_catar_2021.gelombang' => $gelombang,
-            'tbl_catar_validasi_2021.aktif' => '1',
-            'tbl_catar_2021.kelas' => 'reg'      
+            'tbl_catar_2022.prodi' => '7',
+            'tbl_catar_2022.gelombang' => $gelombang,
+            'tbl_catar_validasi_2022.aktif' => '1',
+            'tbl_catar_2022.kelas' => 'reg'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
@@ -440,10 +440,10 @@
               Ekstensi
               <?php 
             $where = array(
-            'tbl_catar_2021.prodi' => '7',
-            'tbl_catar_2021.gelombang' => $gelombang,
-            'tbl_catar_validasi_2021.aktif' => '1',
-            'tbl_catar_2021.kelas' => 'eks'      
+            'tbl_catar_2022.prodi' => '7',
+            'tbl_catar_2022.gelombang' => $gelombang,
+            'tbl_catar_validasi_2022.aktif' => '1',
+            'tbl_catar_2022.kelas' => 'eks'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
@@ -469,10 +469,10 @@
               Reguler
               <?php 
             $where = array(
-            'tbl_catar_2021.prodi' => '8',
-            'tbl_catar_2021.gelombang' => $gelombang,
-            'tbl_catar_validasi_2021.aktif' => '1',
-            'tbl_catar_2021.kelas' => 'reg'      
+            'tbl_catar_2022.prodi' => '8',
+            'tbl_catar_2022.gelombang' => $gelombang,
+            'tbl_catar_validasi_2022.aktif' => '1',
+            'tbl_catar_2022.kelas' => 'reg'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
@@ -480,10 +480,10 @@
               Ekstensi
               <?php 
             $where = array(
-            'tbl_catar_2021.prodi' => '8',
-            'tbl_catar_2021.gelombang' => $gelombang,
-            'tbl_catar_validasi_2021.aktif' => '1',
-            'tbl_catar_2021.kelas' => 'eks'      
+            'tbl_catar_2022.prodi' => '8',
+            'tbl_catar_2022.gelombang' => $gelombang,
+            'tbl_catar_validasi_2022.aktif' => '1',
+            'tbl_catar_2022.kelas' => 'eks'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
