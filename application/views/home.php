@@ -118,7 +118,7 @@
              <div class="col-lg-16 mr-auto">
             <p class="lead">Berikut lampiran biaya pendidikan Mahasiswa / Taruna UNIMAR AMNI Semarang tahun ajaran 2022 - 2023 yang dapat di download di bawah ini.</p>
                <div class="col-lg-16 mr-auto text-center">
-                <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="#">
+                <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="<?php echo base_url() ?>biaya_download">
                 <i class="fa fa-money mr-2"></i>
                 <font color="black">Biaya Pendidikan</font>
                 </a>
@@ -361,7 +361,7 @@
 
            <div class="col-md-12 mb-2">
             <h4 class="text-uppercase mb-4">Kerjasama</h4>
-            <center><img src="<?php echo base_url() ?>assets/front1/img/mou.png" width="100%"></center>
+            <center><img src="<?php echo base_url() ?>assets/front1/img/mou2.png" width="100%"></center>
               <!-- <a href="http://startbootstrap.com">Start Bootstrap</a>.</p> -->
           </div>
         </div>
