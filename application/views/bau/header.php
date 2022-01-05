@@ -137,6 +137,18 @@
             <li><a href="index2.html"><i class="fa fa-paperclip"></i>Rekap</a></li>
           </ul>
         </li>
+         <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Pembayaran</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="index.html"><i class="fa fa-money"></i>Pembayaran</a></li>
+            <li><a href="index2.html"><i class="fa fa-paperclip"></i>Rekap</a></li>
+          </ul>
+        </li>
 
       </ul>
     </section>

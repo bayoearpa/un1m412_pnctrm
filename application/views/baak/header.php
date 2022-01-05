@@ -73,7 +73,7 @@
                 <img src="<?php echo base_url() ?>assets/front1/img/amni1.png" class="img-circle" alt="User Image">
 
                 <p>
-                  <?php echo $this->session->userdata('nama'); ?> - Keuangan
+                  <?php echo $this->session->userdata('nama'); ?> - BAAK
                   <!-- <small>Member since Nov. 2012</small> -->
                 </p>
               </li>
@@ -125,16 +125,33 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MENU UTAMA</li>
-        <li class="active treeview">
+         <li class="active treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Pembayaran</span>
+            <i class="fa fa-dashboard"></i> <span>Summary</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Rekapitulasi Catar</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="index.html"><i class="fa fa-money"></i>Pembayaran</a></li>
-            <li><a href="index2.html"><i class="fa fa-paperclip"></i>Rekap</a></li>
+            <li class="active"><a href="<?php echo base_url() ?>baak/"><i class="fa fa-repeat"></i>Ganti Jurusan</a></li>
+            <li><a href="<?php echo base_url() ?>baak/rekap_peserta"><i class="fa fa-paperclip"></i>Rekap Daftar Peserta</a></li>
+            <li><a href="<?php echo base_url() ?>baak/rekap_abs_tda"><i class="fa fa-paperclip"></i>Rekap Abasen TDA</a></li>
+            <li><a href="<?php echo base_url() ?>baak/rekap"><i class="fa fa-paperclip"></i>Rekap Daftar Hadir</a></li>
+            <li><a href="<?php echo base_url() ?>baak/rekap_targas"><i class="fa fa-paperclip"></i>Rekap Daftar Hadir Targas</a></li>
+            <li><a href="<?php echo base_url() ?>baak/rekap_tkd"><i class="fa fa-paperclip"></i>Rekap Nilai TKD</a></li>
+            <li><a href="<?php echo base_url() ?>baak/rekap_samapta"><i class="fa fa-paperclip"></i>Rekap Nilai Seleksi Samapta</a></li>
+            <li><a href="<?php echo base_url() ?>baak/rekap_wawancara"><i class="fa fa-paperclip"></i>Rekap Nilai Wawancara</a></li>
+            <li><a href="<?php echo base_url() ?>baak/rekap_psykotest"><i class="fa fa-paperclip"></i>Rekap Nilai Psykotest</a></li>
+            <li><a href="<?php echo base_url() ?>baak/rekap_kesehatan"><i class="fa fa-paperclip"></i>Rekap Nilai Kesehatan</a></li>
+            <li><a href="<?php echo base_url() ?>baak/rekap_pantukir"><i class="fa fa-paperclip"></i>Rekap Nilai Pantukir</a></li>
+            <li><a href="<?php echo base_url() ?>baak/rekap_seleksi"><i class="fa fa-paperclip"></i>Rekap Nilai Seleksi</a></li>
+
           </ul>
         </li>
 
@@ -149,7 +166,7 @@
     <section class="content-header" style="margin-bottom: 0px;padding-bottom: 0px;">
       <h1>
         Selamat Datang
-        <small>Di Sistem Informasi Administrasi Pencatarma STIMART "AMNI" Semarang</small>
+        <small>Di Sistem Informasi Administrasi Pencatarma UNIMAR AMNI Semarang</small>
       </h1>
 
     </section>

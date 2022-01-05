@@ -105,6 +105,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/cetak',$data);
 
     }
+    
    
 }
         
