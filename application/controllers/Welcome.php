@@ -116,16 +116,16 @@ class Welcome extends CI_Controller {
 	{
 		# code...
 		$where = array('no' => $no);
-		$data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2021')->result();
+		$data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2022')->result();
 		foreach ($data['catar'] as $key) {
 			# code...
 			$po = $key->provinsi;
-			$where_prov = array('id_provinsi' => $po);
+			$where_prov = array('id_wil' => $po);
 		}
-		$provinsi_get = $this->m_registrasi->get_data($where_prov,'tbl_provinsi')->result();
+		$provinsi_get = $this->m_registrasi->get_data($where_prov,'tbl_propinsi')->result();
 		foreach ($provinsi_get as $keyp) {
 			# code...
-			$data['provinsi'] = $keyp->provinsi;
+			$data['provinsi'] = $keyp->nm_wil;
 		}
 		$this->load->view('cetakReg',$data);
 
