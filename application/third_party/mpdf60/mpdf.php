@@ -810,7 +810,7 @@ var $innerblocktags;
 // **********************************
 // **********************************
 
-function mPDF($mode='',$format='A4',$default_font_size=0,$default_font='',$mgl=15,$mgr=15,$mgt=16,$mgb=16,$mgh=9,$mgf=9, $orientation='P') {
+function __construct($mode='',$format='A4',$default_font_size=0,$default_font='',$mgl=15,$mgr=15,$mgt=16,$mgb=16,$mgh=9,$mgf=9, $orientation='P') {
 
 /*-- BACKGROUNDS --*/
 		if (!class_exists('grad', false)) { include(_MPDF_PATH.'classes/grad.php'); }
@@ -2861,7 +2861,7 @@ function SetColor($col, $type='') {
 	else if ($col[0]==2) {	// SPOT COLOR
 		$out = sprintf('/CS%d cs %.3F scn',ord($col[1]),ord($col[2])/100);
 	}
-	else if ($col[0]==4 || $col{0}==6) {	// CMYK / CMYKa
+	else if ($col[0]==4 || $col[0]==6) {	// CMYK / CMYKa
 		$out = sprintf('%.3F %.3F %.3F %.3F k', ord($col[1])/100, ord($col[2])/100, ord($col[3])/100, ord($col[4])/100);
 	}
 	if ($type=='Draw') { $out = strtoupper($out); }	// e.g. rg => RG
@@ -4859,7 +4859,7 @@ function applyGPOSpdf($txt, $aix, $x, $y, $OTLdata, $textvar=0 ) {
 
 			// Get YPlacement from next Base character
 			$nextbase = $i+1;
-			while($OTLdata['group']{$nextbase}!='C') { $nextbase++; }
+			while($OTLdata['group'][$nextbase]!='C') { $nextbase++; }
 			if (isset($GPOSinfo[$nextbase]) && isset($GPOSinfo[$nextbase]['YPlacement']) && $GPOSinfo[$nextbase]['YPlacement']) { 
 				$YPlacement = $GPOSinfo[$nextbase]['YPlacement'] * $this->FontSizePt / $this->CurrentFont['unitsPerEm']; 
 			}
