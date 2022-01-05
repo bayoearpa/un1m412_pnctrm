@@ -133,7 +133,7 @@ class Welcome extends CI_Controller {
 		$pdfFilePath="cetak_registrasi.pdf";
 		$html=$this->load->view('cetakReg',$data, TRUE);
 		$pdf = $this->m_pdf->load();
- 
+ 		ob_clean();
         $pdf->AddPage('P');
         $pdf->WriteHTML($html);
         $pdf->Output($pdfFilePath, "D");
