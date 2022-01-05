@@ -125,7 +125,7 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MENU UTAMA</li>
-        <li class="active treeview">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Pembayaran</span>
             <span class="pull-right-container">
@@ -137,7 +137,7 @@
             <li><a href="#"><i class="fa fa-paperclip"></i>Rekap</a></li>
           </ul>
         </li>
-         <li class="active treeview">
+         <li class="treeview">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Summary 2021</span>
             <span class="pull-right-container">
@@ -187,7 +187,7 @@
             <!-- /.box-header -->
             <div class="box-body" style="">
               Total
-              <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_all('tbl_catar_2021')->num_rows(); ?><sup style="font-size: 20px"></span>
+              <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_all('tbl_catar_2022')->num_rows(); ?><sup style="font-size: 20px"></span>
             </div>
             <div class="box-body" style="">
               Sudah Validasi
