@@ -133,20 +133,20 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="index.html"><i class="fa fa-money"></i>Pembayaran</a></li>
-            <li><a href="index2.html"><i class="fa fa-paperclip"></i>Rekap</a></li>
+            <li class="active"><a href="#"><i class="fa fa-money"></i>Pembayaran</a></li>
+            <li><a href="#"><i class="fa fa-paperclip"></i>Rekap</a></li>
           </ul>
         </li>
          <li class="active treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Pembayaran</span>
+            <i class="fa fa-dashboard"></i> <span>Summary 2021</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="index.html"><i class="fa fa-money"></i>Pembayaran</a></li>
-            <li><a href="index2.html"><i class="fa fa-paperclip"></i>Rekap</a></li>
+            <li class="active"><a href="#"><i class="fa fa-money"></i>Statistik per Provinsi</a></li>
+            <li><a href="#"><i class="fa fa-paperclip"></i>Statistik per sekolah</a></li>
           </ul>
         </li>
 
