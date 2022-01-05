@@ -1,7 +1,7 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 class M_pdf {
     
-    function m_pdf()
+    function __construct()
     {
         $CI = & get_instance();
         log_message('Debug', 'mPDF class is loaded.');
