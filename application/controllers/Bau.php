@@ -35,7 +35,7 @@ class Bau extends CI_Controller {
     {
         # code...
         $where = array(
-            'tbl_catar_2021.no' => $id       
+            'tbl_catar_2022.no' => $id       
         );
         $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2022')->result();
         // $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
