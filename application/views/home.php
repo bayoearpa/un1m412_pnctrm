@@ -400,7 +400,7 @@
                <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/kpn2.png" alt=""> -->
                <p><i class="fa fa-question-circle"></i>Syarat :</p>
               <ul>
-                <li>Usia max 23 tahun pada bulan September 2022.</li>
+                <!-- <li>Usia max 23 tahun pada bulan September 2022.</li> -->
                 <li>Pria atau wanita</li>
                 <li>Belum menikah dan sanggup tidak menikah selama masa pendidikan yang dibuktikan dengan surat keterangan belum pernah menikah.</li> 
                 <li>Tinggi badan minimal Pria 160 Cm dan Wanita 155 Cm.</li>
@@ -671,7 +671,7 @@
                <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/tra2.png" alt=""> -->
                <p><i class="fa fa-question-circle"></i>Syarat :</p>
                 <ul>
-                <li>Usia max 23 tahun pada bulan September 2022.</li>
+                <!-- <li>Usia max 23 tahun pada bulan September 2022.</li> -->
                 <li>Pria atau wanita</li>
                 <li>Belum menikah dan sanggup tidak menikah selama masa pendidikan yang dibuktikan dengan surat keterangan belum pernah menikah.</li> 
                 <li>Tinggi badan minimal Pria 160 Cm dan Wanita 155 Cm.</li>
@@ -761,7 +761,7 @@
                <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/tm2.png" alt=""> -->
              <p><i class="fa fa-question-circle"></i>Syarat :</p>
               <ul>
-                <li>Usia max 23 tahun pada bulan September 2022.</li>
+                <!-- <li>Usia max 23 tahun pada bulan September 2022.</li> -->
                 <li>Pria atau wanita</li>
                 <li>Belum menikah dan sanggup tidak menikah selama masa pendidikan yang dibuktikan dengan surat keterangan belum pernah menikah.</li> 
                 <li>Copy Ijazah:</li>
@@ -855,7 +855,7 @@
                <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/ttl2.png" alt=""> -->
                <p><i class="fa fa-question-circle"></i>Syarat :</p>
                 <ul>
-                <li>Usia max 23 tahun pada bulan September 2022.</li>
+                <!-- <li>Usia max 23 tahun pada bulan September 2022.</li> -->
                 <li>Pria atau wanita</li>
                 <li>Belum menikah dan sanggup tidak menikah selama masa pendidikan yang dibuktikan dengan surat keterangan belum pernah menikah.</li> 
                 <li>Copy Ijazah:</li>
@@ -946,7 +946,7 @@
                <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/tk2.png" alt=""> -->
                <p><i class="fa fa-question-circle"></i>Syarat :</p>
                 <ul>
-                <li>Usia max 23 tahun pada bulan September 2022.</li>
+                <!-- <li>Usia max 23 tahun pada bulan September 2022.</li> -->
                 <li>Pria atau wanita</li>
                 <li>Belum menikah dan sanggup tidak menikah selama masa pendidikan yang dibuktikan dengan surat keterangan belum pernah menikah.</li> 
                 <li>Copy Ijazah:</li>
@@ -1037,7 +1037,7 @@
                <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/pi2.png" alt=""> -->
                <p><i class="fa fa-question-circle"></i>Syarat :</p>
                 <ul>
-                <li>Usia max 23 tahun pada bulan September 2022.</li>
+                <!-- <li>Usia max 23 tahun pada bulan September 2022.</li> -->
                 <li>Pria atau wanita</li>
                 <li>Belum menikah dan sanggup tidak menikah selama masa pendidikan yang dibuktikan dengan surat keterangan belum pernah menikah.</li> 
                 <li>Copy Ijazah:</li>

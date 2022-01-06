@@ -88,25 +88,6 @@
                     <td><b>Rp. 500.000,-</b></td>
                   </tr>
                 </table>
-                <li>Bukti Pembayaran dapat dikirim melalui :</li>
-                <table>
-                  <tr>
-                    <td><b>No. WA</b></td>
-                    <td><b>:</b></td>
-                    <td><b>0822.46.900.800</b></td>
-                  </tr>
-                  <tr>
-                    <td colspan="3">Dengan mencantumkan informasi :</td>
-                  </tr>
-                  <tr>
-                    <td colspan="3"><b>No. Pendaftaran Online_Nama Pendaftar_Prodi yang dipilih_Periode Pendaftaran</b></td>
-                  </tr>
-                  <tr>
-                    <td>Contoh</td>
-                    <td>:</td>
-                    <td><b>1234_Rian Ardianto_Transportasi_Januari</b></td>
-                  </tr>
-                </table>
                
                 <li>Pemberkasan dilaksanakan setelah pendaftaran dinyatakan <b>DITERIMA</b></li>
               </ul>

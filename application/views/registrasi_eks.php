@@ -252,12 +252,13 @@
                   <label>Informasi (mendapatkan informasi tentang UNIMAR "AMNI" Semarang)</label>
                   <select class="form-control" name="informasi" id="informasi">
                     <option> </option>
-                    <option value="1">Koran</option>
-                    <option value="2">Internet</option>
-                    <option value="3">Teman</option>
+                    <option value="1">Senior / Kakak kelas</option>
+                    <option value="2">Sosial Media</option>
+                    <option value="3">Keluarga / Saudara / teman</option>
                     <option value="4">Alumni</option>
                     <option value="5">Brosur</option>
                     <option value="5">Expo</option>
+                    <option value="6">Sekolah / Guru</option>
                   </select>
                 </div>
                 <div class="form-group">
