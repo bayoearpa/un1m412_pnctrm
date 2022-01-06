@@ -105,6 +105,18 @@ class Bau extends CI_Controller {
         $this->load->view('bau/cetak',$data);
 
     }
+
+    ///////////////////////////////////////////////////////summary///////////////////////////////////////////
+    public function get_summary_prov_2021()
+    {
+        # code...
+        $data['stat'] = $this->m_registrasi->get_data_statistic_prov_2021()->result();
+
+        $this->load->view('bau/header');
+        $this->load->view('bau/validasi',$data);
+        $this->load->view('bau/footer');
+
+    }
     
    
 }

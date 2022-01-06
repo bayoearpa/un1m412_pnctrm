@@ -19,27 +19,14 @@
                 <tbody>
                 <?php 
                 $no = 1;
-                foreach($catar as $c){ 
+                foreach($stat as $c){ 
                  ?>
                 <tr>
                   <td><?php echo $no++; ?></td>
-                  <td><?php echo $c->no ?></td>
-                  <td><?php echo $c->nama ?></td>
+                  <td><?php echo $c->nama_provinsi ?></td>
+                  <td><?php echo $c->jml_pendaftar ?></td>
                   <td>
-
-                  <?php 
-                  $where = array(
-                  'no' => $c->no,
-                  'aktif' => "1"       
-                  );
-                  $cek=$this->m_registrasi->get_data($where,'tbl_catar_validasi_2021')->row();
-                   ?>
-                  <?php 
-                  if ($cek > "0"){ ?>
-                    <a class="btn btn-success btn-sm" href="#"><i class="fa fa-check-circle"></i> Validasi</a> 
-                  <?php }else{ ?>
-                    <a class="btn btn-warning btn-sm" href="<?php echo base_url().'bau/validasi/'.$c->no; ?>"><i class="fa fa-check-circle"></i>Belum Validasi</a>
-                  <?php }?>
+                    <a class="btn btn-success btn-sm" href="#"><i class="fa fa-check-circle"></i> Lihat</a> 
                  </td>
                 </tr>
                <?php } ?>
