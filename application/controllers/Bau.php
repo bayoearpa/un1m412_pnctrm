@@ -113,7 +113,7 @@ class Bau extends CI_Controller {
         $data['stat'] = $this->m_registrasi->get_data_statistic_prov_2021()->result();
 
         $this->load->view('bau/header');
-        $this->load->view('bau/validasi',$data);
+        $this->load->view('bau/summary_2021_prov',$data);
         $this->load->view('bau/footer');
 
     }
