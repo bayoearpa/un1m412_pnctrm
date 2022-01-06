@@ -51,6 +51,20 @@ class m_registrasi extends CI_Model
 	return $this->db->get()->row('ta');
 
 	}
+	function get_data_wilayah($where){
+		$this->db->select('tbl_kabkota.id_wil AS id_kota,
+		tbl_kabkota.nm_wil AS kabkota,
+		tbl_kabkota.id_induk_wil AS id_prov_ref,
+		tbl_propinsi.id_wil AS id_prov,
+		tbl_propinsi.nm_wil AS provinsi');
+		$this->db->from('tbl_propinsi');
+		$this->db->join('tbl_kabkota','tbl_propinsi.id_wil = tbl_kabkota.id_induk_wil','inner');
+		$this->db->where($where);
+		$query=$this->db->get();
+		return $query;
+
+		
+	}
 	function get_data_join_all(){
 		$this->db->select('tbl_catar_2022.no,
 		tbl_catar_2022.nama,

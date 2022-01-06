@@ -119,13 +119,14 @@ class Welcome extends CI_Controller {
 		$data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2022')->result();
 		foreach ($data['catar'] as $key) {
 			# code...
-			$po = $key->provinsi;
-			$where_prov = array('id_wil' => $po);
+			$po = $key->ktkb;
+			$where_prov = array('tbl_kabkota.id_wil' => $po);
 		}
-		$provinsi_get = $this->m_registrasi->get_data($where_prov,'tbl_propinsi')->result();
+		$provinsi_get = $this->m_registrasi->get_data_wilayah($where_prov)->result();
 		foreach ($provinsi_get as $keyp) {
 			# code...
-			$data['provinsi'] = $keyp->nm_wil;
+			$data['kabkota'] = $keyp->kabkota;
+			$data['provinsi'] = $keyp->provinsi;
 		}
 		$this->load->view('cetakReg',$data);
 
