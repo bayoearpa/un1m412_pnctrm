@@ -75,7 +75,7 @@
                   <tr>
                     <td><b>BANK BNI</b></td>
                     <td><b>:</b></td>
-                    <td><b>an. STIMART AMNI</b></td>
+                    <td><b>an. UNIMAR AMNI</b></td>
                   </tr>
                   <tr>
                     <td><b>No. Rekening</b></td>
