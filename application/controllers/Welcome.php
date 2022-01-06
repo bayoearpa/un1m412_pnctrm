@@ -97,14 +97,14 @@ class Welcome extends CI_Controller {
 
 
 			$where = array('no' => $no);
-			$datax = $this->m_registrasi->get_data($where,'tbl_catar_validasi_2021');
+			$datax = $this->m_registrasi->get_data($where,'tbl_catar_validasi_2022');
 			$cek = $datax->num_rows();
 
 		if ($cek > 0) {
 			# code...
 				//get data
 			$where2 = array('no' => $no);
-			$data['catar'] = $this->m_registrasi->get_data($where2,'tbl_catar_2021')->result();
+			$data['catar'] = $this->m_registrasi->get_data($where2,'tbl_catar_2022')->result();
 		}else{
 			$data['catar'] = null ;
 			// $data['status'] = "Anda Belum tervalidasi...";
