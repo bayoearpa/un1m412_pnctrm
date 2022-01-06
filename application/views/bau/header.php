@@ -133,7 +133,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="#"><i class="fa fa-money"></i>Pembayaran</a></li>
+            <li class="active"><a href="<?php echo base_url() ?>bau/index"><i class="fa fa-money"></i>Pembayaran</a></li>
             <li><a href="#"><i class="fa fa-paperclip"></i>Rekap</a></li>
           </ul>
         </li>

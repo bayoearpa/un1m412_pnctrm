@@ -25,9 +25,6 @@
                   <td><?php echo $no++; ?></td>
                   <td><?php echo $c->nama_provinsi ?></td>
                   <td><?php echo $c->jml_pendaftar ?></td>
-                  <td>
-                    <a class="btn btn-success btn-sm" href="#"><i class="fa fa-check-circle"></i> Lihat</a> 
-                 </td>
                 </tr>
                <?php } ?>
                 </tbody>
