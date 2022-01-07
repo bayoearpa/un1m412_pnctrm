@@ -33,6 +33,7 @@
                   <td><?php echo $c->tl ?></td>
                   <td><?php echo $c->tgl_l ?></td>
                   <td><?php echo $c->nama_i?></td>
+                  <td><?php echo $c->provinsi?></td>
                 </tr>
                <?php } ?>
                 </tbody>
