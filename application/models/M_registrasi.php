@@ -233,6 +233,7 @@ class m_registrasi extends CI_Model
 		count(no) as jml_pendaftar');
 		$this->db->from('tbl_catar_2021');
 		$this->db->join('tbl_provinsi','tbl_catar_2021.provinsi = tbl_provinsi.id_provinsi','inner');
+		$this->db->join('tbl_catar_validasi_2021','tbl_catar_validasi_2021.no = tbl_catar_2021.no','inner');
 		$this->db->group_by('tbl_catar_2021.provinsi');
 		$this->db->order_by('count(*)', 'DESC');
 		$query=$this->db->get();
