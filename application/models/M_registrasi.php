@@ -187,7 +187,7 @@ class m_registrasi extends CI_Model
 	}
 	function get_data_statistic_prov_2021(){
 		$this->db->select('tbl_catar_2021.provinsi,
-		tbl_provinsi.id_wil as id_provinsi,
+		tbl_provinsi.id_provinsi as id_provinsi,
 		tbl_provinsi.provinsi as nama_provinsi,
 		count(no) as jml_pendaftar');
 		$this->db->from('tbl_catar_2021');
