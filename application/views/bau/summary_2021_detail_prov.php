@@ -4,7 +4,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Data Pencatarma</h3>
+              <h3 class="box-title">Rekap Pendaftar per Provinsi</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -18,6 +18,7 @@
                   <th>Tempat Lahir</th>
                   <th>Tanggal Lahir</th>
                   <th>Nama Ibu</th>
+                  <th>Provinsi</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -43,6 +44,7 @@
                   <th>Tempat Lahir</th>
                   <th>Tanggal Lahir</th>
                   <th>Nama Ibu</th>
+                  <th>Provinsi</th>
                 </tr>
                 </tfoot>
               </table>
