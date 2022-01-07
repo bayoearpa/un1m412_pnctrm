@@ -143,6 +143,47 @@ class m_registrasi extends CI_Model
 
 		
 	}
+	function get_data_join_where_2021($where){
+		$this->db->select('tbl_catar_2021.no,
+		tbl_catar_2021.nama,
+		tbl_catar_2021.tl,
+		tbl_catar_2021.tgl_l,
+		tbl_catar_2021.agama,
+		tbl_catar_2021.jk,
+		tbl_catar_2021.alamat,
+		tbl_catar_2021.ktkb,
+		tbl_catar_2021.provinsi,
+		tbl_catar_2021.telp,
+		tbl_catar_2021.kategori_sek,
+		tbl_catar_2021.prodi_lama,
+		tbl_catar_2021.thn_lulus,
+		tbl_catar_2021.asek,
+		tbl_catar_2021.alamat_sek,
+		tbl_catar_2021.nama_a,
+		tbl_catar_2021.nama_i,
+		tbl_catar_2021.alamat_ortu,
+		tbl_catar_2021.telp_ortu,
+		tbl_catar_2021.prodi,
+		tbl_catar_2021.kelas,
+		tbl_catar_2021.gelombang,
+		tbl_catar_validasi_2021.val_id,
+		tbl_catar_validasi_2021.no,
+		tbl_catar_validasi_2021.gelombang,
+		tbl_catar_validasi_2021.tgl_byr,
+		tbl_catar_validasi_2021.prodi,
+		tbl_catar_validasi_2021.no_reg,
+		tbl_catar_validasi_2021.jml_byr,
+		tbl_catar_validasi_2021.aktif as aktif,
+		tbl_catar_validasi_2021.thn_pel as thn_pel');
+		$this->db->from('tbl_catar_2021');
+		$this->db->join('tbl_catar_validasi_2021','tbl_catar_validasi_2021.no = tbl_catar_2021.no','inner');
+		$this->db->where($where);
+		$this->db->order_by('tbl_catar_validasi_2021.no_reg', "asc");
+		$query=$this->db->get();
+		return $query;
+
+		
+	}
 
 	function get_data_join_where_row($where){
 		$this->db->select('tbl_catar_2022.no,

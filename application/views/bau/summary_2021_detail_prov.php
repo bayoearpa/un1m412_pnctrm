@@ -8,6 +8,7 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
+              <a href="<?php echo base_url() ?>bau/summary_2021_prov"><button type="button" class="btn btn-success pull-left"><i class="fa fa-chevron-left"></i>Kembali</button></a>
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
