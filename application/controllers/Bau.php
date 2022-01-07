@@ -120,7 +120,7 @@ class Bau extends CI_Controller {
     public function get_summary_prov_detail_2021($id)
     {
         # code...
-        $where = array('id_provinsi' => $id);
+        $where = array('provinsi' => $id);
         $data['stat'] = $this->m_registrasi->get_data_join_where_2021($where)->result();
         $this->load->view('bau/header');
         $this->load->view('bau/summary_2021_detail_prov',$data);
