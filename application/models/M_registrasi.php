@@ -250,6 +250,19 @@ class m_registrasi extends CI_Model
 		$query=$this->db->get();
 		return $query;
 	}
+	function get_data_statistic_sekolah_2021(){
+		$this->db->select('tbl_catar_2021.asek as asal_sekolah,
+		Count(tbl_catar_2021.asek) as jml_pendaftar,
+		tbl_catar_2021.provinsi as id_provinsi,
+		tbl_catar_2021.alamat_sek as almt_sek,
+		tbl_catar_2021.ktkb as kotakab');
+		$this->db->from('tbl_catar_2021');
+		$this->db->join('tbl_catar_validasi_2021','tbl_catar_2021.no = tbl_catar_validasi_2021.no','inner');
+		$this->db->group_by('tbl_catar_2021.asek');
+		$this->db->order_by('Count(tbl_catar_2021.asek)', 'DESC');
+		$query=$this->db->get();
+		return $query;
+	}
 }
 
 

@@ -106,7 +106,7 @@ class Bau extends CI_Controller {
 
     }
 
-    ///////////////////////////////////////////////////////summary///////////////////////////////////////////
+    ///////////////////////////////////////////////////////summary 2021///////////////////////////////////////////
     public function getnamaprovinsi_2021($id)
     {
         # code...
@@ -137,6 +137,27 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/summary_2021_detail_prov',$data);
         $this->load->view('bau/footer');
+    }
+    public function get_summary_prov_2021()
+    {
+        # code...
+        $data['bau'] = $this;
+        //get sma
+        $w_sma = array('tbl_catar_2021.kategori_sek' => 'sma');
+        $data['stat_sma'] = $this->m_registrasi->get_data_statistic_sekolah_2021($w_sma)->result();
+
+        //get smk
+        $w_smk = array('tbl_catar_2021.kategori_sek' => 'smk');
+        $data['stat_smk'] = $this->m_registrasi->get_data_statistic_sekolah_2021($w_smk)->result();
+
+        //get ma
+        $w_ma = array('tbl_catar_2021.kategori_sek' => 'ma');
+        $data['stat_ma'] = $this->m_registrasi->get_data_statistic_sekolah_2021($w_ma)->result();
+
+        $this->load->view('bau/header');
+        $this->load->view('bau/summary_2021_sekolah',$data);
+        $this->load->view('bau/footer');
+
     }
     
    
