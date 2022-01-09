@@ -250,7 +250,7 @@ class m_registrasi extends CI_Model
 		$query=$this->db->get();
 		return $query;
 	}
-	function get_data_statistic_sekolah_2021(){
+	function get_data_statistic_sekolah_2021($where){
 		$this->db->select('tbl_catar_2021.asek as asal_sekolah,
 		Count(tbl_catar_2021.asek) as jml_pendaftar,
 		tbl_catar_2021.provinsi as id_provinsi,
