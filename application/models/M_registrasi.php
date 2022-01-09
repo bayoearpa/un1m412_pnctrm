@@ -260,6 +260,7 @@ class m_registrasi extends CI_Model
 		$this->db->join('tbl_catar_validasi_2021','tbl_catar_2021.no = tbl_catar_validasi_2021.no','inner');
 		$this->db->group_by('tbl_catar_2021.asek');
 		$this->db->order_by('Count(tbl_catar_2021.asek)', 'DESC');
+		$this->db->where($where);
 		$query=$this->db->get();
 		return $query;
 	}
