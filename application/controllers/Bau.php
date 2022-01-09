@@ -110,8 +110,8 @@ class Bau extends CI_Controller {
     public function getnamaprovinsi_2021($id)
     {
         # code...
-        $where = array('provinsi' => $id);
-        $get = $this->m_registrasi->get_data($where, 'tbl_provinsi')->result();
+        $where = array('id_provinsi' => $id);
+        $get = $this->m_registrasi->get_data($where,'tbl_provinsi')->result();
         foreach ($get as $key) {
             # code...
             $nama = $key->provinsi;
