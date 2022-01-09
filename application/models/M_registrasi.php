@@ -265,32 +265,7 @@ class m_registrasi extends CI_Model
 		$query=$this->db->get();
 		return $query;
 	}
-	/////////////////////////////////////////////summary 2020/////////////////////////////////////////////////////////
-		function get_data_statistic_prov_2020(){
-		$this->db->select('tbl_catar.provinsi as id_provinsi,
-		Count(tbl_catar.no) as jml_pendaftar');
-		$this->db->from('tbl_catar');
-		$this->db->join('tbl_catar_validasi','tbl_catar.no = tbl_catar_validasi.no','inner');
-		$this->db->group_by('tbl_catar.provinsi');
-		$this->db->order_by('count(tbl_catar.no)', 'DESC');
-		$query=$this->db->get();
-		return $query;
-	}
-	function get_data_statistic_sekolah_2020($where){
-		$this->db->select('tbl_catar.asek as asal_sekolah,
-		Count(tbl_catar.asek) as jml_pendaftar,
-		tbl_catar.provinsi as id_provinsi,
-		tbl_catar.alamat_sek as almt_sek,
-		tbl_catar.ktkb as kotakab');
-		$this->db->from('tbl_catar');
-		$this->db->join('tbl_catar_validasi','tbl_catar.no = tbl_catar_validasi.no','inner');
-		$this->db->group_by('tbl_catar.asek');
-		$this->db->order_by('Count(tbl_catar.asek)', 'DESC');
-		$this->db->where($where);
-		$query=$this->db->get();
-		return $query;
-	}
-
+	
 	/////////////////////////////////////summary 2020/////////////////////////////////////////////////////////////////
 	function get_data_statistic_sekolah_2020($where){
 		$this->db->select('tbl_catar.asek as asal_sekolah,
@@ -306,7 +281,7 @@ class m_registrasi extends CI_Model
 		$query=$this->db->get();
 		return $query;
 	}
-	
+
 }
 
 
