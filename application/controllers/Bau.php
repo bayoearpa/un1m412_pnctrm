@@ -164,7 +164,7 @@ class Bau extends CI_Controller {
     public function get_summary_sekolah_2020()
     {
         # code...
-        //$data['bau'] = $this;
+        $data['bau'] = $this;
         //get sma
         $w_sma = array('tbl_catar.kategori_sek' => 'SMA');
         $data['stat_sma'] = $this->m_registrasi->get_data_statistic_sekolah_2020($w_sma)->result();
