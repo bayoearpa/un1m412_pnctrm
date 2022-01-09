@@ -226,7 +226,7 @@ class m_registrasi extends CI_Model
 
 		
 	}
-	function get_data_statistic_prov_2021(){
+	function get_data_statistic_prov_2021_old(){
 		$this->db->select('tbl_catar_2021.provinsi,
 		tbl_provinsi.id_provinsi as id_provinsi,
 		tbl_provinsi.provinsi as nama_provinsi,
@@ -236,6 +236,17 @@ class m_registrasi extends CI_Model
 		$this->db->join('tbl_catar_validasi_2021','tbl_catar_2021.no = tbl_catar_validasi_2021.no','inner');
 		$this->db->group_by('tbl_catar_2021.provinsi');
 		$this->db->order_by('count(*)', 'DESC');
+		$query=$this->db->get();
+		return $query;
+	}
+
+	function get_data_statistic_prov_2021(){
+		$this->db->select('tbl_catar_2021.provinsi as id_provinsi,
+		Count(tbl_catar_2021.no) as jml_pendaftar');
+		$this->db->from('tbl_catar_2021');
+		$this->db->join('tbl_catar_validasi_2021','tbl_catar_2021.no = tbl_catar_validasi_2021.no','inner');
+		$this->db->group_by('tbl_catar_2021.provinsi');
+		$this->db->order_by('count(tbl_catar_2021.no)', 'DESC');
 		$query=$this->db->get();
 		return $query;
 	}

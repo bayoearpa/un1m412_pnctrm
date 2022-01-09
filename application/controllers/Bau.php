@@ -107,9 +107,21 @@ class Bau extends CI_Controller {
     }
 
     ///////////////////////////////////////////////////////summary///////////////////////////////////////////
+    public function getnamaprovinsi_2021($id)
+    {
+        # code...
+        $where = array('provinsi' => $id);
+        $get = $this->m_registrasi->get_data($where, 'tbl_provinsi')->result();
+        foreach ($get as $key) {
+            # code...
+            $nama = $key->provinsi;
+        }
+        return $nama;
+    }
     public function get_summary_prov_2021()
     {
         # code...
+        $data['bau'] = $this;
         $data['stat'] = $this->m_registrasi->get_data_statistic_prov_2021()->result();
 
         $this->load->view('bau/header');
