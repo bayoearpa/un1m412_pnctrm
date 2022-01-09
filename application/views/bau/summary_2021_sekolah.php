@@ -62,7 +62,7 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-              <table id="example1" class="table table-bordered table-striped">
+              <table id="example2" class="table table-bordered table-striped">
                 <thead>
                 <tr>
                   <th>No.</th>
@@ -85,7 +85,6 @@
                   <td><?php echo $c->almt_sek ?></td>
                   <td><?php echo $c->kotakab ?></td>
                   <td><?php echo $bau->getnamaprovinsi_2021($c->id_provinsi) ?></td>
-                  
                 </tr>
                <?php } ?>
                 </tbody>
@@ -116,7 +115,7 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-              <table id="example1" class="table table-bordered table-striped">
+              <table id="example3" class="table table-bordered table-striped">
                 <thead>
                 <tr>
                   <th>No.</th>
