@@ -146,7 +146,7 @@
           </a>
           <ul class="treeview-menu">
             <li class="active"><a href="<?php echo base_url() ?>bau/get_summary_prov_2021"><i class="fa fa-money"></i>Statistik per Provinsi</a></li>
-            <li><a href="#"><i class="fa fa-paperclip"></i>Statistik per sekolah</a></li>
+            <li><a href="<?php echo base_url() ?>bau/get_summary_sekolah_2021"><i class="fa fa-paperclip"></i>Statistik per sekolah</a></li>
           </ul>
         </li>
 

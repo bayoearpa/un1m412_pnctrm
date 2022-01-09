@@ -138,7 +138,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/summary_2021_detail_prov',$data);
         $this->load->view('bau/footer');
     }
-    public function get_summary_prov_2021()
+    public function get_summary_sekolah_2021()
     {
         # code...
         $data['bau'] = $this;
