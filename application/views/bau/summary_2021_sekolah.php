@@ -26,7 +26,7 @@
                  ?>
                 <tr>
                   <td><?php echo $no++; ?></td>
-                  <td><?php echo $c->jml_asal_sekolah ?></td>
+                  <td><?php echo $c->asal_sekolah ?></td>
                   <td><?php echo $c->jml_pendaftar ?></td>
                   <td><?php echo $c->almt_sek ?></td>
                   <td><?php echo $c->kotakab ?></td>
@@ -80,7 +80,7 @@
                  ?>
                 <tr>
                   <td><?php echo $no++; ?></td>
-                  <td><?php echo $c->jml_asal_sekolah ?></td>
+                  <td><?php echo $c->asal_sekolah ?></td>
                   <td><?php echo $c->jml_pendaftar ?></td>
                   <td><?php echo $c->almt_sek ?></td>
                   <td><?php echo $c->kotakab ?></td>
@@ -134,7 +134,7 @@
                  ?>
                 <tr>
                   <td><?php echo $no++; ?></td>
-                  <td><?php echo $c->jml_asal_sekolah ?></td>
+                  <td><?php echo $c->asal_sekolah ?></td>
                   <td><?php echo $c->jml_pendaftar ?></td>
                   <td><?php echo $c->almt_sek ?></td>
                   <td><?php echo $c->kotakab ?></td>
