@@ -143,15 +143,15 @@ class Bau extends CI_Controller {
         # code...
         $data['bau'] = $this;
         //get sma
-        $w_sma = array('tbl_catar_2021.kategori_sek' => 'sma');
+        $w_sma = array('tbl_catar_2021.kategori_sek' => 'SMA');
         $data['stat_sma'] = $this->m_registrasi->get_data_statistic_sekolah_2021($w_sma)->result();
 
         //get smk
-        $w_smk = array('tbl_catar_2021.kategori_sek' => 'smk');
+        $w_smk = array('tbl_catar_2021.kategori_sek' => 'SMK');
         $data['stat_smk'] = $this->m_registrasi->get_data_statistic_sekolah_2021($w_smk)->result();
 
         //get ma
-        $w_ma = array('tbl_catar_2021.kategori_sek' => 'ma');
+        $w_ma = array('tbl_catar_2021.kategori_sek' => 'MA');
         $data['stat_ma'] = $this->m_registrasi->get_data_statistic_sekolah_2021($w_ma)->result();
 
         $this->load->view('bau/header');
