@@ -300,7 +300,7 @@ class m_registrasi extends CI_Model
 	function get_data_statistic_sumber_all_2020(){
 		$this->db->select('Count(tbl_catar.informasi) as informasi');
 		$this->db->from('tbl_catar');
-		$this->db->where($where);
+		// $this->db->where($where);
 		$query=$this->db->get();
 		return $query;
 	}
