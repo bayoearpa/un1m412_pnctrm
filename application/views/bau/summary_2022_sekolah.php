@@ -4,7 +4,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Rekap Pendaftar per Sekolah (D3) 2021</h3>
+              <h3 class="box-title">Rekap Pendaftar per Sekolah (D3) 2022</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -57,7 +57,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Rekap Pendaftar per Sekolah (SMA) 2021</h3>
+              <h3 class="box-title">Rekap Pendaftar per Sekolah (SMA) 2022</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -111,7 +111,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Rekap Pendaftar per Sekolah (SMK) 2021</h3>
+              <h3 class="box-title">Rekap Pendaftar per Sekolah (SMK) 2022</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -164,7 +164,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Rekap Pendaftar per Sekolah (MA) 2021</h3>
+              <h3 class="box-title">Rekap Pendaftar per Sekolah (MA) 2022</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">

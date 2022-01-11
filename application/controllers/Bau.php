@@ -117,6 +117,39 @@ class Bau extends CI_Controller {
         }
         return $nama;
     }
+      public function getnamakabkota_2022($id)
+    {
+        # code...
+        $where = array('id_wil' => $id);
+        $get = $this->m_registrasi->get_data($where,'tbl_kabkota')->result();
+        foreach ($get as $key) {
+            # code...
+            $nama = $key->nm_wil;
+        }
+        return $nama;
+    }
+     public function get_summary_kabkota_2022()
+    {
+        # code...
+        $data['bau'] = $this;
+        $data['stat'] = $this->m_registrasi->get_data_statistic_kabkota_2022()->result();
+
+        $this->load->view('bau/header');
+        $this->load->view('bau/summary_2022_kabkota',$data);
+        $this->load->view('bau/footer');
+
+    }
+     public function get_summary_prov_2022()
+    {
+        # code...
+        $data['bau'] = $this;
+        $data['stat'] = $this->m_registrasi->get_data_statistic_prov_2022()->result();
+
+        $this->load->view('bau/header');
+        $this->load->view('bau/summary_2022_prov',$data);
+        $this->load->view('bau/footer');
+
+    }
      public function get_summary_sekolah_2022()
     {
         # code...

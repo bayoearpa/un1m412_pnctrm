@@ -227,6 +227,26 @@ class m_registrasi extends CI_Model
 		
 	}
 	////////////////////summary 2022///////////////////////////////////////////////////////////////////////////
+	function get_data_statistic_kabkota_2022(){
+		$this->db->select('tbl_catar_2022.ktkb as id_provinsi,
+		Count(tbl_catar_2022.no) as jml_pendaftar');
+		$this->db->from('tbl_catar_2022');
+		$this->db->join('tbl_catar_validasi_2022','tbl_catar_2022.no = tbl_catar_validasi_2022.no','inner');
+		$this->db->group_by('tbl_catar_2022.ktkb');
+		$this->db->order_by('count(tbl_catar_2022.no)', 'DESC');
+		$query=$this->db->get();
+		return $query;
+	}
+	function get_data_statistic_prov_2022(){
+		$this->db->select('tbl_catar_2022.provinsi as id_provinsi,
+		Count(tbl_catar_2022.no) as jml_pendaftar');
+		$this->db->from('tbl_catar_2022');
+		$this->db->join('tbl_catar_validasi_2022','tbl_catar_2022.no = tbl_catar_validasi_2022.no','inner');
+		$this->db->group_by('tbl_catar_2022.provinsi');
+		$this->db->order_by('count(tbl_catar_2022.no)', 'DESC');
+		$query=$this->db->get();
+		return $query;
+	}
 	function get_data_statistic_sekolah_2022($where){
 		$this->db->select('tbl_catar_2022.asek as asal_sekolah,
 		Count(tbl_catar_2022.asek) as jml_pendaftar,
@@ -257,19 +277,19 @@ class m_registrasi extends CI_Model
 	}
 
 	////////////////////summary 2021///////////////////////////////////////////////////////////////////////////
-	function get_data_statistic_prov_2021_old(){
-		$this->db->select('tbl_catar_2021.provinsi,
-		tbl_provinsi.id_provinsi as id_provinsi,
-		tbl_provinsi.provinsi as nama_provinsi,
-		count(no) as jml_pendaftar');
-		$this->db->from('tbl_catar_2021');
-		$this->db->join('tbl_provinsi','tbl_catar_2021.provinsi = tbl_provinsi.id_provinsi','inner');
-		$this->db->join('tbl_catar_validasi_2021','tbl_catar_2021.no = tbl_catar_validasi_2021.no','inner');
-		$this->db->group_by('tbl_catar_2021.provinsi');
-		$this->db->order_by('count(*)', 'DESC');
-		$query=$this->db->get();
-		return $query;
-	}
+	// function get_data_statistic_prov_2021_old(){
+	// 	$this->db->select('tbl_catar_2021.provinsi,
+	// 	tbl_provinsi.id_provinsi as id_provinsi,
+	// 	tbl_provinsi.provinsi as nama_provinsi,
+	// 	count(no) as jml_pendaftar');
+	// 	$this->db->from('tbl_catar_2021');
+	// 	$this->db->join('tbl_provinsi','tbl_catar_2021.provinsi = tbl_provinsi.id_provinsi','inner');
+	// 	$this->db->join('tbl_catar_validasi_2021','tbl_catar_2021.no = tbl_catar_validasi_2021.no','inner');
+	// 	$this->db->group_by('tbl_catar_2021.provinsi');
+	// 	$this->db->order_by('count(*)', 'DESC');
+	// 	$query=$this->db->get();
+	// 	return $query;
+	// }
 
 	function get_data_statistic_prov_2021(){
 		$this->db->select('tbl_catar_2021.provinsi as id_provinsi,
