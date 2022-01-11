@@ -178,6 +178,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/summary_2021_sumber',$data);
         $this->load->view('bau/footer');
+        $this->load->view('bau/summary_2021_sumber_js',$data);
 
     }
 
