@@ -5,11 +5,11 @@
      */
 
     var donutData = [
-     { label: 'Koran', data: <?php echo $lpm->get_summary_sumber_2021_send('1') ?>, color: '#f20b0b' },
-      { label: 'Internet', data: <?php echo $lpm->get_summary_sumber_2021_send('2') ?>, color: '#ffad5f' },
-      { label: 'Teman', data: <?php echo $lpm->get_summary_sumber_2021_send('3') ?>, color: '#ffd966' },
-      { label: 'Alumni', data: <?php echo $lpm->get_summary_sumber_2021_send('4') ?>, color: '#9af073' },
-      { label: 'Brosur', data: <?php echo $lpm->get_summary_sumber_2021_send('5') ?>, color: '#89ddfc' }
+     { label: 'Koran', data: <?php echo $bau->get_summary_sumber_2021_send('1') ?>, color: '#f20b0b' },
+      { label: 'Internet', data: <?php echo $bau->get_summary_sumber_2021_send('2') ?>, color: '#ffad5f' },
+      { label: 'Teman', data: <?php echo $bau->get_summary_sumber_2021_send('3') ?>, color: '#ffd966' },
+      { label: 'Alumni', data: <?php echo $bau->get_summary_sumber_2021_send('4') ?>, color: '#9af073' },
+      { label: 'Brosur', data: <?php echo $bau->get_summary_sumber_2021_send('5') ?>, color: '#89ddfc' }
     ]
     $.plot('#donut-chart', donutData, {
         series: {
