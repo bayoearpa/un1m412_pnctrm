@@ -106,6 +106,17 @@ class Bau extends CI_Controller {
 
     }
     ///////////////////////////////////////////////////////summary 2022///////////////////////////////////////////
+     public function getnamaprovinsi_2022($id)
+    {
+        # code...
+        $where = array('id_wil' => $id);
+        $get = $this->m_registrasi->get_data($where,'tbl_propinsi')->result();
+        foreach ($get as $key) {
+            # code...
+            $nama = $key->nm_wil;
+        }
+        return $nama;
+    }
      public function get_summary_sekolah_2022()
     {
         # code...
@@ -113,7 +124,7 @@ class Bau extends CI_Controller {
 
          //get sma
         $w_d3 = array('tbl_catar_2022.kategori_sek' => 'D3');
-        $data['stat_sma'] = $this->m_registrasi->get_data_statistic_sekolah_2022($w_d3)->result();
+        $data['stat_d3'] = $this->m_registrasi->get_data_statistic_sekolah_2022($w_d3)->result();
 
         //get sma
         $w_sma = array('tbl_catar_2022.kategori_sek' => 'SMA');

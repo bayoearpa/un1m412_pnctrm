@@ -233,7 +233,7 @@ class m_registrasi extends CI_Model
 		tbl_catar_2022.provinsi as id_provinsi,
 		tbl_catar_2022.alamat_sek as almt_sek,
 		tbl_catar_2022.ktkb as kotakab');
-		$this->db->from('tbl_catar_2021');
+		$this->db->from('tbl_catar_2022');
 		$this->db->join('tbl_catar_validasi_2022','tbl_catar_2022.no = tbl_catar_validasi_2022.no','inner');
 		$this->db->group_by('tbl_catar_2022.asek');
 		$this->db->order_by('Count(tbl_catar_2022.asek)', 'DESC');
