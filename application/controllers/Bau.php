@@ -137,11 +137,19 @@ class Bau extends CI_Controller {
     {
         # code...
         $where = array('informasi' => $sumber);
-        $data= $this->m_registrasi->get_data($where, 'tbl_catar_2022')->num_rows();
+        // get data all
+        $data= $this->m_registrasi->get_data_statistic_sumber_all_2022()->result();
         foreach ($data as $key) {
             # code...
-            $send = $key->informasi;
+            $all = $key->informasi;
         }
+        //get data where
+        $data2= $this->m_registrasi->get_data_statistic_sumber_where_2022($where)->result();
+        foreach ($data2 as $key) {
+            # code...
+            $whr = $key->informasi;
+        }
+        $send = ($whr/$all)*100;
         return $send;
 
     }
@@ -213,11 +221,19 @@ class Bau extends CI_Controller {
     {
         # code...
         $where = array('informasi' => $sumber);
-        $data= $this->m_registrasi->get_data($where, 'tbl_catar_2021')->num_rows();
+        // get data all
+        $data= $this->m_registrasi->get_data_statistic_sumber_all_2021()->result();
         foreach ($data as $key) {
             # code...
-            $send = $key->informasi;
+            $all = $key->informasi;
         }
+        //get data where
+        $data2= $this->m_registrasi->get_data_statistic_sumber_where_2021($where)->result();
+        foreach ($data2 as $key) {
+            # code...
+            $whr = $key->informasi;
+        }
+        $send = ($whr/$all)*100;
         return $send;
 
     }
