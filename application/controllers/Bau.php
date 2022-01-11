@@ -159,6 +159,27 @@ class Bau extends CI_Controller {
         $this->load->view('bau/footer');
 
     }
+    public function get_summary_sumber_2021_send($sumber)
+    {
+        # code...
+        $where = array('informasi' => $sumber);
+        $data= $this->m_registrasi->get_data($where, 'tbl_catar_2021')->result();
+        foreach ($data as $key) {
+            # code...
+            $send = $key->informasi;
+        }
+        return $send;
+
+    }
+    public function get_summary_sumber_2021_send($sumber)
+    {
+        # code...
+        $data['bau'] = $this;
+        $this->load->view('bau/header');
+        $this->load->view('bau/summary_2021_sumber',$data);
+        $this->load->view('bau/footer');
+
+    }
 
     /////////////////////////////////////////////////summary 2020///////////////////////////////////////////
     public function get_summary_sekolah_2020()
