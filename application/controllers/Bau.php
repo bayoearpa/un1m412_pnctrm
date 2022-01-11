@@ -253,12 +253,19 @@ class Bau extends CI_Controller {
     {
         # code...
         $where = array('informasi' => $sumber);
-        $data= $this->m_registrasi->get_data($where, 'tbl_catar')->num_rows();
+        // get data all
+        $data= $this->m_registrasi->get_data_statistic_sumber_all_2020()->result();
         foreach ($data as $key) {
             # code...
-            $send = $key->informasi;
+            $all = $key->informasi;
         }
-        return $send;
+        //get data where
+        $data= $this->m_registrasi->get_data_statistic_sumber_where_2020($where)->result();
+        foreach ($data as $key) {
+            # code...
+            $whr = $key->informasi;
+        }
+        return $send = ($whr/$all)*100;
 
     }
     public function get_summary_sumber_2020()
