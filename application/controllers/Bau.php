@@ -260,8 +260,8 @@ class Bau extends CI_Controller {
             $all = $key->informasi;
         }
         //get data where
-        $data= $this->m_registrasi->get_data_statistic_sumber_where_2020($where)->result();
-        foreach ($data as $key) {
+        $data2= $this->m_registrasi->get_data_statistic_sumber_where_2020($where)->result();
+        foreach ($data2 as $key) {
             # code...
             $whr = $key->informasi;
         }
