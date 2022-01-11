@@ -54,6 +54,14 @@
 <!-- DataTables -->
 <script src="<?php echo base_url() ?>assets/front2/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
 <script src="<?php echo base_url() ?>assets/front2/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<!-- ChartJS -->
+<script src="<?php echo base_url() ?>assets/2/bower_components/Chart.js/Chart.js"></script>
+<!-- FLOT CHARTS -->
+<script src="<?php echo base_url() ?>assets/2/bower_components/Flot/jquery.flot.js"></script>
+<!-- FLOT PIE PLUGIN - also used to draw donut charts -->
+<script src="<?php echo base_url() ?>assets/2/bower_components/Flot/jquery.flot.pie.js"></script>
+<!-- FLOT RESIZE PLUGIN - allows the chart to redraw when the window is resized -->
+<script src="<?php echo base_url() ?>assets/2/bower_components/Flot/jquery.flot.resize.js"></script>
 <script>
   $(function () {
     $('#example1').DataTable()
