@@ -241,6 +241,20 @@ class m_registrasi extends CI_Model
 		$query=$this->db->get();
 		return $query;
 	}
+	function get_data_statistic_sumber_all_2022(){
+		$this->db->select('Count(tbl_catar_2022.informasi) as informasi');
+		$this->db->from('tbl_catar_2022');
+		// $this->db->where($where);
+		$query=$this->db->get();
+		return $query;
+	}
+	function get_data_statistic_sumber_where_2022($where){
+		$this->db->select('Count(tbl_catar_2022.informasi) as informasi ');
+		$this->db->from('tbl_catar_2022');
+		$this->db->where($where);
+		$query=$this->db->get();
+		return $query;
+	}
 
 	////////////////////summary 2021///////////////////////////////////////////////////////////////////////////
 	function get_data_statistic_prov_2021_old(){
@@ -277,6 +291,20 @@ class m_registrasi extends CI_Model
 		$this->db->join('tbl_catar_validasi_2021','tbl_catar_2021.no = tbl_catar_validasi_2021.no','inner');
 		$this->db->group_by('tbl_catar_2021.asek');
 		$this->db->order_by('Count(tbl_catar_2021.asek)', 'DESC');
+		$this->db->where($where);
+		$query=$this->db->get();
+		return $query;
+	}
+	function get_data_statistic_sumber_all_2021(){
+		$this->db->select('Count(tbl_catar_2021.informasi) as informasi');
+		$this->db->from('tbl_catar_2021');
+		// $this->db->where($where);
+		$query=$this->db->get();
+		return $query;
+	}
+	function get_data_statistic_sumber_where_2021($where){
+		$this->db->select('Count(tbl_catar_2021.informasi) as informasi ');
+		$this->db->from('tbl_catar_2021');
 		$this->db->where($where);
 		$query=$this->db->get();
 		return $query;
