@@ -10,7 +10,7 @@
             <div class="box-body">
              
              <!--/////////////////////////////////////// konten -->
-              <div id="donut-chart-2021" style="height: 300px;width: 100%;"></div>
+              <div id="donut-chart" style="height: 300px;width: 100%;"></div>
 
             </div>
             <!-- /.box-body -->
