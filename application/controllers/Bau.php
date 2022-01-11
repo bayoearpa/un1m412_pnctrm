@@ -265,7 +265,8 @@ class Bau extends CI_Controller {
             # code...
             $whr = $key->informasi;
         }
-        return $send = ($whr/$all)*100;
+        $send = ($whr/$all)*100;
+        return $send;
 
     }
     public function get_summary_sumber_2020()
