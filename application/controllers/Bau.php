@@ -132,7 +132,7 @@ class Bau extends CI_Controller {
     {
         # code...
         $where = array('informasi' => $sumber);
-        $data= $this->m_registrasi->get_data($where, 'tbl_catar_2022')->result();
+        $data= $this->m_registrasi->get_data($where, 'tbl_catar_2022')->num_rows();
         foreach ($data as $key) {
             # code...
             $send = $key->informasi;
@@ -208,7 +208,7 @@ class Bau extends CI_Controller {
     {
         # code...
         $where = array('informasi' => $sumber);
-        $data= $this->m_registrasi->get_data($where, 'tbl_catar_2021')->result();
+        $data= $this->m_registrasi->get_data($where, 'tbl_catar_2021')->num_rows();
         foreach ($data as $key) {
             # code...
             $send = $key->informasi;
@@ -253,7 +253,7 @@ class Bau extends CI_Controller {
     {
         # code...
         $where = array('informasi' => $sumber);
-        $data= $this->m_registrasi->get_data($where, 'tbl_catar')->result();
+        $data= $this->m_registrasi->get_data($where, 'tbl_catar')->num_rows();
         foreach ($data as $key) {
             # code...
             $send = $key->informasi;
