@@ -171,7 +171,7 @@ class Bau extends CI_Controller {
         return $send;
 
     }
-    public function get_summary_sumber_2021($sumber)
+    public function get_summary_sumber_2021()
     {
         # code...
         $data['bau'] = $this;
