@@ -257,8 +257,8 @@
                     <option value="3">Keluarga / Saudara / teman</option>
                     <option value="4">Alumni</option>
                     <option value="5">Brosur</option>
-                    <option value="5">Expo</option>
-                    <option value="6">Sekolah / Guru</option>
+                    <option value="6">Expo</option>
+                    <option value="7">Sekolah / Guru</option>
                   </select>
                 </div>
                 <div class="form-group">

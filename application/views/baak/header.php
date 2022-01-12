@@ -125,13 +125,7 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MENU UTAMA</li>
-         <li class="active treeview">
-          <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Summary</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
+         <li class="treeview">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Rekapitulasi Catar</span>
             <span class="pull-right-container">
@@ -154,7 +148,46 @@
 
           </ul>
         </li>
-
+         <li class="treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Summary 2022</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="<?php echo base_url() ?>baak/get_summary_prov_2022"><i class="fa fa-money"></i>Statistik per Provinsi</a></li>
+            <li class="active"><a href="<?php echo base_url() ?>baak/get_summary_kabkota_2022"><i class="fa fa-money"></i>Statistik per Kab / Kota</a></li>
+            <li><a href="<?php echo base_url() ?>baak/get_summary_sekolah_2022"><i class="fa fa-paperclip"></i>Statistik per sekolah</a></li>
+            <li><a href="<?php echo base_url() ?>baak/get_summary_sumber_2022"><i class="fa fa-paperclip"></i>Statistik Sumber Informasi</a></li>
+          </ul>
+        </li>
+         <li class="treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Summary 2021</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="<?php echo base_url() ?>baak/get_summary_prov_2021"><i class="fa fa-money"></i>Statistik per Provinsi</a></li>
+            <li><a href="<?php echo base_url() ?>baak/get_summary_sekolah_2021"><i class="fa fa-paperclip"></i>Statistik per sekolah</a></li>
+            <li><a href="<?php echo base_url() ?>baak/get_summary_sumber_2021"><i class="fa fa-paperclip"></i>Statistik Sumber Informasi</a></li>
+          </ul>
+        </li>
+         <li class="treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Summary 2020</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+           <!--  <li class="active"><a href="<?php //echo base_url() ?>bau/get_summary_prov_2021"><i class="fa fa-money"></i>Statistik per Provinsi</a></li> -->
+            <li><a href="<?php echo base_url() ?>baak/get_summary_sekolah_2020"><i class="fa fa-paperclip"></i>Statistik per sekolah</a></li>
+            <li><a href="<?php echo base_url() ?>baak/get_summary_sumber_2020"><i class="fa fa-paperclip"></i>Statistik Sumber Informasi</a></li>
+          </ul>
+        </li>
       </ul>
     </section>
     <!-- /.sidebar -->
