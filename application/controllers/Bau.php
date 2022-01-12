@@ -100,7 +100,7 @@ class Bau extends CI_Controller {
         $where = array('val_id' => $lastid);
         $data['validasi'] = $this->m_registrasi->get_data($where,'tbl_catar_validasi_2022')->result();
         $where2 = array('no' => $no);
-        $data['catar'] = $this->m_registrasi->get_data($where2,'tbl_catar_2021')->result();
+        $data['catar'] = $this->m_registrasi->get_data($where2,'tbl_catar_2022')->result();
 
         $this->load->view('bau/cetak',$data);
 
