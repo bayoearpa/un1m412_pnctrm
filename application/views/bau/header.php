@@ -189,7 +189,7 @@
     <section class="content-header" style="margin-bottom: 0px;padding-bottom: 0px;">
       <h1>
         Selamat Datang
-        <small>Di Sistem Informasi Administrasi Pencatarma STIMART "AMNI" Semarang</small>
+        <small>Di Sistem Informasi Administrasi Pencatarma UNIMAR AMNI Semarang</small>
       </h1>
 
     </section>

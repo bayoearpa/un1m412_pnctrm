@@ -4,7 +4,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Rekap Pendaftar berdasarkan informasi 2022</h3>
+              <h3 class="box-title">Rekap Pendaftar per Provinsi 2021</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">

@@ -1888,6 +1888,246 @@ class Baak extends CI_Controller {
         $this->load->view('baak/rekap_ctk_seleksi_exl_pmdk',$data);   
     }
 
+        ///////////////////////////////////////////////////////summary 2022///////////////////////////////////////////
+     public function getnamaprovinsi_2022($id)
+    {
+        # code...
+        $where = array('id_wil' => $id);
+        $get = $this->m_registrasi->get_data($where,'tbl_propinsi')->result();
+        foreach ($get as $key) {
+            # code...
+            $nama = $key->nm_wil;
+        }
+        return $nama;
+    }
+      public function getnamakabkota_2022($id)
+    {
+        # code...
+        $where = array('id_wil' => $id);
+        $get = $this->m_registrasi->get_data($where,'tbl_kabkota')->result();
+        foreach ($get as $key) {
+            # code...
+            $nama = $key->nm_wil;
+        }
+        return $nama;
+    }
+     public function get_summary_kabkota_2022()
+    {
+        # code...
+        $data['bau'] = $this;
+        $data['stat'] = $this->m_registrasi->get_data_statistic_kabkota_2022()->result();
+
+        $this->load->view('baak/header');
+        $this->load->view('baak/summary_2022_kabkota',$data);
+        $this->load->view('baak/footer');
+
+    }
+     public function get_summary_prov_2022()
+    {
+        # code...
+        $data['bau'] = $this;
+        $data['stat'] = $this->m_registrasi->get_data_statistic_prov_2022()->result();
+
+        $this->load->view('baak/header');
+        $this->load->view('baak/summary_2022_prov',$data);
+        $this->load->view('baak/footer');
+
+    }
+     public function get_summary_sekolah_2022()
+    {
+        # code...
+        $data['bau'] = $this;
+
+         //get sma
+        $w_d3 = array('tbl_catar_2022.kategori_sek' => 'D3');
+        $data['stat_d3'] = $this->m_registrasi->get_data_statistic_sekolah_2022($w_d3)->result();
+
+        //get sma
+        $w_sma = array('tbl_catar_2022.kategori_sek' => 'SMA');
+        $data['stat_sma'] = $this->m_registrasi->get_data_statistic_sekolah_2022($w_sma)->result();
+
+        //get smk
+        $w_smk = array('tbl_catar_2022.kategori_sek' => 'SMK');
+        $data['stat_smk'] = $this->m_registrasi->get_data_statistic_sekolah_2022($w_smk)->result();
+
+        //get ma
+        $w_ma = array('tbl_catar_2022.kategori_sek' => 'MA');
+        $data['stat_ma'] = $this->m_registrasi->get_data_statistic_sekolah_2022($w_ma)->result();
+
+        $this->load->view('baak/header');
+        $this->load->view('baak/summary_2022_sekolah',$data);
+        $this->load->view('baak/footer');
+
+    }
+
+     public function get_summary_sumber_2022_send($sumber)
+    {
+        # code...
+        $where = array('informasi' => $sumber);
+        // get data all
+        $data= $this->m_registrasi->get_data_statistic_sumber_all_2022()->result();
+        foreach ($data as $key) {
+            # code...
+            $all = $key->informasi;
+        }
+        //get data where
+        $data2= $this->m_registrasi->get_data_statistic_sumber_where_2022($where)->result();
+        foreach ($data2 as $key) {
+            # code...
+            $whr = $key->informasi;
+        }
+        $send = ($whr/$all)*100;
+        return $send;
+
+    }
+    public function get_summary_sumber_2022()
+    {
+        # code...
+        $data['bau'] = $this;
+        $this->load->view('baak/header');
+        $this->load->view('baak/summary_2022_sumber',$data);
+        $this->load->view('baak/footer');
+        $this->load->view('baak/summary_2022_sumber_js',$data);
+
+    }
+
+    ///////////////////////////////////////////////////////summary 2021///////////////////////////////////////////
+    public function getnamaprovinsi_2021($id)
+    {
+        # code...
+        $where = array('id_provinsi' => $id);
+        $get = $this->m_registrasi->get_data($where,'tbl_provinsi')->result();
+        foreach ($get as $key) {
+            # code...
+            $nama = $key->provinsi;
+        }
+        return $nama;
+    }
+    public function get_summary_prov_2021()
+    {
+        # code...
+        $data['bau'] = $this;
+        $data['stat'] = $this->m_registrasi->get_data_statistic_prov_2021()->result();
+
+        $this->load->view('baak/header');
+        $this->load->view('baak/summary_2021_prov',$data);
+        $this->load->view('baak/footer');
+
+    }
+    public function get_summary_prov_detail_2021($id)
+    {
+        # code...
+        $where = array('provinsi' => $id);
+        $data['stat'] = $this->m_registrasi->get_data_join_where_2021($where)->result();
+        $this->load->view('baak/header');
+        $this->load->view('baak/summary_2021_detail_prov',$data);
+        $this->load->view('baak/footer');
+    }
+    public function get_summary_sekolah_2021()
+    {
+        # code...
+        $data['bau'] = $this;
+        //get sma
+        $w_sma = array('tbl_catar_2021.kategori_sek' => 'SMA');
+        $data['stat_sma'] = $this->m_registrasi->get_data_statistic_sekolah_2021($w_sma)->result();
+
+        //get smk
+        $w_smk = array('tbl_catar_2021.kategori_sek' => 'SMK');
+        $data['stat_smk'] = $this->m_registrasi->get_data_statistic_sekolah_2021($w_smk)->result();
+
+        //get ma
+        $w_ma = array('tbl_catar_2021.kategori_sek' => 'MA');
+        $data['stat_ma'] = $this->m_registrasi->get_data_statistic_sekolah_2021($w_ma)->result();
+
+        $this->load->view('bau/header');
+        $this->load->view('bau/summary_2021_sekolah',$data);
+        $this->load->view('bau/footer');
+
+    }
+    public function get_summary_sumber_2021_send($sumber)
+    {
+        # code...
+        $where = array('informasi' => $sumber);
+        // get data all
+        $data= $this->m_registrasi->get_data_statistic_sumber_all_2021()->result();
+        foreach ($data as $key) {
+            # code...
+            $all = $key->informasi;
+        }
+        //get data where
+        $data2= $this->m_registrasi->get_data_statistic_sumber_where_2021($where)->result();
+        foreach ($data2 as $key) {
+            # code...
+            $whr = $key->informasi;
+        }
+        $send = ($whr/$all)*100;
+        return $send;
+
+    }
+    public function get_summary_sumber_2021()
+    {
+        # code...
+        $data['bau'] = $this;
+        $this->load->view('baak/header');
+        $this->load->view('baak/summary_2021_sumber',$data);
+        $this->load->view('baak/footer');
+        $this->load->view('baak/summary_2021_sumber_js',$data);
+
+    }
+
+    /////////////////////////////////////////////////summary 2020///////////////////////////////////////////
+    public function get_summary_sekolah_2020()
+    {
+        # code...
+        $data['bau'] = $this;
+        //get sma
+        $w_sma = array('tbl_catar.kategori_sek' => 'SMA');
+        $data['stat_sma'] = $this->m_registrasi->get_data_statistic_sekolah_2020($w_sma)->result();
+
+        //get smk
+        $w_smk = array('tbl_catar.kategori_sek' => 'SMK');
+        $data['stat_smk'] = $this->m_registrasi->get_data_statistic_sekolah_2020($w_smk)->result();
+
+        //get ma
+        $w_ma = array('tbl_catar.kategori_sek' => 'MA');
+        $data['stat_ma'] = $this->m_registrasi->get_data_statistic_sekolah_2020($w_ma)->result();
+
+        $this->load->view('baak/header');
+        $this->load->view('baak/summary_2020_sekolah',$data);
+        $this->load->view('baak/footer');
+
+    }
+     public function get_summary_sumber_2020_send($sumber)
+    {
+        # code...
+        $where = array('informasi' => $sumber);
+        // get data all
+        $data= $this->m_registrasi->get_data_statistic_sumber_all_2020()->result();
+        foreach ($data as $key) {
+            # code...
+            $all = $key->informasi;
+        }
+        //get data where
+        $data2= $this->m_registrasi->get_data_statistic_sumber_where_2020($where)->result();
+        foreach ($data2 as $key) {
+            # code...
+            $whr = $key->informasi;
+        }
+        $send = ($whr/$all)*100;
+        return $send;
+
+    }
+    public function get_summary_sumber_2020()
+    {
+        # code...
+        $data['bau'] = $this;
+        $this->load->view('baak/header');
+        $this->load->view('baak/summary_2020_sumber',$data);
+        $this->load->view('baak/footer');
+        $this->load->view('baak/summary_2020_sumber_js',$data);
+
+    }
+
 }
   
 
