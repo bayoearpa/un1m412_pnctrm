@@ -76,8 +76,8 @@ page-break-after: always;
 <body>
 <br><br>
 <table align="center" width="100%">
-		<tr><td align="center"><h3>SEKOLAH TINGGI MARITIM DAN TRANSPOR "AMNI"</h3></td></tr>
-		<tr><td align="center"><h3>( STIMART "AMNI" )</h3></td></tr>
+		<tr><td align="center"><h3>UNIVERSITAS MARITIM AMNI</h3></td></tr>
+		<tr><td align="center"><h3>( UNIMAR AMNI )</h3></td></tr>
 	</table>
 <?php 
 foreach($validasi as $v){ 
