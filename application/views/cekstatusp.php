@@ -133,7 +133,7 @@
             ?>
              <div class="box-body">        
                 <div class="form-group" align="center">
-                  <label for="exampleInputEmail1">Selamat <?php echo  ucwords($c->nama) ?> Anda telah terdaftar sebagai Calon Taruna / Mahasiswa UNIMAR AMNI Semarang. Silakan cek jadwal tes seleksi yang telah di tampilkan di <a href="http://pencatarma.stimart-amni.ac.id">Website Pencatarma</a>.Untuk download lembar registrasi dapat klik tombol di bawah ini</label>
+                  <label for="exampleInputEmail1">Selamat <?php echo  ucwords($c->nama) ?> Anda telah terdaftar sebagai Calon Taruna / Mahasiswa UNIMAR AMNI Semarang. Silakan cek jadwal tes seleksi yang telah di tampilkan di <a href="http://pencatarma.unimar-amni.ac.id">Website Pencatarma</a>.Untuk download lembar registrasi dapat klik tombol di bawah ini</label>
                 </div>  
                 <div class="form-group" align="center">
                   <a href="<?php echo base_url() ?>download/<?php echo $c->no ?>"><button type="button" name="submit" class="btn btn-primary">Download</button></a>
