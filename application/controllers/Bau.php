@@ -240,6 +240,17 @@ class Bau extends CI_Controller {
         $this->load->view('bau/summary_2021_detail_prov',$data);
         $this->load->view('bau/footer');
     }
+     public function get_summary_ktkb_2021()
+    {
+        # code...
+        // $data['bau'] = $this;
+        $data['stat'] = $this->m_registrasi->get_data_statistic_ktkb_2021()->result();
+
+        $this->load->view('baak/header');
+        $this->load->view('baak/summary_2021_ktkb',$data);
+        $this->load->view('baak/footer');
+
+    }
     public function get_summary_sekolah_2021()
     {
         # code...

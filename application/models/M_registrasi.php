@@ -301,6 +301,16 @@ class m_registrasi extends CI_Model
 		$query=$this->db->get();
 		return $query;
 	}
+	function get_data_statistic_ktkb_2021(){
+		$this->db->select('tbl_catar_2021.ktkb as ktkb,
+		Count(tbl_catar_2021.no) as jml_pendaftar');
+		$this->db->from('tbl_catar_2021');
+		$this->db->join('tbl_catar_validasi_2021','tbl_catar_2021.no = tbl_catar_validasi_2021.no','inner');
+		$this->db->group_by('tbl_catar_2021.ktkb');
+		$this->db->order_by('count(tbl_catar_2021.no)', 'DESC');
+		$query=$this->db->get();
+		return $query;
+	}
 	function get_data_statistic_sekolah_2021($where){
 		$this->db->select('tbl_catar_2021.asek as asal_sekolah,
 		Count(tbl_catar_2021.asek) as jml_pendaftar,
