@@ -85,6 +85,7 @@ class Dekan extends CI_Controller {
         );
         $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2022')->result();
         $this->load->view('dekan/header');
+        $this->load->view('dekan/data_pendf_per_bln');
         $this->load->view('dekan/data_pendf_per_blnp',$data);
         $this->load->view('dekan/footer');
     }
