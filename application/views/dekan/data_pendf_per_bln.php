@@ -4,14 +4,14 @@
         <div class="col-xs-12">
           <div class="box box-primary">
                 <div class="box-header with-border">
-                  <h3 class="box-title">Rekap Daftar Hadir Peserta </h3>
+                  <h3 class="box-title">Rekap Daftar Peserta Per Gelombang </h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
                 
                   <div class="box-body">
                   <div class="form-group">
                       <form method="post" action="<?php echo base_url() ?>baak/rekap_pdf_daftarhadirpeserta_pmdk">
-                      <label> Pilih Jurusan
+                      <label> Pilih Prodi
                     </label>
                     <select name="prodi" id="prodi" class="form-control" style="width:50%;">  
                     <option selected>== Pilih ==</option>
