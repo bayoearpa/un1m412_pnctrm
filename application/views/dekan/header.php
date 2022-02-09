@@ -127,13 +127,14 @@
         <li class="header">MENU UTAMA</li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Pembayaran</span>
+            <i class="fa fa-dashboard"></i> <span>Data</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="<?php echo base_url() ?>dekan/"><i class="fa fa-money"></i>Data</a></li>
+            <li class="active"><a href="<?php echo base_url() ?>dekan/"><i class="fa fa-money"></i>Data Semua</a></li>
+            <li class="active"><a href="<?php echo base_url() ?>dekan/data_per_periode"><i class="fa fa-money"></i>Data Per Gelombang</a></li>
             <!-- <li><a href="index2.html"><i class="fa fa-paperclip"></i>Rekap</a></li> -->
           </ul>
         </li>

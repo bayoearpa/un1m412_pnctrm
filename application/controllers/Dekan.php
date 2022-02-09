@@ -67,6 +67,13 @@ class Dekan extends CI_Controller {
         $this->load->view('dekan/index',$data);
         $this->load->view('dekan/footer');
 	}
+    public function data_per_periode()
+    {
+        # code...
+        $this->load->view('dekan/header');
+        $this->load->view('dekan/data_pendf_per_bln');
+        $this->load->view('dekan/footer');
+    }
 	    ///////////////////////////////////////////////////////summary 2022///////////////////////////////////////////
      public function getnamaprovinsi_2022($id)
     {
