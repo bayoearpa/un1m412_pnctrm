@@ -142,7 +142,7 @@
           </a>
         </div>
          <div class="text-center mt-4">
-           <center><h1 class="text-uppercase"> PENGUMUMAN KELULUSAN PERIODE MARET</h1></center>
+           <center><h4 class="text-uppercase"> PENGUMUMAN KELULUSAN PERIODE MARET</h4></center>
           <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="https://unimar-amni.ac.id/new/2022/04/01/pengumuman-calon-mahasiswa-taruna-universitas-maritim-amni-semarang-yang-dinyatakan-lulus-dan-diterima-periode-januari-maret-ta-2022-2023/" target="__blank">
             <i class="fa fa-sign-in mr-2"></i>
             <font color="black">Cek Disini</font>
