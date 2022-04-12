@@ -89,6 +89,7 @@
                   </tr>
                 </table>
                 <li>Pemberkasan dilaksanakan setelah pendaftaran dinyatakan <b>DITERIMA</b></li>
+                <li>Segala bentuk biaya pendaftaran yang sudah di setorkan ke UNIMAR AMNI Semarang <b>tidak dapat ditarik/diminta kembali</b> dengan alasan apapun</li>
               </ul>
         </div>
         <div class="box box-default">
