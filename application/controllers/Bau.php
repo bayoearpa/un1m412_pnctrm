@@ -118,7 +118,7 @@ class Bau extends CI_Controller {
         # code...
         $prodi      = $this->input->post('prodi');
         $gelombang  = $this->input->post('gelombang');
-        if ($prodi==null) {
+        if ($prodi == 0) {
              # code...
             $where = array(
             'tbl_catar_2022.gelombang' => $gelombang,
@@ -130,7 +130,7 @@ class Bau extends CI_Controller {
             $this->load->view('bau/rekap_validasi');
             $this->load->view('bau/rekap_validasip',$data);
             $this->load->view('bau/footer');
-         }elseif ($gelombang==null) {
+         }elseif ($gelombang == null) {
              # code...
              $where = array(
             // 'gelombang' => $gelombang,

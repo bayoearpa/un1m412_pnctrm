@@ -14,7 +14,7 @@
                       <label> Pilih Prodi
                     </label>
                     <select name="prodi" id="prodi" class="form-control" style="width:50%;">  
-                    <option selected>== Pilih ==</option>
+                    <option value="0" selected>== Pilih ==</option>
                     <option value="1">D3 Ketatalaksanaan Pelayaran Niaga dan Kepelabuhanan</option>
                     <option value="2">D3 Teknika</option>
                     <option value="3">D3 Nautika</option>
