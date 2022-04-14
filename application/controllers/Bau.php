@@ -121,7 +121,7 @@ class Bau extends CI_Controller {
         if ($prodi==null) {
              # code...
             $where = array(
-            'gelombang' => $gelombang,
+            'tbl_catar_2022.gelombang' => $gelombang,
             // 'prodi'     => $prodi,                 
              );
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
@@ -134,7 +134,7 @@ class Bau extends CI_Controller {
              # code...
              $where = array(
             // 'gelombang' => $gelombang,
-            'prodi'     => $prodi,                 
+            'tbl_catar_2022.prodi'     => $prodi,                 
              );
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
             $data['label'] = "by Prodi";
@@ -144,8 +144,8 @@ class Bau extends CI_Controller {
             $this->load->view('bau/footer');
          }else{
             $where = array(
-            'gelombang' => $gelombang,
-            'prodi'     => $prodi,                 
+            'tbl_catar_2022.gelombang' => $gelombang,
+            'tbl_catar_2022.prodi'     => $prodi,                 
             );
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
             $data['label'] = "by Prodi & Gelombang";
