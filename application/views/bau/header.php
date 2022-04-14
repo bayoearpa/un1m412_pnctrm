@@ -133,10 +133,11 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="<?php echo base_url() ?>bau/index"><i class="fa fa-money"></i>Pembayaran</a></li>
-            <li><a href="#"><i class="fa fa-paperclip"></i>Rekap</a></li>
+            <li><a href="<?php echo base_url() ?>bau/index"><i class="fa fa-money"></i>Pembayaran</a></li>
+            <li><a href="<?php echo base_url() ?>bau/rekap_validasi"><i class="fa fa-paperclip"></i>Rekap Validasi</a></li>
           </ul>
         </li>
+
          <li class="treeview">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Summary 2022</span>

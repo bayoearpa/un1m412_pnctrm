@@ -105,6 +105,57 @@ class Bau extends CI_Controller {
         $this->load->view('bau/cetak',$data);
 
     }
+    /////////////////////////////////////////////////////// rekap validasi ///////////////////////////////////////
+     public function rekap_validasi()
+    {
+        # code...
+        $this->load->view('dekan/header');
+        $this->load->view('dekan/rekap_validasi');
+        $this->load->view('dekan/footer');
+    }
+    public function rekap_validasip()
+    {
+        # code...
+        $prodi      = $this->input->post('prodi');
+        $gelombang  = $this->input->post('gelombang');
+        if ($prodi==null) {
+             # code...
+            $where = array(
+            'gelombang' => $gelombang,
+            // 'prodi'     => $prodi,                 
+             );
+            $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+            $data['label'] = "by Gelombang";
+            $this->load->view('dekan/header');
+            $this->load->view('dekan/rekap_validasi');
+            $this->load->view('dekan/rekap_validasip',$data);
+            $this->load->view('dekan/footer');
+         }elseif ($gelombang==null) {
+             # code...
+             $where = array(
+            // 'gelombang' => $gelombang,
+            'prodi'     => $prodi,                 
+             );
+            $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+            $data['label'] = "by Prodi";
+            $this->load->view('dekan/header');
+            $this->load->view('dekan/rekap_validasi');
+            $this->load->view('dekan/rekap_validasip',$data);
+            $this->load->view('dekan/footer');
+         }else{
+            $where = array(
+            'gelombang' => $gelombang,
+            'prodi'     => $prodi,                 
+            );
+            $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+            $data['label'] = "by Prodi & Gelombang";
+            $this->load->view('dekan/header');
+            $this->load->view('dekan/rekap_validasi');
+            $this->load->view('dekan/rekap_validasip',$data);
+            $this->load->view('dekan/footer');
+         } 
+        
+    }
     ///////////////////////////////////////////////////////summary 2022///////////////////////////////////////////
      public function getnamaprovinsi_2022($id)
     {
