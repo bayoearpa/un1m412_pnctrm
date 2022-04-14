@@ -109,9 +109,9 @@ class Bau extends CI_Controller {
      public function rekap_validasi()
     {
         # code...
-        $this->load->view('dekan/header');
-        $this->load->view('dekan/rekap_validasi');
-        $this->load->view('dekan/footer');
+        $this->load->view('bau/header');
+        $this->load->view('bau/rekap_validasi');
+        $this->load->view('bau/footer');
     }
     public function rekap_validasip()
     {
@@ -126,10 +126,10 @@ class Bau extends CI_Controller {
              );
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
             $data['label'] = "by Gelombang";
-            $this->load->view('dekan/header');
-            $this->load->view('dekan/rekap_validasi');
-            $this->load->view('dekan/rekap_validasip',$data);
-            $this->load->view('dekan/footer');
+            $this->load->view('bau/header');
+            $this->load->view('bau/rekap_validasi');
+            $this->load->view('bau/rekap_validasip',$data);
+            $this->load->view('bau/footer');
          }elseif ($gelombang==null) {
              # code...
              $where = array(
@@ -138,10 +138,10 @@ class Bau extends CI_Controller {
              );
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
             $data['label'] = "by Prodi";
-            $this->load->view('dekan/header');
-            $this->load->view('dekan/rekap_validasi');
-            $this->load->view('dekan/rekap_validasip',$data);
-            $this->load->view('dekan/footer');
+            $this->load->view('bau/header');
+            $this->load->view('bau/rekap_validasi');
+            $this->load->view('bau/rekap_validasip',$data);
+            $this->load->view('bau/footer');
          }else{
             $where = array(
             'gelombang' => $gelombang,
@@ -149,10 +149,10 @@ class Bau extends CI_Controller {
             );
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
             $data['label'] = "by Prodi & Gelombang";
-            $this->load->view('dekan/header');
-            $this->load->view('dekan/rekap_validasi');
-            $this->load->view('dekan/rekap_validasip',$data);
-            $this->load->view('dekan/footer');
+            $this->load->view('bau/header');
+            $this->load->view('bau/rekap_validasi');
+            $this->load->view('bau/rekap_validasip',$data);
+            $this->load->view('bau/footer');
          } 
         
     }
