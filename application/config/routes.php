@@ -51,6 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'welcome';
 //registrasi route
+$route['default_controller'] = 'error_ctr';
 //ditutup karena sudah berakhir
 $route['registrasi'] = 'welcome/registrasi';
 $route['registrasi_d3'] = 'welcome/registrasid3';
