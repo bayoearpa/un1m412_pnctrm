@@ -75,7 +75,7 @@
           <div class="col-lg-16 ml-auto">
             <div class="text-center mt-4">
          <!-- <center><img src="<?php //echo base_url() ?>assets/front1/img/poster2.jpeg" width="100%"></center> -->
-         <center><img src="<?php echo base_url() ?>assets/front1/img/banner2022sep.jpeg" width="100%"></center>
+         <center><img src="<?php echo base_url() ?>assets/front1/img/fasttrack_brosur.jpeg" width="100%"></center>
           </div>
             <p class="lead">UNIMAR AMNI Semarang adalah sebuah Perguruan Tinggi yang diselenggarakan oleh masyrakat yang mengembangkan studi di bidang maritim dan transpor. Awalnya bernama “AMNI” ( Akademi Maritim Nasional Indonesia ) yang didirikan pada tanggal 9 September 1963. Sejalan dengan perkembangan kebutuhan dibidang  maritim dan transpor, maka pada tanggal 17 April 2007 , AMNI mengembangkan diri menjadi  Sekolah  Tinggi Maritim dan Transpor “ AMNI “ ( UNIMAR “ AMNI “) Semarang, sesuai dengan SK Mendiknas No. 53/D/O/2007.</p>
              <p class="lead">UNIMAR AMNI Semarang bersertifikat ISO 9001:2015, semua Program Studi Terakreditasi Badan Akreditasi Nasional Perguruan Tinggi ( BAN PT ) Direktorat Jendral Pendidikan Tinggi dan Approval Direktorat Jendral Perhubungan Laut / Internasional Maritime Organization ( IMO ), dengan Program Studi:</p>
@@ -119,10 +119,10 @@
              <div class="col-lg-16 mr-auto">
             <p class="lead">Berikut lampiran biaya pendidikan Mahasiswa / Taruna UNIMAR AMNI Semarang tahun ajaran 2022 - 2023 yang dapat di download di bawah ini.</p>
                <div class="col-lg-16 mr-auto text-center">
-                <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="https://drive.google.com/file/d/1dJkHIYW0-9l7RGlXa9YPRCjKY-R9R65a/view?usp=sharing" target="_blank">
+                <!-- <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="https://drive.google.com/file/d/1dJkHIYW0-9l7RGlXa9YPRCjKY-R9R65a/view?usp=sharing" target="_blank">
                 <i class="fa fa-money mr-2"></i>
                 <font color="black">Biaya Pendidikan</font>
-                </a>
+                </a> -->
                 <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="https://drive.google.com/file/d/10LxFLgabglyyoA6VFowGHCX86AMJPqgn/view?usp=sharing" target="_blank">
                 <i class="fa fa-book mr-2"></i>
                 <font color="black">Tutorial Pendaftaran</font>
