@@ -305,7 +305,9 @@
                     <!-- <option value="7">Juli</option> -->
                     <!-- <option value="8">Agustus</option> -->
                      <!-- <option value="9">September</option> -->
-                    <option value="10">Oktober</option>
+                    <!-- <option value="10">Oktober</option> -->
+                    <option value="11">November</option>
+<!--                     <option value="12">Desember</option> -->
                   </select>
                 </div>
                <div class="form-group">
