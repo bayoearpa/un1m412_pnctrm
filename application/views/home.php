@@ -468,7 +468,8 @@
 
               
               <center>
-                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_d3">
+                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_d3_fasttrack">
+                <!-- <a class="btn btn-primary btn-lg rounded-pill" href="<?php //echo base_url() ?>registrasi_d3"> -->
                 <i class="fa fa-sign-in"></i>
                 Isi Biodata (Registrasi Reguler)</a>
               </center>
@@ -557,7 +558,8 @@
               </ul>
               
                <center>
-                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_d3">
+                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_d3_fasttrack">
+                <!-- <a class="btn btn-primary btn-lg rounded-pill" href="<?php //echo base_url() ?>registrasi_d3"> -->
                 <i class="fa fa-sign-in"></i>
                 Isi Biodata (Registrasi Reguler)</a>
               </center>
@@ -647,7 +649,8 @@
               </ul>
               
              <center>
-                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_d3">
+                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_d3_fasttrack">
+                <!-- <a class="btn btn-primary btn-lg rounded-pill" href="<?php //echo base_url() ?>registrasi_d3"> -->
                 <i class="fa fa-sign-in"></i>
                 Isi Biodata (Registrasi Reguler)</a>
               </center>
@@ -738,12 +741,13 @@
               </ul>
               
               <center>
-                <a class="btn btn-primary btn-lg rounded-pill" style="margin-bottom: 5px;padding-bottom: 5px;" href="<?php echo base_url() ?>registrasi">
+                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_fasttrack">
+               <!--  <a class="btn btn-primary btn-lg rounded-pill" style="margin-bottom: 5px;padding-bottom: 5px;" href="<?php //echo base_url() ?>registrasi">
                 <i class="fa fa-sign-in"></i>
-                Isi Biodata (Registrasi Reguler)</a>
-                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_eks">
+                Isi Biodata (Registrasi Reguler)</a> -->
+                <!-- <a class="btn btn-primary btn-lg rounded-pill" href="<?php //echo base_url() ?>registrasi_eks">
                 <i class="fa fa-sign-in"></i>
-                Isi Biodata (Registrasi Kelas Sore Karyawan)</a>
+                Isi Biodata (Registrasi Kelas Sore Karyawan)</a> -->
               </center>
             </div>
           </div>
@@ -830,12 +834,13 @@
               </ul>
               
             <center>
-                <a class="btn btn-primary btn-lg rounded-pill" style="margin-bottom: 5px;padding-bottom: 5px;" href="<?php echo base_url() ?>registrasi">
+              <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_fasttrack">
+               <!--  <a class="btn btn-primary btn-lg rounded-pill" style="margin-bottom: 5px;padding-bottom: 5px;" href="<?php //echo base_url() ?>registrasi">
                 <i class="fa fa-sign-in"></i>
                 Isi Biodata (Registrasi Reguler)</a> <br>
-                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_eks">
+                <a class="btn btn-primary btn-lg rounded-pill" href="<?php //echo base_url() ?>registrasi_eks">
                 <i class="fa fa-sign-in"></i>
-                Isi Biodata (Registrasi Kelas Sore Karyawan)</a>
+                Isi Biodata (Registrasi Kelas Sore Karyawan)</a> -->
               </center>
             </div>
           </div>
@@ -921,12 +926,13 @@
               </ul>
               
             <center>
-                <a class="btn btn-primary btn-lg rounded-pill" style="margin-bottom: 5px;padding-bottom: 5px;" href="<?php echo base_url() ?>registrasi">
+              <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_fasttrack">
+               <!--  <a class="btn btn-primary btn-lg rounded-pill" style="margin-bottom: 5px;padding-bottom: 5px;" href="<?php //echo base_url() ?>registrasi">
                 <i class="fa fa-sign-in"></i>
                 Isi Biodata (Registrasi Reguler)</a> <br>
-                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_eks">
+                <a class="btn btn-primary btn-lg rounded-pill" href="<?php //echo base_url() ?>registrasi_eks">
                 <i class="fa fa-sign-in"></i>
-                Isi Biodata (Registrasi Kelas Sore Karyawan)</a>
+                Isi Biodata (Registrasi Kelas Sore Karyawan)</a> -->
               </center>
             </div>
           </div>
@@ -1012,12 +1018,13 @@
               </ul>
               
               <center>
-                <a class="btn btn-primary btn-lg rounded-pill" style="margin-bottom: 5px;padding-bottom: 5px;" href="<?php echo base_url() ?>registrasi">
+                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_fasttrack">
+               <!--  <a class="btn btn-primary btn-lg rounded-pill" style="margin-bottom: 5px;padding-bottom: 5px;" href="<?php //echo base_url() ?>registrasi">
                 <i class="fa fa-sign-in"></i>
                 Isi Biodata (Registrasi Reguler)</a> <br>
-                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_eks">
+                <a class="btn btn-primary btn-lg rounded-pill" href="<?php //echo base_url() ?>registrasi_eks">
                 <i class="fa fa-sign-in"></i>
-                Isi Biodata (Registrasi Kelas Sore Karyawan)</a>
+                Isi Biodata (Registrasi Kelas Sore Karyawan)</a> -->
               </center>
             </div>
           </div>
@@ -1103,12 +1110,13 @@
               </ul>
               
               <center>
-                <a class="btn btn-primary btn-lg rounded-pill" style="margin-bottom: 5px;padding-bottom: 5px;" href="<?php echo base_url() ?>registrasi">
+                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_fasttrack">
+            <!--     <a class="btn btn-primary btn-lg rounded-pill" style="margin-bottom: 5px;padding-bottom: 5px;" href="<?php //echo base_url() ?>registrasi">
                 <i class="fa fa-sign-in"></i>
                 Isi Biodata (Registrasi Reguler)</a> <br>
-                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_eks">
+                <a class="btn btn-primary btn-lg rounded-pill" href="<?php //echo base_url() ?>registrasi_eks">
                 <i class="fa fa-sign-in"></i>
-                Isi Biodata (Registrasi Kelas Sore Karyawan)</a>
+                Isi Biodata (Registrasi Kelas Sore Karyawan)</a> -->
               </center>
             </div>
           </div>

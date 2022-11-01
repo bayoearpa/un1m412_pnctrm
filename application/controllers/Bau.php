@@ -21,7 +21,8 @@ class Bau extends CI_Controller {
         $where = array(
             'gelombang' => $gelombang       
         );
-        $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2022')->result();
+        $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
+        // $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2022')->result();
         // $data['catar'] = $this->m_registrasi->get_data_all('tbl_catar_2021')->result(); 
         $this->load->view('bau/header');
         $this->load->view('bau/index',$data);
@@ -35,9 +36,9 @@ class Bau extends CI_Controller {
     {
         # code...
         $where = array(
-            'tbl_catar_2022.no' => $id       
+            'tbl_catar_2023.no' => $id       
         );
-        $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2022')->result();
+        $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
         // $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
 
         // $this->db->select('aktif');
@@ -64,7 +65,7 @@ class Bau extends CI_Controller {
         $cekReg=$this->m_registrasi->get_data(array('prodi'=>$prodi,'gelombang'=>$gelombang),'tbl_catar_validasi_2022')->num_rows();
         $this->db->select_max('no_reg');
         $this->db->where(array('prodi'=>$prodi,'thn_pel'=>$thn_pel));
-        $cekReg = $this->db->get('tbl_catar_validasi_2022');
+        $cekReg = $this->db->get('tbl_catar_validasi_2023');
             foreach($cekReg->result() as $row)
         {
             $selNoReg = $row->no_reg;
@@ -94,13 +95,13 @@ class Bau extends CI_Controller {
             );
 
         // $this->m_registrasi->update_data($where,$data,'tbl_catar_2021_validasi');
-        $this->m_registrasi->input_data($data,'tbl_catar_validasi_2022');
+        $this->m_registrasi->input_data($data,'tbl_catar_validasi_2023');
         $lastid = $this->db->insert_id();
 
         $where = array('val_id' => $lastid);
-        $data['validasi'] = $this->m_registrasi->get_data($where,'tbl_catar_validasi_2022')->result();
+        $data['validasi'] = $this->m_registrasi->get_data($where,'tbl_catar_validasi_2023')->result();
         $where2 = array('no' => $no);
-        $data['catar'] = $this->m_registrasi->get_data($where2,'tbl_catar_2022')->result();
+        $data['catar'] = $this->m_registrasi->get_data($where2,'tbl_catar_2023')->result();
 
         $this->load->view('bau/cetak',$data);
 
@@ -121,7 +122,7 @@ class Bau extends CI_Controller {
         if ($prodi == 0) {
              # code...
             $where = array(
-            'tbl_catar_2022.gelombang' => $gelombang,
+            'tbl_catar_2023.gelombang' => $gelombang,
             // 'prodi'     => $prodi,                 
              );
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
@@ -134,7 +135,7 @@ class Bau extends CI_Controller {
              # code...
              $where = array(
             // 'gelombang' => $gelombang,
-            'tbl_catar_2022.prodi'     => $prodi,                 
+            'tbl_catar_2023.prodi'     => $prodi,                 
              );
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
             $data['label'] = "by Prodi";
@@ -144,8 +145,8 @@ class Bau extends CI_Controller {
             $this->load->view('bau/footer');
          }else{
             $where = array(
-            'tbl_catar_2022.gelombang' => $gelombang,
-            'tbl_catar_2022.prodi'     => $prodi,                 
+            'tbl_catar_2023.gelombang' => $gelombang,
+            'tbl_catar_2023.prodi'     => $prodi,                 
             );
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
             $data['label'] = "by Prodi & Gelombang";

@@ -165,10 +165,23 @@ class Welcome extends CI_Controller {
 		$data['jurusan'] = $this->m_registrasi->get_data_all('tbl_jurusan')->result();
 		$this->load->view('registrasi2',$data);
 	}
+	public function registrasi_fasttrack()
+	{
+		$data['jurusan'] = $this->m_registrasi->get_data_all('tbl_jurusan')->result();
+		$data['provinsi'] = $this->m_registrasi->get_data_all('tbl_propinsi')->result();
+		$this->load->view('registrasi_fasttrack',$data);
+	}
+	public function registrasid3_fasttrack()
+	{
+		$data['jurusan'] = $this->m_registrasi->get_data_all('tbl_jurusan')->result();
+		$data['provinsi'] = $this->m_registrasi->get_data_all('tbl_propinsi')->result();
+		$this->load->view('registrasi_d3_fasttrack',$data);
+	}
 	public function insertReg()
 	{
 		# code...
 		$nama = $this->input->post('nama');
+		$nik = $this->input->post('nik');
 		$namafil = addslashes($nama);
 		$tl = $this->input->post('tl');
 		$tgl_l = $this->input->post('tgl_l');
@@ -244,6 +257,7 @@ class Welcome extends CI_Controller {
 		
 		$data = array(
 			'nama' => $namafil,
+			'nik' => $nik,
 			'tl' => $tl,
 			'tgl_l' => $tgl_l,
 			'agama' => $agama,
@@ -276,10 +290,10 @@ class Welcome extends CI_Controller {
 			);
 
 
-		$this->m_registrasi->input_data($data,'tbl_catar_2022');
+		$this->m_registrasi->input_data($data,'tbl_catar_2023');
 		$lastid = $this->db->insert_id();
 		$where = array('no' => $lastid);
-		$data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2022')->result();
+		$data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
 		foreach ($data['catar'] as $key) {
 			# code...
 			$po = $key->ktkb;
@@ -294,7 +308,7 @@ class Welcome extends CI_Controller {
 		$this->load->view('cetakReg',$data);
 
 		//pdf
-		$pdfFilePath="cetak_registrasi_".$namafil."_2022.pdf";
+		$pdfFilePath="cetak_registrasi_".$namafil."_2023.pdf";
 		$html=$this->load->view('cetakReg',$data, TRUE);
 		$pdf = $this->m_pdf->load();
  
