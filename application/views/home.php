@@ -467,11 +467,11 @@
               </ul>
 
               
-              <center>
-                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_d3_fasttrack">
-                <!-- <a class="btn btn-primary btn-lg rounded-pill" href="<?php //echo base_url() ?>registrasi_d3"> -->
+               <center>
+                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_d3_fasttrack"><i class="fa fa-sign-in"></i>Isi Biodata (Seleksi Dini)</a>
+<!--                 <a class="btn btn-primary btn-lg rounded-pill" href="<?php //echo base_url() ?>registrasi_d3">
                 <i class="fa fa-sign-in"></i>
-                Isi Biodata (Registrasi Reguler)</a>
+                Isi Biodata (Registrasi Reguler)</a> -->
               </center>
             </div>
           </div>
@@ -558,10 +558,10 @@
               </ul>
               
                <center>
-                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_d3_fasttrack">
-                <!-- <a class="btn btn-primary btn-lg rounded-pill" href="<?php //echo base_url() ?>registrasi_d3"> -->
+                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_d3_fasttrack"><i class="fa fa-sign-in"></i>Isi Biodata (Seleksi Dini)</a>
+<!--                 <a class="btn btn-primary btn-lg rounded-pill" href="<?php //echo base_url() ?>registrasi_d3">
                 <i class="fa fa-sign-in"></i>
-                Isi Biodata (Registrasi Reguler)</a>
+                Isi Biodata (Registrasi Reguler)</a> -->
               </center>
             </div>
           </div>
@@ -648,11 +648,11 @@
                 <li>Pemberkasan dilaksanakan setelah pendaftaran dinyatakan <b>DITERIMA</b></li>
               </ul>
               
-             <center>
-                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_d3_fasttrack">
-                <!-- <a class="btn btn-primary btn-lg rounded-pill" href="<?php //echo base_url() ?>registrasi_d3"> -->
+              <center>
+                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_d3_fasttrack"><i class="fa fa-sign-in"></i>Isi Biodata (Seleksi Dini)</a>
+<!--                 <a class="btn btn-primary btn-lg rounded-pill" href="<?php //echo base_url() ?>registrasi_d3">
                 <i class="fa fa-sign-in"></i>
-                Isi Biodata (Registrasi Reguler)</a>
+                Isi Biodata (Registrasi Reguler)</a> -->
               </center>
 
             </div>
@@ -741,7 +741,7 @@
               </ul>
               
               <center>
-                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_fasttrack">
+                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_fasttrack"><i class="fa fa-sign-in"></i>Isi Biodata (Seleksi Dini)</a>
                <!--  <a class="btn btn-primary btn-lg rounded-pill" style="margin-bottom: 5px;padding-bottom: 5px;" href="<?php //echo base_url() ?>registrasi">
                 <i class="fa fa-sign-in"></i>
                 Isi Biodata (Registrasi Reguler)</a> -->
@@ -833,12 +833,12 @@
                 <li>Pemberkasan dilaksanakan setelah pendaftaran dinyatakan <b>DITERIMA</b></li>
               </ul>
               
-            <center>
-              <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_fasttrack">
+           <center>
+                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_fasttrack"><i class="fa fa-sign-in"></i>Isi Biodata (Seleksi Dini)</a>
                <!--  <a class="btn btn-primary btn-lg rounded-pill" style="margin-bottom: 5px;padding-bottom: 5px;" href="<?php //echo base_url() ?>registrasi">
                 <i class="fa fa-sign-in"></i>
-                Isi Biodata (Registrasi Reguler)</a> <br>
-                <a class="btn btn-primary btn-lg rounded-pill" href="<?php //echo base_url() ?>registrasi_eks">
+                Isi Biodata (Registrasi Reguler)</a> -->
+                <!-- <a class="btn btn-primary btn-lg rounded-pill" href="<?php //echo base_url() ?>registrasi_eks">
                 <i class="fa fa-sign-in"></i>
                 Isi Biodata (Registrasi Kelas Sore Karyawan)</a> -->
               </center>
@@ -925,12 +925,12 @@
                 <li>Pemberkasan dilaksanakan setelah pendaftaran dinyatakan <b>DITERIMA</b></li>
               </ul>
               
-            <center>
-              <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_fasttrack">
+          <center>
+                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_fasttrack"><i class="fa fa-sign-in"></i>Isi Biodata (Seleksi Dini)</a>
                <!--  <a class="btn btn-primary btn-lg rounded-pill" style="margin-bottom: 5px;padding-bottom: 5px;" href="<?php //echo base_url() ?>registrasi">
                 <i class="fa fa-sign-in"></i>
-                Isi Biodata (Registrasi Reguler)</a> <br>
-                <a class="btn btn-primary btn-lg rounded-pill" href="<?php //echo base_url() ?>registrasi_eks">
+                Isi Biodata (Registrasi Reguler)</a> -->
+                <!-- <a class="btn btn-primary btn-lg rounded-pill" href="<?php //echo base_url() ?>registrasi_eks">
                 <i class="fa fa-sign-in"></i>
                 Isi Biodata (Registrasi Kelas Sore Karyawan)</a> -->
               </center>
@@ -1017,12 +1017,12 @@
                 <li>Pemberkasan dilaksanakan setelah pendaftaran dinyatakan <b>DITERIMA</b></li>
               </ul>
               
-              <center>
-                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_fasttrack">
+            <center>
+                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_fasttrack"><i class="fa fa-sign-in"></i>Isi Biodata (Seleksi Dini)</a>
                <!--  <a class="btn btn-primary btn-lg rounded-pill" style="margin-bottom: 5px;padding-bottom: 5px;" href="<?php //echo base_url() ?>registrasi">
                 <i class="fa fa-sign-in"></i>
-                Isi Biodata (Registrasi Reguler)</a> <br>
-                <a class="btn btn-primary btn-lg rounded-pill" href="<?php //echo base_url() ?>registrasi_eks">
+                Isi Biodata (Registrasi Reguler)</a> -->
+                <!-- <a class="btn btn-primary btn-lg rounded-pill" href="<?php //echo base_url() ?>registrasi_eks">
                 <i class="fa fa-sign-in"></i>
                 Isi Biodata (Registrasi Kelas Sore Karyawan)</a> -->
               </center>
@@ -1109,12 +1109,12 @@
                 <li>Pemberkasan dilaksanakan setelah pendaftaran dinyatakan <b>DITERIMA</b></li>
               </ul>
               
-              <center>
-                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_fasttrack">
-            <!--     <a class="btn btn-primary btn-lg rounded-pill" style="margin-bottom: 5px;padding-bottom: 5px;" href="<?php //echo base_url() ?>registrasi">
+             <center>
+                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_fasttrack"><i class="fa fa-sign-in"></i>Isi Biodata (Seleksi Dini)</a>
+               <!--  <a class="btn btn-primary btn-lg rounded-pill" style="margin-bottom: 5px;padding-bottom: 5px;" href="<?php //echo base_url() ?>registrasi">
                 <i class="fa fa-sign-in"></i>
-                Isi Biodata (Registrasi Reguler)</a> <br>
-                <a class="btn btn-primary btn-lg rounded-pill" href="<?php //echo base_url() ?>registrasi_eks">
+                Isi Biodata (Registrasi Reguler)</a> -->
+                <!-- <a class="btn btn-primary btn-lg rounded-pill" href="<?php //echo base_url() ?>registrasi_eks">
                 <i class="fa fa-sign-in"></i>
                 Isi Biodata (Registrasi Kelas Sore Karyawan)</a> -->
               </center>
