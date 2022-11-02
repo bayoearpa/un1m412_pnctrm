@@ -1145,7 +1145,7 @@
         // retrieved this line of code from http://dimsemenov.com/plugins/magnific-popup/documentation.html#api
         $.magnificPopup.open({
             items: {
-                src: '<?php echo base_url() ?>assets/front1/img/peringatan.png'
+                src: '<?php echo base_url() ?>assets/front1/img/peringatan23.png'
             },
             type: 'image'
 
