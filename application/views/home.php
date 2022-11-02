@@ -114,10 +114,10 @@
               </ol> 
 
               <br>
-              <center><h4 class="text-uppercase"> BIAYA PENDIDIKAN MAHASISWA / TARUNA T.A 2022 - 2023 DAN TUTORIAL</h4></center>
+              <center><h4 class="text-uppercase"> BIAYA PENDIDIKAN MAHASISWA / TARUNA T.A 2023 - 2024 DAN TUTORIAL</h4></center>
 
              <div class="col-lg-16 mr-auto">
-            <p class="lead">Berikut lampiran biaya pendidikan Mahasiswa / Taruna UNIMAR AMNI Semarang tahun ajaran 2022 - 2023 yang dapat di download di bawah ini.</p>
+            <p class="lead">Berikut lampiran biaya pendidikan Mahasiswa / Taruna UNIMAR AMNI Semarang tahun ajaran 2023 - 2024 yang dapat di download di bawah ini.</p>
                <div class="col-lg-16 mr-auto text-center">
                 <!-- <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="https://drive.google.com/file/d/1dJkHIYW0-9l7RGlXa9YPRCjKY-R9R65a/view?usp=sharing" target="_blank">
                 <i class="fa fa-money mr-2"></i>
@@ -496,7 +496,7 @@
                <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/t2.png" alt=""> -->
              <p><i class="fa fa-question-circle"></i>Syarat :</p>
               <ul>
-                <li>Usia max 23 tahun pada bulan September 2022.</li>
+                <li>Usia max 23 tahun pada bulan September 2023.</li>
                 <li>Pria atau wanita</li>
                 <li>Belum menikah dan sanggup tidak menikah selama masa pendidikan yang dibuktikan dengan surat keterangan belum pernah menikah.</li> 
                 <li>Tinggi badan minimal Pria 160 Cm dan Wanita 155 Cm.</li>
@@ -589,7 +589,7 @@
                <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/nt2.png" alt=""> -->
                <p><i class="fa fa-question-circle"></i>Syarat :</p>
                 <ul>
-                <li>Usia max 23 tahun pada bulan September 2022.</li>
+                <li>Usia max 23 tahun pada bulan September 2023.</li>
                 <li>Pria atau wanita</li>
                 <li>Belum menikah dan sanggup tidak menikah selama masa pendidikan yang dibuktikan dengan surat keterangan belum pernah menikah.</li> 
                 <li>Tinggi badan minimal Pria 160 Cm dan Wanita 155 Cm.</li>
