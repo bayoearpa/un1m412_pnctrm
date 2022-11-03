@@ -267,7 +267,7 @@
           </div>
         </div>
         <div class="text-center mt-4">
-         <center><img src="<?php echo base_url() ?>assets/front1/img/alur2022rev.png" width="100%"></center>
+         <center><img src="<?php echo base_url() ?>assets/front1/img/alur_fasttrack_2023.png" width="100%"></center>
         </div>
       <!--   <div class="text-center mt-4">
          <center><img src="<?php //echo base_url() ?>assets/front1/img/alur.jpg" width="100%"></center>

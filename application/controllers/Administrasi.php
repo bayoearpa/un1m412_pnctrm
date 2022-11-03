@@ -43,7 +43,14 @@ class Administrasi extends CI_Controller {
 						redirect(base_url().'umum/index');
 					}elseif ($d->level=='4'){
 						redirect(base_url().'dekan/index');
+					}elseif ($d->level=='5'){
+						redirect(base_url().'samapta/index');
+					}elseif ($d->level=='6'){
+						redirect(base_url().'wawancara/index');
+					}elseif ($d->level=='7'){
+						redirect(base_url().'tpa/index');
 					}
+
 			}else{
 				redirect(base_url().'administrasi?pesan=gagal');			
 			}
