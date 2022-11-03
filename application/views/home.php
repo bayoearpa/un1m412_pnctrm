@@ -165,7 +165,7 @@
                   <p class="lead">Klik Untuk Lihat Detail</p>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/P1011572.JPG" alt="">
+              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/kpn23.jpg" alt="">
               <p class="lead text-center"> <font color="black">D3 KETATALAKSANAAN PELAYARAN NIAGA DAN KEPELABUHAN</font></p>
             </a>
           </div>
