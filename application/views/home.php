@@ -177,7 +177,7 @@
                   <p class="lead">Klik Untuk Lihat Detail</p>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/P1011607.JPG" alt="">
+              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/teknika23.JPG" alt="">
               <p class="lead text-center"><font color="black">D3 TEKNIKA</font></p>
             </a>
           </div>
@@ -189,7 +189,7 @@
                   <p class="lead">Klik Untuk Lihat Detail</p>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/P1011549.JPG" alt="">
+              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/nautika23.JPG" alt="">
               <p class="lead text-center"><font color="black">D3 NAUTIKA</font></p>
             </a>
           </div>
@@ -201,7 +201,7 @@
                   <p class="lead">Klik Untuk Lihat Detail</p>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/P1011600.JPG" alt="">
+              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/transportasi.JPG" alt="">
               <p class="lead text-center"> <font color="black">S1 TRANSPORTASI</font></p>
             </a>
           </div>
@@ -213,7 +213,7 @@
                   <p class="lead">Klik Untuk Lihat Detail</p>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/tm.JPG" alt="">
+              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/teknikmesin.JPG" alt="">
               <p class="lead text-center"><font color="black">S1 TEKNIK MESIN</font></p>
             </a>
           </div>
@@ -225,7 +225,7 @@
                   <p class="lead">Klik Untuk Lihat Detail</p>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/tl.jpeg" alt="">
+              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/ttl23.jpeg" alt="">
               <p class="lead text-center"><font color="black">S1 TEKNIK TRANSPORTASI LAUT</font></p>
             </a>
           </div>
@@ -237,7 +237,7 @@
                   <p class="lead">Klik Untuk Lihat Detail</p>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/k.jpg" alt="">
+              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/keselamatan23.jpg" alt="">
               <p class="lead text-center"><font color="black">S1 TEKNIK KESELAMATAN</font></p>
             </a>
           </div>
@@ -249,7 +249,7 @@
                   <p class="lead">Klik Untuk Lihat Detail</p>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/pi.jpeg" alt="">
+              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/pi23.jpeg" alt="">
               <p class="lead text-center"><font color="black">S1 PERDAGANGAN INTERNASIONAL</font></p>
             </a>
           </div>
