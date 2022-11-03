@@ -201,7 +201,7 @@
                   <p class="lead">Klik Untuk Lihat Detail</p>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/transportasi.jpg" alt="">
+              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/transportasi23.jpg" alt="">
               <p class="lead text-center"> <font color="black">S1 TRANSPORTASI</font></p>
             </a>
           </div>
@@ -213,7 +213,7 @@
                   <p class="lead">Klik Untuk Lihat Detail</p>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/teknikmesin.jpg" alt="">
+              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/teknikmesin23.jpg" alt="">
               <p class="lead text-center"><font color="black">S1 TEKNIK MESIN</font></p>
             </a>
           </div>
