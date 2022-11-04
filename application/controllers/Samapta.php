@@ -13,7 +13,7 @@ class Samapta extends CI_Controller {
 		$this->load->model('m_registrasi');
         $this->load->helper('url');
 	}
-	function prodi($id){
+	function proi($id){
 		switch ($id) {
 
 			// registrasi
