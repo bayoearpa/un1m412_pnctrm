@@ -143,6 +143,7 @@
 	<li><small>Copy Surat kenal lahir / akte kelahiran 1 Lembar</small></li>
 	<li><small>Copy tanda pengenal yang sah, KTP atau SIM 1 lembar</small></li>
 	<li><small>Pas photo hitam putih ukuran 3x4 sebanyak 2  lembar</small></li>
+	<li><small>Membawa surat pernyataan dan riwayat kesehatan</small></li>
 </ul>
 <p style="margin: 0px;padding: 0px;"><small>*Jika anda salah mengisi data anda dapat mengulanginya lagi dari awal. Simpanlah file pdf anda!!</small></p>
 <!-- <p style="margin: 0px;padding: 0px;"><small>*Bagi pendaftar  melalui <b><i>online</i></b> dapat melaksanakan pembayaran pendaftaran melalui Bank/ATM :</small></p>

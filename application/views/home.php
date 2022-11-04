@@ -123,9 +123,9 @@
                 <i class="fa fa-money mr-2"></i>
                 <font color="black">Biaya Pendidikan</font>
                 </a> -->
-                <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="https://drive.google.com/file/d/10LxFLgabglyyoA6VFowGHCX86AMJPqgn/view?usp=sharing" target="_blank">
+<!--                 <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="https://drive.google.com/file/d/10LxFLgabglyyoA6VFowGHCX86AMJPqgn/view?usp=sharing" target="_blank">
                 <i class="fa fa-book mr-2"></i>
-                <font color="black">Tutorial Pendaftaran</font>
+                <font color="black">Tutorial Pendaftaran</font></a> -->
                 <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="https://linktr.ee/UNIMARAMNI" target="_blank">
                 <i class="fa fa-info mr-2"></i>
                 <font color="black">Informasi Selengkapnya</font>
@@ -356,7 +356,7 @@
             <h4 class="text-uppercase mb-4">Contact Person</h4>
           
             <p class="lead mb-0">CP1 : 0851 6161 0180 </p>
-            <p class="lead mb-0">CP2 : 0822 9977 5575 </p>
+            <p class="lead mb-0">CP2 : 0851 6163 0180 </p>
               <!-- <a href="http://startbootstrap.com">Start Bootstrap</a>.</p> -->
           </div>
        <div class="col-md-4 mb-2">
