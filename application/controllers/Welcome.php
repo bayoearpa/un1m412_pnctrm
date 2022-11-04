@@ -97,14 +97,14 @@ class Welcome extends CI_Controller {
 
 
 			$where = array('no' => $no);
-			$datax = $this->m_registrasi->get_data($where,'tbl_catar_validasi_2022');
+			$datax = $this->m_registrasi->get_data($where,'tbl_catar_validasi_2023');
 			$cek = $datax->num_rows();
 
 		if ($cek > 0) {
 			# code...
 				//get data
 			$where2 = array('no' => $no);
-			$data['catar'] = $this->m_registrasi->get_data($where2,'tbl_catar_2022')->result();
+			$data['catar'] = $this->m_registrasi->get_data($where2,'tbl_catar_2023')->result();
 		}else{
 			$data['catar'] = null ;
 			// $data['status'] = "Anda Belum tervalidasi...";
@@ -116,7 +116,7 @@ class Welcome extends CI_Controller {
 	{
 		# code...
 		$where = array('no' => $no);
-		$data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2022')->result();
+		$data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
 		foreach ($data['catar'] as $key) {
 			# code...
 			$po = $key->ktkb;
