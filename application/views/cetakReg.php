@@ -145,7 +145,7 @@
 	<li><small>Pas photo hitam putih ukuran 3x4 sebanyak 2  lembar</small></li>
 </ul>
 <p style="margin: 0px;padding: 0px;"><small>*Jika anda salah mengisi data anda dapat mengulanginya lagi dari awal. Simpanlah file pdf anda!!</small></p>
-<p style="margin: 0px;padding: 0px;"><small>*Bagi pendaftar  melalui <b><i>online</i></b> dapat melaksanakan pembayaran pendaftaran melalui Bank/ATM :</small></p>
+<!-- <p style="margin: 0px;padding: 0px;"><small>*Bagi pendaftar  melalui <b><i>online</i></b> dapat melaksanakan pembayaran pendaftaran melalui Bank/ATM :</small></p>
                   <tr>
                     <td style="margin: 0px;padding: 0px;"><b><small>BANK BNI</small></b></td>
                     <td style="margin: 0px;padding: 0px;"><b><small>:</small></b></td>
@@ -161,7 +161,7 @@
                     <td style="margin: 0px;padding: 0px;"><b><small>:</small></b></td>
                     <td style="margin: 0px;padding: 0px;"><b><small>Rp. 500.000,-</small></b></td>
                   </tr>
-                </table>
+                </table> -->
 <!-- <p style="margin: 0px;padding: 0px;"><small>*Bukti Pembayaran dapat dikirim melalui :</small></p>
  <table>
                   <tr>

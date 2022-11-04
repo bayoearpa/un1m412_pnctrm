@@ -69,7 +69,7 @@
               <ul>
               <li>Pastikan anda melihat prasyarat sesuai <b>Program Studi (Prodi)</b> yang dipilih</li>
                 <li>Pendaftaran dapat dilaksanakan dengan datang langsung ke kampus biru maupun secara <i>online</i></li>
-                <li>Bagi pendaftar baik melalui <b><i>online</i></b> dapat melaksanakan pembayaran pembayaran pendaftaran melalui Bank/ATM :</li>
+               <!--  <li>Bagi pendaftar baik melalui <b><i>online</i></b> dapat melaksanakan pembayaran pembayaran pendaftaran melalui Bank/ATM :</li>
                 <table>
                   <tr>
                     <td><b>BANK BNI</b></td>
@@ -86,7 +86,7 @@
                     <td><b>:</b></td>
                     <td><b>Rp. 500.000,-</b></td>
                   </tr>
-                </table>
+                </table> -->
                <!--  <li>Bukti Pembayaran dapat dikirim melalui :</li>
                 <table>
                   <tr>
