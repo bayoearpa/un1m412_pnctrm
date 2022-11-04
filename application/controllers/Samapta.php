@@ -65,7 +65,7 @@ class Samapta extends CI_Controller {
 		}
 		$data['prodi'] = $this->prodi($prodi);
         $this->load->view('samapta/header');
-        $this->load->view('samapta/index');
+        $this->load->view('samapta/index',$data);
         $this->load->view('samapta/footer');
 	}
 
