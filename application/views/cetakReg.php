@@ -18,7 +18,7 @@
 		<td width="12%"><img src="<?php echo base_url() ?>assets/front1/img/amni-png-doc.png" width="15%"></td>
 		<td align="center">
 		<p style="margin: 0px;padding: 0px;"><b>FORMULIR PENDAFTARAN PENCATARMA</b></p>
-		<p style="margin: 0px;padding: 0px;"><b>TAHUN AKADEMIK 2022 / 2023 </b></p>
+		<p style="margin: 0px;padding: 0px;"><b>TAHUN AKADEMIK 2023 / 2024 </b></p>
 		<p style="margin: 0px;padding: 0px;"><b>UNIVERSITAS MARITIM AMNI SEMARANG</b></p>
 		<p style="margin: 0px;padding: 0px;"><b>UNIMAR AMNI SEMARANG</b></p>
 		<p style="margin: 0px;padding: 0px;">Jl. Soekarno-Hatta No. 180 Semarang 50199</p>
