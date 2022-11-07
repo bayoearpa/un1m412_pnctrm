@@ -231,7 +231,7 @@
             'aktif' => '1'      
             );
              ?>
-              <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data($where,'tbl_catar_validasi_2023')->num_rows(); ?></span>
+              <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
             <!-- /.box-body -->
           </div>
@@ -255,11 +255,12 @@
               Reguler
               <?php 
             $where = array(
-            'prodi' => '1',
-            'gelombang' => $gelombang,
-            'aktif' => '1'      
+            'tbl_catar_2023.prodi' => '1',
+            'tbl_catar_2023.gelombang' => $gelombang,
+            'tbl_catar_validasi_2023.aktif' => '1',
+            'tbl_catar_2023.kelas' => 'reg'      
             ); ?>
-              <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data($where,'tbl_catar_validasi_2023')->num_rows(); ?></span>
+              <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
              <div class="box-body" style="">
               Ekstensi
@@ -287,11 +288,12 @@
               Reguler
               <?php 
             $where = array(
-            'prodi' => '2',
-            'gelombang' => $gelombang,
-            'aktif' => '1'      
+            'tbl_catar_2023.prodi' => '2',
+            'tbl_catar_2023.gelombang' => $gelombang,
+            'tbl_catar_validasi_2023.aktif' => '1',
+            'tbl_catar_2023.kelas' => 'reg'      
             ); ?>
-              <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data($where,'tbl_catar_validasi_2023')->num_rows(); ?></span>
+              <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
              <div class="box-body" style="">
               Ekstensi
@@ -317,13 +319,14 @@
             <!-- /.box-header -->
             <div class="box-body" style="">
               Reguler
-              <?php 
+                <?php 
             $where = array(
-            'prodi' => '3',
-            'gelombang' => $gelombang,
-            'aktif' => '1'      
+            'tbl_catar_2023.prodi' => '3',
+            'tbl_catar_2023.gelombang' => $gelombang,
+            'tbl_catar_validasi_2023.aktif' => '1',
+            'tbl_catar_2023.kelas' => 'reg'      
             ); ?>
-              <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data($where,'tbl_catar_validasi_2023')->num_rows(); ?></span>
+              <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
              <div class="box-body" style="">
               Ekstensi
