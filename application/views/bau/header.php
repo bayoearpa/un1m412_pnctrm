@@ -273,7 +273,7 @@
             'tbl_catar_2023.prodi' => '1',
             'tbl_catar_2023.gelombang' => $gelombang,
             'tbl_catar_validasi_2023.aktif' => '1',
-            'tbl_catar_2023.kelas' => 'reg'      
+            'tbl_catar_2023.kelas' => 'fastt'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where_ft)->num_rows(); ?></span>
             </div>
