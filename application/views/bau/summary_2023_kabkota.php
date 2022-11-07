@@ -4,7 +4,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Rekap Pendaftar per Kota dan Kabupaten 2022</h3>
+              <h3 class="box-title">Rekap Pendaftar per Kota dan Kabupaten 2023</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -24,7 +24,7 @@
                  ?>
                 <tr>
                   <td><?php echo $no++; ?></td>
-                  <td><?php echo $bau->getnamakabkota_2022($c->id_provinsi) ?></td>
+                  <td><?php echo $bau->getnamakabkota_2023($c->id_provinsi) ?></td>
                   <td><?php echo $c->jml_pendaftar ?></td>
                   <!-- <td><a class="btn btn-success btn-sm" href="<?php //echo base_url().'bau/get_summary_prov_detail_2021/'.$c->id_provinsi; ?>"><i class="fa fa-eye"></i>Selengkapnya</a></td> -->
                 </tr>

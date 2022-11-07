@@ -4,7 +4,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Rekap Pendaftar per Sekolah (D3) 2022</h3>
+              <h3 class="box-title">Rekap Pendaftar per Sekolah (D3) 2023</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -30,7 +30,7 @@
                   <td><?php echo $c->jml_pendaftar ?></td>
                   <td><?php echo $c->almt_sek ?></td>
                   <td><?php echo $c->kotakab ?></td>
-                  <td><?php echo $bau->getnamaprovinsi_2022($c->id_provinsi) ?></td>
+                  <td><?php echo $bau->getnamaprovinsi_2023($c->id_provinsi) ?></td>
                   
                 </tr>
                <?php } ?>
@@ -57,7 +57,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Rekap Pendaftar per Sekolah (SMA) 2022</h3>
+              <h3 class="box-title">Rekap Pendaftar per Sekolah (SMA) 2023</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -83,7 +83,7 @@
                   <td><?php echo $c->jml_pendaftar ?></td>
                   <td><?php echo $c->almt_sek ?></td>
                   <td><?php echo $c->kotakab ?></td>
-                  <td><?php echo $bau->getnamaprovinsi_2022($c->id_provinsi) ?></td>
+                  <td><?php echo $bau->getnamaprovinsi_2023($c->id_provinsi) ?></td>
                   
                 </tr>
                <?php } ?>
@@ -111,7 +111,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Rekap Pendaftar per Sekolah (SMK) 2022</h3>
+              <h3 class="box-title">Rekap Pendaftar per Sekolah (SMK) 2023</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -137,7 +137,7 @@
                   <td><?php echo $c->jml_pendaftar ?></td>
                   <td><?php echo $c->almt_sek ?></td>
                   <td><?php echo $c->kotakab ?></td>
-                  <td><?php echo $bau->getnamaprovinsi_2022($c->id_provinsi) ?></td>
+                  <td><?php echo $bau->getnamaprovinsi_2023($c->id_provinsi) ?></td>
                 </tr>
                <?php } ?>
                 </tbody>
@@ -164,7 +164,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Rekap Pendaftar per Sekolah (MA) 2022</h3>
+              <h3 class="box-title">Rekap Pendaftar per Sekolah (MA) 2023</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -190,7 +190,7 @@
                   <td><?php echo $c->jml_pendaftar ?></td>
                   <td><?php echo $c->almt_sek ?></td>
                   <td><?php echo $c->kotakab ?></td>
-                  <td><?php echo $bau->getnamaprovinsi_2022($c->id_provinsi) ?></td>
+                  <td><?php echo $bau->getnamaprovinsi_2023($c->id_provinsi) ?></td>
                   
                 </tr>
                <?php } ?>
