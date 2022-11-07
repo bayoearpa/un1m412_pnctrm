@@ -267,6 +267,55 @@ class m_registrasi extends CI_Model
 
 		
 	}
+	////////////////////summary 2023///////////////////////////////////////////////////////////////////////////
+	function get_data_statistic_kabkota_2023(){
+		$this->db->select('tbl_catar_2023.ktkb as id_provinsi,
+		Count(tbl_catar_2023.no) as jml_pendaftar');
+		$this->db->from('tbl_catar_2023');
+		$this->db->join('tbl_catar_validasi_2023','tbl_catar_2023.no = tbl_catar_validasi_2023.no','inner');
+		$this->db->group_by('tbl_catar_2023.ktkb');
+		$this->db->order_by('count(tbl_catar_2023.no)', 'DESC');
+		$query=$this->db->get();
+		return $query;
+	}
+	function get_data_statistic_prov_2023(){
+		$this->db->select('tbl_catar_2023.provinsi as id_provinsi,
+		Count(tbl_catar_2023.no) as jml_pendaftar');
+		$this->db->from('tbl_catar_2023');
+		$this->db->join('tbl_catar_validasi_2023','tbl_catar_2023.no = tbl_catar_validasi_2023.no','inner');
+		$this->db->group_by('tbl_catar_2023.provinsi');
+		$this->db->order_by('count(tbl_catar_2023.no)', 'DESC');
+		$query=$this->db->get();
+		return $query;
+	}
+	function get_data_statistic_sekolah_2023($where){
+		$this->db->select('tbl_catar_2023.asek as asal_sekolah,
+		Count(tbl_catar_2023.asek) as jml_pendaftar,
+		tbl_catar_2023.provinsi as id_provinsi,
+		tbl_catar_2023.alamat_sek as almt_sek,
+		tbl_catar_2023.ktkb as kotakab');
+		$this->db->from('tbl_catar_2023');
+		$this->db->join('tbl_catar_validasi_2023','tbl_catar_2023.no = tbl_catar_validasi_2023.no','inner');
+		$this->db->group_by('tbl_catar_2023.asek');
+		$this->db->order_by('Count(tbl_catar_2023.asek)', 'DESC');
+		$this->db->where($where);
+		$query=$this->db->get();
+		return $query;
+	}
+	function get_data_statistic_sumber_all_2023(){
+		$this->db->select('Count(tbl_catar_2023.informasi) as informasi');
+		$this->db->from('tbl_catar_2023');
+		// $this->db->where($where);
+		$query=$this->db->get();
+		return $query;
+	}
+	function get_data_statistic_sumber_where_2023($where){
+		$this->db->select('Count(tbl_catar_2023.informasi) as informasi ');
+		$this->db->from('tbl_catar_2023');
+		$this->db->where($where);
+		$query=$this->db->get();
+		return $query;
+	}
 	////////////////////summary 2022///////////////////////////////////////////////////////////////////////////
 	function get_data_statistic_kabkota_2022(){
 		$this->db->select('tbl_catar_2022.ktkb as id_provinsi,
