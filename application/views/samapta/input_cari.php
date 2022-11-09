@@ -23,8 +23,7 @@
               <?php    
                     }else{ ?>
               <div class="callout callout-danger"><h4>Data Sudah pernah diinput!</h4><p>pastikan calon mahasiswa belum melakukan test samapta.</p></div>
-                    <?php} ///end of cek samapta 
-             ?>
+              <?php } ///end of cek samapta ?>
 
              <!-- ./content -->
             </div>
