@@ -15,7 +15,7 @@
                 # code...
                 $cek_no = $key->no;
               
-              if ($cek_no == null) {
+              if ($cek_no == "0") {
                 # code...
                     echo $notif = "<div class=callout callout-danger><h4>Data tidak ditemukan!</h4><p>pastikan calon mahasiswa sudah melakukan registrasi.</p></div>";
               }else{
@@ -25,7 +25,7 @@
                 $cek_samapta_data = $key->no; 
                 
 
-              if ($cek_samapta_data == null) {
+              if ($cek_samapta_data == "0") {
                       # code...
                   echo $notif = "<div class=callout callout-danger><h4>Data Sudah pernah diinput!</h4><p>pastikan calon mahasiswa belum melakukan test samapta.</p></div>";
                     } ///end of cek data samapta 
