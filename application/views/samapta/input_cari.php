@@ -21,10 +21,29 @@
                   # code...
                   $no = $key->no;
                   $petugas = $this->session->userdata('nama');
+                  $nama = $key->nama;
+                  $prodi = $samapta->prodi($key->prodi);
                 }
                       # code... ?>
                       <!-- form input nilai samapta disini -->
                 <form method="post" action="<?php echo base_url() ?>samapta/input_carip">
+                  <table>
+                    <tr>
+                      <td><b>No. Pendafataran</b></td>
+                      <td>:</td>
+                      <td><?php echo $no ?></td>
+                    </tr>
+                    <tr>
+                      <td><b>Nama</b></td>
+                      <td>:</td>
+                      <td><?php echo $nama ?></td>
+                    </tr>
+                    <tr>
+                      <td><b>Prodi yang diambil</b></td>
+                      <td>:</td>
+                      <td><?php echo $prodi ?></td>
+                    </tr>
+                  </table>
                   <div class="form-group">
                   <label>Lari</label>
                   <input type="hidden" name="no" id="no" value="<?php echo $no ?>">
