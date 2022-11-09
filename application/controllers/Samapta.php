@@ -68,6 +68,50 @@ class Samapta extends CI_Controller {
         $this->load->view('samapta/index',$data);
         $this->load->view('samapta/footer');
 	}
+	public function input_data()
+	{
+		# code...
+		$this->load->view('samapta/header');
+        $this->load->view('samapta/input');
+        $this->load->view('samapta/footer');
+	}
+	public function input_cari()
+	{
+		# code...
+		$prodi      = $this->input->post('prodi');
+		$where = array(
+            'no' => $no,                
+        );
+        $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
+
+        $cek_validasi = $this->m_registrasi->get_data($where,'tbl_catar_validasi_2023')->result();
+        foreach ($cek_validasi as $key) {
+        	# code...
+        	$no = $key->no;
+        }
+        if ($no == null) {
+        	# code...
+        	$data['notif'] = "<div class=callout callout-danger><h4>Data tidak ditemukan!</h4><p>pastikan calon mahasiswa sudah melakukan registrasi.</p></div>";
+        }else{
+        	# code...
+		    $cek_samapta = $this->m_registrasi->get_data($where,'tbl_seleksi_samapta')->result();
+
+		    if ($cek_samapta == null) {
+		         		# code...
+		    		$data['notif'] = "<div class=callout callout-danger><h4>Data Sudah pernah diinput!</h4><p>pastikan calon mahasiswa belum melakukan test samapta.</p></div>";
+		         	}else{
+		         	$this->load->view('samapta/header');
+			        $this->load->view('samapta/input');
+			        $this->load->view('samapta/input_cari',$data);
+			        $this->load->view('samapta/footer');
+		         	}     	
+        }	
+	}
+	public function input_carip()
+	{
+		# code...
+
+	}
 
 }
 

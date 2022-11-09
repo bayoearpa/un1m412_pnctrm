@@ -73,7 +73,7 @@
                 <img src="<?php echo base_url() ?>assets/front1/img/amni1.png" class="img-circle" alt="User Image">
 
                 <p>
-                  <?php echo $this->session->userdata('nama'); ?> - Keuangan
+                  <?php echo $this->session->userdata('nama'); ?> - Mahatar
                   <!-- <small>Member since Nov. 2012</small> -->
                 </p>
               </li>
@@ -127,56 +127,15 @@
         <li class="header">MENU UTAMA</li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Data</span>
+            <i class="fa fa-dashboard"></i> <span>Test Samapta</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="<?php echo base_url() ?>dekan/"><i class="fa fa-money"></i>Data Semua</a></li>
-            <li class="active"><a href="<?php echo base_url() ?>dekan/data_per_periode"><i class="fa fa-money"></i>Data Per Gelombang</a></li>
+            <li class="active"><a href="<?php echo base_url() ?>samapta/input_data"><i class="fa fa-money"></i>input nilai samapta</a></li>
+            <li class="active"><a href="<?php echo base_url() ?>dekan/data_per_periode"><i class="fa fa-money"></i>Data masuk</a></li>
             <!-- <li><a href="index2.html"><i class="fa fa-paperclip"></i>Rekap</a></li> -->
-          </ul>
-        </li>
-         <li class="treeview">
-          <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Summary 2022</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li class="active"><a href="<?php echo base_url() ?>dekan/get_summary_prov_2022"><i class="fa fa-money"></i>Statistik per Provinsi</a></li>
-            <li class="active"><a href="<?php echo base_url() ?>dekan/get_summary_kabkota_2022"><i class="fa fa-money"></i>Statistik per Kab / Kota</a></li>
-            <li><a href="<?php echo base_url() ?>dekan/get_summary_sekolah_2022"><i class="fa fa-paperclip"></i>Statistik per sekolah</a></li>
-            <li><a href="<?php echo base_url() ?>dekan/get_summary_sumber_2022"><i class="fa fa-paperclip"></i>Statistik Sumber Informasi</a></li>
-          </ul>
-        </li>
-         <li class="treeview">
-          <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Summary 2021</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li class="active"><a href="<?php echo base_url() ?>dekan/get_summary_prov_2021"><i class="fa fa-money"></i>Statistik per Provinsi</a></li>
-             <li class="active"><a href="<?php echo base_url() ?>dekan/get_summary_ktkb_2021"><i class="fa fa-money"></i>Statistik per Kota / Kab</a></li>
-            <li><a href="<?php echo base_url() ?>dekan/get_summary_sekolah_2021"><i class="fa fa-paperclip"></i>Statistik per sekolah</a></li>
-            <li><a href="<?php echo base_url() ?>dekan/get_summary_sumber_2021"><i class="fa fa-paperclip"></i>Statistik Sumber Informasi</a></li>
-          </ul>
-        </li>
-         <li class="treeview">
-          <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Summary 2020</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-           <!--  <li class="active"><a href="<?php //echo base_url() ?>bau/get_summary_prov_2021"><i class="fa fa-money"></i>Statistik per Provinsi</a></li> -->
-            <li><a href="<?php echo base_url() ?>dekan/get_summary_sekolah_2020"><i class="fa fa-paperclip"></i>Statistik per sekolah</a></li>
-            <li><a href="<?php echo base_url() ?>dekan/get_summary_sumber_2020"><i class="fa fa-paperclip"></i>Statistik Sumber Informasi</a></li>
           </ul>
         </li>
 
