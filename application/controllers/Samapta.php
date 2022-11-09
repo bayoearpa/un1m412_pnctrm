@@ -110,15 +110,16 @@ class Samapta extends CI_Controller {
 			'suttle_run' => $suttle_run,
 			'petugas' => $petugas,
 			);
-		$proses = $this->m_registrasi->input_data($data,'tbl_seleksi_samapta');
+		$this->m_registrasi->input_data($data,'tbl_seleksi_samapta');
+		// ($this->db->affected_rows() != 1) ? false : true;
 
-		if ($proses) {
-		    $this->session->set_flashdata('success', 'Added successfully.');
+		if ($this->db->affected_rows()) {
+			$this->session->set_flashdata('error', 'Input data gagal.');
 		    $this->load->view('samapta/header');
 			$this->load->view('samapta/input');
 			$this->load->view('samapta/footer');
 		} else {
-		    $this->session->set_flashdata('error', 'Something wrong.');
+		    $this->session->set_flashdata('success', 'Input data berhasil.');
 		    $this->load->view('samapta/header');
 			$this->load->view('samapta/input');
 			$this->load->view('samapta/footer');

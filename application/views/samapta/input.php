@@ -10,8 +10,15 @@
             <div class="box-body">
               <!-- content -->
               <?php 
-              echo $this->session->flashdata('success');
-              echo $this->session->flashdata('error');
+              if ($this->session->flashdata('success') > "0") {
+                # code...
+                echo "<div class='alert alert-success'>".$this->session->flashdata('success')."</div>";
+              }
+               if ($this->session->flashdata('error') > "0") {
+                # code...
+                echo "<div class='alert alert-danger'>".$this->session->flashdata('error')."</div>";
+              }
+              ?>
                ?>
               <form method="post" action="<?php echo base_url() ?>samapta/input_cari">
               <div class="form-group">
