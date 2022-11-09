@@ -87,9 +87,9 @@ class Samapta extends CI_Controller {
         $cek_validasi = $this->m_registrasi->get_data($where,'tbl_catar_validasi_2023')->result();
         foreach ($cek_validasi as $key) {
         	# code...
-        	$no = $key->no;
+        	$cek_no = $key->no;
         }
-        if ($no == null) {
+        if ($cek_no == null) {
         	# code...
         	$data['notif'] = "<div class=callout callout-danger><h4>Data tidak ditemukan!</h4><p>pastikan calon mahasiswa sudah melakukan registrasi.</p></div>";
         }else{
