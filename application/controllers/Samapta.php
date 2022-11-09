@@ -91,7 +91,7 @@ class Samapta extends CI_Controller {
         
         if ($cek_no == null) {
         	# code...
-        	$data['notif'] = "<div class=callout callout-danger><h4>Data tidak ditemukan!</h4><p>pastikan calon mahasiswa sudah melakukan registrasi.</p></div>";
+        			$data['notif'] = "<div class=callout callout-danger><h4>Data tidak ditemukan!</h4><p>pastikan calon mahasiswa sudah melakukan registrasi.</p></div>";
         			$this->load->view('samapta/header');
 			        $this->load->view('samapta/input');
 			        $this->load->view('samapta/input_cari',$data);
@@ -112,7 +112,7 @@ class Samapta extends CI_Controller {
 			        $this->load->view('samapta/input');
 			        $this->load->view('samapta/input_cari',$data);
 			        $this->load->view('samapta/footer');
-		    } ///end of cek data samapta 
+		   			 } ///end of cek data samapta 
 		    }///end of cek samapta value data  	
         }///end of cek data pendaftar
         }///end of cek no pendaftaran value data 	
