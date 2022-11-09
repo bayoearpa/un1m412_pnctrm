@@ -80,7 +80,7 @@ class Samapta extends CI_Controller {
 		# code...
 		$prodi      = $this->input->post('prodi');
 		$where = array(
-            'no' => $no,                
+            'no' => $prodi,                
         );
         $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
 
