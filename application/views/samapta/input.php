@@ -11,7 +11,7 @@
               <!-- content -->
               <?php 
               echo $this->session->flashdata('success');
-              echo $this->session->flashdata('error');?>
+              echo $this->session->flashdata('error');
                ?>
               <form method="post" action="<?php echo base_url() ?>samapta/input_cari">
               <div class="form-group">
