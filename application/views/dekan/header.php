@@ -73,7 +73,7 @@
                 <img src="<?php echo base_url() ?>assets/front1/img/amni1.png" class="img-circle" alt="User Image">
 
                 <p>
-                  <?php echo $this->session->userdata('nama'); ?> - Keuangan
+                  <?php echo $this->session->userdata('nama'); ?>
                   <!-- <small>Member since Nov. 2012</small> -->
                 </p>
               </li>
