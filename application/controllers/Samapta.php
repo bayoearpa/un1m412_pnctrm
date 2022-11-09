@@ -123,6 +123,7 @@ class Samapta extends CI_Controller {
 			$this->load->view('samapta/input');
 			$this->load->view('samapta/footer');
 		}
+	}
 
 }
 
