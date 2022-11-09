@@ -15,7 +15,7 @@
                 # code...
                 $cek_no = $key->no;
               
-              if ($cek_no == "0") {
+              if ($cek_no == null) {
                 # code... ?>
                 <div class=callout callout-danger><h4>Data tidak ditemukan!</h4><p>pastikan calon mahasiswa sudah melakukan registrasi.</p></div>
               <?php      
@@ -26,20 +26,23 @@
                 $cek_samapta_data = $key->no; 
                 
 
-              if ($cek_samapta_data == "0") {
+              if ($cek_samapta_data == null) {
                       # code... ?>
                   <div class=callout callout-danger><h4>Data Sudah pernah diinput!</h4><p>pastikan calon mahasiswa belum melakukan test samapta.</p></div>
 
               <?php    
+                    }else{
+              foreach ($catar as $key) {
+               # code...
+              echo $key->nama;
+              }
+
+
                     } ///end of cek data samapta 
               }///end of cek samapta value data   
               }///end of cek data pendaftar
               }///end of cek no pendaftaran value data  
               // ./cek data
-             foreach ($catar as $key) {
-               # code...
-              echo $key->nama;
-             }
              ?>
 
              <!-- ./content -->
