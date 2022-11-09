@@ -210,7 +210,7 @@ class Welcome extends CI_Controller {
 		$prodi2 = $this->input->post('prodi2');
 		$gelombang = $this->input->post('gelombang');
 		$kelas = $this->input->post('kelas');
-		$thn_pel="2022";
+		$thn_pel="2023";
  
 		
 		

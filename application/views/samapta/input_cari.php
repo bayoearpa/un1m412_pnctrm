@@ -4,7 +4,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Hasil Cari data</h3>
+              <h3 class="box-title">Form Nilai Samapta</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -17,11 +17,18 @@
               <?php      
               }//end cek data catar
               elseif ($cek_samapta == null) {
+                foreach ($catar as $key) {
+                  # code...
+                  $no = $key->no;
+                  $petugas = $this->session->userdata('nama');
+                }
                       # code... ?>
                       <!-- form input nilai samapta disini -->
                 <form method="post" action="<?php echo base_url() ?>samapta/input_carip">
                   <div class="form-group">
                   <label>Lari</label>
+                  <input type="hidden" name="no" id="no" value="<?php echo $no ?>">
+                  <input type="hidden" name="petugas" id="petugas" value="<?php echo $petugas ?>">
                   <input type="number" min="1" max="100" class="form-control" id="lari" name="lari" placeholder="isi nilai dari 10-100">
                   </div>
 

@@ -95,8 +95,30 @@ class Samapta extends CI_Controller {
 	public function input_carip()
 	{
 		# code...
+		$no = $this->input->post('no');
+		$lari = $this->input->post('lari');
+		$push_up = $this->input->post('push_up');
+		$pull_up = $this->input->post('pull_up');
+		$suttle_run = $this->input->post('suttle_run');
+		$petugas = $this->input->post('petugas');
 
-	}
+		$data = array(
+			'no' => $no,
+			'lari' => $lari,
+			'push_up' => $push_up,
+			'pull_up' => $pull_up,
+			'settle_run' => $settle_run,
+			'petugas' => $petugas,
+			);
+		$proses = $this->m_registrasi->input_data($data,'tbl_seleksi_samapta');
+
+		if ($proses) {
+		    $this->session->set_flashdata('success', 'Added successfully.');
+		    redirect('input_data');
+		} else {
+		    $this->session->set_flashdata('error', 'Something wrong.');
+		    redirect('input_data');
+		}
 
 }
 
