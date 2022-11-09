@@ -113,7 +113,7 @@ class Samapta extends CI_Controller {
 		$this->m_registrasi->input_data($data,'tbl_seleksi_samapta');
 		// ($this->db->affected_rows() != 1) ? false : true;
 
-		if ($this->db->affected_rows()) {
+		if ($this->db->affected_rows() != 1) {
 			$this->session->set_flashdata('error', 'Input data gagal.');
 		    $this->load->view('samapta/header');
 			$this->load->view('samapta/input');
