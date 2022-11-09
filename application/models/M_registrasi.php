@@ -267,6 +267,24 @@ class m_registrasi extends CI_Model
 
 		
 	}
+	function get_data_test_samapta($where){
+		$this->db->select('tbl_seleksi_samapta.lari AS lari,
+		tbl_seleksi_samapta.push_up AS push_up,
+		tbl_seleksi_samapta.pull_up AS pull_up,
+		tbl_seleksi_samapta.suttle_run AS suttle_run,
+		tbl_seleksi_samapta.petugas AS petugas,
+		tbl_seleksi_samapta.time AS waktu,
+		tbl_catar_2023.nama AS nama,
+		tbl_catar_2023.no AS no,
+		tbl_catar_2023.prodi AS prodi');
+		$this->db->from('tbl_catar_2023');
+		$this->db->join('tbl_catar_validasi_2023','tbl_catar_2023.no = tbl_catar_validasi_2023.no','inner');
+		$this->db->join('tbl_seleksi_samapta','tbl_catar_validasi_2023.no = tbl_seleksi_samapta.no','inner');
+		$this->db->where($where);
+		// $this->db->order_by('tbl_catar_validasi_2021.no_reg', "asc");
+		$query=$this->db->get();
+		return $query;		
+	}
 	////////////////////summary 2023///////////////////////////////////////////////////////////////////////////
 	function get_data_statistic_kabkota_2023(){
 		$this->db->select('tbl_catar_2023.ktkb as id_provinsi,
