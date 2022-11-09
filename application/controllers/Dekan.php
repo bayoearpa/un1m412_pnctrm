@@ -56,7 +56,7 @@ class Dekan extends CI_Controller {
         $where = array(
 			'gelombang' => $gelombang,			       
         );
-		$data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2022')->result();
+		$data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
 		foreach ($data['catar'] as $row)
 		{
         $prodi = $row->prodi;
