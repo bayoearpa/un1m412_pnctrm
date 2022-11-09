@@ -13,23 +13,19 @@
              // cek data
               if ($cek_validasi == null) {
                 # code... ?>
-                <div class=callout callout-danger><h4>Data tidak ditemukan!</h4><p>pastikan calon mahasiswa sudah melakukan registrasi.</p></div>
+                  <div class="callout callout-danger"><h4>Data tidak ditemukan!</h4><p>pastikan calon mahasiswa sudah melakukan registrasi.</p></div>
               <?php      
-              }else{
-                # code...
-              if ($cek_samapta == null) {
+              }//end cek data catar
+              elseif ($cek_samapta == null) {
                       # code... ?>
-                  <div class=callout callout-danger><h4>Data Sudah pernah diinput!</h4><p>pastikan calon mahasiswa belum melakukan test samapta.</p></div>
-
+                  <div class="callout callout-danger"><h4>Data Sudah pernah diinput!</h4><p>pastikan calon mahasiswa belum melakukan test samapta.</p></div>
               <?php    
                     }else{
               foreach ($catar as $key) {
                # code...
               echo $key->nama;
               }
-                    } ///end of cek data samapta 
-              }///end of cek data pendaftar 
-              // ./cek data
+                    } ///end of cek samapta 
              ?>
 
              <!-- ./content -->
