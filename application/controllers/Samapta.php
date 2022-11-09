@@ -114,10 +114,14 @@ class Samapta extends CI_Controller {
 
 		if ($proses) {
 		    $this->session->set_flashdata('success', 'Added successfully.');
-		    redirect('input_data');
+		    $this->load->view('samapta/header');
+			$this->load->view('samapta/input');
+			$this->load->view('samapta/footer');
 		} else {
 		    $this->session->set_flashdata('error', 'Something wrong.');
-		    redirect('input_data');
+		    $this->load->view('samapta/header');
+			$this->load->view('samapta/input');
+			$this->load->view('samapta/footer');
 		}
 
 }
