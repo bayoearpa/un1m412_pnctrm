@@ -16,16 +16,14 @@
                   <div class="callout callout-danger"><h4>Data tidak ditemukan!</h4><p>pastikan calon mahasiswa sudah melakukan registrasi.</p></div>
               <?php      
               }//end cek data catar
-              elseif ($cek_samapta > 1) {
+              elseif ($cek_samapta == null) {
                       # code... ?>
-                  <div class="callout callout-danger"><h4>Data Sudah pernah diinput!</h4><p>pastikan calon mahasiswa belum melakukan test samapta.</p></div>
+                      form input nilai samapta disini
+                  
               <?php    
-                    }else{
-              foreach ($catar as $key) {
-               # code...
-              echo $key->nama;
-              }
-                    } ///end of cek samapta 
+                    }else{ ?>
+              <div class="callout callout-danger"><h4>Data Sudah pernah diinput!</h4><p>pastikan calon mahasiswa belum melakukan test samapta.</p></div>
+                    <?php} ///end of cek samapta 
              ?>
 
              <!-- ./content -->
