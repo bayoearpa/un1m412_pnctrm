@@ -78,7 +78,7 @@ class Samapta extends CI_Controller {
 	public function input_cari()
 	{
 		# code...
-		$prodi      = $this->input->post('prodi');
+		$prodi      = $this->input->post('no');
 		$where = array(
             'no' => $prodi,                
         );
