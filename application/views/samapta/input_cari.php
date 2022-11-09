@@ -9,7 +9,14 @@
             <!-- /.box-header -->
             <div class="box-body">
              <!-- content -->
-             <?php echo $notif;  ?>
+             <?php echo $notif;  
+
+             foreach ($catar as $key) {
+               # code...
+              echo $key->nama;
+             }
+             ?>
+
              <!-- ./content -->
             </div>
             <!-- /.box-body -->
