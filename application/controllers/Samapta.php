@@ -107,7 +107,7 @@ class Samapta extends CI_Controller {
 			'lari' => $lari,
 			'push_up' => $push_up,
 			'pull_up' => $pull_up,
-			'settle_run' => $settle_run,
+			'suttle_run' => $suttle_run,
 			'petugas' => $petugas,
 			);
 		$proses = $this->m_registrasi->input_data($data,'tbl_seleksi_samapta');
