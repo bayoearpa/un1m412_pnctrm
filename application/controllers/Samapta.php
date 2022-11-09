@@ -78,7 +78,7 @@ class Samapta extends CI_Controller {
 	public function input_cari()
 	{
 		# code...
-		$prodi      = $this->input->post('no');
+		$prodi = $this->input->post('no');
 		$where = array(
             'no' => $prodi,                
         );
@@ -116,6 +116,10 @@ class Samapta extends CI_Controller {
 		    }///end of cek samapta value data  	
         }///end of cek data pendaftar
         }///end of cek no pendaftaran value data 	
+        $this->load->view('samapta/header');
+		$this->load->view('samapta/input');
+		$this->load->view('samapta/input_cari',$data);
+		$this->load->view('samapta/footer');
 	}
 	public function input_carip()
 	{
