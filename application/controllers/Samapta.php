@@ -102,7 +102,7 @@ class Samapta extends CI_Controller {
 		    foreach ($cek_samapta as $key) {
         	# code...
         	$cek_samapta_data = $key->no; 
-        	}
+        	
 
 		    if ($cek_samapta_data == null) {
 		         		# code...
@@ -112,9 +112,10 @@ class Samapta extends CI_Controller {
 			        $this->load->view('samapta/input');
 			        $this->load->view('samapta/input_cari',$data);
 			        $this->load->view('samapta/footer');
-		         	}     	
-        }
-        }	
+		    } ///end of cek data samapta 
+		    }///end of cek samapta value data  	
+        }///end of cek data pendaftar
+        }///end of cek no pendaftaran value data 	
 	}
 	public function input_carip()
 	{
