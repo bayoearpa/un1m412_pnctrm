@@ -88,7 +88,7 @@ class Samapta extends CI_Controller {
         foreach ($cek_validasi as $key) {
         	# code...
         	$cek_no = $key->no;
-        }
+        
         if ($cek_no == null) {
         	# code...
         	$data['notif'] = "<div class=callout callout-danger><h4>Data tidak ditemukan!</h4><p>pastikan calon mahasiswa sudah melakukan registrasi.</p></div>";
@@ -105,6 +105,7 @@ class Samapta extends CI_Controller {
 			        $this->load->view('samapta/input_cari',$data);
 			        $this->load->view('samapta/footer');
 		         	}     	
+        }
         }	
 	}
 	public function input_carip()
