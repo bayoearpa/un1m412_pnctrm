@@ -83,8 +83,7 @@ class Samapta extends CI_Controller {
             'no' => $prodi,                
         );
         $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
-
-        $cek_validasi = $this->m_registrasi->get_data($where,'tbl_catar_validasi_2023')->result();
+        $data['cek_validasi'] = $this->m_registrasi->get_data($where,'tbl_catar_validasi_2023')->result();
         foreach ($cek_validasi as $key) {
         	# code...
         	$cek_no = $key->no;
@@ -94,7 +93,7 @@ class Samapta extends CI_Controller {
         			echo $notif = "<div class=callout callout-danger><h4>Data tidak ditemukan!</h4><p>pastikan calon mahasiswa sudah melakukan registrasi.</p></div>";
         }else{
         	# code...
-		    $cek_samapta = $this->m_registrasi->get_data($where,'tbl_seleksi_samapta')->result();
+		    $data['cek_samapta'] = $this->m_registrasi->get_data($where,'tbl_seleksi_samapta')->result();
 		    foreach ($cek_samapta as $key) {
         	# code...
         	$cek_samapta_data = $key->no; 
