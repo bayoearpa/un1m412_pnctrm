@@ -10,16 +10,15 @@
             <div class="box-body">
               <!-- content -->
               <?php 
-              if ($this->session->flashdata('success') > "0") {
+              if ($this->session->flashdata('success')) {
                 # code...
                 echo "<div class='alert alert-success'>".$this->session->flashdata('success')."</div>";
-              }
-               if ($this->session->flashdata('error') > "0") {
+              }elseif ($this->session->flashdata('error')) {
                 # code...
                 echo "<div class='alert alert-danger'>".$this->session->flashdata('error')."</div>";
-              }
-              ?>
+              }else{}
                ?>
+              }
               <form method="post" action="<?php echo base_url() ?>samapta/input_cari">
               <div class="form-group">
                   <label>No Pendaftar</label>
