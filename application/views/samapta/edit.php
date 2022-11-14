@@ -9,22 +9,6 @@
             <!-- /.box-header -->
             <div class="box-body">
              <!-- content -->
-             <?php 
-             // cek data
-              if ($cek_validasi == null) {
-                # code... ?>
-                  <div class="callout callout-danger"><h4>Data tidak ditemukan!</h4><p>pastikan calon mahasiswa sudah melakukan registrasi.</p></div>
-              <?php      
-              }//end cek data catar
-              elseif ($cek_samapta == null) {
-                foreach ($catar as $key) {
-                  # code...
-                  $no = $key->no;
-                  $petugas = $this->session->userdata('nama');
-                  $nama = $key->nama;
-                  $prodi = $samapta->prodi($key->prodi);
-                }
-                      # code... ?>
                       <!-- form input nilai samapta disini -->
                 <form method="post" action="<?php echo base_url() ?>samapta/input_carip">
                   <table>
@@ -70,12 +54,6 @@
                   <input type="submit" class="btn btn-block btn-success" id="cek" name="cek" style="width:20%;" value="Input">
                   </div>
                 </form>
-                      
-                  
-              <?php    
-                    }else{ ?>
-              <div class="callout callout-danger"><h4>Data Sudah pernah diinput!</h4><p>pastikan calon mahasiswa belum melakukan test samapta.</p></div>
-              <?php } ///end of cek samapta ?>
 
              <!-- ./content -->
             </div>
