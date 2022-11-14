@@ -9,23 +9,28 @@
             <!-- /.box-header -->
             <div class="box-body">
              <!-- content -->
+             <?php 
+             foreach ($catar as $key ) {
+               # code...
+
+              ?>
                       <!-- form input nilai samapta disini -->
-                <form method="post" action="<?php echo base_url() ?>samapta/input_carip">
+                <form method="post" action="<?php echo base_url() ?>samapta/editp">
                   <table>
                     <tr>
                       <td><b>No. Pendafataran</b></td>
                       <td>:</td>
-                      <td><?php echo $no ?></td>
+                      <td><?php echo $key->no ?></td>
                     </tr>
                     <tr>
                       <td><b>Nama</b></td>
                       <td>:</td>
-                      <td><?php echo $nama ?></td>
+                      <td><?php echo $key->nama ?></td>
                     </tr>
                     <tr>
                       <td><b>Prodi yang diambil</b></td>
                       <td>:</td>
-                      <td><?php echo $prodi ?></td>
+                      <td><?php echo $samapta->prodi($key->prodi) ?></td>
                     </tr>
                   </table>
                   <div class="form-group">
@@ -54,7 +59,7 @@
                   <input type="submit" class="btn btn-block btn-success" id="cek" name="cek" style="width:20%;" value="Input">
                   </div>
                 </form>
-
+              <?php } ?>
              <!-- ./content -->
             </div>
             <!-- /.box-body -->

@@ -168,6 +168,7 @@ class Samapta extends CI_Controller {
 	public function edit_data($id)
 	{
 		# code...
+		$data['samapta'] = $this;
 		$where = array(
             'no' => $id,                
         );
