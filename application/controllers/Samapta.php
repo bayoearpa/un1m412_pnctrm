@@ -165,6 +165,18 @@ class Samapta extends CI_Controller {
 			$this->load->view('samapta/footer');
 		}
 	}
+	public function edit_data($id)
+	{
+		# code...
+		$where = array(
+            'no' => $id,                
+        );
+        $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
+        	$this->load->view('samapta/header');
+			$this->load->view('samapta/edit',$data);
+			$this->load->view('samapta/footer');
+
+	}
 
 }
 
