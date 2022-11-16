@@ -172,7 +172,7 @@ class Samapta extends CI_Controller {
 		$where = array(
             'no' => $id,                
         );
-        $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
+        $data['catar'] = $this->m_registrasi->get_data_test_samapta($where)->result();
         	$this->load->view('samapta/header');
 			$this->load->view('samapta/edit',$data);
 			$this->load->view('samapta/footer');

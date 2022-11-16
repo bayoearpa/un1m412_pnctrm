@@ -10,6 +10,7 @@
             <div class="box-body">
              <!-- content -->
              <?php 
+             $petugas = $this->session->userdata('nama');
              foreach ($catar as $key ) {
                # code...
 
@@ -35,24 +36,24 @@
                   </table>
                   <div class="form-group">
                   <label>Lari</label>
-                  <input type="hidden" name="no" id="no" value="<?php echo $no ?>">
+                  <input type="hidden" name="no" id="no" value="<?php echo $key->no ?>">
                   <input type="hidden" name="petugas" id="petugas" value="<?php echo $petugas ?>">
-                  <input type="number" min="1" max="100" class="form-control" id="lari" name="lari" placeholder="isi nilai dari 10-100">
+                  <input type="number" min="1" max="100" class="form-control" id="lari" name="lari" value="<?php echo $key->lari ?>" placeholder="isi nilai dari 10-100">
                   </div>
 
                   <div class="form-group">
                   <label>Push Up</label>
-                  <input type="number" min="1" max="100" class="form-control" id="push_up" name="push_up" placeholder="isi nilai dari 10-100">
+                  <input type="number" min="1" max="100" class="form-control" id="push_up" name="push_up" value="<?php echo $key->push_up ?>" placeholder="isi nilai dari 10-100">
                   </div>
 
                   <div class="form-group">
                   <label>Pull Up</label>
-                  <input type="number" min="1" max="100" class="form-control" id="pull_up" name="pull_up" placeholder="isi nilai dari 10-100">
+                  <input type="number" min="1" max="100" class="form-control" id="pull_up" name="pull_up" value="<?php echo $key->pull_up ?>" placeholder="isi nilai dari 10-100">
                   </div>
 
                   <div class="form-group">
                   <label>Suttle Run</label>
-                  <input type="number" min="1" max="100" class="form-control" id="suttle_run" name="suttle_run" placeholder="isi nilai dari 10-100">
+                  <input type="number" min="1" max="100" class="form-control" id="suttle_run" name="suttle_run" value="<?php echo $key->suttle_run ?>" placeholder="isi nilai dari 10-100">
                   </div>
 
                   <div class="form-group">
