@@ -4,7 +4,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Form Nilai Samapta</h3>
+              <h3 class="box-title">Form Nilai Wawancara</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -26,7 +26,7 @@
                 }
                       # code... ?>
                       <!-- form input nilai samapta disini -->
-                <form method="post" action="<?php echo base_url() ?>wawancar/input_carip">
+                <form method="post" action="<?php echo base_url() ?>wawancara/input_carip">
                   <table>
                     <tr>
                       <td><b>No. Pendafataran</b></td>

@@ -18,7 +18,7 @@
                 echo "<div class='alert alert-danger'>".$this->session->flashdata('error')."</div>";
               }else{}
                ?>
-              <form method="post" action="<?php echo base_url() ?>samapta/input_cari">
+              <form method="post" action="<?php echo base_url() ?>wawancara/input_cari">
               <div class="form-group">
                   <label>No Pendaftar</label>
                   <input type="text" class="form-control" id="no" name="no" placeholder="Masukkan nomor pendaftaran ...">
