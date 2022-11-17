@@ -133,7 +133,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="<?php echo base_url() ?>wawancara/input_data"><i class="fa fa-money"></i>input nilai samapta</a></li>
+            <li class="active"><a href="<?php echo base_url() ?>wawancara/input_data"><i class="fa fa-money"></i>input nilai wawancara</a></li>
             <li class="active"><a href="<?php echo base_url() ?>wawancara/data_masuk"><i class="fa fa-money"></i>Data masuk</a></li>
             <!-- <li><a href="index2.html"><i class="fa fa-paperclip"></i>Rekap</a></li> -->
           </ul>

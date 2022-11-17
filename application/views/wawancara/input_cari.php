@@ -26,7 +26,7 @@
                 }
                       # code... ?>
                       <!-- form input nilai samapta disini -->
-                <form method="post" action="<?php echo base_url() ?>samapta/input_carip">
+                <form method="post" action="<?php echo base_url() ?>wawancar/input_carip">
                   <table>
                     <tr>
                       <td><b>No. Pendafataran</b></td>
