@@ -16,13 +16,13 @@
                   <div class="callout callout-danger"><h4>Data tidak ditemukan!</h4><p>pastikan calon mahasiswa sudah melakukan registrasi.</p></div>
               <?php      
               }//end cek data catar
-              elseif ($cek_samapta == null) {
+              elseif ($cek_wawancara == null) {
                 foreach ($catar as $key) {
                   # code...
                   $no = $key->no;
                   $petugas = $this->session->userdata('nama');
                   $nama = $key->nama;
-                  $prodi = $samapta->prodi($key->prodi);
+                  $prodi = $wawancara->prodi($key->prodi);
                 }
                       # code... ?>
                       <!-- form input nilai samapta disini -->
