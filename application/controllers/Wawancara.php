@@ -97,18 +97,14 @@ class Wawancara extends CI_Controller {
 	{
 		# code...
 		$no = $this->input->post('no');
-		$lari = $this->input->post('lari');
-		$push_up = $this->input->post('push_up');
-		$pull_up = $this->input->post('pull_up');
-		$suttle_run = $this->input->post('suttle_run');
+		$hasil_wwncara = $this->input->post('hasil_wwncara');
+		$ket = $this->input->post('ket');
 		$petugas = $this->input->post('petugas');
 
 		$data = array(
 			'no' => $no,
-			'lari' => $lari,
-			'push_up' => $push_up,
-			'pull_up' => $pull_up,
-			'suttle_run' => $suttle_run,
+			'hasil_wwncara' => $hasil_wwncara,
+			'ket' => $ket,
 			'petugas' => $petugas,
 			);
 		$this->m_registrasi->input_data($data,'tbl_seleksi_wawancara');
@@ -182,21 +178,17 @@ class Wawancara extends CI_Controller {
 	{
 		# code...
 		$where = array(
-				'id_ssmp'  	=> $this->input->post('id_ssmp'),
+				'id_sw'  	=> $this->input->post('id_sw'),
 		);
 		$no = $this->input->post('no');
-		$lari = $this->input->post('lari');
-		$push_up = $this->input->post('push_up');
-		$pull_up = $this->input->post('pull_up');
-		$suttle_run = $this->input->post('suttle_run');
+		$hasil_wwncara = $this->input->post('hasil_wwncara');
+		$ket = $this->input->post('ket');
 		$petugas = $this->input->post('petugas');
 
 		$data = array(
 			'no' => $no,
-			'lari' => $lari,
-			'push_up' => $push_up,
-			'pull_up' => $pull_up,
-			'suttle_run' => $suttle_run,
+			'hasil_wwncara' => $hasil_wwncara,
+			'ket' => $ket,
 			'petugas' => $petugas,
 			);
 		$this->m_registrasi->update_data($where,$data,'tbl_seleksi_wawancara');

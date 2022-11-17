@@ -34,27 +34,27 @@
                       <td><?php echo $samapta->prodi($key->prodi) ?></td>
                     </tr>
                   </table>
-                  <div class="form-group">
-                  <label>Lari</label>
-                  <input type="hidden" name="id_ssmp" id="id_ssmp" value="<?php echo $key->id_ssmp ?>">
+                  <input type="hidden" name="id_sw" id="id_sw" value="<?php echo $key->id_sw ?>">
                   <input type="hidden" name="no" id="no" value="<?php echo $key->no ?>">
                   <input type="hidden" name="petugas" id="petugas" value="<?php echo $petugas ?>">
-                  <input type="number" min="1" max="100" class="form-control" id="lari" name="lari" value="<?php echo $key->lari ?>" placeholder="isi nilai dari 10-100">
-                  </div>
 
                   <div class="form-group">
-                  <label>Push Up</label>
-                  <input type="number" min="1" max="100" class="form-control" id="push_up" name="push_up" value="<?php echo $key->push_up ?>" placeholder="isi nilai dari 10-100">
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="hasil_wwncra" id="hasil_wwncra" value="100" <?php echo ($key->hasil_wwncra == '100') ? 'checked' : ''; ?>>
+                        Lulus
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="hasil_wwncra" id="hasil_wwncra" value="0" <?php echo ($key->hasil_wwncra == '0') ? 'checked' : ''; ?>>
+                        Tidak Lulus
+                      </label>
+                    </div>
                   </div>
-
                   <div class="form-group">
-                  <label>Pull Up</label>
-                  <input type="number" min="1" max="100" class="form-control" id="pull_up" name="pull_up" value="<?php echo $key->pull_up ?>" placeholder="isi nilai dari 10-100">
-                  </div>
-
-                  <div class="form-group">
-                  <label>Suttle Run</label>
-                  <input type="number" min="1" max="100" class="form-control" id="suttle_run" name="suttle_run" value="<?php echo $key->suttle_run ?>" placeholder="isi nilai dari 10-100">
+                  <label>Keterangan</label>
+                    <textarea name="ket" id="ket" class="form-control" rows="3"></textarea>
                   </div>
 
                   <div class="form-group">

@@ -289,14 +289,14 @@ class m_registrasi extends CI_Model
 	}
 	function get_data_test_wawancara($where){
 		$this->db->select('
-		tbl_seleksi_wawancara.id_sw,
-		tbl_seleksi_wawancara.hasil_wwncra,
-		tbl_seleksi_wawancara.ket,
-		tbl_seleksi_wawancara.petugas,
-		tbl_seleksi_wawancara.`time`,
-		tbl_catar_2023.nama,
-		tbl_catar_2023.prodi,
-		tbl_catar_2023.no');
+		tbl_seleksi_wawancara.id_sw AS id_sw,
+		tbl_seleksi_wawancara.hasil_wwncra AS hasil_wwncara,
+		tbl_seleksi_wawancara.ket AS ket,
+		tbl_seleksi_wawancara.petugas AS petugas,
+		tbl_seleksi_wawancara.`time` AS `time`,
+		tbl_catar_2023.nama AS nama,
+		tbl_catar_2023.prodi AS prodi,
+		tbl_catar_2023.no AS no');
 		$this->db->from('tbl_catar_2023');
 		$this->db->join('tbl_catar_validasi_2023','tbl_catar_2023.no = tbl_catar_validasi_2023.no','inner');
 		$this->db->join('tbl_seleksi_wawancara','tbl_catar_validasi_2023.no = tbl_seleksi_wawancara.no','inner');

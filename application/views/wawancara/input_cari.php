@@ -64,8 +64,6 @@
                   <label>Keterangan</label>
                     <textarea name="ket" id="ket" class="form-control" rows="3" placeholder="masukan Keterangan ..."></textarea>
                   </div>
-
-                 
                   <div class="form-group">
                   <input type="submit" class="btn btn-block btn-success" id="cek" name="cek" style="width:20%;" value="Input">
                   </div>
