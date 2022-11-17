@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Samapta extends CI_Controller {
+class Wawancara extends CI_Controller {
 
 	public function __construct()
 	{
@@ -64,34 +64,34 @@ class Samapta extends CI_Controller {
         $prodi = $row->prodi;
 		}
 		$data['prodi'] = $this->prodi($prodi);
-        $this->load->view('samapta/header');
-        $this->load->view('samapta/index',$data);
-        $this->load->view('samapta/footer');
+        $this->load->view('wawancara/header');
+        $this->load->view('wawancara/index',$data);
+        $this->load->view('wawancara/footer');
 	}
 	public function input_data()
 	{
 		# code...
-		$this->load->view('samapta/header');
-        $this->load->view('samapta/input');
-        $this->load->view('samapta/footer');
+		$this->load->view('wawancara/header');
+        $this->load->view('wawancara/input');
+        $this->load->view('wawancara/footer');
 	}
 	public function input_cari()
 	{
 		# code...
-		$data['samapta'] = $this;
+		$data['wawancara'] = $this;
 		$prodi = $this->input->post('no');
 		$where = array(
             'no' => $prodi,                
         );
         $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
         $data['cek_validasi'] = $this->m_registrasi->get_data($where,'tbl_catar_validasi_2023')->result();
-        $data['cek_samapta'] = $this->m_registrasi->get_data($where,'tbl_seleksi_samapta')->result();
+        $data['cek_wawancara'] = $this->m_registrasi->get_data($where,'tbl_seleksi_wawancara')->result();
         	
 
-        $this->load->view('samapta/header');
-		$this->load->view('samapta/input');
-		$this->load->view('samapta/input_cari',$data);
-		$this->load->view('samapta/footer');
+        $this->load->view('wawancara/header');
+		$this->load->view('wawancara/input');
+		$this->load->view('wawancara/input_cari',$data);
+		$this->load->view('wawancara/footer');
 	}
 	public function input_carip()
 	{
@@ -111,27 +111,27 @@ class Samapta extends CI_Controller {
 			'suttle_run' => $suttle_run,
 			'petugas' => $petugas,
 			);
-		$this->m_registrasi->input_data($data,'tbl_seleksi_samapta');
+		$this->m_registrasi->input_data($data,'tbl_seleksi_wawancara');
 		// ($this->db->affected_rows() != 1) ? false : true;
 
 		if ($this->db->affected_rows() != 1) {
 			$this->session->set_flashdata('error', 'Input data gagal.');
-		    $this->load->view('samapta/header');
-			$this->load->view('samapta/input');
-			$this->load->view('samapta/footer');
+		    $this->load->view('wawancara/header');
+			$this->load->view('wawancara/input');
+			$this->load->view('wawancara/footer');
 		} else {
 		    $this->session->set_flashdata('success', 'Input data berhasil.');
-		    $this->load->view('samapta/header');
-			$this->load->view('samapta/input');
-			$this->load->view('samapta/footer');
+		    $this->load->view('wawancara/header');
+			$this->load->view('wawancara/input');
+			$this->load->view('wawancara/footer');
 		}
 	}
 	public function data_masuk()
 	{
 		# code...
-		$this->load->view('samapta/header');
-		$this->load->view('samapta/data_masuk');
-		$this->load->view('samapta/footer');
+		$this->load->view('wawancara/header');
+		$this->load->view('wawancara/data_masuk');
+		$this->load->view('wawancara/footer');
 	}
 	public function data_masukp()
 	{
@@ -147,35 +147,35 @@ class Samapta extends CI_Controller {
             'tbl_catar_2023.prodi' => $prodi,
             'tbl_catar_2023.kelas' => $kelas,                
         	);
-        	$data['catar'] = $this->m_registrasi->get_data_test_samapta($where)->result();
-			$this->load->view('samapta/header');
-			$this->load->view('samapta/data_masuk');
-			$this->load->view('samapta/data_masukp',$data);
-			$this->load->view('samapta/footer');
+        	$data['catar'] = $this->m_registrasi->get_data_test_wawancara($where)->result();
+			$this->load->view('wawancara/header');
+			$this->load->view('wawancara/data_masuk');
+			$this->load->view('wawancara/data_masukp',$data);
+			$this->load->view('wawancara/footer');
 		}else{
 			$where = array(
             'tbl_catar_2023.prodi' => $prodi,
             'tbl_catar_2023.kelas' => $kelas,
             'tbl_catar_2023.gelombang' => $gelombang,                
         	);
-        	$data['catar'] = $this->m_registrasi->get_data_test_samapta($where)->result();
-			$this->load->view('samapta/header');
-			$this->load->view('samapta/data_masuk');
-			$this->load->view('samapta/data_masukp',$data);
-			$this->load->view('samapta/footer');
+        	$data['catar'] = $this->m_registrasi->get_data_test_wawancara($where)->result();
+			$this->load->view('wawancara/header');
+			$this->load->view('wawancara/data_masuk');
+			$this->load->view('wawancara/data_masukp',$data);
+			$this->load->view('wawancara/footer');
 		}
 	}
 	public function edit_data($id)
 	{
 		# code...
-		$data['samapta'] = $this;
+		$data['wawancara'] = $this;
 		$where = array(
             'tbl_catar_2023.no' => $id,                
         );
-        $data['catar'] = $this->m_registrasi->get_data_test_samapta($where)->result();
-        	$this->load->view('samapta/header');
-			$this->load->view('samapta/edit',$data);
-			$this->load->view('samapta/footer');
+        $data['catar'] = $this->m_registrasi->get_data_test_wawancara($where)->result();
+        	$this->load->view('wawancara/header');
+			$this->load->view('wawancara/edit',$data);
+			$this->load->view('wawancara/footer');
 
 	}
 	public function edit_datap()
@@ -199,22 +199,23 @@ class Samapta extends CI_Controller {
 			'suttle_run' => $suttle_run,
 			'petugas' => $petugas,
 			);
-		$this->m_registrasi->update_data($where,$data,'tbl_seleksi_samapta');
+		$this->m_registrasi->update_data($where,$data,'tbl_seleksi_wawancara');
 
 		if ($this->db->affected_rows() != 1) {
 			$this->session->set_flashdata('error', ' Edit data gagal.');
-		    $this->load->view('samapta/header');
-			$this->load->view('samapta/data_masuk');
-			$this->load->view('samapta/footer');
+		    $this->load->view('wawancara/header');
+			$this->load->view('wawancara/data_masuk');
+			$this->load->view('wawancara/footer');
 		} else {
 		    $this->session->set_flashdata('success', ' Edit data berhasil.');
-		    $this->load->view('samapta/header');
-			$this->load->view('samapta/data_masuk');
-			$this->load->view('samapta/footer');
+		    $this->load->view('wawancara/header');
+			$this->load->view('wawancara/data_masuk');
+			$this->load->view('wawancara/footer');
 		}
 	}
 
+
 }
 
-/* End of file Samapta.php */
-/* Location: ./application/controllers/Samapta.php */
+/* End of file Wawancara.php */
+/* Location: ./application/controllers/Wawancara.php */
