@@ -72,7 +72,7 @@ class Tpa extends CI_Controller {
 	{
 		# code...
 		$this->load->view('tpa/header');
-		$this->load->view('tpa/data_masuk');
+		$this->load->view('tpa/input');
 		$this->load->view('tpa/footer');
 	}
 	public function input_cari()
