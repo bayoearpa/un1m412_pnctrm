@@ -91,8 +91,8 @@ class Tpa extends CI_Controller {
         	);
         	$data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
 			$this->load->view('tpa/header');
-			$this->load->view('tpa/data_masuk');
-			$this->load->view('tpa/data_masukp',$data);
+			$this->load->view('tpa/input');
+			$this->load->view('tpa/input_cari',$data);
 			$this->load->view('tpa/footer');
 		}else{
 			$where = array(
@@ -102,8 +102,8 @@ class Tpa extends CI_Controller {
         	);
         	$data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
 			$this->load->view('tpa/header');
-			$this->load->view('tpa/data_masuk');
-			$this->load->view('tpa/data_masukp',$data);
+			$this->load->view('tpa/input');
+			$this->load->view('tpa/input_cari',$data);
 			$this->load->view('tpa/footer');
 		}
 	}
