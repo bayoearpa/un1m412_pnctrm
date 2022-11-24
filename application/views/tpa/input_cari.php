@@ -8,18 +8,16 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-              <table id="example1" class="table table-bordered table-striped display nowrap">
-                <thead>
-                <tr>
-                 <th>No.</th>
+              <table class="table table-bordered">
+                <tbody>
+                  <tr>
+                  <th>No.</th>
                   <th>No. Pendf.</th>
                   <th>Nama</th>
                   <th>Prodi</th>
-                  <th>Edit</th>
+                  <th>Nilai</th>
                 </tr>
-                </thead>
-                <tbody>
-                <?php 
+                               <?php 
                 $no = 1;
                 foreach($catar as $c){ 
                  ?>
@@ -67,18 +65,10 @@
                  </td>
                 </tr>
                <?php } ?>
-                </tbody>
-                <tfoot>
-                <tr>
-                <th>No.</th>
-                  <th>No. Pendf.</th>
-                  <th>Nama</th>
-                  <th>Prodi</th>
+              </tbody></table>
 
-                  <th>Edit</th>
-                </tr>
-                </tfoot>
-              </table>
+
+            
             </div>
             <!-- /.box-body -->
           </div>
