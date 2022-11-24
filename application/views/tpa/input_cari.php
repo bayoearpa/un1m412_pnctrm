@@ -61,7 +61,7 @@
                   ?></td>
 
                   <td>
-                    <a class="btn btn-success btn-sm" href="<?php echo base_url().'samapta/edit_data/'.$c->no; ?>"><i class="fa fa-pencil"></i> Edit</a> 
+                    <input type="number" min="1" max="100" class="form-control" id="hasil_tpa" name="hasil_tpa" placeholder="isi nilai dari 10-100">
                  </td>
                 </tr>
                <?php } ?>
