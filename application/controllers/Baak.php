@@ -37,6 +37,41 @@ class Baak extends CI_Controller {
             return $jurusan = "Perdagangan Internasional";
         }
     }
+    function prodi($id){
+        switch ($id) {
+
+            // registrasi
+                case '1':
+                    $pick = "D3 KETATALAKSANAAN PELAYARAN NIAGA DAN KEPELABUHAN";
+                break;
+                case '2' :
+                    $pick = "D3 TEKNIKA";
+                break;
+                case '3' :
+                    $pick = "D3 NAUTIKA";
+                break;
+                case '4' :
+                    $pick = "S1 TRANSPORTASI";
+                break;
+                case '5':
+                    $pick = "S1 TRANSPORTASI ( LINTAS JALUR )";
+                break;
+                case '6':
+                    $pick = "S1 TEKNIK MESIN";
+                break;
+                case '7':
+                    $pick = "S1 TEKNIK TRANSPORTASI LAUT";
+                break;
+                case '8':
+                    $pick = "S1 TEKNIK KESELAMATAN";
+                break;
+                case '9':
+                    $pick = "S1 PERDAGANGAN INTERNASIONAL";
+                break;
+                
+            }
+            return $pick;
+    }
     function index() {
         // $data['catar'] = $this->m_registrasi->get_data_join_all()->result(); 
         // $data['catar'] = $this->m_registrasi->get_data_all('tbl_catar_2021')->result(); 
@@ -266,6 +301,7 @@ class Baak extends CI_Controller {
         $kelas = $this->input->post('kelas');
         $gelombang = $this->input->post('gelombang');
 
+        $nameprodi = $this->prodi($prodi);
 
         if ($gelombang == null) {
             # code...
@@ -277,7 +313,7 @@ class Baak extends CI_Controller {
             $data['kelas'] = $kelas;
 
              //pdf
-            $pdfFilePath="daftar_catar_".$prodi.".pdf";
+            $pdfFilePath="daftar_catar_".$nameprodi.".pdf";
             $html=$this->load->view('baak/rekap_ctk_peserta2022',$data, TRUE);
             $pdf = $this->m_pdf->load();
      
@@ -293,7 +329,7 @@ class Baak extends CI_Controller {
             );
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
              //pdf
-            $pdfFilePath="daftar_catar_".$prodi.".pdf";
+            $pdfFilePath="daftar_catar_".$nameprodi.".pdf";
             $html=$this->load->view('baak/rekap_ctk_peserta2022',$data, TRUE);
             $pdf = $this->m_pdf->load();
      
@@ -672,7 +708,44 @@ class Baak extends CI_Controller {
         header("Content-Disposition: attachment; filename=".$jurusan."_daftar_hadir_excel.xls");
 
         $this->load->view('baak/rekap_ctk',$data);   
-    }                   
+    }
+     function rekap_exl_daftarpeserta2022(){
+        $prodi = $this->input->post('prodi');
+        $kelas = $this->input->post('kelas');
+        $gelombang = $this->input->post('gelombang');
+
+        $nameprodi = $this->prodi($prodi);
+
+        if ($gelombang == null) {
+            # code...
+            $where = array(
+            'tbl_catar_2023.prodi' => $prodi,
+            'tbl_catar_2023.kelas' => $kelas,                
+            );
+            $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+            $data['kelas'] = $kelas;
+
+             //excel
+            header("Content-type:application/vnd.ms-excel");
+            header("Content-Disposition: attachment; filename=".$nameprodi."_peserta_excel.xls");
+
+            $this->load->view('baak/rekap_ctk_peserta_exl2022',$data);
+           
+        }else{
+            $where = array(
+            'tbl_catar_2023.prodi' => $prodi,
+            'tbl_catar_2023.kelas' => $kelas,
+            'tbl_catar_2023.gelombang' => $gelombang,                
+            );
+            $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+              //excel
+            header("Content-type:application/vnd.ms-excel");
+            header("Content-Disposition: attachment; filename=".$nameprodi."_peserta_excel.xls");
+
+            $this->load->view('baak/rekap_ctk_peserta_exl2022',$data);
+        }
+
+    }                             
      function rekap_exl_daftarpeserta(){
         $where2= array(
             'id_gelombang' => '1',  
