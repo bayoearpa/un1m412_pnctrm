@@ -253,43 +253,6 @@ class Baak extends CI_Controller {
         exit();
     
     }  
-    function rekap_pdf_daftarpeserta2022(){
-       $where2= array(
-            'id_gelombang' => '1',  
-        );
-        $gelombang=$this->m_registrasi->get_data_gelombang($where2);
-        $ta=$this->m_registrasi->get_data_ta($where2);
-        $data['ta'] = $ta;
-        $prodi = $this->input->post('prodi');
-        $jk = $this->input->post('jk');
-        $tgl = $this->input->post('tgl');
-        $date = str_replace('/', '-', $tgl);
-        //echo date('Y-m-d', strtotime($date));
-
-        $where = array(
-            'tbl_catar_2021.prodi' => $prodi,
-            'tbl_catar_2021.gelombang' => $gelombang,
-            'tbl_catar_2021.jk' => $jk
-        );
-        
-        $jurusan = $this->jurusan($prodi);;
-        $data['jurusan'] = $jurusan;
-        $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
-        $data['prodi'] = $prodi;
-        $data['jk'] = $jk;
-        $data['tgl'] = $date;
-
-        //pdf
-        $pdfFilePath="daftar_catar_".$jurusan.".pdf";
-        $html=$this->load->view('baak/rekap_ctk_peserta',$data, TRUE);
-        $pdf = $this->m_pdf->load();
- 
-        $pdf->AddPage('P');
-        $pdf->WriteHTML($html);
-        $pdf->Output($pdfFilePath, "D");
-        exit();
-    
-    } 
      function rekap_pdf_daftarpeserta2022(){
 
 
