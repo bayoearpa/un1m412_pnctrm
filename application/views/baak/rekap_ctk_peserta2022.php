@@ -78,7 +78,7 @@ table{
 $no=1;
 foreach ($catar as $key) {
 	# code...
-}
+
  ?>
 	<tr>
 		<td height="10px"><?php echo $no++; ?></td>
@@ -91,7 +91,7 @@ foreach ($catar as $key) {
 			echo "P";
 		} ?></td>
 	</tr>
-
+<?php } ?>
 </table>
 </div>
 
