@@ -125,6 +125,7 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MENU UTAMA</li>
+        <li><a href="<?php echo base_url() ?>baak/"><i class="fa fa-book"></i> <span>Home</span></a></li>
          <li class="treeview">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Rekapitulasi Catar</span>
@@ -244,7 +245,7 @@
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_all('tbl_catar_2023')->num_rows(); ?><sup style="font-size: 20px"></span>
             </div>
             <div class="box-body" style="">
-              Sudah Validasi
+              <a href="<?php echo base_url() ?>baak/h_all">Sudah Validasi</a>
                <?php 
              $where2= array(
             'id_gelombang' => '1',  
