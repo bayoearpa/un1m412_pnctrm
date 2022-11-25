@@ -169,6 +169,12 @@ class Baak extends CI_Controller {
         $this->load->view('baak/rekap_peserta_exl');
         $this->load->view('baak/footer');
     }
+    function rekap_peserta2022(){
+        $this->load->view('baak/header');
+        $this->load->view('baak/rekap_peserta2022');
+        $this->load->view('baak/rekap_peserta_exl');
+        $this->load->view('baak/footer');
+    }
      function rekap_targas(){
         $this->load->view('baak/header');
         $this->load->view('baak/rekap_targas');
