@@ -133,18 +133,18 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="<?php echo base_url() ?>baak/"><i class="fa fa-repeat"></i>Ganti Jurusan</a></li>
+            <!-- <li class="active"><a href="<?php //echo base_url() ?>baak/"><i class="fa fa-repeat"></i>Ganti Jurusan</a></li> -->
             <li><a href="<?php echo base_url() ?>baak/rekap_peserta"><i class="fa fa-paperclip"></i>Rekap Daftar Peserta</a></li>
-            <li><a href="<?php echo base_url() ?>baak/rekap_abs_tda"><i class="fa fa-paperclip"></i>Rekap Abasen TDA</a></li>
-            <li><a href="<?php echo base_url() ?>baak/rekap"><i class="fa fa-paperclip"></i>Rekap Daftar Hadir</a></li>
-            <li><a href="<?php echo base_url() ?>baak/rekap_targas"><i class="fa fa-paperclip"></i>Rekap Daftar Hadir Targas</a></li>
-            <li><a href="<?php echo base_url() ?>baak/rekap_tkd"><i class="fa fa-paperclip"></i>Rekap Nilai TKD</a></li>
-            <li><a href="<?php echo base_url() ?>baak/rekap_samapta"><i class="fa fa-paperclip"></i>Rekap Nilai Seleksi Samapta</a></li>
-            <li><a href="<?php echo base_url() ?>baak/rekap_wawancara"><i class="fa fa-paperclip"></i>Rekap Nilai Wawancara</a></li>
-            <li><a href="<?php echo base_url() ?>baak/rekap_psykotest"><i class="fa fa-paperclip"></i>Rekap Nilai Psykotest</a></li>
-            <li><a href="<?php echo base_url() ?>baak/rekap_kesehatan"><i class="fa fa-paperclip"></i>Rekap Nilai Kesehatan</a></li>
-            <li><a href="<?php echo base_url() ?>baak/rekap_pantukir"><i class="fa fa-paperclip"></i>Rekap Nilai Pantukir</a></li>
-            <li><a href="<?php echo base_url() ?>baak/rekap_seleksi"><i class="fa fa-paperclip"></i>Rekap Nilai Seleksi</a></li>
+            <!-- <li><a href="<?php //echo base_url() ?>baak/rekap_abs_tda"><i class="fa fa-paperclip"></i>Rekap Abasen TDA</a></li>
+            <li><a href="<?php //echo base_url() ?>baak/rekap"><i class="fa fa-paperclip"></i>Rekap Daftar Hadir</a></li>
+            <li><a href="<?php// echo base_url() ?>baak/rekap_targas"><i class="fa fa-paperclip"></i>Rekap Daftar Hadir Targas</a></li>
+            <li><a href="<?php //echo base_url() ?>baak/rekap_tkd"><i class="fa fa-paperclip"></i>Rekap Nilai TKD</a></li>
+            <li><a href="<?php //echo base_url() ?>baak/rekap_samapta"><i class="fa fa-paperclip"></i>Rekap Nilai Seleksi Samapta</a></li>
+            <li><a href="<?php //echo base_url() ?>baak/rekap_wawancara"><i class="fa fa-paperclip"></i>Rekap Nilai Wawancara</a></li>
+            <li><a href="<?php //echo base_url() ?>baak/rekap_psykotest"><i class="fa fa-paperclip"></i>Rekap Nilai Psykotest</a></li>
+            <li><a href="<?php //echo base_url() ?>baak/rekap_kesehatan"><i class="fa fa-paperclip"></i>Rekap Nilai Kesehatan</a></li>
+            <li><a href="<?php //echo base_url() ?>baak/rekap_pantukir"><i class="fa fa-paperclip"></i>Rekap Nilai Pantukir</a></li>
+            <li><a href="<?php// echo base_url() ?>baak/rekap_seleksi"><i class="fa fa-paperclip"></i>Rekap Nilai Seleksi</a></li> -->
 
           </ul>
         </li>
