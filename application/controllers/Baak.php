@@ -87,6 +87,14 @@ class Baak extends CI_Controller {
         $this->load->view('baak/index',$data);
         $this->load->view('baak/footer');
     }
+    public function data_sudah_validasi()
+    {
+        # code...
+        $data['catar'] = $this->m_registrasi->get_data_join_all()->result();
+        $this->load->view('baak/header');
+        $this->load->view('baak/data_sudah_validasi',$data);
+        $this->load->view('baak/footer');
+    }
     function validasi($id)
     {
         # code...
@@ -311,7 +319,7 @@ class Baak extends CI_Controller {
             );
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
             $data['kelas'] = $kelas;
-
+            $data['prodi'] = $nameprodi;
              //pdf
             $pdfFilePath="daftar_catar_".$nameprodi.".pdf";
             $html=$this->load->view('baak/rekap_ctk_peserta2022',$data, TRUE);
@@ -328,6 +336,8 @@ class Baak extends CI_Controller {
             'tbl_catar_2023.gelombang' => $gelombang,                
             );
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+            $data['kelas'] = $kelas;
+            $data['prodi'] = $nameprodi;
              //pdf
             $pdfFilePath="daftar_catar_".$nameprodi.".pdf";
             $html=$this->load->view('baak/rekap_ctk_peserta2022',$data, TRUE);
@@ -724,6 +734,7 @@ class Baak extends CI_Controller {
             );
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
             $data['kelas'] = $kelas;
+            $data['prodi'] = $nameprodi;
 
              //excel
             header("Content-type:application/vnd.ms-excel");
@@ -738,6 +749,8 @@ class Baak extends CI_Controller {
             'tbl_catar_2023.gelombang' => $gelombang,                
             );
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+            $data['kelas'] = $kelas;
+            $data['prodi'] = $nameprodi;
               //excel
             header("Content-type:application/vnd.ms-excel");
             header("Content-Disposition: attachment; filename=".$nameprodi."_peserta_excel.xls");

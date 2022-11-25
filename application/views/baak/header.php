@@ -245,7 +245,7 @@
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_all('tbl_catar_2023')->num_rows(); ?><sup style="font-size: 20px"></span>
             </div>
             <div class="box-body" style="">
-              <a href="<?php echo base_url() ?>baak/h_all">Sudah Validasi</a>
+              <a href="<?php echo base_url() ?>baak/data_sudah_validasi">Sudah Validasi</a>
                <?php 
              $where2= array(
             'id_gelombang' => '1',  
