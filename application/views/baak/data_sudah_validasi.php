@@ -26,7 +26,7 @@
                  ?>
                 <tr>
                   <td><?php echo $no++; ?></td>
-                  <td><?php echo $c->nama ?></td>
+                  <td><?php $text1= strtolower($c->nama);echo ucwords($text1) ?></td>
                   <td><?php echo $c->no ?></td>
                   <td><?php if ($c->jk == "Pria") {
                       # code...
