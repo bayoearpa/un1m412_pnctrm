@@ -60,7 +60,7 @@ table{
 <p style="margin: 0px;text-align: center;">UNIVERSITAS MARITIM AMNI SEMARANG</p>
 <p style="margin: 0px;text-align: center;">JALAN SOEKARNO HATTA NOMOR 180 SEMARANG</p>
 <center><p style="margin: 0px;text-align: center;">DAFTAR CALON TARUNA - MAHASISWA T.A 2023/2024</p></center>
-<center><p style="margin: 0px;text-align: center;">PRODI : <?php echo $nameprodi; ?></p></center>
+<center><p style="margin: 0px;text-align: center;">PRODI : <?php echo $prodi; ?></p></center>
 <center><p style="margin: 0px;text-align: center;">KELAS : <?php if ($kelas == "reg") {
 	# code... 
 	echo "REGULER";
