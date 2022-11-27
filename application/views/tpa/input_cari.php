@@ -8,6 +8,7 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
+              <form method="post" action="<?php echo base_url() ?>tpa/input_carip">
               <table class="table table-bordered">
                 <tbody>
                   <tr>
@@ -61,12 +62,14 @@
                   ?></td>
 
                   <td>
-                    <input type="number" min="1" max="100" class="form-control" id="hasil_tpa" name="hasil_tpa" placeholder="isi nilai dari 10-100">
+                    <input type="number" min="1" max="100" class="form-control" id="hasil_tpa[]" name="hasil_tpa[]" placeholder="isi nilai dari 10-100">
                  </td>
                 </tr>
                <?php } ?>
               </tbody></table>
-
+              <div class="form-group">
+                  <input type="submit" class="btn btn-block btn-success" id="cek" name="cek" style="width:20%;" value="Input">
+                  </div>
 
             
             </div>
