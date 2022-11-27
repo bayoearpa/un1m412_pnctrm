@@ -120,7 +120,7 @@ class Tpa extends CI_Controller {
 				'petugas' 		=> $_POST['petugas'][$key],			
 			);		
 		}		
-		$this->db->insert_batch('tbl_kliring_smta_makul_temp',$result);
+		$this->db->insert_batch('tbl_seleksi_tpa',$result);
 
 		/////////////////////////////./input arry///////////////////////////////////////	
 		if ($this->db->affected_rows() != 1) {
