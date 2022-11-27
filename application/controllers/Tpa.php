@@ -107,6 +107,34 @@ class Tpa extends CI_Controller {
 			$this->load->view('tpa/footer');
 		}
 	}
+	public function input_carip()
+	{
+		# code...
+
+		/////////////////////////////input arry///////////////////////////////////////
+		$result = array();
+		foreach ($_POST['hasil_tpa'] as $key => $val) {
+			$result[] = array( 
+				'no'     		=> $_POST['no'][$key],		
+				'hasil_tpa' 	=> $_POST['hasil_tpa'][$key],
+				'petugas' 		=> $_POST['petugas'][$key],			
+			);		
+		}		
+		$this->db->insert_batch('tbl_kliring_smta_makul_temp',$result);
+
+		/////////////////////////////./input arry///////////////////////////////////////	
+		if ($this->db->affected_rows() != 1) {
+			$this->session->set_flashdata('error', 'Input data gagal.');
+		    $this->load->view('tpa/header');
+			$this->load->view('tpa/input');
+			$this->load->view('tpa/footer');
+		} else {
+		    $this->session->set_flashdata('success', 'Input data berhasil.');
+		    $this->load->view('tpa/header');
+			$this->load->view('tpa/input');
+			$this->load->view('tpa/footer');
+		}
+	}
 
 }
 
