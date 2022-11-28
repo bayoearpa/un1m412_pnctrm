@@ -19,7 +19,7 @@
                     }else{}
                      ?>
                   <div class="form-group">
-                      <form method="post" action="<?php echo base_url() ?>samapta/data_masukp">
+                      <form method="post" action="<?php echo base_url() ?>wawancara/data_masukp">
                       <label> Pilih Prodi
                     </label>
                     <select name="prodi" id="prodi" class="form-control" style="width:50%;" required="harus dipilih">  
