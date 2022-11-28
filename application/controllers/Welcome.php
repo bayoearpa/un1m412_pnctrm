@@ -106,7 +106,7 @@ class Welcome extends CI_Controller {
 			$where2 = array('no' => $no);
 			$data['catar'] = $this->m_registrasi->get_data($where2,'tbl_catar_2023')->result();
 			// cek wawancara
-			$get_wawancara = $this->m_registrasi->get_data($where2,'tbl_seleksi_wawancara')->result();
+			$get_wawancara = $this->m_registrasi->get_data_test_wawancara($where2)->result();
 			if ($get_wawancara == null) {
 				# code...
 				
