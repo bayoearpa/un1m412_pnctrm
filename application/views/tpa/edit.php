@@ -11,17 +11,13 @@
              <!-- content -->
              <?php 
              // cek data
-              if ($cek_validasi == null) {
-                # code... ?>
-                  <div class="callout callout-danger"><h4>Data tidak ditemukan!</h4><p>pastikan calon mahasiswa sudah melakukan registrasi.</p></div>
-              <?php      
-              }//end cek data catar
-              elseif ($cek_tpa == null) {
+              
                 foreach ($catar as $key) {
                   # code...
                   $no = $key->no;
                   $petugas = $this->session->userdata('nama');
                   $nama = $key->nama;
+                  $hasil_tpa = $key->hasil_tpa;
                   $prodi = $tpa->prodi($key->prodi);
                 }
                       # code... ?>
@@ -55,13 +51,6 @@
                   <input type="submit" class="btn btn-block btn-success" id="cek" name="cek" style="width:20%;" value="Edit">
                   </div>
                 </form>
-                      
-                  
-              <?php    
-                    }else{ ?>
-              <div class="callout callout-danger"><h4>Data Sudah pernah diinput!</h4><p>pastikan calon mahasiswa belum melakukan test samapta.</p></div>
-              <?php } ///end of cek samapta ?>
-
              <!-- ./content -->
             </div>
             <!-- /.box-body -->
