@@ -108,15 +108,24 @@ class Welcome extends CI_Controller {
 			$data['catar'] = $this->m_registrasi->get_data($where2,'tbl_catar_2023')->result();
 			// cek wawancara
 			$get_wawancara = $this->m_registrasi->get_data_test_wawancara($where3)->result();
-			if ($get_wawancara == null) {
-				# code...
-				
-			}else{
+
 				foreach ($get_wawancara as $key) {
 				# code...
-				$data['hasil_wwncra'] = $key->hasil_wwncra;
+				$hasil_wwncra = $key->hasil_wwncra;
+				    if ($hasil_wwncra == null) {
+                   # code...
+                   $data['wawancara'] =  "<label for='exampleInputEmail1'><h1>Anda belum mengikuti Test Seleksi</h1></label>";
+                 }elseif ($hasil_wwncra == "100") {
+                    # code...
+                    $data['wawancara'] = "<label for='exampleInputEmail1'><h1>Selamat anda telah lulus seleksi Pencamahatar UNIMAR AMNI Semarang. Silakan lakukan daftar ulang untuk tahap terakhir.</h1></label>";
+                 }elseif ($hasil_wwncra == "0"){
+                    $data['wawancara'] = "<label for='exampleInputEmail1'><h1>Maaf, Anda belum lulus seleksi.</h1></label>";
+                 }else{
+                   
+                 }
+
 				}
-			}
+
 			// ./cek wawancara
 		}else{
 			$data['catar'] = null ;
