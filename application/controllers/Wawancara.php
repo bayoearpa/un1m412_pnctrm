@@ -97,13 +97,13 @@ class Wawancara extends CI_Controller {
 	{
 		# code...
 		$no = $this->input->post('no');
-		$hasil_wwncara = $this->input->post('hasil_wwncara');
+		$hasil_wwncra = $this->input->post('hasil_wwncra');
 		$ket = $this->input->post('ket');
 		$petugas = $this->input->post('petugas');
 
 		$data = array(
 			'no' => $no,
-			'hasil_wwncara' => $hasil_wwncara,
+			'hasil_wwncra' => $hasil_wwncra,
 			'ket' => $ket,
 			'petugas' => $petugas,
 			);
@@ -181,13 +181,13 @@ class Wawancara extends CI_Controller {
 				'id_sw'  	=> $this->input->post('id_sw'),
 		);
 		$no = $this->input->post('no');
-		$hasil_wwncara = $this->input->post('hasil_wwncara');
+		$hasil_wwncra = $this->input->post('hasil_wwncra');
 		$ket = $this->input->post('ket');
 		$petugas = $this->input->post('petugas');
 
 		$data = array(
 			'no' => $no,
-			'hasil_wwncara' => $hasil_wwncara,
+			'hasil_wwncra' => $hasil_wwncara,
 			'ket' => $ket,
 			'petugas' => $petugas,
 			);
