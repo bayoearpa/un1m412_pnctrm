@@ -4,7 +4,7 @@
         <div class="col-xs-12">
           <div class="box box-primary">
                 <div class="box-header with-border">
-                  <h3 class="box-title">Rekap Data Test Samapta </h3>
+                  <h3 class="box-title">Rekap Data Test TPA </h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
                 
@@ -19,7 +19,7 @@
                     }else{}
                      ?>
                   <div class="form-group">
-                      <form method="post" action="<?php echo base_url() ?>samapta/data_masukp">
+                      <form method="post" action="<?php echo base_url() ?>tpa/data_masukp">
                       <label> Pilih Prodi
                     </label>
                     <select name="prodi" id="prodi" class="form-control" style="width:50%;" required="harus dipilih">  

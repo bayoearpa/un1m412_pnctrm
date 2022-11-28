@@ -208,7 +208,7 @@ class Tpa extends CI_Controller {
             'tbl_catar_2023.prodi' => $prodi,
             'tbl_catar_2023.kelas' => $kelas,                
         	);
-        	$data['catar'] = $this->m_registrasi->get_data_test_samapta($where)->result();
+        	$data['catar'] = $this->m_registrasi->get_data_test_tpa($where)->result();
 			$this->load->view('tpa/header');
 			$this->load->view('tpa/data_masuk');
 			$this->load->view('tpa/data_masukp',$data);
@@ -219,7 +219,7 @@ class Tpa extends CI_Controller {
             'tbl_catar_2023.kelas' => $kelas,
             'tbl_catar_2023.gelombang' => $gelombang,                
         	);
-        	$data['catar'] = $this->m_registrasi->get_data_test_samapta($where)->result();
+        	$data['catar'] = $this->m_registrasi->get_data_test_tpa($where)->result();
 			$this->load->view('tpa/header');
 			$this->load->view('tpa/data_masuk');
 			$this->load->view('tpa/data_masukp',$data);
