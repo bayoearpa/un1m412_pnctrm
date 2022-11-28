@@ -135,7 +135,58 @@ class Tpa extends CI_Controller {
 			$this->load->view('tpa/footer');
 		}
 	}
-	
+	public function input_single()
+	{
+		# code...
+		$this->load->view('wawancara/header');
+        $this->load->view('wawancara/input_single');
+        $this->load->view('wawancara/footer');
+	}
+	public function input_singlep()
+	{
+		# code...
+		$data['tpa'] = $this;
+		$prodi = $this->input->post('no');
+		$where = array(
+            'no' => $prodi,                
+        );
+        $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
+        $data['cek_validasi'] = $this->m_registrasi->get_data($where,'tbl_catar_validasi_2023')->result();
+        $data['cek_tpa'] = $this->m_registrasi->get_data($where,'tbl_seleksi_tpa')->result();
+        	
+
+        $this->load->view('tpa/header');
+		$this->load->view('tpa/input_single');
+		$this->load->view('tpa/input_singlep',$data);
+		$this->load->view('tpa/footer');
+	}
+	public function insert_singlep()
+	{
+		# code...
+		$no = $this->input->post('no');
+		$hasil_tpa = $this->input->post('hasil_tpa');
+		$petugas = $this->input->post('petugas');
+
+		$data = array(
+			'no' => $no,
+			'hasil_tpa' => $hasil_tpa,
+			'petugas' => $petugas,
+			);
+		$this->m_registrasi->input_data($data,'tbl_seleksi_tpa');
+		// ($this->db->affected_rows() != 1) ? false : true;
+
+		if ($this->db->affected_rows() != 1) {
+			$this->session->set_flashdata('error', 'Input data gagal.');
+		    $this->load->view('tpa/header');
+			$this->load->view('tpa/input');
+			$this->load->view('tpa/footer');
+		} else {
+		    $this->session->set_flashdata('success', 'Input data berhasil.');
+		    $this->load->view('tpa/header');
+			$this->load->view('tpa/input');
+			$this->load->view('tpa/footer');
+		}
+	}
 	public function data_masuk()
 	{
 		# code...
