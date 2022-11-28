@@ -138,9 +138,9 @@ class Tpa extends CI_Controller {
 	public function input_single()
 	{
 		# code...
-		$this->load->view('wawancara/header');
-        $this->load->view('wawancara/input_single');
-        $this->load->view('wawancara/footer');
+		$this->load->view('tpa/header');
+        $this->load->view('tpa/input_single');
+        $this->load->view('tpa/footer');
 	}
 	public function input_singlep()
 	{
