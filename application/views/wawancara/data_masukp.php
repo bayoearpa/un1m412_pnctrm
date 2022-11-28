@@ -4,7 +4,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Data test samapta</h3>
+              <h3 class="box-title">Data test Wawancara</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
