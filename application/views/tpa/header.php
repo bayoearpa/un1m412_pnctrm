@@ -133,7 +133,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="<?php echo base_url() ?>tpa/input"><i class="fa fa-money"></i>input nilai samapta</a></li>
+            <li class="active"><a href="<?php echo base_url() ?>tpa/input"><i class="fa fa-money"></i>input nilai TPA Batch</a></li>
+            <li class="active"><a href="<?php echo base_url() ?>tpa/input_single"><i class="fa fa-money"></i>input nilai TPA Batch</a></li>
             <li class="active"><a href="<?php echo base_url() ?>tpa/data_masuk"><i class="fa fa-money"></i>Data masuk</a></li>
             <!-- <li><a href="index2.html"><i class="fa fa-paperclip"></i>Rekap</a></li> -->
           </ul>

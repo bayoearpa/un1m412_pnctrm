@@ -135,6 +135,46 @@ class Tpa extends CI_Controller {
 			$this->load->view('tpa/footer');
 		}
 	}
+	
+	public function data_masuk()
+	{
+		# code...
+		$this->load->view('tpa/header');
+		$this->load->view('tpa/data_masuk');
+		$this->load->view('tpa/footer');
+	}
+	public function data_masukp()
+	{
+		# code...
+		$prodi = $this->input->post('prodi');
+		$kelas = $this->input->post('kelas');
+		$gelombang = $this->input->post('gelombang');
+
+
+		if ($gelombang == null) {
+			# code...
+			$where = array(
+            'tbl_catar_2023.prodi' => $prodi,
+            'tbl_catar_2023.kelas' => $kelas,                
+        	);
+        	$data['catar'] = $this->m_registrasi->get_data_test_samapta($where)->result();
+			$this->load->view('tpa/header');
+			$this->load->view('tpa/data_masuk');
+			$this->load->view('tpa/data_masukp',$data);
+			$this->load->view('tpa/footer');
+		}else{
+			$where = array(
+            'tbl_catar_2023.prodi' => $prodi,
+            'tbl_catar_2023.kelas' => $kelas,
+            'tbl_catar_2023.gelombang' => $gelombang,                
+        	);
+        	$data['catar'] = $this->m_registrasi->get_data_test_samapta($where)->result();
+			$this->load->view('tpa/header');
+			$this->load->view('tpa/data_masuk');
+			$this->load->view('tpa/data_masukp',$data);
+			$this->load->view('tpa/footer');
+		}
+	}
 
 }
 
