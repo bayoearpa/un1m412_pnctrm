@@ -26,7 +26,7 @@
                 }
                       # code... ?>
                       <!-- form input nilai samapta disini -->
-                <form method="post" action="<?php echo base_url() ?>tpa/insert_singlep">
+                <form method="post" action="<?php echo base_url() ?>tpa/edit_datap">
                   <table>
                     <tr>
                       <td><b>No. Pendafataran</b></td>

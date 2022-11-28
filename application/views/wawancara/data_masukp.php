@@ -15,10 +15,7 @@
                   <th>No. Pendf.</th>
                   <th>Nama</th>
                   <th>Prodi</th>
-                  <th>Lari</th>
-                  <th>Push Up</th>
-                  <th>Pull Up</th>
-                  <th>Suttle Run</th>
+                  <th>Hasil Wawancara</th>
                   <th>Petugas</th>
                   <th>Edit</th>
                 </tr>
@@ -66,13 +63,10 @@
                       echo $pick;
                     
                   ?></td>
-                  <td><?php echo $c->lari ?></td>
-                  <td><?php echo $c->push_up ?></td>
-                  <td><?php echo $c->pull_up ?></td>
-                  <td><?php echo $c->suttle_run ?></td>
+                  <td><?php echo $c->hasil_wwncra ?></td>
                   <td><?php echo $c->petugas ?></td>
                   <td>
-                    <a class="btn btn-success btn-sm" href="<?php echo base_url().'samapta/edit_data/'.$c->no; ?>"><i class="fa fa-pencil"></i> Edit</a> 
+                    <a class="btn btn-success btn-sm" href="<?php echo base_url().'Wawancara/edit_data/'.$c->no; ?>"><i class="fa fa-pencil"></i> Edit</a> 
                  </td>
                 </tr>
                <?php } ?>
@@ -83,10 +77,7 @@
                   <th>No. Pendf.</th>
                   <th>Nama</th>
                   <th>Prodi</th>
-                  <th>Lari</th>
-                  <th>Push Up</th>
-                  <th>Pull Up</th>
-                  <th>Suttle Run</th>
+                  <th>Hasil Wawancara</th>
                   <th>Petugas</th>
                   <th>Edit</th>
                 </tr>

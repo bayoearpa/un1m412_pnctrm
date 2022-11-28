@@ -15,10 +15,7 @@
                   <th>No. Pendf.</th>
                   <th>Nama</th>
                   <th>Prodi</th>
-                  <th>Lari</th>
-                  <th>Push Up</th>
-                  <th>Pull Up</th>
-                  <th>Suttle Run</th>
+                  <th>Hasil Tpa</th>
                   <th>Petugas</th>
                   <th>Edit</th>
                 </tr>
@@ -76,14 +73,11 @@
                 </tbody>
                 <tfoot>
                 <tr>
-                <th>No.</th>
+                 <th>No.</th>
                   <th>No. Pendf.</th>
                   <th>Nama</th>
                   <th>Prodi</th>
-                  <th>Lari</th>
-                  <th>Push Up</th>
-                  <th>Pull Up</th>
-                  <th>Suttle Run</th>
+                  <th>Hasil Tpa</th>
                   <th>Petugas</th>
                   <th>Edit</th>
                 </tr>
