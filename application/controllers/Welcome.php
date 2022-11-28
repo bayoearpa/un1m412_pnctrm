@@ -112,16 +112,13 @@ class Welcome extends CI_Controller {
 				foreach ($get_wawancara as $key) {
 				# code...
 				$hasil_wwncra = $key->hasil_wwncra;
-				    if ($hasil_wwncra == null) {
-                   # code...
-                   $data['wawancara'] =  "<label for='exampleInputEmail1'><h1>Anda belum mengikuti Test Seleksi</h1></label>";
-                 }elseif ($hasil_wwncra == "100") {
+				if ($hasil_wwncra == "100") {
                     # code...
                     $data['wawancara'] = "<label for='exampleInputEmail1'><h1>Selamat anda telah lulus seleksi Pencamahatar UNIMAR AMNI Semarang. Silakan lakukan daftar ulang untuk tahap terakhir.</h1></label>";
                  }elseif ($hasil_wwncra == "0"){
                     $data['wawancara'] = "<label for='exampleInputEmail1'><h1>Maaf, Anda belum lulus seleksi.</h1></label>";
                  }else{
-                   
+                   $data['wawancara'] =  "<label for='exampleInputEmail1'><h1>Anda belum mengikuti Test Seleksi</h1></label>";
                  }
 
 				}
