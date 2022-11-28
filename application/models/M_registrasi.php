@@ -349,7 +349,7 @@ class m_registrasi extends CI_Model
 	function get_data_test_tpa($where){
 		$this->db->select('
 		tbl_seleksi_tpa.id_stpa AS id_stpa,
-		tbl_seleksi_tpa.hasi_tpa AS hasil_tpa,
+		tbl_seleksi_tpa.hasil_tpa AS hasil_tpa,
 		tbl_seleksi_tpa.petugas AS petugas,
 		tbl_seleksi_tpa.`time` AS `time`,
 		tbl_catar_2023.nama AS nama,

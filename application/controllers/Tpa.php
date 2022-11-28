@@ -226,6 +226,48 @@ class Tpa extends CI_Controller {
 			$this->load->view('tpa/footer');
 		}
 	}
+	public function edit_data($id)
+	{
+		# code...
+		$data['tpa'] = $this;
+		$where = array(
+            'tbl_catar_2023.no' => $id,                
+        );
+        $data['catar'] = $this->m_registrasi->get_data_test_tpa($where)->result();
+        	$this->load->view('tpa/header');
+			$this->load->view('tpa/edit',$data);
+			$this->load->view('tpa/footer');
+
+	}
+	public function edit_datap()
+	{
+		# code...
+		$where = array(
+				'id_stpa'  	=> $this->input->post('id_stpa'),
+		);
+		$no = $this->input->post('no');
+		$hasil_wwncra = $this->input->post('hasil_tpa');
+		$petugas = $this->input->post('petugas');
+
+		$data = array(
+			'no' => $no,
+			'hasiltpa' => $hasil_tpa,
+			'petugas' => $petugas,
+			);
+		$this->m_registrasi->update_data($where,$data,'tbl_seleksi_tpa');
+
+		if ($this->db->affected_rows() != 1) {
+			$this->session->set_flashdata('error', ' Edit data gagal.');
+		    $this->load->view('tpa/header');
+			$this->load->view('tpa/data_masuk');
+			$this->load->view('tpa/footer');
+		} else {
+		    $this->session->set_flashdata('success', ' Edit data berhasil.');
+		    $this->load->view('tpa/header');
+			$this->load->view('tpa/data_masuk');
+			$this->load->view('tpa/footer');
+		}
+	}
 
 }
 
