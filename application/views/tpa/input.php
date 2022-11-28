@@ -24,15 +24,14 @@
                     </label>
                     <select name="prodi" id="prodi" class="form-control" style="width:50%;" required="harus dipilih">  
                     <option selected>== Pilih ==</option>
-                    <option value="1">D3 Ketatalaksanaan Pelayaran Niaga dan Kepelabuhanan</option>
+                   <option value="1">D3 Ketatalaksanaan Pelayaran Niaga dan Kepelabuhanan</option>
                     <option value="2">D3 Teknika</option>
                     <option value="3">D3 Nautika</option>
                     <option value="4">S1 Trasnportasi</option>
-                    <option value="5">S1 Trasnportasi (Lintas Jalur)</option> 
+                    <option value="5">S1 Teknik Transportasi Laut</option> 
                     <option value="6">S1 Teknik Mesin</option>
-                    <option value="7">S1 Teknik Transportasi Laut</option>
-                    <option value="8">S1 Teknik Keselamatan</option>
-                    <option value="9">S1 Perdagangan Internasional</option>                       
+                    <option value="7">S1 Teknik Keselamatan</option>
+                    <option value="8">S1 Perdagangan Internasional</option>                     
                     </select> 
                   </div>
                   <div class="form-group">

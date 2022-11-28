@@ -64,7 +64,16 @@
                   <td>
                     <input type="hidden" name="no[]" id="no[]" value="<?php echo $c->no ?>">
                     <input type="hidden" name="petugas[]" id="petugas[]" value="<?php echo $this->session->userdata('nama') ?>">
-                    <input type="number" min="1" max="100" class="form-control" id="hasil_tpa[]" name="hasil_tpa[]" placeholder="isi nilai dari 10-100">
+                    <?php 
+                    if ($c->hasil_tpa == null) {
+                      # code... ?>
+                      <input type="number" min="1" max="100" class="form-control" id="hasil_tpa[]" name="hasil_tpa[]" placeholder="isi nilai dari 10-100" required="">
+                    <?php }else{
+                      echo $c->hasil_tpa;
+                    }
+                     ?>
+                    
+                    
                  </td>
                 </tr>
                <?php } ?>
