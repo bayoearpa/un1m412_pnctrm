@@ -142,10 +142,6 @@
 
                 <!-- pengumuman seleksi -->
                 <?php 
-                foreach ($wawancara as $key) {
-                  # code...
-                  $hasil_wwncra = $key->hasil_wwncra;
-                }
                   if (trim($hasil_wwncra) == "100") {
                     # code...
                     echo "<label for='exampleInputEmail1'><h1>Selamat anda telah lulus seleksi Pencamahatar UNIMAR AMNI Semarang. Silakan lakukan daftar ulang untuk tahap terakhir.</h1></label>";
