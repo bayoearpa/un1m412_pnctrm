@@ -140,7 +140,9 @@ class m_registrasi extends CI_Model
 		$this->db->order_by('tbl_catar_validasi_2023.no_reg', "asc");
 		$query=$this->db->get();
 		return $query;
-function get_data_join_where_tpa($where){
+	}
+
+		function get_data_join_where_tpa($where){
 		$this->db->select('tbl_catar_2023.no,
 		tbl_catar_2023.nama,
 		tbl_catar_2023.tl,
