@@ -178,12 +178,12 @@ class Tpa extends CI_Controller {
 		if ($this->db->affected_rows() != 1) {
 			$this->session->set_flashdata('error', 'Input data gagal.');
 		    $this->load->view('tpa/header');
-			$this->load->view('tpa/input');
+			$this->load->view('tpa/input_single');
 			$this->load->view('tpa/footer');
 		} else {
 		    $this->session->set_flashdata('success', 'Input data berhasil.');
 		    $this->load->view('tpa/header');
-			$this->load->view('tpa/input');
+			$this->load->view('tpa/input_single');
 			$this->load->view('tpa/footer');
 		}
 	}
