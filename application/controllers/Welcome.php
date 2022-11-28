@@ -105,11 +105,8 @@ class Welcome extends CI_Controller {
 				//get data
 			$where2 = array('no' => $no);
 			$data['catar'] = $this->m_registrasi->get_data($where2,'tbl_catar_2023')->result();
-			$get_wawancara = $this->m_registrasi->get_data($where2,'tbl_seleksi_wawancara')->result();
-			foreach ($get_wawancara as $key) {
-				# code...
-				$data['hasil_wwncra'] = $key->hasil_wwncra;
-			}
+			$data['wawancara'] = $this->m_registrasi->get_data($where2,'tbl_seleksi_wawancara')->result();
+
 		}else{
 			$data['catar'] = null ;
 			// $data['status'] = "Anda Belum tervalidasi...";
