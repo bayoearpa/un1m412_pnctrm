@@ -107,14 +107,14 @@ class Welcome extends CI_Controller {
 			$data['catar'] = $this->m_registrasi->get_data($where2,'tbl_catar_2023')->result();
 			// cek wawancara
 			$get_wawancara = $this->m_registrasi->get_data($where2,'tbl_seleksi_wawancara')->result();
-			if ($get_wawancara >= 0) {
+			if ($get_wawancara == null) {
 				# code...
+				
+			}else{
 				foreach ($get_wawancara as $key) {
 				# code...
 				$data['hasil_wwncra'] = $key->hasil_wwncra;
 				}
-			}else{
-
 			}
 			// ./cek wawancara
 		}else{
