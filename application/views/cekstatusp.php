@@ -142,13 +142,13 @@
 
                 <!-- pengumuman seleksi -->
                 <?php
-                  if ($hasil_wwncra == "100") {
+                  if ($wawancara == "100") {
                     # code...
-                    $data['wawancara'] = "<label for='exampleInputEmail1'><h1>Selamat anda telah lulus seleksi Pencamahatar UNIMAR AMNI Semarang. Silakan lakukan daftar ulang untuk tahap terakhir.</h1></label>";
-                 }elseif ($hasil_wwncra == "0"){
-                    $data['wawancara'] = "<label for='exampleInputEmail1'><h1>Maaf, Anda belum lulus seleksi.</h1></label>";
+                    echo "<label for='exampleInputEmail1'><h1>Selamat anda telah lulus seleksi Pencamahatar UNIMAR AMNI Semarang. Silakan lakukan daftar ulang untuk tahap terakhir.</h1></label>";
+                 }elseif ($wawancara == "0"){
+                    echo "<label for='exampleInputEmail1'><h1>Maaf, Anda belum lulus seleksi.</h1></label>";
                  }else{
-                   $data['wawancara'] =  "<label for='exampleInputEmail1'><h1>Anda belum mengikuti Test Seleksi</h1></label>";
+                   echo  "<label for='exampleInputEmail1'><h1>Anda belum mengikuti Test Seleksi</h1></label>";
                  }
                  ?>
                 <!-- ,/pengumuman seleksi -->
