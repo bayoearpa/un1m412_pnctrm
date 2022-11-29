@@ -61,7 +61,7 @@
                   </div>
                  <?php } ?>
                   <div class="form-group">
-                  <input type="submit" class="btn btn-block btn-success" id="cek" name="cek" style="width:20%;" value="Input">
+                  <input type="submit" class="btn btn-block btn-success" id="cek" name="cek" style="width:20%;" value="Edit">
                   </div>
                 </form>
                       

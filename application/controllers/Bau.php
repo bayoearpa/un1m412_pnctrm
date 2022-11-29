@@ -214,7 +214,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/edit_cari',$data);
         $this->load->view('bau/footer');
     }
-    public function edit_datap()
+    public function editp()
     {
         # code...
         $data['bau'] = $this;
