@@ -142,7 +142,10 @@
 
                 <!-- pengumuman seleksi -->
                 <?php
-                  if ($wawancara == "100") {
+                if (isset($wawancara)) {
+                  # code...
+                  echo  "<label for='exampleInputEmail1'><h1>Anda belum mengikuti Test Seleksi</h1></label>";
+                 }elseif ($wawancara == "100") {
                     # code...
                     echo "<label for='exampleInputEmail1'><h1>Selamat anda telah lulus seleksi Pencamahatar UNIMAR AMNI Semarang. Silakan lakukan daftar ulang untuk tahap terakhir.</h1></label>";
                  }elseif ($wawancara == "0"){
