@@ -83,7 +83,7 @@ class Welcome extends CI_Controller {
 					$pick = "<label for='exampleInputEmail1'><h1>Selamat anda telah lulus seleksi Pencamahatar UNIMAR AMNI Semarang. Silakan lakukan daftar ulang untuk tahap terakhir.</h1></label>";
 				break;
 				case '0' :
-					$pick = "<label for='exampleInputEmail1'><h1>Anda belum mengikuti Test Seleksi</h1></label>";
+					$pick = "<label for='exampleInputEmail1'><h1>Maaf, Anda belum lulus tes Seleksi</h1></label>";
 				break;
 			}
 			return $pick;
