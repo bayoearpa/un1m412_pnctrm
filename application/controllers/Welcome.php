@@ -75,8 +75,22 @@ class Welcome extends CI_Controller {
 		// $this->load->view('cekstatus_foot');
 
 	}
+	function status_lulus($id){
+		switch ($id) {
+
+			// registrasi
+				case '100':
+					$pick = "<label for='exampleInputEmail1'><h1>Selamat anda telah lulus seleksi Pencamahatar UNIMAR AMNI Semarang. Silakan lakukan daftar ulang untuk tahap terakhir.</h1></label>";
+				break;
+				case '0' :
+					$pick = "<label for='exampleInputEmail1'><h1>Anda belum mengikuti Test Seleksi</h1></label>";
+				break;
+			}
+			return $pick;
+	}
 	public function cekstatusp($no)
 	{
+		$data['wawancara'] = $this;
 		// Captcha configuration
 		$config = array(
 			'img_path'      => './captcha/',

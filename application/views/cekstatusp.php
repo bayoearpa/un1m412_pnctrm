@@ -141,12 +141,11 @@
                 </div>  
 
                 <!-- pengumuman seleksi -->
+               
                 <?php
-                  if (isset($wawancara == "100")) {
+                  if (isset($wawancara)) {
                     # code...
-                    echo "<label for='exampleInputEmail1'><h1>Selamat anda telah lulus seleksi Pencamahatar UNIMAR AMNI Semarang. Silakan lakukan daftar ulang untuk tahap terakhir.</h1></label>";
-                 }elseif (isset($wawancara == "0")){
-                    echo "<label for='exampleInputEmail1'><h1>Maaf, Anda belum lulus seleksi.</h1></label>";
+                   echo $welcome->status_lulus($wawancara);
                  }else{
                    echo  "<label for='exampleInputEmail1'><h1>Anda belum mengikuti Test Seleksi</h1></label>";
                  }
