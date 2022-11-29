@@ -90,7 +90,7 @@ class Welcome extends CI_Controller {
 	}
 	public function cekstatusp($no)
 	{
-		$data['wawancara'] = $this;
+		$data['welcome'] = $this;
 		// Captcha configuration
 		$config = array(
 			'img_path'      => './captcha/',
