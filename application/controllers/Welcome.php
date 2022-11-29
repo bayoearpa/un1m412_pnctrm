@@ -109,33 +109,18 @@ class Welcome extends CI_Controller {
 			// cek wawancara
 			$get_wawancara = $this->m_registrasi->get_data_test_wawancara($where3)->result();
 
-			if ($get_wawancara > 0) {
-				# code...
 				foreach ($get_wawancara as $key) {
 				# code...
-				$hasil_wwncra = $key->hasil_wwncra;
+				$data['hasil_wwncra'] = $key->hasil_wwncra;
 
 				}
-				if ($hasil_wwncra == "100") {
-                    # code...
-                   $data['wawancara'] = "<label for='exampleInputEmail1'><h1>Selamat anda telah lulus seleksi Pencamahatar UNIMAR AMNI Semarang. Silakan lakukan daftar ulang untuk tahap terakhir.</h1></label>";
-                }elseif ($hasil_wwncra == "0"){
-                   $data['wawancara'] = "<label for='exampleInputEmail1'><h1>Maaf, Anda belum lulus seleksi.</h1></label>";
-                }else{
-                   $data['wawancara'] =  "<label for='exampleInputEmail1'><h1>Anda belum mengikuti Test Seleksi</h1></label>";
-                }
-			}else{ $get_wawancara = null;}
-
-				
-
-
 			// ./cek wawancara
 		}else{
 			$data['catar'] = null ;
 			// $data['status'] = "Anda Belum tervalidasi...";
 		}
 
-		
+		$this->load->view('cekstatusp', $data);
 	}
 	public function download($no)
 	{
