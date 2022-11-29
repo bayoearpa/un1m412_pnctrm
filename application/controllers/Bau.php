@@ -201,7 +201,7 @@ class Bau extends CI_Controller {
     public function edit_cari()
     {
         # code...
-        $data['tpa'] = $this;
+        $data['bau'] = $this;
         $prodi = $this->input->post('no');
         $where = array(
             'no' => $prodi,                
