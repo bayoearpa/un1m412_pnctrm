@@ -109,11 +109,18 @@ class Welcome extends CI_Controller {
 			// cek wawancara
 			$get_wawancara = $this->m_registrasi->get_data_test_wawancara($where3)->result();
 
+			if ($get_wawancara > 0) {
+					# code...
 				foreach ($get_wawancara as $key) {
 				# code...
 				$data['wawancara'] = $key->hasil_wwncara;
 
 				}
+			}else{
+				$data['wawancara'] = null;
+			}	
+
+				
 			// ./cek wawancara
 		}else{
 			$data['catar'] = null ;
