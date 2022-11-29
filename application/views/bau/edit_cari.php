@@ -21,7 +21,7 @@
                   $no = $key->no;
                   $petugas = $this->session->userdata('nama');
                   $nama = $key->nama;
-                  $prodi = $tpa->bau($key->prodi);
+                  $prodi = $bau->prodi($key->prodi);
                 }
                       # code... ?>
                       <!-- form input nilai samapta disini -->
