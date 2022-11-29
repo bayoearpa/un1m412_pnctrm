@@ -244,14 +244,14 @@ class Bau extends CI_Controller {
 
         if ($this->db->affected_rows() != 1) {
             $this->session->set_flashdata('error', ' Edit data gagal.');
-            $this->load->view('tpa/header');
-            $this->load->view('tpa/data_masuk');
-            $this->load->view('tpa/footer');
+            $this->load->view('bau/header');
+            $this->load->view('bau/edit');
+            $this->load->view('bau/footer');
         } else {
             $this->session->set_flashdata('success', ' Edit data berhasil.');
-            $this->load->view('tpa/header');
-            $this->load->view('tpa/data_masuk');
-            $this->load->view('tpa/footer');
+            $this->load->view('bau/header');
+            $this->load->view('bau/edit');
+            $this->load->view('bau/footer');
         }
     }
         ///////////////////////////////////////////////////////summary 2023///////////////////////////////////////////
