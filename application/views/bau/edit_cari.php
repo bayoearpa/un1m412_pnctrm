@@ -22,7 +22,7 @@
                   $petugas = $this->session->userdata('nama');
                   $nama = $key->nama;
                   $prodi = $bau->prodi($key->prodi);
-                }
+         
                       # code... ?>
                       <!-- form input nilai samapta disini -->
                 <form method="post" action="<?php echo base_url() ?>bau/editp">
@@ -59,7 +59,7 @@
                     <option value="8">S1 Perdagangan Internasional</option>                       
                     </select> 
                   </div>
-                 
+                 <?php } ?>
                   <div class="form-group">
                   <input type="submit" class="btn btn-block btn-success" id="cek" name="cek" style="width:20%;" value="Input">
                   </div>

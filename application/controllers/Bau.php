@@ -12,7 +12,26 @@ class Bau extends CI_Controller {
         $this->load->helper('url');
         $this->load->library('m_pdf');
     }
-    function prodi($id){
+    function index() {
+        $where2= array(
+            'id_gelombang' => '1',  
+        );
+        $gelombang=$this->m_registrasi->get_data_gelombang($where2);
+        $where = array(
+            'gelombang' => $gelombang       
+        );
+        $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
+        // $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2022')->result();
+        // $data['catar'] = $this->m_registrasi->get_data_all('tbl_catar_2021')->result(); 
+        $this->load->view('bau/header');
+        $this->load->view('bau/index',$data);
+        $this->load->view('bau/footer');
+    }
+    function logout(){
+		$this->session->sess_destroy();
+		redirect(base_url().'administrasi?pesan=logout');
+	}
+     function prodi($id){
         switch ($id) {
 
             // registrasi
@@ -47,25 +66,6 @@ class Bau extends CI_Controller {
             }
             return $pick;
     }
-    function index() {
-        $where2= array(
-            'id_gelombang' => '1',  
-        );
-        $gelombang=$this->m_registrasi->get_data_gelombang($where2);
-        $where = array(
-            'gelombang' => $gelombang       
-        );
-        $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
-        // $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2022')->result();
-        // $data['catar'] = $this->m_registrasi->get_data_all('tbl_catar_2021')->result(); 
-        $this->load->view('bau/header');
-        $this->load->view('bau/index',$data);
-        $this->load->view('bau/footer');
-    }
-    function logout(){
-		$this->session->sess_destroy();
-		redirect(base_url().'administrasi?pesan=logout');
-	}
     function validasi($id)
     {
         # code...
