@@ -157,6 +157,68 @@ class Bau extends CI_Controller {
          } 
         
     }
+    public function edit()
+    {
+        # code...
+        $this->load->view('bau/header');
+        $this->load->view('bau/edit');
+        $this->load->view('bau/footer');
+    }
+    public function edit_cari()
+    {
+        # code...
+        $data['tpa'] = $this;
+        $prodi = $this->input->post('no');
+        $where = array(
+            'no' => $prodi,                
+        );
+        $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
+        $data['cek_validasi'] = $this->m_registrasi->get_data($where,'tbl_catar_validasi_2023')->result();            
+
+        $this->load->view('bau/header');
+        $this->load->view('bau/edit');
+        $this->load->view('bau/edit_cari',$data);
+        $this->load->view('bau/footer');
+    }
+    public function edit_datap()
+    {
+        # code...
+        $where = array(
+                'no'   => $this->input->post('no'),
+        );
+        $prodi = $this->input->post('prodi');
+        $data = array(
+            'prodi' => $prodi,
+        );
+
+        $cek = $this->m_registrasi->get_data($where,'tbl_catar_validasi_2023')->result();
+        foreach ($cek as $key) {
+            # code...
+            $val_id = $key->val_id;
+        }
+        $where2 = array(
+                'val_id'   => $val_id,
+        );
+        if ($cek > 0) {
+            # code...
+            $this->m_registrasi->update_data($where2,$data,'tbl_catar_validasi_2023');
+            $this->m_registrasi->update_data($where,$data,'tbl_catar_2023');
+        }else{
+            $this->m_registrasi->update_data($where,$data,'tbl_catar_2023');
+        }
+
+        if ($this->db->affected_rows() != 1) {
+            $this->session->set_flashdata('error', ' Edit data gagal.');
+            $this->load->view('tpa/header');
+            $this->load->view('tpa/data_masuk');
+            $this->load->view('tpa/footer');
+        } else {
+            $this->session->set_flashdata('success', ' Edit data berhasil.');
+            $this->load->view('tpa/header');
+            $this->load->view('tpa/data_masuk');
+            $this->load->view('tpa/footer');
+        }
+    }
         ///////////////////////////////////////////////////////summary 2023///////////////////////////////////////////
      public function getnamaprovinsi_2023($id)
     {

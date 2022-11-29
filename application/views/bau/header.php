@@ -125,6 +125,7 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MENU UTAMA</li>
+        <li><a href="<?php echo base_url() ?>bau/"><i class="fa fa-book"></i> <span>Home</span></a></li>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Pembayaran</span>
@@ -137,6 +138,7 @@
             <li><a href="<?php echo base_url() ?>bau/rekap_validasi"><i class="fa fa-paperclip"></i>Rekap Validasi</a></li>
           </ul>
         </li>
+        <li><a href="<?php echo base_url() ?>bau/edit"><i class="fa fa-pencil"></i> <span>Ganti Prodi</span></a></li>
           <li class="treeview">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Summary 2023</span>
