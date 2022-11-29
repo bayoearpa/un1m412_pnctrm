@@ -124,7 +124,7 @@ class Welcome extends CI_Controller {
                 }else{
                    $data['wawancara'] =  "<label for='exampleInputEmail1'><h1>Anda belum mengikuti Test Seleksi</h1></label>";
                 }
-			}else{ $get_wawancara = null}
+			}else{ $get_wawancara = null;}
 
 				
 
