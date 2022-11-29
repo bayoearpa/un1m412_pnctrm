@@ -111,7 +111,7 @@ class Welcome extends CI_Controller {
 
 				foreach ($get_wawancara as $key) {
 				# code...
-				$data['wawancara'] = $key->hasil_wwncra;
+				$data['wawancara'] = $key->hasil_wwncara;
 
 				}
 			// ./cek wawancara
