@@ -147,7 +147,7 @@
                     # code...
                    echo $welcome->status_lulus($wawancara);
                  }else{
-                   echo  "<label for='exampleInputEmail1'><h1>Anda belum mengikuti Test Seleksi</h1></label>";
+                   echo  "<center><label for='exampleInputEmail1'><h1>Anda belum mengikuti Test Seleksi</h1></label></center>";
                  }
                  ?>
                 <!-- ,/pengumuman seleksi -->
