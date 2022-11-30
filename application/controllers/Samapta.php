@@ -13,7 +13,6 @@ class Samapta extends CI_Controller {
 		$this->load->model('m_registrasi');
         $this->load->helper('url');
 	}
-	function prodi($id){
 		 function prodi($id){
         switch ($id) {
 
@@ -46,7 +45,7 @@ class Samapta extends CI_Controller {
             }
             return $pick;
     }
-	function index()
+	public function index()
 	{
 		# code...
 		$where2= array(
@@ -66,14 +65,14 @@ class Samapta extends CI_Controller {
         $this->load->view('samapta/index',$data);
         $this->load->view('samapta/footer');
 	}
-	function input_data()
+	public function input_data()
 	{
 		# code...
 		$this->load->view('samapta/header');
         $this->load->view('samapta/input');
         $this->load->view('samapta/footer');
 	}
-	function input_cari()
+	public function input_cari()
 	{
 		# code...
 		$data['samapta'] = $this;
@@ -91,7 +90,7 @@ class Samapta extends CI_Controller {
 		$this->load->view('samapta/input_cari',$data);
 		$this->load->view('samapta/footer');
 	}
-	function input_carip()
+	public function input_carip()
 	{
 		# code...
 		$no = $this->input->post('no');
@@ -124,14 +123,14 @@ class Samapta extends CI_Controller {
 			$this->load->view('samapta/footer');
 		}
 	}
-	function data_masuk()
+	public function data_masuk()
 	{
 		# code...
 		$this->load->view('samapta/header');
 		$this->load->view('samapta/data_masuk');
 		$this->load->view('samapta/footer');
 	}
-	function data_masukp()
+	public function data_masukp()
 	{
 		# code...
 		$prodi = $this->input->post('prodi');
@@ -163,7 +162,7 @@ class Samapta extends CI_Controller {
 			$this->load->view('samapta/footer');
 		}
 	}
-	function edit_data($id)
+	public function edit_data($id)
 	{
 		# code...
 		$data['samapta'] = $this;
@@ -176,7 +175,7 @@ class Samapta extends CI_Controller {
 			$this->load->view('samapta/footer');
 
 	}
-	function edit_datap()
+	public function edit_datap()
 	{
 		# code...
 		$where = array(
