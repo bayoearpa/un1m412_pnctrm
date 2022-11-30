@@ -46,7 +46,7 @@ class Samapta extends CI_Controller {
             }
             return $pick;
     }
-	public function index()
+	function index()
 	{
 		# code...
 		$where2= array(

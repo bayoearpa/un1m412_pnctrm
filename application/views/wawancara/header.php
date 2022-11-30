@@ -127,7 +127,7 @@
         <li class="header">MENU UTAMA</li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Test Samapta</span>
+            <i class="fa fa-dashboard"></i> <span>Test Wawancara</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
