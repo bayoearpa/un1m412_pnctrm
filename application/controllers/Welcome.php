@@ -80,7 +80,7 @@ class Welcome extends CI_Controller {
 
 			// registrasi
 				case '100':
-					$pick = "<center><label for='exampleInputEmail1'><h1>Selamat anda telah lulus seleksi Pencamahatar UNIMAR AMNI Semarang. Silakan lakukan daftar ulang untuk tahap terakhir.</h1></label></center>";
+					$pick = "<center><label for='exampleInputEmail1'><h1>Selamat anda telah lulus seleksi PMB UNIMAR AMNI Semarang. Silakan lakukan daftar ulang untuk tahap terakhir.</h1></label></center>";
 				break;
 				case '0' :
 					$pick = "<center><label for='exampleInputEmail1'><h1>Maaf, Anda belum lulus tes Seleksi</h1></label></center>";
