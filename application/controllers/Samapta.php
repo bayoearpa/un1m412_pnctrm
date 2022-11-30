@@ -66,7 +66,7 @@ class Samapta extends CI_Controller {
         $this->load->view('samapta/index',$data);
         $this->load->view('samapta/footer');
 	}
-	public function input_data()
+	function input_data()
 	{
 		# code...
 		$this->load->view('samapta/header');
