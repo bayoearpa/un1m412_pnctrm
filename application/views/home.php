@@ -742,6 +742,7 @@
               
               <center>
                 <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_fasttrack"><i class="fa fa-sign-in"></i>Isi Biodata (Seleksi Dini)</a>
+                 <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_eks_fasttrack"><i class="fa fa-sign-in"></i>Isi Biodata (Seleksi Dini Kelas Transfer RPL)</a>
                <!--  <a class="btn btn-primary btn-lg rounded-pill" style="margin-bottom: 5px;padding-bottom: 5px;" href="<?php //echo base_url() ?>registrasi">
                 <i class="fa fa-sign-in"></i>
                 Isi Biodata (Registrasi Reguler)</a> -->
@@ -835,6 +836,7 @@
               
            <center>
                 <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_fasttrack"><i class="fa fa-sign-in"></i>Isi Biodata (Seleksi Dini)</a>
+                 <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_eks_fasttrack"><i class="fa fa-sign-in"></i>Isi Biodata (Seleksi Dini Kelas Transfer RPL)</a>
                <!--  <a class="btn btn-primary btn-lg rounded-pill" style="margin-bottom: 5px;padding-bottom: 5px;" href="<?php //echo base_url() ?>registrasi">
                 <i class="fa fa-sign-in"></i>
                 Isi Biodata (Registrasi Reguler)</a> -->
@@ -927,6 +929,7 @@
               
           <center>
                 <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_fasttrack"><i class="fa fa-sign-in"></i>Isi Biodata (Seleksi Dini)</a>
+                 <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_eks_fasttrack"><i class="fa fa-sign-in"></i>Isi Biodata (Seleksi Dini Kelas Transfer RPL)</a>
                <!--  <a class="btn btn-primary btn-lg rounded-pill" style="margin-bottom: 5px;padding-bottom: 5px;" href="<?php //echo base_url() ?>registrasi">
                 <i class="fa fa-sign-in"></i>
                 Isi Biodata (Registrasi Reguler)</a> -->
@@ -1019,6 +1022,7 @@
               
             <center>
                 <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_fasttrack"><i class="fa fa-sign-in"></i>Isi Biodata (Seleksi Dini)</a>
+                 <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_eks_fasttrack"><i class="fa fa-sign-in"></i>Isi Biodata (Seleksi Dini Kelas Transfer RPL)</a>
                <!--  <a class="btn btn-primary btn-lg rounded-pill" style="margin-bottom: 5px;padding-bottom: 5px;" href="<?php //echo base_url() ?>registrasi">
                 <i class="fa fa-sign-in"></i>
                 Isi Biodata (Registrasi Reguler)</a> -->

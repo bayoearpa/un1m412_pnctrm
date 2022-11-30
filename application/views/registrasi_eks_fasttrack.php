@@ -69,7 +69,7 @@
               <ul>
               <li>Pastikan anda melihat prasyarat sesuai <b>Program Studi (Prodi)</b> yang dipilih</li>
                 <li>Pendaftaran dapat dilaksanakan dengan datang langsung ke kampus biru maupun secara <i>online</i></li>
-               <!--  <li>Bagi pendaftar baik melalui <b><i>online</i></b> dapat melaksanakan pembayaran pembayaran pendaftaran melalui Bank/ATM :</li>
+                <li>Bagi pendaftar baik melalui <b><i>online</i></b> dapat melaksanakan pembayaran pembayaran pendaftaran melalui Bank/ATM :</li>
                 <table>
                   <tr>
                     <td><b>BANK BNI</b></td>
@@ -86,8 +86,8 @@
                     <td><b>:</b></td>
                     <td><b>Rp. 500.000,-</b></td>
                   </tr>
-                </table> -->
-               <!--  <li>Bukti Pembayaran dapat dikirim melalui :</li>
+                </table>
+                <!-- <li>Bukti Pembayaran dapat dikirim melalui :</li>
                 <table>
                   <tr>
                     <td><b>No. WA</b></td>
@@ -98,12 +98,12 @@
                     <td colspan="3">Dengan mencantumkan informasi :</td>
                   </tr>
                   <tr>
-                    <td colspan="3"><b>No. Pendaftaran Online_Nama Pendaftar_Prodi yang dipilih_Periode Pendaftaran</b></td>
+                    <td colspan="3"><b>No. Pendaftaran Online_Nama Pendaftar_Prodi yang dipilih_Gelombang Pendaftaran</b></td>
                   </tr>
                   <tr>
                     <td>Contoh</td>
                     <td>:</td>
-                    <td><b>1234_Rian Ardianto_Transportasi_Januari</b></td>
+                    <td><b>1234_Rian Ardianto_Nautika_II</b></td>
                   </tr>
                 </table> -->
                 <li>Pemberkasan dilaksanakan setelah pendaftaran dinyatakan <b>DITERIMA</b></li>
@@ -120,10 +120,6 @@
                 <div class="form-group">
                   <label for="exampleInputEmail1">Nama</label>
                   <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukan Nama Anda">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">NIK (Nomor Induk Kependudukan)</label>
-                  <input type="text" class="form-control" id="nik" name="nik" placeholder="Masukan NIK Anda">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Tempat Lahir</label>
@@ -168,11 +164,11 @@
                 </div>
                  <!-- <div class="form-group"> -->
                   <!-- <label for="exampleInputEmail1">Berat Badan</label> -->
-                  <input type="text" class="form-control" id="bb" name="bb" placeholder="Masukan Berat Badan Anda (Masukkan dalam Kg)">
+                  <input type="hidden" class="form-control" id="bb" name="bb" placeholder="Masukan Berat Badan Anda (Masukkan dalam Kg)" value="0">
                 <!-- </div> -->
                  <!-- <div class="form-group"> -->
                   <!-- <label for="exampleInputEmail1">Tinggi Badan</label> -->
-                  <input type="text" class="form-control" id="tb" name="tb" placeholder="Masukan Tinggi Badan Anda (Masukkan dalam Cm)">
+                  <input type="hidden" class="form-control" id="tb" name="tb" placeholder="Masukan Tinggi Badan Anda (Masukkan dalam Cm)" value="0">
                 <!-- </div> -->
                 <div class="form-group">
                   <label for="exampleInputEmail1">Email</label>
@@ -203,7 +199,7 @@
                   <label for="exampleInputEmail1">Telp. / Hp</label>
                   <input type="text" class="form-control" id="telp" name="telp" placeholder="Masukan No. Telepon atau Hp Anda">
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <label>Kategori Sekolah</label>
                   <select class="form-control" name="kategori_sek" id="kategori_sek">
                     <option> </option>
@@ -211,16 +207,18 @@
                     <option value="SMK">SMK</option>
                     <option value="MA">MA</option>
                   </select>
-                </div>
+                </div> -->
+                <input type="hidden" name="kategori_sek" id="kategori_sek" value="D3">
                    <!-- /.form-group -->
                 <div class="form-group">
-                  <label>Jurusan (SMA/SMK)</label>
-                  <select class="form-control select2" id="prodi_lama" name="prodi_lama" style="width: 100%;">
+                  <label>Prodi Sebelumnya</label>
+                  <!-- <select class="form-control select2" id="prodi_lama" name="prodi_lama" style="width: 100%;">
                     <option> </option>
-                    <?php foreach ($jurusan as $j): ?>
-                      <option value="<?php echo $j->nama_jurusan; ?>"><?php echo $j->nama_jurusan; ?></option>
-                    <?php endforeach ?>
-                  </select>
+                    <?php //foreach ($jurusan as $j): ?>
+                      <option value="<?php //echo $j->nama_jurusan; ?>"><?php //echo $j->nama_jurusan; ?></option>
+                    <?php //endforeach ?>
+                  </select> -->
+                  <input type="text" class="form-control" id="prodi_lama" name="prodi_lama" placeholder="Masukan Prodi lama anda">
                 </div>
                 <!-- /.form-group -->
                 <div class="form-group">
@@ -228,12 +226,12 @@
                   <input type="text" class="form-control" id="thn_lulus" name="thn_lulus" placeholder="Masukan Tahun Lulus Anda">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Asal Sekolah</label>
-                  <input type="text" class="form-control" id="asek" name="asek" placeholder="Masukan Asal Sekolah Anda">
+                  <label for="exampleInputEmail1">Asal Pergurunan Tinggi sebelumnya</label>
+                  <input type="text" class="form-control" id="asek" name="asek" placeholder="Masukan Pergurunan Tinggi sebelumnya">
                 </div>
                 <div class="form-group">
-                  <label>Alamat Sekolah</label>
-                  <textarea class="form-control" name="alamat_sek" id="alamat_sek" rows="3" placeholder="Masukkan Alamat Sekolah Anda"></textarea>
+                  <label>Alamat Pergurunan Tinggi Sebelumnya</label>
+                  <textarea class="form-control" name="alamat_sek" id="alamat_sek" rows="3" placeholder="Masukkan Alamat Pergurunan Tinggi sebelumnya"></textarea>
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Nama Ayah Kandung</label>
@@ -252,7 +250,7 @@
                   <input type="text" class="form-control" id="telp_ortu" name="telp_ortu" placeholder="Masukan No. Telepon Orang Tua atau Wali Anda">
                 </div>
                 <div class="form-group">
-                  <label>Informasi (mendapatkan informasi tentang UNIMAR AMNI Semarang)</label>
+                  <label>Informasi (mendapatkan informasi tentang UNIMAR "AMNI" Semarang)</label>
                   <select class="form-control" name="informasi" id="informasi">
                     <option> </option>
                     <option value="1">Senior / Kakak kelas</option>
@@ -268,9 +266,9 @@
                   <label>Prodi Pilihan 1</label>
                   <select class="form-control" name="prodi" id="prodi">
                     <option> </option>
-                    <option value="1">D3 Ketatalaksanaan Pelayaran Niaga dan Kepelabuhanan</option>
+                   <!--  <option value="1">D3 Ketatalaksanaan Pelayaran Niaga dan Kepelabuhanan</option>
                     <option value="2">D3 Teknika</option>
-                    <option value="3">D3 Nautika</option>
+                    <option value="3">D3 Nautika</option> -->
                     <option value="4">S1 Transportasi</option>
                     <option value="5">S1 Teknik Transportasi Laut</option>
                     <option value="6">S1 Teknik Mesin</option>
@@ -282,9 +280,9 @@
                   <label>Prodi Pilihan 2</label>
                   <select class="form-control" name="prodi2" id="prodi2">
                     <option> </option>
-                    <option value="1">D3 Ketatalaksanaan Pelayaran Niaga dan Kepelabuhanan</option>
+                   <!--  <option value="1">D3 Ketatalaksanaan Pelayaran Niaga dan Kepelabuhanan</option>
                     <option value="2">D3 Teknika</option>
-                    <option value="3">D3 Nautika</option>
+                    <option value="3">D3 Nautika</option> -->
                     <option value="4">S1 Transportasi</option>
                     <option value="5">S1 Teknik Transportasi Laut</option>
                     <option value="6">S1 Teknik Mesin</option>
@@ -310,27 +308,7 @@
                     <option value="12">Desember</option>
                   </select>
                 </div>
-               <div class="form-group">
-                  <label>Jalur Pendaftaran</label>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="kelas" id="optionsRadios1" value="fasttrack">
-                      Seleksi Dini
-                    </label>
-                  </div>
-                 <!--  <div class="radio">
-                    <label>
-                      <input type="radio" name="kelas" id="optionsRadios1" value="reg">
-                      Reguler
-                    </label>
-                  </div>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="kelas" id="optionsRadios2" value="pmdk">
-                      PMDK
-                    </label>
-                  </div> -->
-                </div>
+                <input type="hidden" name="kelas" value="fastt_eks">
                <!--  <div class="form-group">
                   <label>Kelas</label><br>
                   
@@ -433,9 +411,7 @@
                       nama: {
                           required: true
                       },
-                      nik: {
-                          required: true
-                      },
+ 
                       tl: {
                           required: true
                       },
