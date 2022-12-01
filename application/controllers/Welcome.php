@@ -37,6 +37,17 @@ class Welcome extends CI_Controller {
         $data=$this->m_registrasi->get_kabkota($id);
         echo json_encode($data);
     }
+    public function getTglSelAktif(){
+	    $whereta = array(
+			'aktif' => '1'		
+		);
+		$ta = $this->m_portal->get_data($whereta,'tbl_tgl_seleksi')->result();
+			foreach ($ta as $t) {
+			# code...
+			//$data['nama'] = $n->Nama_mahasiswa ;
+			return $t->id_tgl_seleksi;
+		}
+	}
 	public function cekstatus()
 	{
 		// If captcha form is submitted
@@ -248,7 +259,7 @@ class Welcome extends CI_Controller {
 		$gelombang = $this->input->post('gelombang');
 		$kelas = $this->input->post('kelas');
 		$thn_pel="2023";
- 
+ 		$id_tgl_seleksi = $this->getTglSelAktif();
 		
 		
 		// $namagabungan1 = judul_seo("ijasah".$nama." ".$prodi." ".$tgl_l);
@@ -323,7 +334,8 @@ class Welcome extends CI_Controller {
 			'tb' => $tb,
 			'email' => $email,
 			'prodi2' => $prodi2,
-			'kelas' => $kelas
+			'kelas' => $kelas,
+			'id_tgl_seleksi' => $id_tgl_seleksi
 			);
 
 
