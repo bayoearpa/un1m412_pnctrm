@@ -12,7 +12,6 @@ class Dekan extends CI_Controller {
 		$this->load->model('m_registrasi');
         $this->load->helper('url');
 	}
-	function prodi($id){
 		 function prodi($id){
         switch ($id) {
 
