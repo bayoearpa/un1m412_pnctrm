@@ -41,7 +41,7 @@ class Welcome extends CI_Controller {
 	    $whereta = array(
 			'aktif' => '1'		
 		);
-		$ta = $this->m_portal->get_data($whereta,'tbl_tgl_seleksi')->result();
+		$ta = $this->m_registrasi->get_data($whereta,'tbl_tgl_seleksi')->result();
 			foreach ($ta as $t) {
 			# code...
 			//$data['nama'] = $n->Nama_mahasiswa ;

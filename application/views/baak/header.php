@@ -136,6 +136,7 @@
           <ul class="treeview-menu">
             <!-- <li class="active"><a href="<?php //echo base_url() ?>baak/"><i class="fa fa-repeat"></i>Ganti Jurusan</a></li> -->
             <li><a href="<?php echo base_url() ?>baak/rekap_peserta2022"><i class="fa fa-paperclip"></i>Rekap Daftar Peserta</a></li>
+            <li><a href="<?php echo base_url() ?>baak/rekap_daftar_hadir_peserta2022"><i class="fa fa-paperclip"></i>Daftar Hadir Peserta</a></li>
             <!-- <li><a href="<?php //echo base_url() ?>baak/rekap_abs_tda"><i class="fa fa-paperclip"></i>Rekap Abasen TDA</a></li>
             <li><a href="<?php //echo base_url() ?>baak/rekap"><i class="fa fa-paperclip"></i>Rekap Daftar Hadir</a></li>
             <li><a href="<?php// echo base_url() ?>baak/rekap_targas"><i class="fa fa-paperclip"></i>Rekap Daftar Hadir Targas</a></li>
