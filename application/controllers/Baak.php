@@ -397,7 +397,7 @@ class Baak extends CI_Controller {
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
             $data['kelas'] = $kelas;
             $data['prodi'] = $nameprodi;
-             pdf
+             //pdf
             $pdfFilePath="daftar_hadir_catar_".$nameprodi.".pdf";
             $html=$this->load->view('baak/rekap_ctk_daftar_hadir_peserta2022',$data, TRUE);
             $pdf = $this->m_pdf->load();
