@@ -271,7 +271,7 @@ class Baak extends CI_Controller {
         $data['get_tgl_pel'] = $this->m_registrasi->get_data_tgl_seleksi()->result();
         $this->load->view('baak/header');
         $this->load->view('baak/rekap_daftar_hadir_peserta2022',$data);
-        // $this->load->view('baak/rekap_wawancara_exl');
+        $this->load->view('baak/rekap_daftar_hadir_peserta2022_exl');
         $this->load->view('baak/footer');
     }
     function rekap_pdf_daftarhadirpeserta(){
@@ -341,6 +341,59 @@ class Baak extends CI_Controller {
             $where = array(
             'tbl_catar_2023.prodi' => $prodi,
             'tbl_catar_2023.kelas' => $kelas,
+            'tbl_catar_2023.gelombang' => $gelombang,                
+            );
+            $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+            $data['kelas'] = $kelas;
+            $data['prodi'] = $nameprodi;
+             //pdf
+            $pdfFilePath="daftar_catar_".$nameprodi.".pdf";
+            $html=$this->load->view('baak/rekap_ctk_peserta2022',$data, TRUE);
+            $pdf = $this->m_pdf->load();
+     
+            $pdf->AddPage('P');
+            $pdf->WriteHTML($html);
+            $pdf->Output($pdfFilePath, "D");
+        }
+
+    }  
+     function rekap_pdf_daftarhadirpeserta2022(){
+
+
+        $prodi = $this->input->post('prodi');
+        $kelas = $this->input->post('kelas');
+        $jk = $this->input->post('jk');
+        $tgl_pel = $this->input->post('tgl_pel');
+        $gelombang = $this->input->post('gelombang');
+
+        $nameprodi = $this->prodi($prodi);
+
+        if ($gelombang == null) {
+            # code...
+            $where = array(
+            'tbl_catar_2023.prodi' => $prodi,
+            'tbl_catar_2023.kelas' => $kelas,
+            'tbl_catar_2023.jk' => $jk,
+            'tbl_catar_2023.id_tgl_seleksi' => $tgl_pel,                
+            );
+            $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+            $data['kelas'] = $kelas;
+            $data['prodi'] = $nameprodi;
+             //pdf
+            $pdfFilePath="daftar_catar_".$nameprodi.".pdf";
+            $html=$this->load->view('baak/rekap_ctk_peserta2022',$data, TRUE);
+            $pdf = $this->m_pdf->load();
+     
+            $pdf->AddPage('P');
+            $pdf->WriteHTML($html);
+            $pdf->Output($pdfFilePath, "D");
+            exit();
+        }else{
+            $where = array(
+            'tbl_catar_2023.prodi' => $prodi,
+            'tbl_catar_2023.kelas' => $kelas,
+            'tbl_catar_2023.jk' => $jk,
+            'tbl_catar_2023.id_tgl_seleksi' => $tgl_pel,    
             'tbl_catar_2023.gelombang' => $gelombang,                
             );
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
