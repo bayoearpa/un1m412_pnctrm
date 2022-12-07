@@ -46,6 +46,7 @@
                   <select class="form-control" name="tgl_pel" id="tgl_pel" required="harus dipilih">
                     <option selected>== Pilih ==</option>
                     <?php 
+                      get_instance()->load->helper('tgl_indo');
                       foreach ($get_tgl_pel as $key) {
                         # code... ?>
                         <option value="<?php echo $key->id_tgl_seleksi ?>"><?php echo $tgl_indo->dateindo($key->tgl_seleksi); ?></option>
