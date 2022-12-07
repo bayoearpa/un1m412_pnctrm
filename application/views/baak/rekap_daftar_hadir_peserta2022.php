@@ -48,7 +48,7 @@
                     <?php 
                       foreach ($get_tgl_pel as $key) {
                         # code... ?>
-                        <option value="<?php echo $key->id_tgl_seleksi ?>"><?php echo dateindo($key->tgl_seleksi) ?></option>
+                        <option value="<?php echo $key->id_tgl_seleksi ?>"><?php echo $tgl_indo->dateindo($key->tgl_seleksi); ?></option>
                      <?php }
                      ?>
                   </select>
