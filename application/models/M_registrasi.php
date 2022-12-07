@@ -61,9 +61,14 @@ class m_registrasi extends CI_Model
 		$this->db->join('tbl_kabkota','tbl_propinsi.id_wil = tbl_kabkota.id_induk_wil','inner');
 		$this->db->where($where);
 		$query=$this->db->get();
-		return $query;
-
-		
+		return $query;		
+	}
+	function get_data_tgl_seleksi(){
+		$this->db->select('id_tgl_seleksi,tgl_seleksi,aktif');
+		$this->db->from('tbl_tgl_seleksi');
+		$this->db->order_by('id_tgl_seleksi', "desc");
+		$query=$this->db->get();
+		return $query;		
 	}
 	function get_data_join_all(){
 		$this->db->select('tbl_catar_2023.no,

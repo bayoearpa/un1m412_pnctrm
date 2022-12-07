@@ -28,7 +28,7 @@
                   <div class="form-group">
                   <label>Pilih kelas</label>
                   <select class="form-control" name="kelas" id="kelas" required="harus dipilih">
-                    <option> </option>
+                    <option selected>== Pilih ==</option>
                     <option value="reg">Reguler</option>
                     <option value="fastt">Fast Track</option>
                   </select>
@@ -36,6 +36,14 @@
                   <div class="form-group">
                   <label>Jenis Kelamin</label>
                   <select class="form-control" name="jk" id="jk" required="harus dipilih">
+                    <option selected>== Pilih ==</option>
+                    <option value="Pria">Pria</option>
+                    <option value="Wanita">Wanita</option>
+                  </select>
+                  </div>
+                  <div class="form-group">
+                  <label>Tanggal Pelaksanaan</label>
+                  <select class="form-control" name="tgl_pel" id="tgl_pel" required="harus dipilih">
                     <option> </option>
                     <option value="Pria">Reguler</option>
                     <option value="Wanita">Fast Track</option>
@@ -44,7 +52,7 @@
                   <div class="form-group">
                   <label>Periode</label>
                   <select class="form-control" name="gelombang" id="gelombang">
-                    <option> </option>
+                    <option selected>== Pilih ==</option>
                     <option value="1">Januari</option>
                     <option value="2">Februari</option>
                     <option value="3">Maret</option>
