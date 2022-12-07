@@ -20,7 +20,7 @@
 		<p style="margin: 0px;padding: 0px;"><b>FORMULIR PENERIMAAN MAHATAR BARU</b></p>
 		<p style="margin: 0px;padding: 0px;"><b>TAHUN AKADEMIK 2023 / 2024 </b></p>
 		<p style="margin: 0px;padding: 0px;"><b>UNIVERSITAS MARITIM AMNI SEMARANG</b></p>
-		<p style="margin: 0px;padding: 0px;"><b>UNIMAR AMNI SEMARANG</b></p>
+<!-- 		<p style="margin: 0px;padding: 0px;"><b>UNIMAR AMNI SEMARANG</b></p> -->
 		<p style="margin: 0px;padding: 0px;">Jl. Soekarno-Hatta No. 180 Semarang 50199</p>
 		<p style="margin: 0px;padding: 0px;">website : http://www.unimar-amni.ac.id</p>
 		<p style="margin: 0px;padding: 0px;">email : info@unimar-amni.ac.id</p>
@@ -33,7 +33,7 @@
 <hr size="2" style="border-color: #000000;border-width: 3px;margin: 0px;padding: 0px;">
 <h1 align="right" style="margin-right: 20px;margin-bottom: 0px;margin: 0px;padding: 0px;"><?php echo $c->no ?></h1>
 <!-- datadiri -->
-<table align="center"><tr><td><h3 style="margin: 0px;padding: 0px;"><b>Kartu Test Calon MAHATAR</b></h2></td></tr></table>
+<table align="center"><tr><td><h3 style="margin: 0px;padding: 0px;"><b>Kartu Test PMB</b></h2></td></tr></table>
 <table width="90%" align="center" id="biodata">
 	<tr>
 		<td width="30%"><b>Nama</b></td><td width="1%">:</td><td><?php echo $c->nama ?></td>
