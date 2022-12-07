@@ -80,16 +80,16 @@ $value=array_chunk($catar, '20');
 $urut="1";
  foreach ($val as $v){ ?>
 	<tr>
-		<td height="15px"><?php echo $urut++; ?></td>
+		<td height="30px"><?php echo $urut++; ?></td>
 		<td><?php $text1= strtolower($v->nama);echo ucwords($text1); ?></td>
 		<td align="center"><?php echo $v->no; ?></td>
-		<td><?php if ($v->jk == "Pria") {
+		<td width="15px"><?php if ($v->jk == "Pria") {
 			# code...
 			echo "L";
 		}else{
 			echo "P";
 		} ?></td>
-		<td width="100px"></td>
+		<td width="120px"></td>
 	</tr>
 <?php } ?>
 <?php //---------------------------------------------------------akhir per tabel 10------------------------------------------ ?>
