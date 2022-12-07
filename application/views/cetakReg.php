@@ -130,6 +130,7 @@
 		?></b></td>
 	</tr>
 </table>
+<br><br>
 <table align="center" border="1" style="border: 1px solid black;border-collapse: collapse;" width="80%">
 	<tr>
 		<td><center><b>Kegiatan</b></center></td>
