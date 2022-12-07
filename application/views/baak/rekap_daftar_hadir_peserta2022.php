@@ -57,7 +57,7 @@
                   <div class="form-group">
                   <label>Periode</label>
                   <select class="form-control" name="gelombang" id="gelombang">
-                    <option selected>== Pilih ==</option>
+                    <option value="0" selected>== Pilih ==</option>
                     <option value="1">Januari</option>
                     <option value="2">Februari</option>
                     <option value="3">Maret</option>
