@@ -33,7 +33,7 @@
 <hr size="2" style="border-color: #000000;border-width: 3px;margin: 0px;padding: 0px;">
 <h1 align="right" style="margin-right: 20px;margin-bottom: 0px;margin: 0px;padding: 0px;"><?php echo $c->no ?></h1>
 <!-- datadiri -->
-<h5 style="margin: 0px;padding: 0px;"><b>Kartu Test Catarma</b></h2>
+<center><h5 style="margin: 0px;padding: 0px;"><b>Kartu Test Catarma</b></h2></center>
 <table width="90%" align="center" id="biodata">
 	<tr>
 		<td width="30%"><b>Nama</b></td><td width="1%">:</td><td><?php echo $c->nama ?></td>
