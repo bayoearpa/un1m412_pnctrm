@@ -10,7 +10,7 @@
                 
                   <div class="box-body">
                  <div class="form-group">
-                      <form method="post" action="<?php echo base_url() ?>baak/rekap_pdf_daftarpeserta2022">
+                      <form method="post" action="<?php echo base_url() ?>baak/rekap_exl_daftarhadirpeserta2022">
                       <label> Pilih Prodi
                     </label>*wajib pilih
                     <select name="prodi" id="prodi" class="form-control" style="width:50%;" required="harus dipilih">  

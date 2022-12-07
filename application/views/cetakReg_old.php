@@ -33,37 +33,67 @@
 <hr size="2" style="border-color: #000000;border-width: 3px;margin: 0px;padding: 0px;">
 <h1 align="right" style="margin-right: 20px;margin-bottom: 0px;margin: 0px;padding: 0px;"><?php echo $c->no ?></h1>
 <!-- datadiri -->
-<h2 style="margin: 0px;padding: 0px;"><b>Kartu Test Catarma</b></h2>
+<h2 style="margin: 0px;padding: 0px;"><b>Biodata Catarma</b></h2>
 <table width="90%" align="center">
 	<tr>
-		<td width="30%"><b>Nama</b></td><td width="1%">:</td><td><?php echo $c->nama ?></td><td width="30%"><b>Jurusan (SMA/SMK)</b></td><td width="1%">:</td><td><?php echo $c->prodi_lama ?></td>
+		<td width="30%"><b>Nama</b></td><td width="1%">:</td><td><?php echo $c->nama ?></td>
 	</tr>
 	<tr>
-		<td width="30%"><b>Tempat Lahir</b></td><td width="1%">:</td><td><?php echo $c->tl ?></td><td width="30%"><b>Tahun Lulus</b></td><td width="1%">:</td><td><?php echo $c->thn_lulus ?></td>
+		<td width="30%"><b>Tempat Lahir</b></td><td width="1%">:</td><td><?php echo $c->tl ?></td>
 	</tr>
 	<tr>
-		<td width="30%"><b>Tanggal Lahir</b></td><td width="1%">:</td><td><?php echo $c->tgl_l ?></td><td width="30%"><b>Asal Sekolah</b></td><td width="1%">:</td><td><?php echo $c->asek ?></td>
+		<td width="30%"><b>Tanggal Lahir</b></td><td width="1%">:</td><td><?php echo $c->tgl_l ?></td>
 	</tr>
 	<tr>
-		<td width="30%"><b>Agama</b></td><td width="1%">:</td><td><?php echo $c->agama ?></td><td width="30%"><b>Alamat Sekolah</b></td><td width="1%">:</td><td><?php echo $c->alamat_sek ?></td>
+		<td width="30%"><b>Agama</b></td><td width="1%">:</td><td><?php echo $c->agama ?></td>
 	</tr>
 	<tr>
-		<td width="30%"><b>Jenis Kelamin</b></td><td width="1%">:</td><td><?php echo $c->jk ?></td><td width="30%"><b>Nama Ayah Kandung</b></td><td width="1%">:</td><td><?php echo $c->nama_a ?></td>
+		<td width="30%"><b>Jenis Kelamin</b></td><td width="1%">:</td><td><?php echo $c->jk ?></td>
 	</tr>
 	<tr>
-		<td width="30%"><b>Alamat</b></td><td width="1%">:</td><td><?php echo $c->alamat ?></td><td width="30%"><b>Nama Ibu Kandung</b></td><td width="1%">:</td><td><?php echo $c->nama_i ?></td>
+		<td width="30%"><b>Alamat</b></td><td width="1%">:</td><td><?php echo $c->alamat ?></td>
 	</tr>
 	<tr>
 		<td width="30%"><b>Kota / Kabupaten</b></td><td width="1%">:</td><td><?php echo $kabkota ?></td>
 	</tr>
 	<tr>
-		<td width="30%"><b>Provinsi</b></td><td width="1%">:</td><td><?php echo $provinsi ?></td><td width="30%"><b>Alamat Orang Tua / Wali</b></td><td width="1%">:</td><td><?php echo $c->alamat_ortu ?></td>
+		<td width="30%"><b>Provinsi</b></td><td width="1%">:</td><td><?php echo $provinsi ?></td>
 	</tr>
 	<tr>
-		<td width="30%"><b>Telepon</b></td><td width="1%">:</td><td><?php echo $c->telp ?></td><td width="30%"><b>Telepon Orang Tua / Wali</b></td><td width="1%">:</td><td><?php echo $c->telp_ortu ?></td>
+		<td width="30%"><b>Telepon</b></td><td width="1%">:</td><td><?php echo $c->telp ?></td>
 	</tr>
 	<tr>
-		<td width="30%"><b>Kategori Sekolah</b></td><td width="1%">:</td><td><?php echo $c->kategori_sek ?></td><td width="30%"><b>Prodi yang Dipilih</b></td><td width="1%">:</td><td><?php 
+		<td width="30%"><b>Kategori Sekolah</b></td><td width="1%">:</td><td><?php echo $c->kategori_sek ?></td>
+	</tr>
+	<tr>
+		<td width="30%"><b>Jurusan (SMA/SMK)</b></td><td width="1%">:</td><td><?php echo $c->prodi_lama ?></td>
+	</tr>
+	<tr>
+		<td width="30%"><b>Tahun Lulus</b></td><td width="1%">:</td><td><?php echo $c->thn_lulus ?></td>
+	</tr>
+	<tr>
+		<td width="30%"><b>Asal Sekolah</b></td><td width="1%">:</td><td><?php echo $c->asek ?></td>
+	</tr>
+	<tr>
+		<td width="30%"><b>Alamat Sekolah</b></td><td width="1%">:</td><td><?php echo $c->alamat_sek ?></td>
+	</tr>
+	<tr>
+		<td width="30%"><b>Nama Ayah Kandung</b></td><td width="1%">:</td><td><?php echo $c->nama_a ?></td>
+	</tr>
+	<tr>
+		<td width="30%"><b>Nama Ibu Kandung</b></td><td width="1%">:</td><td><?php echo $c->nama_i ?></td>
+	</tr>
+	<tr>
+		<td width="30%"><b>Alamat Orang Tua / Wali</b></td><td width="1%">:</td><td><?php echo $c->alamat_ortu ?></td>
+	</tr>
+	<tr>
+		<td width="30%"><b>Telepon Orang Tua / Wali</b></td><td width="1%">:</td><td><?php echo $c->telp_ortu ?></td>
+	</tr>
+	<!-- <tr>
+		<td width="30%"><b>Gelombang</b></td><td width="1%">:</td><td><?php //echo substr($c->gelombang,-1); ?></td>
+	</tr> -->
+	<tr>
+		<td width="30%"><b>Prodi yang Dipilih</b></td><td width="1%">:</td><td><?php 
 		switch ($c->prodi) {
 
 				// registrasi
@@ -94,6 +124,9 @@
 					
 				}
 				echo $pick;
+
+
+
 		?></td>
 	</tr>
 </table>
