@@ -55,7 +55,7 @@ $value=array_chunk($catar, 20);
 
 <body>
 
-<?php foreach ($value as $val){ ?>
+<?php foreach ($value as $val): ?>
 <div class="page">
 <p style="margin: 0px;text-align: center;">UNIVERSITAS MARITIM AMNI SEMARANG</p>
 <p style="margin: 0px;text-align: center;font-size: 5px;">JALAN SOEKARNO HATTA NOMOR 180 SEMARANG</p>
@@ -78,7 +78,7 @@ $value=array_chunk($catar, 20);
 <?php //---------------------------------------------------------per tabel 20------------------------------------------ ?>
 <?php
 $no=1;
- foreach ($val as $v){ ?>
+ foreach ($val as $v): ?>
 	<tr>
 		<td height="10px"><?php echo $no++; ?></td>
 		<td><?php $text1= strtolower($v->nama);echo ucwords($text1); ?></td>
@@ -91,11 +91,11 @@ $no=1;
 		} ?></td>
 		<td></td>
 	</tr>
-<?php } ?>
+<?php endforeach ?>
 <?php //---------------------------------------------------------akhir per tabel 10------------------------------------------ ?>
 </table>
 </div>
-<?php } ?>
+<?php endforeach ?>
 
 </body>
 </html>
