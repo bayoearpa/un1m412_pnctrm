@@ -51,7 +51,6 @@
 </head>
 <?php 
 $value=array_chunk($catar, 20);
-$noKelompok=1;
  ?>
 
 <body>
