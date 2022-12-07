@@ -80,7 +80,7 @@ $value=array_chunk($catar, '20');
 $urut="1";
  foreach ($val as $v){ ?>
 	<tr>
-		<td height="60px" width="15px"><?php echo $urut++; ?></td>
+		<td height="40px" width="15px"><?php echo $urut++; ?></td>
 		<td><?php $text1= strtolower($v->nama);echo ucwords($text1); ?></td>
 		<td align="center" width="30px"><?php echo $v->no; ?></td>
 		<td width="15px" align="center"><?php if ($v->jk == "Pria") {
