@@ -42,7 +42,7 @@ class Baak extends CI_Controller {
         switch ($id) {
 
             // registrasi
-                case '1':
+               case '1':
                     $pick = "D3 KETATALAKSANAAN PELAYARAN NIAGA DAN KEPELABUHAN";
                 break;
                 case '2' :
@@ -55,18 +55,15 @@ class Baak extends CI_Controller {
                     $pick = "S1 TRANSPORTASI";
                 break;
                 case '5':
-                    $pick = "S1 TRANSPORTASI ( LINTAS JALUR )";
+                    $pick = "S1 TEKNIK TRANSPORTASI LAUT";
                 break;
                 case '6':
                     $pick = "S1 TEKNIK MESIN";
                 break;
                 case '7':
-                    $pick = "S1 TEKNIK TRANSPORTASI LAUT";
-                break;
-                case '8':
                     $pick = "S1 TEKNIK KESELAMATAN";
                 break;
-                case '9':
+                case '8':
                     $pick = "S1 PERDAGANGAN INTERNASIONAL";
                 break;
                 
