@@ -130,28 +130,34 @@
 		?></b></td>
 	</tr>
 </table>
-<table  style="border: 1px solid black;border-collapse: collapse;" width="80%">
+<table border="1" style="border: 1px solid black;border-collapse: collapse;" width="80%">
 	<tr>
-		<td height="40px"><center><b>Kegiatan</b></center></td>
+		<td><center><b>Kegiatan</b></center></td>
 		<td><center><b>Paraf Petugas</b></center></td>
 	</tr>
 	<tr>
-		<td align="left">TPA</td>
+		<td align="left" height="30px">TPA</td>
+		<td></td>
 	</tr>
 	<tr>
-		<td align="left">Kesehatan</td>
+		<td align="left" height="30px">Kesehatan</td>
+		<td></td>
 	</tr>
 	<tr>
-		<td align="left">Wawancara</td>
+		<td align="left" height="30px">Wawancara</td>
+		<td></td>
 	</tr>
 	<tr>
-		<td align="left">SAMAPTA</td>
+		<td align="left" height="30px">SAMAPTA</td>
+		<td></td>
 	</tr>
 	<tr>
-		<td align="left">Ukur Pakaian</td>
+		<td align="left" height="30px">Ukur Pakaian</td>
+		<td></td>
 	</tr>
 	<tr>
-		<td align="left">Pantukhir</td>
+		<td align="left" height="30px">Pantukhir</td>
+		<td></td>
 	</tr>
 </table>
 
