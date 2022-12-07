@@ -362,6 +362,7 @@ class Baak extends CI_Controller {
         $jk = $this->input->post('jk');
         $tgl_pel = $this->input->post('tgl_pel');
         $gelombang = $this->input->post('gelombang');
+        $bagian = $this->input->post('bagian');
 
         $nameprodi = $this->prodi($prodi);
 
@@ -376,6 +377,7 @@ class Baak extends CI_Controller {
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
             $data['kelas'] = $kelas;
             $data['prodi'] = $nameprodi;
+            $data['bagian'] = $bagian;
              //pdf
             $pdfFilePath="daftar_hadir_catar_".$nameprodi.".pdf";
             $html=$this->load->view('baak/rekap_ctk_daftar_hadir_peserta2022',$data, TRUE);
@@ -397,6 +399,7 @@ class Baak extends CI_Controller {
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
             $data['kelas'] = $kelas;
             $data['prodi'] = $nameprodi;
+            $data['bagian'] = $bagian;
              //pdf
             $pdfFilePath="daftar_hadir_catar_".$nameprodi.".pdf";
             $html=$this->load->view('baak/rekap_ctk_daftar_hadir_peserta2022',$data, TRUE);

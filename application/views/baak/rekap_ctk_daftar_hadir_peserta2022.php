@@ -57,7 +57,7 @@ $value=array_chunk($catar, '20');
 
 <?php foreach ($value as $val){ ?>
 <div class="page">
-<p style="margin: 0px;text-align: center;">UNIVERSITAS MARITIM AMNI SEMARANG</p>
+<p style="margin: 0px;text-align: center;"><b>UNIVERSITAS MARITIM AMNI SEMARANG</b></p>
 <p style="margin: 0px;text-align: center;font-size: 9px;">JALAN SOEKARNO HATTA NOMOR 180 SEMARANG</p>
 <center><p style="margin: 0px;text-align: center;font-size: 9px;">DAFTAR CALON TARUNA - MAHASISWA T.A 2023/2024</p></center>
 <center><p style="margin: 0px;text-align: center;font-size: 9px;">PRODI : <?php echo $prodi; ?></p></center>
@@ -65,6 +65,9 @@ $value=array_chunk($catar, '20');
 	# code... 
 	echo "REGULER";
 }else{ echo "FAST TRACK";} ?></p></center>
+<p></p>
+<p style="margin: 0px;text-align: center;"><b><?php echo $bagian; ?></b></p>
+
 
 
 <table width="100%" border="1" style="border: 1px solid black;border-collapse: collapse;">

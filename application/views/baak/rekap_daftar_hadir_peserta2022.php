@@ -42,6 +42,18 @@
                   </select>
                   </div>
                   <div class="form-group">
+                  <label>Kegiatan</label>*wajib pilih
+                  <select class="form-control" name="bagian" id="bagian" required="harus dipilih">
+                    <option selected>== Pilih ==</option>
+                    <option value="TPA">TPA</option>
+                    <option value="KESEHATAN">KESEHATAN</option>
+                    <option value="WAWANCARA">WAWANCARA</option>
+                    <option value="SAMAPTA">SAMAPTA</option>
+                    <option value="UKUR PAKAIAN">UKUR PAKAIAN</option>
+                    <option value="PANTUKHIR">PANTUKHIR</option>
+                  </select>
+                  </div>
+                  <div class="form-group">
                   <label>Tanggal Pelaksanaan</label>*wajib pilih
                   <select class="form-control" name="tgl_pel" id="tgl_pel" required="harus dipilih">
                     <option selected>== Pilih ==</option>
