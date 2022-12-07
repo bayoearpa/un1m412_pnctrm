@@ -77,7 +77,7 @@ $value=array_chunk($catar, '20');
 		</tr>
 <?php //---------------------------------------------------------per tabel 20------------------------------------------ ?>
 <?php
-$urut=1;
+$urut="1";
  foreach ($val as $v): ?>
 	<tr>
 		<td height="10px"><?php echo $urut++; ?></td>
