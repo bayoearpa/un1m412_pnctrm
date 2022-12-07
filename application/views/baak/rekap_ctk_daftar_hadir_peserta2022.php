@@ -82,9 +82,9 @@ $no=1;
  foreach ($val as $v): ?>
 	<tr>
 		<td height="10px"><?php echo $no++; ?></td>
-		<td><?php $text1= strtolower($key->nama);echo ucwords($text1) ?></td>
-		<td align="center"><?php echo $key->no; ?></td>
-		<td><?php if ($key->jk == "Pria") {
+		<td><?php $text1= strtolower($v->nama);echo ucwords($text1) ?></td>
+		<td align="center"><?php echo $v->no; ?></td>
+		<td><?php if ($v->jk == "Pria") {
 			# code...
 			echo "L";
 		}else{
