@@ -381,7 +381,7 @@ class Baak extends CI_Controller {
             $data['prodi'] = $nameprodi;
              //pdf
             $pdfFilePath="daftar_catar_".$nameprodi.".pdf";
-            $html=$this->load->view('baak/rekap_ctk_peserta2022',$data, TRUE);
+            $html=$this->load->view('baak/rekap_ctk_daftar_hadir_peserta2022',$data, TRUE);
             $pdf = $this->m_pdf->load();
      
             $pdf->AddPage('P');
@@ -401,7 +401,7 @@ class Baak extends CI_Controller {
             $data['prodi'] = $nameprodi;
              //pdf
             $pdfFilePath="daftar_catar_".$nameprodi.".pdf";
-            $html=$this->load->view('baak/rekap_ctk_peserta2022',$data, TRUE);
+            $html=$this->load->view('baak/rekap_ctk_daftar_hadir_peserta2022',$data, TRUE);
             $pdf = $this->m_pdf->load();
      
             $pdf->AddPage('P');
