@@ -58,10 +58,10 @@ $value=array_chunk($catar, '20');
 <?php foreach ($value as $val){ ?>
 <div class="page">
 <p style="margin: 0px;text-align: center;">UNIVERSITAS MARITIM AMNI SEMARANG</p>
-<p style="margin: 0px;text-align: center;font-size: 5px;">JALAN SOEKARNO HATTA NOMOR 180 SEMARANG</p>
-<center><p style="margin: 0px;text-align: center;font-size: 5px;">DAFTAR CALON TARUNA - MAHASISWA T.A 2023/2024</p></center>
-<center><p style="margin: 0px;text-align: center;font-size: 5px;">PRODI : <?php echo $prodi; ?></p></center>
-<center><p style="margin: 0px;text-align: center;font-size: 5px;">KELAS : <?php if ($kelas == "reg") {
+<p style="margin: 0px;text-align: center;font-size: 9px;">JALAN SOEKARNO HATTA NOMOR 180 SEMARANG</p>
+<center><p style="margin: 0px;text-align: center;font-size: 9px;">DAFTAR CALON TARUNA - MAHASISWA T.A 2023/2024</p></center>
+<center><p style="margin: 0px;text-align: center;font-size: 9px;">PRODI : <?php echo $prodi; ?></p></center>
+<center><p style="margin: 0px;text-align: center;font-size: 9px;">KELAS : <?php if ($kelas == "reg") {
 	# code... 
 	echo "REGULER";
 }else{ echo "FAST TRACK";} ?></p></center>
@@ -89,7 +89,7 @@ $urut="1";
 		}else{
 			echo "P";
 		} ?></td>
-		<td></td>
+		<td width="100px"></td>
 	</tr>
 <?php } ?>
 <?php //---------------------------------------------------------akhir per tabel 10------------------------------------------ ?>
