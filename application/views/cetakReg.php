@@ -33,7 +33,7 @@
 <hr size="2" style="border-color: #000000;border-width: 3px;margin: 0px;padding: 0px;">
 <h1 align="right" style="margin-right: 20px;margin-bottom: 0px;margin: 0px;padding: 0px;"><?php echo $c->no ?></h1>
 <!-- datadiri -->
-<h2 style="margin: 0px;padding: 0px;"><b>Biodata Catarma</b></h2>
+<h5 style="margin: 0px;padding: 0px;"><b>Kartu Test Catarma</b></h2>
 <table width="90%" align="center" id="biodata">
 	<tr>
 		<td width="30%"><b>Nama</b></td><td width="1%">:</td><td><?php echo $c->nama ?></td>
@@ -93,7 +93,7 @@
 		<td width="30%"><b>Gelombang</b></td><td width="1%">:</td><td><?php //echo substr($c->gelombang,-1); ?></td>
 	</tr> -->
 	<tr>
-		<td width="30%"><b>Prodi yang Dipilih</b></td><td width="1%">:</td><td><?php 
+		<td width="30%"><b>Prodi yang Dipilih</b></td><td width="1%">:</td><td><b><?php 
 		switch ($c->prodi) {
 
 				// registrasi
@@ -127,7 +127,31 @@
 
 
 
-		?></td>
+		?></b></td>
+	</tr>
+</table>
+<table  style="border: 1px solid black;border-collapse: collapse;" width="800%">
+	<tr>
+		<td height="40px"><center><b>Kegiatan</b></center></td>
+		<td><center><b>Paraf Petugas</b></center></td>
+	</tr>
+	<tr>
+		<td align="left">TPA</td>
+	</tr>
+	<tr>
+		<td align="left">Kesehatan</td>
+	</tr>
+	<tr>
+		<td align="left">Wawancara</td>
+	</tr>
+	<tr>
+		<td align="left">SAMAPTA</td>
+	</tr>
+	<tr>
+		<td align="left">Ukur Pakaian</td>
+	</tr>
+	<tr>
+		<td align="left">Pantukhir</td>
 	</tr>
 </table>
 
