@@ -65,8 +65,7 @@ $value=array_chunk($catar, '20');
 	# code... 
 	echo "REGULER";
 }else{ echo "FAST TRACK";} ?></p></center>
-<p></p>
-<p style="margin: 0px;text-align: center;"><b><?php echo $bagian; ?></b></p>
+<p style="margin: 0px;text-align: center;"><b><?php echo "ABSENSI "$bagian; ?></b></p>
 
 
 
