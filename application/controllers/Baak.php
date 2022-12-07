@@ -333,7 +333,6 @@ class Baak extends CI_Controller {
             $pdf->AddPage('P');
             $pdf->WriteHTML($html);
             $pdf->Output($pdfFilePath, "D");
-            exit();
         }else{
             $where = array(
             'tbl_catar_2023.prodi' => $prodi,
@@ -365,7 +364,7 @@ class Baak extends CI_Controller {
         $gelombang = $this->input->post('gelombang');
 
         $nameprodi = $this->prodi($prodi);
-        
+
         if ($gelombang == "0") {
             # code...
             $where = array(
@@ -385,7 +384,6 @@ class Baak extends CI_Controller {
             $pdf->AddPage('P');
             $pdf->WriteHTML($html);
             $pdf->Output($pdfFilePath, "D");
-            exit();
 
             // $this->load->view('baak/rekap_ctk_daftar_hadir_peserta2022',$data);
         }else{
