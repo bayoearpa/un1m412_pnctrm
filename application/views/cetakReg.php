@@ -130,7 +130,7 @@
 		?></b></td>
 	</tr>
 </table>
-<table  style="border: 1px solid black;border-collapse: collapse;" width="800%">
+<table  style="border: 1px solid black;border-collapse: collapse;" width="80%">
 	<tr>
 		<td height="40px"><center><b>Kegiatan</b></center></td>
 		<td><center><b>Paraf Petugas</b></center></td>
