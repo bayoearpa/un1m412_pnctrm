@@ -133,8 +133,8 @@
 <br>
 <table align="center" border="1" style="border: 1px solid black;border-collapse: collapse;" width="90%">
 	<tr>
-		<td><center><b>Kegiatan</b></center></td>
-		<td><center><b>Paraf Petugas</b></center></td>
+		<td><center><b>KEGIATAN</b></center></td>
+		<td><center><b>PARAF PETUGAS</b></center></td>
 	</tr>
 	<tr>
 		<td align="left" height="30px">TPA</td>
@@ -164,7 +164,7 @@
 
 <!-- ttd -->
 <table width="80%" align="center" style="margin: 0px;padding: 0px;">
-	<tr><td align="center" style="height: 100px;">Ketua PMB</td><td align="center">Calon Taruna</td></tr>
+	<tr><td align="center" style="height: 100px;">Ketua PMB</td><td align="center">Calon MAHATAR</td></tr>
 	<tr><td><hr style="border-style: dotted;width: 50%;"></td><td><hr style="border-style: dotted;width: 50%;"></td></tr>
 </table>
 <p style="margin: 0px;padding: 0px;"><b>Catatan :</b></p>
