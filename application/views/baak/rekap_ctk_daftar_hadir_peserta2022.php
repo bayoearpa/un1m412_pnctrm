@@ -50,7 +50,7 @@
  	</style>
 </head>
 <?php 
-$value=array_chunk($catar, 5);
+$value=array_chunk($catar, 20);
  ?>
 
 <body>
