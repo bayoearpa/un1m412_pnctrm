@@ -10,6 +10,7 @@ class Baak extends CI_Controller {
 		}
 		$this->load->model('m_registrasi');
         $this->load->helper('url');
+        $this->load->helper('tgl_indo');
         $this->load->library('m_pdf');
         $this->load->helper('download');
     }
