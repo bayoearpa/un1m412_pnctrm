@@ -374,9 +374,9 @@ class Baak extends CI_Controller {
             'tbl_catar_2023.jk' => $jk,
             'tbl_catar_2023.id_tgl_seleksi' => $tgl_pel,                
             );
-            // $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
-            // $data['kelas'] = $kelas;
-            // $data['prodi'] = $nameprodi;
+            $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+            $data['kelas'] = $kelas;
+            $data['prodi'] = $nameprodi;
             //  //pdf
             // $pdfFilePath="daftar_hadir_catar_".$nameprodi.".pdf";
             // $html=$this->load->view('baak/rekap_ctk_daftar_hadir_peserta2022',$data, TRUE);
