@@ -44,9 +44,13 @@
                   <div class="form-group">
                   <label>Tanggal Pelaksanaan</label>
                   <select class="form-control" name="tgl_pel" id="tgl_pel" required="harus dipilih">
-                    <option> </option>
-                    <option value="Pria">Reguler</option>
-                    <option value="Wanita">Fast Track</option>
+                    <option selected>== Pilih ==</option>
+                    <?php 
+                      foreach ($get_tgl_pel as $key) {
+                        # code... ?>
+                        <option value="<?php echo $key->id_tgl_seleksi ?>"><?php echo $key->tgl_seleksi ?></option>
+                     <?php }
+                     ?>
                   </select>
                   </div>
                   <div class="form-group">
