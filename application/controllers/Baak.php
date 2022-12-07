@@ -404,6 +404,7 @@ class Baak extends CI_Controller {
             // $pdf->AddPage('P');
             // $pdf->WriteHTML($html);
             // $pdf->Output($pdfFilePath, "D");
+             $this->load->view('baak/rekap_ctk_daftar_hadir_peserta2022',$data);
         }
 
     }  
