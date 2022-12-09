@@ -760,7 +760,7 @@ class Baak extends CI_Controller {
      function rekap_exl_daftarhadirpeserta2022(){
 
 
-        $prodi = $this->input->post('prodi');
+       $prodi = $this->input->post('prodi');
         $kelas = $this->input->post('kelas');
         $jk = $this->input->post('jk');
         $tgl_pel = $this->input->post('tgl_pel');
