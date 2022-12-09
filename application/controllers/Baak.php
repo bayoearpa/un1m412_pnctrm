@@ -446,7 +446,7 @@ class Baak extends CI_Controller {
             $data['bagian'] = $bagian;
              //pdf
             $pdfFilePath="daftar_hadir_catar_".$nameprodi.".pdf";
-            $html=$this->load->view('baak/rekap_ctk_daftar_hadir_peserta2022',$data, TRUE);
+            $html=$this->load->view('baak/rekap_ctk_daftar_hadir_pesertadp2022',$data, TRUE);
             $pdf = $this->m_pdf->load();
      
             $pdf->AddPage('P');
@@ -468,7 +468,7 @@ class Baak extends CI_Controller {
             $data['bagian'] = $bagian;
              //pdf
             $pdfFilePath="daftar_hadir_catar_".$nameprodi.".pdf";
-            $html=$this->load->view('baak/rekap_ctk_daftar_hadir_peserta2022',$data, TRUE);
+            $html=$this->load->view('baak/rekap_ctk_daftar_hadir_pesertadp2022',$data, TRUE);
             $pdf = $this->m_pdf->load();
      
             $pdf->AddPage('P');
@@ -906,7 +906,7 @@ class Baak extends CI_Controller {
             header("Content-type: application/vnd.ms-excel");
             header("Content-Disposition: attachment; filename=".$nameprodi."_daftar_hadir_excel.xls");
 
-            $this->load->view('baak/rekap_ctk_daftar_hadir_peserta2022_exl',$data);
+            $this->load->view('baak/rekap_ctk_daftar_hadir_pesertadp2022_exl',$data);
 
             // $this->load->view('baak/rekap_ctk_daftar_hadir_peserta2022',$data);
         }else{
@@ -926,7 +926,7 @@ class Baak extends CI_Controller {
             header("Content-type: application/vnd.ms-excel");
             header("Content-Disposition: attachment; filename=".$nameprodi."_daftar_hadir_excel.xls");
 
-            $this->load->view('baak/rekap_ctk_daftar_hadir_peserta2022_exl',$data);
+            $this->load->view('baak/rekap_ctk_daftar_hadir_pesertadp2022_exl',$data);
              // $this->load->view('baak/rekap_ctk_daftar_hadir_peserta2022',$data);
         }
 
