@@ -29,8 +29,8 @@
     /*height: 256mm;*/
     /*outline: 2cm #FFEAEA solid;*/
 }
-.text1 {
-      writing-mode:tb-rl;
+th {
+      writing-mode: vertical-rl;
     -webkit-transform:rotate(-90deg);
     -moz-transform:rotate(-90deg);
     -o-transform: rotate(-90deg);
