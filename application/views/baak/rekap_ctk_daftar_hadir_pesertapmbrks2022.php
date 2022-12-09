@@ -75,15 +75,15 @@ $value=array_chunk($catar, '20');
 			<th>Nama</th>
 			<th>No. Catarma</th>
 			<th>L/P</th>
-			<th style="writing-mode: vertical-lr;">Leg. Ijasah</th>
-            <th style="writing-mode: vertical-lr;">Fc. KTP</th>
-            <th style="writing-mode: vertical-lr;">Fc. Akte Kelahiran</th>
-            <th style="writing-mode: vertical-lr;">SKCK Asli</th>
-            <th style="writing-mode: vertical-lr;">Surat Izin Ortu</th>
-            <th style="writing-mode: vertical-lr;">Surat Ket. Blm Menikah</th>
-            <th style="writing-mode: vertical-lr;">Riwayat Kesehatan</th>
-            <th style="writing-mode: vertical-lr;">Surat Keabsahan Ijazah</th>
-            <th style="writing-mode: vertical-lr;">Srt Sanggup Mentaati Peraturan</th>
+			<th style="writing-mode: vertical-rl;">Leg. Ijasah</th>
+            <th style="writing-mode: vertical-rl;">Fc. KTP</th>
+            <th style="writing-mode: vertical-rl;">Fc. Akte Kelahiran</th>
+            <th style="writing-mode: vertical-rl;">SKCK Asli</th>
+            <th style="writing-mode: vertical-rl;">Surat Izin Ortu</th>
+            <th style="writing-mode: vertical-rl;">Surat Ket. Blm Menikah</th>
+            <th style="writing-mode: vertical-rl;">Riwayat Kesehatan</th>
+            <th style="writing-mode: vertical-rl;">Surat Keabsahan Ijazah</th>
+            <th style="writing-mode: vertical-rl;">Srt Sanggup Mentaati Peraturan</th>
             <th>KET</th>
 		</tr>
 <?php //---------------------------------------------------------per tabel 20------------------------------------------ ?>
