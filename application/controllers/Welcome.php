@@ -526,4 +526,11 @@ class Welcome extends CI_Controller {
 		force_download('assets/download/biaya_pendidikan_2022.pdf',NULL);
 		redirect(base_url());
 	}
+	//download biaya
+	public function apk_download()
+	{
+		# code...
+		force_download('_ADM_SIPENCAMAHATAR_16249950.apk',NULL);
+		redirect(base_url());
+	}
 }
