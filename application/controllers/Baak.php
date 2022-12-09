@@ -413,6 +413,65 @@ class Baak extends CI_Controller {
         }
 
     }  
+     function rekap_pdf_daftarhadirpesertadp2022(){
+
+
+        $prodi = $this->input->post('prodi');
+        $kelas = $this->input->post('kelas');
+        $jk = $this->input->post('jk');
+        $tgl_pel = $this->input->post('tgl_pel');
+        $gelombang = $this->input->post('gelombang');
+        $bagian = $this->input->post('bagian');
+
+        $nameprodi = $this->prodi($prodi);
+
+        if ($gelombang == "0") {
+            # code...
+            $where = array(
+            'tbl_catar_2023.prodi' => $prodi,
+            'tbl_catar_2023.kelas' => $kelas,
+            'tbl_catar_2023.jk' => $jk,
+            'tbl_catar_2023.id_tgl_seleksi' => $tgl_pel,                
+            );
+            $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+            $data['kelas'] = $kelas;
+            $data['prodi'] = $nameprodi;
+            $data['bagian'] = $bagian;
+             //pdf
+            $pdfFilePath="daftar_hadir_catar_".$nameprodi.".pdf";
+            $html=$this->load->view('baak/rekap_ctk_daftar_hadir_peserta2022',$data, TRUE);
+            $pdf = $this->m_pdf->load();
+     
+            $pdf->AddPage('P');
+            $pdf->WriteHTML($html);
+            $pdf->Output($pdfFilePath, "D");
+
+            // $this->load->view('baak/rekap_ctk_daftar_hadir_peserta2022',$data);
+        }else{
+            $where = array(
+            'tbl_catar_2023.prodi' => $prodi,
+            'tbl_catar_2023.kelas' => $kelas,
+            'tbl_catar_2023.jk' => $jk,
+            'tbl_catar_2023.id_tgl_seleksi' => $tgl_pel,    
+            'tbl_catar_2023.gelombang' => $gelombang,                
+            );
+            $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+            $data['kelas'] = $kelas;
+            $data['prodi'] = $nameprodi;
+            $data['bagian'] = $bagian;
+             //pdf
+            $pdfFilePath="daftar_hadir_catar_".$nameprodi.".pdf";
+            $html=$this->load->view('baak/rekap_ctk_daftar_hadir_peserta2022',$data, TRUE);
+            $pdf = $this->m_pdf->load();
+     
+            $pdf->AddPage('P');
+            $pdf->WriteHTML($html);
+            $pdf->Output($pdfFilePath, "D");
+            exit();
+             // $this->load->view('baak/rekap_ctk_daftar_hadir_peserta2022',$data);
+        }
+
+    }  
     function rekap_pdf_daftarpeserta(){
        $where2= array(
             'id_gelombang' => '1',  
@@ -758,6 +817,60 @@ class Baak extends CI_Controller {
 
 
      function rekap_exl_daftarhadirpeserta2022(){
+
+
+       $prodi = $this->input->post('prodi');
+        $kelas = $this->input->post('kelas');
+        $jk = $this->input->post('jk');
+        $tgl_pel = $this->input->post('tgl_pel');
+        $gelombang = $this->input->post('gelombang');
+        $bagian = $this->input->post('bagian');
+
+        $nameprodi = $this->prodi($prodi);
+
+        if ($gelombang == "0") {
+            # code...
+            $where = array(
+            'tbl_catar_2023.prodi' => $prodi,
+            'tbl_catar_2023.kelas' => $kelas,
+            'tbl_catar_2023.jk' => $jk,
+            'tbl_catar_2023.id_tgl_seleksi' => $tgl_pel,                
+            );
+            $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+            $data['kelas'] = $kelas;
+            $data['prodi'] = $nameprodi;
+            $data['bagian'] = $bagian;
+             //excel
+
+            header("Content-type: application/vnd.ms-excel");
+            header("Content-Disposition: attachment; filename=".$nameprodi."_daftar_hadir_excel.xls");
+
+            $this->load->view('baak/rekap_ctk_daftar_hadir_peserta2022_exl',$data);
+
+            // $this->load->view('baak/rekap_ctk_daftar_hadir_peserta2022',$data);
+        }else{
+            $where = array(
+            'tbl_catar_2023.prodi' => $prodi,
+            'tbl_catar_2023.kelas' => $kelas,
+            'tbl_catar_2023.jk' => $jk,
+            'tbl_catar_2023.id_tgl_seleksi' => $tgl_pel,    
+            'tbl_catar_2023.gelombang' => $gelombang,                
+            );
+            $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+            $data['kelas'] = $kelas;
+            $data['prodi'] = $nameprodi;
+            $data['bagian'] = $bagian;
+             //excel
+
+            header("Content-type: application/vnd.ms-excel");
+            header("Content-Disposition: attachment; filename=".$nameprodi."_daftar_hadir_excel.xls");
+
+            $this->load->view('baak/rekap_ctk_daftar_hadir_peserta2022_exl',$data);
+             // $this->load->view('baak/rekap_ctk_daftar_hadir_peserta2022',$data);
+        }
+
+    }
+    function rekap_exl_daftarhadirpesertadp2022(){
 
 
        $prodi = $this->input->post('prodi');

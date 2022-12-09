@@ -59,7 +59,7 @@ $value=array_chunk($catar, '20');
 <div class="page">
 <p style="margin: 0px;text-align: center;"><b>UNIVERSITAS MARITIM AMNI SEMARANG</b></p>
 <p style="margin: 0px;text-align: center;font-size: 9px;">JALAN SOEKARNO HATTA NOMOR 180 SEMARANG</p>
-<center><p style="margin: 0px;text-align: center;font-size: 9px;">DAFTAR CALON TARUNA - MAHASISWA T.A 2023/2024</p></center>
+<center><p style="margin: 0px;text-align: center;font-size: 9px;">DAFTAR CALON MAHATAR T.A 2023/2024</p></center>
 <center><p style="margin: 0px;text-align: center;font-size: 9px;">PRODI : <?php echo $prodi; ?></p></center>
 <center><p style="margin: 0px;text-align: center;font-size: 9px;">KELAS : <?php if ($kelas == "reg") {
 	# code... 

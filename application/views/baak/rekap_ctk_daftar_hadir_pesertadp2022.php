@@ -59,7 +59,7 @@ $value=array_chunk($catar, '20');
 <div class="page">
 <p style="margin: 0px;text-align: center;"><b>UNIVERSITAS MARITIM AMNI SEMARANG</b></p>
 <p style="margin: 0px;text-align: center;font-size: 9px;">JALAN SOEKARNO HATTA NOMOR 180 SEMARANG</p>
-<center><p style="margin: 0px;text-align: center;font-size: 9px;">DAFTAR CALON MAHATAR T.A 2023/2024</p></center>
+<center><p style="margin: 0px;text-align: center;font-size: 9px;">DAFTAR CALON TARUNA - MAHASISWA T.A 2023/2024</p></center>
 <center><p style="margin: 0px;text-align: center;font-size: 9px;">PRODI : <?php echo $prodi; ?></p></center>
 <center><p style="margin: 0px;text-align: center;font-size: 9px;">KELAS : <?php if ($kelas == "reg") {
     # code... 
@@ -71,11 +71,15 @@ $value=array_chunk($catar, '20');
 
 <table width="100%" border="1" style="border: 1px solid black;border-collapse: collapse;">
         <tr>
-            <th>No.</th>
-            <th>Nama</th>
-            <th>No. Catarma</th>
-            <th>L/P</th>
+            <th rowspan="2">No.</th>
+            <th rowspan="2">Nama</th>
+            <th rowspan="2">No. Catarma</th>
+            <th rowspan="2">L/P</th>
             <th>TTD</th>
+        </tr>
+        <tr>
+            <td>Datang</td>
+            <td>Pulang</td>
         </tr>
 <?php //---------------------------------------------------------per tabel 20------------------------------------------ ?>
 <?php
@@ -91,6 +95,7 @@ $urut="1";
         }else{
             echo "P";
         } ?></td>
+        <td width="150px"></td>
         <td width="150px"></td>
     </tr>
 <?php } ?>
