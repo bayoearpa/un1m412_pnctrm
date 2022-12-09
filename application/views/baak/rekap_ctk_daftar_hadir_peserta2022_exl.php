@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<style type="text/css">
- 		body {
+    <title></title>
+    <style type="text/css">
+        body {
     margin: 0;
     padding: 0;
     /*background-color: #FAFAFA;*/
@@ -47,7 +47,7 @@
     }
 }
 
- 	</style>
+    </style>
 </head>
 <?php 
 $value=array_chunk($catar, '20');
@@ -62,37 +62,37 @@ $value=array_chunk($catar, '20');
 <center><p style="margin: 0px;text-align: center;font-size: 9px;">DAFTAR CALON TARUNA - MAHASISWA T.A 2023/2024</p></center>
 <center><p style="margin: 0px;text-align: center;font-size: 9px;">PRODI : <?php echo $prodi; ?></p></center>
 <center><p style="margin: 0px;text-align: center;font-size: 9px;">KELAS : <?php if ($kelas == "reg") {
-	# code... 
-	echo "REGULER";
+    # code... 
+    echo "REGULER";
 }else{ echo "FAST TRACK";} ?></p></center>
 <p style="margin: 0px;text-align: center;"><b><?php echo "ABSENSI ".$bagian; ?></b></p>
 
 
 
 <table width="100%" border="1" style="border: 1px solid black;border-collapse: collapse;">
-		<tr>
-			<th>No.</th>
-			<th>Nama</th>
-			<th>No. Catarma</th>
-			<th>L/P</th>
-			<th>TTD</th>
-		</tr>
+        <tr>
+            <th>No.</th>
+            <th>Nama</th>
+            <th>No. Catarma</th>
+            <th>L/P</th>
+            <th>TTD</th>
+        </tr>
 <?php //---------------------------------------------------------per tabel 20------------------------------------------ ?>
 <?php
 $urut="1";
  foreach ($val as $v){ ?>
-	<tr>
-		<td height="40px" width="15px"><?php echo $urut++; ?></td>
-		<td><?php $text1= strtolower($v->nama);echo ucwords($text1); ?></td>
-		<td align="center" width="30px"><?php echo $v->no; ?></td>
-		<td width="15px" align="center"><?php if ($v->jk == "Pria") {
-			# code...
-			echo "L";
-		}else{
-			echo "P";
-		} ?></td>
-		<td width="150px"></td>
-	</tr>
+    <tr>
+        <td height="40px" width="15px"><?php echo $urut++; ?></td>
+        <td><?php $text1= strtolower($v->nama);echo ucwords($text1); ?></td>
+        <td align="center" width="30px"><?php echo $v->no; ?></td>
+        <td width="15px" align="center"><?php if ($v->jk == "Pria") {
+            # code...
+            echo "L";
+        }else{
+            echo "P";
+        } ?></td>
+        <td width="150px"></td>
+    </tr>
 <?php } ?>
 <?php //---------------------------------------------------------akhir per tabel 10------------------------------------------ ?>
 </table>
