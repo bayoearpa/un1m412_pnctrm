@@ -29,6 +29,16 @@
     /*height: 256mm;*/
     /*outline: 2cm #FFEAEA solid;*/
 }
+.text1 {
+      writing-mode:tb-rl;
+    -webkit-transform:rotate(-90deg);
+    -moz-transform:rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    transform: rotate(180deg);
+    white-space:nowrap;
+    float:left;
+    }
 
 @page {
     size: F4;
@@ -75,15 +85,15 @@ $value=array_chunk($catar, '20');
 			<th>Nama</th>
 			<th>No. Catarma</th>
 			<th>L/P</th>
-			<th style="writing-mode: vertical-rl;">Leg. Ijasah</th>
-            <th style="writing-mode: vertical-rl;">Fc. KTP</th>
-            <th style="writing-mode: vertical-rl;">Fc. Akte Kelahiran</th>
-            <th style="writing-mode: vertical-rl;">SKCK Asli</th>
-            <th style="writing-mode: vertical-rl;">Surat Izin Ortu</th>
-            <th style="writing-mode: vertical-rl;">Surat Ket. Blm Menikah</th>
-            <th style="writing-mode: vertical-rl;">Riwayat Kesehatan</th>
-            <th style="writing-mode: vertical-rl;">Surat Keabsahan Ijazah</th>
-            <th style="writing-mode: vertical-rl;">Srt Sanggup Mentaati Peraturan</th>
+			<th class="text1">Leg. Ijasah</th>
+            <th class="text1">Fc. KTP</th>
+            <th class="text1">Fc. Akte Kelahiran</th>
+            <th class="text1">SKCK Asli</th>
+            <th class="text1">Surat Izin Ortu</th>
+            <th class="text1">Surat Ket. Blm Menikah</th>
+            <th class="text1">Riwayat Kesehatan</th>
+            <th class="text1">Surat Keabsahan Ijazah</th>
+            <th class="text1">Srt Sanggup Mentaati Peraturan</th>
             <th>KET</th>
 		</tr>
 <?php //---------------------------------------------------------per tabel 20------------------------------------------ ?>
