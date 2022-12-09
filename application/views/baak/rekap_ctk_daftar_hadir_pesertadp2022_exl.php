@@ -75,11 +75,11 @@ $value=array_chunk($catar, '20');
             <th rowspan="2">Nama</th>
             <th rowspan="2">No. Catarma</th>
             <th rowspan="2">L/P</th>
-            <th>TTD</th>
+             <th colspan="2">TTD</th>
         </tr>
         <tr>
-            <td>Datang</td>
-            <td>Pulang</td>
+            <td><b>Datang</b></td>
+            <td><b>Pulang</b></td>
         </tr>
 <?php //---------------------------------------------------------per tabel 20------------------------------------------ ?>
 <?php
