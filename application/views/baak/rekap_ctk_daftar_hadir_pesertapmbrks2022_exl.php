@@ -85,15 +85,15 @@ $value=array_chunk($catar, '20');
 			<th>Nama</th>
 			<th>No. Catarma</th>
 			<th>L/P</th>
-            <th class="text1">Leg. Ijasah</th>
-            <th class="text1">Fc. KTP</th>
-            <th class="text1">Fc. Akte Kelahiran</th>
-            <th class="text1">SKCK Asli</th>
-            <th class="text1">Surat Izin Ortu</th>
-            <th class="text1">Surat Ket. Blm Menikah</th>
-            <th class="text1">Riwayat Kesehatan</th>
-            <th class="text1">Surat Keabsahan Ijazah</th>
-            <th class="text1">Srt Sanggup Mentaati Peraturan</th>
+            <th style="text-rotate: 90" width="10px">Leg. Ijasah</th>
+            <th style="text-rotate: 90" width="10px">Fc. KTP</th>
+            <th style="text-rotate: 90" width="10px">Fc. Akte Kelahiran</th>
+            <th style="text-rotate: 90" width="10px">SKCK Asli</th>
+            <th style="text-rotate: 90" width="10px">Surat Izin Ortu</th>
+            <th style="text-rotate: 90" width="10px">Surat Ket. Blm Menikah</th>
+            <th style="text-rotate: 90" width="10px">Riwayat Kesehatan</th>
+            <th style="text-rotate: 90" width="10px">Surat Keabsahan Ijazah</th>
+            <th style="text-rotate: 90" width="10px">Srt Sanggup Mentaati Peraturan</th>
             <th>KET</th>
 		</tr>
 <?php //---------------------------------------------------------per tabel 20------------------------------------------ ?>
@@ -101,7 +101,7 @@ $value=array_chunk($catar, '20');
 $urut="1";
  foreach ($val as $v){ ?>
 	<tr>
-		<td height="40px" width="15px"><?php echo $urut++; ?></td>
+		<td height="20px" width="15px"><?php echo $urut++; ?></td>
 		<td><?php $text1= strtolower($v->nama);echo ucwords($text1); ?></td>
 		<td align="center" width="30px"><?php echo $v->no; ?></td>
 		<td width="15px" align="center"><?php if ($v->jk == "Pria") {
