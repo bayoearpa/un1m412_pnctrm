@@ -30,9 +30,6 @@
     /*outline: 2cm #FFEAEA solid;*/
 }
 
-th {
-position:absolute;rotate:90;
-    }
 
 @page {
     size: F4;
@@ -79,7 +76,7 @@ $value=array_chunk($catar, '20');
 			<th>Nama</th>
 			<th>No. Catarma</th>
 			<th>L/P</th>
-			<th class="text1">Leg. Ijasah</th>
+			<th style="position:absolute;rotate:90;">Leg. Ijasah</th>
             <th class="text1">Fc. KTP</th>
             <th class="text1">Fc. Akte Kelahiran</th>
             <th class="text1">SKCK Asli</th>
