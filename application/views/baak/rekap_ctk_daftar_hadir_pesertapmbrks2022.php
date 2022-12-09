@@ -29,15 +29,9 @@
     /*height: 256mm;*/
     /*outline: 2cm #FFEAEA solid;*/
 }
+
 th {
-      writing-mode: vertical-rl;
-    -webkit-transform:rotate(-90deg);
-    -moz-transform:rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    -ms-transform:rotate(-90deg);
-    transform: rotate(180deg);
-    white-space:nowrap;
-    float:left;
+position:absolute;rotate:90;
     }
 
 @page {
