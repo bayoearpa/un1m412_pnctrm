@@ -267,15 +267,15 @@ class Baak extends CI_Controller {
     function rekap_daftarhadirdp2022(){
         $data['get_tgl_pel'] = $this->m_registrasi->get_data_tgl_seleksi()->result();
         $this->load->view('baak/header');
-        $this->load->view('baak/rekap_daftar_hadir_peserta2022',$data);
-        $this->load->view('baak/rekap_daftar_hadir_peserta2022_exl');
+        $this->load->view('baak/rekap_daftar_hadir_pesertadp2022',$data);
+        $this->load->view('baak/rekap_daftar_hadir_pesertadp2022_exl');
         $this->load->view('baak/footer');
     }
      function rekap_daftarhadir2022(){
         $data['get_tgl_pel'] = $this->m_registrasi->get_data_tgl_seleksi()->result();
         $this->load->view('baak/header');
-        $this->load->view('baak/rekap_daftar_hadir_pesertadp2022',$data);
-        $this->load->view('baak/rekap_daftar_hadir_pesertadp2022_exl');
+        $this->load->view('baak/rekap_daftar_hadir_peserta2022',$data);
+        $this->load->view('baak/rekap_daftar_hadir_peserta2022_exl');
         $this->load->view('baak/footer');
     }
     function rekap_pdf_daftarhadirpeserta(){
@@ -904,7 +904,7 @@ class Baak extends CI_Controller {
              //excel
 
             header("Content-type: application/vnd.ms-excel");
-            header("Content-Disposition: attachment; filename=".$nameprodi."_daftar_hadir_excel.xls");
+            header("Content-Disposition: attachment; filename=".$nameprodi."_daftar_hadir_datang_pulang_excel.xls");
 
             $this->load->view('baak/rekap_ctk_daftar_hadir_pesertadp2022_exl',$data);
 
@@ -924,7 +924,7 @@ class Baak extends CI_Controller {
              //excel
 
             header("Content-type: application/vnd.ms-excel");
-            header("Content-Disposition: attachment; filename=".$nameprodi."_daftar_hadir_excel.xls");
+            header("Content-Disposition: attachment; filename=".$nameprodi."_daftar_hadir_datang_pulang_excel.xls");
 
             $this->load->view('baak/rekap_ctk_daftar_hadir_pesertadp2022_exl',$data);
              // $this->load->view('baak/rekap_ctk_daftar_hadir_peserta2022',$data);
