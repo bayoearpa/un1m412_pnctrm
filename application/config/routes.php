@@ -69,6 +69,7 @@ $route['cetakRegistrasi'] = 'welcome/insertReg';
 $route['cetakRegistrasi2'] = 'welcome/insertReg2';
 $route['cekstatus'] = 'welcome/cekstatus';
 $route['biaya_download'] = 'welcome/biaya_download';
+$route['apk_download'] = 'welcome/apk_download';
 // $route['cekstatusp'] = 'welcome/cekstatusp';
 $route['cekstatusp/(:num)'] = 'welcome/cekstatusp/$1';
 $route['download/(:num)'] = 'welcome/download/$1';
