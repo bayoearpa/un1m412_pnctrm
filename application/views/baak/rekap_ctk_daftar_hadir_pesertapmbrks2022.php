@@ -76,7 +76,7 @@ $value=array_chunk($catar, '20');
 			<th>Nama</th>
 			<th>No. Catarma</th>
 			<th>L/P</th>
-			<th style="position:absolute;rotate:90;">Leg. Ijasah</th>
+			<th style="transform: rotate(90deg);">Leg. Ijasah</th>
             <th class="text1">Fc. KTP</th>
             <th class="text1">Fc. Akte Kelahiran</th>
             <th class="text1">SKCK Asli</th>
