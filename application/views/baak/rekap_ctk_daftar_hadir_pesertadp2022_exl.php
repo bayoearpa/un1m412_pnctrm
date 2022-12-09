@@ -78,8 +78,8 @@ $value=array_chunk($catar, '20');
              <th colspan="2">TTD</th>
         </tr>
         <tr>
-            <td><b>Datang</b></td>
-            <td><b>Pulang</b></td>
+            <td><b><center>Datang</center></b></td>
+            <td><b><center>Pulang</center></b></td>
         </tr>
 <?php //---------------------------------------------------------per tabel 20------------------------------------------ ?>
 <?php

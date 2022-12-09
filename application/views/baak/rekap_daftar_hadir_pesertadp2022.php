@@ -45,6 +45,8 @@
                   <label>Kegiatan</label>*wajib pilih
                   <select class="form-control" name="bagian" id="bagian" required="harus dipilih">
                     <option selected>== Pilih ==</option>
+                    <option value="DAFTAR HADIR">DAFTAR HADIR</option>
+                    <option value="PEMBERKASAN">PEMBERKASAN</option>
                     <option value="TPA">TPA</option>
                     <option value="KESEHATAN">KESEHATAN</option>
                     <option value="WAWANCARA">WAWANCARA</option>
