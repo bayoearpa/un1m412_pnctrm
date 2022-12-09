@@ -4,7 +4,7 @@
         <div class="col-xs-12">
           <div class="box box-primary">
                 <div class="box-header with-border">
-                  <h3 class="box-title">Rekap Daftar Hadir Peserta Datang Pulang Pdf </h3>
+                  <h3 class="box-title">Rekap Daftar Hadir Peserta Pemberkasan Pdf </h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
                 
