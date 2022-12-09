@@ -997,7 +997,7 @@ class Baak extends CI_Controller {
         }
 
     }  
-    function rekap_exl_daftarhadirpesertadp2022(){
+    function rekap_exl_daftarhadirpesertapmbrks2022(){
 
 
        $prodi = $this->input->post('prodi');
