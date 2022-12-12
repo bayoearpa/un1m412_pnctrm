@@ -130,7 +130,7 @@ class m_registrasi extends CI_Model
 		tbl_catar_2023.prodi,
 		tbl_catar_2023.kelas,
 		tbl_catar_2023.gelombang,
-		tbl_catar_2023.id_tgl_pel,
+		tbl_catar_2023.id_tgl_seleksi,
 		tbl_catar_validasi_2023.val_id,
 		tbl_catar_validasi_2023.no,
 		tbl_catar_validasi_2023.gelombang,
