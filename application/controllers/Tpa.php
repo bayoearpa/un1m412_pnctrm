@@ -214,8 +214,8 @@ class Tpa extends CI_Controller {
         	$data['get_tgl_pel'] = $this->m_registrasi->get_data_tgl_seleksi()->result();
         	$data['catar'] = $this->m_registrasi->get_data_test_tpa($where)->result();
 			$this->load->view('tpa/header');
-			$this->load->view('tpa/data_masuk');
-			$this->load->view('tpa/rekap_cetak');
+			$this->load->view('tpa/data_masuk',$data);
+			$this->load->view('tpa/rekap_cetak',$data);
 			$this->load->view('tpa/data_masukp',$data);
 			$this->load->view('tpa/footer');
 		}else{
@@ -228,8 +228,8 @@ class Tpa extends CI_Controller {
         	$data['get_tgl_pel'] = $this->m_registrasi->get_data_tgl_seleksi()->result();
         	$data['catar'] = $this->m_registrasi->get_data_test_tpa($where)->result();
 			$this->load->view('tpa/header');
-			$this->load->view('tpa/data_masuk');
-			$this->load->view('tpa/rekap_cetak');
+			$this->load->view('tpa/data_masuk',$data);
+			$this->load->view('tpa/rekap_cetak',$data);
 			$this->load->view('tpa/data_masukp',$data);
 			$this->load->view('tpa/footer');
 		}
