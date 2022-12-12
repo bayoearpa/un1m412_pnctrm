@@ -12,6 +12,8 @@ class Tpa extends CI_Controller {
 		}
 		$this->load->model('m_registrasi');
         $this->load->helper('url');
+        $this->load->helper('tgl_indo');
+        $this->load->library('m_pdf');
 	}
 	 function prodi($id){
         switch ($id) {
