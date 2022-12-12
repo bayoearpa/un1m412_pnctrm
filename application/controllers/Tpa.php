@@ -204,7 +204,7 @@ class Tpa extends CI_Controller {
 		$gelombang = $this->input->post('gelombang');
 
 
-		if ($gelombang == null) {
+		if ($gelombang == "0") {
 			# code...
 			$where = array(
             'tbl_catar_2023.prodi' => $prodi,
