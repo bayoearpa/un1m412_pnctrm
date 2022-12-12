@@ -192,7 +192,7 @@ class Tpa extends CI_Controller {
 		$data['get_tgl_pel'] = $this->m_registrasi->get_data_tgl_seleksi()->result();
 		$this->load->view('tpa/header');
 		$this->load->view('tpa/data_masuk',$data);
-		$this->load->view('tpa/data_masuk_cetak');
+		$this->load->view('tpa/rekap_cetak');
 		$this->load->view('tpa/footer');
 	}
 	public function data_masukp()
