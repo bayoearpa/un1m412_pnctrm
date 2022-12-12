@@ -114,10 +114,10 @@
               </ol> 
 
               <br>
-              <center><h4 class="text-uppercase"> BIAYA PENDIDIKAN MAHASISWA / TARUNA T.A 2023 - 2024 DAN TUTORIAL</h4></center>
+              <center><h4 class="text-uppercase"> BIAYA PENDIDIKAN MAHASISWA / TARUNA T.A 2022 - 2023 DAN TUTORIAL</h4></center>
 
              <div class="col-lg-16 mr-auto">
-            <p class="lead">Berikut lampiran biaya pendidikan Mahasiswa / Taruna UNIMAR AMNI Semarang tahun ajaran 2023 - 2024 yang dapat di download di bawah ini.</p>
+            <p class="lead">Berikut lampiran biaya pendidikan Mahasiswa / Taruna UNIMAR AMNI Semarang tahun ajaran 2022 - 2023 yang dapat di download di bawah ini.</p>
                <div class="col-lg-16 mr-auto text-center">
                 <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="https://drive.google.com/file/d/1dJkHIYW0-9l7RGlXa9YPRCjKY-R9R65a/view?usp=sharing" target="_blank">
                 <i class="fa fa-money mr-2"></i>
