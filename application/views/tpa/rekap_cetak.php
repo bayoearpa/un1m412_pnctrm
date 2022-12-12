@@ -4,7 +4,7 @@
         <div class="col-xs-12">
           <div class="box box-primary">
                 <div class="box-header with-border">
-                  <h3 class="box-title">Rekap Data Test TPA </h3>
+                  <h3 class="box-title">Rekap Data Test TPA Cetak </h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
                 
