@@ -37,7 +37,7 @@
                   <div class="form-group">
                   <label>Pilih kelas</label>*wajib pilih
                   <select class="form-control" name="kelas" id="kelas" required="harus dipilih">
-                    <option> </option>
+                    <option selected="">== Pilih == </option>
                     <option value="reg">Reguler</option>
                     <option value="fastt">Fast Track</option>
                   </select>
@@ -58,7 +58,7 @@
                   <div class="form-group">
                   <label>Periode</label>
                   <select class="form-control" name="gelombang" id="gelombang">
-                    <option> </option>
+                    <option value="0" selected> </option>
                     <option value="1">Januari</option>
                     <option value="2">Februari</option>
                     <option value="3">Maret</option>
