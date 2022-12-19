@@ -122,6 +122,10 @@
                   <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukan Nama Anda">
                 </div>
                 <div class="form-group">
+                  <label for="exampleInputEmail1">NIK (Nomor Induk Kependudukan)</label>
+                  <input type="text" class="form-control" id="nik" name="nik" placeholder="Masukan NIK Anda">
+                </div>
+                <div class="form-group">
                   <label for="exampleInputEmail1">Tempat Lahir</label>
                   <input type="text" class="form-control" id="tl" name="tl" placeholder="Masukan Tempat Lahir Anda">
                 </div>
