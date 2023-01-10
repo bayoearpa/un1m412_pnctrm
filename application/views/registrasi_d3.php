@@ -122,6 +122,10 @@
                   <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukan Nama Anda">
                 </div>
                 <div class="form-group">
+                  <label for="exampleInputEmail1">NIK (Nomor Induk Kependudukan)</label>
+                  <input type="text" class="form-control" id="nik" name="nik" placeholder="Masukan NIK Anda">
+                </div>
+                <div class="form-group">
                   <label for="exampleInputEmail1">Tempat Lahir</label>
                   <input type="text" class="form-control" id="tl" name="tl" placeholder="Masukan Tempat Lahir Anda">
                 </div>
@@ -292,6 +296,7 @@
                   <label>Periode</label>
                   <select class="form-control" name="gelombang" id="gelombang">
                     <option> </option>
+                    <option value="1">Gelombang 1</option>
                    <!--  <option value="1">Januari</option> -->
                     <!-- <option value="2">Februari</option> -->
                     <!-- <option value="3">Maret</option> -->
@@ -301,7 +306,7 @@
                     <!-- <option value="7">Juli</option> -->
                     <!-- <option value="8">Agustus</option> -->
                      <!-- <option value="9">September</option> -->
-                    <option value="10">Oktober</option>
+                    <!-- <option value="10">Oktober</option> -->
                   </select>
                 </div>
                 <div class="form-group">
@@ -312,12 +317,12 @@
                       Reguler
                     </label>
                   </div>
-                  <div class="radio">
+                  <!-- <div class="radio">
                     <label>
                       <input type="radio" name="kelas" id="optionsRadios2" value="pmdk">
                       PMDK
                     </label>
-                  </div>
+                  </div> -->
                 </div>
                <!--  <div class="form-group">
                   <label>Kelas</label><br>
