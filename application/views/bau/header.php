@@ -243,11 +243,12 @@
               );
               $gelombang=$this->m_registrasi->get_data_gelombang($where2);
             $where = array(
-            'gelombang' => $gelombang,
-            'aktif' => '1'      
+            'tbl_catar_2023.gelombang' => $gelombang,
+            'tbl_catar_2023.kelas' => 'reg',
+            'tbl_catar_validasi_2023.aktif' => '1'    
             );
              ?>
-              <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data($where,'tbl_catar_validasi_2023')->num_rows(); ?></span>
+              <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where($where)->num_rows(); ?></span>
             </div>
              <div class="box-body" style="">
               Sudah Validasi (fast Track)
