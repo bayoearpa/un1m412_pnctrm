@@ -49,6 +49,8 @@ class Administrasi extends CI_Controller {
 						redirect(base_url().'wawancara/index');
 					}elseif ($d->level=='7'){
 						redirect(base_url().'tpa/index');
+					}elseif ($d->level=='8'){
+						redirect(base_url().'kepri/index');
 					}
 
 			}else{
