@@ -245,6 +245,7 @@
             $where = array(
             'tbl_catar_2023.gelombang' => $gelombang,
             'tbl_catar_2023.kelas' => 'reg',
+            'tbl_catar_2023.provinsi' => '310000',
             'tbl_catar_validasi_2023.aktif' => '1'    
             );
              ?>
@@ -259,6 +260,7 @@
               $gelombang=$this->m_registrasi->get_data_gelombang($where2);
             $where = array(
             'tbl_catar_2023.kelas' => 'fastt',
+            'tbl_catar_2023.provinsi' => '310000',
             'tbl_catar_validasi_2023.aktif' => '1'      
             );
              ?>
@@ -288,6 +290,7 @@
             $where = array(
             'tbl_catar_2023.prodi' => '1',
             'tbl_catar_2023.gelombang' => $gelombang,
+            'tbl_catar_2023.provinsi' => '310000',
             'tbl_catar_validasi_2023.aktif' => '1',
             'tbl_catar_2023.kelas' => 'reg'      
             ); ?>
@@ -304,6 +307,7 @@
             'tbl_catar_2023.prodi' => '1',
             // 'tbl_catar_2023.gelombang' => $gelombang,
             'tbl_catar_validasi_2023.aktif' => '1',
+            'tbl_catar_2023.provinsi' => '310000',
             'tbl_catar_2023.kelas' => 'fastt'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where_ft)->num_rows(); ?></span>
@@ -332,6 +336,7 @@
             $where = array(
             'tbl_catar_2023.prodi' => '2',
             'tbl_catar_2023.gelombang' => $gelombang,
+            'tbl_catar_2023.provinsi' => '310000',
             'tbl_catar_validasi_2023.aktif' => '1',
             'tbl_catar_2023.kelas' => 'reg'      
             ); ?>
@@ -376,6 +381,7 @@
             $where = array(
             'tbl_catar_2023.prodi' => '3',
             'tbl_catar_2023.gelombang' => $gelombang,
+            'tbl_catar_2023.provinsi' => '310000',
             'tbl_catar_validasi_2023.aktif' => '1',
             'tbl_catar_2023.kelas' => 'reg'      
             ); ?>
@@ -391,6 +397,7 @@
             $where_ft = array(
             'tbl_catar_2023.prodi' => '3',
             // 'tbl_catar_2023.gelombang' => $gelombang,
+            'tbl_catar_2023.provinsi' => '310000',
             'tbl_catar_validasi_2023.aktif' => '1',
             'tbl_catar_2023.kelas' => 'fastt'      
             ); ?>
@@ -420,6 +427,7 @@
             $where = array(
             'tbl_catar_2023.prodi' => '4',
             'tbl_catar_2023.gelombang' => $gelombang,
+            'tbl_catar_2023.provinsi' => '310000',
             'tbl_catar_validasi_2023.aktif' => '1',
             'tbl_catar_2023.kelas' => 'reg'      
             ); ?>
@@ -431,6 +439,7 @@
             $where = array(
             'tbl_catar_2023.prodi' => '4',
             'tbl_catar_2023.gelombang' => $gelombang,
+            'tbl_catar_2023.provinsi' => '310000',
             'tbl_catar_validasi_2023.aktif' => '1',
             'tbl_catar_2023.kelas' => 'eks'      
             ); ?>
@@ -442,6 +451,7 @@
             $where_ft = array(
             'tbl_catar_2023.prodi' => '4',
             // 'tbl_catar_2023.gelombang' => $gelombang,
+            'tbl_catar_2023.provinsi' => '310000',
             'tbl_catar_validasi_2023.aktif' => '1',
             'tbl_catar_2023.kelas' => 'fastt'      
             ); ?>
@@ -471,6 +481,7 @@
             $where = array(
             'tbl_catar_2023.prodi' => '5',
             'tbl_catar_2023.gelombang' => $gelombang,
+            'tbl_catar_2023.provinsi' => '310000',
             'tbl_catar_validasi_2023.aktif' => '1',
             'tbl_catar_2023.kelas' => 'reg'      
             ); ?>
@@ -482,6 +493,7 @@
             $where = array(
             'tbl_catar_2023.prodi' => '5',
             'tbl_catar_2023.gelombang' => $gelombang,
+            'tbl_catar_2023.provinsi' => '310000',
             'tbl_catar_validasi_2023.aktif' => '1',
             'tbl_catar_2023.kelas' => 'eks'      
             ); ?>
@@ -493,6 +505,7 @@
             $where_ft = array(
             'tbl_catar_2023.prodi' => '5',
             // 'tbl_catar_2023.gelombang' => $gelombang,
+            'tbl_catar_2023.provinsi' => '310000',
             'tbl_catar_validasi_2023.aktif' => '1',
             'tbl_catar_2023.kelas' => 'fastt'      
             ); ?>
@@ -522,6 +535,7 @@
             $where = array(
             'tbl_catar_2023.prodi' => '6',
             'tbl_catar_2023.gelombang' => $gelombang,
+            'tbl_catar_2023.provinsi' => '310000',
             'tbl_catar_validasi_2023.aktif' => '1',
             'tbl_catar_2023.kelas' => 'reg'      
             ); ?>
@@ -533,6 +547,7 @@
             $where = array(
             'tbl_catar_2023.prodi' => '6',
             'tbl_catar_2023.gelombang' => $gelombang,
+            'tbl_catar_2023.provinsi' => '310000',
             'tbl_catar_validasi_2023.aktif' => '1',
             'tbl_catar_2023.kelas' => 'eks'      
             ); ?>
@@ -544,6 +559,7 @@
             $where_ft = array(
             'tbl_catar_2023.prodi' => '6',
             // 'tbl_catar_2023.gelombang' => $gelombang,
+            'tbl_catar_2023.provinsi' => '310000',
             'tbl_catar_validasi_2023.aktif' => '1',
             'tbl_catar_2023.kelas' => 'fastt'      
             ); ?>
@@ -573,6 +589,7 @@
             $where = array(
             'tbl_catar_2023.prodi' => '7',
             'tbl_catar_2023.gelombang' => $gelombang,
+            'tbl_catar_2023.provinsi' => '310000',
             'tbl_catar_validasi_2023.aktif' => '1',
             'tbl_catar_2023.kelas' => 'reg'      
             ); ?>
@@ -584,6 +601,7 @@
             $where = array(
             'tbl_catar_2023.prodi' => '7',
             'tbl_catar_2023.gelombang' => $gelombang,
+            'tbl_catar_2023.provinsi' => '310000',
             'tbl_catar_validasi_2023.aktif' => '1',
             'tbl_catar_2023.kelas' => 'eks'      
             ); ?>
@@ -595,6 +613,7 @@
             $where_ft = array(
             'tbl_catar_2023.prodi' => '7',
             // 'tbl_catar_2023.gelombang' => $gelombang,
+            'tbl_catar_2023.provinsi' => '310000',
             'tbl_catar_validasi_2023.aktif' => '1',
             'tbl_catar_2023.kelas' => 'fastt'      
             ); ?>
@@ -624,6 +643,7 @@
             $where = array(
             'tbl_catar_2023.prodi' => '8',
             'tbl_catar_2023.gelombang' => $gelombang,
+            'tbl_catar_2023.provinsi' => '310000',
             'tbl_catar_validasi_2023.aktif' => '1',
             'tbl_catar_2023.kelas' => 'reg'      
             ); ?>
@@ -635,6 +655,7 @@
             $where = array(
             'tbl_catar_2023.prodi' => '8',
             'tbl_catar_2023.gelombang' => $gelombang,
+            'tbl_catar_2023.provinsi' => '310000',
             'tbl_catar_validasi_2023.aktif' => '1',
             'tbl_catar_2023.kelas' => 'eks'      
             ); ?>
@@ -646,6 +667,7 @@
             $where_ft = array(
             'tbl_catar_2023.prodi' => '8',
             // 'tbl_catar_2023.gelombang' => $gelombang,
+            'tbl_catar_2023.provinsi' => '310000',
             'tbl_catar_validasi_2023.aktif' => '1',
             'tbl_catar_2023.kelas' => 'fastt'      
             ); ?>
