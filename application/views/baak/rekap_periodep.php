@@ -19,8 +19,8 @@
                         <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
 
                         <div class="info-box-content">
-                          <span class="info-box-text">Total Pendaftar</span>
-                          <span class="info-box-number"><?php echo $totcatar; ?></span>
+                          <span class="info-box-text">Semua Prodi</span>
+                          <span class="info-box-number"><?php echo $tot_catar; ?></span>
                         </div>
                         <!-- /.info-box-content -->
                       </div>
@@ -32,8 +32,8 @@
                         <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
 
                         <div class="info-box-content">
-                          <span class="info-box-text">Total Pendaftar</span>
-                          <span class="info-box-number"><?php echo $totcatar1; ?></span>
+                          <span class="info-box-text">KPN</span>
+                          <span class="info-box-number"><?php echo $tot_catar1; ?></span>
                         </div>
                         <!-- /.info-box-content -->
                       </div>
@@ -45,8 +45,8 @@
                         <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
 
                         <div class="info-box-content">
-                          <span class="info-box-text">Total Pendaftar</span>
-                          <span class="info-box-number"><?php echo $totcatar2; ?></span>
+                          <span class="info-box-text">Teknika</span>
+                          <span class="info-box-number"><?php echo $tot_catar2; ?></span>
                         </div>
                         <!-- /.info-box-content -->
                       </div>
@@ -58,8 +58,8 @@
                         <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
 
                         <div class="info-box-content">
-                          <span class="info-box-text">Total Pendaftar</span>
-                          <span class="info-box-number"><?php echo $totcatar3; ?></span>
+                          <span class="info-box-text">Nautika</span>
+                          <span class="info-box-number"><?php echo $tot_catar3; ?></span>
                         </div>
                         <!-- /.info-box-content -->
                       </div>
@@ -71,8 +71,8 @@
                         <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
 
                         <div class="info-box-content">
-                          <span class="info-box-text">Total Pendaftar</span>
-                          <span class="info-box-number"><?php echo $totcatar4; ?></span>
+                          <span class="info-box-text">Transportasi</span>
+                          <span class="info-box-number"><?php echo $tot_catar4; ?></span>
                         </div>
                         <!-- /.info-box-content -->
                       </div>
@@ -84,8 +84,8 @@
                         <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
 
                         <div class="info-box-content">
-                          <span class="info-box-text">Total Pendaftar</span>
-                          <span class="info-box-number"><?php echo $totcatar5; ?></span>
+                          <span class="info-box-text">TTL</span>
+                          <span class="info-box-number"><?php echo $tot_catar5; ?></span>
                         </div>
                         <!-- /.info-box-content -->
                       </div>
@@ -97,8 +97,8 @@
                         <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
 
                         <div class="info-box-content">
-                          <span class="info-box-text">Total Pendaftar</span>
-                          <span class="info-box-number"><?php echo $totcatar6; ?></span>
+                          <span class="info-box-text">T. Mesin</span>
+                          <span class="info-box-number"><?php echo $tot_catar6; ?></span>
                         </div>
                         <!-- /.info-box-content -->
                       </div>
@@ -110,8 +110,8 @@
                         <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
 
                         <div class="info-box-content">
-                          <span class="info-box-text">Total Pendaftar</span>
-                          <span class="info-box-number"><?php echo $totcatar7; ?></span>
+                          <span class="info-box-text">T. Keselamatan</span>
+                          <span class="info-box-number"><?php echo $tot_catar7; ?></span>
                         </div>
                         <!-- /.info-box-content -->
                       </div>
@@ -123,8 +123,8 @@
                         <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
 
                         <div class="info-box-content">
-                          <span class="info-box-text">Total Pendaftar</span>
-                          <span class="info-box-number"><?php echo $totcatar8; ?></span>
+                          <span class="info-box-text">P. Internasional</span>
+                          <span class="info-box-number"><?php echo $tot_catar8; ?></span>
                         </div>
                         <!-- /.info-box-content -->
                       </div>
@@ -138,7 +138,7 @@
 
                     <div class="info-box-content">
                       <span class="info-box-text">Total Pendaftar</span>
-                      <span class="info-box-number"><?php echo $totcatar; ?></span>
+                      <span class="info-box-number"><?php echo $tot_catar; ?></span>
                     </div>
                     <!-- /.info-box-content -->
                   </div>
