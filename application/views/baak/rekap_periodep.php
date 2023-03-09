@@ -11,8 +11,8 @@
             <div class="box-body">
               <!-- info catar -->
               <?php 
-                if ($cek == "1") {
-                  # code... ?>
+              if ($cek == "1") { ?>
+
                   <!-- semua -->
                    <div class="col-md-3 col-sm-6 col-xs-12">
                       <div class="info-box">
@@ -131,8 +131,7 @@
                     <!-- /.info-box -->
                   </div>
 
-                <?php}else{
-               ?>
+                <?php }else{  ?>
               <div class="col-md-3 col-sm-6 col-xs-12">
                   <div class="info-box">
                     <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
