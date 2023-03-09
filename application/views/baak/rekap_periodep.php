@@ -146,6 +146,8 @@
                     <!-- /.info-box -->
               </div>
 
+            <?php } ?>
+
 
               <!-- ./info catar -->
 
