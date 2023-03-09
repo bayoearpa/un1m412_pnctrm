@@ -285,6 +285,97 @@ class Baak extends CI_Controller {
         $this->load->view('baak/rekap_daftar_hadir_peserta2022_exl');
         $this->load->view('baak/footer');
     }
+    ////////////////////////// per periode saga //////////////////////////////////
+    function rekap_periode(){
+        // $data['Baak'] = $this;
+        $this->load->view('baak/header');
+        $this->load->view('baak/rekap_periode');
+        $this->load->view('baak/footer');
+    }
+    function rekap_periodep(){
+        $data['Baak'] = $this;
+        $prodi = $this->input->post('prodi');
+        $periode = $this->input->post('periode');
+
+         if ($prodi == "99") {
+             # code...
+
+        $where= array(
+            'tbl_catar_2021.periode' => $periode,  
+        );
+        $where1= array(
+            'tbl_catar_2021.prodi' => "1",
+            'tbl_catar_2021.periode' => $periode,  
+        );
+        $where2= array(
+            'tbl_catar_2021.prodi' => "2",
+            'tbl_catar_2021.periode' => $periode,  
+        );
+        $where3= array(
+            'tbl_catar_2021.prodi' => "3",
+            'tbl_catar_2021.periode' => $periode,  
+        );
+        $where4= array(
+            'tbl_catar_2021.prodi' => "4",
+            'tbl_catar_2021.periode' => $periode,  
+        );
+        $where5= array(
+            'tbl_catar_2021.prodi' => "5",
+            'tbl_catar_2021.periode' => $periode,  
+        );
+        $where6= array(
+            'tbl_catar_2021.prodi' => "6",
+            'tbl_catar_2021.periode' => $periode,  
+        );
+        $where7= array(
+            'tbl_catar_2021.prodi' => "7",
+            'tbl_catar_2021.periode' => $periode,  
+        );
+        $where8= array(
+            'tbl_catar_2021.prodi' => "8",
+            'tbl_catar_2021.periode' => $periode,  
+        );
+
+
+        $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+        //get total
+        $data['tot_catar'] = $this->m_registrasi->get_data_join_where($where)->row();
+        $data['tot_catar1'] = $this->m_registrasi->get_data_join_where($where1)->row();
+        $data['tot_catar2'] = $this->m_registrasi->get_data_join_where($where2)->row();
+        $data['tot_catar3'] = $this->m_registrasi->get_data_join_where($where3)->row();
+        $data['tot_catar4'] = $this->m_registrasi->get_data_join_where($where4)->row();
+        $data['tot_catar5'] = $this->m_registrasi->get_data_join_where($where5)->row();
+        $data['tot_catar6'] = $this->m_registrasi->get_data_join_where($where6)->row();
+        $data['tot_catar7'] = $this->m_registrasi->get_data_join_where($where7)->row();
+        $data['tot_catar8'] = $this->m_registrasi->get_data_join_where($where8)->row();
+
+        // get nama prodi
+        $data['prodi'] = "Semua Program Studi";
+        $data['cek'] = "1";
+
+        $this->load->view('baak/header');
+        $this->load->view('baak/rekap_periode');
+        $this->load->view('baak/rekap_periodep',$data);
+        $this->load->view('baak/footer');
+         }else{
+        $where= array(
+            'tbl_catar_2021.prodi' => $prodi,
+            'tbl_catar_2021.periode' => $periode,  
+        );
+        $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+        //get total
+        $data['tot_catar'] = $this->m_registrasi->get_data_join_where($where)->row();
+        // get nama prodi
+        $data['prodi'] = $this->prodi($prodi);
+        $data['cek'] = "2";
+
+        $this->load->view('baak/header');
+        $this->load->view('baak/rekap_periode');
+        $this->load->view('baak/rekap_periodep',$data);
+        $this->load->view('baak/footer');
+        }
+    }
+    ////////////////////////// ./per periode saga //////////////////////////////////
     function rekap_pdf_daftarhadirpeserta(){
         $where2= array(
             'id_gelombang' => '1',  
