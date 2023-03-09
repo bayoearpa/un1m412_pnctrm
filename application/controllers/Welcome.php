@@ -259,6 +259,7 @@ class Welcome extends CI_Controller {
 		$gelombang = $this->input->post('gelombang');
 		$kelas = $this->input->post('kelas');
 		$thn_pel="2023";
+		$periode=date(n);
  		$id_tgl_seleksi = $this->getTglSelAktif();
 		
 		
@@ -326,7 +327,7 @@ class Welcome extends CI_Controller {
 			'informasi' => $informasi,
 			'prodi' => $prodi,
 			'gelombang' => $gelombang,
-			// 'gelombang' => $gelombang,
+			'periode' => $periode,
 			// 'ijasah' => $nmfile1,
 			// 'sk' => $nmfile2,
 			'thn_pel' => $thn_pel,

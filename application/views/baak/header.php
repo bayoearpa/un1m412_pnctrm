@@ -135,6 +135,7 @@
           </a>
           <ul class="treeview-menu">
             <!-- <li class="active"><a href="<?php //echo base_url() ?>baak/"><i class="fa fa-repeat"></i>Ganti Jurusan</a></li> -->
+            <li><a href="<?php echo base_url() ?>baak/rekap_pesertaperiode2022"><i class="fa fa-paperclip"></i>Rkp Peserta per Periode </a></li>
             <li><a href="<?php echo base_url() ?>baak/rekap_peserta2022"><i class="fa fa-paperclip"></i>Rekap Daftar Peserta</a></li>
             <li><a href="<?php echo base_url() ?>baak/rekap_daftarhadir2022"><i class="fa fa-paperclip"></i>Daftar Hadir Peserta</a></li>
             <li><a href="<?php echo base_url() ?>baak/rekap_daftarhadirdp2022"><i class="fa fa-paperclip"></i>Daftar Hadir Peserta Dtg Plg</a></li>
