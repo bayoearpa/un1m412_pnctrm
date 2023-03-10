@@ -339,15 +339,15 @@ class Baak extends CI_Controller {
 
         $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
         //get total
-        $data['tot_catar'] = $this->m_registrasi->get_data_join_where($where)->row();
-        $data['tot_catar1'] = $this->m_registrasi->get_data_join_where($where1)->row();
-        $data['tot_catar2'] = $this->m_registrasi->get_data_join_where($where2)->row();
-        $data['tot_catar3'] = $this->m_registrasi->get_data_join_where($where3)->row();
-        $data['tot_catar4'] = $this->m_registrasi->get_data_join_where($where4)->row();
-        $data['tot_catar5'] = $this->m_registrasi->get_data_join_where($where5)->row();
-        $data['tot_catar6'] = $this->m_registrasi->get_data_join_where($where6)->row();
-        $data['tot_catar7'] = $this->m_registrasi->get_data_join_where($where7)->row();
-        $data['tot_catar8'] = $this->m_registrasi->get_data_join_where($where8)->row();
+        $data['tot_catar'] = $this->m_registrasi->get_data_join_where($where)->num_rows();
+        $data['tot_catar1'] = $this->m_registrasi->get_data_join_where($where1)->num_rows();
+        $data['tot_catar2'] = $this->m_registrasi->get_data_join_where($where2)->num_rows();
+        $data['tot_catar3'] = $this->m_registrasi->get_data_join_where($where3)->num_rows();
+        $data['tot_catar4'] = $this->m_registrasi->get_data_join_where($where4)->num_rows();
+        $data['tot_catar5'] = $this->m_registrasi->get_data_join_where($where5)->num_rows();
+        $data['tot_catar6'] = $this->m_registrasi->get_data_join_where($where6)->num_rows();
+        $data['tot_catar7'] = $this->m_registrasi->get_data_join_where($where7)->num_rows();
+        $data['tot_catar8'] = $this->m_registrasi->get_data_join_where($where8)->num_rows();
 
         // get nama prodi
         $data['prodi'] = "Semua Program Studi";
@@ -364,7 +364,7 @@ class Baak extends CI_Controller {
         );
         $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
         //get total
-        $data['tot_catar'] = $this->m_registrasi->get_data_join_where($where)->row();
+        $data['tot_catar'] = $this->m_registrasi->get_data_join_where($where)->num_rows();
         // get nama prodi
         $data['prodi'] = $this->prodi($prodi);
         $data['cek'] = "2";
