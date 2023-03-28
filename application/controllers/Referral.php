@@ -50,7 +50,7 @@ class Referral extends CI_Controller {
 	            // User does not exist or password is incorrect, show error message
 	            // $data['error'] = 'Invalid username or password';
 	            $this->session->set_flashdata('error', "<b>Error, Kode Refferal ini tidak terdaftar</b>");
-	            $this->load->view('referral/login', $data);
+	            $this->load->view('referral/login');
 	        }
 	    }
 	}
