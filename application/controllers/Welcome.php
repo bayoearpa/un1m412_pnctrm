@@ -309,7 +309,7 @@ class Welcome extends CI_Controller {
  		if ($ref_radio == "1") {
  			# code...
  			$where = array('ref' => $ref);
-			$cek_ref = $this->m_registrasi->get_data($where,'tbl_catar_2023')->num_rows();
+			$cek_ref = $this->m_registrasi->get_data($where,'tbl_ref')->num_rows();
 			if ($cek_ref > 0) {
 				# code...
 				//////////////// proses referral//////////////////////////////////////
