@@ -55,7 +55,7 @@ class m_registrasi extends CI_Model
 	{
     // $this->db->where($where);
     // $query = $this->db->get('tbl_ref');
-	$this->db->get_where($table,$where);
+	$query = $this->db->get_where($table,$where);
     return $query->row_array();
 	}
 //////////////////// .for login referral ////////////////////////////////////////////////////
