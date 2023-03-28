@@ -49,8 +49,8 @@ class m_registrasi extends CI_Model
 		   $this->db->from('tbl_gelombang');
 	       $this->db->where($where);
 	return $this->db->get()->row('ta');
-
-//////////////////// for login referral ////////////////////////////////////////////////////
+	}
+	//////////////////// for login referral ////////////////////////////////////////////////////
 	function get_user_by_refcode($table,$where)
 	{
     // $this->db->where($where);
@@ -59,7 +59,6 @@ class m_registrasi extends CI_Model
     return $query->row_array();
 	}
 //////////////////// .for login referral ////////////////////////////////////////////////////
-	}
 	function get_data_wilayah($where){
 		$this->db->select('tbl_kabkota.id_wil AS id_kota,
 		tbl_kabkota.nm_wil AS kabkota,
