@@ -32,7 +32,7 @@ class Referral extends CI_Controller {
 	        $password = $this->input->post('password');
 	        
             $where= array(
-            'ref' => '$username',  
+            'ref' => $username,  
 	        );
 	        // Check if user exists and password is correct
 	        $user = $this->m_registrasi->get_user_by_refcode($where);
