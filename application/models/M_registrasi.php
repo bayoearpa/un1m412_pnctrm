@@ -50,6 +50,14 @@ class m_registrasi extends CI_Model
 	       $this->db->where($where);
 	return $this->db->get()->row('ta');
 
+//////////////////// for login referral ////////////////////////////////////////////////////
+	function get_user_by_refcode($refcode)
+	{
+    $this->db->where('ref', $refcode);
+    $query = $this->db->get('tbl_ref');
+    return $query->row_array();
+	}
+//////////////////// .for login referral ////////////////////////////////////////////////////
 	}
 	function get_data_wilayah($where){
 		$this->db->select('tbl_kabkota.id_wil AS id_kota,

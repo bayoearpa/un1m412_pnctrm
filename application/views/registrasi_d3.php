@@ -115,7 +115,9 @@
             <h3 class="box-title">Form Pendaftaran</h3>
           </div>
           <div class="box-body">
-
+          <?php echo validation_errors(); 
+            echo $this->session->flashdata('success');
+            echo $this->session->flashdata('error'); ?>
               <form action="<?php echo base_url() ?>cetakRegistrasi" name="form1" id="form1" method="post" enctype="multipart/form-data"> 
                 <div class="form-group">
                   <label for="exampleInputEmail1">Nama</label>
@@ -323,6 +325,12 @@
                       PMDK
                     </label>
                   </div> -->
+                </div>
+                <div class="form-group">
+                  <label>Apakah anda memiliki kode Referral ?</label>
+                  <input type="radio" name="ref_radio" id="ref_radio" value="1">
+                  <label>Kode Referral (di lewati jika tidak ada)</label>
+                 <input type="text" class="form-control" id="ref" name="ref" placeholder="Masukan kode referral">
                 </div>
                <!--  <div class="form-group">
                   <label>Kelas</label><br>

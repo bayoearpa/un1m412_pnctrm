@@ -64,6 +64,12 @@ $route['registrasi_fasttrack'] = 'welcome/registrasi_fasttrack';
 $route['registrasi_d3_fasttrack'] = 'welcome/registrasid3_fasttrack';
 $route['registrasi_eks_fasttrack'] = 'welcome/registrasieks_fasttrack';
 
+//referral page
+$route['referral'] = 'referral';
+$route['referral_accesss'] = 'referral/login';
+$route['referral_home'] = 'referral/home';
+
+
 
 $route['cetakRegistrasi'] = 'welcome/insertReg';
 $route['cetakRegistrasi2'] = 'welcome/insertReg2';

@@ -258,6 +258,8 @@ class Welcome extends CI_Controller {
 		$prodi2 = $this->input->post('prodi2');
 		$gelombang = $this->input->post('gelombang');
 		$kelas = $this->input->post('kelas');
+		$ref_radio = $this->input->post('ref_radio');
+		$ref = $this->input->post('ref');
 		$thn_pel="2023";
 		$periode=date('n');
  		$id_tgl_seleksi = $this->getTglSelAktif();
@@ -303,70 +305,158 @@ class Welcome extends CI_Controller {
         // 	}
     	// }
 
-		
-		$data = array(
-			'nama' => $namafil,
-			'nik' => $nik,
-			'tl' => $tl,
-			'tgl_l' => $tgl_l,
-			'agama' => $agama,
-			'jk' => $jk,
-			'alamat'=> $alamat,
-			'ktkb' => $ktkb,
-			'provinsi' => $provinsi,
-			'telp' => $telp,
-			'kategori_sek' => $kategori_sek,
-			'prodi_lama' => $prodi_lama,
-			'thn_lulus' => $thn_lulus,
-			'asek' => $asek,
-			'alamat_sek' => $alamat_sek,
-			'nama_a' => $nama_afill,
-			'nama_i' => $nama_ifill,
-			'alamat_ortu' => $alamat_ortu,
-			'telp_ortu' => $telp_ortu,
-			'informasi' => $informasi,
-			'prodi' => $prodi,
-			'gelombang' => $gelombang,
-			'periode' => $periode,
-			// 'ijasah' => $nmfile1,
-			// 'sk' => $nmfile2,
-			'thn_pel' => $thn_pel,
-			'bb' => $bb,
-			'tb' => $tb,
-			'email' => $email,
-			'prodi2' => $prodi2,
-			'kelas' => $kelas,
-			'id_tgl_seleksi' => $id_tgl_seleksi
-			);
+ 		////////////////cek referral//////////////////////////////////////
+ 		if ($ref_radio == "1") {
+ 			# code...
+ 			$where = array('ref' => $ref);
+			$cek_ref = $this->m_registrasi->get_data($where,'tbl_catar_2023')->num_rows();
+			if ($cek_ref > 0) {
+				# code...
+				//////////////// proses referral//////////////////////////////////////
 
+				$data = array(
+					'nama' => $namafil,
+					'nik' => $nik,
+					'tl' => $tl,
+					'tgl_l' => $tgl_l,
+					'agama' => $agama,
+					'jk' => $jk,
+					'alamat'=> $alamat,
+					'ktkb' => $ktkb,
+					'provinsi' => $provinsi,
+					'telp' => $telp,
+					'kategori_sek' => $kategori_sek,
+					'prodi_lama' => $prodi_lama,
+					'thn_lulus' => $thn_lulus,
+					'asek' => $asek,
+					'alamat_sek' => $alamat_sek,
+					'nama_a' => $nama_afill,
+					'nama_i' => $nama_ifill,
+					'alamat_ortu' => $alamat_ortu,
+					'telp_ortu' => $telp_ortu,
+					'informasi' => $informasi,
+					'prodi' => $prodi,
+					'gelombang' => $gelombang,
+					'periode' => $periode,
+					// 'ijasah' => $nmfile1,
+					// 'sk' => $nmfile2,
+					'thn_pel' => $thn_pel,
+					'bb' => $bb,
+					'tb' => $tb,
+					'email' => $email,
+					'prodi2' => $prodi2,
+					'kelas' => $kelas,
+					'ref' => $ref,
+					'id_tgl_seleksi' => $id_tgl_seleksi
+					);
+				
+				
+				$this->m_registrasi->input_data($data,'tbl_catar_2023');
+				$lastid = $this->db->insert_id();
+				$where = array('no' => $lastid);
+				$data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
+				foreach ($data['catar'] as $key) {
+					# code...
+					$po = $key->ktkb;
+					$where_prov = array('tbl_kabkota.id_wil' => $po);
+				}
+				$provinsi_get = $this->m_registrasi->get_data_wilayah($where_prov)->result();
+				foreach ($provinsi_get as $keyp) {
+					# code...
+					$data['kabkota'] = $keyp->kabkota;
+					$data['provinsi'] = $keyp->provinsi;
+				}
+				$this->load->view('cetakReg',$data);
 
-		$this->m_registrasi->input_data($data,'tbl_catar_2023');
-		$lastid = $this->db->insert_id();
-		$where = array('no' => $lastid);
-		$data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
-		foreach ($data['catar'] as $key) {
-			# code...
-			$po = $key->ktkb;
-			$where_prov = array('tbl_kabkota.id_wil' => $po);
-		}
-		$provinsi_get = $this->m_registrasi->get_data_wilayah($where_prov)->result();
-		foreach ($provinsi_get as $keyp) {
-			# code...
-			$data['kabkota'] = $keyp->kabkota;
-			$data['provinsi'] = $keyp->provinsi;
-		}
-		$this->load->view('cetakReg',$data);
+				//pdf
+				$pdfFilePath="cetak_registrasi_".$namafil."_2023.pdf";
+				$html=$this->load->view('cetakReg',$data, TRUE);
+				$pdf = $this->m_pdf->load();
+		 
+		        $pdf->AddPage('P');
+		        $pdf->WriteHTML($html);
+		        $pdf->Output($pdfFilePath, "D");
+		        exit();
+				// redirect("welcome/cetakReg");
 
-		//pdf
-		$pdfFilePath="cetak_registrasi_".$namafil."_2023.pdf";
-		$html=$this->load->view('cetakReg',$data, TRUE);
-		$pdf = $this->m_pdf->load();
- 
-        $pdf->AddPage('P');
-        $pdf->WriteHTML($html);
-        $pdf->Output($pdfFilePath, "D");
-        exit();
-		// redirect("welcome/cetakReg");
+				//////////////// .proses referral//////////////////////////////////////
+			}else{
+				$this->session->set_flashdata('error', "<b>Error, Kode Refferal ini tidak terdaftar</b>");
+				$this->load->view('registrasi');
+			}
+
+ 		}else{
+ 			//////////////// proses biasa//////////////////////////////////////
+
+				$data = array(
+					'nama' => $namafil,
+					'nik' => $nik,
+					'tl' => $tl,
+					'tgl_l' => $tgl_l,
+					'agama' => $agama,
+					'jk' => $jk,
+					'alamat'=> $alamat,
+					'ktkb' => $ktkb,
+					'provinsi' => $provinsi,
+					'telp' => $telp,
+					'kategori_sek' => $kategori_sek,
+					'prodi_lama' => $prodi_lama,
+					'thn_lulus' => $thn_lulus,
+					'asek' => $asek,
+					'alamat_sek' => $alamat_sek,
+					'nama_a' => $nama_afill,
+					'nama_i' => $nama_ifill,
+					'alamat_ortu' => $alamat_ortu,
+					'telp_ortu' => $telp_ortu,
+					'informasi' => $informasi,
+					'prodi' => $prodi,
+					'gelombang' => $gelombang,
+					'periode' => $periode,
+					// 'ijasah' => $nmfile1,
+					// 'sk' => $nmfile2,
+					'thn_pel' => $thn_pel,
+					'bb' => $bb,
+					'tb' => $tb,
+					'email' => $email,
+					'prodi2' => $prodi2,
+					'kelas' => $kelas,
+					'id_tgl_seleksi' => $id_tgl_seleksi
+					);
+				
+				
+				$this->m_registrasi->input_data($data,'tbl_catar_2023');
+				$lastid = $this->db->insert_id();
+				$where = array('no' => $lastid);
+				$data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
+				foreach ($data['catar'] as $key) {
+					# code...
+					$po = $key->ktkb;
+					$where_prov = array('tbl_kabkota.id_wil' => $po);
+				}
+				$provinsi_get = $this->m_registrasi->get_data_wilayah($where_prov)->result();
+				foreach ($provinsi_get as $keyp) {
+					# code...
+					$data['kabkota'] = $keyp->kabkota;
+					$data['provinsi'] = $keyp->provinsi;
+				}
+				$this->load->view('cetakReg',$data);
+
+				//pdf
+				$pdfFilePath="cetak_registrasi_".$namafil."_2023.pdf";
+				$html=$this->load->view('cetakReg',$data, TRUE);
+				$pdf = $this->m_pdf->load();
+		 
+		        $pdf->AddPage('P');
+		        $pdf->WriteHTML($html);
+		        $pdf->Output($pdfFilePath, "D");
+		        exit();
+				// redirect("welcome/cetakReg");
+
+				//////////////// .proses biasa//////////////////////////////////////
+ 		}
+
+ 		//////////////// \.cek referral//////////////////////////////////////
+
 	}
 	public function insertReg2()
 	{

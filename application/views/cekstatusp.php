@@ -143,12 +143,12 @@
                 <!-- pengumuman seleksi -->
                
                 <?php
-                  if (isset($wawancara)) {
-                    # code...
-                   echo $welcome->status_lulus($wawancara);
-                 }else{
-                   echo  "<center><label for='exampleInputEmail1'><h1>Anda belum mengikuti Test Seleksi</h1></label></center>";
-                 }
+                 //  if (isset($wawancara)) {
+                 //    # code...
+                 //   echo $welcome->status_lulus($wawancara);
+                 // }else{
+                 //   echo  "<center><label for='exampleInputEmail1'><h1>Anda belum mengikuti Test Seleksi</h1></label></center>";
+                 // }
                  ?>
                 <!-- ,/pengumuman seleksi -->
                 <!-- <button type="submit" name="submit" class="btn btn-primary">Cek Data</button> -->
