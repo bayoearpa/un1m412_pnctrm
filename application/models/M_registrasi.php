@@ -51,9 +51,9 @@ class m_registrasi extends CI_Model
 	return $this->db->get()->row('ta');
 
 //////////////////// for login referral ////////////////////////////////////////////////////
-	function get_user_by_refcode($refcode)
+	function get_user_by_refcode($where)
 	{
-    $this->db->where('ref', $refcode);
+    $this->db->where($where);
     $query = $this->db->get('tbl_ref');
     return $query->row_array();
 	}
