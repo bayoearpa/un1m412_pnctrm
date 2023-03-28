@@ -48,7 +48,7 @@
   <div class="login-box-body">
     <p class="login-box-msg">Sign in untuk mengakses sistem</p>
 
-    <form action="<?php echo base_url().'administrasi/login' ?>" method="post">
+    <form action="<?php echo base_url().'referral_access' ?>" method="post">
       <div class="form-group has-feedback">
         <input type="text" name="username" id="username" class="form-control" placeholder="Username">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
