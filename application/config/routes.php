@@ -66,7 +66,7 @@ $route['registrasi_eks_fasttrack'] = 'welcome/registrasieks_fasttrack';
 
 //referral page
 $route['referral'] = 'referral';
-$route['referral_accesss'] = 'referral/login';
+$route['referral_access'] = 'referral/login';
 $route['referral_home'] = 'referral/home';
 
 
