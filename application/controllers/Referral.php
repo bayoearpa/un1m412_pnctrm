@@ -5,6 +5,7 @@ class Referral extends CI_Controller {
 
     function __construct() {
         parent::__construct();
+        $this->load->helper('url');
         $this->load->model('m_registrasi');
     }
 
