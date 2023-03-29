@@ -175,7 +175,11 @@
             <!-- /.box-header -->
             <div class="box-body" style="">
               Total
-              <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_all('tbl_catar_2023')->num_rows(); ?><sup style="font-size: 20px"></span>
+              <span class="pull-right badge bg-blue"><?php
+              $wheretot= array(
+            'ref' => $ref_code,  
+              );
+               echo $this->m_registrasi->get_data($wheretot,'tbl_catar_2023')->num_rows(); ?><sup style="font-size: 20px"></span>
             </div>
             <div class="box-body" style="">
               Sudah Validasi
