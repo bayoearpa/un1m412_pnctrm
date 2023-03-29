@@ -68,7 +68,7 @@ class Referral extends CI_Controller {
         $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
         // $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2022')->result();
         // $data['catar'] = $this->m_registrasi->get_data_all('tbl_catar_2021')->result(); 
-        $this->load->view('referral/header');
+        $this->load->view('referral/header',$data);
         $this->load->view('referral/index',$data);
         $this->load->view('referral/footer');
     }
