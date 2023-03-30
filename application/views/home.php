@@ -468,7 +468,7 @@
 
               
                <center>
-                <!-- <a class="btn btn-primary btn-lg rounded-pill" href="<?php //echo base_url() ?>registrasi_d3_fasttrack"><i class="fa fa-sign-in"></i>Isi Biodata (Seleksi Dini)</a> -->
+                <a class="btn btn-primary btn-lg rounded-pill" href="<?php //echo base_url() ?>registrasi_d3_fasttrack"><i class="fa fa-sign-in"></i>Isi Biodata (Seleksi Dini)</a>
                 <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>registrasi_d3">
                 <i class="fa fa-sign-in"></i>
                 Isi Biodata (Registrasi Reguler)</a>
