@@ -298,7 +298,8 @@
                   <label>Periode</label>
                   <select class="form-control" name="gelombang" id="gelombang">
                     <option> </option>
-                    <option value="1">Gelombang 1</option>
+                    <!-- <option value="1">Gelombang 1</option> -->
+                    <option value="2">Gelombang 2</option>
                    <!--  <option value="1">Januari</option> -->
                     <!-- <option value="2">Februari</option> -->
                     <!-- <option value="3">Maret</option> -->
