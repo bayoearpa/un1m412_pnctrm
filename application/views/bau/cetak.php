@@ -165,12 +165,12 @@ foreach($catar as $c){
 <tr><td><p style="margin:1px;">Nama</p></td><td>:</td><td><?php echo $c->nama ?></td><td></td></tr>
 <tr><td style="border-top-style:dotted;border-bottom-style:dotted;border-width: 1px;" colspan="4"><p style="margin:1px;"><b>JENIS PEMBAYARAN<b></p></td><td width="30%" style="border-top-style:dotted;border-bottom-style:dotted;border-width: 1px;"><b>RINCIAN</b></p></td></tr>
 
-<tr><td><p style="margin:1px;">BIAYA PENDAFTARAN</p></td><td>:</td><td></td><td></td><td>Rp. 400.000,-</td></tr>
+<tr><td><p style="margin:1px;">BIAYA PENDAFTARAN</p></td><td>:</td><td></td><td></td><td>Rp. 450.000,-</td></tr>
 
 
-<tr><td style="border-top-style:dotted;border-bottom-style:dotted;border-width: 1px;" colspan="4"><p style="margin:1px;"><b>TOTAL</b></p></td><td width="30%" style="border-top-style:dotted;border-bottom-style:dotted;border-width: 1px;"><p style="margin:1px;"><b>Rp. 400.000,-</b></p></td></tr>
+<tr><td style="border-top-style:dotted;border-bottom-style:dotted;border-width: 1px;" colspan="4"><p style="margin:1px;"><b>TOTAL</b></p></td><td width="30%" style="border-top-style:dotted;border-bottom-style:dotted;border-width: 1px;"><p style="margin:1px;"><b>Rp. 450.000,-</b></p></td></tr>
 
-<tr><td style="border-bottom-style:dotted;border-width:1px;" colspan="4"><p><b>Terbilang</b></p></td><td  width="30%" style="border-bottom-style:dotted;border-width:1px;"><p><b>EMPAT RATUS RIBU RUPIAH</b></p></td></tr>
+<tr><td style="border-bottom-style:dotted;border-width:1px;" colspan="4"><p><b>Terbilang</b></p></td><td  width="30%" style="border-bottom-style:dotted;border-width:1px;"><p><b>EMPAT RATUS LIMA PULUH RIBU RUPIAH</b></p></td></tr>
 
 <tr><td></td><td></td><td></td><td>Petugas</td></tr>
 <tr><td></td><td></td><td></td><td></td></tr>
