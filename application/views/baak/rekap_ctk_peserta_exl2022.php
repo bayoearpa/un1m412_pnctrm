@@ -97,7 +97,7 @@ foreach ($catar as $key) {
 		} ?></td>
         <td align="center"><?php echo $key->tl; ?></td>
         <td align="center"><?php echo $key->tgl_l; ?></td>
-        <td align="center"><?php echo $key->telp; ?></td>
+        <td align="center"><?php echo '$key->telp'; ?></td>
         <td align="center"><?php echo $key->agama; ?></td>
 
 	</tr>
