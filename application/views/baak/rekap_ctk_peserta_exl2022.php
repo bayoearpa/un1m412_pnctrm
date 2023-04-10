@@ -72,7 +72,11 @@ table{
 			<th>No.</th>
 			<th>Nama</th>
 			<th>No. Catarma</th>
-			<th>L/P</th>
+            <th>L/P</th>
+            <th>Tempat Lahir</th>
+            <th>Tanggal Lahir</th>
+            <th>Telepon</th>
+            <th>Agama</th>
 		</tr>
 
 <?php
@@ -91,6 +95,11 @@ foreach ($catar as $key) {
 		}else{
 			echo "P";
 		} ?></td>
+        <td align="center"><?php echo $key->tl; ?></td>
+        <td align="center"><?php echo $key->tgl_l; ?></td>
+        <td align="center"><?php echo $key->telp; ?></td>
+        <td align="center"><?php echo $key->agama; ?></td>
+
 	</tr>
 <?php } ?>
 </table>
