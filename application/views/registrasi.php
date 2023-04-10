@@ -84,7 +84,7 @@
                   <tr>
                     <td><b>Biaya Pendaftaran</b></td>
                     <td><b>:</b></td>
-                    <td><b>Rp. 400.000,-</b></td>
+                    <td><b>Rp. 450.000,-</b></td>
                   </tr>
                 </table>
                <!--  <li>Bukti Pembayaran dapat dikirim melalui :</li>
