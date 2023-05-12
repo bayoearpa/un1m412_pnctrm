@@ -25,7 +25,7 @@
 		<p style="margin: 0px;padding: 0px;">website : http://www.unimar-amni.ac.id</p>
 		<p style="margin: 0px;padding: 0px;">email : info@unimar-amni.ac.id</p>
 		</td>
-		<td width="12%"><img src="<?php echo base_url() ?>assets/front1/img/DNV-GL-ISO-9001-2008.png" width="15%"></td>
+		<td width="12%"><img src="<?php echo base_url() ?>assets/front1/img/dnv2022.jpeg" width="15%"></td>
 
 	</tr>
 </table>
