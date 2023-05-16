@@ -195,7 +195,7 @@ class Welcome extends CI_Controller {
 			$ref = $key->ref;
 		}
 
-		if ($prodi == '6' && $prodi == '7' && $ref == "gratismei23" ) {
+		if ($prodi == '6' || $prodi == '7' && $ref == "gratismei23" ) {
 			# code...
 
 		$this->load->view('cetakVoucher',$data);

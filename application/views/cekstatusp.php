@@ -157,7 +157,15 @@
           <div class="box-body">        
                 <div class="form-group" align="center">
                   <label for="exampleInputEmail1">Maaf anda belum melakukan registrasi atau belum melakukan validasi. lakukan validasi melalui link berikut <a href="https://linktr.ee/catarma2023"><button type="button" class="btn btn-block btn-primary btn-sm">Konfirmasi Pendaftaran</button></a>.jika belum sama sekali melakukan registrasi klik link berikut <a href="http://pencatarma.unimar-amni.ac.id/registrasi">disini</a>.</label>
-                </div>   
+                </div> 
+                <?php if ($c->ref == "gratismei23") {
+                  # code...
+                ?>
+                <div class="form-group" align="center">
+                  <label>Selamat anda mendapatkan voucher gratis biaya pendaftaran</label>
+                  <a href="<?php echo base_url() ?>voucher/<?php echo $c->no ?>"><button type="button" name="submit" class="btn btn-primary">Download Voucher</button></a>
+                </div> 
+                <?php } ?> 
                 <!-- <button type="submit" name="submit" class="btn btn-primary">Cek Data</button> -->
           </div>
           <?php } ?>

@@ -79,6 +79,7 @@ $route['apk_download'] = 'welcome/apk_download';
 // $route['cekstatusp'] = 'welcome/cekstatusp';
 $route['cekstatusp/(:num)'] = 'welcome/cekstatusp/$1';
 $route['download/(:num)'] = 'welcome/download/$1';
+$route['voucher/(:num)'] = 'welcome/voucher/$1';
 
 $route['getkabkota'] = 'welcome/get_kabkota';
 
