@@ -102,6 +102,8 @@
                   if(isset($_GET['pesan'])){
                     if($_GET['pesan'] == "gagal"){
                       echo "<div class='alert alert-danger'>Captcha Gagal harap diulangi kembali</div>";
+                    }else if($_GET['pesan'] == "gagal_voucher"){
+                      echo "<div class='alert alert-danger'>Maaf anda bukan penerima voucher.</div>";
                     }
                   }
               ?>

@@ -184,6 +184,37 @@ class Welcome extends CI_Controller {
 		redirect("cekstatusp/".$no);
 
 	}
+	public function voucher($no)
+	{
+		# code...
+		$where = array('no' => $no);
+		$data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
+		foreach ($data['catar'] as $key) {
+			# code...
+			$prodi = $key->prodi;
+			$ref = $key->ref;
+		}
+
+		if ($prodi == '6' && $prodi == '7' && $ref == "gratismei23" ) {
+			# code...
+
+		$this->load->view('cetakVoucher',$data);
+		//pdf
+		$pdfFilePath="cetak_voucher.pdf";
+		$html=$this->load->view('cetakVoucher',$data, TRUE);
+		$pdf = $this->m_pdf->load();
+ 		ob_clean();
+        $pdf->AddPage('P');
+        $pdf->WriteHTML($html);
+        $pdf->Output($pdfFilePath, "D");
+        exit();
+		redirect("cekstatusp/".$no);
+		}else{
+			redirect(base_url().'cekstatus?pesan=gagal_voucher');
+		}
+		
+
+	}
 	public function registrasi()
 	{
 		$data['jurusan'] = $this->m_registrasi->get_data_all('tbl_jurusan')->result();
