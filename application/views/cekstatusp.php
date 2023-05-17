@@ -154,7 +154,7 @@
                 <!-- <button type="submit" name="submit" class="btn btn-primary">Cek Data</button> -->
           </div>
           <?php }}else{ 
-            foreach($catar as $c){ 
+            foreach($catarz as $c){ 
             ?>
 
           <div class="box-body">        
