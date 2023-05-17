@@ -41,12 +41,12 @@
 	<tr>
 		<td width="30%"><b>Alamat</b></td><td width="1%">:</td><td><?php echo $c->alamat ?></td>
 	</tr>
-	<tr>
-		<td width="30%"><b>Kota / Kabupaten</b></td><td width="1%">:</td><td><?php echo $kabkota ?></td>
+	<!-- <tr>
+		<td width="30%"><b>Kota / Kabupaten</b></td><td width="1%">:</td><td><?php //echo $kabkota ?></td>
 	</tr>
 	<tr>
-		<td width="30%"><b>Provinsi</b></td><td width="1%">:</td><td><?php echo $provinsi ?></td>
-	</tr>
+		<td width="30%"><b>Provinsi</b></td><td width="1%">:</td><td><?php //echo $provinsi ?></td>
+	</tr> -->
 	<tr>
 		<td width="30%"><b>Telepon</b></td><td width="1%">:</td><td><?php echo $c->telp ?></td>
 	</tr>
