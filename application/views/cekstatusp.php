@@ -153,12 +153,13 @@
                 <!-- ,/pengumuman seleksi -->
                 <!-- <button type="submit" name="submit" class="btn btn-primary">Cek Data</button> -->
           </div>
-          <?php }}else{ ?>
+          <?php }else{ ?>
           <div class="box-body">        
                 <div class="form-group" align="center">
                   <label for="exampleInputEmail1">Maaf anda belum melakukan registrasi atau belum melakukan validasi. lakukan validasi melalui link berikut <a href="https://linktr.ee/catarma2023"><button type="button" class="btn btn-block btn-primary btn-sm">Konfirmasi Pendaftaran</button></a>.jika belum sama sekali melakukan registrasi klik link berikut <a href="http://pencatarma.unimar-amni.ac.id/registrasi">disini</a>.</label>
                 </div> 
-                <?php if ($c->ref == "gratismei23") {
+                <?php 
+                if ($c->ref == "gratismei23") {
                   # code...
                 ?>
                 <div class="form-group" align="center">
@@ -168,7 +169,7 @@
                 <?php } ?> 
                 <!-- <button type="submit" name="submit" class="btn btn-primary">Cek Data</button> -->
           </div>
-          <?php } ?>
+          <?php }} ?>
           <!-- /.box-body -->
         </div>
         <!-- /.box -->
