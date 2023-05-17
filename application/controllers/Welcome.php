@@ -150,6 +150,7 @@ class Welcome extends CI_Controller {
 			// ./cek wawancara
 		}else{
 			$data['catar'] = null ;
+			$where2 = array('no' => $no);
 			$data['catarz'] = $this->m_registrasi->get_data($where2,'tbl_catar')->result();
 			// $data['status'] = "Anda Belum tervalidasi...";
 		}
