@@ -164,9 +164,10 @@
           </div>
           <?php } ?>
 
-          
+
           <?php  /// cek voucher
           if ($catarz > 0){ 
+            foreach($catarz as $c){ 
                 if ($c->ref == "gratismei23") {
                   # code...
                 ?>
@@ -174,7 +175,7 @@
                   <label>Selamat anda mendapatkan voucher gratis biaya pendaftaran</label>
                   <a href="<?php echo base_url() ?>voucher/<?php echo $c->no ?>"><button type="button" name="submit" class="btn btn-primary">Download Voucher</button></a>
                 </div> 
-                <?php }}else{}
+                <?php }}}else{}
           ?>
 
           <!-- /.box-body -->

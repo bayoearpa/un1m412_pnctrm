@@ -131,7 +131,7 @@ class Welcome extends CI_Controller {
 			$where2 = array('no' => $no);
 			$where3 = array('tbl_catar_validasi_2023.no' => $no);
 			$data['catar'] = $this->m_registrasi->get_data($where2,'tbl_catar_2023')->result();
-			$data['catarz'] = $this->m_registrasi->get_data($where2,'tbl_catar')->result();
+
 			// cek wawancara
 			$get_wawancara = $this->m_registrasi->get_data_test_wawancara($where3)->result();
 
@@ -150,6 +150,7 @@ class Welcome extends CI_Controller {
 			// ./cek wawancara
 		}else{
 			$data['catar'] = null ;
+			$data['catarz'] = $this->m_registrasi->get_data($where2,'tbl_catar')->result();
 			// $data['status'] = "Anda Belum tervalidasi...";
 		}
 
