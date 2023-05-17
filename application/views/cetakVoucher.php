@@ -33,7 +33,7 @@
 <hr size="2" style="border-color: #000000;border-width: 3px;margin: 0px;padding: 0px;">
 <h1 align="right" style="margin-right: 20px;margin-bottom: 0px;margin: 0px;padding: 0px;"><?php echo $c->no ?></h1>
 <!-- datadiri -->
-<table align="center"><tr><td><h1 style="margin: 0px;padding: 0px;"><b>Selamat Anda Mendapatkan Gratis Biaya Pendaftaran</b></h1></td></tr></table>
+<table align="center"><tr><td><h2 style="margin: 0px;padding: 0px;"><b>Selamat Anda Mendapatkan Gratis Biaya Pendaftaran</b></h2></td></tr></table>
 <table width="90%" align="center" id="biodata">
 	<tr>
 		<td width="30%"><b>Nama</b></td><td width="1%">:</td><td><?php echo $c->nama ?></td>
