@@ -331,7 +331,7 @@
                  <div class="form-group">
                   <input type="radio" name="ref_radio" id="ref_radio" value="Apakah anda memiliki kode Referral ?" checked readonly="">
                   <label>Kode Referral (di lewati jika tidak ada)</label>
-                 <input type="text" class="form-control" id="ref" name="ref" value="disc">
+                 <input type="text" class="form-control" id="ref" name="ref" value="disc" readonly>
                 </div>
                 <!-- <input type="hidden" name="kelas" value="reg"> -->
                <!--  <div class="form-group">
