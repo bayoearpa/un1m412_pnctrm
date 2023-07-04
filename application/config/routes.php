@@ -63,6 +63,8 @@ $route['registrasi2'] = 'welcome/registrasi2';
 $route['registrasi_fasttrack'] = 'welcome/registrasi_fasttrack';
 $route['registrasi_d3_fasttrack'] = 'welcome/registrasid3_fasttrack';
 $route['registrasi_eks_fasttrack'] = 'welcome/registrasieks_fasttrack';
+//reg_disc
+$route['registrasi_disc'] = 'welcome/registrasi_disc';
 
 //referral page
 $route['referral'] = 'referral';

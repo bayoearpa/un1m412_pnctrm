@@ -253,11 +253,11 @@ class Welcome extends CI_Controller {
 		$data['provinsi'] = $this->m_registrasi->get_data_all('tbl_propinsi')->result();
 		$this->load->view('registrasi_d3_fasttrack',$data);
 	}
-	public function registrasieks_fasttrack()
+	public function registrasi_disc()
 	{
 		$data['jurusan'] = $this->m_registrasi->get_data_all('tbl_jurusan')->result();
 		$data['provinsi'] = $this->m_registrasi->get_data_all('tbl_propinsi')->result();
-		$this->load->view('registrasi_eks_fasttrack',$data);
+		$this->load->view('registrasi_disc',$data);
 	}
 	public function insertReg()
 	{
