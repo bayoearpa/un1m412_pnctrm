@@ -70,7 +70,29 @@
           <p><b>SYARAT UMUM</b></p>
           <ul>
             <li>Mengisi formulir pendaftaran online di website pencatarma.unimar-amni.ac.id</li>
-            <li></li>
+            <li>Copy Ijasah</li>
+            <ul>
+              <li>SMA atau Madrasah Aliyah (MA)-(Semua Program Studi).</li>
+              <li>SMK -(Semua Program Studi)</li>
+            </ul>
+            <li>Dilegalisir dari instansi pemerintah dan pejabat yang berwenang</li>
+            <li>Surat Keterangan Catatan Kepolisisan (SKCK)</li>
+            <li>Pas photo hitam putih ukuran 3x4 sebanyak 2(dua) Lembar.</li>
+            <li>Copy Surat kenal lahir/akte kelahiran.</li>
+            <li>Copy tanda pengenal yang sah, KTP atau SIM</li>
+            <li>Mengisi Surat pernyataan sehat disertai materai Rp.10.000,-</li>
+          </ul>
+
+          <p><b>SYARAT KHUSUS</b></p>
+          <ul>
+            <li>Melampirkan surat keterangan bekerja dari pejabat berwenang dari tempat bekerja</li>
+            <li>Melampirkan Surat Keterangan tidak mampu dari kelurahan setempat bagi calon mahasiswa kelas beasiswa yayasan</li>
+            <li>Calon mahasiswa Program Studi Teknik Transportasi Laut, Teknik Mesin dan Teknik Keselamatan memenuhi kriteria sebagai berikut:</li>
+            <ul>
+              <li>SMA atau Madrasah Aliyah (MA)-(Semua Program Studi).</li>
+              <li>SMK -Teknik</li>
+              <li>SMK/MAK jurusan teknik mesin, teknik mekatronika, teknik elektro(teknik elektronika industri, teknik mekatronika, teknik audio video), teknik ketenagalistrikan, teknik pendinginan dan tata udara, teknik perkapalan untuk program keahlian instalasi permesinan kapal dan teknik instrumentasi industri.</li>
+            </ul>
           </ul>
 
              <!--  <ul>
