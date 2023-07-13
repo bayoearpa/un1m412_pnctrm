@@ -66,6 +66,9 @@ $route['registrasi_eks_fasttrack'] = 'welcome/registrasieks_fasttrack';
 //reg_disc
 $route['registrasi_disc'] = 'welcome/registrasi_disc';
 
+//reg_rpl
+$route['registrasi_khusus'] = 'welcome/registrasi_rpl';
+
 //referral page
 $route['referral'] = 'referral';
 $route['referral_access'] = 'referral/login';
