@@ -263,7 +263,7 @@ class Welcome extends CI_Controller {
 	{
 		$data['jurusan'] = $this->m_registrasi->get_data_all('tbl_jurusan')->result();
 		$data['provinsi'] = $this->m_registrasi->get_data_all('tbl_propinsi')->result();
-		$this->load->view('registrasi_rpl',$data);
+		$this->load->view('registrasi_rpl2',$data);
 	}
 	public function insertReg()
 	{
