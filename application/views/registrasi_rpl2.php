@@ -294,9 +294,9 @@
                   <label>Prodi Pilihan 1</label>
                   <select class="form-control" name="prodi" id="prodi">
                     <option> </option>
-                    <option value="1">D3 Ketatalaksanaan Pelayaran Niaga dan Kepelabuhanan</option>
+                   <!--  <option value="1">D3 Ketatalaksanaan Pelayaran Niaga dan Kepelabuhanan</option>
                     <option value="2">D3 Teknika</option>
-                    <option value="3">D3 Nautika</option>
+                    <option value="3">D3 Nautika</option> -->
                     <option value="4">S1 Transportasi</option>
                     <option value="5">S1 Teknik Transportasi Laut</option>
                     <option value="6">S1 Teknik Mesin</option>
@@ -308,9 +308,9 @@
                   <label>Prodi Pilihan 2</label>
                   <select class="form-control" name="prodi2" id="prodi2">
                     <option> </option>
-                    <option value="1">D3 Ketatalaksanaan Pelayaran Niaga dan Kepelabuhanan</option>
+                   <!--  <option value="1">D3 Ketatalaksanaan Pelayaran Niaga dan Kepelabuhanan</option>
                     <option value="2">D3 Teknika</option>
-                    <option value="3">D3 Nautika</option>
+                    <option value="3">D3 Nautika</option> -->
                     <option value="4">S1 Transportasi</option>
                     <option value="5">S1 Teknik Transportasi Laut</option>
                     <option value="6">S1 Teknik Mesin</option>
