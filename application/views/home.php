@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Pencamahatar UNIMAR AMNI Semarang</title>
+    <title>PMB UNIMAR AMNI Semarang</title>
     <link rel="shortcut icon" href="<?php echo base_url() ?>assets/front1/img/amni-png.png" />
     <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url() ?>assets/front1/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">SIPENCAMAHATAR</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">SIPMB</a>
         <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-black rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -49,7 +49,7 @@
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Alur Pendaftaran</a>
             </li> 
       <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="<?php echo base_url() ?>cekstatus">Cek Status</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="<?php echo base_url() ?>login">Masuk</a>
             </li> 
           </ul>
         </div>
@@ -60,9 +60,9 @@
     <header class="masthead bg-primary text-black text-center">
       <div class="container">
         <img class="img-fluid mb-5 d-block mx-auto" src="<?php echo base_url() ?>assets/front1/img/amni-png.png" alt="" width="20%">
-        <h1 class="text-uppercase mb-0">SELAMAT DATANG</h1>
+        <h1 class="text-uppercase mb-0">SI PMB</h1>
         <!-- <hr class="star-light"> -->
-        <h2 class="font-weight-light mb-0">DI SISTEM INFORMASI PENCAMAHATAR UNIMAR AMNI SEMARANG</h2>
+        <h2 class="font-weight-light mb-0">SISTEM INFORMASI PENERIMAAN MAHATAR BARU UNIMAR AMNI SEMARANG</h2>
       </div>
     </header>
 
