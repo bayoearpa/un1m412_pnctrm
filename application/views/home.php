@@ -31,7 +31,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">SIPMB</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">SI PMB</a>
         <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-black rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -42,14 +42,14 @@
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Informasi</a>
             </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Pendaftaran</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Program Studi</a>
           </li>
             
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Alur Pendaftaran</a>
             </li> 
       <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="<?php echo base_url() ?>login">Masuk</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="<?php echo base_url() ?>signin">Masuk</a>
             </li> 
           </ul>
         </div>
@@ -60,7 +60,7 @@
     <header class="masthead bg-primary text-black text-center">
       <div class="container">
         <img class="img-fluid mb-5 d-block mx-auto" src="<?php echo base_url() ?>assets/front1/img/amni-png.png" alt="" width="20%">
-        <h1 class="text-uppercase mb-0">SI PMB</h1>
+        <h1 class="text-uppercase mb-0">SI P M B</h1>
         <!-- <hr class="star-light"> -->
         <h2 class="font-weight-light mb-0">SISTEM INFORMASI PENERIMAAN MAHATAR BARU UNIMAR AMNI SEMARANG</h2>
       </div>
@@ -496,7 +496,7 @@
                <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/t2.png" alt=""> -->
              <p><i class="fa fa-question-circle"></i>Syarat :</p>
               <ul>
-                <li>Usia max 23 tahun pada bulan September 2023.</li>
+                <li>Usia max 23 tahun pada bulan September 2024.</li>
                 <li>Pria atau wanita</li>
                 <li>Belum menikah dan sanggup tidak menikah selama masa pendidikan yang dibuktikan dengan surat keterangan belum pernah menikah.</li> 
                 <li>Tinggi badan minimal Pria 160 Cm dan Wanita 155 Cm.</li>
@@ -589,7 +589,7 @@
                <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/nt2.png" alt=""> -->
                <p><i class="fa fa-question-circle"></i>Syarat :</p>
                 <ul>
-                <li>Usia max 23 tahun pada bulan September 2023.</li>
+                <li>Usia max 23 tahun pada bulan September 2024.</li>
                 <li>Pria atau wanita</li>
                 <li>Belum menikah dan sanggup tidak menikah selama masa pendidikan yang dibuktikan dengan surat keterangan belum pernah menikah.</li> 
                 <li>Tinggi badan minimal Pria 160 Cm dan Wanita 155 Cm.</li>
