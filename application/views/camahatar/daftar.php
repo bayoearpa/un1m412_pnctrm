@@ -42,19 +42,27 @@
 <div class="login-box">
   <div class="login-logo">
   <img src="<?php echo base_url() ?>assets/front1/img/amni-png.png" width="20%">
-    <a href="../../index2.html"><b>Masuk</b>SI PMB</a>
+    <a href="../../index2.html"><b>Daftar</b>SI PMB</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg">Masuk untuk mengakses sistem</p>
+    <p class="login-box-msg">Daftar untuk mengakses sistem</p>
 
-    <form action="<?php echo base_url().'masukp' ?>" method="post">
+    <form action="<?php echo base_url().'daftarp' ?>" method="post">
+      <div class="form-group has-feedback">
+        <input type="text" name="nama" id="nama" class="form-control" placeholder="Nama Lengkap">
+        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+      </div>
       <div class="form-group has-feedback">
         <input type="text" name="username" id="username" class="form-control" placeholder="Username">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
         <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+      </div>
+      <div class="form-group has-feedback">
+        <input type="password" name="repassword" id="repassword" class="form-control" placeholder="Ketik Ulang Password">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="row">
@@ -67,7 +75,7 @@
         </div> -->
         <!-- /.col -->
         <div class="col-xs-4">
-         <center> <button type="submit" class="btn btn-primary btn-block btn-flat">Masuk</button></center>
+         <center> <button type="submit" class="btn btn-primary btn-block btn-flat">Daftar</button></center>
         </div>
         <!-- /.col -->
       </div>
