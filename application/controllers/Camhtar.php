@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Camahatar extends CI_Controller {
+class Camhatar extends CI_Controller {
 
 	function __construct()
 	{
