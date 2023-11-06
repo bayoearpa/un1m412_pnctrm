@@ -68,6 +68,17 @@
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <p id="passwordMatchMessage"></p>
+      <div class="form-group has-feedback" >
+                  <select class="form-control" name="jalur" id="jalur" placeholder="Pilih Jalur">
+                    <option> </option>
+                    <option value="fasttrack">Fast Track</option>
+                    <option value="reguler">Reguler</option>
+                    <option value="kelastransfer">Kelas Transfer</option>
+                    <option value="prestasi">Prestasi</option>
+                    <option value="hafizh">Hafizh</option>
+                  </select>
+      </div>
+      <p id="jalurMessage"></p>
       <div class="row">
         <!-- <div class="col-xs-8">
           <div class="checkbox icheck">

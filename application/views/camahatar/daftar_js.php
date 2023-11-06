@@ -57,6 +57,23 @@ function isUsernameAvailable(username) {
     }
   }
 
+  // Fungsi untuk memeriksa apakah jalur (informasi) sudah dipilih
+function checkJalur() {
+  var jalur = document.getElementById("jalur").value;
+  var jalurMessage = document.getElementById("jalurMessage");
+  var submitButton = document.getElementById("submitBtn");
+
+  if (jalur !== "") {
+    jalurMessage.innerHTML = "Jalur pendaftaran dipilih.";
+    jalurMessage.style.color = "green";
+    validateForm();
+  } else {
+    jalurMessage.innerHTML = "Pilih jalur pendaftaran.";
+    jalurMessage.style.color = "red";
+    disableForm();
+  }
+}
+
   // Fungsi untuk mengaktifkan tombol "Daftar"
   function validateForm() {
     var submitButton = document.getElementById("submitBtn");
@@ -75,6 +92,9 @@ function isUsernameAvailable(username) {
   // Menambahkan event listener untuk memeriksa panjang password dan kesesuaian kedua password saat pengguna memasukkan data
   document.getElementById("password").addEventListener("input", checkPassword);
   document.getElementById("repassword").addEventListener("input", checkPassword);
+
+  // Menambahkan event listener untuk memeriksa apakah jalur (informasi) sudah dipilih
+  document.getElementById("jalur").addEventListener("change", checkJalur);
 
 
 </script>
