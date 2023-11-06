@@ -57,10 +57,12 @@
         <input type="text" name="username" id="username" class="form-control" placeholder="Username">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
+      <p id="usernameLengthMessage"></p>
       <div class="form-group has-feedback">
         <input type="password" name="password" id="password" class="form-control" placeholder="Password">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
+      <p id="passwordLengthMessage"></p>
       <div class="form-group has-feedback">
         <input type="password" name="repassword" id="repassword" class="form-control" placeholder="Ketik Ulang Password">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
