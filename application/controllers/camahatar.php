@@ -18,6 +18,10 @@ class Camahatar extends CI_Controller {
 	{
 		$this->load->view('camahatar/login');
 	}
+	public function daftar()
+	{
+		$this->load->view('camahatar/daftar');
+	}
 
 }
 

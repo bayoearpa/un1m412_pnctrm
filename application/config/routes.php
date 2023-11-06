@@ -74,6 +74,9 @@ $route['referral'] = 'referral';
 $route['referral_access'] = 'referral/login';
 $route['referral_home'] = 'referral/home';
 
+//camahatar
+$route['masuk'] = 'camahatar';
+$route['daftar'] = 'camahatar/daftar';
 
 
 $route['cetakRegistrasi'] = 'welcome/insertReg';
