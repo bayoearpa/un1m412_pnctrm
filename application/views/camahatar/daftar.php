@@ -51,11 +51,11 @@
     <form action="<?php echo base_url().'daftarp' ?>" method="post">
       <div class="form-group has-feedback">
         <input type="text" name="nama" id="nama" class="form-control" placeholder="Nama Lengkap">
-        <span class="glyphicon glyphicon-users form-control-feedback"></span>
+        <span class="glyphicon glyphicon-user form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
         <input type="text" name="username" id="username" class="form-control" placeholder="Username">
-        <span class="glyphicon glyphicon-users form-control-feedback"></span>
+        <span class="glyphicon glyphicon-user form-control-feedback"></span>
       </div>
       <p id="usernameLengthMessage"></p>
       <div class="form-group has-feedback">
