@@ -97,4 +97,42 @@ function checkJalur() {
   document.getElementById("jalur").addEventListener("change", checkJalur);
 
 
+  // Fungsi untuk mengirim data pendaftaran ke tabel tbl_catar_2024
+function submitRegistration() {
+  var nama = document.getElementById("nama").value;
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+  var jalur = document.getElementById("jalur").value;
+
+  $.ajax({
+    type: "POST",
+    url: "<?php echo base_url() ?>pendaftaran", // Gantilah dengan URL yang sesuai di sisi server untuk menangani pendaftaran
+    data: {
+      nama: nama,
+      username: username,
+      password: password,
+      jalur: jalur,
+    },
+    success: function (response) {
+      if (response === "success") {
+        // Pendaftaran berhasil, arahkan ke halaman login
+        window.location.href = "<?php echo base_url() ?>masuk";
+      } else {
+        // Pendaftaran gagal, Anda dapat menampilkan pesan kesalahan jika diperlukan
+        alert("Pendaftaran gagal. Silakan coba lagi.");
+      }
+    },
+    error: function () {
+      // Penanganan kesalahan jika permintaan gagal
+      alert("Terjadi kesalahan saat mengirim data pendaftaran.");
+    }
+  });
+}
+
+// Event listener untuk mengirim data pendaftaran saat tombol "Daftar" diklik
+document.getElementById("submitBtn").addEventListener("click", function (e) {
+  e.preventDefault(); // Mencegah pengisian form dilanjutkan secara otomatis
+  submitRegistration(); // Memanggil fungsi submitRegistration
+});
+
 </script>

@@ -37,6 +37,34 @@ class Camhtar extends CI_Controller {
             }
         }
 	}
+	public function daftarp()
+	{
+		if ($this->input->post()) {
+            $nama = $this->input->post('nama');
+            $username = $this->input->post('username');
+            $password = $this->input->post('password');
+            $jalur = $this->input->post('jalur');
+
+            // Lakukan validasi data yang diterima jika diperlukan
+
+            // Simpan data pendaftaran ke dalam tabel "tbl_catar_2024"
+            $data = array(
+                'nama' => $nama,
+                'username' => $username,
+                'password' => $password,
+                'jalur' => $jalur
+                // Tambahkan kolom lain sesuai dengan struktur tabel
+            );
+
+            $insert_result = $this->m_registrasi->input_data($data,'tbl_catar_2024');
+
+            if ($insert_result) {
+                echo "success";
+            } else {
+                echo "error";
+            }
+        }
+	}
 
 }
 
