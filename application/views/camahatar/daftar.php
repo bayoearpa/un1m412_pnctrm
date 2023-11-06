@@ -69,6 +69,7 @@
       </div>
       <p id="passwordMatchMessage"></p>
       <div class="form-group has-feedback" >
+        <label>Pilih Jalur Pendaftaran:</label>
                   <select class="form-control" name="jalur" id="jalur" placeholder="Pilih Jalur">
                     <option> </option>
                     <option value="fasttrack">Fast Track</option>
