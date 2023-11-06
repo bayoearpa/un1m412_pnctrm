@@ -46,7 +46,7 @@
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg">Sign in untuk mengakses sistem</p>
+    <p class="login-box-msg">Sign in untuk mengakses siste</p>
 
     <form action="<?php echo base_url().'administrasi/login' ?>" method="post">
       <div class="form-group has-feedback">
