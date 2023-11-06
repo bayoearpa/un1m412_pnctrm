@@ -78,7 +78,7 @@
         </div> -->
         <!-- /.col -->
         <div class="col-xs-4">
-         <center> <button type="submit" class="btn btn-primary btn-block btn-flat">Daftar</button></center>
+         <center><button id="submitBtn" type="submit" class="btn btn-primary btn-block btn-flat" disabled>Daftar</button></center>
         </div>
         <!-- /.col -->
       </div>
