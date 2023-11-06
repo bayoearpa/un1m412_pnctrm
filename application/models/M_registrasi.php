@@ -59,6 +59,19 @@ class m_registrasi extends CI_Model
     return $query->row_array();
 	}
 //////////////////// .for login referral ////////////////////////////////////////////////////
+
+	///////////////////////// untuk cek user/////////////////////////////////////////////////
+	public function cek_user($username) {
+        $this->db->where('username', $username);
+        $query = $this->db->get('tbl_catar_2024'); // Gantilah dengan nama tabel yang sesuai
+
+        if ($query->num_rows() > 0) {
+            return false; // Username sudah digunakan
+        } else {
+            return true; // Username tersedia
+        }
+    }
+	///////////////////////// .untuk cek user/////////////////////////////////////////////////
 	function get_data_wilayah($where){
 		$this->db->select('tbl_kabkota.id_wil AS id_kota,
 		tbl_kabkota.nm_wil AS kabkota,

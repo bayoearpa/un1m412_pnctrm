@@ -23,6 +23,20 @@ class Camhtar extends CI_Controller {
 		$this->load->view('camahatar/daftar');
 		$this->load->view('camahatar/daftar_js');
 	}
+	public function cek_user()
+	{
+		# code...
+		if ($this->input->post('username')) {
+            $username = $this->input->post('username');
+            $is_available = $this->m_registrasi->cek_user($username);
+
+            if ($is_available) {
+                echo "available"; // Username tersedia
+            } else {
+                echo "unavailable"; // Username sudah digunakan
+            }
+        }
+	}
 
 }
 

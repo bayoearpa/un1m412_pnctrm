@@ -5,15 +5,35 @@
     var usernameLengthMessage = document.getElementById("usernameLengthMessage");
 
     if (username.length >= 8) {
-      usernameLengthMessage.innerHTML = "Panjang username mencukupi.";
-      usernameLengthMessage.style.color = "green";
-      validateForm();
+      isUsernameAvailable(username);
     } else {
       usernameLengthMessage.innerHTML = "Username harus memiliki setidaknya 8 karakter.";
       usernameLengthMessage.style.color = "red";
       disableForm();
     }
   }
+  // Fungsi untuk memeriksa apakah username sudah tersedia (menggunakan jQuery Ajax)
+function isUsernameAvailable(username) {
+  $.ajax({
+    type: "POST",
+    url: "<?php echo base_url() ?>cek; ?>", // Gantilah dengan URL yang sesuai di sisi server
+    data: { username: username },
+    success: function (response) {
+      if (response === "available") {
+        usernameLengthMessage.innerHTML = "Panjang username mencukupi dan tersedia.";
+        usernameLengthMessage.style.color = "green";
+        validateForm();
+      } else {
+        usernameLengthMessage.innerHTML = "Username sudah digunakan. Silakan pilih username lain.";
+        usernameLengthMessage.style.color = "red";
+        disableForm();
+      }
+    },
+    error: function () {
+      // Penanganan kesalahan jika permintaan gagal
+    }
+  });
+}
 
   // Fungsi untuk memeriksa panjang password dan kesesuaian kedua password
   function checkPassword() {
@@ -55,4 +75,6 @@
   // Menambahkan event listener untuk memeriksa panjang password dan kesesuaian kedua password saat pengguna memasukkan data
   document.getElementById("password").addEventListener("input", checkPassword);
   document.getElementById("repassword").addEventListener("input", checkPassword);
+
+
 </script>
