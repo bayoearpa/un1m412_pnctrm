@@ -42,7 +42,7 @@
 <div class="login-box">
   <div class="login-logo">
   <img src="<?php echo base_url() ?>assets/front1/img/amni-png.png" width="20%">
-    <a href="../../index2.html"><b>Daftar</b>SI PMB</a>
+    <a href="../../index2.html"><b>Daftar</b> SI PMB</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
@@ -89,10 +89,10 @@
         Google+</a>
     </div> -->
     <!-- /.social-auth-links -->
+<!-- 
+    <a href="#">I forgot my password</a><br> -->
+    <a href="<?php echo base_url() ?>masuk" class="text-center">Masuk jika sudah memiliki akun</a>
 
-    <!-- <a href="#">I forgot my password</a><br>
-    <a href="register.html" class="text-center">Register a new membership</a>
- -->
   </div>
   <!-- /.login-box-body -->
 </div>
