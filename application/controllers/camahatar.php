@@ -16,7 +16,7 @@ class Camahatar extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('camahatar/signin');
+		$this->load->view('camahatar/login');
 	}
 
 }

@@ -42,11 +42,11 @@
 <div class="login-box">
   <div class="login-logo">
   <img src="<?php echo base_url() ?>assets/front1/img/amni1.png" width="20%">
-    <a href="../../index2.html"><b>Daftar</b>PMB</a>
+    <a href="../../index2.html"><b>Admin</b>Pencatarma</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg">Sign in untuk mengakses siste</p>
+    <p class="login-box-msg">Sign in untuk mengakses sistem</p>
 
     <form action="<?php echo base_url().'administrasi/login' ?>" method="post">
       <div class="form-group has-feedback">
