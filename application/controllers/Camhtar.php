@@ -151,7 +151,7 @@ class Camhtar extends CI_Controller {
 		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2024')->result();
 
 		$this->load->view('camahatar/header',$data);
-        $this->load->view('camahatar/index',$data);
+        $this->load->view('camahatar/biodata',$data);
         $this->load->view('camahatar/footer');
 
 	}
