@@ -250,7 +250,7 @@ class Camhtar extends CI_Controller {
  		
  			//////////////// proses biasa//////////////////////////////////////
  				$where = array(
-					'no' => $this->session->userdata('no');		
+					'no' => $this->session->userdata('no')		
 				);
 				$data = array(
 					'nama' => $namafil,
