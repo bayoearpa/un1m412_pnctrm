@@ -119,7 +119,7 @@ function submitRegistration() {
         window.location.href = "<?php echo base_url() ?>masuk";
       } else {
         // Pendaftaran gagal, Anda dapat menampilkan pesan kesalahan jika diperlukan
-        alert("Pendaftaran gagal. Silakan coba lagi.");
+        alert("Pendaftaran gagal. Silakan coba lagi."+ response);
       }
     },
     error: function () {
