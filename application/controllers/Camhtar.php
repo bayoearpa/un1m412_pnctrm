@@ -65,6 +65,43 @@ class Camhtar extends CI_Controller {
             }
         }
 	}
+	public function jurusan($id)
+	{
+		# code...
+		switch ($id) {
+
+				// registrasi
+					case '1':
+						$pick['jurusan'] = "D3 KETATALAKSANAAN PELAYARAN NIAGA DAN KEPELABUHAN";
+					break;
+					case '2' :
+						$pick['jurusan'] = "D3 TEKNIKA";
+					break;
+					case '3' :
+						$pick['jurusan'] = "D3 NAUTIKA";
+					break;
+					case '4' :
+						$pick['jurusan'] = "S1 TRANSPORTASI";
+					break;
+					case '5':
+						$pick['jurusan'] = "S1 TRANSPORTASI ( LINTAS JALUR )";
+					break;
+					case '6':
+						$pick['jurusan'] = "S1 TEKNIK MESIN";
+					break;
+					case '7':
+						$pick['jurusan'] = "S1 TEKNIK TRANSPORTASI LAUT";
+					break;
+					case '8':
+						$pick['jurusan'] = "S1 TEKNIK KESELAMATAN";
+					break;
+					case '9':
+						$pick['jurusan'] = "S1 PERDAGANGAN INTERNASIONAL";
+					break;
+					
+				}
+				return $pick;
+	}
 
 }
 
