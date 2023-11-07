@@ -9,7 +9,7 @@
             <!-- /.box-header -->
             <div class="box-body">
                 <?php 
-                if ($this->session->userdata('nama')=="kelastransfer") {
+                if ($this->session->userdata('jalur')=="kelastransfer") {
                   # code... 
                   //form biodata untuk kelas transfer ?>
                 <div class="alert alert-info alert-dismissible">
@@ -17,25 +17,28 @@
                     <h4><i class="icon fa fa-warning"></i> Harap diperhatikan!</h4>
                     Silakan mengisi form biodata di bawah ini dan pastikan semua terisi dengan benar, karena setelah proses validasi data tidak dapat di perbaiki. terima kasih.
                 </div>
+                <?php foreach ($catar as $key) {
+                  # code... ?>
+                
                   <form action="<?php echo base_url() ?>cetakRegistrasi" name="form1" id="form1" method="post" enctype="multipart/form-data">
                   <p>Jalur : Kelas Transfer</p> 
                 <div class="form-group">
                   <label for="exampleInputEmail1">Nama</label>
-                  <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukan Nama Anda">
+                  <input type="text" class="form-control" id="nama" name="nama" value="<?php echo $this->session->userdata('nama') ?>" placeholder="Masukan Nama Anda">
                 </div>
                  <div class="form-group">
                   <label for="exampleInputEmail1">NIK (Nomor Induk Kependudukan)</label>
-                  <input type="text" class="form-control" id="nik" name="nik" placeholder="Masukan NIK Anda">
+                  <input type="text" class="form-control" id="nik" name="nik" value="<?php echo $key->nik?>" placeholder="Masukan NIK Anda">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Tempat Lahir</label>
-                  <input type="text" class="form-control" id="tl" name="tl" placeholder="Masukan Tempat Lahir Anda">
+                  <input type="text" class="form-control" id="tl" name="tl" value="<?php echo $key->tl?>"  placeholder="Masukan Tempat Lahir Anda">
                 </div>
 
                 <div class="form-group">
                       <label for="exampleInputEmail1">Tanggal Lahir (yyyy-mm-dd / tahun-bulan-hari)</label>
                        <div class="input-group date" data-provide="datepicker">
-                          <input type="text" class="form-control" data-date-format="yyyy-mm-dd" data-link-format="yyyy-mm-dd" name="tgl_l" id="tgl_l">
+                          <input type="text" class="form-control" data-date-format="yyyy-mm-dd" data-link-format="yyyy-mm-dd" name="tgl_l" id="tgl_l" value="<?php echo $key->tgl_l?>">
                           <div class="input-group-addon">
                               <span class="glyphicon glyphicon-th"></span>
                           </div>
@@ -44,7 +47,7 @@
                  <div class="form-group">
                   <label>Agama</label>
                   <select class="form-control" name="agama" id="agama">
-                    <option> </option>
+                    <option value="<?php echo $key->agama?>"><?php echo $key->agama ?> </option>
                     <option value="Islam">Islam</option>
                     <option value="Kristen">Kristen</option>
                     <option value="Katolik">Katolik</option>
@@ -57,37 +60,37 @@
                 <label for="exampleInputEmail1">Jenis Kelamin</label>
                   <div class="radio">
                     <label>
-                      <input type="radio" name="jk" id="jk" value="Pria">
+                      <input type="radio" name="jk" id="jk" value="Pria" <?php echo ($key->jk == "Pria") ? 'checked' : ''; ?>>
                       Pria
                     </label>
                   </div>
                   <div class="radio">
                     <label>
-                      <input type="radio" name="jk" id="jk" value="Wanita">
+                      <input type="radio" name="jk" id="jk" value="Wanita" <?php echo ($key->jk == "Wanita") ? 'checked' : ''; ?>>
                       Wanita
                     </label>
                   </div>
                 </div>
                  <!-- <div class="form-group"> -->
                   <!-- <label for="exampleInputEmail1">Berat Badan</label> -->
-                  <input type="hidden" class="form-control" id="bb" name="bb" placeholder="Masukan Berat Badan Anda (Masukkan dalam Kg)" value="0">
+                  <input type="hidden" class="form-control" id="bb" name="bb" placeholder="Masukan Berat Badan Anda (Masukkan dalam Kg)" value="<?php echo $key->bb?>">
                 <!-- </div> -->
                  <!-- <div class="form-group"> -->
                   <!-- <label for="exampleInputEmail1">Tinggi Badan</label> -->
-                  <input type="hidden" class="form-control" id="tb" name="tb" placeholder="Masukan Tinggi Badan Anda (Masukkan dalam Cm)" value="0">
+                  <input type="hidden" class="form-control" id="tb" name="tb" placeholder="Masukan Tinggi Badan Anda (Masukkan dalam Cm)" value="<?php echo $key->tb?>">
                 <!-- </div> -->
                 <div class="form-group">
                   <label for="exampleInputEmail1">Email</label>
-                  <input type="text" class="form-control" id="email" name="email" placeholder="Masukkan Email anda)">
+                  <input type="text" class="form-control" id="email" name="email" value="<?php echo $key->email?>" placeholder="Masukkan Email anda)">
                 </div>
                 <div class="form-group">
                   <label>Alamat</label>
-                  <textarea class="form-control" name="alamat" id="alamat" rows="3" placeholder="Masukkan Alamat Anda"></textarea>
+                  <textarea class="form-control" name="alamat" id="alamat" rows="3" placeholder="Masukkan Alamat Anda"><?php echo $key->alamat ?></textarea>
                 </div>
                <div class="form-group">
                   <label for="exampleInputEmail1">Provinsi</label>
                   <select class="form-control" name="provinsi" id="provinsi" class="provinsi">
-                  <option> </option>
+                  <option value="<?php echo $key->provinsi?>"> </option>
                   <?php foreach ($provinsi as $p) {
                     # code...
                   ?>
@@ -98,12 +101,12 @@
                 <div class="form-group">
                   <label for="exampleInputEmail1">Kota / Kabupaten</label>
                   <select class="form-control ktkb" name="ktkb" id="ktkb">
-                  <option> </option>
+                  <option value="<?php echo $key->ktkb?>"> </option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Telp. / Hp</label>
-                  <input type="text" class="form-control" id="telp" name="telp" placeholder="Masukan No. Telepon atau Hp Anda">
+                  <input type="text" class="form-control" id="telp" name="telp" value="<?php echo $key->telp?>" placeholder="Masukan No. Telepon atau Hp Anda">
                 </div>
                 <!-- <div class="form-group">
                   <label>Kategori Sekolah</label>
@@ -124,41 +127,41 @@
                       <option value="<?php //echo $j->nama_jurusan; ?>"><?php //echo $j->nama_jurusan; ?></option>
                     <?php //endforeach ?>
                   </select> -->
-                  <input type="text" class="form-control" id="prodi_lama" name="prodi_lama" placeholder="Masukan Prodi lama anda">
+                  <input type="text" class="form-control" id="prodi_lama" name="prodi_lama" value="<?php echo $key->prodi_lama?>" placeholder="Masukan Prodi lama anda">
                 </div>
                 <!-- /.form-group -->
                 <div class="form-group">
                   <label for="exampleInputEmail1">Tahun Lulus</label>
-                  <input type="text" class="form-control" id="thn_lulus" name="thn_lulus" placeholder="Masukan Tahun Lulus Anda">
+                  <input type="text" class="form-control" id="thn_lulus" name="thn_lulus" placeholder="Masukan Tahun Lulus Anda" value="<?php echo $key->thn_lulus?>">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Asal Pergurunan Tinggi sebelumnya</label>
-                  <input type="text" class="form-control" id="asek" name="asek" placeholder="Masukan Pergurunan Tinggi sebelumnya">
+                  <input type="text" class="form-control" id="asek" name="asek" placeholder="Masukan Pergurunan Tinggi sebelumnya" value="<?php echo $key->asek?>">
                 </div>
                 <div class="form-group">
                   <label>Alamat Pergurunan Tinggi Sebelumnya</label>
-                  <textarea class="form-control" name="alamat_sek" id="alamat_sek" rows="3" placeholder="Masukkan Alamat Pergurunan Tinggi sebelumnya"></textarea>
+                  <textarea class="form-control" name="alamat_sek" id="alamat_sek" rows="3" placeholder="Masukkan Alamat Pergurunan Tinggi sebelumnya" value="<?php echo $key->alamat_sek?>"></textarea>
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Nama Ayah Kandung</label>
-                  <input type="text" class="form-control" id="nama_a" name="nama_a" placeholder="Masukan Nama Ayah Anda">
+                  <input type="text" class="form-control" id="nama_a" name="nama_a" placeholder="Masukan Nama Ayah Anda" value="<?php echo $key->nama_a?>">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Nama Ibu Kandung</label>
-                  <input type="text" class="form-control" id="nama_i" name="nama_i" placeholder="Masukan Nama Ibu Anda">
+                  <input type="text" class="form-control" id="nama_i" name="nama_i" placeholder="Masukan Nama Ibu Anda" value="<?php echo $key->nama_i?>">
                 </div>
                 <div class="form-group">
                   <label>Alamat Orang Tua / Wali</label>
-                  <textarea class="form-control" name="alamat_ortu" id="alamat_ortu" rows="3" placeholder="Masukkan Alamat Orang Tua atau Wali Anda"></textarea>
+                  <textarea class="form-control" name="alamat_ortu" id="alamat_ortu" rows="3" placeholder="Masukkan Alamat Orang Tua atau Wali Anda"><?php echo $key->alamat_ortu; ?></textarea>
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Telp. Orang Tua / Wali</label>
-                  <input type="text" class="form-control" id="telp_ortu" name="telp_ortu" placeholder="Masukan No. Telepon Orang Tua atau Wali Anda">
+                  <input type="text" class="form-control" id="telp_ortu" name="telp_ortu" placeholder="Masukan No. Telepon Orang Tua atau Wali Anda" value="<?php echo $key->telp_ortu?>">
                 </div>
                 <div class="form-group">
                   <label>Informasi (mendapatkan informasi tentang UNIMAR "AMNI" Semarang)</label>
                   <select class="form-control" name="informasi" id="informasi">
-                    <option> </option>
+                    <option value="<?php echo $key->informasi?>"> </option>
                     <option value="1">Senior / Kakak kelas</option>
                     <option value="2">Sosial Media</option>
                     <option value="3">Keluarga / Saudara / teman</option>
@@ -171,7 +174,7 @@
                 <div class="form-group">
                   <label>Prodi Pilihan 1</label>
                   <select class="form-control" name="prodi" id="prodi">
-                    <option> </option>
+                    <option value="<?php echo $key->prodi?>"> </option>
                    <!--  <option value="1">D3 Ketatalaksanaan Pelayaran Niaga dan Kepelabuhanan</option>
                     <option value="2">D3 Teknika</option>
                     <option value="3">D3 Nautika</option> -->
@@ -185,7 +188,7 @@
                  <div class="form-group">
                   <label>Prodi Pilihan 2</label>
                   <select class="form-control" name="prodi2" id="prodi2">
-                    <option> </option>
+                    <option value="<?php echo $key->prodi2?>"> </option>
                    <!--  <option value="1">D3 Ketatalaksanaan Pelayaran Niaga dan Kepelabuhanan</option>
                     <option value="2">D3 Teknika</option>
                     <option value="3">D3 Nautika</option> -->
@@ -199,7 +202,7 @@
                 <div class="form-group">
                   <label>Periode</label>
                   <select class="form-control" name="gelombang" id="gelombang">
-                    <option> </option>
+                    <option value="<?php echo $key->gelombang?>"> </option>
                     <option value="1">Gelombang 1</option>
                     <!-- <option value="2">Gelombang 2</option> -->
                     <!-- <option value="3">Gelombang 3</option> -->
@@ -232,6 +235,7 @@
                
                 <button type="submit" class="btn btn-primary">Simpan dan Cetak</button>
                 </form>
+                <?php } ?>
 
                 <?php }else{  ///////////////////// form reguler/////////////////////?>
                    <?php echo validation_errors(); 
@@ -242,24 +246,26 @@
                     <h4><i class="icon fa fa-warning"></i> Harap diperhatikan!</h4>
                     Silakan mengisi form biodata di bawah ini dan pastikan semua terisi dengan benar, karena setelah proses validasi data tidak dapat di perbaiki. terima kasih.
                 </div>
+                <?php foreach ($catar as $key) {
+                  # code... ?>
               <form action="<?php echo base_url() ?>cetakRegistrasi" name="form1" id="form1" method="post" enctype="multipart/form-data"> 
                 <div class="form-group">
                   <label for="exampleInputEmail1">Nama</label>
-                  <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukan Nama Anda">
+                  <input type="text" class="form-control" id="nama" name="nama" value="<?php echo $key->nama?>" placeholder="Masukan Nama Anda">
                 </div>
                  <div class="form-group">
                   <label for="exampleInputEmail1">NIK (Nomor Induk Kependudukan)</label>
-                  <input type="text" class="form-control" id="nik" name="nik" placeholder="Masukan NIK Anda">
+                  <input type="text" class="form-control" id="nik" name="nik" value="<?php echo $key->nik?>" placeholder="Masukan NIK Anda">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Tempat Lahir</label>
-                  <input type="text" class="form-control" id="tl" name="tl" placeholder="Masukan Tempat Lahir Anda">
+                  <input type="text" class="form-control" id="tl" name="tl" placeholder="Masukan Tempat Lahir Anda" value="<?php echo $key->tl?>">
                 </div>
 
                 <div class="form-group">
                       <label for="exampleInputEmail1">Tanggal Lahir (yyyy-mm-dd / tahun-bulan-hari)</label>
                        <div class="input-group date" data-provide="datepicker">
-                          <input type="text" class="form-control" data-date-format="yyyy-mm-dd" data-link-format="yyyy-mm-dd" name="tgl_l" id="tgl_l">
+                          <input type="text" class="form-control" data-date-format="yyyy-mm-dd" data-link-format="yyyy-mm-dd" name="tgl_l" id="tgl_l" value="<?php echo $key->tgl_l?>">
                           <div class="input-group-addon">
                               <span class="glyphicon glyphicon-th"></span>
                           </div>
@@ -268,7 +274,7 @@
                  <div class="form-group">
                   <label>Agama</label>
                   <select class="form-control" name="agama" id="agama">
-                    <option> </option>
+                    <option value="<?php echo $key->agama?>"> </option>
                     <option value="Islam">Islam</option>
                     <option value="Kristen">Kristen</option>
                     <option value="Katolik">Katolik</option>
@@ -281,37 +287,37 @@
                 <label for="exampleInputEmail1">Jenis Kelamin</label>
                   <div class="radio">
                     <label>
-                      <input type="radio" name="jk" id="jk" value="Pria">
+                      <input type="radio" name="jk" id="jk" value="Pria" <?php echo ($key->jk == "Pria") ? 'checked' : ''; ?>>
                       Pria
                     </label>
                   </div>
                   <div class="radio">
                     <label>
-                      <input type="radio" name="jk" id="jk" value="Wanita">
+                      <input type="radio" name="jk" id="jk" value="Wanita" <?php echo ($key->jk == "Wanita") ? 'checked' : ''; ?>>
                       Wanita
                     </label>
                   </div>
                 </div>
                  <div class="form-group">
                   <label for="exampleInputEmail1">Berat Badan</label>
-                  <input type="text" class="form-control" id="bb" name="bb" placeholder="Masukan Berat Badan Anda (Masukkan dalam Kg)">
+                  <input type="text" class="form-control" id="bb" name="bb" placeholder="Masukan Berat Badan Anda (Masukkan dalam Kg)" value="<?php echo $key->bb?>" >
                 </div>
                  <div class="form-group">
                   <label for="exampleInputEmail1">Tinggi Badan</label>
-                  <input type="text" class="form-control" id="tb" name="tb" placeholder="Masukan Tinggi Badan Anda (Masukkan dalam Cm)">
+                  <input type="text" class="form-control" id="tb" name="tb" placeholder="Masukan Tinggi Badan Anda (Masukkan dalam Cm)" value="<?php echo $key->tb?>">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Email</label>
-                  <input type="text" class="form-control" id="email" name="email" placeholder="Masukkan Email anda)">
+                  <input type="text" class="form-control" id="email" name="email" placeholder="Masukkan Email anda)" value="<?php echo $key->email?>">
                 </div>
                 <div class="form-group">
                   <label>Alamat</label>
-                  <textarea class="form-control" name="alamat" id="alamat" rows="3" placeholder="Masukkan Alamat Anda"></textarea>
+                  <textarea class="form-control" name="alamat" id="alamat" rows="3" placeholder="Masukkan Alamat Anda"><?php echo $key->alamat; ?></textarea>
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Provinsi</label>
                   <select class="form-control" name="provinsi" id="provinsi" class="provinsi">
-                  <option> </option>
+                  <option value="<?php echo $key->provinsi?>"> </option>
                   <?php foreach ($provinsi as $p) {
                     # code...
                   ?>
@@ -322,17 +328,17 @@
                 <div class="form-group">
                   <label for="exampleInputEmail1">Kota / Kabupaten</label>
                   <select class="form-control ktkb" name="ktkb" id="ktkb">
-                  <option> </option>
+                  <option value="<?php echo $key->ktkb?>"> </option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Telp. / Hp</label>
-                  <input type="text" class="form-control" id="telp" name="telp" placeholder="Masukan No. Telepon atau Hp Anda">
+                  <input type="text" class="form-control" id="telp" name="telp" placeholder="Masukan No. Telepon atau Hp Anda" value="<?php echo $key->telp?>">
                 </div>
                 <div class="form-group">
                   <label>Kategori Sekolah</label>
                   <select class="form-control" name="kategori_sek" id="kategori_sek">
-                    <option> </option>
+                    <option value="<?php echo $key->kategori_sek?>"> </option>
                     <option value="SMA">SMA</option>
                     <option value="SMK">SMK</option>
                     <option value="MA">MA</option>
@@ -342,7 +348,7 @@
                 <div class="form-group">
                   <label>Jurusan SLTA/SMK</label>
                   <select class="form-control select2" id="prodi_lama" name="prodi_lama" style="width: 100%;">
-                    <option> </option>
+                    <option value="<?php echo $key->prodi_lama?>"> </option>
                     <?php foreach ($jurusan as $j): ?>
                       <option value="<?php echo $j->nama_jurusan; ?>"><?php echo $j->nama_jurusan; ?></option>
                     <?php endforeach ?>
@@ -351,36 +357,36 @@
                 <!-- /.form-group -->
                 <div class="form-group">
                   <label for="exampleInputEmail1">Tahun Lulus</label>
-                  <input type="text" class="form-control" id="thn_lulus" name="thn_lulus" placeholder="Masukan Tahun Lulus Anda">
+                  <input type="text" class="form-control" id="thn_lulus" name="thn_lulus" placeholder="Masukan Tahun Lulus Anda" value="<?php echo $key->thn_lulus?>">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Asal Sekolah SLTA/SMK</label>
-                  <input type="text" class="form-control" id="asek" name="asek" placeholder="Masukan Asal Sekolah Anda">
+                  <input type="text" class="form-control" id="asek" name="asek" placeholder="Masukan Asal Sekolah Anda" value="<?php echo $key->asek?>">
                 </div>
                 <div class="form-group">
                   <label>Alamat Sekolah SLTA/SMK</label>
-                  <textarea class="form-control" name="alamat_sek" id="alamat_sek" rows="3" placeholder="Masukkan Alamat Sekolah Anda"></textarea>
+                  <textarea class="form-control" name="alamat_sek" id="alamat_sek" rows="3" placeholder="Masukkan Alamat Sekolah Anda"><?php echo $key->alamat_sek; ?></textarea>
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Nama Ayah Kandung</label>
-                  <input type="text" class="form-control" id="nama_a" name="nama_a" placeholder="Masukan Nama Ayah Anda">
+                  <input type="text" class="form-control" id="nama_a" name="nama_a" placeholder="Masukan Nama Ayah Anda" value="<?php echo $key->nama_a?>">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Nama Ibu Kandung</label>
-                  <input type="text" class="form-control" id="nama_i" name="nama_i" placeholder="Masukan Nama Ibu Anda">
+                  <input type="text" class="form-control" id="nama_i" name="nama_i" placeholder="Masukan Nama Ibu Anda" value="<?php echo $key->nama_i?>">
                 </div>
                 <div class="form-group">
                   <label>Alamat Orang Tua / Wali</label>
-                  <textarea class="form-control" name="alamat_ortu" id="alamat_ortu" rows="3" placeholder="Masukkan Alamat Orang Tua atau Wali Anda"></textarea>
+                  <textarea class="form-control" name="alamat_ortu" id="alamat_ortu" rows="3" placeholder="Masukkan Alamat Orang Tua atau Wali Anda"><?php echo $key->alamat_ortu; ?></textarea>
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Telp. Orang Tua / Wali</label>
-                  <input type="text" class="form-control" id="telp_ortu" name="telp_ortu" placeholder="Masukan No. Telepon Orang Tua atau Wali Anda">
+                  <input type="text" class="form-control" id="telp_ortu" name="telp_ortu" placeholder="Masukan No. Telepon Orang Tua atau Wali Anda" value="<?php echo $key->telp_ortu?>">
                 </div>
                 <div class="form-group">
                   <label>Informasi (mendapatkan informasi tentang UNIMAR AMNI Semarang)</label>
                   <select class="form-control" name="informasi" id="informasi">
-                    <option> </option>
+                    <option value="<?php echo $key->informasi?>"> </option>
                     <option value="1">Senior / Kakak kelas</option>
                     <option value="2">Sosial Media</option>
                     <option value="3">Keluarga / Saudara / teman</option>
@@ -393,7 +399,7 @@
                 <div class="form-group">
                   <label>Prodi Pilihan 1</label>
                   <select class="form-control" name="prodi" id="prodi">
-                    <option> </option>
+                    <option value="<?php echo $key->prodi?>"> </option>
                     <option value="1">D3 Ketatalaksanaan Pelayaran Niaga dan Kepelabuhanan</option>
                     <option value="2">D3 Teknika</option>
                     <option value="3">D3 Nautika</option>
@@ -407,7 +413,7 @@
                  <div class="form-group">
                   <label>Prodi Pilihan 2</label>
                   <select class="form-control" name="prodi2" id="prodi2">
-                    <option> </option>
+                    <option value="<?php echo $key->prodi2?>"> </option>
                     <option value="1">D3 Ketatalaksanaan Pelayaran Niaga dan Kepelabuhanan</option>
                     <option value="2">D3 Teknika</option>
                     <option value="3">D3 Nautika</option>
@@ -421,7 +427,7 @@
                 <div class="form-group">
                   <label>Periode</label>
                   <select class="form-control" name="gelombang" id="gelombang">
-                    <option> </option>
+                    <option value="<?php echo $key->gelombang?>"> </option>
                     <option value="1">Gelombang 1</option>
                    <!-- <option value="2">Gelombang 2</option> -->
                     <!-- <option value="3">Gelombang 3</option> -->
@@ -445,7 +451,7 @@
                
                 <button type="submit" class="btn btn-primary">Simpan</button>
                 </form>
-              <?php } ?>
+              <?php }} ?>
 
             </div>
             <!-- /.box-body -->
