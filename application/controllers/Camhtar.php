@@ -293,7 +293,7 @@ class Camhtar extends CI_Controller {
 					);
 				
 				
-				$proses_insert = $this->m_registrasi->update_data($data,'tbl_catar_2024');
+				$proses_insert = $this->m_registrasi->update_data($where,$data,'tbl_catar_2024');
 				// $lastid = $this->db->insert_id();
 				// $where = array('no' => $lastid);
 				// $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
