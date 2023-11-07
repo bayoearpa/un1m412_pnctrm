@@ -19,7 +19,9 @@
                 </div>
                 <?php foreach ($catar as $key) {
                   # code... ?>
-                
+                 <?php echo validation_errors(); 
+            echo $this->session->flashdata('success');
+            echo $this->session->flashdata('error'); ?>
                   <form action="<?php echo base_url() ?>cetakRegistrasi" name="form1" id="form1" method="post" enctype="multipart/form-data">
                   <p>Jalur : Kelas Transfer</p> 
                 <div class="form-group">

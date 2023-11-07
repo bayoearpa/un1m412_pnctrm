@@ -85,6 +85,7 @@ $route['daftar'] = 'camhtar/daftar';
 $route['pendaftaran'] = 'camhtar/daftarp';
 $route['cek'] = 'camhtar/cek_user';
 $route['biodata'] = 'camhtar/biodata';
+$route['pembayaran'] = 'camhtar/pembayaran';
 
 
 // $route['cetakRegistrasi'] = 'welcome/insertReg';
