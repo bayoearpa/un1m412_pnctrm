@@ -152,8 +152,8 @@ class Camhtar extends CI_Controller {
 
 		$this->load->view('camahatar/header',$data);
         $this->load->view('camahatar/biodata',$data);
-        $this->load->view('camahatar/biodata_js');
         $this->load->view('camahatar/footer');
+        $this->load->view('camahatar/biodata_js');
 
 	}
 	 public function getTglSelAktif(){
