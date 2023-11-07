@@ -42,7 +42,7 @@ class Camhtar extends CI_Controller {
 		if ($this->input->post()) {
             $nama = $this->input->post('nama');
             $username = $this->input->post('username');
-            $password = $this->input->post('password');
+            $password = md5($this->input->post('password'));
             $jalur = $this->input->post('jalur');
 
             // Lakukan validasi data yang diterima jika diperlukan
