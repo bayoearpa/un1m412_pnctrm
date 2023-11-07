@@ -98,7 +98,7 @@ $route['pembayaran'] = 'camhtar/pembayaran';
 // $route['download/(:num)'] = 'welcome/download/$1';
 // $route['voucher/(:num)'] = 'welcome/voucher/$1';
 
-// $route['getkabkota'] = 'welcome/get_kabkota';
+$route['getkabkota'] = 'camhtar/get_kabkota';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

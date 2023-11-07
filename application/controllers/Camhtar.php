@@ -156,6 +156,11 @@ class Camhtar extends CI_Controller {
         $this->load->view('camahatar/biodata_js');
 
 	}
+	public function get_kabkota(){
+        $id=$this->input->post('id');
+        $data=$this->m_registrasi->get_kabkota($id);
+        echo json_encode($data);
+    }
 	 public function getTglSelAktif(){
 	    $whereta = array(
 			'aktif' => '1'		
