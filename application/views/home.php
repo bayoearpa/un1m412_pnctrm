@@ -154,7 +154,7 @@
     <!-- Portfolio Grid Section -->
     <section class="bg-primary text-white mb-0 portfolio" id="portfolio">
       <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">Pendaftaran</h2><br>
+        <h2 class="text-center text-uppercase text-secondary mb-0">Program Studi</h2><br>
         <!-- <hr class="star-dark mb-5"> -->
         <div class="row">
           <div class="col-md-6 col-lg-4">
