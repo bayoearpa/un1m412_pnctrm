@@ -18,6 +18,37 @@ class Camhtar extends CI_Controller {
 	{
 		$this->load->view('camahatar/login');
 	}
+	public function loginp()
+	{
+		# code...
+		$username = $this->input->post('username');
+		$password = $this->input->post('password');
+		$this->form_validation->set_rules('username','Username','trim|required');
+		$this->form_validation->set_rules('password','Password','trim|required');
+		if($this->form_validation->run() != false){
+			$where = array(
+				'username' => $username,
+				'password' => md5($password)			
+			);
+			$data = $this->m_mahasiswa->get_data($where, 'tbl_catar_2024');
+			$d = $this->m_mahasiswa->get_data($where, 'tbl_catar_2024')->row();
+			$cek = $data->num_rows();
+			if($cek > 0){
+				$session = array(
+					'username'=> $d->username,
+					'nama'=> $d->nama,
+					'jalur'=> $d->jalur,
+					'status' => 'login'
+				);
+				$this->session->set_userdata($session);
+				redirect(base_url().'camahatar/home');
+			}else{
+				redirect(base_url().'camahatar?pesan=gagal');			
+			}
+		}else{
+			redirect(base_url().'masuk');
+		}
+	}
 	public function daftar()
 	{
 		$this->load->view('camahatar/daftar');
@@ -59,9 +90,9 @@ class Camhtar extends CI_Controller {
             $insert_result = $this->m_registrasi->input_data($data,'tbl_catar_2024');
 
             if ($insert_result) {
-                echo "success";
+               echo "error";
             } else {
-                echo "error";
+                 echo "success";
             }
         }
 	}
