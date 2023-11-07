@@ -16,7 +16,7 @@
 function isUsernameAvailable(username) {
   $.ajax({
     type: "POST",
-    url: "<?php echo base_url() ?>cek ?>", // Gantilah dengan URL yang sesuai di sisi server
+    url: "<?php echo base_url() ?>cek?>", // Gantilah dengan URL yang sesuai di sisi server
     data: { username: username },
     success: function (response) {
       if (response === "available") {
