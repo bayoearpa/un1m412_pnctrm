@@ -12,6 +12,11 @@
                 if ($this->session->userdata('nama')=="kelastransfer") {
                   # code... 
                   //form biodata untuk kelas transfer ?>
+                <div class="alert alert-info alert-dismissible">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                    <h4><i class="icon fa fa-warning"></i> Harap diperhatikan!</h4>
+                    Silakan mengisi form biodata di bawah ini dan pastikan semua terisi dengan benar, karena setelah proses validasi data tidak dapat di perbaiki. terima kasih.
+                </div>
                   <form action="<?php echo base_url() ?>cetakRegistrasi" name="form1" id="form1" method="post" enctype="multipart/form-data">
                   <p>Jalur : Kelas Transfer</p> 
                 <div class="form-group">
@@ -232,6 +237,11 @@
                    <?php echo validation_errors(); 
             echo $this->session->flashdata('success');
             echo $this->session->flashdata('error'); ?>
+                            <div class="alert alert-info alert-dismissible">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                    <h4><i class="icon fa fa-warning"></i> Harap diperhatikan!</h4>
+                    Silakan mengisi form biodata di bawah ini dan pastikan semua terisi dengan benar, karena setelah proses validasi data tidak dapat di perbaiki. terima kasih.
+                </div>
               <form action="<?php echo base_url() ?>cetakRegistrasi" name="form1" id="form1" method="post" enctype="multipart/form-data"> 
                 <div class="form-group">
                   <label for="exampleInputEmail1">Nama</label>

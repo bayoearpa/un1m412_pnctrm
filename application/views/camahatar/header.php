@@ -125,8 +125,8 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MENU UTAMA</li>
-        <li><a href="<?php echo base_url() ?>mahasiswa/home"><i class="fa fa-home"></i><span>Biodata</span></a></li>
-        <li><a href="<?php echo base_url() ?>mahasiswa/home"><i class="fa fa-home"></i><span>Pembayaran</span></a></li>
+        <li><a href="<?php echo base_url() ?>mahasiswa/home"><i class="fa fa-user"></i><span>Biodata</span></a></li>
+        <li><a href="<?php echo base_url() ?>mahasiswa/home"><i class="fa fa-money"></i><span>Pembayaran</span></a></li>
          <li><a href="#"><i class="fa fa-home"></i><span>Pengumuman</span></a></li>
       </ul>
     </section>
