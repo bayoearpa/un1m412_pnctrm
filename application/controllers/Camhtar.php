@@ -155,6 +155,239 @@ class Camhtar extends CI_Controller {
         $this->load->view('camahatar/footer');
 
 	}
+	public function insertReg()
+	{
+		# code...
+		$nama = $this->input->post('nama');
+		$nik = $this->input->post('nik');
+		$namafil = addslashes($nama);
+		$tl = $this->input->post('tl');
+		$tgl_l = $this->input->post('tgl_l');
+		$agama = $this->input->post('agama');
+		$jk = $this->input->post('jk');
+		$bb = $this->input->post('bb');
+		$tb = $this->input->post('tb');
+		$email = $this->input->post('email');
+		$alamat = $this->input->post('alamat');
+		$ktkb = $this->input->post('ktkb');
+		$provinsi = $this->input->post('provinsi');
+		$telp = $this->input->post('telp');
+		$kategori_sek = $this->input->post('kategori_sek');
+		$prodi_lama = $this->input->post('prodi_lama');
+		$thn_lulus = $this->input->post('thn_lulus');
+		$asek = $this->input->post('asek');
+		$alamat_sek = $this->input->post('alamat_sek');
+		$nama_a = $this->input->post('nama_a');
+		$nama_afill = addslashes($nama_a);
+		$nama_i = $this->input->post('nama_i');
+		$nama_ifill = addslashes($nama_i);
+		$alamat_ortu = $this->input->post('alamat_ortu');
+		$telp_ortu = $this->input->post('telp_ortu');
+		$informasi = $this->input->post('informasi');
+		$prodi = $this->input->post('prodi');
+		$prodi2 = $this->input->post('prodi2');
+		$gelombang = $this->input->post('gelombang');
+		$kelas = $this->input->post('kelas');
+		$ref_radio = $this->input->post('ref_radio');
+		$ref = $this->input->post('ref');
+		$thn_pel="2023";
+		$periode=date('n');
+ 		$id_tgl_seleksi = $this->getTglSelAktif();
+		
+		
+		// $namagabungan1 = judul_seo("ijasah".$nama." ".$prodi." ".$tgl_l);
+		// $namagabungan2 = judul_seo("sk".$nama." ".$prodi." ".$tgl_l);
+		// $nmfile1 = $namagabungan1.".pdf";
+		// $nmfile2 = $namagabungan2.".pdf";
+        #upload file1
+  //       $config['upload_path'] = FCPATH.'assets/upload';
+		// $config['allowed_types'] = 'pdf';
+		// $config['max_size']  = '5024';
+		// $config['max_width']  = '1024';
+		// $config['max_height']  = '768';
+
+     //    if($_FILES["ijasah"]["name"]){
+     //    $config["file_name"] = $nmfile1;
+     //    $this->load->library('upload', $config);
+     //    $abstrak = $this->upload->do_upload('ijasah');
+     //    if (!$abstrak){
+     //        $error = array('error' => $this->upload->display_errors());
+     //        // $this->session->set_flashdata("error", ".");
+     //    }else{
+     //        $abstrak = $this->upload->data("file_name");
+     //        $data = array('upload_data' => $this->upload->data());
+     //        // $this->session->set_flashdata("success", ".");
+     //    	}
+        	
+    	// }
+
+    	// if($_FILES["sk"]["name"]){
+        // $config["file_name"] = $nmfile2;
+        // $this->upload->initialize($config);// untuk upload set nama file kedua
+        // $biaya = $this->upload->do_upload('sk');
+        // if (!$biaya){
+        //     $error = array('error' => $this->upload->display_errors());
+        //     // $this->session->set_flashdata("error", ".");
+        // }else{
+        //     $biaya = $this->upload->data("file_name");
+        //     $data = array('upload_data' => $this->upload->data());
+        //     // $this->session->set_flashdata("success", ".");
+        // 	}
+    	// }
+
+ 		////////////////cek referral//////////////////////////////////////
+ 		if ($ref_radio == "1") {
+ 			# code...
+ 			$where = array('ref' => $ref);
+			$cek_ref = $this->m_registrasi->get_data($where,'tbl_ref')->num_rows();
+			if ($cek_ref > 0) {
+				# code...
+				//////////////// proses referral//////////////////////////////////////
+
+				$data = array(
+					'nama' => $namafil,
+					'nik' => $nik,
+					'tl' => $tl,
+					'tgl_l' => $tgl_l,
+					'agama' => $agama,
+					'jk' => $jk,
+					'alamat'=> $alamat,
+					'ktkb' => $ktkb,
+					'provinsi' => $provinsi,
+					'telp' => $telp,
+					'kategori_sek' => $kategori_sek,
+					'prodi_lama' => $prodi_lama,
+					'thn_lulus' => $thn_lulus,
+					'asek' => $asek,
+					'alamat_sek' => $alamat_sek,
+					'nama_a' => $nama_afill,
+					'nama_i' => $nama_ifill,
+					'alamat_ortu' => $alamat_ortu,
+					'telp_ortu' => $telp_ortu,
+					'informasi' => $informasi,
+					'prodi' => $prodi,
+					'gelombang' => $gelombang,
+					'periode' => $periode,
+					// 'ijasah' => $nmfile1,
+					// 'sk' => $nmfile2,
+					'thn_pel' => $thn_pel,
+					'bb' => $bb,
+					'tb' => $tb,
+					'email' => $email,
+					'prodi2' => $prodi2,
+					'kelas' => $kelas,
+					'ref' => $ref,
+					'id_tgl_seleksi' => $id_tgl_seleksi
+					);
+				
+				
+				$this->m_registrasi->input_data($data,'tbl_catar_2023');
+				$lastid = $this->db->insert_id();
+				$where = array('no' => $lastid);
+				$data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
+				foreach ($data['catar'] as $key) {
+					# code...
+					$po = $key->ktkb;
+					$where_prov = array('tbl_kabkota.id_wil' => $po);
+				}
+				$provinsi_get = $this->m_registrasi->get_data_wilayah($where_prov)->result();
+				foreach ($provinsi_get as $keyp) {
+					# code...
+					$data['kabkota'] = $keyp->kabkota;
+					$data['provinsi'] = $keyp->provinsi;
+				}
+				$this->load->view('cetakReg',$data);
+
+				//pdf
+				$pdfFilePath="cetak_registrasi_".$namafil."_2023.pdf";
+				$html=$this->load->view('cetakReg',$data, TRUE);
+				$pdf = $this->m_pdf->load();
+		 
+		        $pdf->AddPage('P');
+		        $pdf->WriteHTML($html);
+		        $pdf->Output($pdfFilePath, "D");
+		        exit();
+				// redirect("welcome/cetakReg");
+
+				//////////////// .proses referral//////////////////////////////////////
+			}else{
+				$this->session->set_flashdata('error', "<b>Error, Kode Refferal ini tidak terdaftar</b>");
+				$this->load->view('registrasi');
+			}
+
+ 		}else{
+ 			//////////////// proses biasa//////////////////////////////////////
+
+				$data = array(
+					'nama' => $namafil,
+					'nik' => $nik,
+					'tl' => $tl,
+					'tgl_l' => $tgl_l,
+					'agama' => $agama,
+					'jk' => $jk,
+					'alamat'=> $alamat,
+					'ktkb' => $ktkb,
+					'provinsi' => $provinsi,
+					'telp' => $telp,
+					'kategori_sek' => $kategori_sek,
+					'prodi_lama' => $prodi_lama,
+					'thn_lulus' => $thn_lulus,
+					'asek' => $asek,
+					'alamat_sek' => $alamat_sek,
+					'nama_a' => $nama_afill,
+					'nama_i' => $nama_ifill,
+					'alamat_ortu' => $alamat_ortu,
+					'telp_ortu' => $telp_ortu,
+					'informasi' => $informasi,
+					'prodi' => $prodi,
+					'gelombang' => $gelombang,
+					'periode' => $periode,
+					// 'ijasah' => $nmfile1,
+					// 'sk' => $nmfile2,
+					'thn_pel' => $thn_pel,
+					'bb' => $bb,
+					'tb' => $tb,
+					'email' => $email,
+					'prodi2' => $prodi2,
+					'kelas' => $kelas,
+					'id_tgl_seleksi' => $id_tgl_seleksi
+					);
+				
+				
+				$this->m_registrasi->input_data($data,'tbl_catar_2023');
+				$lastid = $this->db->insert_id();
+				$where = array('no' => $lastid);
+				$data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
+				foreach ($data['catar'] as $key) {
+					# code...
+					$po = $key->ktkb;
+					$where_prov = array('tbl_kabkota.id_wil' => $po);
+				}
+				$provinsi_get = $this->m_registrasi->get_data_wilayah($where_prov)->result();
+				foreach ($provinsi_get as $keyp) {
+					# code...
+					$data['kabkota'] = $keyp->kabkota;
+					$data['provinsi'] = $keyp->provinsi;
+				}
+				$this->load->view('cetakReg',$data);
+
+				//pdf
+				$pdfFilePath="cetak_registrasi_".$namafil."_2023.pdf";
+				$html=$this->load->view('cetakReg',$data, TRUE);
+				$pdf = $this->m_pdf->load();
+		 
+		        $pdf->AddPage('P');
+		        $pdf->WriteHTML($html);
+		        $pdf->Output($pdfFilePath, "D");
+		        exit();
+				// redirect("welcome/cetakReg");
+
+				//////////////// .proses biasa//////////////////////////////////////
+ 		}
+
+ 		//////////////// \.cek referral//////////////////////////////////////
+
+	}
 
 }
 
