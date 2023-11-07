@@ -22,7 +22,7 @@
                  <?php echo validation_errors(); 
             echo $this->session->flashdata('success');
             echo $this->session->flashdata('error'); ?>
-                  <form action="<?php echo base_url() ?>cetakRegistrasi" name="form1" id="form1" method="post" enctype="multipart/form-data">
+                  <form action="<?php echo base_url() ?>proses_biodata" name="form1" id="form1" method="post" enctype="multipart/form-data">
                   <p>Jalur : Kelas Transfer</p> 
                 <div class="form-group">
                   <label for="exampleInputEmail1">Nama</label>
@@ -250,7 +250,7 @@
                 </div>
                 <?php foreach ($catar as $key) {
                   # code... ?>
-              <form action="<?php echo base_url() ?>cetakRegistrasi" name="form1" id="form1" method="post" enctype="multipart/form-data"> 
+              <form action="<?php echo base_url() ?>proses_biodata" name="form1" id="form1" method="post" enctype="multipart/form-data"> 
                 <div class="form-group">
                   <label for="exampleInputEmail1">Nama</label>
                   <input type="text" class="form-control" id="nama" name="nama" value="<?php echo $key->nama?>" placeholder="Masukan Nama Anda">
