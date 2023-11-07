@@ -128,19 +128,6 @@
         <li><a href="<?php echo base_url() ?>mahasiswa/home"><i class="fa fa-home"></i><span>Biodata</span></a></li>
         <li><a href="<?php echo base_url() ?>mahasiswa/home"><i class="fa fa-home"></i><span>Pembayaran</span></a></li>
          <li><a href="#"><i class="fa fa-home"></i><span>Pengumuman</span></a></li>
-       <!--  <li class="treeview">
-          <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Data</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li class="active"><a href="<?php// echo base_url() ?>referral/home"><i class="fa fa-money"></i>Data Semua</a></li> -->
-           <!--  <li class="active"><a href="<?php //echo base_url() ?>referral/data_per_periode"><i class="fa fa-money"></i>Data Per Gelombang</a></li> -->
-            <!-- <li><a href="index2.html"><i class="fa fa-paperclip"></i>Rekap</a></li> -->
-          <!-- </ul>
-        </li> -->
       </ul>
     </section>
     <!-- /.sidebar -->
