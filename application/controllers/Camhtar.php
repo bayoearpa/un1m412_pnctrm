@@ -204,7 +204,7 @@ class Camhtar extends CI_Controller {
 		$prodi = $this->input->post('prodi');
 		$prodi2 = $this->input->post('prodi2');
 		$gelombang = $this->input->post('gelombang');
-		$kelas = $this->input->post('kelas');
+		$jalur = $this->input->post('jalur');
 		$ref_radio = $this->input->post('ref_radio');
 		$ref = $this->input->post('ref');
 		$thn_pel="2024";
@@ -288,7 +288,7 @@ class Camhtar extends CI_Controller {
 					'tb' => $tb,
 					'email' => $email,
 					'prodi2' => $prodi2,
-					'kelas' => $kelas,
+					'jalur' => $jalur,
 					'id_tgl_seleksi' => $id_tgl_seleksi
 					);
 				
