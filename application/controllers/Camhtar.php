@@ -46,9 +46,9 @@ class Camhtar extends CI_Controller {
 					'status' => 'login'
 				);
 				$this->session->set_userdata($session);
-				redirect(base_url().'camahatar/home');
+				redirect(base_url().'cmhtar/biodata');
 			}else{
-				redirect(base_url().'camahatar?pesan=gagal');			
+				redirect(base_url().'masuk?pesan=gagal');			
 			}
 		}else{
 			redirect(base_url().'masuk');
