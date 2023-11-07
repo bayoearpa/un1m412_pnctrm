@@ -34,8 +34,8 @@ class Camhtar extends CI_Controller {
 				'username' => $username,
 				'password' => md5($password)			
 			);
-			$data = $this->m_mahasiswa->get_data($where, 'tbl_catar_2024');
-			$d = $this->m_mahasiswa->get_data($where, 'tbl_catar_2024')->row();
+			$data = $this->m_registrasi->get_data($where, 'tbl_catar_2024');
+			$d = $this->m_registrasi->get_data($where, 'tbl_catar_2024')->row();
 			$cek = $data->num_rows();
 			if($cek > 0){
 				$session = array(
