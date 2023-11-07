@@ -18,6 +18,10 @@ class Camhtar extends CI_Controller {
 	{
 		$this->load->view('camahatar/login');
 	}
+	 function logout(){
+		$this->session->sess_destroy();
+		redirect(base_url().'masuk?pesan=logout');
+	}
 	public function loginp()
 	{
 		# code...
@@ -36,6 +40,7 @@ class Camhtar extends CI_Controller {
 			if($cek > 0){
 				$session = array(
 					'username'=> $d->username,
+					'no'=> $d->no,
 					'nama'=> $d->nama,
 					'jalur'=> $d->jalur,
 					'status' => 'login'
@@ -132,6 +137,23 @@ class Camhtar extends CI_Controller {
 					
 				}
 				return $pick;
+	}
+	public function biodata()
+	{
+		# code...
+		$data['jurusan'] = $this->m_registrasi->get_data_all('tbl_jurusan')->result();
+		$data['provinsi'] = $this->m_registrasi->get_data_all('tbl_propinsi')->result();
+
+		$no = $this->session->userdata('no');
+		$where = array(
+				'no' => $no,
+			);
+		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2024')->result();
+
+		$this->load->view('camahatar/header',$data);
+        $this->load->view('camahatar/index',$data);
+        $this->load->view('camahatar/footer');
+
 	}
 
 }

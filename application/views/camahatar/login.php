@@ -48,7 +48,7 @@
   <div class="login-box-body">
     <p class="login-box-msg">Masuk untuk mengakses sistem</p>
 
-    <form action="<?php echo base_url().'masukp' ?>" method="post">
+    <form action="<?php echo base_url().'proses_masuk' ?>" method="post">
       <div class="form-group has-feedback">
         <input type="text" name="username" id="username" class="form-control" placeholder="Username">
         <span class="glyphicon glyphicon-user form-control-feedback"></span>

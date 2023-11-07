@@ -79,9 +79,12 @@ $route['default_controller'] = 'welcome';
 
 //camahatar
 $route['masuk'] = 'camhtar';
+$route['keluar'] = 'camhtar/logout';
+$route['proses_masuk'] = 'camhtar/loginp';
 $route['daftar'] = 'camhtar/daftar';
 $route['pendaftaran'] = 'camhtar/daftarp';
 $route['cek'] = 'camhtar/cek_user';
+$route['camahatar/home'] = 'camhtar/biodata';
 
 
 // $route['cetakRegistrasi'] = 'welcome/insertReg';
