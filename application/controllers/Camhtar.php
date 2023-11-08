@@ -108,7 +108,7 @@ class Camhtar extends CI_Controller {
 		$where = array(
 			'id_prodi' => $prodi,			       
         );
-		$getP = $this->m_portal->get_data($where,'tbl_prodi')->result();
+		$getP = $this->m_registrasi->get_data($where,'tbl_prodi')->result();
 		foreach ($getP as $p) {
 			# code...
 			//$data['nama'] = $n->Nama_mahasiswa ;
