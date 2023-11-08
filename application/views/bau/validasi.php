@@ -148,6 +148,12 @@
 
 
           <!-- <a href="invoice-print.html" target="_blank" class="btn btn-default"><i class="fa fa-print"></i> Print</a> -->
+            <?php if ($c->bukti_bayar) { ?>
+            <button class="btn btn-success view-file-button" data-filename="<?php echo $c->bukti_bayar; ?>">Lihat Bukti Bayar</button>
+            <?php } else { ?>
+            <!-- Tampilkan pesan jika file tidak ada -->
+            File tidak tersedia
+            <?php } ?>
           <button type="submit" class="btn btn-primary pull-right"><i class="fa fa-credit-card"></i> Validasi dan Bayar
           </button>
         </form>
