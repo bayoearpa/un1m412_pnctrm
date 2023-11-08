@@ -64,6 +64,7 @@
                         <!-- Tampilkan pesan jika file tidak ada -->
                         File tidak tersedia
                         <?php } ?>
+                        <button type="submit" class="btn btn-primary">Simpan</button>
                 </div>
 
               </form>
