@@ -53,6 +53,8 @@
                   <td><label for="exampleInputEmail1"><?php echo $prodi ; ?></label></td>
                 </tr>
               </table>
+              <hr>
+              <br>
               <form action="<?php echo base_url() ?>proses_bukti_bayar" name="form1" id="form1" method="post" enctype="multipart/form-data">
                <div class="form-group">
                         <label for="editufsignon">Upload Bukti Pembayaran</label>
@@ -64,8 +66,9 @@
                         <!-- Tampilkan pesan jika file tidak ada -->
                         File tidak tersedia
                         <?php } ?>
-                        <button type="submit" class="btn btn-primary">Simpan</button>
+                        
                 </div>
+                <div class="form-group"><button type="submit" class="btn btn-primary">Simpan</button></div>
 
               </form>
 
