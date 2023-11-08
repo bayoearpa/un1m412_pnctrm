@@ -64,7 +64,7 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="<?php echo base_url() ?>assets/front1/img/amni1.png" class="user-image" alt="User Image">
+              <img src="<?php echo base_url() ?>assets/front1/img/amni-png.png" class="user-image" alt="User Image">
               <span class="hidden-xs"><?php echo $this->session->userdata('nama'); ?></span>
             </a>
             <ul class="dropdown-menu">
@@ -125,10 +125,20 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MENU UTAMA</li>
-        <li><a href="<?php echo base_url() ?>mahasiswa/home"><i class="fa fa-user"></i><span>Biodata</span></a></li>
-        <li><a href="<?php echo base_url() ?>mahasiswa/home"><i class="fa fa-money"></i><span>Pembayaran</span></a></li>
-         <li><a href="#"><i class="fa fa-info-circle"></i><span>Pengumuman</span></a></li>
-         <li><a href="#"><i class="fa fa-external-link"></i><span>Daftar Ulang</span></a></li>
+        <?php 
+          if ($this->session->userdata('jalur') == "fasttrack") {
+            # code... ?>
+          <li><a href="<?php echo base_url() ?>biodata"><i class="fa fa-user"></i><span>Biodata</span></a></li>
+          <li><a href="<?php echo base_url() ?>validasi"><i class="fa fa-check"></i><span>Validasi</span></a></li>
+          <li><a href="#"><i class="fa fa-info-circle"></i><span>Pengumuman</span></a></li>
+          <li><a href="#"><i class="fa fa-external-link"></i><span>Daftar Ulang</span></a></li>
+
+         <?php }else{ ?>
+          <li><a href="<?php echo base_url() ?>biodata"><i class="fa fa-user"></i><span>Biodata</span></a></li>
+          <li><a href="<?php echo base_url() ?>pembayaran"><i class="fa fa-money"></i><span>Pembayaran</span></a></li>
+          <li><a href="#"><i class="fa fa-info-circle"></i><span>Pengumuman</span></a></li>
+          <li><a href="#"><i class="fa fa-external-link"></i><span>Daftar Ulang</span></a></li>
+          <?php } ?>
       </ul>
     </section>
     <!-- /.sidebar -->

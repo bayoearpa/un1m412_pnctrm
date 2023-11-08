@@ -346,6 +346,23 @@ class Camhtar extends CI_Controller {
         $this->load->view('camahatar/pembayaran',$data);
         $this->load->view('camahatar/footer');
 	}
+	public function validasi()
+	{
+		# code...
+		$no = $this->session->userdata('no');
+		$where = array(
+				'no' => $no,
+			);
+		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2024')->result();
+		foreach ($data['catar'] as $key) {
+			# code...
+			$data['nik'] = $key->nik;
+		}
+
+		$this->load->view('camahatar/header',$data);
+        $this->load->view('camahatar/validasi',$data);
+        $this->load->view('camahatar/footer');
+	}
 
 }
 
