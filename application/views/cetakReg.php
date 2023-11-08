@@ -131,7 +131,7 @@
 	</tr>
 </table>
 <br>
-<!-- <table align="center" border="1" style="border: 1px solid black;border-collapse: collapse;" width="90%">
+<table align="center" border="1" style="border: 1px solid black;border-collapse: collapse;" width="90%">
 	<tr>
 		<td><center><b>KEGIATAN</b></center></td>
 		<td><center><b>PARAF PETUGAS</b></center></td>
@@ -160,7 +160,7 @@
 		<td align="left" height="30px">PANTUKHIR</td>
 		<td></td>
 	</tr>
-</table> -->
+</table>
 
 <!-- ttd -->
 <table width="80%" align="center" style="margin: 0px;padding: 0px;">
