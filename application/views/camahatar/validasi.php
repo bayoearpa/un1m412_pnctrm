@@ -15,7 +15,11 @@
                     <h4><i class="icon fa fa-warning"></i> Maaf!</h4>
                     Silakan mengisi form biodata terlebih dahulu untuk dapat mengakses halaman ini. terima kasih.
                 </div>
-            <?php }else{ ?>
+            <?php }else{ 
+
+              foreach ($catar as $c) {
+                # code...
+              ?>
 
                <table width="30%">
                 <tr>
@@ -67,6 +71,8 @@
                   <td><span class="badge bg-green">90%</span></td>
                 </tr>
               </tbody></table>
+              <?php } ?>
+              
             <?php } ?>
             </div>
             <!-- /.box-body -->

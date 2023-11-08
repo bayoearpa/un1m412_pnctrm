@@ -357,6 +357,7 @@ class Camhtar extends CI_Controller {
 		foreach ($data['catar'] as $key) {
 			# code...
 			$data['nik'] = $key->nik;
+			$data['prodi'] = $this->jurusan($key->prodi);
 		}
 
 		$this->load->view('camahatar/header',$data);
