@@ -54,7 +54,6 @@
                 </tr>
               </table>
               <hr>
-              <br>
               <form action="<?php echo base_url() ?>proses_bukti_bayar" name="form1" id="form1" method="post" enctype="multipart/form-data">
                <div class="form-group">
                         <label for="editufsignon">Upload Bukti Pembayaran</label>
