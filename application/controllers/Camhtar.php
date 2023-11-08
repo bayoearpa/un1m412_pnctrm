@@ -359,7 +359,7 @@ class Camhtar extends CI_Controller {
         $config['file_name'] = $no.'_bukti_bayar'; // Nama file yang diunggah sesuai NIM
         $this->load->library('upload', $config);
 
-        if ($this->upload->do_upload('ufsignon')) {
+        if ($this->upload->do_upload('bukti_bayar')) {
             // Jika unggahan berhasil
             $upload_data = $this->upload->data();
             $file_name = $upload_data['file_name'];
