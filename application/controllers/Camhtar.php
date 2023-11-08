@@ -343,6 +343,7 @@ class Camhtar extends CI_Controller {
 		$this->load->view('camahatar/header',$data);
         $this->load->view('camahatar/validasi',$data);
         $this->load->view('camahatar/footer');
+         $this->load->view('camahatar/validasi_js');
 	}
 	public function upload_bukti_bayar()
 	{
