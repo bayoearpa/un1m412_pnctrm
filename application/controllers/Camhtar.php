@@ -338,9 +338,41 @@ class Camhtar extends CI_Controller {
 		}
 		$data['prodi'] = $this->getProdi($programStudi);
 
+		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2024')->num_rows();
+
 		$this->load->view('camahatar/header',$data);
         $this->load->view('camahatar/validasi',$data);
         $this->load->view('camahatar/footer');
+	}
+	public function download($no)
+	{
+		# code...
+		$where = array('no' => $no);
+		$data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2024')->result();
+		foreach ($data['catar'] as $key) {
+			# code...
+			$po = $key->ktkb;
+			$where_prov = array('tbl_kabkota.id_wil' => $po);
+		}
+		$provinsi_get = $this->m_registrasi->get_data_wilayah($where_prov)->result();
+		foreach ($provinsi_get as $keyp) {
+			# code...
+			$data['kabkota'] = $keyp->kabkota;
+			$data['provinsi'] = $keyp->provinsi;
+		}
+		$this->load->view('cetakReg',$data);
+
+		//pdf
+		$pdfFilePath="form_pendaftaran.pdf";
+		$html=$this->load->view('cetakReg',$data, TRUE);
+		$pdf = $this->m_pdf->load();
+ 		ob_clean();
+        $pdf->AddPage('P');
+        $pdf->WriteHTML($html);
+        $pdf->Output($pdfFilePath, "D");
+        exit();
+		redirect("validasi");
+
 	}
 
 }

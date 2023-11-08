@@ -53,26 +53,51 @@
                   <td><label for="exampleInputEmail1"><?php echo $prodi ; ?></label></td>
                 </tr>
               </table>
-              <table class="table table-striped">
-                <tbody><tr>
-                  <th style="width: 10px">#</th>
-                  <th>Task</th>
-                  <th>Progress</th>
-                  <th style="width: 40px">Label</th>
-                </tr>
-                <tr>
-                  <td>1.</td>
-                  <td>Fix and squish bugs</td>
-                  <td>
-                    <div class="progress progress-xs progress-striped active">
-                      <div class="progress-bar progress-bar-success" style="width: 90%"></div>
-                    </div>
-                  </td>
-                  <td><span class="badge bg-green">90%</span></td>
-                </tr>
-              </tbody></table>
+
+              <?php 
+                  if ($validasi > "0") {
+                    # code... ?>
+                     <table class="table table-striped">
+                        <tbody><tr>
+                          <th style="width: 10px">#</th>
+                          <th>Proses</th>
+                          <th>Download Form Pendaftaran</th>
+                          <th style="width: 40px">Status</th>
+                        </tr>
+                        <tr>
+                          <td>1.</td>
+                          <td>Data anda telah selesai divalidasi</td>
+                          <td>
+                             <div class="form-group" align="center">
+                              <a href="<?php echo base_url() ?>download/<?php echo $c->no ?>"><button type="button" name="submit" class="btn btn-primary">Download</button></a>
+                            </div>
+                          </td>
+                          <td><span class="badge bg-green"><i class="fa fa-check"></i></span></td>
+                        </tr>
+                      </tbody></table>
+
+                  <?php }else{ ?>
+                     <table class="table table-striped">
+                        <tbody><tr>
+                          <th style="width: 10px">#</th>
+                          <th>Proses</th>
+                          <th>Download Form Pendaftaran</th>
+                          <th style="width: 40px">Status</th>
+                        </tr>
+                        <tr>
+                          <td>1.</td>
+                          <td>Sedang dalam proses validasi</td>
+                          <td>
+                            Maaf anda belum bisa mendownload form pendaftaran anda karena belum divalidasi
+                          </td>
+                          <td><span class="badge bg-red"><i class="fa fa-times"></i></span></td>
+                        </tr>
+                      </tbody></table>
+
+                  <?php } ?>
+             
               <?php } ?>
-              
+
             <?php } ?>
             </div>
             <!-- /.box-body -->
