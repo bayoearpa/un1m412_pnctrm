@@ -344,6 +344,37 @@ class Camhtar extends CI_Controller {
         $this->load->view('camahatar/validasi',$data);
         $this->load->view('camahatar/footer');
 	}
+	public function upload_bukti_bayar()
+	{
+		# code...
+		// Tangani unggahan file
+		$no = $this->session->userdata('no');
+		$where = array(
+	        'no' => $no,
+	    );
+
+        $config['upload_path'] = './assets/upload/2024/bukti_bayar';
+        $config['max_size'] = 1048;
+        $config['allowed_types'] = 'pdf'; // Sesuaikan dengan jenis file yang diizinkan
+        $config['file_name'] = $no.'_bukti_bayar'; // Nama file yang diunggah sesuai NIM
+        $this->load->library('upload', $config);
+
+        if ($this->upload->do_upload('ufsignon')) {
+            // Jika unggahan berhasil
+            $upload_data = $this->upload->data();
+            $file_name = $upload_data['file_name'];
+
+            // Simpan data ke database (contoh)
+            $data = array(
+                'bukti_bayar' => $file_name
+            );
+            $this->m_registrasi->update_data($where,$data,'tbl_catar_2024');
+
+            ($this->session->userdata('jalur') == "fasttrack") ? redirect(base_url().'validasi') : redirect(base_url().'pembayaran');
+        } else {
+            ($this->session->userdata('jalur') == "fasttrack") ? redirect(base_url().'validasi') : redirect(base_url().'pembayaran');
+        }
+	}
 	public function download($no)
 	{
 		# code...

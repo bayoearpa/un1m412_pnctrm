@@ -53,6 +53,20 @@
                   <td><label for="exampleInputEmail1"><?php echo $prodi ; ?></label></td>
                 </tr>
               </table>
+              <form action="<?php echo base_url() ?>proses_bukti_bayar" name="form1" id="form1" method="post" enctype="multipart/form-data">
+               <div class="form-group">
+                        <label for="editufsignon">Upload Bukti Pembayaran</label>
+                        <input type="file" class="form-control" id="bukti_bayar" name="bukti_bayar">
+                        <!-- <input type="hidden" id="editufsignon_existing" name="ufsignon_existing" value="<?php //echo $c->upload_file_signon; ?>"> -->
+                        <?php if ($c->bukti_bayar) { ?>
+                        <button class="btn btn-success view-file-button" data-filename="<?php echo $c->bukti_bayar; ?>">Lihat Bukti Bayar</button>
+                        <?php } else { ?>
+                        <!-- Tampilkan pesan jika file tidak ada -->
+                        File tidak tersedia
+                        <?php } ?>
+                </div>
+
+              </form>
 
               <?php 
                   if ($validasi > "0") {
