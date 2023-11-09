@@ -138,6 +138,36 @@ class Camhtar extends CI_Controller {
 				}
 				return $pick;
 	}
+	public function getProvinsi($id)
+	{
+		# code...
+		# code...
+		//get nama
+		$where = array(
+			'id_wil' => $prodi,			       
+        );
+		$getP = $this->m_registrasi->get_data($where,'tbl_propinsi')->result();
+		foreach ($getP as $p) {
+			# code...
+			//$data['nama'] = $n->Nama_mahasiswa ;
+			return $p->nm_wil;
+		}
+	}
+	public function getKotaKab($id)
+	{
+		# code...
+		# code...
+		//get nama
+		$where = array(
+			'id_wil' => $prodi,			       
+        );
+		$getP = $this->m_registrasi->get_data($where,'tbl_kabkota')->result();
+		foreach ($getP as $p) {
+			# code...
+			//$data['nama'] = $n->Nama_mahasiswa ;
+			return $p->nm_wil;
+		}
+	}
 	public function getProdi($prodi)
 	{
 		# code...
@@ -166,6 +196,8 @@ class Camhtar extends CI_Controller {
 
 		foreach ($data['catar'] as $key) {
 			# code...
+			$data['provinsi'] = $this->getProvinsi($key->provinsi);
+			$data['ktkb'] = $this->getKotaKab($key->ktkb);
 		}
 
 		$this->load->view('camahatar/header',$data);
