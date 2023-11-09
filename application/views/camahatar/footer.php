@@ -5,7 +5,7 @@
     <div class="pull-right hidden-xs">
       <b>Version</b> 1.0.0
     </div>
-    <strong>Copyright &copy; 2018 IT-STIMART "AMNI" Semarang.</strong> All rights
+    <strong>Copyright &copy; 2018 PUSTIK-UNIMAR AMNI Semarang.</strong> All rights
     reserved.
   </footer>
 
