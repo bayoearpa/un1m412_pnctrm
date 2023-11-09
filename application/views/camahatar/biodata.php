@@ -47,7 +47,7 @@
                       </div>                      
                 </div>
                  <div class="form-group">
-                  <label>Agama <?php echo $key->bb?></label>
+                  <label>Agama</label>
                   <select class="form-control" name="agama" id="agama">
                     <option value="<?php echo $key->agama?>"><?php echo $key->agama?></option>
                     <option value="Islam">Islam</option>
@@ -276,7 +276,7 @@
                  <div class="form-group">
                   <label>Agama</label>
                   <select class="form-control" name="agama" id="agama">
-                    <option value="<?php echo $key->agama?>"> </option>
+                    <option value="<?php echo $key->agama?>"><?php echo $key->agama?></option>
                     <option value="Islam">Islam</option>
                     <option value="Kristen">Kristen</option>
                     <option value="Katolik">Katolik</option>
