@@ -9,7 +9,7 @@
             <!-- /.box-header -->
             <div class="box-body">
                 <?php 
-                if ($this->session->userdata('jalur')=="kelastransfer") {
+                if ($this->session->userdata('jalur')=="kelastransfer" || $this->session->userdata('jalur')=="gdr2") {
                   # code... 
                   //form biodata untuk kelas transfer ?>
                 <div class="alert alert-info alert-dismissible">
@@ -163,7 +163,7 @@
                 <div class="form-group">
                   <label>Informasi (mendapatkan informasi tentang UNIMAR "AMNI" Semarang)</label>
                   <select class="form-control" name="informasi" id="informasi">
-                    <option value="<?php echo $key->informasi?>"> </option>
+                    <option value="<?php echo $key->informasi?>"><?php echo $informasi; ?> </option>
                     <option value="1">Senior / Kakak kelas</option>
                     <option value="2">Sosial Media</option>
                     <option value="3">Keluarga / Saudara / teman</option>
@@ -176,36 +176,36 @@
                 <div class="form-group">
                   <label>Prodi Pilihan 1</label>
                   <select class="form-control" name="prodi" id="prodi">
-                    <option value="<?php echo $key->prodi?>"> </option>
+                    <option value="<?php echo $key->prodi?>"><?php echo $nmprodi; ?> </option>
                    <!--  <option value="1">D3 Ketatalaksanaan Pelayaran Niaga dan Kepelabuhanan</option>
                     <option value="2">D3 Teknika</option>
                     <option value="3">D3 Nautika</option> -->
                     <option value="4">S1 Transportasi</option>
-                    <option value="5">S1 Teknik Transportasi Laut</option>
+                  <!--   <option value="5">S1 Teknik Transportasi Laut</option>
                     <option value="6">S1 Teknik Mesin</option>
                     <option value="7">S1 Teknik Keselamatan</option>
-                    <option value="8">S1 Perdagangan Internasional</option>
+                    <option value="8">S1 Perdagangan Internasional</option> -->
                   </select>
                 </div>
-                 <div class="form-group">
+               <!--   <div class="form-group">
                   <label>Prodi Pilihan 2</label>
                   <select class="form-control" name="prodi2" id="prodi2">
-                    <option value="<?php echo $key->prodi2?>"> </option>
-                   <!--  <option value="1">D3 Ketatalaksanaan Pelayaran Niaga dan Kepelabuhanan</option>
+                    <option value="<?php //echo $key->prodi2?>"> </option>
+                    <option value="1">D3 Ketatalaksanaan Pelayaran Niaga dan Kepelabuhanan</option>
                     <option value="2">D3 Teknika</option>
-                    <option value="3">D3 Nautika</option> -->
+                    <option value="3">D3 Nautika</option>
                     <option value="4">S1 Transportasi</option>
                     <option value="5">S1 Teknik Transportasi Laut</option>
                     <option value="6">S1 Teknik Mesin</option>
                     <option value="7">S1 Teknik Keselamatan</option>
                     <option value="8">S1 Perdagangan Internasional</option>
                   </select>
-                </div>
-                <div class="form-group">
+                </div> -->
+               <!--  <div class="form-group">
                   <label>Periode</label>
                   <select class="form-control" name="gelombang" id="gelombang">
-                    <option value="<?php echo $key->gelombang?>"> </option>
-                    <option value="1">Gelombang 1</option>
+                    <option value="<?php //echo $key->gelombang?>"> </option>
+                    <option value="1">Gelombang 1</option> -->
                     <!-- <option value="2">Gelombang 2</option> -->
                     <!-- <option value="3">Gelombang 3</option> -->
                    <!--  <option value="1">Januari</option> -->
@@ -218,8 +218,9 @@
                     <!-- <option value="8">Agustus</option> -->
                      <!-- <option value="9">September</option> -->
                     <!-- <option value="10">Oktober</option> -->
-                  </select>
-                </div>
+                 <!--  </select>
+                </div> -->
+                <input type="text" name="gelombang" value="<?php echo $gel?>">
                 <input type="hidden" name="jalur" value="<?php echo $this->session->userdata('jalur')?>">
                <!--  <div class="form-group">
                   <label>Kelas</label><br>
@@ -235,7 +236,7 @@
                  <input type="file" name="ijasah" id="ijasah" class="form-control">
                 </div> -->
                
-                <button type="submit" class="btn btn-primary">Simpan dan Cetak</button>
+                <button type="submit" class="btn btn-primary">Simpan</button>
                 </form>
                 <?php } ?>
 
@@ -388,7 +389,7 @@
                 <div class="form-group">
                   <label>Informasi (mendapatkan informasi tentang UNIMAR AMNI Semarang)</label>
                   <select class="form-control" name="informasi" id="informasi">
-                    <option value="<?php echo $key->informasi?>"> </option>
+                    <option value="<?php echo $key->informasi?>"> <?php echo $informasi; ?> </option>
                     <option value="1">Senior / Kakak kelas</option>
                     <option value="2">Sosial Media</option>
                     <option value="3">Keluarga / Saudara / teman</option>
@@ -401,7 +402,7 @@
                 <div class="form-group">
                   <label>Prodi Pilihan 1</label>
                   <select class="form-control" name="prodi" id="prodi">
-                    <option value="<?php echo $key->prodi?>"> </option>
+                    <option value="<?php echo $key->prodi?>"> <?php echo $nmprodi ?> </option>
                     <option value="1">D3 Ketatalaksanaan Pelayaran Niaga dan Kepelabuhanan</option>
                     <option value="2">D3 Teknika</option>
                     <option value="3">D3 Nautika</option>
@@ -415,7 +416,7 @@
                  <div class="form-group">
                   <label>Prodi Pilihan 2</label>
                   <select class="form-control" name="prodi2" id="prodi2">
-                    <option value="<?php echo $key->prodi2?>"> </option>
+                    <option value="<?php echo $key->prodi2?>"> <?php echo $nmprodi2 ?> </option>
                     <option value="1">D3 Ketatalaksanaan Pelayaran Niaga dan Kepelabuhanan</option>
                     <option value="2">D3 Teknika</option>
                     <option value="3">D3 Nautika</option>
@@ -426,15 +427,16 @@
                     <option value="8">S1 Perdagangan Internasional</option>
                   </select>
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <label>Periode</label>
                   <select class="form-control" name="gelombang" id="gelombang">
-                    <option value="<?php echo $key->gelombang?>"> </option>
-                    <option value="1">Gelombang 1</option>
+                    <option value="<?php //echo $key->gelombang?>"> </option>
+                    <option value="1">Gelombang 1</option> -->
                    <!-- <option value="2">Gelombang 2</option> -->
                     <!-- <option value="3">Gelombang 3</option> -->
-                  </select>
-                </div>
+                 <!--  </select>
+                </div> -->
+                <input type="text" name="gelombang" value="<?php echo $gel ?>">
                <input type="hidden" name="jalur" value="<?php echo $this->session->userdata('jalur')?>">
                 <!-- <input type="hidden" name="kelas" value="reg"> -->
                <!--  <div class="form-group">

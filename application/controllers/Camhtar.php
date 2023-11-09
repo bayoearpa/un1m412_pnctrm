@@ -117,26 +117,35 @@ class Camhtar extends CI_Controller {
 						$pick = "Keluarga / Saudara / teman";
 					break;
 					case '4' :
-						$pick = "S1 TRANSPORTASI";
+						$pick = "Alumni";
 					break;
 					case '5':
-						$pick = "S1 TRANSPORTASI ( LINTAS JALUR )";
+						$pick = "Brosur";
 					break;
 					case '6':
-						$pick = "S1 TEKNIK MESIN";
+						$pick = "Expo";
 					break;
 					case '7':
-						$pick = "S1 TEKNIK TRANSPORTASI LAUT";
-					break;
-					case '8':
-						$pick = "S1 TEKNIK KESELAMATAN";
-					break;
-					case '9':
-						$pick = "S1 PERDAGANGAN INTERNASIONAL";
+						$pick = "Sekolah / Guru";
 					break;
 					
 				}
 				return $pick;
+	}
+	public function getGelombang($id)
+	{
+		# code...
+		# code...
+		//get nama
+		$where = array(
+			'id_gelombang' => $id,			       
+        );
+		$getP = $this->m_registrasi->get_data($where,'tbl_gelombang')->result();
+		foreach ($getP as $p) {
+			# code...
+			//$data['nama'] = $n->Nama_mahasiswa ;
+			return $p->gelombang;
+		}
 	}
 	public function getProvinsi($id)
 	{
@@ -198,6 +207,10 @@ class Camhtar extends CI_Controller {
 			# code...
 			$data['getprovinsi'] = $this->getProvinsi($key->provinsi);
 			$data['getktkb'] = $this->getKotaKab($key->ktkb);
+			$data['informasi'] = $this->informasi($key->informasi);
+			$data['nmprodi'] = $this->getProdi($key->prodi);
+			$data['nmprodi2'] = $this->getProdi($key->prodi2);
+			$data['gel'] = $this->getGelombang($key->gelombang);
 		}
 
 		$this->load->view('camahatar/header',$data);
