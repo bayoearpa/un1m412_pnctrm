@@ -144,7 +144,7 @@ class Camhtar extends CI_Controller {
 		# code...
 		//get nama
 		$where = array(
-			'id_wil' => $prodi,			       
+			'id_wil' => $id,			       
         );
 		$getP = $this->m_registrasi->get_data($where,'tbl_propinsi')->result();
 		foreach ($getP as $p) {
@@ -159,7 +159,7 @@ class Camhtar extends CI_Controller {
 		# code...
 		//get nama
 		$where = array(
-			'id_wil' => $prodi,			       
+			'id_wil' => $id,			       
         );
 		$getP = $this->m_registrasi->get_data($where,'tbl_kabkota')->result();
 		foreach ($getP as $p) {
