@@ -23,7 +23,7 @@
             echo $this->session->flashdata('success');
             echo $this->session->flashdata('error'); ?>
                   <form action="<?php echo base_url() ?>proses_biodata" name="form1" id="form1" method="post" enctype="multipart/form-data">
-                  <p>Jalur : Kelas Transfer</p> 
+                  <!-- <p>Jalur : Kelas Transfer</p>  -->
                 <div class="form-group">
                   <label for="exampleInputEmail1">Nama</label>
                   <input type="text" class="form-control" id="nama" name="nama" value="<?php echo $this->session->userdata('nama') ?>" placeholder="Masukan Nama Anda">
@@ -220,7 +220,7 @@
                     <!-- <option value="10">Oktober</option> -->
                  <!--  </select>
                 </div> -->
-                <input type="text" name="gelombang" value="<?php echo $gel?>">
+                <input type="hidden" name="gelombang" value="<?php echo $gel?>">
                 <input type="hidden" name="jalur" value="<?php echo $this->session->userdata('jalur')?>">
                <!--  <div class="form-group">
                   <label>Kelas</label><br>
@@ -436,7 +436,7 @@
                     <!-- <option value="3">Gelombang 3</option> -->
                  <!--  </select>
                 </div> -->
-                <input type="text" name="gelombang" value="<?php echo $gel ?>">
+                <input type="hidden" name="gelombang" value="<?php echo $gel ?>">
                <input type="hidden" name="jalur" value="<?php echo $this->session->userdata('jalur')?>">
                 <!-- <input type="hidden" name="kelas" value="reg"> -->
                <!--  <div class="form-group">

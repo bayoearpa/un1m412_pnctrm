@@ -126,7 +126,7 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MENU UTAMA</li>
         <?php 
-          if ($this->session->userdata('jalur') == "fasttrack") {
+          if ($this->session->userdata('jalur') == "gdr1" || $this->session->userdata('jalur') == "gdr2") {
             # code... ?>
           <li><a href="<?php echo base_url() ?>biodata"><i class="fa fa-user"></i><span>Biodata</span></a></li>
           <li><a href="<?php echo base_url() ?>validasi"><i class="fa fa-check"></i><span>Validasi</span></a></li>
