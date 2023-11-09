@@ -319,7 +319,7 @@
                 <div class="form-group">
                   <label for="exampleInputEmail1">Provinsi</label>
                   <select class="form-control" name="provinsi" id="provinsi" class="provinsi">
-                  <option value="<?php echo $key->provinsi?>"> </option>
+                  <option value="<?php echo $key->provinsi?>"><?php echo $getprovinsi; ?> </option>
                   <?php foreach ($provinsi as $p) {
                     # code...
                   ?>
@@ -330,7 +330,7 @@
                 <div class="form-group">
                   <label for="exampleInputEmail1">Kota / Kabupaten</label>
                   <select class="form-control ktkb" name="ktkb" id="ktkb">
-                  <option value="<?php echo $key->ktkb?>"> </option>
+                  <option value="<?php echo $key->ktkb?>"><?php echo $getktkb; ?> </option>
                   </select>
                 </div>
                 <div class="form-group">
@@ -340,7 +340,7 @@
                 <div class="form-group">
                   <label>Kategori Sekolah</label>
                   <select class="form-control" name="kategori_sek" id="kategori_sek">
-                    <option value="<?php echo $key->kategori_sek?>"> </option>
+                    <option value="<?php echo $key->kategori_sek?>"><?php echo $key->kategori_sek; ?> </option>
                     <option value="SMA">SMA</option>
                     <option value="SMK">SMK</option>
                     <option value="MA">MA</option>
@@ -350,7 +350,7 @@
                 <div class="form-group">
                   <label>Jurusan SLTA/SMK</label>
                   <select class="form-control select2" id="prodi_lama" name="prodi_lama" style="width: 100%;">
-                    <option value="<?php echo $key->prodi_lama?>"> </option>
+                    <option value="<?php echo $key->prodi_lama?>"><?php echo $key->prodi_lama ?> </option>
                     <?php foreach ($jurusan as $j): ?>
                       <option value="<?php echo $j->nama_jurusan; ?>"><?php echo $j->nama_jurusan; ?></option>
                     <?php endforeach ?>

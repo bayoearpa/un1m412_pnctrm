@@ -101,20 +101,20 @@ class Camhtar extends CI_Controller {
             }
         }
 	}
-	public function agama($id)
+	public function informasi($id)
 	{
 		# code...
 		switch ($id) {
 
 				// registrasi
 					case '1':
-						$pick = "D3 KETATALAKSANAAN PELAYARAN NIAGA DAN KEPELABUHAN";
+						$pick = "Senior / Kakak kelas";
 					break;
 					case '2' :
-						$pick = "D3 TEKNIKA";
+						$pick = "Sosial Media";
 					break;
 					case '3' :
-						$pick = "D3 NAUTIKA";
+						$pick = "Keluarga / Saudara / teman";
 					break;
 					case '4' :
 						$pick = "S1 TRANSPORTASI";

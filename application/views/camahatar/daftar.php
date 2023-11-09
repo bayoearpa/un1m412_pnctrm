@@ -72,11 +72,12 @@
         <label>Pilih Jalur Pendaftaran:</label>
                   <select class="form-control" name="jalur" id="jalur" placeholder="Pilih Jalur">
                     <option> </option>
-                    <option value="fasttrack">Fast Track</option>
-                    <option value="reguler">Reguler</option>
+                    <option value="gdr1">Gelombang Dini (Reguler)</option>
+                    <option value="gdr2">Gelombang Dini (RPL/Transfer)</option>
+                   <!--  <option value="reguler">Reguler</option>
                     <option value="kelastransfer">Kelas Transfer</option>
                     <option value="prestasi">Prestasi</option>
-                    <option value="hafizh">Hafizh</option>
+                    <option value="hafizh">Hafizh</option> -->
                   </select>
       </div>
       <p id="jalurMessage"></p>
