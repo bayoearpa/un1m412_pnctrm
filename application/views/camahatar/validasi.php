@@ -56,7 +56,7 @@
               <hr>
               <form action="<?php echo base_url() ?>proses_bukti_bayar" name="form1" id="form1" method="post" enctype="multipart/form-data">
                <div class="form-group">
-                        <label for="editufsignon">Upload Bukti Pembayaran</label>
+                        <label for="editufsignon">Upload Bukti Pembayaran (Upload dalam format .pdf)</label>
                         <input type="file" class="form-control" id="bukti_bayar" name="bukti_bayar">
                         <!-- <input type="hidden" id="editufsignon_existing" name="ufsignon_existing" value="<?php //echo $c->upload_file_signon; ?>"> -->
                         <?php if ($c->bukti_bayar) { ?>
