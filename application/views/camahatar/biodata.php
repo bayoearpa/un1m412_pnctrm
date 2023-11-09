@@ -92,7 +92,7 @@
                <div class="form-group">
                   <label for="exampleInputEmail1">Provinsi</label>
                   <select class="form-control" name="provinsi" id="provinsi" class="provinsi">
-                  <option value="<?php echo $key->provinsi?>"><?php echo $provinsi; ?> </option>
+                  <option value="<?php echo $key->provinsi?>"><?php echo $getprovinsi; ?> </option>
                   <?php foreach ($provinsi as $p) {
                     # code...
                   ?>
@@ -103,7 +103,7 @@
                 <div class="form-group">
                   <label for="exampleInputEmail1">Kota / Kabupaten</label>
                   <select class="form-control ktkb" name="ktkb" id="ktkb">
-                  <option value="<?php echo $key->ktkb?>"><?php echo $ktkb; ?> </option>
+                  <option value="<?php echo $key->ktkb?>"><?php echo $getktkb; ?> </option>
                   </select>
                 </div>
                 <div class="form-group">
