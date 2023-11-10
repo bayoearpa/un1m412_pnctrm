@@ -143,7 +143,7 @@
         <input type="hidden" name="gelombang" id="gelombang" value="<?php echo $c->gelombang ?>">
         <input type="hidden" name="tgl_byr" id="tgl_byr" value="<?php echo date("Y-m-d"); ?>">
         <input type="hidden" name="prodi" id="prodi" value="<?php echo $c->prodi ?>">
-        <input type="hidden" name="jml_byr" id="jml_byr" value="500000">
+        <input type="text" name="jml_byr" id="jml_byr" value="<?php echo $nominal ?>">
         <input type="hidden" name="thn_pel" id="thn_pel" value="<?php echo $c->thn_pel ?>">
 
 

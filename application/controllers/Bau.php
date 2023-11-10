@@ -63,6 +63,21 @@ class Bau extends CI_Controller {
             }
             return $pick;
     }
+    public function getBiaya($id)
+    {
+        # code...
+        # code...
+        //get nama
+        $where = array(
+            'jalur' => $id,                  
+        );
+        $getP = $this->m_registrasi->get_data($where,'tbl_biaya')->result();
+        foreach ($getP as $p) {
+            # code...
+            //$data['nama'] = $n->Nama_mahasiswa ;
+            return $p->nominal;
+        }
+    }
     function validasi($id)
     {
         # code...
@@ -70,6 +85,12 @@ class Bau extends CI_Controller {
             'tbl_catar_2024.no' => $id       
         );
         $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2024')->result();
+
+        foreach ($data['catar'] as $key) {
+            # code...
+            $jalur = $key->jalur;
+        }
+        $data['nominal'] = $this->getBiaya($jalur);
         // $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
 
         // $this->db->select('aktif');
