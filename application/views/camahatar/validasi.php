@@ -55,6 +55,16 @@
               </table>
               <hr>
               <form action="<?php echo base_url() ?>proses_bukti_bayar" name="form1" id="form1" method="post" enctype="multipart/form-data">
+                <?php if ($this->session->userdata('jalur') == "gdr1") {
+                  # code... 
+                  ?>
+                    <p align="center">Untuk Pembayaran dapat di Transfer ke Bank BNI dengan nomor rekening 0838810730 an. UNIMAR AMNI biaya yang harus anda bayar sebesar:</p>
+                    <h2 align="center">Rp. 500.000,-</h2>
+                <?php }else{ ?>
+                    <p align="center">Untuk Pembayaran dapat di Transfer ke Bank BNI dengan nomor rekening 0838810730 an. UNIMAR AMNI biaya yang harus anda bayar sebesar:</p>
+                    <h2 align="center">Rp. 700.000,-</h2>
+               <?php } ?>
+               
                <div class="form-group">
                         <label for="editufsignon">Upload Bukti Pembayaran (Upload dalam format .pdf)</label>
                         <input type="file" class="form-control" id="bukti_bayar" name="bukti_bayar">
