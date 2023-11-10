@@ -96,7 +96,7 @@
               
               <tr>
                 <th>Total Bayar:</th>
-                <td>Rp. <?php number_format($nominal, 0, ',', '.'); ?> ,-</td>
+                <td>Rp. <?php echo $totalbiaya = number_format($nominal, 0, ',', '.'); ?> ,-</td>
               </tr>
             </table>
           </div>
