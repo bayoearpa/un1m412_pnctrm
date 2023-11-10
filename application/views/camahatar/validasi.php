@@ -58,10 +58,10 @@
                 <?php if ($this->session->userdata('jalur') == "gdr1") {
                   # code... 
                   ?>
-                    <p align="center">Untuk Pembayaran dapat di Transfer ke Bank BNI dengan nomor rekening 0838810730 an. UNIMAR AMNI biaya yang harus anda bayar sebesar:</p>
+                    <p align="center">Untuk Pembayaran dapat di Transfer ke Bank BNI dengan nomor rekening <b>0838810730 an. UNIMAR AMNI</b> biaya yang harus anda bayar sebesar:</p>
                     <h2 align="center">Rp. 500.000,-</h2>
                 <?php }else{ ?>
-                    <p align="center">Untuk Pembayaran dapat di Transfer ke Bank BNI dengan nomor rekening 0838810730 an. UNIMAR AMNI biaya yang harus anda bayar sebesar:</p>
+                    <p align="center">Untuk Pembayaran dapat di Transfer ke Bank BNI dengan nomor rekening <b>0838810730 an. UNIMAR AMNI</b> biaya yang harus anda bayar sebesar:</p>
                     <h2 align="center">Rp. 700.000,-</h2>
                <?php } ?>
                
