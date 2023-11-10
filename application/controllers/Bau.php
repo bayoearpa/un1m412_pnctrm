@@ -78,6 +78,20 @@ class Bau extends CI_Controller {
             return $p->nominal;
         }
     }
+    public function getProdi($prodi)
+    {
+        # code...
+        //get nama
+        $where = array(
+            'id_prodi' => $prodi,                  
+        );
+        $getP = $this->m_registrasi->get_data($where,'tbl_prodi')->result();
+        foreach ($getP as $p) {
+            # code...
+            //$data['nama'] = $n->Nama_mahasiswa ;
+            return $p->prodi;
+        }
+    }
     function validasi($id)
     {
         # code...
@@ -89,8 +103,10 @@ class Bau extends CI_Controller {
         foreach ($data['catar'] as $key) {
             # code...
             $jalur = $key->jalur;
+            $prodi = $key->prodi;
         }
         $data['nominal'] = $this->getBiaya($jalur);
+        $data['nmprodi'] = $this->getProdi($prodi);
         // $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
 
         // $this->db->select('aktif');

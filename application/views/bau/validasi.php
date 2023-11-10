@@ -70,36 +70,7 @@
               <td>1</td>
               <td><strong>
                 <?php 
-                  switch ($c->prodi) {
-
-                      // registrasi
-                       case '1':
-                        $pick = "D3 KETATALAKSANAAN PELAYARAN NIAGA DAN KEPELABUHAN";
-                      break;
-                      case '2' :
-                        $pick = "D3 TEKNIKA";
-                      break;
-                      case '3' :
-                        $pick = "D3 NAUTIKA";
-                      break;
-                      case '4' :
-                        $pick = "S1 TRANSPORTASI";
-                      break;
-                      case '5':
-                        $pick = "S1 TEKNIK TRANSPORTASI LAUT";
-                      break;
-                      case '6':
-                        $pick = "S1 TEKNIK MESIN";
-                      break;
-                      case '7':
-                        $pick = "S1 TEKNIK KESELAMATAN";
-                      break;
-                      case '8':
-                        $pick = "S1 PERDAGANGAN INTERNASIONAL";
-                      break;
-                        
-                      }
-                      echo $pick;
+                      echo $nmprodi;
                 ?>
                 </strong>
               </td>
@@ -125,7 +96,7 @@
               
               <tr>
                 <th>Total Bayar:</th>
-                <td>Rp. 500.000 ,-</td>
+                <td>Rp. <?php number_format($nominal, 0, ',', '.'); ?> ,-</td>
               </tr>
             </table>
           </div>
@@ -143,7 +114,7 @@
         <input type="hidden" name="gelombang" id="gelombang" value="<?php echo $c->gelombang ?>">
         <input type="hidden" name="tgl_byr" id="tgl_byr" value="<?php echo date("Y-m-d"); ?>">
         <input type="hidden" name="prodi" id="prodi" value="<?php echo $c->prodi ?>">
-        <input type="text" name="jml_byr" id="jml_byr" value="<?php echo $nominal ?>">
+        <input type="hidden" name="jml_byr" id="jml_byr" value="<?php echo $nominal ?>">
         <input type="hidden" name="thn_pel" id="thn_pel" value="<?php echo $c->thn_pel ?>">
 
 
