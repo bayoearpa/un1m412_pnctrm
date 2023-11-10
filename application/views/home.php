@@ -82,7 +82,7 @@
              <ul>
                <li class="lead">D3 Ketatalaksanaan Pelayaran Niaga dan Kepelabuhan.</li>
                <li class="lead">D3 Nautika + Profesi ANT III (Deck Officer Class III).</li>
-               <li class="lead">D3 Tehnik + Profesi ATT III (Engineer Officer Class III).</li>
+               <li class="lead">D3 Teknika + Profesi ATT III (Engineer Officer Class III).</li>
                <li class="lead">S1 Transportasi.</li>
                <li class="lead">S1 Teknik Mesin.</li>
                <li class="lead">S1 Teknik Transportasi Laut.</li>
