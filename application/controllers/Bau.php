@@ -290,7 +290,7 @@ class Bau extends CI_Controller {
         }
     }
     ///////////////////////////////////////////////////////summary 2024///////////////////////////////////////////
-     public function getnamaprovinsi_2024$id)
+     public function getnamaprovinsi_2024($id)
     {
         # code...
         $where = array('id_wil' => $id);

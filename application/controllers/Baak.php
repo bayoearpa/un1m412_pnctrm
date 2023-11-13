@@ -2479,7 +2479,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/rekap_ctk_seleksi_exl_pmdk',$data);   
     }
     ///////////////////////////////////////////////////////summary 2024///////////////////////////////////////////
-     public function getnamaprovinsi_2024$id)
+     public function getnamaprovinsi_2024($id)
     {
         # code...
         $where = array('id_wil' => $id);
