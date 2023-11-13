@@ -210,7 +210,7 @@ class Camhtar extends CI_Controller {
 			$data['informasi'] = $this->informasi($key->informasi);
 			$data['nmprodi'] = $this->getProdi($key->prodi);
 			$data['nmprodi2'] = $this->getProdi($key->prodi2);
-			$data['gel'] = $this->getGelombang($key->gelombang);
+			$data['gel'] = $this->getGelombang("1");
 		}
 
 		$this->load->view('camahatar/header',$data);
