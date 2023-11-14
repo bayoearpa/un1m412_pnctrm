@@ -48,7 +48,8 @@
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Alur Pendaftaran</a>
             </li> 
-      <li class="nav-item mx-0 mx-lg-1">
+
+            <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="<?php echo base_url() ?>masuk">Masuk</a>
             </li> 
           </ul>
@@ -120,13 +121,13 @@
              <div class="col-lg-16 mr-auto">
             <p class="lead">Berikut lampiran biaya pendidikan Mahasiswa / Taruna UNIMAR AMNI Semarang tahun ajaran 2024 - 2025 yang dapat di download di bawah ini.</p>
                <div class="col-lg-16 mr-auto text-center">
-                <!-- <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="https://drive.google.com/file/d/1dJkHIYW0-9l7RGlXa9YPRCjKY-R9R65a/view?usp=sharing" target="_blank">
+                <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="<?php echo base_url() ?>biaya_download" target="_blank">
                 <i class="fa fa-money mr-2"></i>
                 <font color="black">Biaya Pendidikan</font>
-                </a> -->
-<!--                 <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="https://drive.google.com/file/d/10LxFLgabglyyoA6VFowGHCX86AMJPqgn/view?usp=sharing" target="_blank">
+                </a>
+                <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="<?php echo base_url() ?>tutorial_download" target="_blank">
                 <i class="fa fa-book mr-2"></i>
-                <font color="black">Tutorial Pendaftaran</font></a> -->
+                <font color="black">Tutorial Pendaftaran</font></a>
                 <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="https://linktr.ee/UNIMARAMNI" target="_blank">
                 <i class="fa fa-info mr-2"></i>
                 <font color="black">Informasi Selengkapnya</font>
@@ -262,7 +263,7 @@
                   <p class="lead">Klik Untuk Lihat Detail</p>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/pi23.jpg" alt="">
+              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/d4mplm23.jpg" alt="">
               <p class="lead text-center"><font color="black">D4 MANAJEMEN PELABUHAN DAN LOGISTIK MARITIM (</font></p>
             </a>
           </div>
