@@ -281,7 +281,7 @@
           </div>
         </div>
         <div class="text-center mt-4">
-         <!-- <center><img src="<?php// echo base_url() ?>assets/front1/img/alur_gel1_20232.png" width="100%"></center> -->
+         <center><img src="<?php echo base_url() ?>assets/front1/img/alur_gd_2024.jpg" width="100%"></center>
         </div>
       <!--   <div class="text-center mt-4">
          <center><img src="<?php //echo base_url() ?>assets/front1/img/alur.jpg" width="100%"></center>
