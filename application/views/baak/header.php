@@ -323,10 +323,6 @@
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
              <div class="box-body" style="">
-              Ekstensi
-              <span class="pull-right badge bg-blue">Tidak Ada</span>
-            </div>
-             <div class="box-body" style="">
               Gelombang Dini
               <?php 
             $where_ft = array(
@@ -367,10 +363,6 @@
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
              <div class="box-body" style="">
-              Ekstensi
-              <span class="pull-right badge bg-blue">Tidak Ada</span>
-            </div>
-             <div class="box-body" style="">
               Gelombang Dini
               <?php 
             $where_ft = array(
@@ -409,10 +401,6 @@
             'tbl_catar_2024.jalur' => 'reguler'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
-            </div>
-             <div class="box-body" style="">
-              Ekstensi
-              <span class="pull-right badge bg-blue">Tidak Ada</span>
             </div>
              <div class="box-body" style="">
               Gelombang Dini
