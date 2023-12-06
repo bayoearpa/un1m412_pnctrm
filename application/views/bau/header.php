@@ -62,7 +62,7 @@
         <ul class="nav navbar-nav">
          
           <!-- User Account: style can be found in dropdown.less -->
-          <li class="dropdown notifications-menu open">
+          <li class="dropdown notifications-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
               <i class="fa fa-bell-o"></i>
               <span class="label label-warning">10</span>
