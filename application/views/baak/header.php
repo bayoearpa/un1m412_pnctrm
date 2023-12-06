@@ -273,7 +273,7 @@
               $gelombang=$this->m_registrasi->get_data_gelombang($where2);
             $where = array(
             'tbl_catar_2024.gelombang' => $gelombang,
-            'tbl_catar_2024.kelas' => 'reg',
+            'tbl_catar_2024.jalur' => 'reguler',
             'tbl_catar_validasi_2024.aktif' => '1'      
             );
              ?>
@@ -287,7 +287,7 @@
               );
               $gelombang=$this->m_registrasi->get_data_gelombang($where2);
             $where = array(
-            'tbl_catar_2024.kelas' => 'fastt',
+            'tbl_catar_2024.jalur' => 'gdr1',
             'tbl_catar_validasi_2024.aktif' => '1'      
             );
              ?>
@@ -318,7 +318,7 @@
             'tbl_catar_2024.prodi' => '1',
             'tbl_catar_2024.gelombang' => $gelombang,
             'tbl_catar_validasi_2024.aktif' => '1',
-            'tbl_catar_2024.kelas' => 'reg'      
+            'tbl_catar_2024.jalur' => 'reguler'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
@@ -333,7 +333,7 @@
             'tbl_catar_2024.prodi' => '1',
             // 'tbl_catar_2023.gelombang' => $gelombang,
             'tbl_catar_validasi_2024.aktif' => '1',
-            'tbl_catar_2024.kelas' => 'fastt'      
+            'tbl_catar_2024.jalur' => 'gdr1'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where_ft)->num_rows(); ?></span>
             </div>
