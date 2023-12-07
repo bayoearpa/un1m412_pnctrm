@@ -75,12 +75,12 @@ class m_registrasi extends CI_Model
 	///////////////////////// cek notifikasi bayar/////////////////////////////////////////////////
 
     public function getNotifikasi() {
-        $query = $this->db->query("
-          SELECT c.*, v.*
-			FROM tbl_catar_2024 c
-			LEFT JOIN tbl_catar_validasi_2024 v ON c.no = v.no_reg
-			WHERE c.bukti_bayar IS NOT NULL AND v.no_reg IS NULL;
-        ");
+        $this->db->select('c.*, v.*');
+        $this->db->from('tbl_catar_2024 c');
+        $this->db->join('tbl_catar_validasi_2024 v', 'c.no = v.no_reg', 'left');
+        $this->db->where('c.bukti_bayar IS NOT NULL');
+        $this->db->where('v.no_reg IS NULL');
+        $query = $this->db->get();
         return $query->result_array();
     }
 

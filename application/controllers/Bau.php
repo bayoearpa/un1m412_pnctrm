@@ -122,8 +122,13 @@ class Bau extends CI_Controller {
     }
     ///////////////////// notifikasi pembayaran /////////////////////////////
      public function getNotifikasi() {
-        $notifikasi = $this->m_registrasi->getNotifikasi();
-        echo json_encode($notifikasi);
+
+        $data['notifikasi'] = $this->m_registrasi->getNotifikasi();
+         // Ubah hasil ke format JSON
+        $json_data = json_encode($data['notifikasi']);
+
+        // Tampilkan data JSON
+        echo $json_data;
     }
     ///////////////////// .notifikasi pembayaran ////////////////////////////
     function validasia()
