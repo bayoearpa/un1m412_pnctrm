@@ -26,6 +26,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/index',$data);
         $this->load->view('bau/footer');
+        $this->load->view('bau/validasi_js');
     }
     function logout(){
 		$this->session->sess_destroy();
