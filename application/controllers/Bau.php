@@ -26,7 +26,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/index',$data);
         $this->load->view('bau/footer');
-        $this->load->view('bau/validasi_js');
+        $this->load->view('bau/footer_js');
     }
     function logout(){
 		$this->session->sess_destroy();
@@ -119,6 +119,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/validasi',$data);
         $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
         $this->load->view('bau/validasi_js');
     }
     ///////////////////// notifikasi pembayaran /////////////////////////////
