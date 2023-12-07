@@ -2,7 +2,7 @@
     // Fungsi untuk mendapatkan notifikasi dari server
 function getNotifikasi() {
     $.ajax({
-        url: "<?php echo base_url('notifikasi/getNotifikasi'); ?>",
+        url: "<?php echo base_url('bau/getNotifikasi'); ?>",
         type: "GET",
         dataType: "json",
         success: function(data) {
