@@ -21,8 +21,9 @@ function updateNotifikasi(notifikasi) {
     $("#notifikasi-menu").empty();
 
     // Tambahkan notifikasi baru
-    for (var i = 0; i < jumlahNotifikasi; i++) {
-        $("#notifikasi-menu").append("<li><a href='#'><i class='fa fa-user text-red'></i> Calon mahasiswa belum divalidasi - No. Reg: " + notifikasi[i].no + "</a></li>");
+   for (var i = 0; i < jumlahNotifikasi; i++) {
+        var notifikasiLink = "<?php echo base_url('bau/validasi/'); ?>" + notifikasi[i].no;
+        $("#notifikasi-menu").append("<li><a href='" + notifikasiLink + "'><i class='fa fa-user text-red'></i> Pendaftar No. Reg: " + notifikasi[i].no + " | " + notifikasi[i].nama + " belum divalidasi</a></li>");
     }
 }
 
