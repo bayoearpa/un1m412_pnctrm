@@ -72,6 +72,14 @@ class m_registrasi extends CI_Model
         }
     }
 	///////////////////////// .untuk cek user/////////////////////////////////////////////////
+	///////////////////////// cek notifikasi bayar/////////////////////////////////////////////////
+
+    public function getNotifikasi() {
+        $query = $this->db->query("SELECT * FROM tbl_catar_validasi_2024 WHERE aktif = 0 AND bukti_bayar IS NOT NULL");
+        return $query->result_array();
+    }
+
+	///////////////////////// .cek notifikasi bayar/////////////////////////////////////////////////
 	function get_data_wilayah($where){
 		$this->db->select('tbl_kabkota.id_wil AS id_kota,
 		tbl_kabkota.nm_wil AS kabkota,

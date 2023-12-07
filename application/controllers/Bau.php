@@ -120,6 +120,12 @@ class Bau extends CI_Controller {
         $this->load->view('bau/footer');
         $this->load->view('bau/validasi_js');
     }
+    ///////////////////// notifikasi pembayaran /////////////////////////////
+     public function getNotifikasi() {
+        $notifikasi = $this->m_registrasi->getNotifikasi();
+        echo json_encode($notifikasi);
+    }
+    ///////////////////// .notifikasi pembayaran ////////////////////////////
     function validasia()
     {
         # code...
@@ -182,6 +188,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/rekap_validasi');
         $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
     }
     public function rekap_validasip()
     {
@@ -200,6 +207,7 @@ class Bau extends CI_Controller {
             $this->load->view('bau/rekap_validasi');
             $this->load->view('bau/rekap_validasip',$data);
             $this->load->view('bau/footer');
+            $this->load->view('bau/footer_js');
          }elseif ($gelombang == null) {
              # code...
              $where = array(
@@ -212,6 +220,7 @@ class Bau extends CI_Controller {
             $this->load->view('bau/rekap_validasi');
             $this->load->view('bau/rekap_validasip',$data);
             $this->load->view('bau/footer');
+            $this->load->view('bau/footer_js');
          }else{
             $where = array(
             'tbl_catar_2024.gelombang' => $gelombang,
@@ -223,6 +232,7 @@ class Bau extends CI_Controller {
             $this->load->view('bau/rekap_validasi');
             $this->load->view('bau/rekap_validasip',$data);
             $this->load->view('bau/footer');
+            $this->load->view('bau/footer_js');
          } 
         
     }
@@ -232,6 +242,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/edit');
         $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
     }
     public function edit_cari()
     {
@@ -248,6 +259,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/edit');
         $this->load->view('bau/edit_cari',$data);
         $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
     }
     public function editp()
     {
@@ -282,11 +294,13 @@ class Bau extends CI_Controller {
             $this->load->view('bau/header');
             $this->load->view('bau/edit');
             $this->load->view('bau/footer');
+            $this->load->view('bau/footer_js');
         } else {
             $this->session->set_flashdata('success', ' Edit data berhasil.');
             $this->load->view('bau/header');
             $this->load->view('bau/edit');
             $this->load->view('bau/footer');
+            $this->load->view('bau/footer_js');
         }
     }
     ///////////////////////////////////////////////////////summary 2024///////////////////////////////////////////
@@ -321,6 +335,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/summary_2024_kabkota',$data);
         $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
 
     }
      public function get_summary_prov_2024()
@@ -332,6 +347,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/summary_2024_prov',$data);
         $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
 
     }
      public function get_summary_sekolah_2024()
@@ -358,6 +374,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/summary_2024_sekolah',$data);
         $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
 
     }
 
@@ -388,6 +405,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/summary_2024_sumber',$data);
         $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
         $this->load->view('bau/summary_2024_sumber_js',$data);
 
     }
@@ -423,6 +441,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/summary_2023_kabkota',$data);
         $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
 
     }
      public function get_summary_prov_2023()
@@ -434,6 +453,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/summary_2023_prov',$data);
         $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
 
     }
      public function get_summary_sekolah_2023()
@@ -460,6 +480,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/summary_2023_sekolah',$data);
         $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
 
     }
 
@@ -490,6 +511,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/summary_2023_sumber',$data);
         $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
         $this->load->view('bau/summary_2023_sumber_js',$data);
 
     }
@@ -525,6 +547,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/summary_2022_kabkota',$data);
         $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
 
     }
      public function get_summary_prov_2022()
@@ -536,6 +559,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/summary_2022_prov',$data);
         $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
 
     }
      public function get_summary_sekolah_2022()
@@ -562,6 +586,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/summary_2022_sekolah',$data);
         $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
 
     }
 
@@ -592,6 +617,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/summary_2022_sumber',$data);
         $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
         $this->load->view('bau/summary_2022_sumber_js',$data);
 
     }
@@ -617,6 +643,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/summary_2021_prov',$data);
         $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
 
     }
     public function get_summary_prov_detail_2021($id)
@@ -627,6 +654,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/summary_2021_detail_prov',$data);
         $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
     }
      public function get_summary_ktkb_2021()
     {
@@ -637,6 +665,7 @@ class Bau extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/summary_2021_ktkb',$data);
         $this->load->view('baak/footer');
+        $this->load->view('bau/footer_js');
 
     }
     public function get_summary_sekolah_2021()
@@ -658,6 +687,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/summary_2021_sekolah',$data);
         $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
 
     }
     public function get_summary_sumber_2021_send($sumber)
@@ -687,6 +717,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/summary_2021_sumber',$data);
         $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
         $this->load->view('bau/summary_2021_sumber_js',$data);
 
     }
@@ -711,6 +742,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/summary_2020_sekolah',$data);
         $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
 
     }
      public function get_summary_sumber_2020_send($sumber)
@@ -740,6 +772,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/summary_2020_sumber',$data);
         $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
         $this->load->view('bau/summary_2020_sumber_js',$data);
 
     }
