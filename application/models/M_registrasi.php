@@ -75,7 +75,7 @@ class m_registrasi extends CI_Model
 	///////////////////////// cek notifikasi bayar/////////////////////////////////////////////////
 
     public function getNotifikasi() {
-        $this->db->select('c.*, v.*');
+        $this->db->select('c.no as nomor, c.nama, c.prodi, c.bukti_bayar');
         $this->db->from('tbl_catar_2024 c');
         $this->db->join('tbl_catar_validasi_2024 v', 'c.no = v.no', 'left');
         $this->db->where('c.bukti_bayar > 0');
