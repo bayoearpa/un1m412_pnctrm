@@ -80,6 +80,7 @@ class m_registrasi extends CI_Model
         $this->db->join('tbl_catar_validasi_2024 v', 'c.no = v.no', 'left');
         $this->db->where('c.bukti_bayar > 0');
         $this->db->where('v.no IS NULL');
+        $this->db->order_by('c.no', 'desc');
         $query = $this->db->get();
         return $query->result_array();
     }
