@@ -76,10 +76,10 @@ class m_registrasi extends CI_Model
 
     public function getNotifikasi() {
         $query = $this->db->query("
-           SELECT v.*
-			FROM tbl_catar_validasi_2024 v
-			LEFT JOIN tbl_catar_2024 c ON v.no = c.no
-			WHERE v.aktif = 0 AND c.bukti_bayar IS NOT NULL AND c.no IS NULL;
+          SELECT c.*, v.*
+			FROM tbl_catar_2024 c
+			LEFT JOIN tbl_catar_validasi_2024 v ON c.no = v.no_reg
+			WHERE c.bukti_bayar IS NOT NULL AND v.no_reg IS NULL;
         ");
         return $query->result_array();
     }
