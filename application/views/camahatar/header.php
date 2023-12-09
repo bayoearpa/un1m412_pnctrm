@@ -133,7 +133,7 @@
           <?php 
           $seleksiPage = ($this->session->userdata('jalur') == "gdr1") ? 'seleksigdr1' : 'seleksigdr2';
            ?>
-          <li><a href="<?php echo base_url($redirectPage) ?>"><i class="fa fa-users"></i><span>Seleksi</span></a></li>
+          <li><a href="<?php echo base_url($seleksiPage) ?>"><i class="fa fa-users"></i><span>Seleksi</span></a></li>
           <li><a href="#"><i class="fa fa-info-circle"></i><span>Pengumuman</span></a></li>
           <li><a href="#"><i class="fa fa-external-link"></i><span>Daftar Ulang</span></a></li>
 
