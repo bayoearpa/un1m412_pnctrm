@@ -41,7 +41,7 @@
     ?>
 <div class="login-box">
   <div class="login-logo">
-  <img src="<?php echo base_url() ?>assets/front1/img/amni1.png" width="20%">
+  <img src="<?php echo base_url() ?>assets/front1/img/amni-png.png" width="20%">
     <a href="../../index2.html"><b>Admin</b>Pencatarma</a>
   </div>
   <!-- /.login-logo -->
