@@ -498,6 +498,12 @@ class Camhtar extends CI_Controller {
 		force_download('assets/download/surat_keterangan_siswa.docx',NULL);
 		redirect(base_url());
 	}
+	public function down_format_supersehat()
+	{
+		# code...
+		force_download('assets/download/surat_pernyataan_sehat.docx',NULL);
+		redirect(base_url());
+	}
 	public function seleksigdr1()
 	{
 		# code...
@@ -511,7 +517,7 @@ class Camhtar extends CI_Controller {
 			$data['nik'] = $key->nik;
 		}
 		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2024')->num_rows();
-		
+
 		$this->load->view('camahatar/header',$data);
         $this->load->view('camahatar/seleksigdr1',$data);
         $this->load->view('camahatar/footer');
