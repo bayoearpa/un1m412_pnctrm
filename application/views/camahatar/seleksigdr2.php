@@ -24,7 +24,7 @@
                 </div> 
 
            <?php }else{ ?>
-                
+                <?php  foreach ($catar as $c) { ?>
                  <form action="<?php echo base_url() ?>proses_bukti_bayar" name="form1" id="form1" method="post" enctype="multipart/form-data">               
                <div class="form-group">
                         <label for="editufsignon">Upload Ijasah D3 (Upload dalam format .pdf)</label>
@@ -61,7 +61,7 @@
                         <?php } ?>
                 </div>
                 <div class="form-group"><button type="submit" class="btn btn-primary">Simpan</button></div>
-
+                  <?php } ?>
               </form>
 
             <?php } ?>
