@@ -131,7 +131,7 @@
           <li><a href="<?php echo base_url() ?>biodata"><i class="fa fa-user"></i><span>Biodata</span></a></li>
           <li><a href="<?php echo base_url() ?>validasi"><i class="fa fa-check"></i><span>Validasi</span></a></li>
           <?php 
-          $seleksiPage = ($this->session->userdata('jalur') == "gdr1") ? 'seleksigdr1' : 'seleksigdr2';
+          $seleksiPage = ($this->session->userdata('jalur') == "gdr1") ? 'seleksi_geldini_reguler' : 'seleksi_geldini_tf';
            ?>
           <li><a href="<?php echo base_url($seleksiPage) ?>"><i class="fa fa-users"></i><span>Seleksi</span></a></li>
           <li><a href="#"><i class="fa fa-info-circle"></i><span>Pengumuman</span></a></li>

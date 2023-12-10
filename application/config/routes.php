@@ -89,6 +89,10 @@ $route['proses_biodata'] = 'camhtar/insertReg';
 $route['pembayaran'] = 'camhtar/pembayaran';
 $route['validasi'] = 'camhtar/validasi';
 $route['proses_bukti_bayar'] = 'camhtar/upload_bukti_bayar';
+$route['seleksi_geldini_reguler'] = 'camhtar/seleksigdr1';
+$route['seleksi_geldini_tf'] = 'camhtar/seleksigdr2';
+$route['download_suket'] = 'camhtar/down_suket';
+
 
 
 // $route['cetakRegistrasi'] = 'welcome/insertReg';

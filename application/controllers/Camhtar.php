@@ -492,6 +492,30 @@ class Camhtar extends CI_Controller {
 		redirect("validasi");
 
 	}
+	public function down_suket()
+	{
+		# code...
+		force_download('assets/download/surat_keterangan_siswa.docx',NULL);
+		redirect(base_url());
+	}
+	public function seleksigdr1()
+	{
+		# code...
+		$no = $this->session->userdata('no');
+		$where = array(
+				'no' => $no,
+			);
+		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2024')->result();
+		foreach ($data['catar'] as $key) {
+			# code...
+			$data['nik'] = $key->nik;
+		}
+		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2024')->num_rows();
+		
+		$this->load->view('camahatar/header',$data);
+        $this->load->view('camahatar/seleksigdr1',$data);
+        $this->load->view('camahatar/footer');
+	}
 
 }
 
