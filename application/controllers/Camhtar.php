@@ -540,6 +540,98 @@ class Camhtar extends CI_Controller {
         $this->load->view('camahatar/seleksigdr2',$data);
         $this->load->view('camahatar/footer');
 	}
+	public function seleksigdr2p()
+	{
+		# code...
+		$no = $this->session->userdata('no');
+		$where = array(
+	        'no' => $no,
+	    );
+
+		    // Konfigurasi upload file Ijasah D3
+	    $config_ijasah_d3['upload_path'] = './assets/upload/2024/upload_ijasah_d3/';
+	    $config_ijasah_d3['allowed_types'] = 'pdf';
+	    $config_ijasah_d3['max_size'] = 1048; // Ukuran maksimum file (dalam kilobyte)
+	     $config['file_name'] = $no.'_ijasah_D3'; // Nama file yang diunggah sesuai NIM
+
+	    $this->load->library('upload', $config_ijasah_d3, 'upload_ijd3');
+
+	    // Jika upload berhasil
+	    if ($this->upload_ijasah_d3->do_upload('upload_ijd3')) {
+	        $upload_data = $this->upload_ijasah_d3->data();
+
+	        // Update data pada database
+	        $update_data = array(
+	            'upload_ijd3' => $upload_data['file_name'],
+	            // Tambahkan field lain sesuai kebutuhan
+	        );
+
+	        $this->m_registrasi->update_data($no, $update_data);
+	    } else {
+	        // Jika upload gagal, tampilkan pesan kesalahan
+	        $error = array('error' => $this->upload_ijasah_d3->display_errors());
+	       	$this->session->set_flashdata('error', $error);
+			redirect(base_url('seleksi_geldini_tf'));
+	    }
+
+
+	       // Konfigurasi upload file Transkip D3
+	    $config_transkip_d3['upload_path'] = './assets/upload/2024/upload_transkip_d3/';
+	    $config_transkip_d3['allowed_types'] = 'pdf';
+	    $config_transkip_d3['max_size'] = 1048; // Ukuran maksimum file (dalam kilobyte)
+	     $config['file_name'] = $no.'_Transkip_D3'; // Nama file yang diunggah sesuai NIM
+
+	    $this->load->library('upload', $config_transkip_d3, 'upload_transd3');
+
+	    // Jika upload berhasil
+	    if ($this->upload_transkip_d3->do_upload('upload_transd3')) {
+	        $upload_data = $this->upload_transkip_d3->data();
+
+	        // Update data pada database
+	        $update_data = array(
+	            'upload_transd3' => $upload_data['file_name'],
+	            // Tambahkan field lain sesuai kebutuhan
+	        );
+
+	        $this->m_registrasi->update_data($no, $update_data);
+	    } else {
+	        // Jika upload gagal, tampilkan pesan kesalahan
+	        $error = array('error' => $this->upload_transkip_d3->display_errors());
+	       	$this->session->set_flashdata('error', $error);
+			redirect(base_url('seleksi_geldini_tf'));
+	    }
+
+	      // Konfigurasi upload file Surat Pernyataan Sehat
+	    $config_supersehat['upload_path'] = './assets/upload/2024/upload_surat_pernyataan_sehat/';
+	    $config_supersehat['allowed_types'] = 'pdf';
+	    $config_supersehat['max_size'] = 1048; // Ukuran maksimum file (dalam kilobyte)
+	     $config['file_name'] = $no.'_Surat_Pernyataan_sehat'; // Nama file yang diunggah sesuai NIM
+
+	    $this->load->library('upload', $config_supersehat, 'upload_supersehat');
+
+	    // Jika upload berhasil
+	    if ($this->upload_supersehat->do_upload('upload_supersehat')) {
+	        $upload_data = $this->upload_supersehat->data();
+
+	        // Update data pada database
+	        $update_data = array(
+	            'upload_supersehat' => $upload_data['file_name'],
+	            // Tambahkan field lain sesuai kebutuhan
+	        );
+
+	        $this->m_registrasi->update_data($no, $update_data);
+	    } else {
+	        // Jika upload gagal, tampilkan pesan kesalahan
+	        $error = array('error' => $this->upload_supersehat->display_errors());
+	       	$this->session->set_flashdata('error', $error);
+			redirect(base_url('seleksi_geldini_tf'));
+	    }
+	    // Lakukan hal yang sama untuk file-file lainnya
+	    // ...
+	    redirect(base_url('seleksi_geldini_tf'));
+
+	    // Jika Anda memiliki lebih banyak jenis file yang diupload, lakukan hal yang sama untuk konfigurasi upload dan proses uploadnya
+	}
 
 }
 

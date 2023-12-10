@@ -25,7 +25,7 @@
 
            <?php }else{ ?>
                 <?php  foreach ($catar as $c) { ?>
-                 <form action="<?php echo base_url() ?>proses_bukti_bayar" name="form1" id="form1" method="post" enctype="multipart/form-data">               
+                 <form action="<?php echo base_url() ?>proses_seleksi_gdtf" name="form1" id="form1" method="post" enctype="multipart/form-data">               
                <div class="form-group">
                         <label for="editufsignon">Upload Ijasah D3 (Upload dalam format .pdf)</label>
                         <input type="file" class="form-control" id="upload_ijd3" name="upload_ijd3">
