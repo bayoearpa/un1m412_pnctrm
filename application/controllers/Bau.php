@@ -188,6 +188,38 @@ class Bau extends CI_Controller {
         $this->load->view('bau/cetak',$data);
 
     }
+    /////////////////////////////////////cek sudah validasi//////////////////////////////////////////
+    public function data_sudah_validasi()
+    {
+        # code...
+        $data['catar'] = $this->m_registrasi->get_data_join_all()->result();
+        $this->load->view('bau/header');
+        $this->load->view('bau/data_sudah_validasi',$data);
+        $this->load->view('bau/footer');
+    }
+    public function data_sudah_validasi_gd()
+    {
+        # code...
+        $where = array(
+            'jalur' => 'gdr1'
+        );
+        $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+        $this->load->view('bau/header');
+        $this->load->view('bau/data_sudah_validasi_gd',$data);
+        $this->load->view('bau/footer');
+    }
+     public function data_sudah_validasi_gdtf()
+    {
+        # code...
+        $where = array(
+            'jalur' => 'gdr2'
+        );
+        $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+        $this->load->view('bau/header');
+        $this->load->view('bau/data_sudah_validasi_gd',$data);
+        $this->load->view('bau/footer');
+    }
+    /////////////////////////////////////.cek sudah validasi/////////////////////////////////////////
     /////////////////////////////////////////////////////// rekap validasi ///////////////////////////////////////
      public function rekap_validasi()
     {
