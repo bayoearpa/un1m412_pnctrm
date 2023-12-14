@@ -196,6 +196,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/data_sudah_validasi',$data);
         $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
     }
     public function data_sudah_validasi_gd()
     {
@@ -207,6 +208,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/data_sudah_validasi_gd',$data);
         $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
     }
      public function data_sudah_validasi_gdtf()
     {
@@ -218,6 +220,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/data_sudah_validasi_gd',$data);
         $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
     }
     /////////////////////////////////////.cek sudah validasi/////////////////////////////////////////
     /////////////////////////////////////////////////////// rekap validasi ///////////////////////////////////////
