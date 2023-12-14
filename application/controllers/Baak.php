@@ -97,7 +97,18 @@ class Baak extends CI_Controller {
     {
         # code...
         $where = array(
-            'jalur' => '(gdr1 OR gdr2)'
+            'jalur' => 'gdr1'
+        );
+        $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+        $this->load->view('baak/header');
+        $this->load->view('baak/data_sudah_validasi_gd',$data);
+        $this->load->view('baak/footer');
+    }
+     public function data_sudah_validasi_gdtf()
+    {
+        # code...
+        $where = array(
+            'jalur' => 'gdr2'
         );
         $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
         $this->load->view('baak/header');
