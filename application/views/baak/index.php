@@ -43,7 +43,7 @@
                   $where = array(
                   'no' => $c->no       
                   );
-                  $cek=$this->m_registrasi->get_data($where,'tbl_catar_validasi_2021')->num_rows(); ?>
+                  $cek=$this->m_registrasi->get_data($where,'tbl_catar_validasi_2024')->num_rows(); ?>
                    <?php if ($cek > 0){ ?>
                       <a class="btn btn-success btn-sm" href="#"><i class="fa fa-check-circle"></i> Sudah Validasi</a>
                   <?php }else{ ?>
