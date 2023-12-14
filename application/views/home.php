@@ -875,9 +875,12 @@
                 <li>Belum menikah dan sanggup tidak menikah selama masa pendidikan yang dibuktikan dengan surat keterangan belum pernah menikah.</li> 
                 <li>Copy Ijazah:</li>
                 <ul>
-                  <li>SMA atau Madrasah Aliyah (MA) – (Semua Program Studi).</li>
-                  <li>SMK –(Semua Program Studi).</li>
+                  <li>SMA atau Madrasah Aliyah (MA) – IPA.</li>
+                  <li>SMK – Pelayaran.</li>
+                  <li>SMK – Teknik.</li>
                 </ul>
+                <li>SMK/MAK jurusan teknik mesin , teknik mekatronika, teknik elektro (teknik elektronika industri, teknik mekatronika, kecuali tekni audio video), teknik ketenagalistrikan, teknik pendinginan dan tata udara, teknik perkapalan untuk program keahlian instalasi permesinan kapal dan teknik instrumentasi industri.
+                </li>
                 <li>Dilegalisir dari instansi pemerintah dan pejabat yang berwenang.</li> 
                 <li>Surat Keterangan Catatan Kepolisian ( SKCK).</li> 
                 <li>Pas photo hitam putih ukuran 3x4 sebanyak 2 (dua) lembar.</li> 
