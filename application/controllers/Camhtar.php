@@ -501,7 +501,7 @@ class Camhtar extends CI_Controller {
 	public function down_supersehat()
 	{
 		# code...
-		force_download('assets/download/surat_pernyataan_sehat.docx',NULL);
+		force_download('assets/download/surat_pernyataan_sehat_tf.docx',NULL);
 		redirect(base_url());
 	}
 	public function down_supersehatreg()
