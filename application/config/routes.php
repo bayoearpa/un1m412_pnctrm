@@ -91,6 +91,7 @@ $route['validasi'] = 'camhtar/validasi';
 $route['proses_bukti_bayar'] = 'camhtar/upload_bukti_bayar';
 $route['seleksi_geldini_reguler'] = 'camhtar/seleksigdr1';
 $route['seleksi_geldini_tf'] = 'camhtar/seleksigdr2';
+$route['proses_seleksi_gdtf'] = 'camhtar/seleksigdr2p';
 $route['download_suket'] = 'camhtar/down_suket';
 $route['download_supersehat'] = 'camhtar/down_supersehat';
 $route['download_supersehatreg'] = 'camhtar/down_supersehatreg';
