@@ -566,7 +566,7 @@ class Camhtar extends CI_Controller {
 
 	    // Jika upload berhasil
 	    if ($this->upload->do_upload('upload_ijd3')) {
-	        $upload_data = $this->upload_ijasah_d3->data();
+	        $upload_data = $this->upload->data();
 
 	        // Update data pada database
 	        $update_data = array(
@@ -593,7 +593,7 @@ class Camhtar extends CI_Controller {
 	    $this->upload->initialize($config_transkip_d3);
 	    // Jika upload berhasil
 	    if ($this->upload->do_upload('upload_transd3')) {
-	        $upload_data = $this->upload_transkip_d3->data();
+	        $upload_data = $this->upload->data();
 
 	        // Update data pada database
 	        $update_data = array(
@@ -619,7 +619,7 @@ class Camhtar extends CI_Controller {
 	    $this->upload->initialize($config_supersehat);
 	    // Jika upload berhasil
 	    if ($this->upload->do_upload('upload_supersehat')) {
-	        $upload_data = $this->upload_supersehat->data();
+	        $upload_data = $this->upload->data();
 
 	        // Update data pada database
 	        $update_data = array(
