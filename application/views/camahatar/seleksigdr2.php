@@ -31,7 +31,7 @@
                         <input type="file" class="form-control" id="upload_ijd3" name="upload_ijd3">
                         <!-- <input type="hidden" id="editufsignon_existing" name="ufsignon_existing" value="<?php //echo $c->upload_file_signon; ?>"> -->
                         <?php if ($c->upload_ijd3) { ?>
-                        <button class="btn btn-success view-file-button" data-filename="<?php echo $c->upload_ijd3; ?>">Lihat Ijasah D3</button>
+                        <button class="btn btn-success view-fileui-button" data-filename="<?php echo $c->upload_ijd3; ?>">Lihat Ijasah D3</button>
                         <?php } else { ?>
                         <!-- Tampilkan pesan jika file tidak ada -->
                         File tidak tersedia
@@ -43,7 +43,7 @@
                         <input type="file" class="form-control" id="upload_transd3" name="upload_transd3">
                         <!-- <input type="hidden" id="editufsignon_existing" name="ufsignon_existing" value="<?php //echo $c->upload_file_signon; ?>"> -->
                         <?php if ($c->upload_transd3) { ?>
-                        <button class="btn btn-success view-file-button" data-filename="<?php echo $c->upload_transd3; ?>">Lihat Transkip D3</button>
+                        <button class="btn btn-success view-fileut-button" data-filename="<?php echo $c->upload_transd3; ?>">Lihat Transkip D3</button>
                         <?php } else { ?>
                         <!-- Tampilkan pesan jika file tidak ada -->
                         File tidak tersedia
@@ -54,7 +54,7 @@
                         <input type="file" class="form-control" id="upload_supersehat" name="upload_supersehat">
                         <!-- <input type="hidden" id="editufsignon_existing" name="ufsignon_existing" value="<?php //echo $c->upload_file_signon; ?>"> -->
                         <?php if ($c->upload_supersehat) { ?>
-                        <button class="btn btn-success view-file-button" data-filename="<?php echo $c->upload_supersehat; ?>">Lihat Surat Pernyataan Sehat</button>
+                        <button class="btn btn-success view-filess-button" data-filename="<?php echo $c->upload_supersehat; ?>">Lihat Surat Pernyataan Sehat</button>
                         <?php } else { ?>
                         <!-- Tampilkan pesan jika file tidak ada -->
                         File tidak tersedia
