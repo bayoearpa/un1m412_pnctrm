@@ -574,7 +574,7 @@ class Camhtar extends CI_Controller {
 	            // Tambahkan field lain sesuai kebutuhan
 	        );
 
-	        $this->m_registrasi->update_data($no, $update_data);
+	        $this->m_registrasi->update_data($where,$update_data,'tbl_catar_2024');
 	    } else {
 	        // Jika upload gagal, tampilkan pesan kesalahan
 	        $error = array('error' => $this->upload_ijasah_d3->display_errors());
@@ -601,7 +601,7 @@ class Camhtar extends CI_Controller {
 	            // Tambahkan field lain sesuai kebutuhan
 	        );
 
-	        $this->m_registrasi->update_data($no, $update_data);
+	        $this->m_registrasi->update_data($where,$update_data,'tbl_catar_2024');
 	    } else {
 	        // Jika upload gagal, tampilkan pesan kesalahan
 	        $error = array('error' => $this->upload_transkip_d3->display_errors());
@@ -627,7 +627,7 @@ class Camhtar extends CI_Controller {
 	            // Tambahkan field lain sesuai kebutuhan
 	        );
 
-	        $this->m_registrasi->update_data($no, $update_data);
+	        $this->m_registrasi->update_data($where,$update_data,'tbl_catar_2024');
 	    } else {
 	        // Jika upload gagal, tampilkan pesan kesalahan
 	        $error = array('error' => $this->upload_supersehat->display_errors());
