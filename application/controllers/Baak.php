@@ -66,6 +66,9 @@ class Baak extends CI_Controller {
                 case '8':
                     $pick = "S1 PERDAGANGAN INTERNASIONAL";
                 break;
+                case '8':
+                    $pick = "D4 MANAJEMEN PELABUHAN DAN LOGISTIK MARITIM";
+                break;
                 
             }
             return $pick;
@@ -73,6 +76,7 @@ class Baak extends CI_Controller {
     function index() {
         // $data['catar'] = $this->m_registrasi->get_data_join_all()->result(); 
         // $data['catar'] = $this->m_registrasi->get_data_all('tbl_catar_2021')->result(); 
+        $data['baak'] = $this;
         $where2= array(
             'id_gelombang' => '1',  
         );
