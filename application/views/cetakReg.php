@@ -121,6 +121,9 @@
 					case '8':
 						$pick = "S1 PERDAGANGAN INTERNASIONAL";
 					break;
+					case '9':
+						$pick = "D4 MANAJEMEN PELABUHAN DAN LOGISTIK MARITIM";
+					break;
 					
 				}
 				echo $pick;
