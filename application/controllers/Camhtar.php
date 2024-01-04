@@ -560,7 +560,9 @@ class Camhtar extends CI_Controller {
 	    $config_ijasah_d3['max_size'] = 1048; // Ukuran maksimum file (dalam kilobyte)
 	     $config['file_name'] = $no.'_ijasah_D3'; // Nama file yang diunggah sesuai NIM
 
-	    $this->load->library('upload', $config_ijasah_d3, 'upload_ijd3');
+	    // $this->load->library('upload', $config_ijasah_d3, 'upload_ijd3');
+	    $this->load->library('upload');
+    	$this->upload->initialize($config_ijasah_d3);
 
 	    // Jika upload berhasil
 	    if ($this->upload_ijasah_d3->do_upload('upload_ijd3')) {
@@ -587,8 +589,8 @@ class Camhtar extends CI_Controller {
 	    $config_transkip_d3['max_size'] = 1048; // Ukuran maksimum file (dalam kilobyte)
 	     $config['file_name'] = $no.'_Transkip_D3'; // Nama file yang diunggah sesuai NIM
 
-	    $this->load->library('upload', $config_transkip_d3, 'upload_transd3');
-
+	    $this->load->library('upload');
+	    $this->upload->initialize($config_transkip_d3);
 	    // Jika upload berhasil
 	    if ($this->upload_transkip_d3->do_upload('upload_transd3')) {
 	        $upload_data = $this->upload_transkip_d3->data();
@@ -613,8 +615,8 @@ class Camhtar extends CI_Controller {
 	    $config_supersehat['max_size'] = 1048; // Ukuran maksimum file (dalam kilobyte)
 	     $config['file_name'] = $no.'_Surat_Pernyataan_sehat'; // Nama file yang diunggah sesuai NIM
 
-	    $this->load->library('upload', $config_supersehat, 'upload_supersehat');
-
+	    $this->load->library('upload');
+	    $this->upload->initialize($config_supersehat);
 	    // Jika upload berhasil
 	    if ($this->upload_supersehat->do_upload('upload_supersehat')) {
 	        $upload_data = $this->upload_supersehat->data();
