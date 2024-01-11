@@ -186,7 +186,7 @@
                    <div class="form-group">
                   <label for="exampleInputEmail1">-Kemeja :</label>
                  <select class="form-control" name="pdhpdub_kemeja" id="pdhpdub_kemeja">
-                    <option>--Pilih Ukuran Kaos Olahraga--</option>
+                    <option>--Pilih Ukuran Kemeja untuk seragam Seragam PDH & Seragam PDUB--</option>
                     <option value="S">S</option>
                     <option value="M">M</option>
                     <option value="L">L</option>
@@ -199,7 +199,7 @@
                    <div class="form-group">
                   <label for="exampleInputEmail1">-Celana :</label>
                  <select class="form-control" name="pdhpdub_celana" id="pdhpdub_celana">
-                    <option>--Pilih Ukuran Kaos Olahraga--</option>
+                    <option>--Pilih Ukuran Celana untuk seragam Seragam PDH & Seragam PDUB--</option>
                     <option value="S">S</option>
                     <option value="M">M</option>
                     <option value="L">L</option>
@@ -215,7 +215,7 @@
                    <div class="form-group">
                   <label for="exampleInputEmail1"> Jas PDPM :</label>
                  <select class="form-control" name="jaspdpm" id="jaspdpm">
-                    <option>--Pilih Ukuran Kaos Olahraga--</option>
+                    <option>--Pilih Ukuran Jas PDPM--</option>
                     <option value="S">S</option>
                     <option value="M">M</option>
                     <option value="L">L</option>
