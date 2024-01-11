@@ -653,10 +653,10 @@ class Camhtar extends CI_Controller {
 		$link_kesehatan = $this->input->post('link_kesehatan');
 		$link_supersehat = $this->input->post('link_supersehat');
 		$link_prestasi = $this->input->post('link_prestasi');
-		$link_pushup = $this->input->post('link_pushup');
-		$link_shitup = $this->input->post('link_shitup');
-		$link_pullup = $this->input->post('link_pullup');
-		$link_shuttle = $this->input->post('link_shuttle');
+		$link_video_pushup = $this->input->post('link_video_pushup');
+		$link_video_shitup = $this->input->post('link_video_shitup');
+		$link_video_pullup = $this->input->post('link_video_pullup');
+		$link_video_shuttle = $this->input->post('link_video_shuttle');
 
 		$data = array(
 					'no'=> $this->session->userdata('no'),
@@ -701,10 +701,10 @@ class Camhtar extends CI_Controller {
 		$link_kesehatan = $this->input->post('link_kesehatan');
 		$link_supersehat = $this->input->post('link_supersehat');
 		$link_prestasi = $this->input->post('link_prestasi');
-		$link_pushup = $this->input->post('link_pushup');
-		$link_shitup = $this->input->post('link_shitup');
-		$link_pullup = $this->input->post('link_pullup');
-		$link_shuttle = $this->input->post('link_shuttle');
+		$link_video_pushup = $this->input->post('link_video_pushup');
+		$link_video_shitup = $this->input->post('link_video_shitup');
+		$link_video_pullup = $this->input->post('link_video_pullup');
+		$link_video_shuttle = $this->input->post('link_video_shuttle');
 
 		$where = array(
 	        'id_link' => $id_link,
