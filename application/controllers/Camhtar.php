@@ -728,6 +728,25 @@ class Camhtar extends CI_Controller {
 				}
 				redirect("seleksi_geldini_reguler?pesan=error");		
 	}
+	public function ukurpakaian()
+	{
+		# code...
+		$no = $this->session->userdata('no');
+		$where = array(
+				'no' => $no,
+			);
+		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2024')->result();
+		foreach ($data['catar'] as $key) {
+			# code...
+			$data['nik'] = $key->nik;
+		}
+		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2024')->num_rows();
+
+		$this->load->view('camahatar/header',$data);
+        $this->load->view('camahatar/ukurpakaian',$data);
+        $this->load->view('camahatar/footer');
+        // $this->load->view('camahatar/seleksigdr2_js');
+	}
 
 }
 
