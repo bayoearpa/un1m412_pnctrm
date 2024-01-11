@@ -11,6 +11,7 @@
 	        // Isi modal dengan data yang diambil
 	        console.log(data); // Cetak nilai data ke konsol
 	        var parsedData = JSON.parse(data);
+	        $('#id_link').val(parsedData.id_link);
 	        $('#no').val(parsedData.no);
 	        $('#link_ktp').val(parsedData.link_ktp);
 	        $('#link_ijasah').val(parsedData.link_ijasah);

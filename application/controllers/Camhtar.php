@@ -644,7 +644,7 @@ class Camhtar extends CI_Controller {
 	    // Jika Anda memiliki lebih banyak jenis file yang diupload, lakukan hal yang sama untuk konfigurasi upload dan proses uploadnya
 	}
 
-	public function proses_seleksi()
+	public function proses_seleksi_gdr1()
 	{
 		# code...
 		$link_ktp = $this->input->post('link_ktp');
@@ -674,9 +674,9 @@ class Camhtar extends CI_Controller {
 		$proses_insert = $this->m_registrasi->input_data($data,'tbl_seleksi_2024');
 				if ($proses_insert) {
 					# code...
-					redirect("proses_seleksi?pesan=succsess");
+					redirect("seleksi_geldini_reguler?pesan=succsess");
 				}
-				redirect("proses_seleksi?pesan=error");		
+				redirect("seleksi_geldini_reguler?pesan=error");		
 	}
 	public function getdataeditseleksigdr1($no)
 	{
@@ -689,6 +689,46 @@ class Camhtar extends CI_Controller {
 
         // Konversi data ke format JSON dan kirimkan ke view
         echo json_encode($data);
+	}
+	public function proses_seleksi_edit_gdr1()
+	{
+		# code...
+		$id_link = $this->input->post('id_link');
+		$no = $this->input->post('no');
+		$link_ktp = $this->input->post('link_ktp');
+		$link_ijasah = $this->input->post('link_ijasah');
+		$link_rapor = $this->input->post('link_rapor');
+		$link_kesehatan = $this->input->post('link_kesehatan');
+		$link_supersehat = $this->input->post('link_supersehat');
+		$link_prestasi = $this->input->post('link_prestasi');
+		$link_pushup = $this->input->post('link_pushup');
+		$link_shitup = $this->input->post('link_shitup');
+		$link_pullup = $this->input->post('link_pullup');
+		$link_shuttle = $this->input->post('link_shuttle');
+
+		$where = array(
+	        'id_link' => $id_link,
+	    );		
+
+		$update_data = array(
+					'no'=> $no,
+					'link_ktp' => $link_ktp,
+					'link_ijasah' => $link_ijasah,
+					'link_rapor' => $link_rapor,
+					'link_kesehatan' => $link_kesehatan,
+					'link_supersehat' => $link_supersehat,
+					'link_prestasi' => $link_prestasi,
+					'link_pushup' => $link_pushup,
+					'link_shitup' => $link_shitup,
+					'link_pullup' => $link_pullup,
+					'link_shuttle' => $link_shuttle,
+					);
+		$proses_insert = $this->m_registrasi->update_data($where,$update_data,'tbl_seleksi_2024');
+				if ($proses_insert) {
+					# code...
+					redirect("seleksi_geldini_reguler?pesan=succsess");
+				}
+				redirect("seleksi_geldini_reguler?pesan=error");		
 	}
 
 }

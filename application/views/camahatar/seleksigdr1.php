@@ -40,7 +40,7 @@
                   # code... cek seleksi ?>
                    <a href="<?php echo base_url() ?>download_supersehatreg?>" target="__blank"><button type="button" class="btn btn-primary">Download Tutorial Pengisan Form Seleksi</button></a>
               
-                 <form action="<?php echo base_url() ?>proses_seleksi" name="form1" id="form1" method="post" enctype="multipart/form-data">
+                 <form action="<?php echo base_url() ?>proses_seleksi_gelombangdini_reguler" name="form1" id="form1" method="post" enctype="multipart/form-data">
                   <input type="hidden" name="no" id="no" value="<?php echo $this->session->userdata('no'); ?>">
                   <div class="form-group">
                   <label for="exampleInputEmail1">Link File KTP</label>
@@ -114,9 +114,10 @@
                               </div>
                               <div class="modal-body">
                                   <!-- Isi formulir di sini -->
-                                  <form action="<?php echo base_url() ?>proses_seleksi" name="form1" id="form1" method="post" enctype="multipart/form-data">
+                                  <form action="<?php echo base_url() ?>proses_seleksi_gelombangdini_reguler_edit" name="form1" id="form1" method="post" enctype="multipart/form-data">
                                       <!-- ... (Formulir seperti yang Anda berikan) ... -->
                                       <input type="hidden" name="no" id="no" value="<?php echo $this->session->userdata('no'); ?>">
+                                      <input type="hidden" name="id_link" id="id_link" value="<?php echo $this->session->userdata('id_link'); ?>">
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">Link File KTP</label>
                                       <input type="text" class="form-control" id="link_ktp" name="link_ktp" placeholder="Masukan Link File KTP">
