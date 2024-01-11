@@ -38,7 +38,7 @@
                 <p></p>
                 <?php if ($seleksi == null) {
                   # code... cek seleksi ?>
-                   <a href="<?php echo base_url() ?>download_supersehatreg?>" target="__blank"><button type="button" class="btn btn-primary">Download Tutorial Pengisan Form Seleksi</button></a>
+                   <a href="<?php echo base_url() ?>download_tutorial_form_seleksi_gelombang_dini?>" target="__blank"><button type="button" class="btn btn-primary">Download Tutorial Pengisan Form Seleksi</button></a>
               
                  <form action="<?php echo base_url() ?>proses_seleksi_gelombangdini_reguler" name="form1" id="form1" method="post" enctype="multipart/form-data">
                   <input type="hidden" name="no" id="no" value="<?php echo $this->session->userdata('no'); ?>">
