@@ -447,7 +447,7 @@ class m_registrasi extends CI_Model
 		return $query;		
 	}
 
-	function get_data_formon_mhs($id)
+	function get_data_edit_gdr1($id)
     {
         // Gantilah 'nama_tabel' dengan nama tabel yang sesuai dalam database Anda
 	     $this->db->select('tmst_seleksi_2024.id_link as id_link,
