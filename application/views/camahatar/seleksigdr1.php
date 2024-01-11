@@ -30,7 +30,8 @@
                  <div class="box-body"><h3>Pada Saat Seleksi diharapkan mengisi form Surat Pernyataan Sehat.</b> yang bisa di download di bawah ini :</h3>
                    <a href="<?php echo base_url() ?>download_supersehatreg?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan Sehat</button></a>
                 </div>
-
+                <hr>
+                <h5>Silakan mengisi form seleksi dibawah ini :</h5>
                  <form action="<?php echo base_url() ?>proses_seleksi" name="form1" id="form1" method="post" enctype="multipart/form-data">
                   
                   <div class="form-group">
