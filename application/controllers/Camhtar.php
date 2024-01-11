@@ -659,7 +659,7 @@ class Camhtar extends CI_Controller {
 		$link_shuttle = $this->input->post('link_shuttle');
 
 		$data = array(
-					'no'=> $this->session->userdata('no');
+					'no'=> $this->session->userdata('no'),
 					'link_ktp' => $link_ktp,
 					'link_ijasah' => $link_ijasah,
 					'link_rapor' => $link_rapor,
