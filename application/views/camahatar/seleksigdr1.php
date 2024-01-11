@@ -98,7 +98,7 @@
                           <td>Anda Telah Mengisi Form Seleksi</td>
                           <td>
                              <div class="form-group" align="center">
-                             <button type="button" name="submit" class="btn btn-primary editseleksigdr1">Edit Form Seleksi</button>
+                             <button type="button" name="submit" class="btn btn-primary editseleksigdr1"  data-no="<?php echo $this->session->userdata('no'); ?>">Edit Form Seleksi</button>
                             </div>
                           </td>
                         </tr>
@@ -108,7 +108,7 @@
                           <div class="modal-content">
                               <div class="modal-header">
                                   <h5 class="modal-title" id="editFormModalLabel">Edit Form Seleksi</h5>
-                                  <button type="button" class="close" data-dismiss="modal" data-no="<?php echo $this->session->userdata('no'); ?>" aria-label="Close">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                       <span aria-hidden="true">&times;</span>
                                   </button>
                               </div>
