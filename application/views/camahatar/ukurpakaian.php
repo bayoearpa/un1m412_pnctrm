@@ -27,10 +27,14 @@
                 <?php  foreach ($catar as $c) { ?>
                    
 
-                 <?php if ($ukurpakaian == null): ?>
+                 <?php if ($ukurpakaian == null) {
+                   # code... ?>
                   <p>Sebelum mengisi form ukuran pakaian diwajibkan membaca panduan pengisian ukuran pakaian yang tersedia dibawah ini:</p>
                   <a href="<?php echo base_url() ?>download_supersehatreg?>" target="__blank"><button type="button" class="btn btn-primary">Download Panduan Pengisian Ukuran Pakaian</button></a>
-                  <form action="<?php echo base_url() ?>proses_seleksi_gdtf" name="form1" id="form1" method="post" enctype="multipart/form-data">
+                  <?php echo validation_errors(); 
+                  echo $this->session->flashdata('success');
+                  echo $this->session->flashdata('error'); ?>
+                  <form action="<?php echo base_url() ?>prosesukurpakaian" name="form1" id="form1" method="post" enctype="multipart/form-data">
                   <input type="hidden" name="no" id="no" value="<?php echo $this->session->userdata('no'); ?>">
                   <div class="form-group">
                   <label for="exampleInputEmail1">Nama</label>
@@ -225,11 +229,11 @@
                   </select>
                   <input type="text" class="form-control" name="jaspdpm_lainnya" id="jaspdpm_lainnya" placeholder="Silakan isi Ukuran Jas PDPM lainnya">
                   </div>
-
+                  <button type="submit" class="btn btn-primary">Simpan</button>
                   </form>          
-                <?php endif ?>             
-               
-               
+                <?php }else{ ?>           
+               <center><h4><b>Anda sudah mengisi form ukur pakaian</b><span class="badge bg-green"><i class="fa fa-check"></i></span></h4></center>
+                <?php } ?>
                 
                   <?php } ?>
               

@@ -786,6 +786,64 @@ class Camhtar extends CI_Controller {
         $this->load->view('camahatar/ukurpakaian_js');
         // $this->load->view('camahatar/seleksigdr2_js');
 	}
+	public function proses_ukurpakaian($value='')
+	{
+		# code...
+		$no = $this->input->post('no');
+		$jk_pakaian = $this->input->post('jk');
+		$ukuran_sepatu = $this->input->post('ukuran_sepatu');
+		$topipet = $this->input->post('topipet');
+		$seragam_pdl = $this->input->post('seragam_pdl');
+		$training_pack = $this->input->post('training_pack');
+		$wearpack = $this->input->post('wearpack');
+		$kaos_or = $this->input->post('kaos_or');
+		$baju_renang = $this->input->post('baju_renang');
+		$dogi = $this->input->post('dogi');
+		$pdhpdub_kemeja = $this->input->post('pdhpdub_kemeja');
+		$pdhpdub_celana = $this->input->post('pdhpdub_celana');
+		$jaspdpm = $this->input->post('jaspdpm');
+		$ukuran_sepatu_lainnya = $this->input->post('ukuran_sepatu_lainnya');
+		$seragam_pdl_lainnya = $this->input->post('seragam_pdl_lainnya');
+		$training_pack_lainnya = $this->input->post('training_pack_lainnya');
+		$wearpack_lainnya = $this->input->post('wearpack_lainnya');
+		$kaos_or_lainnya = $this->input->post('kaos_or_lainnya');
+		$baju_renang_lainnya = $this->input->post('baju_renang_lainnya');
+		$pdhpdub_kemeja_lainnya = $this->input->post('pdhpdub_kemeja_lainnya');
+		$pdhpdub_celana_lainny = $this->input->post('pdhpdub_celana_lainny');
+		$jaspdpm_lainnya = $this->input->post('jaspdpm_lainnya');
+
+		$data = array(
+					'no'=> $this->session->userdata('no'),
+					'jk_pakaian' => $jk_pakaian,
+					'ukuran_sepatu' => $ukuran_sepatu,
+					'topipet' => $topipet,
+					'seragam_pdl' => $seragam_pdl,
+					'training_pack' => $training_pack,
+					'wearpack' => $wearpack,
+					'kaos_or' => $kaos_or,
+					'baju_renang' => $baju_renang,
+					'dogi' => $dogi,
+					'pdhpdub_kemeja' => $pdhpdub_kemeja,
+					'pdhpdub_celana' => $pdhpdub_celana,
+					'jaspdpm' => $jaspdpm,
+					'ukuran_sepatu_lainnya' => $ukuran_sepatu_lainnya,
+					'seragam_pdl_lainnya' => $seragam_pdl_lainnya,
+					'training_pack_lainnya' => $training_pack_lainnya,
+					'wearpack_lainnya' => $wearpack_lainnya,
+					'kaos_or_lainnya' => $kaos_or_lainnya,
+					'baju_renang_lainnya' => $baju_renang_lainnya,
+					'pdhpdub_kemeja_lainnya' => $pdhpdub_kemeja_lainnya,
+					'pdhpdub_celana_lainny' => $pdhpdub_celana_lainny,
+					'jaspdpm_lainnya' => $jaspdpm_lainnya,
+					);
+		$proses_insert = $this->m_registrasi->input_data($data,'tbl_ukurpakaian');
+				if ($proses_insert) {
+					# code...
+					redirect("ukurpakaian?pesan=succsess");
+				}
+				redirect("ukurpakaian?pesan=error");
+
+	}
 
 }
 
