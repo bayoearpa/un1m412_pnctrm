@@ -73,6 +73,41 @@ class Camhtar extends CI_Controller {
             }
         }
 	}
+	function prodi($id){
+        switch ($id) {
+
+            // registrasi
+               case '1':
+                    $pick = "D3 KETATALAKSANAAN PELAYARAN NIAGA DAN KEPELABUHAN";
+                break;
+                case '2' :
+                    $pick = "D3 TEKNIKA";
+                break;
+                case '3' :
+                    $pick = "D3 NAUTIKA";
+                break;
+                case '4' :
+                    $pick = "S1 TRANSPORTASI";
+                break;
+                case '5':
+                    $pick = "S1 TEKNIK TRANSPORTASI LAUT";
+                break;
+                case '6':
+                    $pick = "S1 TEKNIK MESIN";
+                break;
+                case '7':
+                    $pick = "S1 TEKNIK KESELAMATAN";
+                break;
+                case '8':
+                    $pick = "S1 PERDAGANGAN INTERNASIONAL";
+                break;
+                case '8':
+                    $pick = "D4 MANAJEMEN PELABUHAN DAN LOGISTIK MARITIM";
+                break;
+                
+            }
+            return $pick;
+    }
 	public function daftarp()
 	{
 		if ($this->input->post()) {
@@ -732,6 +767,7 @@ class Camhtar extends CI_Controller {
 	{
 		# code...
 		$no = $this->session->userdata('no');
+		$data['camhtar'] = $this;
 		$where = array(
 				'no' => $no,
 			);
@@ -741,10 +777,13 @@ class Camhtar extends CI_Controller {
 			$data['nik'] = $key->nik;
 		}
 		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2024')->num_rows();
+		$data['ukurpakaian'] = $this->m_registrasi->get_data($where, 'tbl_ukurpakaian')->num_rows();
+		// $data['ukurpakaian_data'] = $this->m_registrasi->get_data($where, 'tbl_ukurpakaian')->result();
 
 		$this->load->view('camahatar/header',$data);
         $this->load->view('camahatar/ukurpakaian',$data);
         $this->load->view('camahatar/footer');
+        $this->load->view('camahatar/ukurpakaian_js');
         // $this->load->view('camahatar/seleksigdr2_js');
 	}
 
