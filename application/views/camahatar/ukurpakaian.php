@@ -32,7 +32,7 @@
                   <input type="hidden" name="no" id="no" value="<?php echo $this->session->userdata('no'); ?>">
                   <div class="form-group">
                   <label for="exampleInputEmail1">Nama</label>
-                  <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukan Link File KTP" value="<?php echo $c->nama ?>">
+                  <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukan Link File KTP" value="<?php echo $c->nama ?>" readonly>
                   </div> 
                    <div class="form-group">
                   <label for="exampleInputEmail1">Jenis Kelamin</label>
@@ -56,12 +56,12 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Program Studi</label>
-                  <input type="text" class="form-control" id="prodi" name="prodi" placeholder="Masukan Link File KTP" value="<?php echo $camhtar->prodi($c->prodi) ?>">
+                  <label for="exampleInputEmail1">Program Studi :</label>
+                  <input type="text" class="form-control" id="prodi" name="prodi" placeholder="Masukan Link File KTP" value="<?php echo $camhtar->prodi($c->prodi) ?>" readonly>
                   </div>
                 <div class="form-group">
-                  <label for="exampleInputEmail1">No Hp/ Wa</label>
-                  <input type="text" class="form-control" id="telp" name="telp" placeholder="Masukan Link File KTP" value="<?php echo $c->telp ?>">
+                  <label for="exampleInputEmail1">No Hp/ Wa :</label>
+                  <input type="text" class="form-control" id="telp" name="telp" placeholder="Masukan Link File KTP" value="<?php echo $c->telp ?>" readonly>
                   </div>
 
                   <hr>
@@ -69,7 +69,7 @@
                   <h5><b>Pilih salah satu :</b></h5>
 
                    <div class="form-group">
-                  <label for="exampleInputEmail1">Ukuran Sepatu</label>
+                  <label for="exampleInputEmail1">Ukuran Sepatu :</label>
                  <select class="form-control" name="ukuran_sepatu" id="ukuran_sepatu">
                     <option>--Pilih Ukuran Sepatu--</option>
                     <option value="38">38</option>
