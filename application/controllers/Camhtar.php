@@ -523,6 +523,8 @@ class Camhtar extends CI_Controller {
 			$data['nik'] = $key->nik;
 		}
 		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2024')->num_rows();
+		$data['seleksi'] = $this->m_registrasi->get_data($where, 'tbl_seleksi_2024')->num_rows();
+		$data['seleksi_data'] = $this->m_registrasi->get_data($where, 'tbl_seleksi_2024')->result();
 
 		$this->load->view('camahatar/header',$data);
         $this->load->view('camahatar/seleksigdr1',$data);
@@ -647,11 +649,46 @@ class Camhtar extends CI_Controller {
 		# code...
 		$link_ktp = $this->input->post('link_ktp');
 		$link_ijasah = $this->input->post('link_ijasah');
-		$link_ktp = $this->input->post('link_ktp');
-		$link_ktp = $this->input->post('link_ktp');
-		$link_ktp = $this->input->post('link_ktp');
-		$link_ktp = $this->input->post('link_ktp');
+		$link_rapor = $this->input->post('link_rapor');
+		$link_kesehatan = $this->input->post('link_kesehatan');
+		$link_supersehat = $this->input->post('link_supersehat');
+		$link_prestasi = $this->input->post('link_prestasi');
+		$link_pushup = $this->input->post('link_pushup');
+		$link_shitup = $this->input->post('link_shitup');
+		$link_pullup = $this->input->post('link_pullup');
+		$link_shuttle = $this->input->post('link_shuttle');
 
+		$data = array(
+					'no'=> $this->session->userdata('no');
+					'link_ktp' => $link_ktp,
+					'link_ijasah' => $link_ijasah,
+					'link_rapor' => $link_rapor,
+					'link_kesehatan' => $link_kesehatan,
+					'link_supersehat' => $link_supersehat,
+					'link_prestasi' => $link_prestasi,
+					'link_pushup' => $link_pushup,
+					'link_shitup' => $link_shitup,
+					'link_pullup' => $link_pullup,
+					'link_shuttle' => $link_shuttle,
+					);
+		$proses_insert = $this->m_registrasi->input_data($data,'tbl_seleksi_2024');
+				if ($proses_insert) {
+					# code...
+					redirect("proses_seleksi?pesan=succsess");
+				}
+				redirect("proses_seleksi?pesan=error");		
+	}
+	public function getdataeditseleksigdr1($no)
+	{
+		# code...
+		// Ambil data berdasarkan ID dari model Anda
+		$where = array(
+	        'no' => $no,
+	    );
+        $data = $this->m_portal->get_data($where, 'tbl_seleksi_2024')->result(); // Gantilah 'get_data_by_id' dengan metode yang sesuai dalam model Anda
+
+        // Konversi data ke format JSON dan kirimkan ke view
+        echo json_encode($data);
 	}
 
 }

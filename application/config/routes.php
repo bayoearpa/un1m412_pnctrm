@@ -96,6 +96,7 @@ $route['download_suket'] = 'camhtar/down_suket';
 $route['download_supersehat'] = 'camhtar/down_supersehat';
 $route['download_supersehatreg'] = 'camhtar/down_supersehatreg';
 $route['proses_seleksi'] = 'camhtar/down_supersehatreg';
+$route['getDataGelombangDiniReguler/(:num)'] = 'camhtar/getdataeditseleksigdr1/$1';
 
 
 
