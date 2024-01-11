@@ -642,6 +642,18 @@ class Camhtar extends CI_Controller {
 	    // Jika Anda memiliki lebih banyak jenis file yang diupload, lakukan hal yang sama untuk konfigurasi upload dan proses uploadnya
 	}
 
+	public function proses_seleksi()
+	{
+		# code...
+		$link_ktp = $this->input->post('link_ktp');
+		$link_ijasah = $this->input->post('link_ijasah');
+		$link_ktp = $this->input->post('link_ktp');
+		$link_ktp = $this->input->post('link_ktp');
+		$link_ktp = $this->input->post('link_ktp');
+		$link_ktp = $this->input->post('link_ktp');
+
+	}
+
 }
 
 /* End of file camahatar.php */

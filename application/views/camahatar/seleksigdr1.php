@@ -31,7 +31,10 @@
                    <a href="<?php echo base_url() ?>download_supersehatreg?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan Sehat</button></a>
                 </div>
                 <hr>
-                <h5>Silakan mengisi form seleksi dibawah ini :</h5>
+                <h5><b>Silakan mengisi form seleksi dibawah ini :</b></h5>
+                <p></p>
+                <a href="<?php echo base_url() ?>download_supersehatreg?>" target="__blank"><button type="button" class="btn btn-primary">Download Tutorial Pengisan Form Seleksi</button></a>
+
                  <form action="<?php echo base_url() ?>proses_seleksi" name="form1" id="form1" method="post" enctype="multipart/form-data">
                   
                   <div class="form-group">
@@ -54,13 +57,29 @@
                   <label for="exampleInputEmail1">Surat pernyataan dan riwayat kesehatan</label>
                   <input type="text" class="form-control" id="link_supersehat" name="link_supersehat" placeholder="Surat pernyataan dan riwayat kesehatan">
                   </div>
-                   <div class="form-group">
+                  <div class="form-group">
                   <label for="exampleInputEmail1">Sertifikasi prestasi minimal tingkat Regional/Provinsi dan Hafidz <i>Qur'an </i>minimal 10 Juz</label>
                   <input type="text" class="form-control" id="link_prestasi" name="link_prestasi" placeholder="Sertifikasi prestasi minimal tingkat Regional/Provinsi dan Hafidz Qur'an minimal 10 Juz">
                   </div>
+                  <hr>
+                  <h5>Form Upload Link Video SAMAPTA</h5>
+                  <div class="form-group">
+                  <label for="exampleInputEmail1">Link Video Push Up</label>
+                  <input type="text" class="form-control" id="link_video_pushup" name="link_video_pushup" placeholder="Link video push up">
+                  </div>
+                  <div class="form-group">
+                  <label for="exampleInputEmail1">Link Video Shit Up</label>
+                  <input type="text" class="form-control" id="link_video_shitup" name="link_video_shitup" placeholder="Link video shit up">
+                  <div class="form-group">
+                  <label for="exampleInputEmail1">Link Video Pull Up</label>
+                  <input type="text" class="form-control" id="link_video_pullup" name="link_video_pullup" placeholder="Link video pull up">
+                  </div>
+                  <div class="form-group">
+                  <label for="exampleInputEmail1">Link Video Shuttle Run</label>
+                  <input type="text" class="form-control" id="link_video_shuttle" name="link_video_shuttle" placeholder="Link video shuttle run">
+                  </div>
+                  </div>
                 </form>
-              
-              
 
             <?php } ?>
             </div>
