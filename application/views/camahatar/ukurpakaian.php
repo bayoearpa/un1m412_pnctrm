@@ -82,7 +82,7 @@
                     <option value="45">45</option>
                     <option value="lainnya">lainnya</option>
                   </select>
-                  <input type="text" name="ukuran_sepatu_lainnya" id="ukuran_sepatu_lainnya">
+                  <input type="text" class="form-control" name="ukuran_sepatu_lainnya" id="ukuran_sepatu_lainnya" placeholder="Silakan isi Ukuran Sepatu lainnya">
                   </div>
 
                   </form>          
