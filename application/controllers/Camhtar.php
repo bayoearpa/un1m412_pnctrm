@@ -718,10 +718,10 @@ class Camhtar extends CI_Controller {
 					'link_kesehatan' => $link_kesehatan,
 					'link_supersehat' => $link_supersehat,
 					'link_prestasi' => $link_prestasi,
-					'link_pushup' => $link_pushup,
-					'link_shitup' => $link_shitup,
-					'link_pullup' => $link_pullup,
-					'link_shuttle' => $link_shuttle,
+					'link_video_pushup' => $link_video_pushup,
+					'link_video_shitup' => $link_video_shitup,
+					'link_video_pullup' => $link_video_pullup,
+					'link_video_shuttle' => $link_video_shuttle,
 					);
 		$proses_insert = $this->m_registrasi->update_data($where,$update_data,'tbl_seleksi_2024');
 				if ($proses_insert) {
