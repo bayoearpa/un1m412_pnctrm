@@ -134,9 +134,9 @@
           $seleksiPage = ($this->session->userdata('jalur') == "gdr1") ? 'seleksi_geldini_reguler' : 'seleksi_geldini_tf';
            ?>
           <li><a href="<?php echo base_url($seleksiPage) ?>"><i class="fa fa-users"></i><span>Seleksi</span></a></li>
-          <?php 
-          $ukurpakaianPage = ($this->session->userdata('jalur') == "gdr1") ? '<li><a href="<?php echo base_url() ?>ukurpakaian"><i class="fa fa-users"></i><span>Ukur Pakaian</span></a></li>' : '';
-           ?>
+            <?php if ($this->session->userdata('jalur') == "gdr1"): ?>
+              <li><a href="<?php echo base_url() ?>ukurpakaian"><i class="fa fa-check"></i><span>Ukur Pakaian</span></a></li>
+            <?php endif ?>
           <li><a href="#"><i class="fa fa-info-circle"></i><span>Pengumuman</span></a></li>
           <li><a href="#"><i class="fa fa-external-link"></i><span>Daftar Ulang</span></a></li>
 
