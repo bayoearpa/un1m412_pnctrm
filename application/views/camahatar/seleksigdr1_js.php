@@ -5,7 +5,7 @@
 	    var no = $(this).data('no');
 	    // Ambil data yang akan diedit dari server dengan AJAX
 	    $.ajax({
-	      url: '<?php echo base_url('getDataGelombangDiniReguler'); ?>' + no, // Sesuaikan dengan URL yang sesuai
+	      url: '<?php echo base_url('getDataGelombangDiniReguler'); ?>/' + no, // Sesuaikan dengan URL yang sesuai
 	      type: 'GET',
 	      success: function(data) {
 	        // Isi modal dengan data yang diambil
