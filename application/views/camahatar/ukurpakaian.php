@@ -84,6 +84,99 @@
                   </select>
                   <input type="text" class="form-control" name="ukuran_sepatu_lainnya" id="ukuran_sepatu_lainnya" placeholder="Silakan isi Ukuran Sepatu lainnya">
                   </div>
+                  <div class="form-group">
+                  <label for="exampleInputEmail1">Topi Pet* :</label>
+                 <select class="form-control" name="topipet" id="topipet">
+                    <option>--Pilih Ukuran Topi Pet--</option>
+                    <option value="53">53</option>
+                    <option value="54">54</option>
+                    <option value="55">55</option>
+                    <option value="56">56</option>
+                    <option value="57">57</option>
+                    <option value="58">58</option>
+                    <option value="59">59</option>
+                    <option value="60">60</option>
+                  </select>
+                  </div>
+                   <div class="form-group">
+                  <label for="exampleInputEmail1">Seragam PDL :</label>
+                 <select class="form-control" name="seragam_pdl" id="seragam_pdl">
+                    <option>--Pilih Ukuran Seragam PDL--</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                    <option value="lainnya">lainnya</option>
+                  </select>
+                  <input type="text" class="form-control" name="seragam_pdl_lainnya" id="seragam_pdl_lainnya" placeholder="Silakan isi Ukuran Seragam PDL lainnya">
+                  </div>
+                  <div class="form-group">
+                  <label for="exampleInputEmail1">Training Pack :</label>
+                 <select class="form-control" name="training_pack" id="training_pack">
+                    <option>--Pilih Ukuran Training Pack--</option>
+                   <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                    <option value="XXL">XXXL</option>
+                    <option value="lainnya">lainnya</option>
+                  </select>
+                  <input type="text" class="form-control" name="training_pack_lainnya" id="training_pack_lainnya" placeholder="Silakan isi Ukuran Training Pack lainnya">
+                  </div>
+                   <div class="form-group">
+                  <label for="exampleInputEmail1">Wearpack :</label>
+                 <select class="form-control" name="wearpack" id="wearpack">
+                    <option>--Pilih Ukuran Wearpack--</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                    <option value="XXL">XXXL</option>
+                    <option value="lainnya">lainnya</option>
+                  </select>
+                  <input type="text" class="form-control" name="wearpack_lainnya" id="wearpack_lainnya" placeholder="Silakan isi Ukuran Wearpack lainnya">
+                  </div>
+                   <div class="form-group">
+                  <label for="exampleInputEmail1">Kaos olahraga :</label>
+                 <select class="form-control" name="kaos_or" id="kaos_or">
+                    <option>--Pilih Ukuran Kaos Olahraga--</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                    <option value="lainnya">lainnya</option>
+                  </select>
+                  <input type="text" class="form-control" name="kaos_or_lainnya" id="kaos_or_lainnya" placeholder="Silakan isi Ukuran Kaos Olahraga lainnya">
+                  </div>
+                  <div class="form-group">
+                  <label for="exampleInputEmail1">Baju Renang :</label>
+                 <select class="form-control" name="baju_renang" id="baju_renang">
+                    <option>--Pilih Ukuran Baju Renang--</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                    <option value="XXL">XXXL</option>
+                    <option value="lainnya">lainnya</option>
+                  </select>
+                  <input type="text" class="form-control" name="baju_renang_lainnya" id="baju_renang_lainnya" placeholder="Silakan isi Ukuran Baju Renang lainnya">
+                  </div>
+                   <div class="form-group">
+                  <label for="exampleInputEmail1">DOGI* :</label>
+                 <select class="form-control" name="dogi" id="dogi">
+                    <option>--Pilih Ukuran DOGI--</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                  </select>
+                  </div>
+                  <div class="form-group">
+                  <label for="exampleInputEmail1">Tinggi Badan :</label>
+                  <input type="text" class="form-control" id="telp" name="telp" placeholder="Masukan Link File KTP" value="<?php echo $c->tb ?>" readonly>
+                  </div>
 
                   </form>          
                 <?php endif ?>             
