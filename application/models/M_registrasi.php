@@ -446,6 +446,35 @@ class m_registrasi extends CI_Model
 		$query=$this->db->get();
 		return $query;		
 	}
+
+	function get_data_formon_mhs($id)
+    {
+        // Gantilah 'nama_tabel' dengan nama tabel yang sesuai dalam database Anda
+	     $this->db->select('tmst_seleksi_2024.id_link as id_link,
+	     	tmst_seleksi_2024.no as no,
+	     	tmst_seleksi_2024.link_ktp as link_ktp,
+	     	tmst_seleksi_2024.link_ijasah as link_ijasah,
+	     	tmst_seleksi_2024.link_rapor as link_rapor,
+	     	tmst_seleksi_2024.link_kesehatan as link_kesehatan,
+	     	tmst_seleksi_2024.link_supersehat as link_supersehat,
+	     	tmst_seleksi_2024.link_prestasi as link_prestasi,
+	     	tmst_seleksi_2024.link_video_pushup as link_video_pushup,
+	     	tmst_seleksi_2024.link_video_shitup as link_video_shitup,
+	     	tmst_seleksi_2024.link_video_pullup as link_video_pullup,
+	     	tmst_seleksi_2024.link_video_shuttle as link_video_shuttle,
+			');
+
+	     $this->db->from('tmst_seleksi_2024');
+	     // $this->db->join('tbl_mon','tmst_mahasiswa.NIM = tbl_mon.nim','left');
+        $this->db->where('tbl_seleksi_2024.no', $id);
+        $query = $this->db->get();
+
+        if ($query->num_rows() > 0) {
+            return $query->row();
+        } else {
+            return null;
+        }
+    }
 	////////////////////summary 2023///////////////////////////////////////////////////////////////////////////
 	function get_data_statistic_kabkota_2023(){
 		$this->db->select('tbl_catar_2023.ktkb as id_provinsi,
