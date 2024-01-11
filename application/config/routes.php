@@ -98,6 +98,8 @@ $route['download_supersehatreg'] = 'camhtar/down_supersehatreg';
 $route['proses_seleksi_gelombangdini_reguler'] = 'camhtar/proses_seleksi_gdr1';
 $route['getDataGelombangDiniReguler/(:num)'] = 'camhtar/getdataeditseleksigdr1/$1';
 $route['proses_seleksi_gelombangdini_reguler_edit'] = 'camhtar/proses_seleksi_edit_gdr1';
+$route['ukurpakaian'] = 'camhtar/ukurpakaian';
+
 
 
 
