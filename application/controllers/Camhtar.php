@@ -529,6 +529,7 @@ class Camhtar extends CI_Controller {
 		$this->load->view('camahatar/header',$data);
         $this->load->view('camahatar/seleksigdr1',$data);
         $this->load->view('camahatar/footer');
+        $this->load->view('camahatar/seleksigdr1_js');
 	}
 	public function seleksigdr2()
 	{
