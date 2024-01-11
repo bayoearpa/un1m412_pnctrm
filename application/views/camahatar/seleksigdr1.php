@@ -30,6 +30,34 @@
                  <div class="box-body"><h3>Pada Saat Seleksi diharapkan mengisi form Surat Pernyataan Sehat.</b> yang bisa di download di bawah ini :</h3>
                    <a href="<?php echo base_url() ?>download_supersehatreg?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan Sehat</button></a>
                 </div>
+
+                 <form action="<?php echo base_url() ?>proses_seleksi" name="form1" id="form1" method="post" enctype="multipart/form-data">
+                  
+                  <div class="form-group">
+                  <label for="exampleInputEmail1">Link File KTP</label>
+                  <input type="text" class="form-control" id="link_ktp" name="link_ktp" placeholder="Masukan Link File KTP">
+                  </div>
+                  <div class="form-group">
+                  <label for="exampleInputEmail1">Link File Ijasah atau surat keterangan dari sekolah (jika belum lulus)</label>
+                  <input type="text" class="form-control" id="link_ijasah" name="link_ijasah" placeholder="Link File Ijasah atau surat keterangan dari sekolah (jika belum lulus)">
+                  </div>
+                  <div class="form-group">
+                  <label for="exampleInputEmail1">Link File Transkip nilai atau rapor semster 1-5 (jika belum lulus)</label>
+                  <input type="text" class="form-control" id="link_rapor" name="link_rapor" placeholder=">Link File Transkip nilai atau rapor semster 1-5 (jika belum lulus)">
+                  </div>
+                  <div class="form-group">
+                  <label for="exampleInputEmail1">Link File Documen pemerikasaan kesehatan dari RS Pemerintah setempat/ Puskesmas</label>
+                  <input type="text" class="form-control" id="link_kesehatan" name="link_kesehatan" placeholder="Link File Documen pemerikasaan kesehatan dari RS Pemerintah setempat/ Puskesmas">
+                  </div>
+                  <div class="form-group">
+                  <label for="exampleInputEmail1">Surat pernyataan dan riwayat kesehatan</label>
+                  <input type="text" class="form-control" id="link_supersehat" name="link_supersehat" placeholder="Surat pernyataan dan riwayat kesehatan">
+                  </div>
+                   <div class="form-group">
+                  <label for="exampleInputEmail1">Sertifikasi prestasi minimal tingkat Regional/Provinsi dan Hafidz <i>Qur'an </i>minimal 10 Juz</label>
+                  <input type="text" class="form-control" id="link_prestasi" name="link_prestasi" placeholder="Sertifikasi prestasi minimal tingkat Regional/Provinsi dan Hafidz Qur'an minimal 10 Juz">
+                  </div>
+                </form>
               
               
 
