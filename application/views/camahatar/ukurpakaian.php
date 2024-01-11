@@ -28,6 +28,8 @@
                    
 
                  <?php if ($ukurpakaian == null): ?>
+                  <p>Sebelum mengisi form ukuran pakaian diwajibkan membaca panduan pengisian ukuran pakaian yang tersedia dibawah ini:</p>
+                  <a href="<?php echo base_url() ?>download_supersehatreg?>" target="__blank"><button type="button" class="btn btn-primary">Download Panduan Pengisian Ukuran Pakaian</button></a>
                   <form action="<?php echo base_url() ?>proses_seleksi_gdtf" name="form1" id="form1" method="post" enctype="multipart/form-data">
                   <input type="hidden" name="no" id="no" value="<?php echo $this->session->userdata('no'); ?>">
                   <div class="form-group">
@@ -176,6 +178,52 @@
                   <div class="form-group">
                   <label for="exampleInputEmail1">Tinggi Badan :</label>
                   <input type="text" class="form-control" id="telp" name="telp" placeholder="Masukan Link File KTP" value="<?php echo $c->tb ?>" readonly>
+                  </div>
+
+                  <hr>
+                  <h5><b><u>SERAGAM DINAS*</u></b></h5>
+                  <p><b>Seragam PDH & Seragam PDUB</b></p>
+                   <div class="form-group">
+                  <label for="exampleInputEmail1">-Kemeja :</label>
+                 <select class="form-control" name="pdhpdub_kemeja" id="pdhpdub_kemeja">
+                    <option>--Pilih Ukuran Kaos Olahraga--</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                    <option value="lainnya">lainnya</option>
+                  </select>
+                  <input type="text" class="form-control" name="pdhpdub_kemeja_lainnya" id="pdhpdub_kemeja_lainnya" placeholder="Silakan isi Ukuran Kemeja untuk Seragam PDH & Seragam PDUB lainnya">
+                  </div>
+                   <div class="form-group">
+                  <label for="exampleInputEmail1">-Celana :</label>
+                 <select class="form-control" name="pdhpdub_celana" id="pdhpdub_celana">
+                    <option>--Pilih Ukuran Kaos Olahraga--</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                    <option value="lainnya">lainnya</option>
+                  </select>
+                  <input type="text" class="form-control" name="pdhpdub_celana_lainnya" id="pdhpdub_celana_lainnya" placeholder="Silakan isi Ukuran Celana untuk Seragam PDH & Seragam PDUB lainnya">
+                  </div>
+
+                  <hr>
+
+                   <div class="form-group">
+                  <label for="exampleInputEmail1"> Jas PDPM :</label>
+                 <select class="form-control" name="jaspdpm" id="jaspdpm">
+                    <option>--Pilih Ukuran Kaos Olahraga--</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                    <option value="lainnya">lainnya</option>
+                  </select>
+                  <input type="text" class="form-control" name="jaspdpm_lainnya" id="jaspdpm_lainnya" placeholder="Silakan isi Ukuran Jas PDPM lainnya">
                   </div>
 
                   </form>          

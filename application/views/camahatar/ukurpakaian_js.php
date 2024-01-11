@@ -55,6 +55,33 @@ $(document).ready(function() {
 		    }
 		  });
 
+		$("#pdhpdub_kemeja_lainnya").hide();
+		  $("#pdhpdub_kemeja").change(function() {
+		    if ($(this).val() == "lainnya") {
+		      $("#pdhpdub_kemeja_lainnya").show();
+		    } else {
+		      $("#pdhpdub_kemeja_lainnya").hide();
+		    }
+		  });
+
+		$("#pdhpdub_celana_lainnya").hide();
+		  $("#pdhpdub_celana").change(function() {
+		    if ($(this).val() == "lainnya") {
+		      $("#pdhpdub_celana_lainnya").show();
+		    } else {
+		      $("#pdhpdub_celana_lainnya").hide();
+		    }
+		  });
+
+		$("#jaspdpm_lainnya").hide();
+		  $("#jaspdpm").change(function() {
+		    if ($(this).val() == "lainnya") {
+		      $("#jaspdpm_lainnya").show();
+		    } else {
+		      $("#jaspdpm_lainnya").hide();
+		    }
+		  });
+
 });
 
 </script>
