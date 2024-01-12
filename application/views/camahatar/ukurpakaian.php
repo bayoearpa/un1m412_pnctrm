@@ -30,7 +30,7 @@
                  <?php if ($ukurpakaian == null) {
                    # code... ?>
                   <p>Sebelum mengisi form ukuran pakaian diwajibkan membaca panduan pengisian ukuran pakaian yang tersedia dibawah ini:</p>
-                  <a href="<?php echo base_url() ?>download_supersehatreg?>" target="__blank"><button type="button" class="btn btn-primary">Download Panduan Pengisian Ukuran Pakaian</button></a>
+                  <a href="<?php echo base_url() ?>download_panduan_pengisian_form_ukur_pakaian?>" target="__blank"><button type="button" class="btn btn-primary">Download Panduan Pengisian Ukuran Pakaian</button></a>
                   <?php echo validation_errors(); 
                   echo $this->session->flashdata('success');
                   echo $this->session->flashdata('error'); ?>
