@@ -15,9 +15,8 @@
                     <h4><i class="icon fa fa-warning"></i> Maaf!</h4>
                     Silakan mengisi form biodata terlebih dahulu untuk dapat mengakses halaman ini. terima kasih.
                 </div>
-            <?php }else{ ?>
-
-                            foreach ($catar as $c) {
+            <?php }else{ 
+                foreach ($catar as $c) {
                 # code...
               ?>
 
