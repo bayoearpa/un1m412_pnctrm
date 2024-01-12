@@ -430,6 +430,7 @@ class Camhtar extends CI_Controller {
 	public function pembayaran()
 	{
 		# code...
+		# code...
 		$no = $this->session->userdata('no');
 		$where = array(
 				'no' => $no,
@@ -438,11 +439,16 @@ class Camhtar extends CI_Controller {
 		foreach ($data['catar'] as $key) {
 			# code...
 			$data['nik'] = $key->nik;
+			$programStudi = $key->prodi;
 		}
+		$data['prodi'] = $this->getProdi($programStudi);
+
+		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2024')->num_rows();
 
 		$this->load->view('camahatar/header',$data);
         $this->load->view('camahatar/pembayaran',$data);
         $this->load->view('camahatar/footer');
+        $this->load->view('camahatar/pembayaran_js');
 	}
 	public function validasi()
 	{
