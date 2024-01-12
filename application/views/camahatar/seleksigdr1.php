@@ -73,7 +73,7 @@
                   <input type="text" class="form-control" id="link_video_pushup" name="link_video_pushup" placeholder="Link video push up">
                   </div>
                   <div class="form-group">
-                  <label for="exampleInputEmail1">Link Video Shit Up</label>
+                  <label for="exampleInputEmail1">Link Video Sit Up</label>
                   <input type="text" class="form-control" id="link_video_shitup" name="link_video_shitup" placeholder="Link video shit up">
                   </div>
                   <div class="form-group">
@@ -81,7 +81,7 @@
                   <input type="text" class="form-control" id="link_video_pullup" name="link_video_pullup" placeholder="Link video pull up">
                   </div>
                   <div class="form-group">
-                  <label for="exampleInputEmail1">Link Video Shuttle Run</label>
+                  <label for="exampleInputEmail1">Link Video Lari</label>
                   <input type="text" class="form-control" id="link_video_shuttle" name="link_video_shuttle" placeholder="Link video shuttle run">
                   </div>
                   <button type="submit" class="btn btn-primary">Simpan</button>
@@ -149,7 +149,7 @@
                                       <input type="text" class="form-control" id="link_video_pushup" name="link_video_pushup" placeholder="Link video push up">
                                       </div>
                                       <div class="form-group">
-                                      <label for="exampleInputEmail1">Link Video Shit Up</label>
+                                      <label for="exampleInputEmail1">Link Video Sit Up</label>
                                       <input type="text" class="form-control" id="link_video_shitup" name="link_video_shitup" placeholder="Link video shit up">
                                       </div>
                                       <div class="form-group">
@@ -157,7 +157,7 @@
                                       <input type="text" class="form-control" id="link_video_pullup" name="link_video_pullup" placeholder="Link video pull up">
                                       </div>
                                       <div class="form-group">
-                                      <label for="exampleInputEmail1">Link Video Shuttle Run</label>
+                                      <label for="exampleInputEmail1">Link Video Lari</label>
                                       <input type="text" class="form-control" id="link_video_shuttle" name="link_video_shuttle" placeholder="Link video shuttle run">
                                       </div>
                                       <button type="submit" class="btn btn-primary">Simpan</button>
