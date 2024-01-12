@@ -101,6 +101,7 @@ $route['proses_seleksi_gelombangdini_reguler_edit'] = 'camhtar/proses_seleksi_ed
 $route['ukurpakaian'] = 'camhtar/ukurpakaian';
 $route['prosesukurpakaian'] = 'camhtar/proses_ukurpakaian';
 $route['download_tutorial_form_seleksi_gelombang_dini'] = 'camhtar/down_tutorial_form_seleksi_gelombang_dini';
+$route['download_panduan_pengisian_form_ukur_pakaian'] = 'camhtar/down_panduan_pengisian_form_ukur_pakaian';
 
 
 

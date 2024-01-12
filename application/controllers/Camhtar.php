@@ -850,6 +850,12 @@ class Camhtar extends CI_Controller {
 		force_download('assets/download/tutorial_form_seleksi_gelombang_dini.pdf',NULL);
 		redirect(base_url());
 	}
+	public function down_panduan_pengisian_form_ukur_pakaian()
+	{
+		# code...
+		force_download('assets/download/panduan_pengisian_ukuran_baju.pdf',NULL);
+		redirect(base_url());
+	}
 
 }
 
