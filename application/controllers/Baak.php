@@ -2510,7 +2510,10 @@ class Baak extends CI_Controller {
     public function seleksigd()
     {
         # code...
-        $data['catar'] = $this->m_registrasi->get_data_join_all()->result();
+         $where = array(
+            'jalur' => 'gdr1'
+        );
+        $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
         $this->load->view('baak/header');
         $this->load->view('baak/seleksigd',$data);
         $this->load->view('baak/footer');

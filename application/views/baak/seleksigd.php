@@ -18,6 +18,7 @@
                   <th>L/P</th>
                   <th>No. Telp/Hp</th>
                   <th>Prodi</th>
+                  <th>Lihat</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -69,6 +70,7 @@
                       echo $pick;
                     
                   ?></td>
+                  <td> <button type="button" name="submit" id="editseleksigdr1" class="btn editseleksigdr1 btn-primary"  data-no="<?php echo $c->no; ?>">Lihat</button></td>
                 </tr>
                <?php } ?>
                 </tbody>
@@ -80,6 +82,7 @@
                   <th>L/P</th>
                   <th>No. Telp/Hp</th>
                   <th>Prodi</th>
+                  <th>Lihat</th>
                 </tr>
                 </tfoot>
               </table>
