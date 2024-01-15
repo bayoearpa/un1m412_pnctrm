@@ -139,8 +139,54 @@ class m_registrasi extends CI_Model
 		$this->db->join('tbl_catar_validasi_2023','tbl_catar_validasi_2023.no = tbl_catar_2023.no','inner');
 		$query=$this->db->get();
 		return $query;
-
+	}
+	function get_data_join_all_seleksigd(){
+		$this->db->select('tbl_catar_2024.no,
+		tbl_catar_2024.nama,
+		tbl_catar_2024.tl,
+		tbl_catar_2024.tgl_l,
+		tbl_catar_2024.agama,
+		tbl_catar_2024.jk,
+		tbl_catar_2024.alamat,
+		tbl_catar_2024.ktkb,
+		tbl_catar_2024.provinsi,
+		tbl_catar_2024.telp,
+		tbl_catar_2024.kategori_sek,
+		tbl_catar_2024.prodi_lama,
+		tbl_catar_2024.thn_lulus,
+		tbl_catar_2024.asek,
+		tbl_catar_2024.alamat_sek,
+		tbl_catar_2024.nama_a,
+		tbl_catar_2024.nama_i,
+		tbl_catar_2024.alamat_ortu,
+		tbl_catar_2024.telp_ortu,
+		tbl_catar_2024.prodi,
+		tbl_catar_2024.gelombang,
+		tbl_catar_validasi_2024.val_id,
+		tbl_catar_validasi_2024.no,
+		tbl_catar_validasi_2024.gelombang,
+		tbl_catar_validasi_2024.tgl_byr,
+		tbl_catar_validasi_2024.prodi,
+		tbl_catar_validasi_2024.no_reg,
+		tbl_catar_validasi_2024.jml_byr,
+		tbl_catar_validasi_2024.aktif,
+		tbl_seleksi_2024.id_link,
+		tbl_seleksi_2024.no,
+		tbl_seleksi_2024.link_ktp,
+		tbl_seleksi_2024.link_ijasah,
+		tbl_seleksi_2024.link_rapor,
+		tbl_seleksi_2024.link_kesehatan,
+		tbl_seleksi_2024.link_supersehat,
+		tbl_seleksi_2024.link_prestasi,
+		tbl_seleksi_2024.link_video_pushup,
+		tbl_seleksi_2024.link_video_shitup,
+		tbl_seleksi_2024.link_video_pullup,
+		tbl_seleksi_2024.link_video_shuttle');
 		
+		$this->db->from('tbl_catar_2024');
+		$this->db->join('tbl_catar_validasi_2024','tbl_catar_validasi_2024.no = tbl_catar_2024.no','inner');
+		$query=$this->db->get();
+		return $query;
 	}
 	function get_data_join_where($where){
 		$this->db->select('tbl_catar_2024.no,

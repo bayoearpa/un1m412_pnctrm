@@ -2504,6 +2504,20 @@ class Baak extends CI_Controller {
 
         $this->load->view('baak/rekap_ctk_seleksi_exl_pmdk',$data);   
     }
+
+
+    ////////////////////////////////////////// seleksi 2024 /////////////////////////////////////////////////////
+    public function seleksigd()
+    {
+        # code...
+        $data['catar'] = $this->m_registrasi->get_data_join_all()->result();
+        $this->load->view('baak/header');
+        $this->load->view('baak/seleksigd',$data);
+        $this->load->view('baak/footer');
+    }
+
+    ////////////////////////////////////////// .seleksi 2024 /////////////////////////////////////////////////////
+
     ///////////////////////////////////////////////////////summary 2024///////////////////////////////////////////
      public function getnamaprovinsi_2024($id)
     {
