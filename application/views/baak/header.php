@@ -153,6 +153,18 @@
 
           </ul>
         </li>
+         <li class="treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Seleksi</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <!-- <li class="active"><a href="<?php //echo base_url() ?>baak/"><i class="fa fa-repeat"></i>Ganti Jurusan</a></li> -->
+            <li><a href="<?php echo base_url() ?>baak/seleksigd"><i class="fa fa-paperclip"></i>Seleksi GD</a></li>
+          </ul>
+        </li>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Summary 2024</span>

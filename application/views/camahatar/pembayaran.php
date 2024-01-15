@@ -76,6 +76,7 @@
                         <?php } ?>
                         
                 </div>
+                <p>nb : segala bentuk pembayaran yang sudah di setorkan ke unimar amni tidak dapat ditarik kembali dengan alasan apapun</p>
                 <div class="form-group"><button type="submit" class="btn btn-primary">Simpan</button></div>
 
               </form>
