@@ -96,3 +96,71 @@
       <!-- /.row -->
     </section>
     <!-- /.content -->
+
+    <!-- ////////////////// modal-->
+                          <div class="modal fade" id="editFormModal" tabindex="-1" role="dialog" aria-labelledby="editFormModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title" id="editFormModalLabel">Edit Form Seleksi</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                  </button>
+                              </div>
+                              <div class="modal-body">
+                                  <!-- Isi formulir di sini -->
+                                  <form action="<?php echo base_url() ?>proses_seleksi_gelombangdini_reguler_edit" name="form1" id="form1" method="post" enctype="multipart/form-data">
+                                      <!-- ... (Formulir seperti yang Anda berikan) ... -->
+                                      <input type="hidden" name="no" id="no" value="<?php echo $this->session->userdata('no'); ?>">
+                                      <input type="hidden" name="id_link" id="id_link" value="<?php echo $this->session->userdata('id_link'); ?>">
+                                      <div class="form-group">
+                                      <label for="exampleInputEmail1">Link File KTP</label>
+                                       <button type="button" name="submit" id="editseleksigdr1" class="btn editseleksigdr1 btn-primary"  data-no="<?php echo $this->session->userdata('no'); ?>">Edit Form Seleksi</button>
+                                      </div>
+                                      <div class="form-group">
+                                      <label for="exampleInputEmail1">Link File Ijasah atau surat keterangan dari sekolah (jika belum lulus)</label>
+                                      <input type="text" class="form-control" id="link_ijasah" name="link_ijasah" placeholder="Link File Ijasah atau surat keterangan dari sekolah (jika belum lulus)">
+                                      </div>
+                                      <div class="form-group">
+                                      <label for="exampleInputEmail1">Link File Transkip nilai atau rapor semster 1-5 (jika belum lulus)</label>
+                                      <input type="text" class="form-control" id="link_rapor" name="link_rapor" placeholder="Link File Transkip nilai atau rapor semster 1-5 (jika belum lulus)">
+                                      </div>
+                                      <div class="form-group">
+                                      <label for="exampleInputEmail1">Link File Documen pemerikasaan kesehatan dari RS Pemerintah setempat/ Puskesmas</label>
+                                      <input type="text" class="form-control" id="link_kesehatan" name="link_kesehatan" placeholder="Link File Documen pemerikasaan kesehatan dari RS Pemerintah setempat/ Puskesmas">
+                                      </div>
+                                      <div class="form-group">
+                                      <label for="exampleInputEmail1">Surat pernyataan dan riwayat kesehatan</label>
+                                      <input type="text" class="form-control" id="link_supersehat" name="link_supersehat" placeholder="Link File Surat pernyataan dan riwayat kesehatan">
+                                      </div>
+                                      <div class="form-group">
+                                      <label for="exampleInputEmail1">Sertifikasi prestasi minimal tingkat Regional/Provinsi dan Hafidz <i>Qur'an </i>minimal 10 Juz</label>
+                                      <input type="text" class="form-control" id="link_prestasi" name="link_prestasi" placeholder="Link File Sertifikasi prestasi minimal tingkat Regional/Provinsi dan Hafidz Qur'an minimal 10 Juz">
+                                      </div>
+                                      <hr>
+                                      <h5>Form Upload Link Video SAMAPTA</h5>
+                                      <div class="form-group">
+                                      <label for="exampleInputEmail1">Link Video Push Up</label>
+                                      <input type="text" class="form-control" id="link_video_pushup" name="link_video_pushup" placeholder="Link video push up">
+                                      </div>
+                                      <div class="form-group">
+                                      <label for="exampleInputEmail1">Link Video Sit Up</label>
+                                      <input type="text" class="form-control" id="link_video_shitup" name="link_video_shitup" placeholder="Link video shit up">
+                                      </div>
+                                      <div class="form-group">
+                                      <label for="exampleInputEmail1">Link Video Pull Up</label>
+                                      <input type="text" class="form-control" id="link_video_pullup" name="link_video_pullup" placeholder="Link video pull up">
+                                      </div>
+                                      <div class="form-group">
+                                      <label for="exampleInputEmail1">Link Video Lari</label>
+                                      <input type="text" class="form-control" id="link_video_shuttle" name="link_video_shuttle" placeholder="Link video shuttle run">
+                                      </div>
+                                      <button type="submit" class="btn btn-primary">Simpan</button>
+                                  </form>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>

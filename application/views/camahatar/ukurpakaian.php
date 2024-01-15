@@ -76,7 +76,7 @@
 
                    <div class="form-group">
                   <label for="exampleInputEmail1">Ukuran Sepatu :</label>
-                 <select class="form-control" name="ukuran_sepatu" id="ukuran_sepatu">
+                 <select class="form-control" name="ukuran_sepatu" id="ukuran_sepatu" required="">
                     <option>--Pilih Ukuran Sepatu--</option>
                     <option value="38">38</option>
                     <option value="39">39</option>
@@ -88,11 +88,11 @@
                     <option value="45">45</option>
                     <option value="lainnya">lainnya</option>
                   </select>
-                  <input type="text" class="form-control" name="ukuran_sepatu_lainnya" id="ukuran_sepatu_lainnya" placeholder="Silakan isi Ukuran Sepatu lainnya">
+                  <input type="text" class="form-control" name="ukuran_sepatu_lainnya" id="ukuran_sepatu_lainnya" placeholder="Silakan isi Ukuran Sepatu lainnya" required="">
                   </div>
                   <div class="form-group">
                   <label for="exampleInputEmail1">Topi Pet* :</label>
-                 <select class="form-control" name="topipet" id="topipet">
+                 <select class="form-control" name="topipet" id="topipet" required="">
                     <option>--Pilih Ukuran Topi Pet--</option>
                     <option value="53">53</option>
                     <option value="54">54</option>
@@ -106,7 +106,7 @@
                   </div>
                    <div class="form-group">
                   <label for="exampleInputEmail1">Seragam PDL :</label>
-                 <select class="form-control" name="seragam_pdl" id="seragam_pdl">
+                 <select class="form-control" name="seragam_pdl" id="seragam_pdl" required="">
                     <option>--Pilih Ukuran Seragam PDL--</option>
                     <option value="S">S</option>
                     <option value="M">M</option>
@@ -119,7 +119,7 @@
                   </div>
                   <div class="form-group">
                   <label for="exampleInputEmail1">Training Pack :</label>
-                 <select class="form-control" name="training_pack" id="training_pack">
+                 <select class="form-control" name="training_pack" id="training_pack" required="">
                     <option>--Pilih Ukuran Training Pack--</option>
                    <option value="M">M</option>
                     <option value="L">L</option>
@@ -132,7 +132,7 @@
                   </div>
                    <div class="form-group">
                   <label for="exampleInputEmail1">Wearpack :</label>
-                 <select class="form-control" name="wearpack" id="wearpack">
+                 <select class="form-control" name="wearpack" id="wearpack" required="">
                     <option>--Pilih Ukuran Wearpack--</option>
                     <option value="M">M</option>
                     <option value="L">L</option>
@@ -145,7 +145,7 @@
                   </div>
                    <div class="form-group">
                   <label for="exampleInputEmail1">Kaos olahraga :</label>
-                 <select class="form-control" name="kaos_or" id="kaos_or">
+                 <select class="form-control" name="kaos_or" id="kaos_or" required="">
                     <option>--Pilih Ukuran Kaos Olahraga--</option>
                     <option value="S">S</option>
                     <option value="M">M</option>
@@ -158,7 +158,7 @@
                   </div>
                   <div class="form-group">
                   <label for="exampleInputEmail1">Baju Renang :</label>
-                 <select class="form-control" name="baju_renang" id="baju_renang">
+                 <select class="form-control" name="baju_renang" id="baju_renang" required="">
                     <option>--Pilih Ukuran Baju Renang--</option>
                     <option value="M">M</option>
                     <option value="L">L</option>
@@ -171,7 +171,7 @@
                   </div>
                    <div class="form-group">
                   <label for="exampleInputEmail1">DOGI* :</label>
-                 <select class="form-control" name="dogi" id="dogi">
+                 <select class="form-control" name="dogi" id="dogi" required="">
                     <option>--Pilih Ukuran DOGI--</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
@@ -189,7 +189,7 @@
                   <p><b>Seragam PDH & Seragam PDUB</b></p>
                    <div class="form-group">
                   <label for="exampleInputEmail1">-Kemeja :</label>
-                 <select class="form-control" name="pdhpdub_kemeja" id="pdhpdub_kemeja">
+                 <select class="form-control" name="pdhpdub_kemeja" id="pdhpdub_kemeja" required="">
                     <option>--Pilih Ukuran Kemeja untuk seragam Seragam PDH & Seragam PDUB--</option>
                     <option value="S">S</option>
                     <option value="M">M</option>
@@ -202,7 +202,7 @@
                   </div>
                    <div class="form-group">
                   <label for="exampleInputEmail1">-Celana :</label>
-                 <select class="form-control" name="pdhpdub_celana" id="pdhpdub_celana">
+                 <select class="form-control" name="pdhpdub_celana" id="pdhpdub_celana" required="">
                     <option>--Pilih Ukuran Celana untuk seragam Seragam PDH & Seragam PDUB--</option>
                     <option value="S">S</option>
                     <option value="M">M</option>
@@ -218,7 +218,7 @@
 
                    <div class="form-group">
                   <label for="exampleInputEmail1"> Jas PDPM :</label>
-                 <select class="form-control" name="jaspdpm" id="jaspdpm">
+                 <select class="form-control" name="jaspdpm" id="jaspdpm" required="">
                     <option>--Pilih Ukuran Jas PDPM--</option>
                     <option value="S">S</option>
                     <option value="M">M</option>
