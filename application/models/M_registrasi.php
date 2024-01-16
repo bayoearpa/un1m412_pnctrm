@@ -511,7 +511,7 @@ class m_registrasi extends CI_Model
 			');
 
 	     $this->db->from('tbl_seleksi_2024');
-	     // $this->db->join('tbl_mon','tmst_mahasiswa.NIM = tbl_mon.nim','left');
+	     $this->db->join('tbl_catar_2024','tbl_seleksi_2024.no = tbl_catar_2024.no','left');
         $this->db->where('tbl_seleksi_2024.no', $id);
         $query = $this->db->get();
 
