@@ -508,6 +508,7 @@ class m_registrasi extends CI_Model
 	     	tbl_seleksi_2024.link_video_shitup as link_video_shitup,
 	     	tbl_seleksi_2024.link_video_pullup as link_video_pullup,
 	     	tbl_seleksi_2024.link_video_shuttle as link_video_shuttle,
+	     	tbl_catar_2024.nama,
 			');
 
 	     $this->db->from('tbl_seleksi_2024');

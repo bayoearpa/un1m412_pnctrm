@@ -115,44 +115,49 @@
                                       <input type="hidden" name="no" id="no" value="<?php echo $this->session->userdata('no'); ?>">
                                       <input type="hidden" name="id_link" id="id_link" value="<?php echo $this->session->userdata('id_link'); ?>">
                                       <div class="form-group">
-                                      <label for="exampleInputEmail1">Link File KTP</label>
+                                      <label for="exampleInputEmail1">Nama :</label>
+                                      <input type="text" name="nama" id="nama" readonly="">
+                                      </div>
+                                      <div class="form-group">
+                                      <label for="exampleInputEmail1">Link File KTP :</label>
+                                      <p></p>
                                        <button type="button" name="submit" id="link_ktp" class="btn link_ktp btn-primary"  data-link="">Lihat</button>
                                       </div>
                                       <div class="form-group">
-                                      <label for="exampleInputEmail1">Link File Ijasah atau surat keterangan dari sekolah (jika belum lulus)</label>
+                                      <label for="exampleInputEmail1">Link File Ijasah atau surat keterangan dari sekolah (jika belum lulus)</label><p></p>
                                       <button type="button" name="submit" id="link_ijasah" class="btn link_ijasah btn-primary"  data-link="">Lihat</button>
                                       </div>
                                       <div class="form-group">
-                                      <label for="exampleInputEmail1">Link File Transkip nilai atau rapor semster 1-5 (jika belum lulus)</label>
+                                      <label for="exampleInputEmail1">Link File Transkip nilai atau rapor semster 1-5 (jika belum lulus)</label><p></p>
                                       <button type="button" name="submit" id="link_rapor" class="btn link_rapor btn-primary"  data-link="">Lihat</button>
                                       <div class="form-group">
-                                      <label for="exampleInputEmail1">Link File Documen pemerikasaan kesehatan dari RS Pemerintah setempat/ Puskesmas</label>
+                                      <label for="exampleInputEmail1">Link File Documen pemerikasaan kesehatan dari RS Pemerintah setempat/ Puskesmas</label><p></p><p></p>
                                       <button type="button" name="submit" id="link_kesehatan" class="btn link_kesehatan btn-primary"  data-link="">Lihat</button>
                                       </div>
                                       <div class="form-group">
-                                      <label for="exampleInputEmail1">Surat pernyataan dan riwayat kesehatan</label>
+                                      <label for="exampleInputEmail1">Surat pernyataan dan riwayat kesehatan</label><p></p>
                                       <button type="button" name="submit" id="link_supersehat" class="btn link_supersehat btn-primary"  data-link="">Lihat</button>
                                       </div>
                                       <div class="form-group">
-                                      <label for="exampleInputEmail1">Sertifikasi prestasi minimal tingkat Regional/Provinsi dan Hafidz <i>Qur'an </i>minimal 10 Juz</label>
+                                      <label for="exampleInputEmail1">Sertifikasi prestasi minimal tingkat Regional/Provinsi dan Hafidz <i>Qur'an </i>minimal 10 Juz</label><p></p>
                                       <button type="button" name="submit" id="link_prestasi" class="btn link_prestasi btn-primary"  data-link="">Lihat</button>
                                       </div>
                                       <hr>
                                       <h5>Form Upload Link Video SAMAPTA</h5>
                                       <div class="form-group">
-                                      <label for="exampleInputEmail1">Link Video Push Up</label>
+                                      <label for="exampleInputEmail1">Link Video Push Up</label><p></p>
                                       <button type="button" name="submit" id="link_video_pushup" class="btn link_video_pushup btn-primary"  data-link="">Lihat</button>
                                       </div>
                                       <div class="form-group">
-                                      <label for="exampleInputEmail1">Link Video Sit Up</label>
+                                      <label for="exampleInputEmail1">Link Video Sit Up</label><p></p>
                                       <button type="button" name="submit" id="link_video_situp" class="btn link_video_situp btn-primary"  data-link="">Lihat</button>
                                       </div>
                                       <div class="form-group">
-                                      <label for="exampleInputEmail1">Link Video Pull Up</label>
+                                      <label for="exampleInputEmail1">Link Video Pull Up</label><p></p>
                                       <button type="button" name="submit" id="link_video_pullup" class="btn link_video_pullup btn-primary"  data-link="">Lihat</button>
                                       </div>
                                       <div class="form-group">
-                                      <label for="exampleInputEmail1">Link Video Lari</label>
+                                      <label for="exampleInputEmail1">Link Video Lari</label><p></p>
                                       <button type="button" name="submit" id="link_video_shuttle" class="btn link_video_shuttle btn-primary"  data-link="">Lihat</button>
                                       </div>
                                       <button type="submit" class="btn btn-primary">Simpan</button>

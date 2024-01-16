@@ -65,6 +65,7 @@
                 $('#link_video_situp').data('link', parsedData.link_video_shitup);
                 $('#link_video_pullup').data('link', parsedData.link_video_pullup);
                 $('#link_video_shuttle').data('link', parsedData.link_video_shuttle);
+                $('#nama').val(parsedData.nama);
 
 
                 // $('#id_link').val(parsedData.id_link);
