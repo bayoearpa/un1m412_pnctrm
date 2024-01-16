@@ -54,8 +54,12 @@
         });
 
 
+          var dataTable = $('#example3').DataTable({
+            // Konfigurasi DataTable
+            "order": [[0, "desc"]]
+        });
 
-        $('.editseleksigdr1').click(function() {
+         $('#example3').on('click', '.editseleksigdr1', function() {
         var no = $(this).data('no');
         // Ambil data yang akan diedit dari server dengan AJAX
         $.ajax({
