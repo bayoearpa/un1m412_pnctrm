@@ -2,50 +2,60 @@
 	
 	$(document).ready(function() {
 
-		 $('.link_ktp').click(function() {
+		 $('.link_ktp').click(function(e) {
+            e.preventDefault();
             var url = $(this).data('link');
             window.open(url, '_blank');
         });
-         $('.link_ijasah').click(function() {
+         $('.link_ijasah').click(function(e) {
+            e.preventDefault();
             var url = $(this).data('link');
             window.open(url, '_blank');
         });
-         $('.link_rapor').click(function() {
+         $('.link_rapor').click(function(e) {
+            e.preventDefault();
             var url = $(this).data('link');
             window.open(url, '_blank');
         });
-         $('.link_kesehatan').click(function() {
+         $('.link_kesehatan').click(function(e) {
+            e.preventDefault();
             var url = $(this).data('link');
             window.open(url, '_blank');
         });
-         $('.link_supersehat').click(function() {
+         $('.link_supersehat').click(function(e) {
+            e.preventDefault();
             var url = $(this).data('link');
             window.open(url, '_blank');
         });
-         $('.link_prestasi').click(function() {
+         $('.link_prestasi').click(function(e) {
+            e.preventDefault();
             var url = $(this).data('link');
             window.open(url, '_blank');
         });
-         $('.link_video_pushup').click(function() {
+         $('.link_video_pushup').click(function(e) {
+            e.preventDefault();
             var url = $(this).data('link');
             window.open(url, '_blank');
         });
-         $('.link_video_pullup').click(function() {
+         $('.link_video_pullup').click(function(e) {
+            e.preventDefault();
             var url = $(this).data('link');
             window.open(url, '_blank');
         });
-         $('.link_video_situp').click(function() {
+         $('.link_video_situp').click(function(e) {
+            e.preventDefault();
             var url = $(this).data('link');
             window.open(url, '_blank');
         });
-         $('.link_video_shuttle').click(function() {
+         $('.link_video_shuttle').click(function(e) {
+            e.preventDefault();
             var url = $(this).data('link');
             window.open(url, '_blank');
         });
 
 
 
-          $('.editseleksigdr1').click(function() {
+        $('.editseleksigdr1').click(function() {
         var no = $(this).data('no');
         // Ambil data yang akan diedit dari server dengan AJAX
         $.ajax({
