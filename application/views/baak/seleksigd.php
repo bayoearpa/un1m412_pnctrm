@@ -115,8 +115,8 @@
                                       <input type="hidden" name="no" id="no" value="<?php echo $this->session->userdata('no'); ?>">
                                       <input type="hidden" name="id_link" id="id_link" value="<?php echo $this->session->userdata('id_link'); ?>">
                                       <div class="form-group">
-                                      <label for="exampleInputEmail1">Nama :</label>
-                                      <input type="text" name="nama" id="nama" readonly="">
+                                      <label for="exampleInputEmail1">Nama :</label><p></p>
+                                      <input type="text" class="form-control" name="nama" id="nama" readonly="">
                                       </div>
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">Link File KTP :</label>
@@ -160,7 +160,7 @@
                                       <label for="exampleInputEmail1">Link Video Lari</label><p></p>
                                       <button type="button" name="submit" id="link_video_shuttle" class="btn link_video_shuttle btn-primary"  data-link="">Lihat</button>
                                       </div>
-                                      <button type="submit" class="btn btn-primary">Simpan</button>
+                                      <!-- <button type="submit" class="btn btn-primary">Simpan</button> -->
                                   </form>
                               </div>
                               <div class="modal-footer">
