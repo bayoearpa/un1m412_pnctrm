@@ -25,6 +25,7 @@
                 <?php 
                 $no = 1;
                 foreach($catar as $c){ 
+                  $no_pendf = $c->no;
                  ?>
                 <tr>
                   <td><?php echo $no++; ?></td>
@@ -115,45 +116,44 @@
                                       <input type="hidden" name="id_link" id="id_link" value="<?php echo $this->session->userdata('id_link'); ?>">
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">Link File KTP</label>
-                                       <button type="button" name="submit" id="editseleksigdr1" class="btn editseleksigdr1 btn-primary"  data-no="<?php echo $this->session->userdata('no'); ?>">Edit Form Seleksi</button>
+                                       <button type="button" name="submit" id="link_ktp" class="btn link_ktp btn-primary"  data-link="">Lihat</button>
                                       </div>
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">Link File Ijasah atau surat keterangan dari sekolah (jika belum lulus)</label>
-                                      <input type="text" class="form-control" id="link_ijasah" name="link_ijasah" placeholder="Link File Ijasah atau surat keterangan dari sekolah (jika belum lulus)">
+                                      <button type="button" name="submit" id="link_ijasah" class="btn link_ijasah btn-primary"  data-link="">Lihat</button>
                                       </div>
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">Link File Transkip nilai atau rapor semster 1-5 (jika belum lulus)</label>
-                                      <input type="text" class="form-control" id="link_rapor" name="link_rapor" placeholder="Link File Transkip nilai atau rapor semster 1-5 (jika belum lulus)">
-                                      </div>
+                                      <button type="button" name="submit" id="link_rapor" class="btn link_rapor btn-primary"  data-link="">Lihat</button>
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">Link File Documen pemerikasaan kesehatan dari RS Pemerintah setempat/ Puskesmas</label>
-                                      <input type="text" class="form-control" id="link_kesehatan" name="link_kesehatan" placeholder="Link File Documen pemerikasaan kesehatan dari RS Pemerintah setempat/ Puskesmas">
+                                      <button type="button" name="submit" id="link_kesehatan" class="btn link_kesehatan btn-primary"  data-link="">Lihat</button>
                                       </div>
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">Surat pernyataan dan riwayat kesehatan</label>
-                                      <input type="text" class="form-control" id="link_supersehat" name="link_supersehat" placeholder="Link File Surat pernyataan dan riwayat kesehatan">
+                                      <button type="button" name="submit" id="link_supersehat" class="btn link_supersehat btn-primary"  data-link="">Lihat</button>
                                       </div>
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">Sertifikasi prestasi minimal tingkat Regional/Provinsi dan Hafidz <i>Qur'an </i>minimal 10 Juz</label>
-                                      <input type="text" class="form-control" id="link_prestasi" name="link_prestasi" placeholder="Link File Sertifikasi prestasi minimal tingkat Regional/Provinsi dan Hafidz Qur'an minimal 10 Juz">
+                                      <button type="button" name="submit" id="link_prestasi" class="btn link_prestasi btn-primary"  data-link="">Lihat</button>
                                       </div>
                                       <hr>
                                       <h5>Form Upload Link Video SAMAPTA</h5>
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">Link Video Push Up</label>
-                                      <input type="text" class="form-control" id="link_video_pushup" name="link_video_pushup" placeholder="Link video push up">
+                                      <button type="button" name="submit" id="link_video_pushup" class="btn link_video_pushup btn-primary"  data-link="">Lihat</button>
                                       </div>
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">Link Video Sit Up</label>
-                                      <input type="text" class="form-control" id="link_video_shitup" name="link_video_shitup" placeholder="Link video shit up">
+                                      <button type="button" name="submit" id="link_video_situp" class="btn link_video_situp btn-primary"  data-link="">Lihat</button>
                                       </div>
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">Link Video Pull Up</label>
-                                      <input type="text" class="form-control" id="link_video_pullup" name="link_video_pullup" placeholder="Link video pull up">
+                                      <button type="button" name="submit" id="link_video_pullup" class="btn link_video_pullup btn-primary"  data-link="">Lihat</button>
                                       </div>
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">Link Video Lari</label>
-                                      <input type="text" class="form-control" id="link_video_shuttle" name="link_video_shuttle" placeholder="Link video shuttle run">
+                                      <button type="button" name="submit" id="link_video_shuttle" class="btn link_video_shuttle btn-primary"  data-link="">Lihat</button>
                                       </div>
                                       <button type="submit" class="btn btn-primary">Simpan</button>
                                   </form>

@@ -2507,6 +2507,15 @@ class Baak extends CI_Controller {
 
 
     ////////////////////////////////////////// seleksi 2024 /////////////////////////////////////////////////////
+    public function getdataeditseleksigdr1($no)
+    {
+        # code...
+        // Ambil data berdasarkan ID dari model Anda
+        $data = $this->m_registrasi->get_data_edit_gdr1($no); // Gantilah 'get_data_by_id' dengan metode yang sesuai dalam model Anda
+
+        // Konversi data ke format JSON dan kirimkan ke view
+        echo json_encode($data);
+    }
     public function seleksigd()
     {
         # code...
@@ -2517,6 +2526,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/seleksigd',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/seleksigd_js');
     }
 
     ////////////////////////////////////////// .seleksi 2024 /////////////////////////////////////////////////////
