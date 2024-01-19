@@ -268,6 +268,18 @@
               <p class="lead text-center"><font color="black">D4 MANAJEMEN PELABUHAN DAN LOGISTIK MARITIM (</font></p>
             </a>
           </div>
+           <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-10">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                  <p class="lead">Klik Untuk Lihat Detail</p>
+                </div>
+              </div>
+              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/bisnisdigital24.jpg" alt="">
+              <p class="lead text-center"><font color="black">S1 BISNIS DIGITAL (</font></p>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -1143,6 +1155,95 @@
                <li>Pria atau wanita</li>
                 <li>Belum menikah dan sanggup tidak menikah selama masa pendidikan yang dibuktikan dengan surat keterangan belum pernah menikah.</li> 
                 <li>Tinggi badan minimal Pria 160 Cm dan Wanita 155 Cm.</li>
+                <li>Copy Ijazah:</li>
+                <ul>
+                  <li>SMA atau Madrasah Aliyah (MA) – (Semua Program Studi).</li>
+                  <li>SMK –(Semua Program Studi).</li>
+                </ul>
+                <li>Dilegalisir dari instansi pemerintah dan pejabat yang berwenang.</li> 
+                <li>Surat Keterangan Catatan Kepolisian ( SKCK).</li> 
+                <li>Pas photo hitam putih ukuran 3x4 sebanyak 2 (dua) lembar.</li> 
+                <li>Copy Surat kenal lahir / akte kelahiran.</li> 
+                <li>Copy tanda pengenal yang sah, KTP atau SIM.</li> 
+              </ul>
+              <p><i class="fa fa-warning"></i>Peringatan :</p>
+            <ul>
+               <li>Pastikan anda melihat prasyarat sesuai <b>Program Studi (Prodi)</b> yang dipilih</li>
+                <li>Pendaftaran dapat dilaksanakan dengan datang langsung ke kampus biru maupun secara <i>online</i></li>
+               <!--  <li>Bagi pendaftar melalui <b><i>online</i></b> dapat melaksanakan pembayaran  pendaftaran melalui Bank/ATM :</li>
+                <table>
+                  <tr>
+                    <td><b>BANK BNI</b></td>
+                    <td><b>:</b></td>
+                    <td><b>an. UNIMAR AMNI</b></td>
+                  </tr>
+                  <tr>
+                    <td><b>No. Rekening</b></td>
+                    <td><b>:</b></td>
+                    <td><b>0838810730</b></td>
+                  </tr>
+                  <tr>
+                    <td><b>Biaya Pendaftaran</b></td>
+                    <td><b>:</b></td>
+                    <td><b>Rp. 500.000,-</b></td>
+                  </tr>
+                </table> -->
+               <!--  <li>Bukti Pembayaran dapat dikirim melalui :</li>
+                <table>
+                  <tr>
+                    <td><b>No. WA</b></td>
+                    <td><b>:</b></td>
+                    <td><b>0822.46.900.800</b></td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">Dengan mencantumkan informasi :</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3"><b>No. Pendaftaran Online_Nama Pendaftar_Prodi yang dipilih_Periode Pendaftaran</b></td>
+                  </tr>
+                  <tr>
+                    <td>Contoh</td>
+                    <td>:</td>
+                    <td><b>1234_Rian Ardianto_Transportasi_Januari</b></td>
+                  </tr>
+                </table> -->
+                <li>Pemberkasan dilaksanakan setelah pendaftaran dinyatakan <b>DITERIMA</b></li>
+              </ul>
+              
+               <center>
+                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>daftar">
+                <i class="fa fa-sign-in"></i>
+                Daftar Sekarang!</a>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-9">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0  text-center">S1 BISNIS DIGITAL</h2>
+              <!-- <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="img/portfolio/game.png" alt="">
+              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project</a> -->
+                <!--  <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/pi1.png" alt="">
+               <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/pi2.png" alt=""> -->
+               <p><i class="fa fa-question-circle"></i>Syarat :</p>
+                <ul>
+                <!-- <li>Usia max 23 tahun pada bulan September 2022.</li> -->
+                <li>Pria atau wanita</li>
+                <li>Belum menikah dan sanggup tidak menikah selama masa pendidikan yang dibuktikan dengan surat keterangan belum pernah menikah.</li> 
                 <li>Copy Ijazah:</li>
                 <ul>
                   <li>SMA atau Madrasah Aliyah (MA) – (Semua Program Studi).</li>
