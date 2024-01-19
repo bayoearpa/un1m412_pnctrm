@@ -101,8 +101,11 @@ class Camhtar extends CI_Controller {
                 case '8':
                     $pick = "S1 PERDAGANGAN INTERNASIONAL";
                 break;
-                case '8':
+                case '9':
                     $pick = "D4 MANAJEMEN PELABUHAN DAN LOGISTIK MARITIM";
+                break;
+                case '10':
+                    $pick = "S1 BISNIS DIGITAL";
                 break;
                 
             }
@@ -862,6 +865,32 @@ class Camhtar extends CI_Controller {
 		force_download('assets/download/panduan_pengisian_ukuran_baju.pdf',NULL);
 		redirect(base_url());
 	}
+	public function down_pengumuman_gd()
+	{
+		# code...
+		force_download('assets/download/sk_lulus_periode_gelombang_dini_tahun_ajaran_2024.pdf',NULL);
+		redirect(base_url());
+	}
+	public function pengumuman_gd()
+	{
+		# code...
+		$no = $this->session->userdata('no');
+		$where = array(
+				'no' => $no,
+			);
+		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2024')->result();
+		foreach ($data['catar'] as $key) {
+			# code...
+			$data['nik'] = $key->nik;
+		}
+		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2024')->num_rows();
+
+		$this->load->view('camahatar/header',$data);
+        $this->load->view('camahatar/pengumuman_gd',$data);
+        $this->load->view('camahatar/footer');
+        // $this->load->view('camahatar/pengumuman_gd_js');
+	}
+
 
 }
 

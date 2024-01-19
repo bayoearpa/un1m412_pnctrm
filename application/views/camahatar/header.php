@@ -137,7 +137,7 @@
             <?php if ($this->session->userdata('jalur') == "gdr1"): ?>
               <li><a href="<?php echo base_url() ?>ukurpakaian"><i class="fa fa-check"></i><span>Ukur Pakaian</span></a></li>
             <?php endif ?>
-          <li><a href="#"><i class="fa fa-info-circle"></i><span>Pengumuman</span></a></li>
+          <li><a href="<?php echo base_url() ?>pengumuman_gelombangdini"><i class="fa fa-info-circle"></i><span>Pengumuman</span></a></li>
           <li><a href="#"><i class="fa fa-external-link"></i><span>Daftar Ulang</span></a></li>
 
          <?php }else{ ?>

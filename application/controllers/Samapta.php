@@ -41,6 +41,12 @@ class Samapta extends CI_Controller {
                 case '8':
                     $pick = "S1 PERDAGANGAN INTERNASIONAL";
                 break;
+                case '9':
+                    $pick = "D4 MANAJEMEN PELABUHAN DAN LOGISTIK MARITIM";
+                break;
+                case '10':
+                    $pick = "S1 BISNIS DIGITAL";
+                break;
                 
             }
             return $pick;

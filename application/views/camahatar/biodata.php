@@ -403,6 +403,7 @@
                   <label>Prodi Pilihan 1</label>
                   <select class="form-control" name="prodi" id="prodi">
                     <option value="<?php echo $key->prodi?>"> <?php echo $nmprodi ?> </option>
+                    <option value="10">S1 Bisnis Digital</option>
                     <option value="9">D4 Manajemen Pelabuhan dan Logistik Maritim</option>
                     <option value="1">D3 Ketatalaksanaan Pelayaran Niaga dan Kepelabuhanan</option>
                     <option value="2">D3 Teknika</option>
@@ -418,6 +419,7 @@
                   <label>Prodi Pilihan 2</label>
                   <select class="form-control" name="prodi2" id="prodi2">
                     <option value="<?php echo $key->prodi2?>"> <?php echo $nmprodi2 ?> </option>
+                    <option value="10">S1 Bisnis Digital</option>
                     <option value="9">D4 Manajemen Pelabuhan dan Logistik Maritim</option>
                     <option value="1">D3 Ketatalaksanaan Pelayaran Niaga dan Kepelabuhanan</option>
                     <option value="2">D3 Teknika</option>
