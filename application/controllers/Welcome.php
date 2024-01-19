@@ -654,7 +654,7 @@ class Welcome extends CI_Controller {
 	public function biaya_download()
 	{
 		# code...
-		force_download('assets/download/biaya_pendidikan_2023.pdf',NULL);
+		force_download('assets/download/biaya_pendidikan_2024.pdf',NULL);
 		redirect(base_url());
 	}
 		//download biaya
