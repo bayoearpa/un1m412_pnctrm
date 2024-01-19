@@ -276,7 +276,7 @@
                   <p class="lead">Klik Untuk Lihat Detail</p>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/bisnisdigital24.jpeg" alt="">
+              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/bisnisdigital24.JPG" alt="">
               <p class="lead text-center"><font color="black">S1 BISNIS DIGITAL</font></p>
             </a>
           </div>
