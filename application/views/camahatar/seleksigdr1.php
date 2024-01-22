@@ -62,12 +62,12 @@
                   <label for="exampleInputEmail1">Surat pernyataan dan riwayat kesehatan</label>
                   <input type="text" class="form-control" id="link_supersehat" name="link_supersehat" placeholder="Link File Surat pernyataan dan riwayat kesehatan">
                   </div>
-                  <div class="form-group">
+                 <!--  <div class="form-group">
                   <label for="exampleInputEmail1">Sertifikasi prestasi minimal tingkat Regional/Provinsi dan Hafidz <i>Qur'an </i>minimal 10 Juz</label>
                   <input type="text" class="form-control" id="link_prestasi" name="link_prestasi" placeholder="Link File Sertifikasi prestasi minimal tingkat Regional/Provinsi dan Hafidz Qur'an minimal 10 Juz">
-                  </div>
+                  </div> -->
                   <hr>
-                  <h5>Form Upload Link Video SAMAPTA</h5>
+                  <h5><b>Form Upload Link Video SAMAPTA</b></h5>
                   <p>Video Kesamaptaan : </p>
                   <p>Saat pembuatan video kesamaptaan calon mahasiswa/ taruna baru diwajibkan:</p>
                   <ul>
@@ -152,12 +152,12 @@
                                       <label for="exampleInputEmail1">Surat pernyataan dan riwayat kesehatan</label>
                                       <input type="text" class="form-control" id="link_supersehat" name="link_supersehat" placeholder="Link File Surat pernyataan dan riwayat kesehatan">
                                       </div>
-                                      <div class="form-group">
+                                     <!--  <div class="form-group">
                                       <label for="exampleInputEmail1">Sertifikasi prestasi minimal tingkat Regional/Provinsi dan Hafidz <i>Qur'an </i>minimal 10 Juz</label>
                                       <input type="text" class="form-control" id="link_prestasi" name="link_prestasi" placeholder="Link File Sertifikasi prestasi minimal tingkat Regional/Provinsi dan Hafidz Qur'an minimal 10 Juz">
-                                      </div>
+                                      </div> -->
                                       <hr>
-                                      <h5>Form Upload Link Video SAMAPTA</h5>
+                                      <h5><b>Form Upload Link Video SAMAPTA</b></h5>
                                       <p>Video Kesamaptaan : </p>
                                       <p>Saat pembuatan video kesamaptaan calon mahasiswa/ taruna baru diwajibkan:</p>
                                       <ul>

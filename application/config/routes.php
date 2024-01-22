@@ -107,6 +107,10 @@ $route['download_pengumuman_gelombangdini'] = 'camhtar/down_pengumuman_gd';
 
 $route['seleksi_reguler'] = 'camhtar/seleksigdr1';
 $route['seleksi_tf'] = 'camhtar/seleksigdr2';
+$route['download_super_asrama'] = 'camhtar/down_super_asrama';
+$route['download_super_taat'] = 'camhtar/down_super_taat';
+$route['download_super_tidak_menikah'] = 'camhtar/down_super_tidak_menikah';
+$route['daftarulang'] = 'camhtar/daful';
 
 
 

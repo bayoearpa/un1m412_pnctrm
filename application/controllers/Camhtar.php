@@ -422,9 +422,9 @@ class Camhtar extends CI_Controller {
 		  //       exit();
 				if ($proses_insert) {
 					# code...
-					redirect("biodata?pesan=succsess");
+					redirect("pembayaran?pesan=succsess");
 				}
-				redirect("biodata?pesan=error");
+				redirect("pembayaran?pesan=error");
 
 				//////////////// .proses biasa//////////////////////////////////////
  	
@@ -697,7 +697,7 @@ class Camhtar extends CI_Controller {
 		$link_rapor = $this->input->post('link_rapor');
 		$link_kesehatan = $this->input->post('link_kesehatan');
 		$link_supersehat = $this->input->post('link_supersehat');
-		$link_prestasi = $this->input->post('link_prestasi');
+		// $link_prestasi = $this->input->post('link_prestasi');
 		$link_video_pushup = $this->input->post('link_video_pushup');
 		$link_video_shitup = $this->input->post('link_video_shitup');
 		$link_video_pullup = $this->input->post('link_video_pullup');
@@ -710,7 +710,7 @@ class Camhtar extends CI_Controller {
 					'link_rapor' => $link_rapor,
 					'link_kesehatan' => $link_kesehatan,
 					'link_supersehat' => $link_supersehat,
-					'link_prestasi' => $link_prestasi,
+					// 'link_prestasi' => $link_prestasi,
 					'link_video_pushup' => $link_video_pushup,
 					'link_video_shitup' => $link_video_shitup,
 					'link_video_pullup' => $link_video_pullup,
@@ -742,7 +742,7 @@ class Camhtar extends CI_Controller {
 		$link_rapor = $this->input->post('link_rapor');
 		$link_kesehatan = $this->input->post('link_kesehatan');
 		$link_supersehat = $this->input->post('link_supersehat');
-		$link_prestasi = $this->input->post('link_prestasi');
+		// $link_prestasi = $this->input->post('link_prestasi');
 		$link_video_pushup = $this->input->post('link_video_pushup');
 		$link_video_shitup = $this->input->post('link_video_shitup');
 		$link_video_pullup = $this->input->post('link_video_pullup');
@@ -759,7 +759,7 @@ class Camhtar extends CI_Controller {
 					'link_rapor' => $link_rapor,
 					'link_kesehatan' => $link_kesehatan,
 					'link_supersehat' => $link_supersehat,
-					'link_prestasi' => $link_prestasi,
+					// 'link_prestasi' => $link_prestasi,
 					'link_video_pushup' => $link_video_pushup,
 					'link_video_shitup' => $link_video_shitup,
 					'link_video_pullup' => $link_video_pullup,
@@ -889,6 +889,47 @@ class Camhtar extends CI_Controller {
         $this->load->view('camahatar/pengumuman_gd',$data);
         $this->load->view('camahatar/footer');
         // $this->load->view('camahatar/pengumuman_gd_js');
+	}
+	public function down_super_asrama()
+	{
+		# code...
+		force_download('assets/download/surat_pernyataan_di_asrama_khusus_taruni.pdf',NULL);
+		redirect(base_url());
+	}
+	public function down_super_taat()
+	{
+		# code...
+		force_download('assets/download/surat_pernyataan_sanggup_mentaati_peraturan.pdf',NULL);
+		redirect(base_url());
+	}
+	public function down_super_tidak_menikah()
+	{
+		# code...
+		force_download('assets/download/surat_pernyataan_sanggup_tidak_menikah.pdf',NULL);
+		redirect(base_url());
+	}
+	public function daful()
+	{
+		# code...
+		# code...
+		$no = $this->session->userdata('no');
+		$where = array(
+				'no' => $no,
+			);
+		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2024')->result();
+		foreach ($data['catar'] as $key) {
+			# code...
+			$data['nik'] = $key->nik;
+			$programStudi = $key->prodi;
+		}
+		$data['prodi'] = $this->getProdi($programStudi);
+
+		$data['daful'] = $this->m_registrasi->get_data($where, 'tbl_catar_daful_2024')->num_rows();
+
+		$this->load->view('camahatar/header',$data);
+        $this->load->view('camahatar/daful',$data);
+        $this->load->view('camahatar/footer');
+        $this->load->view('camahatar/daful_js');
 	}
 
 
