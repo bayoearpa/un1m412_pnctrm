@@ -68,6 +68,20 @@
                   </div>
                   <hr>
                   <h5>Form Upload Link Video SAMAPTA</h5>
+                  <p>Video Kesamaptaan : </p>
+                  <p>Saat pembuatan video kesamaptaan calon mahasiswa/ taruna baru diwajibkan:</p>
+                  <ul>
+                    <li>Mengenakan baju olahraga putih (untuk putra lengan pendek), celana training putih (untuk putra celana pendek) dan sepatu olahraga putih.</li>
+                    <li>Saat pembuatan video push up, shit up, dan pull up calon mahasiswa/ taruna baru diwajibkan untuk menghitung.</li>
+                    <li>Untuk video lari harus terlihat full 1 lapangan.</li> 
+                  </ul>
+                  <p>Berikut video kesamaptaan yang harus dibuat:</p>
+                  <ul>
+                    <li>Push up <b>putri</b> 30 kali dengan tumpuan lutut dan <b>putra</b> full 50 kali</li>
+                    <li>Shit up <b>putri</b> 20 kali dan <b>putra</b> 35 kali</li>
+                    <li>Pull up putra 8 kali</li>
+                    <li>Lari selama 12 menit di lapangan sepakbola terdekat</li>
+                  </ul>
                   <div class="form-group">
                   <label for="exampleInputEmail1">Link Video Push Up</label>
                   <input type="text" class="form-control" id="link_video_pushup" name="link_video_pushup" placeholder="Link video push up">
@@ -144,6 +158,20 @@
                                       </div>
                                       <hr>
                                       <h5>Form Upload Link Video SAMAPTA</h5>
+                                      <p>Video Kesamaptaan : </p>
+                                      <p>Saat pembuatan video kesamaptaan calon mahasiswa/ taruna baru diwajibkan:</p>
+                                      <ul>
+                                        <li>Mengenakan baju olahraga putih (untuk putra lengan pendek), celana training putih (untuk putra celana pendek) dan sepatu olahraga putih.</li>
+                                        <li>Saat pembuatan video push up, shit up, dan pull up calon mahasiswa/ taruna baru diwajibkan untuk menghitung.</li>
+                                        <li>Untuk video lari harus terlihat full 1 lapangan.</li> 
+                                      </ul>
+                                      <p>Berikut video kesamaptaan yang harus dibuat:</p>
+                                      <ul>
+                                        <li>Push up <b>putri</b> 30 kali dengan tumpuan lutut dan <b>putra</b> full 50 kali</li>
+                                        <li>Shit up <b>putri</b> 20 kali dan <b>putra</b> 35 kali</li>
+                                        <li>Pull up putra 8 kali</li>
+                                        <li>Lari selama 12 menit di lapangan sepakbola terdekat</li>
+                                      </ul>
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">Link Video Push Up</label>
                                       <input type="text" class="form-control" id="link_video_pushup" name="link_video_pushup" placeholder="Link video push up">

@@ -627,7 +627,7 @@ class Camhtar extends CI_Controller {
 	        // Jika upload gagal, tampilkan pesan kesalahan
 	        $error = array('error' => $this->upload_ijasah_d3->display_errors());
 	       	$this->session->set_flashdata('error', $error);
-			redirect(base_url('seleksi_geldini_tf'));
+			redirect(base_url('seleksi_tf'));
 	    }
 
 
@@ -654,7 +654,7 @@ class Camhtar extends CI_Controller {
 	        // Jika upload gagal, tampilkan pesan kesalahan
 	        $error = array('error' => $this->upload_transkip_d3->display_errors());
 	       	$this->session->set_flashdata('error', $error);
-			redirect(base_url('seleksi_geldini_tf'));
+			redirect(base_url('seleksi_tf'));
 	    }
 
 	      // Konfigurasi upload file Surat Pernyataan Sehat
@@ -684,7 +684,7 @@ class Camhtar extends CI_Controller {
 	    }
 	    // Lakukan hal yang sama untuk file-file lainnya
 	    // ...
-	    redirect(base_url('seleksi_geldini_tf'));
+	    redirect(base_url('seleksi_tf'));
 
 	    // Jika Anda memiliki lebih banyak jenis file yang diupload, lakukan hal yang sama untuk konfigurasi upload dan proses uploadnya
 	}
@@ -719,9 +719,9 @@ class Camhtar extends CI_Controller {
 		$proses_insert = $this->m_registrasi->input_data($data,'tbl_seleksi_2024');
 				if ($proses_insert) {
 					# code...
-					redirect("seleksi_geldini_reguler?pesan=succsess");
+					redirect("seleksi_reguler?pesan=succsess");
 				}
-				redirect("seleksi_geldini_reguler?pesan=error");		
+				redirect("seleksi_reguler?pesan=error");		
 	}
 	public function getdataeditseleksigdr1($no)
 	{
@@ -768,9 +768,9 @@ class Camhtar extends CI_Controller {
 		$proses_insert = $this->m_registrasi->update_data($where,$update_data,'tbl_seleksi_2024');
 				if ($proses_insert) {
 					# code...
-					redirect("seleksi_geldini_reguler?pesan=succsess");
+					redirect("seleksi_reguler?pesan=succsess");
 				}
-				redirect("seleksi_geldini_reguler?pesan=error");		
+				redirect("seleksi_reguler?pesan=error");		
 	}
 	public function ukurpakaian()
 	{

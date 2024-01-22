@@ -105,6 +105,9 @@ $route['download_panduan_pengisian_form_ukur_pakaian'] = 'camhtar/down_panduan_p
 $route['pengumuman_gelombangdini'] = 'camhtar/pengumuman_gd';
 $route['download_pengumuman_gelombangdini'] = 'camhtar/down_pengumuman_gd';
 
+$route['seleksi_reguler'] = 'camhtar/seleksigdr1';
+$route['seleksi_tf'] = 'camhtar/seleksigdr2';
+
 
 
 // $route['cetakRegistrasi'] = 'welcome/insertReg';
