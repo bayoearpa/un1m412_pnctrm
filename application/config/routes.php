@@ -111,6 +111,7 @@ $route['download_super_asrama'] = 'camhtar/down_super_asrama';
 $route['download_super_taat'] = 'camhtar/down_super_taat';
 $route['download_super_tidak_menikah'] = 'camhtar/down_super_tidak_menikah';
 $route['daftarulang'] = 'camhtar/daful';
+$route['proses_bukti_bayar_daful'] = 'camhtar/upload_bukti_bayar_daful';
 
 
 

@@ -53,7 +53,7 @@
                 </tr>
               </table>
               <hr>
-              <form action="<?php echo base_url() ?>proses_bukti_bayar" name="form1" id="form1" method="post" enctype="multipart/form-data">
+              <form action="<?php echo base_url() ?>proses_bukti_bayar_daful" name="form1" id="form1" method="post" enctype="multipart/form-data">
                <div class="box-body"><h3>Pada Saat Madabintal diharapkan mengisi form yang sudah disiapkan tim PMB.</b> untuk format bisa di download di bawah ini :</h3>
                 <p></p>
                  <a href="<?php echo base_url() ?>download_super_asrama?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan di Asrama (Khusus Putri)</button></a>
@@ -86,7 +86,7 @@
                      <table class="table table-striped">
                         <tbody><tr>
                           <th style="width: 10px">#</th>
-                          <th>Proses Validasi</th>
+                          <th>Keterangan</th>
                           <th style="width: 40px">Status</th>
                         </tr>
                         <tr>
@@ -104,8 +104,8 @@
                           <th style="width: 40px">Status</th>
                         </tr>
                         <tr>
-                          <td>1.</td>
-                          <td>Daftar Ulang Sedang dalam proses validasi</td>
+                          <td>#</td>
+                          <td>bukti pembayaran daftar ulang anda belum diupload atau Sedang dalam proses validasi</td>
                           <td><span class="badge bg-red"><i class="fa fa-times"></i></span></td>
                         </tr>
                       </tbody></table>

@@ -72,6 +72,8 @@ class Baak extends CI_Controller {
                  case '10':
                     $pick = "S1 BISNIS DIGITAL";
                 break;
+                default :
+                    $pick = "Belum Pilih Prodi";
                 
             }
             return $pick;
