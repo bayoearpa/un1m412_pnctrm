@@ -54,7 +54,8 @@
               </table>
               <hr>
               <form action="<?php echo base_url() ?>proses_bukti_bayar_daful" name="form1" id="form1" method="post" enctype="multipart/form-data">
-               <div class="box-body"><h3>Pada Saat Madabintal diharapkan mengisi form yang sudah disiapkan tim PMB.</b> untuk format bisa di download di bawah ini :</h3>
+              <?php if ($this->session->userdata('jalur')=="gdr1" || $this->session->userdata('jalur')=="reguler"): ?>
+                <div class="box-body"><h3>Pada Saat Madabintal diharapkan mengisi form yang sudah disiapkan tim PMB.</b> untuk format bisa di download di bawah ini :</h3>
                 <p></p>
                  <a href="<?php echo base_url() ?>download_super_asrama?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan di Asrama (Khusus Putri)</button></a>
                 <p></p>
@@ -62,6 +63,9 @@
                 <p></p>
                 <a href="<?php echo base_url() ?>download_super_tidak_menikah?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan Sanggup Tidak Menikah</button></a>
                 </div>
+                
+              <?php endif ?>
+               
                
                <div class="form-group">
                         <label for="editufsignon">Upload Bukti Pembayaran Daftar Ulang (Upload dalam format .pdf)</label>
