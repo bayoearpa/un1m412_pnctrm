@@ -2553,9 +2553,9 @@ class Baak extends CI_Controller {
         );
         $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
         $this->load->view('baak/header');
-        $this->load->view('baak/seleksigd',$data);
+        $this->load->view('baak/seleksi',$data);
         $this->load->view('baak/footer');
-        $this->load->view('baak/seleksigd_js');
+        $this->load->view('baak/seleksi_js');
     }
 
     ////////////////////////////////////////// .seleksi 2024 /////////////////////////////////////////////////////
