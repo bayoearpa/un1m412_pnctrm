@@ -60,6 +60,12 @@ class Bau extends CI_Controller {
                 case '8':
                     $pick = "S1 PERDAGANGAN INTERNASIONAL";
                 break;
+                case '9':
+                    $pick = "D4 MPLM";
+                break;
+                case '10':
+                    $pick = "S1 BISNIS DIGITAL";
+                break;
                 
             }
             return $pick;
@@ -122,10 +128,50 @@ class Bau extends CI_Controller {
         $this->load->view('bau/footer_js');
         $this->load->view('bau/validasi_js');
     }
+    function daful($id)
+    {
+        # code...
+        $where = array(
+            'tbl_catar_2024.no' => $id       
+        );
+        $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2024')->result();
+
+        foreach ($data['catar'] as $key) {
+            # code...
+            $jalur = $key->jalur;
+            $prodi = $key->prodi;
+        }
+        $data['nominal'] = $this->getBiaya($jalur);
+        $data['nmprodi'] = $this->getProdi($prodi);
+        // $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+
+        // $this->db->select('aktif');
+        // $this->db->from('tbl_catar_2021_validasi');
+        // $this->db->where($where);
+        // $data['aktif'] =  $this->db->get()->result()->row('aktif');
+
+        // $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2021')->result();
+        $this->load->view('bau/header');
+        $this->load->view('bau/daful',$data);
+        $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
+        $this->load->view('bau/daful_js');
+    }
     ///////////////////// notifikasi pembayaran /////////////////////////////
      public function getNotifikasi() {
 
         $data['notifikasi'] = $this->m_registrasi->getNotifikasi();
+         // Ubah hasil ke format JSON
+        $json_data = json_encode($data['notifikasi']);
+
+        // Tampilkan data JSON
+        echo $json_data;
+    }
+    ///////////////////// .notifikasi pembayaran ////////////////////////////
+        ///////////////////// notifikasi pembayaran /////////////////////////////
+     public function getNotifikasi_du() {
+
+        $data['notifikasi'] = $this->m_registrasi->getNotifikasi_du();
          // Ubah hasil ke format JSON
         $json_data = json_encode($data['notifikasi']);
 

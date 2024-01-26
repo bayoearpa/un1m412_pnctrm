@@ -78,6 +78,23 @@
                   </ul>
               </li>
           <!-- end notif -->
+           <!-- start notif -->
+             <li class="dropdown notifications-menu-du">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                      <i class="fa fa-flag-o"></i>
+                      <span class="label label-warning" id="jumlah-notifikasi-du">0</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li class="header">You have <span id="jumlah-notifikasi-menu-du">0</span> notifications</li>
+                      <li>
+                          <ul class="menu" id="notifikasi-menu-du">
+                              <!-- Notifikasi akan ditambahkan di sini secara dinamis -->
+                          </ul>
+                      </li>
+                      <li classpt="footer"><a href="#">View all</a></li>
+                  </ul>
+              </li>
+          <!-- end notif -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="<?php echo base_url() ?>assets/front1/img/amni-png.png" class="user-image" alt="User Image">
