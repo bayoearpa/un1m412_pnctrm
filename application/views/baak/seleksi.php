@@ -71,7 +71,9 @@
                       echo $pick;
                     
                   ?></td>
-                  <td> <button type="button" name="submit" id="editseleksigdr1" class="btn editseleksigdr1 btn-primary"  data-no="<?php echo $c->no; ?>">Lihat</button></td>
+                  <td>
+                      <button type="button" name="submit" id="editseleksigdr1" class="btn editseleksigdr1 btn-primary"  data-no="<?php echo $c->no; ?>">Lihat</button>
+                   </td>
                 </tr>
                <?php } ?>
                 </tbody>

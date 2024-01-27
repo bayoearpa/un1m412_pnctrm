@@ -67,6 +67,10 @@
           type: 'GET',
               success: function(data) {
                 // Isi modal dengan data yang diambil
+                if (data.trim() === "") {
+                // Jika data kosong, tampilkan pesan
+                alert('Belum melakukan seleksi');
+                 } else {
                 console.log(data); // Cetak nilai data ke konsol
                 var parsedData = JSON.parse(data);
                 $('#link_ktp').data('link', parsedData.link_ktp);
@@ -96,7 +100,7 @@
                 // $('#link_video_shuttle').val(parsedData.link_video_shuttle);
                 // Tambahkan input lain sesuai kebutuhan
                 $('#editFormModal').modal('show');
-              }
+              } }
             });
         });
 

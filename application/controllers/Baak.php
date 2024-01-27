@@ -2551,6 +2551,7 @@ class Baak extends CI_Controller {
          $where = array(
             'jalur' => 'reguler'
         );
+         $data['seleksi'] = $this->m_registrasi->get_data($where, 'tbl_seleksi_2024')->num_rows();
         $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
         $this->load->view('baak/header');
         $this->load->view('baak/seleksi',$data);
