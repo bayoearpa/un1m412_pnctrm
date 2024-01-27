@@ -67,12 +67,10 @@
           type: 'GET',
               success: function(data) {
                 // Isi modal dengan data yang diambil
-                if (data.trim() === "") {
-                // Jika data kosong, tampilkan pesan
-                alert('Belum melakukan seleksi');
-                 } else {
+
                 console.log(data); // Cetak nilai data ke konsol
                 var parsedData = JSON.parse(data);
+                if (parsedData && Object.keys(parsedData).length > 0) {
                 $('#link_ktp').data('link', parsedData.link_ktp);
                 $('#link_ijasah').data('link', parsedData.link_ijasah);
                 $('#link_rapor').data('link', parsedData.link_rapor);
@@ -84,7 +82,10 @@
                 $('#link_video_pullup').data('link', parsedData.link_video_pullup);
                 $('#link_video_shuttle').data('link', parsedData.link_video_shuttle);
                 $('#nama').val(parsedData.nama);
-
+                } else {
+                // Jika parsedData kosong, tampilkan pesan
+                alert('Belum melakukan seleksi');
+                }
 
                 // $('#id_link').val(parsedData.id_link);
                 // $('#no').val(parsedData.no);
@@ -100,7 +101,7 @@
                 // $('#link_video_shuttle').val(parsedData.link_video_shuttle);
                 // Tambahkan input lain sesuai kebutuhan
                 $('#editFormModal').modal('show');
-              } }
+              }
             });
         });
 
