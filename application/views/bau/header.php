@@ -82,7 +82,7 @@
              <li class="dropdown notifications-menu-du">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
                       <i class="fa fa-flag-o"></i>
-                      <span class="label label-warning" id="jumlah-notifikasi-du">0</span>
+                      <span class="label label-danger" id="jumlah-notifikasi-du">0</span>
                   </a>
                   <ul class="dropdown-menu">
                       <li class="header">You have <span id="jumlah-notifikasi-menu-du">0</span> notifications</li>
