@@ -72,7 +72,7 @@
                         <input type="file" class="form-control" id="bukti_bayar_daful" name="bukti_bayar_daful">
                         <!-- <input type="hidden" id="editufsignon_existing" name="ufsignon_existing" value="<?php //echo $c->upload_file_signon; ?>"> -->
                         <?php if ($c->bukti_bayar_daful) { ?>
-                        <button class="btn btn-success view-file-button" data-filename="<?php echo $c->bukti_bayar_ulang; ?>">Lihat Bukti Bayar Daftar Ulang</button>
+                        <button class="btn btn-success view-file-button" data-filename="<?php echo $c->bukti_bayar_daful; ?>">Lihat Bukti Bayar Daftar Ulang</button>
                         <?php } else { ?>
                         <!-- Tampilkan pesan jika file tidak ada -->
                         File tidak tersedia
