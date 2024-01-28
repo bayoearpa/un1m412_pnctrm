@@ -125,7 +125,7 @@
             <!-- Tampilkan pesan jika file tidak ada -->
             File tidak tersedia
             <?php } ?>
-          <button type="submit" class="btn btn-primary pull-right"><i class="fa fa-credit-card"></i> Validasi dan Bayar
+          <button type="submit" class="btn btn-primary pull-right"><i class="fa fa-credit-card"></i> Validasi daftar ulang
           </button>
         </form>
           <!-- <button type="button" class="btn btn-primary pull-right" style="margin-right: 5px;">
