@@ -108,7 +108,7 @@
       <!-- this row will not appear when printing -->
       <div class="row no-print">
         <div class="col-xs-12">
-        <form method="post" action="<?php echo base_url() ?>bau/validasia" target="_blank">
+        <form method="post" action="<?php echo base_url() ?>bau/dafula" target="_blank">
         <!-- <input type="hidden" name="id" id="id" value="<?php //echo $c->val_id ?>"> -->
         <input type="hidden" name="no" id="no" value="<?php echo $c->no ?>">
         <input type="hidden" name="gelombang" id="gelombang" value="<?php echo $c->gelombang ?>">

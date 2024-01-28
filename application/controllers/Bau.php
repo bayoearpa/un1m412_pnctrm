@@ -234,6 +234,61 @@ class Bau extends CI_Controller {
         $this->load->view('bau/cetak',$data);
 
     }
+    function dafula()
+    {
+        # code...
+        $id = $this->input->post('id');
+        $no = $this->input->post('no');
+        $gelombang = $this->input->post('gelombang');
+        $tgl_byr = $this->input->post('tgl_byr');
+        $prodi = $this->input->post('prodi');
+        $jml_byr = $this->input->post('jml_byr');
+        $thn_pel=$this->input->post('thn_pel');
+
+        $cekReg=$this->m_registrasi->get_data(array('prodi'=>$prodi,'gelombang'=>$gelombang),'tbl_catar_validasi_2024')->num_rows();
+        $this->db->select_max('no_reg');
+        $this->db->where(array('prodi'=>$prodi,'thn_pel'=>$thn_pel));
+        $cekReg = $this->db->get('tbl_catar_daful_2024');
+            foreach($cekReg->result() as $row)
+        {
+            $selNoReg = $row->no_reg;
+        }
+
+        $no_reg=$selNoReg+1;
+        $aktif="1";
+        
+        // $where = array(
+        //     'val_id' => $id       
+        // );
+        // $data = array(
+        //     'tgl_byr' => $tgl_byr,
+        //     'jml_byr' => $jml_byr,
+        //     'aktif' => $aktif
+        //     );
+
+        $data = array(
+            'no' => $no,
+            'gelombang' => $gelombang,
+            'prodi' => $prodi,
+            'no_reg' => $no_reg,
+            'tgl_byr' => $tgl_byr,
+            'jml_byr' => $jml_byr,
+            'aktif' => $aktif,
+            'thn_pel' => $thn_pel
+            );
+
+        // $this->m_registrasi->update_data($where,$data,'tbl_catar_2021_validasi');
+        $this->m_registrasi->input_data($data,'tbl_catar_daful_2024');
+        $lastid = $this->db->insert_id();
+
+        $where = array('val_id' => $lastid);
+        $data['validasi'] = $this->m_registrasi->get_data($where,'tbl_catar_daful_2024')->result();
+        $where2 = array('no' => $no);
+        $data['catar'] = $this->m_registrasi->get_data($where2,'tbl_catar_2024')->result();
+
+        $this->load->view('bau/index');
+
+    }
     /////////////////////////////////////cek sudah validasi//////////////////////////////////////////
     public function data_sudah_validasi()
     {
