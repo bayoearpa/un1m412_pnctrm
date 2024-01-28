@@ -279,12 +279,12 @@ class Bau extends CI_Controller {
 
         // $this->m_registrasi->update_data($where,$data,'tbl_catar_2021_validasi');
         $this->m_registrasi->input_data($data,'tbl_catar_daful_2024');
-        $lastid = $this->db->insert_id();
+        // $lastid = $this->db->insert_id();
 
-        $where = array('val_id' => $lastid);
-        $data['validasi'] = $this->m_registrasi->get_data($where,'tbl_catar_daful_2024')->result();
-        $where2 = array('no' => $no);
-        $data['catar'] = $this->m_registrasi->get_data($where2,'tbl_catar_2024')->result();
+        // $where = array('val_id' => $lastid);
+        // $data['validasi'] = $this->m_registrasi->get_data($where,'tbl_catar_daful_2024')->result();
+        // $where2 = array('no' => $no);
+        // $data['catar'] = $this->m_registrasi->get_data($where2,'tbl_catar_2024')->result();
 
         $this->load->view('bau/index');
 
