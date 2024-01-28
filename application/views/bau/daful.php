@@ -88,7 +88,7 @@
          
         </div>
         <!-- /.col -->
-        <div class="col-xs-6">
+       <!--  <div class="col-xs-6">
           <p class="lead">Detail Pembayaran</p>
 
           <div class="table-responsive">
@@ -96,11 +96,11 @@
               
               <tr>
                 <th>Total Bayar:</th>
-                <td>Rp. <?php echo $totalbiaya = number_format($nominal, 0, ',', '.'); ?> ,-</td>
+                <td>Rp. <?php //echo $totalbiaya = number_format($nominal, 0, ',', '.'); ?> ,-</td>
               </tr>
             </table>
           </div>
-        </div>
+        </div> -->
         <!-- /.col -->
       </div>
       <!-- /.row -->
@@ -114,7 +114,7 @@
         <input type="hidden" name="gelombang" id="gelombang" value="<?php echo $c->gelombang ?>">
         <input type="hidden" name="tgl_byr" id="tgl_byr" value="<?php echo date("Y-m-d"); ?>">
         <input type="hidden" name="prodi" id="prodi" value="<?php echo $c->prodi ?>">
-        <input class="form-control" type="text" name="jml_byr" id="jml_byr" required="">
+        <input class="form-control" type="text" name="jml_byr" id="jml_byr" placeholder="Masukan Nominal Bayar" required="">
         <input type="hidden" name="thn_pel" id="thn_pel" value="<?php echo $c->thn_pel ?>">
 
 
