@@ -245,7 +245,7 @@ class Bau extends CI_Controller {
         $jml_byr = $this->input->post('jml_byr');
         $thn_pel=$this->input->post('thn_pel');
 
-        $cekReg=$this->m_registrasi->get_data(array('prodi'=>$prodi,'gelombang'=>$gelombang),'tbl_catar_validasi_2024')->num_rows();
+        $cekReg=$this->m_registrasi->get_data(array('prodi'=>$prodi,'gelombang'=>$gelombang),'tbl_catar_daful_2024')->num_rows();
         $this->db->select_max('no_reg');
         $this->db->where(array('prodi'=>$prodi,'thn_pel'=>$thn_pel));
         $cekReg = $this->db->get('tbl_catar_daful_2024');
