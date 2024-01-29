@@ -286,7 +286,7 @@ class Bau extends CI_Controller {
         // $where2 = array('no' => $no);
         // $data['catar'] = $this->m_registrasi->get_data($where2,'tbl_catar_2024')->result();
 
-        $this->load->view('bau/index');
+        redirect(base_url().'bau');
 
     }
     /////////////////////////////////////cek sudah validasi//////////////////////////////////////////
