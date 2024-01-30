@@ -125,18 +125,17 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MENU UTAMA</li>
-        <li class="treeview">
+         <li class="treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Test Samapta</span>
+            <i class="fa fa-dashboard"></i> <span>Seleksi Samapta</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <!-- <li class="active"><a href="<?php //echo base_url() ?>samapta/input_data"><i class="fa fa-money"></i>input nilai samapta</a></li>
-            <li class="active"><a href="<?php //echo base_url() ?>samapta/data_masuk"><i class="fa fa-money"></i>Data masuk</a></li> -->
-            <li class="active"><a href="<?php echo base_url() ?>samapta/seleksigd"><i class="fa fa-money"></i>Data masuk</a></li>
-            <!-- <li><a href="index2.html"><i class="fa fa-paperclip"></i>Rekap</a></li> -->
+            <!-- <li class="active"><a href="<?php //echo base_url() ?>baak/"><i class="fa fa-repeat"></i>Ganti Jurusan</a></li> -->
+            <li><a href="<?php echo base_url() ?>samapta/seleksigd"><i class="fa fa-paperclip"></i>Seleksi GD</a></li>
+            <li><a href="<?php echo base_url() ?>samapta/seleksi"><i class="fa fa-paperclip"></i>Seleksi</a></li>
           </ul>
         </li>
 

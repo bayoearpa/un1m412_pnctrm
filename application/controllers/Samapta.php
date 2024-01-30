@@ -217,12 +217,12 @@ class Samapta extends CI_Controller {
 		}
 	}
 
-	//////////////////////////////////////////////////seleksi 2024//////////////////////////////////////////
-	 public function getdataeditseleksigdr1($no)
+	  ////////////////////////////////////////// seleksi 2024 /////////////////////////////////////////////////////
+    public function getdataeditseleksigdr1($no)
     {
         # code...
         // Ambil data berdasarkan ID dari model Anda
-        $data = $this->m_registrasi->get_data_edit_gdr1_samapta($no); // Gantilah 'get_data_by_id' dengan metode yang sesuai dalam model Anda
+        $data = $this->m_registrasi->get_data_edit_gdr1($no); // Gantilah 'get_data_by_id' dengan metode yang sesuai dalam model Anda
 
         // Konversi data ke format JSON dan kirimkan ke view
         echo json_encode($data);
@@ -234,12 +234,34 @@ class Samapta extends CI_Controller {
             'jalur' => 'gdr1'
         );
         $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
-        $this->load->view('baak/header');
-        $this->load->view('baak/seleksigd',$data);
-        $this->load->view('baak/footer');
-        $this->load->view('baak/seleksigd_js');
+        $this->load->view('samapta/header');
+        $this->load->view('samapta/seleksigd',$data);
+        $this->load->view('samapta/footer');
+        $this->load->view('samapta/seleksigd_js');
     }
-	//////////////////////////////////////////////////.seleksi 2024//////////////////////////////////////////
+     public function getdataeditseleksi($no)
+    {
+        # code...
+        // Ambil data berdasarkan ID dari model Anda
+        $data = $this->m_registrasi->get_data_edit_gdr1($no); // Gantilah 'get_data_by_id' dengan metode yang sesuai dalam model Anda
+
+        // Konversi data ke format JSON dan kirimkan ke view
+        echo json_encode($data);
+    }
+    public function seleksi()
+    {
+        # code...
+         $where = array(
+            'jalur' => 'reguler'
+        );
+        $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+        $this->load->view('samapta/header');
+        $this->load->view('samapta/seleksi',$data);
+        $this->load->view('samapta/footer');
+        $this->load->view('samapta/seleksi_js');
+    }
+
+    ////////////////////////////////////////// .seleksi 2024 /////////////////////////////////////////////////////
 
 
 }

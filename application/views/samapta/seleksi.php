@@ -5,7 +5,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Data Pencatarma Sudah Seleksi Gelombang Dini</h3>
+              <h3 class="box-title">Data Pencatarma Sudah Seleksi Reguler</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -71,7 +71,9 @@
                       echo $pick;
                     
                   ?></td>
-                  <td> <button type="button" name="submit" id="editseleksigdr1" class="btn editseleksigdr1 btn-primary"  data-no="<?php echo $c->no; ?>">Lihat</button></td>
+                  <td>
+                      <button type="button" name="submit" id="editseleksigdr1" class="btn editseleksigdr1 btn-primary"  data-no="<?php echo $c->no; ?>">Lihat</button>
+                   </td>
                 </tr>
                <?php } ?>
                 </tbody>
