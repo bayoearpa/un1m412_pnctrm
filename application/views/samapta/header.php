@@ -64,13 +64,13 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="<?php echo base_url() ?>assets/front1/img/amni1.png" class="user-image" alt="User Image">
+              <img src="<?php echo base_url() ?>assets/front1/img/amni-png.png" class="user-image" alt="User Image">
               <span class="hidden-xs"><?php echo $this->session->userdata('nama'); ?></span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="<?php echo base_url() ?>assets/front1/img/amni1.png" class="img-circle" alt="User Image">
+                <img src="<?php echo base_url() ?>assets/front1/img/amni-png.png" class="img-circle" alt="User Image">
 
                 <p>
                   <?php echo $this->session->userdata('nama'); ?> - Mahatar
@@ -104,7 +104,7 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="<?php echo base_url() ?>assets/front1/img/amni1.png" class="img-circle" alt="User Image">
+          <img src="<?php echo base_url() ?>assets/front1/img/amni-png.png" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p><?php echo $this->session->userdata('nama'); ?></p>

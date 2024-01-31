@@ -70,7 +70,7 @@
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="<?php echo base_url() ?>assets/front1/img/amni1.png" class="img-circle" alt="User Image">
+                <img src="<?php echo base_url() ?>assets/front1/img/amni-png.png" class="img-circle" alt="User Image">
 
                 <p>
                   <?php echo $this->session->userdata('nama'); ?>
