@@ -130,22 +130,22 @@
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">Link Video Push Up</label><p></p>
                                       <button type="button" name="submit" id="link_video_pushup" class="btn link_video_pushup btn-primary"  data-link="">Lihat</button>
-                                      <input type="text" class="form-control" name="push_up" id="push_up" placeholder="Masukan Nilai 1-100" max="100">
+                                      <input type="text" class="form-control" name="push_up" id="push_up" placeholder="Masukan Nilai Push Up 1-100" max="100">
                                       </div>
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">Link Video Sit Up</label><p></p>
                                       <button type="button" name="submit" id="link_video_situp" class="btn link_video_situp btn-primary"  data-link="">Lihat</button>
-                                      <input type="text" class="form-control" name="sit_up" id="sit_up" placeholder="Masukan Nilai 1-100" max="100">
+                                      <input type="text" class="form-control" name="sit_up" id="sit_up" placeholder="Masukan Nilai Sit Up 1-100" max="100">
                                       </div>
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">Link Video Pull Up</label><p></p>
                                       <button type="button" name="submit" id="link_video_pullup" class="btn link_video_pullup btn-primary"  data-link="">Lihat</button>
-                                      <input type="text" class="form-control" name="pull_up" id="pull_up" placeholder="Masukan Nilai 1-100" max="100">
+                                      <input type="text" class="form-control" name="pull_up" id="pull_up" placeholder="Masukan Nilai Pull Up 1-100" max="100">
                                       </div>
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">Link Video Lari</label><p></p>
                                       <button type="button" name="submit" id="link_video_shuttle" class="btn link_video_shuttle btn-primary"  data-link="">Lihat</button>
-                                      <input type="text" class="form-control" name="lari" id="lari" placeholder="Masukan Nilai 1-100" max="100">
+                                      <input type="text" class="form-control" name="lari" id="lari" placeholder="Masukan Nilai Lari 1-100" max="100">
                                       </div>
                                       <button type="submit" class="btn btn-primary">Simpan</button>
                                   </form>
