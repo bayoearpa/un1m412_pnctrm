@@ -114,7 +114,7 @@
                                   <!-- Isi formulir di sini -->
                                   <form action="<?php echo base_url() ?>samapta/proses_seleksi24" name="form1" id="form1" method="post" enctype="multipart/form-data">
                                       <!-- ... (Formulir seperti yang Anda berikan) ... -->
-                                      <input type="hidden" name="no" id="no" value="<?php echo $this->session->userdata('no'); ?>">
+                                      <input type="hidden" name="nox" id="nox" value="<?php echo $this->session->userdata('no'); ?>">
                                       <input type="hidden" name="id_link" id="id_link" value="<?php echo $this->session->userdata('id_link'); ?>">
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">No Pendafatran:</label><p></p>
@@ -147,7 +147,7 @@
                                       <button type="button" name="submit" id="link_video_shuttle" class="btn link_video_shuttle btn-primary"  data-link="">Lihat</button>
                                       <input type="text" class="form-control" name="lari" id="lari" placeholder="Masukan Nilai Lari 1-100" max="100">
                                       </div>
-                                      <button type="submit" class="btn btn-primary">Simpan</button>
+                                      <button type="submit" class="btn btn-success">Simpan</button>
                                   </form>
                               </div>
                               <div class="modal-footer">
