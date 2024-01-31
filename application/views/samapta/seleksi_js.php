@@ -34,7 +34,7 @@
         var no = $(this).data('no');
         // Ambil data yang akan diedit dari server dengan AJAX
         $.ajax({
-          url: '<?php echo base_url('baak/getdataeditseleksi'); ?>/' + no, // Sesuaikan dengan URL yang sesuai
+          url: '<?php echo base_url('samapta/getdataeditseleksi'); ?>/' + no, // Sesuaikan dengan URL yang sesuai
           type: 'GET',
               success: function(data) {
                 // Isi modal dengan data yang diambil
@@ -49,6 +49,10 @@
                 $('#link_video_shuttle').data('link', parsedData.link_video_shuttle);
                 $('#nama').val(parsedData.nama);
                 $('#no').val(parsedData.no);
+                $('#sit_up').val(parsedData.sit_up);
+                $('#push_up').val(parsedData.push_up);
+                $('#pull_up').val(parsedData.pull_up);
+                $('#lari').val(parsedData.lari);
 
                 $('#editFormModal').modal('show');
                 } else {
