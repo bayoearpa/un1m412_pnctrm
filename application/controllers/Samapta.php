@@ -260,6 +260,16 @@ class Samapta extends CI_Controller {
         $this->load->view('samapta/footer');
         $this->load->view('samapta/seleksi_js');
     }
+    public function proses_seleksi24()
+    {
+    	# code...
+    	$no = $this->input->post('no');
+		$lari = $this->input->post('lari');
+		$push_up = $this->input->post('push_up');
+		$pull_up = $this->input->post('pull_up');
+		$suttle_run = $this->input->post('suttle_run');
+		$petugas = $this->input->post('petugas');
+    }
 
     ////////////////////////////////////////// .seleksi 2024 /////////////////////////////////////////////////////
 

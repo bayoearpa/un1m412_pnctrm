@@ -48,6 +48,9 @@
                 $('#link_video_pullup').data('link', parsedData.link_video_pullup);
                 $('#link_video_shuttle').data('link', parsedData.link_video_shuttle);
                 $('#nama').val(parsedData.nama);
+                $('#no').val(parsedData.no);
+
+                $('#editFormModal').modal('show');
                 } else {
                 // Jika parsedData kosong, tampilkan pesan
                 alert('Belum melakukan seleksi');
@@ -66,7 +69,7 @@
                 // $('#link_video_pullup').val(parsedData.link_video_pullup);
                 // $('#link_video_shuttle').val(parsedData.link_video_shuttle);
                 // Tambahkan input lain sesuai kebutuhan
-                $('#editFormModal').modal('show');
+                
               }
             });
         });
