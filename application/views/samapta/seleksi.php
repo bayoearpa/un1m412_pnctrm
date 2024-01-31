@@ -120,6 +120,7 @@
                                       <label for="exampleInputEmail1">No Pendafatran:</label><p></p>
                                       <input type="text" class="form-control" name="no" id="no" readonly="">
                                       </div>
+                                      <div class="form-group">
                                       <label for="exampleInputEmail1">Nama :</label><p></p>
                                       <input type="text" class="form-control" name="nama" id="nama" readonly="">
                                       </div>
