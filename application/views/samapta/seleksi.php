@@ -114,8 +114,8 @@
                                   <!-- Isi formulir di sini -->
                                   <form action="<?php echo base_url() ?>samapta/proses_seleksi24" name="form1" id="form1" method="post" enctype="multipart/form-data">
                                       <!-- ... (Formulir seperti yang Anda berikan) ... -->
-                                      <input type="hidden" name="nox" id="nox" value="<?php echo $this->session->userdata('no'); ?>">
-                                      <input type="hidden" name="id_link" id="id_link" value="<?php echo $this->session->userdata('id_link'); ?>">
+                                      <input type="hidden" name="petugas" id="petugas" value="<?php echo $this->session->userdata('user'); ?>">
+                                      <!-- <input type="hidden" name="id_link" id="id_link" value="<?php //echo $this->session->userdata('id_link'); ?>"> -->
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">No Pendafatran:</label><p></p>
                                       <input type="text" class="form-control" name="no" id="no" readonly="">

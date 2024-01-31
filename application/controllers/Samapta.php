@@ -267,8 +267,55 @@ class Samapta extends CI_Controller {
 		$lari = $this->input->post('lari');
 		$push_up = $this->input->post('push_up');
 		$pull_up = $this->input->post('pull_up');
-		$suttle_run = $this->input->post('suttle_run');
+		$lari = $this->input->post('lari');
 		$petugas = $this->input->post('petugas');
+
+		$data = array(
+			'no' => $no,
+			'lari' => $lari,
+			'push_up' => $push_up,
+			'pull_up' => $pull_up,
+			'lari' => $lari,
+			'petugas' => $petugas,
+			);
+
+		$where= array(
+            'no' => $no, 
+        );
+
+		$cek = $this->m_registrasi->get_data($where, 'tbl_seleksi_samapta_2024')->num_rows();
+
+		if ($cek == null) {
+			# code...
+			$insert = $this->m_registrasi->input_data($data,'tbl_seleksi_samapta_2024');
+			if ($insert) {
+				# code...
+				$this->session->set_flashdata("Succes", ".");
+			}else{ 
+				$this->session->set_flashdata("Error", "."); 
+			}
+			
+		}else{
+			$where_get = array(
+				'no'  	=> $no,
+			);
+			$get_id = $this->m_registrasi->get_data($where_get, 'tbl_seleksi_samapta_2024')->result();
+			foreach ($get_id as $key) {
+				# code...
+				$id_ssmp = $key->id_ssmp;
+			}
+
+			$where = array(
+				'id_ssmp'  	=> $id_ssmp,
+			);
+			$edit = $this->m_registrasi->update_data($where,$data,'tbl_seleksi_samapta');
+			if ($edit) {
+				# code...
+				$this->session->set_flashdata("Succes", ".");
+			}else{ 
+				$this->session->set_flashdata("Error", "."); 
+			}
+		}
     }
 
     ////////////////////////////////////////// .seleksi 2024 /////////////////////////////////////////////////////
