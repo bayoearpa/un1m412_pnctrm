@@ -12,7 +12,7 @@
                     <form method="post" action="<?php echo base_url() ?>baak/rekap_pdf_kesehatan">
                     <div class="form-group">
                     <label> Pilih Jalur Pendaftaran</label>
-                    <select name="jalur" id="jalur" class="form-control" style="width:50%;" onchange="toggleGelombangForm()">  
+                    <select onchange="toggleGelombangForm()" name="jalur" id="jalur" class="form-control" style="width:50%;">  
                     <option selected>== Pilih ==</option>
                     <option value="gdr1">Gelombang Dini</option>
                     <option value="reguler">Reguler</option>                       
