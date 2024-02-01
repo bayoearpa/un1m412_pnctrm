@@ -557,6 +557,7 @@ class m_registrasi extends CI_Model
 			tbl_seleksi_samapta_2024.push_up,
 			tbl_seleksi_samapta_2024.pull_up,
 			tbl_seleksi_samapta_2024.lari,
+			tbl_seleksi_samapta_2024.id_ssmp,
 			');
 
 	     $this->db->from('tbl_seleksi_2024');

@@ -263,8 +263,9 @@ class Samapta extends CI_Controller {
     public function proses_seleksi24()
     {
     	# code...
+    	$id_ssmp = $this->input->post('id_ssmp');
     	$no = $this->input->post('no');
-		$lari = $this->input->post('lari');
+		$sit_up = $this->input->post('sit_up');
 		$push_up = $this->input->post('push_up');
 		$pull_up = $this->input->post('pull_up');
 		$lari = $this->input->post('lari');
@@ -272,7 +273,7 @@ class Samapta extends CI_Controller {
 
 		$data = array(
 			'no' => $no,
-			'lari' => $lari,
+			'sit_up' => $sit_up,
 			'push_up' => $push_up,
 			'pull_up' => $pull_up,
 			'lari' => $lari,
@@ -290,30 +291,21 @@ class Samapta extends CI_Controller {
 			$insert = $this->m_registrasi->input_data($data,'tbl_seleksi_samapta_2024');
 			if ($insert) {
 				# code...
-				$this->session->set_flashdata("Succes", ".");
+				redirect(base_url().'samapta/seleksi?pesan=berhasil');
 			}else{ 
-				$this->session->set_flashdata("Error", "."); 
+				redirect(base_url().'samapta/seleksi?pesan=gagal'); 
 			}
 			
 		}else{
-			$where_get = array(
-				'no'  	=> $no,
-			);
-			$get_id = $this->m_registrasi->get_data($where_get, 'tbl_seleksi_samapta_2024')->result();
-			foreach ($get_id as $key) {
-				# code...
-				$id_ssmp = $key->id_ssmp;
-			}
-
 			$where = array(
 				'id_ssmp'  	=> $id_ssmp,
 			);
-			$edit = $this->m_registrasi->update_data($where,$data,'tbl_seleksi_samapta');
+			$edit = $this->m_registrasi->update_data($where,$data,'tbl_seleksi_samapta_2024');
 			if ($edit) {
 				# code...
-				$this->session->set_flashdata("Succes", ".");
+				redirect(base_url().'samapta/seleksi?pesan=berhasil');
 			}else{ 
-				$this->session->set_flashdata("Error", "."); 
+				redirect(base_url().'samapta/seleksi?pesan=gagal'); 
 			}
 		}
     }

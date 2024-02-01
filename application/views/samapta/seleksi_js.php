@@ -53,6 +53,7 @@
                 $('#push_up').val(parsedData.push_up);
                 $('#pull_up').val(parsedData.pull_up);
                 $('#lari').val(parsedData.lari);
+                $('#id_ssmp').val(parsedData.id_ssmp);
 
                 $('#editFormModal').modal('show');
                 } else {
