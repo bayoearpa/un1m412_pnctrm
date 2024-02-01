@@ -1,4 +1,5 @@
 <script>
+$(document).ready(function() {
 function toggleGelombangForm() {
     var jalur = document.getElementById('jalur').value;
     var gelombangForm = document.getElementById('gelombang').parentNode;
@@ -13,4 +14,6 @@ function toggleGelombangForm() {
 
 // Panggil fungsi toggleGelombangForm saat halaman dimuat untuk menetapkan status awal
 document.addEventListener('DOMContentLoaded', toggleGelombangForm);
+
+});
 </script>
