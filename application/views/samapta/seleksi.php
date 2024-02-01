@@ -12,9 +12,9 @@
               <?php 
               if(isset($_GET['pesan'])){
                 if($_GET['pesan'] == "gagal"){
-                  echo "<div class='alert alert-danger'>Proses Gagal!</div>";
+                  echo "<div id='pesan-alert' class='alert alert-danger'>Proses Gagal!</div>";
                 }else if($_GET['pesan'] == "berhasil"){
-                  echo "<div class='alert alert-success'>Proses Berhasil!</div>";
+                  echo "<div id='pesan-alert' class='alert alert-success'>Proses Berhasil!</div>";
                 }
               }
               ?>

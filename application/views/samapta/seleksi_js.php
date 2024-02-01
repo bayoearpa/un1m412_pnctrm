@@ -81,7 +81,7 @@
 
 
         setTimeout(function() {
-            document.getElementById('alert').style.display = 'none';
+            document.getElementById('pesan-alert').style.display = 'none';
         }, 2000);
          
     });
