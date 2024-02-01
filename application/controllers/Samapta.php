@@ -291,9 +291,9 @@ class Samapta extends CI_Controller {
 			$insert = $this->m_registrasi->input_data($data,'tbl_seleksi_samapta_2024');
 			if ($insert) {
 				# code...
-				redirect(base_url().'samapta/seleksi?pesan=berhasil');
-			}else{ 
 				redirect(base_url().'samapta/seleksi?pesan=gagal'); 
+			}else{ 
+				redirect(base_url().'samapta/seleksi?pesan=berhasil');
 			}
 			
 		}else{
@@ -303,9 +303,9 @@ class Samapta extends CI_Controller {
 			$edit = $this->m_registrasi->update_data($where,$data,'tbl_seleksi_samapta_2024');
 			if ($edit) {
 				# code...
-				redirect(base_url().'samapta/seleksi?pesan=berhasil');
+				redirect(base_url().'samapta/seleksi?pesan=gagal');
 			}else{ 
-				redirect(base_url().'samapta/seleksi?pesan=gagal'); 
+				redirect(base_url().'samapta/seleksi?pesan=berhasil');
 			}
 		}
     }
