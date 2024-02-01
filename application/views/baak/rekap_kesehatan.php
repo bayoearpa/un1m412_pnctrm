@@ -40,7 +40,7 @@
                     <option value="Wanita">Wanita</option>                       
                     </select> 
                     </div>
-                                        <div class="form-group">
+                    <div class="form-group">
                       <label for="exampleInputEmail1">Tanggal Pelaksanaan</label>
                        <div class="input-group date" data-provide="datepicker">
                           <input type="text" class="form-control" data-date-format="yyyy-mm-dd" data-link-format="yyyy-mm-dd" name="tgl" id="tgl">

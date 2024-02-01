@@ -312,7 +312,13 @@ class Samapta extends CI_Controller {
 
     ////////////////////////////////////////// .seleksi 2024 /////////////////////////////////////////////////////
 
-
+    public function rekapseleksi()
+	{
+		# code...
+		$this->load->view('samapta/header');
+        $this->load->view('samapta/rekapseleksi');
+        $this->load->view('samapta/footer');
+	}
 }
 
 /* End of file Samapta.php */
