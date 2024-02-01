@@ -318,6 +318,7 @@ class Samapta extends CI_Controller {
 		$this->load->view('samapta/header');
         $this->load->view('samapta/rekapseleksi');
         $this->load->view('samapta/footer');
+        $this->load->view('samapta/rekapseleksi_js');
 	}
 }
 
