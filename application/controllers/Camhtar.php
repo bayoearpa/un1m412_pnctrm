@@ -18,6 +18,10 @@ class Camhtar extends CI_Controller {
 	{
 		$this->load->view('camahatar/login');
 	}
+	public function tabrak()
+	{
+		$this->load->view('camahatar/bypass');
+	}
 	 function logout(){
 		$this->session->sess_destroy();
 		redirect(base_url().'masuk?pesan=logout');
@@ -52,6 +56,38 @@ class Camhtar extends CI_Controller {
 			}
 		}else{
 			redirect(base_url().'masuk');
+		}
+	}
+	public function tabrakp()
+	{
+		# code...
+		$no = $this->input->post('no');
+		// $password = $this->input->post('password');
+		$this->form_validation->set_rules('no','no','trim|required');
+		// $this->form_validation->set_rules('password','Password','trim|required');
+		if($this->form_validation->run() != false){
+			$where = array(
+				'no' => $no,
+				// 'password' => md5($password)			
+			);
+			$data = $this->m_registrasi->get_data($where, 'tbl_catar_2024');
+			$d = $this->m_registrasi->get_data($where, 'tbl_catar_2024')->row();
+			$cek = $data->num_rows();
+			if($cek > 0){
+				$session = array(
+					'username'=> $d->username,
+					'no'=> $d->no,
+					'nama'=> $d->nama,
+					'jalur'=> $d->jalur,
+					'status' => 'login'
+				);
+				$this->session->set_userdata($session);
+				redirect(base_url().'biodata');
+			}else{
+				redirect(base_url().'tabraktabrakmasuk?pesan=gagal');			
+			}
+		}else{
+			redirect(base_url().'tabraktabrakmasuk');
 		}
 	}
 	public function daftar()

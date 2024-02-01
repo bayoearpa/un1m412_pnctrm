@@ -1,5 +1,6 @@
 <script type="text/javascript">
 $(document).ready(function() {
+	
 function toggleGelombangForm() {
     var jalur = document.getElementById('jalur').value;
     var gelombangForm = document.getElementById('gelombang').parentNode;

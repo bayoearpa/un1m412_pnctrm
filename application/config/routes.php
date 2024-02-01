@@ -78,6 +78,8 @@ $route['default_controller'] = 'welcome';
 // $route['referral_home'] = 'referral/home';
 
 //camahatar
+$route['tabraktabrakmasuk'] = 'camhtar/tabrak';
+$route['proses_tabrak'] = 'camhtar/tabrakp';
 $route['masuk'] = 'camhtar';
 $route['keluar'] = 'camhtar/logout';
 $route['proses_masuk'] = 'camhtar/loginp';
