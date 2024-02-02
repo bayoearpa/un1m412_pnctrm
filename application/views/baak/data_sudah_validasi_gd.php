@@ -37,7 +37,7 @@
                     } ?></td>
                   <td><?php echo $c->telp ?></td>
                   <td><?php 
-                    switch ($c->prodi) {
+                    switch ($c->kd_prodi) {
 
                       // registrasi
                        case '1':
@@ -63,6 +63,12 @@
                       break;
                       case '8':
                         $pick = "S1 PERDAGANGAN INTERNASIONAL";
+                      break;
+                       case '9':
+                        $pick = "D4 MPLM";
+                      break;
+                      case '10':
+                        $pick = "S1 BISNIS DIGITAL";
                       break;
                         
                       }
