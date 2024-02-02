@@ -309,7 +309,7 @@ class Samapta extends CI_Controller {
 			}
 		}
     }
-
+    
     ////////////////////////////////////////// .seleksi 2024 /////////////////////////////////////////////////////
 
     public function rekapseleksi()

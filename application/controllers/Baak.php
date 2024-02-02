@@ -105,6 +105,17 @@ class Baak extends CI_Controller {
         $this->load->view('baak/data_sudah_validasi',$data);
         $this->load->view('baak/footer');
     }
+     public function data_sudah_validasi_tf()
+    {
+        # code...
+       $where = array(
+            'jalur' => 'kelastransfer'
+        );
+        $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+        $this->load->view('baak/header');
+        $this->load->view('baak/data_sudah_validasi',$data);
+        $this->load->view('baak/footer');
+    }
     public function data_sudah_validasi_gd()
     {
         # code...
