@@ -16,6 +16,7 @@
                   <th>Nama</th>
                   <th>No. Pendf.</th>
                   <th>L/P</th>
+                  <th>No. Telp/Hp</th>
                   <th>Prodi</th>
                 </tr>
                 </thead>
@@ -34,6 +35,7 @@
                     }else{
                       echo "P";
                     } ?></td>
+                  <td><?php echo $c->telp ?></td>
                   <td><?php 
                     switch ($c->prodi) {
 
@@ -76,6 +78,7 @@
                   <th>Nama</th>
                   <th>No. Pendf.</th>
                   <th>L/P</th>
+                  <th>No. Telp/Hp</th>
                   <th>Prodi</th>
                 </tr>
                 </tfoot>
