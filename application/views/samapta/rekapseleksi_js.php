@@ -1,7 +1,6 @@
 <script type="text/javascript">
-$(document).ready(function() {
-	
-function toggleGelombangForm() {
+
+	function toggleGelombangForm() {
     var jalur = document.getElementById('jalur').value;
     var gelombangForm = document.getElementById('gelombang').parentNode;
 
@@ -11,10 +10,11 @@ function toggleGelombangForm() {
     } else {
         gelombangForm.style.display = 'block';
     }
-}
+	}
+	$(document).ready(function() {
+		
+	// Panggil fungsi toggleGelombangForm saat halaman dimuat untuk menetapkan status awal
+	document.addEventListener('DOMContentLoaded', toggleGelombangForm);
 
-// Panggil fungsi toggleGelombangForm saat halaman dimuat untuk menetapkan status awal
-document.addEventListener('DOMContentLoaded', toggleGelombangForm);
-
-});
+	});
 </script>
