@@ -37,7 +37,7 @@
                     } ?></td>
                   <td><?php echo $c->telp ?></td>
                   <td><?php 
-                    switch ($c->kd_prodi) {
+                    switch ($c->prodi) {
 
                       // registrasi
                        case '1':
