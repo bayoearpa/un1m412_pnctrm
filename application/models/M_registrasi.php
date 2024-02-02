@@ -222,7 +222,7 @@ class m_registrasi extends CI_Model
 		tbl_catar_2024.nama_i,
 		tbl_catar_2024.alamat_ortu,
 		tbl_catar_2024.telp_ortu,
-		tbl_catar_2024.prodi as kd_prodi,
+		tbl_catar_2024.prodi as prodi,
 		tbl_catar_2024.jalur,
 		tbl_catar_2024.gelombang,
 		tbl_catar_2024.id_tgl_seleksi,
