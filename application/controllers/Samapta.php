@@ -351,6 +351,9 @@ class Samapta extends CI_Controller {
         
 
         // Load PHPExcel
+        // Load plugin PHPExcel nya
+	    ob_start();
+	    include APPPATH.'third_party/PHPExcel/PHPExcel.php';
         $this->load->library('PHPExcel');
         
         // Create a new PHPExcel object
