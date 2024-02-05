@@ -381,8 +381,8 @@ class Samapta extends CI_Controller {
         $objPHPExcel->getActiveSheet()->getStyle('A3')->getFont()->setBold(true);
 
         // Fetch Prodi from tbl_catar_2024
-        $prodi = $this->your_model->getProdi(); // Replace this with your actual function
-        $objPHPExcel->getActiveSheet()->setCellValue('A4', 'Program Studi: ' . $prodi);
+        $nmprodi = $this->prodi("$prodi"); // Replace this with your actual function
+        $objPHPExcel->getActiveSheet()->setCellValue('A4', 'Program Studi: ' . $nmprodi);
         $objPHPExcel->getActiveSheet()->getStyle('A4')->getFont()->setBold(true);
 
         $objPHPExcel->getActiveSheet()->setCellValue('A6', 'No');
