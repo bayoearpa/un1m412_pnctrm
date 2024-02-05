@@ -588,6 +588,7 @@ class m_registrasi extends CI_Model
             tbl_seleksi_2024.link_video_shuttle as link_video_shuttle,
             tbl_catar_2024.nama,
             tbl_catar_2024.no,
+            tbl_catar_2024.jk,
             tbl_seleksi_samapta_2024.sit_up,
             tbl_seleksi_samapta_2024.push_up,
             tbl_seleksi_samapta_2024.pull_up,
