@@ -320,6 +320,103 @@ class Samapta extends CI_Controller {
         $this->load->view('samapta/footer');
         $this->load->view('samapta/rekapseleksi_js');
 	}
+	public function rekapseleksip()
+	{
+		# code...
+		// Load necessary models and libraries here
+        // Fetch data from the database
+        $jalur = $this->input->post('jalur');
+        $prodi = $this->input->post('prodi');
+        $gelombang = $this->input->post('gelombang');
+
+        if ($jalur == "reguler") {
+        	# code...
+        	$where= array(
+            'jalur' => $jalur,
+            'prodi' => $prodi,
+            'gelombang' => $gelombang, 
+	        );
+
+	       $data['results'] = $this->m_registrasi->get_data_rekap_samapta($where);
+        }else{
+        	$where= array(
+            'jalur' => $jalur,
+            'prodi' => $prodi,
+	        );
+
+	       $data['results'] = $this->m_registrasi->get_data_rekap_samapta($where);
+        }
+
+
+        
+
+        // Load PHPExcel
+        $this->load->library('PHPExcel');
+        
+        // Create a new PHPExcel object
+        $objPHPExcel = new PHPExcel();
+
+        // Set document properties
+        $objPHPExcel->getProperties()->setCreator("Tim Samapta")
+                                     ->setLastModifiedBy("Tim Samapta")
+                                     ->setTitle("Daftar Nilai Tes Samapta")
+                                     ->setSubject("Nilai Tes Samapta")
+                                     ->setDescription("Daftar Nilai Tes Samapta");
+
+        // Add a worksheet
+        $objPHPExcel->setActiveSheetIndex(0);
+        $objPHPExcel->getActiveSheet()->setTitle('Daftar Nilai');
+
+        // Set headers
+        $objPHPExcel->getActiveSheet()->setCellValue('A1', 'DAFTAR NILAI TES SAMAPTA SELEKSI CALON MAHASISWA BARU TA. 2024/2025');
+        $objPHPExcel->getActiveSheet()->getStyle('A1')->getFont()->setBold(true);
+
+        $objPHPExcel->getActiveSheet()->setCellValue('A2', 'UNIMAR AMNI SEMARANG');
+        $objPHPExcel->getActiveSheet()->getStyle('A2')->getFont()->setBold(true);
+
+        $objPHPExcel->getActiveSheet()->setCellValue('A3', 'REGULER');
+        $objPHPExcel->getActiveSheet()->getStyle('A3')->getFont()->setBold(true);
+
+        // Fetch Prodi from tbl_catar_2024
+        $prodi = $this->your_model->getProdi(); // Replace this with your actual function
+        $objPHPExcel->getActiveSheet()->setCellValue('A4', 'Program Studi: ' . $prodi);
+        $objPHPExcel->getActiveSheet()->getStyle('A4')->getFont()->setBold(true);
+
+        $objPHPExcel->getActiveSheet()->setCellValue('A6', 'No');
+        $objPHPExcel->getActiveSheet()->setCellValue('B6', 'Nama');
+        $objPHPExcel->getActiveSheet()->setCellValue('C6', 'JK');
+        $objPHPExcel->getActiveSheet()->setCellValue('D6', 'Lari');
+        $objPHPExcel->getActiveSheet()->setCellValue('E6', 'Sit Up');
+        $objPHPExcel->getActiveSheet()->setCellValue('F6', 'Push Up');
+        $objPHPExcel->getActiveSheet()->setCellValue('G6', 'Pull Up');
+        $objPHPExcel->getActiveSheet()->setCellValue('H6', 'Nilai Akhir');
+
+        // Loop through the data and populate the worksheet
+        $row = 7;
+        foreach ($data['results'] as $result) {
+            $objPHPExcel->getActiveSheet()->setCellValue('A' . $row, $result->no);
+            $objPHPExcel->getActiveSheet()->setCellValue('B' . $row, $result->nama);
+            $objPHPExcel->getActiveSheet()->setCellValue('C' . $row, $result->jk);
+            $objPHPExcel->getActiveSheet()->setCellValue('D' . $row, $result->lari);
+            $objPHPExcel->getActiveSheet()->setCellValue('E' . $row, $result->sit_up);
+            $objPHPExcel->getActiveSheet()->setCellValue('F' . $row, $result->push_up);
+            $objPHPExcel->getActiveSheet()->setCellValue('G' . $row, $result->pull_up);
+
+            // Calculate the final score
+            $nilai_akhir = ($result->lari + $result->sit_up + $result->push_up + $result->pull_up) / 4;
+            $objPHPExcel->getActiveSheet()->setCellValue('H' . $row, $nilai_akhir);
+
+            $row++;
+        }
+
+        // Save Excel file
+        $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
+        $filename = 'Daftar_Nilai_Tes_Samapta.xlsx';
+        header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+        header('Content-Disposition: attachment;filename="' . $filename . '"');
+        header('Cache-Control: max-age=0');
+        $objWriter->save('php://output');
+	}
 }
 
 /* End of file Samapta.php */

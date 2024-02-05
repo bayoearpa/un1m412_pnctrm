@@ -9,7 +9,7 @@
                 <!-- form start -->
                 
                   <div class="box-body">
-                    <form method="post" action="<?php echo base_url() ?>baak/rekap_pdf_kesehatan">
+                    <form method="post" action="<?php echo base_url() ?>samapta/rekapseleksip">
                     <div class="form-group">
                     <label> Pilih Jalur Pendaftaran</label>
                     <select onchange="toggleGelombangForm()" name="jalur" id="jalur" class="form-control" style="width:50%;">  
