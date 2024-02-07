@@ -603,7 +603,7 @@ class m_registrasi extends CI_Model
 
         return $query->result();
     }
-    function get_data_rekap_samapta($where)
+    function get_data_rekap_ukurpakaian($where)
     {
         // Gantilah 'nama_tabel' dengan nama tabel yang sesuai dalam database Anda
 	     $this->db->select('tbl_ukurpakaian.jk_pakaian,
