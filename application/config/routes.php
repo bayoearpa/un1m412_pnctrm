@@ -107,6 +107,20 @@ $route['download_panduan_pengisian_form_ukur_pakaian'] = 'camhtar/down_panduan_p
 $route['pengumuman_gelombangdini'] = 'camhtar/pengumuman_gd';
 $route['download_pengumuman_gelombangdini'] = 'camhtar/down_pengumuman_gd';
 
+//pengumuman
+$route['pengumuman'] = 'camhtar/pengumuman';
+$route['download_pengumuman_januari'] 	= 'camhtar/down_pengumuman_jan';
+$route['download_pengumuman_februari'] 	= 'camhtar/down_pengumuman_feb';
+$route['download_pengumuman_maret'] 	= 'camhtar/down_pengumuman_mar';
+$route['download_pengumuman_april'] 	= 'camhtar/down_pengumuman_apr';
+$route['download_pengumuman_mei'] 		= 'camhtar/down_pengumuman_mei';
+$route['download_pengumuman_juni'] 		= 'camhtar/down_pengumuman_jun';
+$route['download_pengumuman_juli'] 		= 'camhtar/down_pengumuman_jul';
+$route['download_pengumuman_agustus'] 	= 'camhtar/down_pengumuman_ags';
+$route['download_pengumuman_september'] = 'camhtar/down_pengumuman_sep';
+$route['download_pengumuman_oktober'] 	= 'camhtar/down_pengumuman_nov';
+$route['download_pengumuman_november'] 	= 'camhtar/down_pengumuman_des';
+
 $route['seleksi_reguler'] = 'camhtar/seleksigdr1';
 $route['seleksi_tf'] = 'camhtar/seleksigdr2';
 $route['download_super_asrama'] = 'camhtar/down_super_asrama';

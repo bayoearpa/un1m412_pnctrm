@@ -603,6 +603,48 @@ class m_registrasi extends CI_Model
 
         return $query->result();
     }
+    function get_data_rekap_samapta($where)
+    {
+        // Gantilah 'nama_tabel' dengan nama tabel yang sesuai dalam database Anda
+	     $this->db->select('tbl_ukurpakaian.jk_pakaian,
+	     	tbl_ukurpakaian.ukuran_sepatu,
+	     	tbl_ukurpakaian.topipet,
+	     	tbl_ukurpakaian.seragam_pdl,
+	     	tbl_ukurpakaian.training_pack,
+	     	tbl_ukurpakaian.wearpack,
+	     	tbl_ukurpakaian.kaos_or,
+	     	tbl_ukurpakaian.baju_renang,
+	     	tbl_ukurpakaian.dogi,
+	     	tbl_ukurpakaian.pdhpdub_kemeja,
+	     	tbl_ukurpakaian.pdhpdub_celana,
+	     	tbl_ukurpakaian.jaspdpm,
+	     	tbl_ukurpakaian.ukuran_sepatu_lainnya,
+	     	tbl_ukurpakaian.seragam_pdl_lainnya,
+	     	tbl_ukurpakaian.training_pack_lainnya,
+	     	tbl_ukurpakaian.wearpack_lainnya,
+	     	tbl_ukurpakaian.kaos_or_lainnya,
+	     	tbl_ukurpakaian.baju_renang_lainnya,
+	     	tbl_ukurpakaian.pdhpdub_kemeja_lainnya,
+	     	tbl_ukurpakaian.pdhpdub_celana_lainny,
+	     	tbl_ukurpakaian.jaspdpm_lainnya,
+            tbl_catar_2024.nama,
+            tbl_catar_2024.no,
+            tbl_catar_2024.jk,
+            tbl_seleksi_samapta_2024.sit_up,
+            tbl_seleksi_samapta_2024.push_up,
+            tbl_seleksi_samapta_2024.pull_up,
+            tbl_seleksi_samapta_2024.lari,
+            tbl_seleksi_samapta_2024.id_ssmp');
+
+        $this->db->from('tbl_seleksi_2024');
+        $this->db->join('tbl_catar_2024', 'tbl_seleksi_2024.no = tbl_catar_2024.no', 'left');
+        $this->db->join('tbl_seleksi_samapta_2024', 'tbl_catar_2024.no = tbl_seleksi_samapta_2024.no', 'left');
+        $this->db->where($where);
+        $query = $this->db->get();
+
+        return $query->result();
+    }
+  
 	////////////////////summary 2023///////////////////////////////////////////////////////////////////////////
 	function get_data_statistic_kabkota_2023(){
 		$this->db->select('tbl_catar_2023.ktkb as id_provinsi,
