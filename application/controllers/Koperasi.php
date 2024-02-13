@@ -60,6 +60,20 @@ class Koperasi extends CI_Controller {
         $this->load->view('koperasi/index');
         $this->load->view('koperasi/footer');
 	}
+	public function rekap()
+	{
+		# code...
+		$this->load->view('koperasi/header');
+        $this->load->view('koperasi/rekap');
+        $this->load->view('koperasi/footer');
+	}
+	public function cetak()
+	{
+		# code...
+		$this->load->view('koperasi/header');
+        $this->load->view('koperasi/cetak');
+        $this->load->view('koperasi/footer');
+	}
 
 }
 
