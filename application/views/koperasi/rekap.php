@@ -17,9 +17,7 @@
                   <th>Nama</th>
                   <th>Telp / Hp</th>
                   <th>Prodi yang Dipilih</th>
-                  <th>Nama Ibu</th>
-                  <th>Telp / Hp Ortu</th>
-                  <th>Validasi</th>
+                  <th>Sudah ukur pakaian</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -33,8 +31,6 @@
                   <td><?php echo $c->nama ?></td>
                   <td><?php echo $c->telp ?></td>
                   <td><?php echo $koperasi->prodi($c->prodi) ?></td>
-                  <td><?php echo $c->nama_i ?></td>
-                  <td><?php echo $c->telp_ortu ?></td>
                   <td>
 
                   <?php 
