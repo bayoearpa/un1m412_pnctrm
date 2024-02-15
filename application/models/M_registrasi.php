@@ -637,7 +637,7 @@ class m_registrasi extends CI_Model
         $this->db->where($where);
         $query = $this->db->get();
 
-        return $query->result();
+        return $query;
     }
   
 	////////////////////summary 2023///////////////////////////////////////////////////////////////////////////
