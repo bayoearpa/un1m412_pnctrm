@@ -32,7 +32,6 @@
                   <td><?php echo $c->telp ?></td>
                   <td><?php echo $koperasi->prodi($c->prodi) ?></td>
                   <td>
-
                   <?php 
                   $where = array(
                   'no' => $c->no       
@@ -49,14 +48,12 @@
                 </tbody>
                 <tfoot>
                 <tr>
-                  <th>No.</th>
+                 <th>No.</th>
                   <th>No. Pendf.</th>
                   <th>Nama</th>
                   <th>Telp / Hp</th>
                   <th>Prodi yang Dipilih</th>
-                  <th>Nama Ibu</th>
-                  <th>Telp / Hp Ortu</th>
-                  <th>Validasi</th>
+                  <th>Sudah ukur pakaian</th>
                 </tr>
                 </tfoot>
               </table>
