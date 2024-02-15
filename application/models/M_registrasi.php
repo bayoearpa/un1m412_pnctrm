@@ -629,16 +629,11 @@ class m_registrasi extends CI_Model
 	     	tbl_ukurpakaian.jaspdpm_lainnya,
             tbl_catar_2024.nama,
             tbl_catar_2024.no,
-            tbl_catar_2024.jk,
-            tbl_seleksi_samapta_2024.sit_up,
-            tbl_seleksi_samapta_2024.push_up,
-            tbl_seleksi_samapta_2024.pull_up,
-            tbl_seleksi_samapta_2024.lari,
-            tbl_seleksi_samapta_2024.id_ssmp');
+            tbl_catar_2024.jk');
 
-        $this->db->from('tbl_seleksi_2024');
-        $this->db->join('tbl_catar_2024', 'tbl_seleksi_2024.no = tbl_catar_2024.no', 'left');
-        $this->db->join('tbl_seleksi_samapta_2024', 'tbl_catar_2024.no = tbl_seleksi_samapta_2024.no', 'left');
+        $this->db->from('tbl_catar_2024');
+        $this->db->join('tbl_ukurpakaian', 'tbl_catar_2024.no = tbl_ukurpakaian.no', 'left');
+        $this->db->join('tbl_catar_daful_2024', 'tbl_catar_daful_2024.no = tbl_ukurpakaian.no', 'left');
         $this->db->where($where);
         $query = $this->db->get();
 
