@@ -628,6 +628,7 @@ class m_registrasi extends CI_Model
 	     	tbl_ukurpakaian.pdhpdub_celana_lainny,
 	     	tbl_ukurpakaian.jaspdpm_lainnya,
             tbl_catar_2024.nama,
+            tbl_catar_2024.prodi as prodi,
             tbl_catar_2024.no,
             tbl_catar_2024.jk');
 
