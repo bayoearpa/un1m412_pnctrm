@@ -63,8 +63,22 @@ class Koperasi extends CI_Controller {
 	public function rekap()
 	{
 		# code...
+		$where2= array(
+            'id_gelombang' => '1',  
+        );
+        $gelombang=$this->m_registrasi->get_data_gelombang($where2);
+        $where = array(
+			'gelombang' => $gelombang,			       
+        );
+		$data['catar'] = $this->m_registrasi->get_data_rekap_ukurpakaian($where)->result();
+		foreach ($data['catar'] as $row)
+		{
+        $prodi = $row->prodi;
+		}
+		$data['prodi'] = $this->prodi($prodi);
+		$data['koperasi'] = $this;
 		$this->load->view('koperasi/header');
-        $this->load->view('koperasi/rekap');
+        $this->load->view('koperasi/rekap',$data);
         $this->load->view('koperasi/footer');
 	}
 	public function cetak()
