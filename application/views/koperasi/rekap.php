@@ -46,8 +46,8 @@
                   <?php }?>
                   </td>
                 </tr>
+                <td><button type="button" name="submit" id="lihatukuran" class="btn lihatukuran btn-primary"  data-no="<?php echo $c->no; ?>">Lihat</button></td>
                <?php } ?>
-               <td><button type="button" name="submit" id="lihatukuran" class="btn lihatukuran btn-primary"  data-no="<?php echo $c->no; ?>">Lihat</button></td>
                 </tbody>
                 <tfoot>
                 <tr>
