@@ -38,10 +38,10 @@
                 <p></p>
                 <?php if ($seleksi == null) {
                   # code... cek seleksi ?>
-                   <a href="<?php echo base_url() ?>download_tutorial_form_seleksi_gelombang_dini?>" target="__blank"><button type="button" class="btn btn-primary">Download Tutorial Pengisan Form Seleksi</button></a>
+                  <!--  <a href="<?php //echo base_url() ?>download_tutorial_form_seleksi_gelombang_dini?>" target="__blank"><button type="button" class="btn btn-primary">Download Tutorial Pengisan Form Seleksi</button></a>
               
-                 <form action="<?php echo base_url() ?>proses_seleksi_gelombangdini_reguler" name="form1" id="form1" method="post" enctype="multipart/form-data">
-                  <input type="hidden" name="no" id="no" value="<?php echo $this->session->userdata('no'); ?>">
+                 <form action="<?php //echo base_url() ?>proses_seleksi_gelombangdini_reguler" name="form1" id="form1" method="post" enctype="multipart/form-data">
+                  <input type="hidden" name="no" id="no" value="<?php //echo $this->session->userdata('no'); ?>">
                   <div class="form-group">
                   <label for="exampleInputEmail1">Link File KTP</label>
                   <input type="text" class="form-control" id="link_ktp" name="link_ktp" placeholder="Masukan Link File KTP">
@@ -61,12 +61,12 @@
                   <div class="form-group">
                   <label for="exampleInputEmail1">Surat pernyataan dan riwayat kesehatan</label>
                   <input type="text" class="form-control" id="link_supersehat" name="link_supersehat" placeholder="Link File Surat pernyataan dan riwayat kesehatan">
-                  </div>
+                  </div> -->
                  <!--  <div class="form-group">
                   <label for="exampleInputEmail1">Sertifikasi prestasi minimal tingkat Regional/Provinsi dan Hafidz <i>Qur'an </i>minimal 10 Juz</label>
                   <input type="text" class="form-control" id="link_prestasi" name="link_prestasi" placeholder="Link File Sertifikasi prestasi minimal tingkat Regional/Provinsi dan Hafidz Qur'an minimal 10 Juz">
                   </div> -->
-                  <hr>
+                <!--   <hr>
                   <h5><b>Form Upload Link Video SAMAPTA</b></h5>
                   <p>Video Kesamaptaan : </p>
                   <p>Saat pembuatan video kesamaptaan calon mahasiswa/ taruna baru diwajibkan:</p>
@@ -100,7 +100,7 @@
                   </div>
                   <button type="submit" class="btn btn-primary">Simpan</button>
                 </form>
-                <?php }else{ ?>
+                <?php// }else{ ?>
                   <table class="table table-striped">
                         <tbody><tr>
                           <th style="width: 10px">#</th>
@@ -112,7 +112,7 @@
                           <td>Anda Telah Mengisi Form Seleksi</td>
                           <td>
                              <div class="form-group" align="center">
-                             <button type="button" name="submit" id="editseleksigdr1" class="btn editseleksigdr1 btn-primary"  data-no="<?php echo $this->session->userdata('no'); ?>">Edit Form Seleksi</button>
+                             <button type="button" name="submit" id="editseleksigdr1" class="btn editseleksigdr1 btn-primary"  data-no="<?php// echo $this->session->userdata('no'); ?>">Edit Form Seleksi</button>
                             </div>
                           </td>
                         </tr>
@@ -126,12 +126,12 @@
                                       <span aria-hidden="true">&times;</span>
                                   </button>
                               </div>
-                              <div class="modal-body">
+                              <div class="modal-body"> -->
                                   <!-- Isi formulir di sini -->
-                                  <form action="<?php echo base_url() ?>proses_seleksi_gelombangdini_reguler_edit" name="form1" id="form1" method="post" enctype="multipart/form-data">
-                                      <!-- ... (Formulir seperti yang Anda berikan) ... -->
-                                      <input type="hidden" name="no" id="no" value="<?php echo $this->session->userdata('no'); ?>">
-                                      <input type="hidden" name="id_link" id="id_link" value="<?php echo $this->session->userdata('id_link'); ?>">
+                                <!--   <form action="<?php //echo base_url() ?>proses_seleksi_gelombangdini_reguler_edit" name="form1" id="form1" method="post" enctype="multipart/form-data">
+                                      ... (Formulir seperti yang Anda berikan) ...
+                                      <input type="hidden" name="no" id="no" value="<?php //echo $this->session->userdata('no'); ?>">
+                                      <input type="hidden" name="id_link" id="id_link" value="<?php //echo $this->session->userdata('id_link'); ?>">
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">Link File KTP</label>
                                       <input type="text" class="form-control" id="link_ktp" name="link_ktp" placeholder="Masukan Link File KTP">
@@ -151,12 +151,12 @@
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">Surat pernyataan dan riwayat kesehatan</label>
                                       <input type="text" class="form-control" id="link_supersehat" name="link_supersehat" placeholder="Link File Surat pernyataan dan riwayat kesehatan">
-                                      </div>
+                                      </div> -->
                                      <!--  <div class="form-group">
                                       <label for="exampleInputEmail1">Sertifikasi prestasi minimal tingkat Regional/Provinsi dan Hafidz <i>Qur'an </i>minimal 10 Juz</label>
                                       <input type="text" class="form-control" id="link_prestasi" name="link_prestasi" placeholder="Link File Sertifikasi prestasi minimal tingkat Regional/Provinsi dan Hafidz Qur'an minimal 10 Juz">
                                       </div> -->
-                                      <hr>
+                                     <!--  <hr>
                                       <h5><b>Form Upload Link Video SAMAPTA</b></h5>
                                       <p>Video Kesamaptaan : </p>
                                       <p>Saat pembuatan video kesamaptaan calon mahasiswa/ taruna baru diwajibkan:</p>
@@ -196,7 +196,7 @@
                               </div>
                           </div>
                       </div>
-                  </div>
+                  </div> -->
                 <?php } ?>                  
 
 
