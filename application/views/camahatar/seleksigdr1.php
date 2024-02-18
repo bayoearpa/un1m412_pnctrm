@@ -31,7 +31,8 @@
                    <a href="<?php echo base_url() ?>download_supersehatreg?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan Sehat</button></a>
                 </div>
                 <hr>
-                <h5><b>Silakan mengisi form seleksi dibawah ini :</b></h5>
+                <h5><b>Seleksi samapta akan dilaksanakan secara offline, tunggu pengumuman selanjutnya.</b></h5>
+                <!-- <h5><b>Silakan mengisi form seleksi dibawah ini :</b></h5> -->
                 <?php echo validation_errors(); 
                   echo $this->session->flashdata('success');
                   echo $this->session->flashdata('error'); ?>
