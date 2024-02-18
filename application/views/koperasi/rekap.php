@@ -17,8 +17,8 @@
                   <th>Nama</th>
                   <th>Telp / Hp</th>
                   <th>Prodi yang Dipilih</th>
-                  <th>Sudah ukur pakaian</th>
                   <th>Lihat data</th>
+                  <th>Sudah ukur pakaian</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -32,6 +32,7 @@
                   <td><?php echo $c->nama ?></td>
                   <td><?php echo $c->telp ?></td>
                   <td><?php echo $koperasi->prodi($c->prodi) ?></td>
+                  <td><button type="button" name="submit" id="lihatukuran" class="btn lihatukuran btn-primary"  data-no="<?php echo $c->no; ?>">Lihat</button></td>
                   <td>
 
                   <?php 
@@ -46,7 +47,6 @@
                   <?php }?>
                   </td>
                 </tr>
-                <td><button type="button" name="submit" id="lihatukuran" class="btn lihatukuran btn-primary"  data-no="<?php echo $c->no; ?>">Lihat</button></td>
                <?php } ?>
                 </tbody>
                 <tfoot>
@@ -56,8 +56,8 @@
                   <th>Nama</th>
                   <th>Telp / Hp</th>
                   <th>Prodi yang Dipilih</th>
-                  <th>Sudah ukur pakaian</th>
                   <th>Lihat data</th>
+                  <th>Sudah ukur pakaian</th>
                 </tr>
                 </tfoot>
               </table>
