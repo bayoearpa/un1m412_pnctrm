@@ -89,6 +89,15 @@ class Koperasi extends CI_Controller {
         $this->load->view('koperasi/cetak');
         $this->load->view('koperasi/footer');
 	}
+	 public function getdatacatarukurpakaian($no)
+    {
+        # code...
+        // Ambil data berdasarkan ID dari model Anda
+        $data = $this->m_registrasi->get_data_catar_ukurpakaian($no); // Gantilah 'get_data_by_id' dengan metode yang sesuai dalam model Anda
+
+        // Konversi data ke format JSON dan kirimkan ke view
+        echo json_encode($data);
+    }
 
 }
 

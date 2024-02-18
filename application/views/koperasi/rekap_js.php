@@ -20,22 +20,47 @@
                 var parsedData = JSON.parse(data);
                 if (parsedData && Object.keys(parsedData).length > 0) {
 
-                $('#link_video_pushup').data('link', parsedData.link_video_pushup);
-                $('#link_video_situp').data('link', parsedData.link_video_shitup);
-                $('#link_video_pullup').data('link', parsedData.link_video_pullup);
-                $('#link_video_shuttle').data('link', parsedData.link_video_shuttle);
                 $('#nama').val(parsedData.nama);
                 $('#no').val(parsedData.no);
-                $('#sit_up').val(parsedData.sit_up);
-                $('#push_up').val(parsedData.push_up);
-                $('#pull_up').val(parsedData.pull_up);
-                $('#lari').val(parsedData.lari);
-                $('#id_ssmp').val(parsedData.id_ssmp);
+
+                $('#jk_pakaian').val(parsedData.jk_pakaian);
+
+                $('#ukuran_sepatu').val(parsedData.ukuran_sepatu);
+                $('#ukuran_sepatu_lainnya').val(parsedData.ukuran_sepatu_lainnya);
+
+                $('#topipet').val(parsedData.topipet);
+
+                $('#seragam_pdl').val(parsedData.seragam_pdl);
+                $('#seragam_pdl_lainnya').val(parsedData.seragam_pdl_lainnya);
+
+                $('#training_pack').val(parsedData.training_pack);
+                $('#training_pack_lainnya').val(parsedData.training_pack_lainnya);
+
+                $('#wearpack').val(parsedData.wearpack);
+                $('#wearpack_lainnya').val(parsedData.wearpack_lainnya);
+
+                $('#kaos_or').val(parsedData.kaos_or);
+                $('#kaos_or_lainnya').val(parsedData.kaos_or_lainnya);
+
+                $('#baju_renang').val(parsedData.baju_renang);
+                $('#baju_renang_lainnya').val(parsedData.baju_renang_lainnya);
+
+                $('#dogi').val(parsedData.dogi);
+
+                $('#pdhpdub_kemeja').val(parsedData.pdhpdub_kemeja);
+                $('#pdhpdub_kemeja_lainnya').val(parsedData.pdhpdub_kemeja_lainnya);
+
+                $('#pdhpdub_celana').val(parsedData.pdhpdub_celana);
+                $('#pdhpdub_celana_lainnya').val(parsedData.pdhpdub_celana_lainnya);
+
+                $('#jaspdpm').val(parsedData.jaspdpm);
+                $('#jaspdpm_lainnya').val(parsedData.jaspdpm_lainnya);
+
 
                 $('#editFormModal').modal('show');
                 } else {
                 // Jika parsedData kosong, tampilkan pesan
-                alert('Belum melakukan seleksi');
+                alert('Belum mengisi ukur pakaian');
                 }
 
                 // $('#id_link').val(parsedData.id_link);

@@ -84,10 +84,8 @@
                               </div>
                               <div class="modal-body">
                                   <!-- Isi formulir di sini -->
-                                  <form action="<?php echo base_url() ?>samapta/proses_seleksi24" name="form1" id="form1" method="post" enctype="multipart/form-data">
+                                  <form action="#" name="form1" id="form1" method="post" enctype="multipart/form-data">
                                       <!-- ... (Formulir seperti yang Anda berikan) ... -->
-                                      <input type="hidden" name="petugas" id="petugas" value="<?php echo $this->session->userdata('nama'); ?>">
-                                      <input type="hidden" name="id_ssmp" id="id_ssmp">
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">No Pendafatran:</label><p></p>
                                       <input type="text" class="form-control" name="no" id="no" readonly="">
@@ -98,28 +96,72 @@
                                       </div>
                                     
                                       <hr>
-                                      <h5>Form Upload Link Video SAMAPTA</h5>
+                                      <!-- <h5>Form Upload Link Video SAMAPTA</h5> -->
                                       <div class="form-group">
-                                      <label for="exampleInputEmail1">Link Video Push Up</label><p></p>
-                                      <button type="button" name="submit" id="link_video_pushup" class="btn link_video_pushup btn-primary"  data-link="">Lihat Video</button>
-                                      <input type="text" class="form-control" name="push_up" id="push_up" placeholder="Masukan Nilai Push Up 1-100" max="100" required="">
+                                      <label for="exampleInputEmail1">Jenis Kelamin</label><p></p>
+                                      <input type="text" class="form-control" name="jk_pakaian" id="jk_pakaian" readonly="">
                                       </div>
                                       <div class="form-group">
-                                      <label for="exampleInputEmail1">Link Video Sit Up</label><p></p>
-                                      <button type="button" name="submit" id="link_video_situp" class="btn link_video_situp btn-primary"  data-link="">Lihat Video</button>
-                                      <input type="text" class="form-control" name="sit_up" id="sit_up" placeholder="Masukan Nilai Sit Up 1-100" max="100" required="">
+                                      <label for="exampleInputEmail1">Ukuran Sepatu</label><p></p>
+                                      <input type="text" class="form-control" name="ukuran_sepatu" id="ukuran_sepatu" readonly="">
+                                      <input type="text" class="form-control" name="ukuran_sepatu_lainnya" id="ukuran_sepatu_lainnya" readonly="">
                                       </div>
                                       <div class="form-group">
-                                      <label for="exampleInputEmail1">Link Video Pull Up</label><p></p>
-                                      <button type="button" name="submit" id="link_video_pullup" class="btn link_video_pullup btn-primary"  data-link="">Lihat Video</button>
-                                      <input type="text" class="form-control" name="pull_up" id="pull_up" placeholder="Masukan Nilai Pull Up 1-100" max="100" required="">
+                                      <label for="exampleInputEmail1">Topi Pet</label><p></p>
+                                      <input type="text" class="form-control" name="topipet" id="topipet" readonly="">
                                       </div>
                                       <div class="form-group">
-                                      <label for="exampleInputEmail1">Link Video Lari</label><p></p>
-                                      <button type="button" name="submit" id="link_video_shuttle" class="btn link_video_shuttle btn-primary"  data-link="">Lihat Video</button>
-                                      <input type="text" class="form-control" name="lari" id="lari" placeholder="Masukan Nilai Lari 1-100" max="100" required="">
+                                      <label for="exampleInputEmail1">Seragam PDL</label><p></p>
+                                      <input type="text" class="form-control" name="seragam_pdl" id="seragam_pdl" readonly="">
+                                      <input type="text" class="form-control" name="seragam_pdl_lainnya" id="seragam_pdl_lainnya" readonly="">
                                       </div>
-                                      <button type="submit" class="btn btn-success">Simpan</button>
+                                      <div class="form-group">
+                                      <label for="exampleInputEmail1">Training Pack</label><p></p>
+                                      <input type="text" class="form-control" name="training_pack" id="training_pack" readonly="">
+                                      <input type="text" class="form-control" name="training_pack_lainnya" id="training_pack_lainnya" readonly="">
+                                      </div>
+                                      <div class="form-group">
+                                      <label for="exampleInputEmail1">Wearpack</label><p></p>
+                                      <input type="text" class="form-control" name="wearpack" id="wearpack" readonly="">
+                                      <input type="text" class="form-control" name="wearpack_lainnya" id="wearpack_lainnya" readonly="">
+                                      </div>
+                                      <div class="form-group">
+                                      <label for="exampleInputEmail1">Kaos Olahraga</label><p></p>
+                                      <input type="text" class="form-control" name="kaos_or" id="kaos_or" readonly="">
+                                      <input type="text" class="form-control" name="kaos_or_lainnya" id="kaos_or_lainnya" readonly="">
+                                      </div>
+                                      <div class="form-group">
+                                      <label for="exampleInputEmail1">Baju Renang</label><p></p>
+                                      <input type="text" class="form-control" name="baju_renang" id="baju_renang" readonly="">
+                                      <input type="text" class="form-control" name="baju_renang_lainnya" id="baju_renang_lainnya" readonly="">
+                                      </div>
+                                       <div class="form-group">
+                                      <label for="exampleInputEmail1">Dogi</label><p></p>
+                                      <input type="text" class="form-control" name="dogi" id="dogi" readonly="">
+                                      </div>
+                                      <div class="form-group">
+                                      <label for="exampleInputEmail1">Tinggi Badan</label><p></p>
+                                      <input type="text" class="form-control" name="tb" id="tb" readonly="">
+                                      </div>
+                                       <hr>
+                                      <h5><b><u>SERAGAM DINAS*</u></b></h5>
+                                      <p><b>Seragam PDH & Seragam PDUB</b></p>
+                                       <div class="form-group">
+                                      <label for="exampleInputEmail1">-Kemeja</label><p></p>
+                                      <input type="text" class="form-control" name="pdhpdub_kemeja" id="pdhpdub_kemeja" readonly="">
+                                      <input type="text" class="form-control" name="pdhpdub_kemeja_lainnya" id="pdhpdub_kemeja_lainnya" readonly="">
+                                      </div>
+                                       <div class="form-group">
+                                      <label for="exampleInputEmail1">-Celana</label><p></p>
+                                      <input type="text" class="form-control" name="pdhpdub_celana" id="pdhpdub_celana" readonly="">
+                                      <input type="text" class="form-control" name="pdhpdub_celana_lainnya" id="pdhpdub_celana_lainnya" readonly="">
+                                      </div>
+                                      <hr>
+                                       <div class="form-group">
+                                      <label for="exampleInputEmail1">Jas PDPM</label><p></p>
+                                      <input type="text" class="form-control" name="jaspdpm" id="jaspdpm" readonly="">
+                                      <input type="text" class="form-control" name="jaspdpm_lainnya" id="jaspdpm_lainnya" readonly="">
+                                      </div>  
                                   </form>
                               </div>
                               <div class="modal-footer">
