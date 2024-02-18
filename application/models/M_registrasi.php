@@ -606,8 +606,7 @@ class m_registrasi extends CI_Model
     function get_data_sudah_daful($where)
     {
         // Gantilah 'nama_tabel' dengan nama tabel yang sesuai dalam database Anda
-	     $this->db->select('
-            tbl_catar_2024.nama as nama,
+	     $this->db->select('tbl_catar_2024.nama as nama,
             tbl_catar_2024.prodi as prodi,
             tbl_catar_2024.telp as telp,
             tbl_catar_2024.no,
@@ -657,6 +656,47 @@ class m_registrasi extends CI_Model
         $query = $this->db->get();
 
         return $query;
+    }
+        function get_data_catar_ukurpakaian($id)
+    {
+        // Gantilah 'nama_tabel' dengan nama tabel yang sesuai dalam database Anda
+	     $this->db->select('tbl_ukurpakaian.jk_pakaian,
+	     	tbl_ukurpakaian.ukuran_sepatu,
+	     	tbl_ukurpakaian.topipet,
+	     	tbl_ukurpakaian.seragam_pdl,
+	     	tbl_ukurpakaian.training_pack,
+	     	tbl_ukurpakaian.wearpack,
+	     	tbl_ukurpakaian.kaos_or,
+	     	tbl_ukurpakaian.baju_renang,
+	     	tbl_ukurpakaian.dogi,
+	     	tbl_ukurpakaian.pdhpdub_kemeja,
+	     	tbl_ukurpakaian.pdhpdub_celana,
+	     	tbl_ukurpakaian.jaspdpm,
+	     	tbl_ukurpakaian.ukuran_sepatu_lainnya,
+	     	tbl_ukurpakaian.seragam_pdl_lainnya,
+	     	tbl_ukurpakaian.training_pack_lainnya,
+	     	tbl_ukurpakaian.wearpack_lainnya,
+	     	tbl_ukurpakaian.kaos_or_lainnya,
+	     	tbl_ukurpakaian.baju_renang_lainnya,
+	     	tbl_ukurpakaian.pdhpdub_kemeja_lainnya,
+	     	tbl_ukurpakaian.pdhpdub_celana_lainny,
+	     	tbl_ukurpakaian.jaspdpm_lainnya,
+            tbl_catar_2024.nama as nama,
+            tbl_catar_2024.prodi as prodi,
+            tbl_catar_2024.telp as telp,
+            tbl_catar_2024.no,
+            tbl_catar_2024.jk');
+
+	     $this->db->from('tbl_catar_2024');
+	     $this->db->join('tbl_ukurpakaian','tbl_catar_2024.no = tbl_ukurpakaian.no','left');
+        $this->db->where('tbl_catar_2024.no', $id);
+        $query = $this->db->get();
+
+        if ($query->num_rows() > 0) {
+            return $query->row();
+        } else {
+            return null;
+        }
     }
   
 	////////////////////summary 2023///////////////////////////////////////////////////////////////////////////
