@@ -86,8 +86,9 @@ class Koperasi extends CI_Controller {
 	{
 		# code...
 		$this->load->view('koperasi/header');
-        $this->load->view('koperasi/cetak');
+        $this->load->view('koperasi/cetak');        
         $this->load->view('koperasi/footer');
+        $this->load->view('koperasi/cetak_js');
 	}
 	 public function getdatacatarukurpakaian($no)
     {

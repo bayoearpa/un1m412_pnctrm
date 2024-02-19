@@ -56,6 +56,8 @@
                 $('#jaspdpm').val(parsedData.jaspdpm);
                 $('#jaspdpm_lainnya').val(parsedData.jaspdpm_lainnya);
 
+                $('#tb').val(parsedData.tb);
+
 
                 $('#editFormModal').modal('show');
                 } else {
