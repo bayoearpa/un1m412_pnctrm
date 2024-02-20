@@ -272,7 +272,7 @@ class Koperasi extends CI_Controller {
 
         // Save Excel file
         $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
-        $filename = 'Daftar_Nilai_Tes_Samapta.xlsx';
+        $filename = 'Rekap_ukur_pakaian.xlsx';
         header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
         header('Content-Disposition: attachment;filename="' . $filename . '"');
         header('Cache-Control: max-age=0');
