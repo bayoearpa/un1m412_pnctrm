@@ -185,7 +185,7 @@ class Koperasi extends CI_Controller {
         $objPHPExcel->getActiveSheet()->setCellValue('N6', 'Jas PDPM');
 
         // Loop through the data and populate the worksheet
-        $row = 14;
+        $row = 7;
         foreach ($data['results'] as $result) {
             $objPHPExcel->getActiveSheet()->setCellValue('A' . $row, $result->no);
             $objPHPExcel->getActiveSheet()->setCellValue('B' . $row, $result->nama);
