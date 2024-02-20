@@ -649,9 +649,9 @@ class m_registrasi extends CI_Model
             tbl_catar_2024.no,
             tbl_catar_2024.jk');
 
-        $this->db->from('tbl_catar_2024');
-        $this->db->join('tbl_ukurpakaian', 'tbl_catar_2024.no = tbl_ukurpakaian.no', 'left');
-        $this->db->join('tbl_catar_daful_2024', 'tbl_catar_daful_2024.no = tbl_ukurpakaian.no', 'left');
+         $this->db->from('tbl_catar_daful_2024');
+	     $this->db->join('tbl_catar_2024','tbl_catar_daful_2024.no = tbl_catar_2024.no','left');
+	     $this->db->join('tbl_ukurpakaian','tbl_catar_daful_2024.no = tbl_ukurpakaian.no','left');
         $this->db->where($where);
         $query = $this->db->get();
 
