@@ -332,16 +332,16 @@ class Samapta extends CI_Controller {
         if ($jalur == "reguler") {
         	# code...
         	$where= array(
-            'jalur' => $jalur,
-            'prodi' => $prodi,
-            'gelombang' => $gelombang, 
+            'tbl_catar_2024.jalur' => $jalur,
+            'tbl_catar_2024.prodi' => $prodi,
+            'tbl_catar_2024.gelombang' => $gelombang, 
 	        );
 
 	       $data['results'] = $this->m_registrasi->get_data_rekap_samapta($where);
         }else{
         	$where= array(
-            'jalur' => $jalur,
-            'prodi' => $prodi,
+            'tbl_catar_2024.jalur' => $jalur,
+            'tbl_catar_2024.prodi' => $prodi,
 	        );
 
 	       $data['results'] = $this->m_registrasi->get_data_rekap_samapta($where);
