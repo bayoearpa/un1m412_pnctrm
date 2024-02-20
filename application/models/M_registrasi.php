@@ -655,7 +655,7 @@ class m_registrasi extends CI_Model
         $this->db->where($where);
         $query = $this->db->get();
 
-        return $query;
+        return $query->result();
     }
         function get_data_catar_ukurpakaian($id)
     {
