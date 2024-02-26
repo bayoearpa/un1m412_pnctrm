@@ -683,7 +683,7 @@ class Camhtar extends CI_Controller {
 		if ($this->input->post('eupload_transd3') > 0) {
 			# code...
 			$update_data = array(
-	            'upload_ijd3' => $this->input->post('eupload_transd3'),
+	            'upload_transd3' => $this->input->post('eupload_transd3'),
 	            // Tambahkan field lain sesuai kebutuhan
 	        );
 			$this->m_registrasi->update_data($where,$update_data,'tbl_catar_2024');
@@ -721,7 +721,7 @@ class Camhtar extends CI_Controller {
 		if ($this->input->post('eupload_supersehat') > 0) {
 			# code...
 			$update_data = array(
-	            'upload_ijd3' => $this->input->post('eupload_supersehat'),
+	            'upload_supersehat' => $this->input->post('eupload_supersehat'),
 	            // Tambahkan field lain sesuai kebutuhan
 	        );
 			$this->m_registrasi->update_data($where,$update_data,'tbl_catar_2024');
