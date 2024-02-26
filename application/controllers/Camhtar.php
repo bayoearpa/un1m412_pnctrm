@@ -640,6 +640,16 @@ class Camhtar extends CI_Controller {
 	        'no' => $no,
 	    );
 
+		// cek sudah input
+		if ($this->input->post('eupload_ijd3') > 0) {
+			# code...
+			$update_data = array(
+	            'upload_ijd3' => $this->input->post('eupload_ijd3'),
+	            // Tambahkan field lain sesuai kebutuhan
+	        );
+			$this->m_registrasi->update_data($where,$update_data,'tbl_catar_2024');
+
+		}else{
 		    // Konfigurasi upload file Ijasah D3
 	    $config_ijasah_d3['upload_path'] = './assets/upload/2024/upload_ijasah_d3/';
 	    $config_ijasah_d3['allowed_types'] = 'pdf';
@@ -667,8 +677,18 @@ class Camhtar extends CI_Controller {
 	       	$this->session->set_flashdata('error', $error);
 			redirect(base_url('seleksi_tf'));
 	    }
+		}//end cek
 
+		// cek sudah input
+		if ($this->input->post('eupload_transd3') > 0) {
+			# code...
+			$update_data = array(
+	            'upload_ijd3' => $this->input->post('eupload_transd3'),
+	            // Tambahkan field lain sesuai kebutuhan
+	        );
+			$this->m_registrasi->update_data($where,$update_data,'tbl_catar_2024');
 
+		}else{
 	       // Konfigurasi upload file Transkip D3
 	    $config_transkip_d3['upload_path'] = './assets/upload/2024/upload_transkip_d3/';
 	    $config_transkip_d3['allowed_types'] = 'pdf';
@@ -694,7 +714,19 @@ class Camhtar extends CI_Controller {
 	       	$this->session->set_flashdata('error', $error);
 			redirect(base_url('seleksi_tf'));
 	    }
+		} // end cek
 
+
+		// cek sudah input
+		if ($this->input->post('eupload_supersehat') > 0) {
+			# code...
+			$update_data = array(
+	            'upload_ijd3' => $this->input->post('eupload_supersehat'),
+	            // Tambahkan field lain sesuai kebutuhan
+	        );
+			$this->m_registrasi->update_data($where,$update_data,'tbl_catar_2024');
+
+		}else{
 	      // Konfigurasi upload file Surat Pernyataan Sehat
 	    $config_supersehat['upload_path'] = './assets/upload/2024/upload_surat_pernyataan_sehat/';
 	    $config_supersehat['allowed_types'] = 'pdf';
@@ -720,6 +752,7 @@ class Camhtar extends CI_Controller {
 	       	$this->session->set_flashdata('error', $error);
 			redirect(base_url('seleksi_geldini_tf'));
 	    }
+		} // end cek
 	    // Lakukan hal yang sama untuk file-file lainnya
 	    // ...
 	    redirect(base_url('seleksi_tf'));

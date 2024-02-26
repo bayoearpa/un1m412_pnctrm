@@ -29,7 +29,7 @@
                <div class="form-group">
                         <label for="editufsignon">Upload Ijasah D3 (Upload dalam format .pdf)</label>
                         <input type="file" class="form-control" id="upload_ijd3" name="upload_ijd3">
-                        <!-- <input type="hidden" id="editufsignon_existing" name="ufsignon_existing" value="<?php //echo $c->upload_file_signon; ?>"> -->
+                        <input type="hidden" id="eupload_ijd3" name="eupload_ijd3" value="<?php echo $c->upload_ijd3; ?>">
                         <?php if ($c->upload_ijd3) { ?>
                         <button class="btn btn-success view-fileui-button" data-filename="<?php echo $c->upload_ijd3; ?>">Lihat Ijasah D3</button>
                         <?php } else { ?>
@@ -41,7 +41,7 @@
                 <div class="form-group">
                   <label for="editufsignon">Upload Transkip D3 (Upload dalam format .pdf)</label>
                         <input type="file" class="form-control" id="upload_transd3" name="upload_transd3">
-                        <!-- <input type="hidden" id="editufsignon_existing" name="ufsignon_existing" value="<?php //echo $c->upload_file_signon; ?>"> -->
+                        <input type="hidden" id="eupload_transd3" name="eupload_transd3" value="<?php echo $c->upload_transd3; ?>">
                         <?php if ($c->upload_transd3) { ?>
                         <button class="btn btn-success view-fileut-button" data-filename="<?php echo $c->upload_transd3; ?>">Lihat Transkip D3</button>
                         <?php } else { ?>
@@ -52,7 +52,7 @@
                 <div class="form-group">
                   <label for="editufsignon">Mengisi dan Mengupload Surat Pernyataan Sehat <b>Bermaterai yang sudah disediakan</b> pada link berikut -> <a href="<?php echo base_url() ?>download_supersehat"><code>Download Surat Pernyataaan Sehat</code></a>  (Lalu Upload dalam format .pdf)</label>
                         <input type="file" class="form-control" id="upload_supersehat" name="upload_supersehat">
-                        <!-- <input type="hidden" id="editufsignon_existing" name="ufsignon_existing" value="<?php //echo $c->upload_file_signon; ?>"> -->
+                        <input type="hidden" id="eupload_supersehat" name="eupload_supersehat" value="<?php echo $c->upload_supersehat; ?>">
                         <?php if ($c->upload_supersehat) { ?>
                         <button class="btn btn-success view-filess-button" data-filename="<?php echo $c->upload_supersehat; ?>">Lihat Surat Pernyataan Sehat</button>
                         <?php } else { ?>
