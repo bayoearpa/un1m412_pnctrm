@@ -35,6 +35,7 @@
             Tanggal Lahir<br>
             Nama Ibu<br>
             Jenis Kelamin<br>
+            Jalur Pendaftaran<br>
           </address>
         </div>
         <!-- /.col -->
@@ -46,6 +47,20 @@
             <?php echo $c->tgl_l ?><br>
             <?php echo $c->nama_i ?><br>
             <?php echo $c->jk ?> <br>
+            <?php if ($c->jalur == 'gdr1') {
+              # code...
+              echo "Gelombang Dini";
+            }elseif ($c->jalur == 'gdr2') {
+              # code...
+              echo "Gelombang Dini TF";
+            } elseif ($c->jalur == 'reguler') {
+              # code...
+              echo "Reguler";
+            }else{
+              echo "Kelas Transfer";
+            }
+             
+             ?>
 
           </address>
         </div>
