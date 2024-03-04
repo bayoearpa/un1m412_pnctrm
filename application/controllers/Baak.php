@@ -2600,9 +2600,9 @@ class Baak extends CI_Controller {
         $data['bau'] = $this;
         $data['stat'] = $this->m_registrasi->get_data_statistic_kabkota_2024()->result();
 
-        $this->load->view('bau/header');
-        $this->load->view('bau/summary_2024_kabkota',$data);
-        $this->load->view('bau/footer');
+        $this->load->view('baak/header');
+        $this->load->view('baak/summary_2024_kabkota',$data);
+        $this->load->view('baak/footer');
 
     }
      public function get_summary_prov_2024()
@@ -2611,9 +2611,9 @@ class Baak extends CI_Controller {
         $data['bau'] = $this;
         $data['stat'] = $this->m_registrasi->get_data_statistic_prov_2024()->result();
 
-        $this->load->view('bau/header');
-        $this->load->view('bau/summary_2024_prov',$data);
-        $this->load->view('bau/footer');
+        $this->load->view('baak/header');
+        $this->load->view('baak/summary_2024_prov',$data);
+        $this->load->view('baak/footer');
 
     }
      public function get_summary_sekolah_2024()
@@ -2637,9 +2637,9 @@ class Baak extends CI_Controller {
         $w_ma = array('tbl_catar_2024.kategori_sek' => 'MA');
         $data['stat_ma'] = $this->m_registrasi->get_data_statistic_sekolah_2024($w_ma)->result();
 
-        $this->load->view('bau/header');
-        $this->load->view('bau/summary_2024_sekolah',$data);
-        $this->load->view('bau/footer');
+        $this->load->view('baak/header');
+        $this->load->view('baak/summary_2024_sekolah',$data);
+        $this->load->view('baak/footer');
 
     }
 
@@ -2667,10 +2667,10 @@ class Baak extends CI_Controller {
     {
         # code...
         $data['bau'] = $this;
-        $this->load->view('bau/header');
-        $this->load->view('bau/summary_2024_sumber',$data);
-        $this->load->view('bau/footer');
-        $this->load->view('bau/summary_2024_sumber_js',$data);
+        $this->load->view('baak/header');
+        $this->load->view('baak/summary_2024_sumber',$data);
+        $this->load->view('baak/footer');
+        $this->load->view('baak/summary_2024_sumber_js',$data);
 
     }
             ///////////////////////////////////////////////////////summary 2023///////////////////////////////////////////
@@ -2702,9 +2702,9 @@ class Baak extends CI_Controller {
         $data['bau'] = $this;
         $data['stat'] = $this->m_registrasi->get_data_statistic_kabkota_2023()->result();
 
-        $this->load->view('bau/header');
-        $this->load->view('bau/summary_2023_kabkota',$data);
-        $this->load->view('bau/footer');
+        $this->load->view('baak/header');
+        $this->load->view('baak/summary_2023_kabkota',$data);
+        $this->load->view('baak/footer');
 
     }
      public function get_summary_prov_2023()
@@ -2713,9 +2713,9 @@ class Baak extends CI_Controller {
         $data['bau'] = $this;
         $data['stat'] = $this->m_registrasi->get_data_statistic_prov_2023()->result();
 
-        $this->load->view('bau/header');
-        $this->load->view('bau/summary_2023_prov',$data);
-        $this->load->view('bau/footer');
+        $this->load->view('baak/header');
+        $this->load->view('baak/summary_2023_prov',$data);
+        $this->load->view('baak/footer');
 
     }
      public function get_summary_sekolah_2023()
@@ -2769,10 +2769,10 @@ class Baak extends CI_Controller {
     {
         # code...
         $data['bau'] = $this;
-        $this->load->view('bau/header');
-        $this->load->view('bau/summary_2023_sumber',$data);
-        $this->load->view('bau/footer');
-        $this->load->view('bau/summary_2023_sumber_js',$data);
+        $this->load->view('baak/header');
+        $this->load->view('baak/summary_2023_sumber',$data);
+        $this->load->view('baak/footer');
+        $this->load->view('baak/summary_2023_sumber_js',$data);
 
     }
 
