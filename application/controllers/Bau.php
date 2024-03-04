@@ -473,7 +473,7 @@ class Bau extends CI_Controller {
     {
         # code...
         $data['bau'] = $this;
-        $data['stat'] = $this->m_registrasi->get_data_statistic_kabkota_2023()->result();
+        $data['stat'] = $this->m_registrasi->get_data_statistic_kabkota_2024()->result();
 
         $this->load->view('bau/header');
         $this->load->view('bau/summary_2024_kabkota',$data);
@@ -485,7 +485,7 @@ class Bau extends CI_Controller {
     {
         # code...
         $data['bau'] = $this;
-        $data['stat'] = $this->m_registrasi->get_data_statistic_prov_2023()->result();
+        $data['stat'] = $this->m_registrasi->get_data_statistic_prov_2024()->result();
 
         $this->load->view('bau/header');
         $this->load->view('bau/summary_2024_prov',$data);
@@ -500,19 +500,19 @@ class Bau extends CI_Controller {
 
          //get sma
         $w_d3 = array('tbl_catar_2024.kategori_sek' => 'D3');
-        $data['stat_d3'] = $this->m_registrasi->get_data_statistic_sekolah_2023($w_d3)->result();
+        $data['stat_d3'] = $this->m_registrasi->get_data_statistic_sekolah_2024($w_d3)->result();
 
         //get sma
         $w_sma = array('tbl_catar_2024.kategori_sek' => 'SMA');
-        $data['stat_sma'] = $this->m_registrasi->get_data_statistic_sekolah_2023($w_sma)->result();
+        $data['stat_sma'] = $this->m_registrasi->get_data_statistic_sekolah_2024($w_sma)->result();
 
         //get smk
         $w_smk = array('tbl_catar_2024.kategori_sek' => 'SMK');
-        $data['stat_smk'] = $this->m_registrasi->get_data_statistic_sekolah_2023($w_smk)->result();
+        $data['stat_smk'] = $this->m_registrasi->get_data_statistic_sekolah_2024($w_smk)->result();
 
         //get ma
         $w_ma = array('tbl_catar_2024.kategori_sek' => 'MA');
-        $data['stat_ma'] = $this->m_registrasi->get_data_statistic_sekolah_2023($w_ma)->result();
+        $data['stat_ma'] = $this->m_registrasi->get_data_statistic_sekolah_2024($w_ma)->result();
 
         $this->load->view('bau/header');
         $this->load->view('bau/summary_2024_sekolah',$data);
