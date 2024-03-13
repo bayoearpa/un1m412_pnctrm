@@ -327,6 +327,20 @@
              ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where($where)->num_rows(); ?></span>
             </div>
+             <div class="box-body" style="">
+              <a href="<?php echo base_url() ?>bau/data_sudah_validasi_gdtf">Daftar Ulang (Reguler)</a>
+               <?php 
+             $where2= array(
+            'id_gelombang' => '1',  
+              );
+              $gelombang=$this->m_registrasi->get_data_gelombang($where2);
+            $where = array(
+            'tbl_catar_2024.jalur' => 'gdr2',
+            'tbl_catar_daful_2024.aktif' => '1'      
+            );
+             ?>
+              <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where($where)->num_rows(); ?></span>
+            </div>
             <!-- /.box-body -->
           </div>
           <!-- /.box -->
