@@ -274,7 +274,7 @@
               <h3 class="box-title">Pendaftar</h3>
 
               <div class="box-tools pull-left">
-                <button type="button" class="btn btn-box-tool"><i class="fa fa-minus"></i>
+                <button type="button" class="btn btn-box-tool" data-widget="pushmenu"><i class="fa fa-minus"></i>
                 </button>
               </div>
               <!-- /.box-tools -->
