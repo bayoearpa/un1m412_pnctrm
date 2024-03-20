@@ -327,8 +327,8 @@
              ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where($where)->num_rows(); ?></span>
             </div>
-             <div class="box-body" style="">
-              <a href="<?php echo base_url() ?>bau/data_sudah_validasi_gdtf">Daftar Ulang (Reguler)</a>
+            <div class="box-body" style="">
+            <a href="<?php echo base_url() ?>bau/data_sudah_daful_reg">Daftar Ulang (Reguler)</a>
                <?php 
              $where2= array(
             'id_gelombang' => '1',  
@@ -342,7 +342,7 @@
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_sudah_daful($where)->num_rows(); ?></span>
             </div>
              <div class="box-body" style="">
-              <a href="<?php echo base_url() ?>bau/data_sudah_validasi_gdtf">Daftar Ulang (Kelas Transfer)</a>
+              <a href="<?php echo base_url() ?>bau/data_sudah_daful_tf">Daftar Ulang (Kelas Transfer)</a>
                <?php 
              $where2= array(
             'id_gelombang' => '1',  
@@ -356,7 +356,7 @@
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_sudah_daful($where)->num_rows(); ?></span>
             </div>
             <div class="box-body" style="">
-              <a href="<?php echo base_url() ?>bau/data_sudah_validasi_gdtf">Daftar Ulang (Gelombang Dini)</a>
+              <a href="<?php echo base_url() ?>bau/data_sudah_daful_gd">Daftar Ulang (Gelombang Dini)</a>
                <?php 
              $where2= array(
             'id_gelombang' => '1',  
@@ -370,7 +370,7 @@
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_sudah_daful($where)->num_rows(); ?></span>
             </div>
              <div class="box-body" style="">
-              <a href="<?php echo base_url() ?>bau/data_sudah_validasi_gdtf">Daftar Ulang (Gelombang Dini TF)</a>
+              <a href="<?php echo base_url() ?>bau/data_sudah_daful_gdtf">Daftar Ulang (Gelombang Dini TF)</a>
                <?php 
              $where2= array(
             'id_gelombang' => '1',  

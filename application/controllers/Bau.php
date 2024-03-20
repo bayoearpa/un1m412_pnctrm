@@ -323,6 +323,50 @@ class Bau extends CI_Controller {
         $this->load->view('bau/footer');
         $this->load->view('bau/footer_js');
     }
+      public function data_sudah_daful_reg()
+    {
+        # code...
+        $where = array(
+            'jalur' => 'reguler'
+        );
+        $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+        $this->load->view('baak/header');
+        $this->load->view('baak/data_sudah_validasi_gd',$data);
+        $this->load->view('baak/footer');
+    }
+     public function data_sudah_daful_tf()
+    {
+        # code...
+        $where = array(
+            'jalur' => 'kelastransfer'
+        );
+        $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+        $this->load->view('baak/header');
+        $this->load->view('baak/data_sudah_validasi_gd',$data);
+        $this->load->view('baak/footer');
+    }
+     public function data_sudah_daful_gd()
+    {
+        # code...
+        $where = array(
+            'jalur' => 'gdr1'
+        );
+        $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+        $this->load->view('baak/header');
+        $this->load->view('baak/data_sudah_validasi_gd',$data);
+        $this->load->view('baak/footer');
+    }
+     public function data_sudah_daful_gdtf()
+    {
+        # code...
+        $where = array(
+            'jalur' => 'gdr2'
+        );
+        $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+        $this->load->view('baak/header');
+        $this->load->view('baak/data_sudah_validasi_gd',$data);
+        $this->load->view('baak/footer');
+    }
     /////////////////////////////////////.cek sudah validasi/////////////////////////////////////////
     /////////////////////////////////////////////////////// rekap validasi ///////////////////////////////////////
      public function rekap_validasi()

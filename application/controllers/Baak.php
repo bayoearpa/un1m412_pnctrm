@@ -138,6 +138,50 @@ class Baak extends CI_Controller {
         $this->load->view('baak/data_sudah_validasi_gd',$data);
         $this->load->view('baak/footer');
     }
+     public function data_sudah_daful_reg()
+    {
+        # code...
+        $where = array(
+            'jalur' => 'reguler'
+        );
+        $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+        $this->load->view('baak/header');
+        $this->load->view('baak/data_sudah_validasi_gd',$data);
+        $this->load->view('baak/footer');
+    }
+     public function data_sudah_daful_tf()
+    {
+        # code...
+        $where = array(
+            'jalur' => 'kelastransfer'
+        );
+        $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+        $this->load->view('baak/header');
+        $this->load->view('baak/data_sudah_validasi_gd',$data);
+        $this->load->view('baak/footer');
+    }
+     public function data_sudah_daful_gd()
+    {
+        # code...
+        $where = array(
+            'jalur' => 'gdr1'
+        );
+        $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+        $this->load->view('baak/header');
+        $this->load->view('baak/data_sudah_validasi_gd',$data);
+        $this->load->view('baak/footer');
+    }
+     public function data_sudah_daful_gdtf()
+    {
+        # code...
+        $where = array(
+            'jalur' => 'gdr2'
+        );
+        $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+        $this->load->view('baak/header');
+        $this->load->view('baak/data_sudah_validasi_gd',$data);
+        $this->load->view('baak/footer');
+    }
     // function validasi($id)
     // {
     //     # code...
