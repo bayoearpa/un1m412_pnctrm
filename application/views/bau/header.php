@@ -327,6 +327,28 @@
              ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where($where)->num_rows(); ?></span>
             </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+
+          <!-- daftar ulang -->
+        <div class="col-lg-3 col-xs-6">
+          <div class="box">
+            <div class="box-header with-border">
+              <h3 class="box-title">Daftar Ulang</h3>
+
+              <div class="box-tools pull-left">
+                <button type="button" class="btn btn-box-tool" data-widget="expand"><i class="fa fa-minus"></i>
+                </button>
+              </div>
+              <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body" style="">
+              Total
+              <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_all('tbl_catar_daful_2024')->num_rows(); ?><sup style="font-size: 20px"></span>
+            </div>
             <div class="box-body" style="">
             <a href="<?php echo base_url() ?>bau/data_sudah_daful_reg">Daftar Ulang (Reguler)</a>
                <?php 
