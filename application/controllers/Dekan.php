@@ -12,7 +12,7 @@ class Dekan extends CI_Controller {
 		$this->load->model('m_registrasi');
         $this->load->helper('url');
 	}
-		 function prodi($id){
+	  function prodi($id){
         switch ($id) {
 
             // registrasi
@@ -40,6 +40,12 @@ class Dekan extends CI_Controller {
                 case '8':
                     $pick = "S1 PERDAGANGAN INTERNASIONAL";
                 break;
+                case '9':
+                    $pick = "D4 MPLM";
+                break;
+                case '10':
+                    $pick = "S1 BISNIS DIGITAL";
+                break;
                 
             }
             return $pick;
@@ -53,7 +59,7 @@ class Dekan extends CI_Controller {
         $where = array(
 			'gelombang' => $gelombang,			       
         );
-		$data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
+		$data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2024')->result();
 		foreach ($data['catar'] as $row)
 		{
         $prodi = $row->prodi;
