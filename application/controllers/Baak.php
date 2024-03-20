@@ -138,13 +138,14 @@ class Baak extends CI_Controller {
         $this->load->view('baak/data_sudah_validasi_gd',$data);
         $this->load->view('baak/footer');
     }
-     public function data_sudah_daful_reg()
+      public function data_sudah_daful_reg()
     {
         # code...
         $where = array(
-            'jalur' => 'reguler'
+            'tbl_catar_2024.jalur' => 'reguler',
+            'tbl_catar_daful_2024.aktif' => '1'  
         );
-        $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+        $data['catar'] = $this->m_registrasi->get_data_sudah_daful($where)->result();
         $this->load->view('baak/header');
         $this->load->view('baak/data_sudah_validasi_gd',$data);
         $this->load->view('baak/footer');
@@ -153,9 +154,10 @@ class Baak extends CI_Controller {
     {
         # code...
         $where = array(
-            'jalur' => 'kelastransfer'
+            'tbl_catar_2024.jalur' => 'kelastransfer',
+            'tbl_catar_daful_2024.aktif' => '1'  
         );
-        $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+        $data['catar'] = $this->m_registrasi->get_data_sudah_daful($where)->result();
         $this->load->view('baak/header');
         $this->load->view('baak/data_sudah_validasi_gd',$data);
         $this->load->view('baak/footer');
@@ -164,9 +166,10 @@ class Baak extends CI_Controller {
     {
         # code...
         $where = array(
-            'jalur' => 'gdr1'
+            'tbl_catar_2024.jalur' => 'gdr1',
+            'tbl_catar_daful_2024.aktif' => '1'  
         );
-        $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+        $data['catar'] = $this->m_registrasi->get_data_sudah_daful($where)->result();
         $this->load->view('baak/header');
         $this->load->view('baak/data_sudah_validasi_gd',$data);
         $this->load->view('baak/footer');
@@ -175,9 +178,10 @@ class Baak extends CI_Controller {
     {
         # code...
         $where = array(
-            'jalur' => 'gdr2'
+            'tbl_catar_2024.jalur' => 'gdr2',
+            'tbl_catar_daful_2024.aktif' => '1'  
         );
-        $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+        $data['catar'] = $this->m_registrasi->get_data_sudah_daful($where)->result();
         $this->load->view('baak/header');
         $this->load->view('baak/data_sudah_validasi_gd',$data);
         $this->load->view('baak/footer');
