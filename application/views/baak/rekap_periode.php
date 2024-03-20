@@ -18,12 +18,13 @@
                     <option value="1">D3 Ketatalaksanaan Pelayaran Niaga dan Kepelabuhanan</option>
                     <option value="2">D3 Teknika</option>
                     <option value="3">D3 Nautika</option>
-                    <option value="4">S1 Trasnportasi</option>
-                    <option value="5">S1 Trasnportasi (Lintas Jalur)</option> 
+                    <option value="4">S1 Transportasi</option>
+                    <option value="5">S1 Teknik Transportasi Laut</option>
                     <option value="6">S1 Teknik Mesin</option>
-                    <option value="7">S1 Teknik Transportasi Laut</option>
-                    <option value="8">S1 Teknik Keselamatan</option>
-                    <option value="9">S1 Perdagangan Internasional</option>
+                    <option value="7">S1 Teknik Keselamatan</option>
+                    <option value="8">S1 Perdagangan Internasional</option>
+                    <option value="9">D4 Manajemen Pelabuhan dan Logistik Maritim</option>
+                    <option value="10">S1 Bisnis Digital</option>
                     <option value="99">*Semua Program Studi*</option>                        
                     </select> 
                     </div>

@@ -130,6 +130,32 @@
                       </div>
                     <!-- /.info-box -->
                   </div>
+                   <!-- MPLM -->
+                   <div class="col-md-3 col-sm-6 col-xs-12">
+                      <div class="info-box">
+                        <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
+
+                        <div class="info-box-content">
+                          <span class="info-box-text">MPLM</span>
+                          <span class="info-box-number"><?php echo $tot_catar9; ?></span>
+                        </div>
+                        <!-- /.info-box-content -->
+                      </div>
+                    <!-- /.info-box -->
+                  </div>
+                  <!-- Bisnis Digital -->
+                   <div class="col-md-3 col-sm-6 col-xs-12">
+                      <div class="info-box">
+                        <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
+
+                        <div class="info-box-content">
+                          <span class="info-box-text">B. Digital</span>
+                          <span class="info-box-number"><?php echo $tot_catar10; ?></span>
+                        </div>
+                        <!-- /.info-box-content -->
+                      </div>
+                    <!-- /.info-box -->
+                  </div>
 
                 <?php }else{  ?>
               <div class="col-md-3 col-sm-6 col-xs-12">
@@ -158,7 +184,7 @@
                   <th>Nama</th>
                   <th>Tempat Lahir</th>
                   <th>Tanggal Lahir</th>
-                  <th>Nama Ibu</th>
+                  <th>Alamat</th>
                   <th>Telp</th>
                   <th>Prodi</th>
                   <th>Validasi</th>
@@ -175,7 +201,7 @@
                   <td><?php echo $c->nama ?></td>
                   <td><?php echo $c->tl ?></td>
                   <td><?php echo $c->tgl_l ?></td>
-                  <td><?php echo $c->nama_i?></td>
+                  <td><?php echo $c->alamat?></td>
                   <td><?php echo $c->telp  ?></td>
                   <td>
                     <?php 
@@ -206,6 +232,12 @@
                       case '8':
                         $pick = "S1 PERDAGANGAN INTERNASIONAL";
                       break;
+                       case '9':
+                        $pick = "D4 MPLM";
+                      break;
+                       case '10':
+                        $pick = "S1 BISNIS DIGITAL";
+                      break;
                         
                       }
                       echo $pick;
@@ -218,7 +250,7 @@
                   'no' => $c->no,
                   'aktif' => "1"       
                   );
-                  $cek=$this->m_registrasi->get_data($where,'tbl_catar_validasi_2022')->row();
+                  $cek=$this->m_registrasi->get_data($where,'tbl_catar_validasi_2024')->row();
                    ?>
                   <?php 
                   if ($cek > "0"){ ?>
@@ -237,7 +269,7 @@
                   <th>Nama</th>
                   <th>Tempat Lahir</th>
                   <th>Tanggal Lahir</th>
-                  <th>Nama Ibu</th>
+                  <th>Alamat</th>
                   <th>Telp</th>
                   <th>Prodi</th>
                   <th>Validasi</th>

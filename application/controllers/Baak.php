@@ -394,39 +394,47 @@ class Baak extends CI_Controller {
              # code...
 
         $where= array(
-            'tbl_catar_2023.periode' => $periode,  
+            'tbl_catar_2024.periode' => $periode,  
         );
         $where1= array(
-            'tbl_catar_2023.prodi' => "1",
-            'tbl_catar_2023.periode' => $periode,  
+            'tbl_catar_2024.prodi' => "1",
+            'tbl_catar_2024.periode' => $periode,  
         );
         $where2= array(
-            'tbl_catar_2023.prodi' => "2",
-            'tbl_catar_2023.periode' => $periode,  
+            'tbl_catar_2024.prodi' => "2",
+            'tbl_catar_2024.periode' => $periode,  
         );
         $where3= array(
-            'tbl_catar_2023.prodi' => "3",
-            'tbl_catar_2023.periode' => $periode,  
+            'tbl_catar_2024.prodi' => "3",
+            'tbl_catar_2024.periode' => $periode,  
         );
         $where4= array(
-            'tbl_catar_2023.prodi' => "4",
-            'tbl_catar_2023.periode' => $periode,  
+            'tbl_catar_2024.prodi' => "4",
+            'tbl_catar_2024.periode' => $periode,  
         );
         $where5= array(
-            'tbl_catar_2023.prodi' => "5",
-            'tbl_catar_2023.periode' => $periode,  
+            'tbl_catar_2024.prodi' => "5",
+            'tbl_catar_2024.periode' => $periode,  
         );
         $where6= array(
-            'tbl_catar_2023.prodi' => "6",
-            'tbl_catar_2023.periode' => $periode,  
+            'tbl_catar_2024.prodi' => "6",
+            'tbl_catar_2024.periode' => $periode,  
         );
         $where7= array(
-            'tbl_catar_2023.prodi' => "7",
-            'tbl_catar_2023.periode' => $periode,  
+            'tbl_catar_2024.prodi' => "7",
+            'tbl_catar_2024.periode' => $periode,  
         );
         $where8= array(
-            'tbl_catar_2023.prodi' => "8",
-            'tbl_catar_2023.periode' => $periode,  
+            'tbl_catar_2024.prodi' => "8",
+            'tbl_catar_2024.periode' => $periode,  
+        );
+         $where9= array(
+            'tbl_catar_2024.prodi' => "9",
+            'tbl_catar_2024.periode' => $periode,  
+        );
+          $where10= array(
+            'tbl_catar_2024.prodi' => "10",
+            'tbl_catar_2024.periode' => $periode,  
         );
 
 
@@ -441,6 +449,8 @@ class Baak extends CI_Controller {
         $data['tot_catar6'] = $this->m_registrasi->get_data_join_where($where6)->num_rows();
         $data['tot_catar7'] = $this->m_registrasi->get_data_join_where($where7)->num_rows();
         $data['tot_catar8'] = $this->m_registrasi->get_data_join_where($where8)->num_rows();
+        $data['tot_catar9'] = $this->m_registrasi->get_data_join_where($where9)->num_rows();
+        $data['tot_catar10'] = $this->m_registrasi->get_data_join_where($where10)->num_rows();
 
         // get nama prodi
         $data['prodi'] = "Semua Program Studi";
@@ -452,8 +462,8 @@ class Baak extends CI_Controller {
         $this->load->view('baak/footer');
          }else{
         $where= array(
-            'tbl_catar_2023.prodi' => $prodi,
-            'tbl_catar_2023.periode' => $periode,  
+            'tbl_catar_2024.prodi' => $prodi,
+            'tbl_catar_2024.periode' => $periode,  
         );
         $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
         //get total
