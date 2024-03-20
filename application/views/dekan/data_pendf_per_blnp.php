@@ -76,7 +76,7 @@
                   'no' => $c->no,
                   'aktif' => "1"       
                   );
-                  $cek=$this->m_registrasi->get_data($where,'tbl_catar_validasi_2022')->row();
+                  $cek=$this->m_registrasi->get_data($where,'tbl_catar_validasi_2024')->row();
                    ?>
                   <?php 
                   if ($cek > "0"){ ?>

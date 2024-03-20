@@ -86,11 +86,117 @@ class Dekan extends CI_Controller {
             'gelombang' => $gelombang,
             'prodi'     => $prodi,                 
         );
-        $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2022')->result();
+        $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2024')->result();
         $this->load->view('dekan/header');
         $this->load->view('dekan/data_pendf_per_bln');
         $this->load->view('dekan/data_pendf_per_blnp',$data);
         $this->load->view('dekan/footer');
+    }
+       ///////////////////////////////////////////////////////summary 2024///////////////////////////////////////////
+     public function getnamaprovinsi_2024($id)
+    {
+        # code...
+        $where = array('id_wil' => $id);
+        $get = $this->m_registrasi->get_data($where,'tbl_propinsi')->result();
+        foreach ($get as $key) {
+            # code...
+            $nama = $key->nm_wil;
+        }
+        return $nama;
+    }
+      public function getnamakabkota_2024($id)
+    {
+        # code...
+        $where = array('id_wil' => $id);
+        $get = $this->m_registrasi->get_data($where,'tbl_kabkota')->result();
+        foreach ($get as $key) {
+            # code...
+            $nama = $key->nm_wil;
+        }
+        return $nama;
+    }
+     public function get_summary_kabkota_2024()
+    {
+        # code...
+        $data['bau'] = $this;
+        $data['stat'] = $this->m_registrasi->get_data_statistic_kabkota_2024()->result();
+
+        $this->load->view('bau/header');
+        $this->load->view('bau/summary_2024_kabkota',$data);
+        $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
+
+    }
+     public function get_summary_prov_2024()
+    {
+        # code...
+        $data['bau'] = $this;
+        $data['stat'] = $this->m_registrasi->get_data_statistic_prov_2024()->result();
+
+        $this->load->view('bau/header');
+        $this->load->view('bau/summary_2024_prov',$data);
+        $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
+
+    }
+     public function get_summary_sekolah_2024()
+    {
+        # code...
+        $data['bau'] = $this;
+
+         //get sma
+        $w_d3 = array('tbl_catar_2024.kategori_sek' => 'D3');
+        $data['stat_d3'] = $this->m_registrasi->get_data_statistic_sekolah_2024($w_d3)->result();
+
+        //get sma
+        $w_sma = array('tbl_catar_2024.kategori_sek' => 'SMA');
+        $data['stat_sma'] = $this->m_registrasi->get_data_statistic_sekolah_2024($w_sma)->result();
+
+        //get smk
+        $w_smk = array('tbl_catar_2024.kategori_sek' => 'SMK');
+        $data['stat_smk'] = $this->m_registrasi->get_data_statistic_sekolah_2024($w_smk)->result();
+
+        //get ma
+        $w_ma = array('tbl_catar_2024.kategori_sek' => 'MA');
+        $data['stat_ma'] = $this->m_registrasi->get_data_statistic_sekolah_2024($w_ma)->result();
+
+        $this->load->view('bau/header');
+        $this->load->view('bau/summary_2024_sekolah',$data);
+        $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
+
+    }
+
+     public function get_summary_sumber_2024_send($sumber)
+    {
+        # code...
+        $where = array('informasi' => $sumber);
+        // get data all
+        $data= $this->m_registrasi->get_data_statistic_sumber_all_2024()->result();
+        foreach ($data as $key) {
+            # code...
+            $all = $key->informasi;
+        }
+        //get data where
+        $data2= $this->m_registrasi->get_data_statistic_sumber_where_2024($where)->result();
+        foreach ($data2 as $key) {
+            # code...
+            $whr = $key->informasi;
+        }
+        $send = ($whr/$all)*100;
+        return $send;
+
+    }
+    public function get_summary_sumber_2024()
+    {
+        # code...
+        $data['bau'] = $this;
+        $this->load->view('bau/header');
+        $this->load->view('bau/summary_2024_sumber',$data);
+        $this->load->view('bau/footer');
+        $this->load->view('bau/footer_js');
+        $this->load->view('bau/summary_2024_sumber_js',$data);
+
     }
             ///////////////////////////////////////////////////////summary 2023///////////////////////////////////////////
      public function getnamaprovinsi_2023($id)
