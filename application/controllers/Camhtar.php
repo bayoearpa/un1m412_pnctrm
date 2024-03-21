@@ -269,6 +269,10 @@ class Camhtar extends CI_Controller {
 	{
 		# code...
 		$no = $this->session->userdata('no');
+		$where = array(
+				'no' => $no,
+			);
+		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2024')->result();
 		$this->load->view('camahatar/header',$data);
         $this->load->view('camahatar/home');
         $this->load->view('camahatar/footer');
