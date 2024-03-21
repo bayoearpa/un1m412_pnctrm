@@ -25,6 +25,8 @@
               </div>
             </li>
             <!-- END timeline item -->
+<!-------------------------------------------------------- cek bioadata -->
+            <?php if ($nik == null) { ?>
             <!-- timeline item -->
             <li>
               <i class="fa fa-close bg-red"></i>
@@ -41,6 +43,19 @@
               </div>
             </li>
             <!-- END timeline item -->
+            <?php }else{ ?>
+              <!-- timeline item -->
+            <li>
+              <i class="fa fa-check bg-green"></i>
+              <div class="timeline-item">
+                <h3 class="timeline-header"><b>Biodata</b></h3>
+              </div>
+            </li>
+            <!-- END timeline item -->
+            <?php } ?>
+<!-------------------------------------------------------- .cek bioadata -->
+<!-------------------------------------------------------- cek pembayaran -->
+            <?php if ($validasi == null) { ?>
              <!-- timeline item -->
             <li>
               <i class="fa fa-close bg-red"></i>
@@ -57,6 +72,18 @@
               </div>
             </li>
             <!-- END timeline item -->
+          <?php }else{ ?>
+             <!-- timeline item -->
+            <li>
+              <i class="fa fa-check bg-green"></i>
+              <div class="timeline-item">
+                <h3 class="timeline-header"><b>Pembayaran</b></h3>
+              </div>
+            </li>
+            <!-- END timeline item -->
+          <?php } ?>
+<!-------------------------------------------------------- cek seleksi -->
+            <?php if ($hs == null) { ?>
              <!-- timeline item -->
             <li>
               <i class="fa fa-close bg-red"></i>
@@ -73,6 +100,19 @@
               </div>
             </li>
             <!-- END timeline item -->
+          <?php }else{ ?>
+             <!-- timeline item -->
+            <li>
+              <i class="fa fa-check bg-green"></i>
+              <div class="timeline-item">
+                <h3 class="timeline-header"><b>Seleksi</b></h3>
+              </div>
+            </li>
+            <!-- END timeline item -->
+          <?php } ?>
+<!-------------------------------------------------------- .cek seleksi -->
+<!-------------------------------------------------------- cek ukur pakaian -->
+          <?php if ($ukur == null) { ?>
              <!-- timeline item -->
             <li>
               <i class="fa fa-close bg-red"></i>
@@ -89,6 +129,19 @@
               </div>
             </li>
             <!-- END timeline item -->
+             <?php }else{ ?>
+             <!-- timeline item -->
+            <li>
+              <i class="fa fa-check bg-green"></i>
+              <div class="timeline-item">
+                <h3 class="timeline-header"><b>Ukur Pakaian</b></h3>
+              </div>
+            </li>
+            <!-- END timeline item -->
+          <?php } ?>
+<!-------------------------------------------------------- .cek ukur pakaian -->
+<!-------------------------------------------------------- cek Daftar ulang -->
+            <?php if ($daful == null) { ?>
              <!-- timeline item -->
             <li>
               <i class="fa fa-close bg-red"></i>
@@ -105,6 +158,17 @@
               </div>
             </li>
             <!-- END timeline item -->
+             <?php }else{ ?>
+             <!-- timeline item -->
+            <li>
+              <i class="fa fa-check bg-green"></i>
+              <div class="timeline-item">
+                <h3 class="timeline-header"><b>Daftar Ulang</b></h3>
+              </div>
+            </li>
+            <!-- END timeline item -->
+          <?php } ?>
+<!-------------------------------------------------------- .cek Daftar ulang -->
            
            
            

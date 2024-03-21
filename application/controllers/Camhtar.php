@@ -272,6 +272,24 @@ class Camhtar extends CI_Controller {
 		$where = array(
 				'no' => $no,
 			);
+		
+		foreach ($data['catar'] as $key) {
+			# code...
+			//cek biodata
+			$data['nik'] = $key->nik;
+		}
+		//cek pembayaran
+		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2024')->num_rows();
+
+		//cek seleksi
+		$data['hs'] = $this->m_registrasi->get_data($where, 'tbl_catar_hasil_seleksi_2024')->num_rows();
+
+		//cek ukur pakaian
+		$data['ukur'] = $this->m_registrasi->get_data($where, 'tbl_ukurpakaian')->num_rows();
+
+		//cek Daftar Ulang
+		$data['daful'] = $this->m_registrasi->get_data($where, 'tbl_catar_daful_2024')->num_rows();
+
 		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2024')->result();
 		$this->load->view('camahatar/header',$data);
         $this->load->view('camahatar/home');
