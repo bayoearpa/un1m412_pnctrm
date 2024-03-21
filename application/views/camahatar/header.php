@@ -141,6 +141,7 @@
           <li><a href="<?php echo base_url() ?>daftarulang"><i class="fa fa-external-link"></i><span>Daftar Ulang</span></a></li>
 
          <?php }else{ ?>
+          <li><a href="#"><i class="fa fa-user"></i><span>Home</span></a></li>
           <li><a href="<?php echo base_url() ?>biodata"><i class="fa fa-user"></i><span>Biodata</span></a></li>
           <li><a href="<?php echo base_url() ?>pembayaran"><i class="fa fa-money"></i><span>Pembayaran</span></a></li>
            <?php 
