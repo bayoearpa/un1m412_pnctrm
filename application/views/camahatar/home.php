@@ -27,20 +27,16 @@
             <!-- END timeline item -->
             <!-- timeline item -->
             <li>
-              <i class="fa fa-comments bg-yellow"></i>
+              <i class="fa fa-close bg-red"></i>
 
               <div class="timeline-item">
-                <span class="time"><i class="fa fa-clock-o"></i> 27 mins ago</span>
-
-                <h3 class="timeline-header"><a href="#">Jay White</a> commented on your post</h3>
+                <h3 class="timeline-header">Biodata</h3>
 
                 <div class="timeline-body">
-                  Take me to your leader!
-                  Switzerland is small and neutral!
-                  We are more like Germany, ambitious and misunderstood!
+                  Anda Harus Mengisi Biodata Terlebih Dahulu untuk melanjutkan ke Proses Berikutnya!
                 </div>
                 <div class="timeline-footer">
-                  <a class="btn btn-warning btn-flat btn-xs">View comment</a>
+                  <a class="btn btn-warning btn-flat btn-xs">Klik Untuk Mengakses Halaman</a>
                 </div>
               </div>
             </li>
