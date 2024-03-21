@@ -270,7 +270,7 @@ class Camhtar extends CI_Controller {
 		# code...
 		$no = $this->session->userdata('no');
 		$this->load->view('camahatar/header',$data);
-        $this->load->view('camahatar/home',$data);
+        $this->load->view('camahatar/home');
         $this->load->view('camahatar/footer');
 	}
 	public function biodata()
