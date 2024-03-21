@@ -17,7 +17,7 @@
            
             <!-- timeline item -->
             <li>
-              <i class="fa fa-user bg-aqua"></i>
+              <i class="fa fa-check bg-green"></i>
 
               <div class="timeline-item">
 
