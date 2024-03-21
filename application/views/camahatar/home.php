@@ -21,7 +21,7 @@
 
               <div class="timeline-item">
 
-                <h3 class="timeline-header no-border">Daftar Akun SiPMB</h3>
+                <h3 class="timeline-header no-border"><b>Daftar Akun SiPMB</b></h3>
               </div>
             </li>
             <!-- END timeline item -->
@@ -30,13 +30,77 @@
               <i class="fa fa-close bg-red"></i>
 
               <div class="timeline-item">
-                <h3 class="timeline-header">Biodata</h3>
+                <h3 class="timeline-header"><b>Biodata</b></h3>
 
                 <div class="timeline-body">
                   Anda Harus Mengisi Biodata Terlebih Dahulu untuk melanjutkan ke Proses Berikutnya!
                 </div>
                 <div class="timeline-footer">
-                  <a class="btn btn-warning btn-flat btn-xs">Klik Untuk Mengakses Halaman</a>
+                  <a class="btn btn-primary btn-flat btn-xs">Klik Untuk Mengakses Halaman isi Biodata</a>
+                </div>
+              </div>
+            </li>
+            <!-- END timeline item -->
+             <!-- timeline item -->
+            <li>
+              <i class="fa fa-close bg-red"></i>
+
+              <div class="timeline-item">
+                <h3 class="timeline-header"><b>Pembayaran</b></h3>
+
+                <div class="timeline-body">
+                  Anda Harus melakukan Pembayaran Terlebih Dahulu dan sudah divaliadsi bagian Keuangan UNIMAR AMNI Semarang untuk melanjutkan ke Proses Berikutnya!
+                </div>
+                <div class="timeline-footer">
+                  <a class="btn btn-primary btn-flat btn-xs">Klik Untuk Mengakses Halaman Pembayaran</a>
+                </div>
+              </div>
+            </li>
+            <!-- END timeline item -->
+             <!-- timeline item -->
+            <li>
+              <i class="fa fa-close bg-red"></i>
+
+              <div class="timeline-item">
+                <h3 class="timeline-header"><b>Seleksi</b></h3>
+
+                <div class="timeline-body">
+                  Anda Harus melakukan Seleksi Terlebih dahulu dan <b>LULUS</b> seleksi untuk melanjutkan ke Proses Berikutnya!
+                </div>
+                <div class="timeline-footer">
+                  <a class="btn btn-primary btn-flat btn-xs">Klik Untuk Mengakses Halaman Seleksi</a>
+                </div>
+              </div>
+            </li>
+            <!-- END timeline item -->
+             <!-- timeline item -->
+            <li>
+              <i class="fa fa-close bg-red"></i>
+
+              <div class="timeline-item">
+                <h3 class="timeline-header"><b>Ukur Pakaian</b></h3>
+
+                <div class="timeline-body">
+                  Anda Harus mengisi Form Ukur Pakaian untuk melanjutkan ke Proses Berikutnya!
+                </div>
+                <div class="timeline-footer">
+                  <a class="btn btn-primary btn-flat btn-xs">Klik Untuk Mengakses Halaman Ukur Pakaian</a>
+                </div>
+              </div>
+            </li>
+            <!-- END timeline item -->
+             <!-- timeline item -->
+            <li>
+              <i class="fa fa-close bg-red"></i>
+
+              <div class="timeline-item">
+                <h3 class="timeline-header"><b>Daftar Ulang</b></h3>
+
+                <div class="timeline-body">
+                  Anda Harus mengisi Form Daftar Ulang Sebagai Proses Akhir Anda diterima di UNIMAR AMNI Semarang. Proses Daftar Ulang dinyatakan Selesai Jika Sudah divalidasi Pihak Keuangan!
+                </div>
+                <div class="timeline-footer">
+                  <a class="btn btn-primary btn-flat btn-xs">Klik Untuk Mengakses Halaman Daftar Ulang</a>
                 </div>
               </div>
             </li>
