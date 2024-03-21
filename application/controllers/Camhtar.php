@@ -265,6 +265,14 @@ class Camhtar extends CI_Controller {
 			return $p->prodi;
 		}
 	}
+	public function home()
+	{
+		# code...
+		$no = $this->session->userdata('no');
+		$this->load->view('camahatar/header',$data);
+        $this->load->view('camahatar/biodata',$data);
+        $this->load->view('camahatar/footer');
+	}
 	public function biodata()
 	{
 		# code...
