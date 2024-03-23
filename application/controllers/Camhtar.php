@@ -269,6 +269,7 @@ class Camhtar extends CI_Controller {
 	{
 		# code...
 		$no = $this->session->userdata('no');
+		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2024')->result();
 		$where = array(
 				'no' => $no,
 			);
@@ -290,7 +291,7 @@ class Camhtar extends CI_Controller {
 		//cek Daftar Ulang
 		$data['daful'] = $this->m_registrasi->get_data($where, 'tbl_catar_daful_2024')->num_rows();
 
-		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2024')->result();
+		
 		$this->load->view('camahatar/header',$data);
         $this->load->view('camahatar/home',$data);
         $this->load->view('camahatar/footer');
