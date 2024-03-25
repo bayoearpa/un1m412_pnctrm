@@ -27,10 +27,10 @@
                 <tr>
                   <td><?php echo $no++; ?></td>
                   <td><?php echo $r->nama ?></td>
-                  <td><?php echo $c->ref ?></td>
-                  <td><?php echo $c->aktif ?></td>
+                  <td><?php echo $r->ref ?></td>
+                  <td><?php echo $r->aktif ?></td>
                   <td>
-                      <button type="button" name="submit" id="editseleksigdr1" class="btn editseleksigdr1 btn-primary"  data-no="<?php echo $c->no; ?>">Lihat</button>
+                      <button type="button" name="submit" id="editseleksigdr1" class="btn editseleksigdr1 btn-primary"  data-no="<?php echo $r->id_ref; ?>">Lihat</button>
                    </td>
                 </tr>
                <?php } ?>
