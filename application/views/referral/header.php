@@ -65,7 +65,7 @@
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="<?php echo base_url() ?>assets/front1/img/amni-png.png" class="user-image" alt="User Image">
-              <span class="hidden-xs"><?php echo $this->session->userdata('nama'); ?></span>
+              <span class="hidden-xs"><?php echo $this->session->userdata('name'); ?></span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
