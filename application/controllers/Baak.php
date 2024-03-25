@@ -2644,6 +2644,15 @@ class Baak extends CI_Controller {
         $this->load->view('baak/footer');
         $this->load->view('baak/referral_js');
     }
+      public function getdataeditreferral($no)
+    {
+        # code...
+        // Ambil data berdasarkan ID dari model Anda
+        $data = $this->m_registrasi->get_data_edit_ref($no); // Gantilah 'get_data_by_id' dengan metode yang sesuai dalam model Anda
+
+        // Konversi data ke format JSON dan kirimkan ke view
+        echo json_encode($data);
+    }
     ///////////////////////////////////////////////////////summary 2024///////////////////////////////////////////
      public function getnamaprovinsi_2024($id)
     {
