@@ -8,7 +8,7 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-            <?php if ($nik == null) {
+            <?php if ($hs == null) {
               # code... ?>
               <div class="alert alert-danger alert-dismissible">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>

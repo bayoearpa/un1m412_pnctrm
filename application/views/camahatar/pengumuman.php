@@ -15,7 +15,7 @@
                     <h4><i class="icon fa fa-warning"></i> Maaf!</h4>
                     Silakan mengisi form biodata terlebih dahulu untuk dapat mengakses halaman ini. terima kasih.
                 </div>
-            <?php }else if ($validasi == null) { 
+            <?php }else if ($hs == null) { 
               # code... ?>
                 <div class="alert alert-danger alert-dismissible">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
@@ -25,9 +25,14 @@
 
            <?php }else{ ?>
                 <?php  foreach ($catar as $c) { ?>
-                  <div class="box-body"><h4>Berdasarkan hasil keputusan Panitia Penerimaan Mahasiswa dan Taruna UNIMAR AMNI Semarang Tahun Akademik 2024/2025, ditetapkan bahwa peserta seleksi Penerimaan Mahatar Baru (PMB) sebagaimana tersebut dalam lampiran <b>dinyatakan lulus </b>sebagai Calon Mahasiswa dan Taruna Universitas Maritim AMNI (UNIMAR AMNI) Semarang Tahun Akademik 2024/2025. untuk selengkapnya dapat kalian download dibawah ini :</h4>
+                  <?php if ($c->hasil == 'lulus'){ ?>
+                    <div class="box-body"><h4>Berdasarkan hasil keputusan Panitia Penerimaan Mahasiswa dan Taruna UNIMAR AMNI Semarang Tahun Akademik 2024/2025, ditetapkan bahwa peserta seleksi Penerimaan Mahatar Baru (PMB) sebagaimana tersebut dalam lampiran <b>dinyatakan lulus </b>sebagai Calon Mahasiswa dan Taruna Universitas Maritim AMNI (UNIMAR AMNI) Semarang Tahun Akademik 2024/2025. untuk selengkapnya dapat kalian download dibawah ini :</h4>
                    <a href="<?php echo base_url() ?>download_pengumuman_januari?>" target="__blank"><button type="button" class="btn btn-primary">Download Pengumuman Lulus Januari</button></a>
-                </div>
+                    </div>
+                  <?php }else{ ?>
+                   <div class="box-body"><h4>Berdasarkan hasil keputusan Panitia Penerimaan Mahasiswa dan Taruna UNIMAR AMNI Semarang Tahun Akademik 2024/2025, ditetapkan bahwa peserta seleksi Penerimaan Mahatar Baru (PMB) sebagaimana tersebut dalam lampiran <b>dinyatakan tidak lulus </b>sebagai Calon Mahasiswa dan Taruna Universitas Maritim AMNI (UNIMAR AMNI) Semarang Tahun Akademik 2024/2025. untuk selengkapnya dapat kalian download dibawah ini :</h4>
+                    </div>
+
                     <?php } ?>
             <?php } ?>
             </div>

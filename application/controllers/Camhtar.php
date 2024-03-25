@@ -269,7 +269,7 @@ class Camhtar extends CI_Controller {
 	{
 		# code...
 		$no = $this->session->userdata('no');
-		
+
 		$where = array(
 				'no' => $no,
 			);
@@ -373,8 +373,8 @@ class Camhtar extends CI_Controller {
 		$prodi2 = $this->input->post('prodi2');
 		$gelombang = $this->input->post('gelombang');
 		$jalur = $this->input->post('jalur');
-		$ref_radio = $this->input->post('ref_radio');
-		$ref = $this->input->post('ref');
+		// $ref_radio = $this->input->post('ref_radio');
+		$ref = strtolower($this->input->post('ref'));
 		$thn_pel="2024";
 		$periode=date('n');
  		$id_tgl_seleksi = $this->getTglSelAktif();
@@ -451,6 +451,7 @@ class Camhtar extends CI_Controller {
 					'periode' => $periode,
 					// 'ijasah' => $nmfile1,
 					// 'sk' => $nmfile2,
+					'ref' => $ref,
 					'thn_pel' => $thn_pel,
 					'bb' => $bb,
 					'tb' => $tb,
@@ -887,6 +888,8 @@ class Camhtar extends CI_Controller {
 			# code...
 			$data['nik'] = $key->nik;
 		}
+		//cek seleksi
+		$data['hs'] = $this->m_registrasi->get_data($where, 'tbl_catar_hasil_seleksi_2024')->num_rows();
 		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2024')->num_rows();
 		$data['ukurpakaian'] = $this->m_registrasi->get_data($where, 'tbl_ukurpakaian')->num_rows();
 		// $data['ukurpakaian_data'] = $this->m_registrasi->get_data($where, 'tbl_ukurpakaian')->result();
@@ -1010,6 +1013,8 @@ class Camhtar extends CI_Controller {
 			# code...
 			$data['nik'] = $key->nik;
 		}
+				//cek seleksi
+		$data['hs'] = $this->m_registrasi->get_data($where, 'tbl_catar_hasil_seleksi_2024')->num_rows();
 		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2024')->num_rows();
 
 		$this->load->view('camahatar/header',$data);
@@ -1050,6 +1055,13 @@ class Camhtar extends CI_Controller {
 			$programStudi = $key->prodi;
 		}
 		$data['prodi'] = $this->getProdi($programStudi);
+
+				//cek seleksi
+		$data['hs'] = $this->m_registrasi->get_data($where, 'tbl_catar_hasil_seleksi_2024')->result();
+		foreach ($data['hs'] as $key) {
+			# code...
+			$data['cek_lulus'] = $key->hasil;
+		}
 
 		$data['daful'] = $this->m_registrasi->get_data($where, 'tbl_catar_daful_2024')->num_rows();
 

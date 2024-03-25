@@ -141,7 +141,7 @@
           <li><a href="<?php echo base_url() ?>daftarulang"><i class="fa fa-external-link"></i><span>Daftar Ulang</span></a></li>
 
          <?php }else{ ?>
-          <li><a href="#"><i class="fa fa-home"></i><span>Home</span></a></li>
+          <li><a href="<?php echo base_url() ?>home"><i class="fa fa-home"></i><span>Home</span></a></li>
           <li><a href="#"><i class="fa fa-news"></i><span>Berita</span></a></li>
           <li><a href="<?php echo base_url() ?>biodata"><i class="fa fa-user"></i><span>Biodata</span></a></li>
           <li><a href="<?php echo base_url() ?>pembayaran"><i class="fa fa-money"></i><span>Pembayaran</span></a></li>
@@ -150,7 +150,7 @@
            ?>
           <li><a href="<?php echo base_url($seleksiPage) ?>"><i class="fa fa-users"></i><span>Seleksi</span></a></li>
           <li><a href="<?php echo base_url() ?>ukurpakaian"><i class="fa fa-check"></i><span>Ukur Pakaian</span></a></li>
-          <li><a href="<?php echo base_url() ?>pengumuman"><i class="fa fa-info-circle"></i><span>Pengumuman</span></a></li>
+          <li><a href="<?php echo base_url() ?>pengumuman"><i class="fa fa-info-circle"></i><span>Pengumuman Lulus</span></a></li>
           <li><a href="<?php echo base_url() ?>daftarulang"><i class="fa fa-external-link"></i><span>Daftar Ulang</span></a></li>
           <?php } ?>
       </ul>
