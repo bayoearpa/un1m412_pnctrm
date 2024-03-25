@@ -78,6 +78,10 @@ class Baak extends CI_Controller {
             }
             return $pick;
     }
+     function logout(){
+        $this->session->sess_destroy();
+        redirect(base_url().'administrasi?pesan=logout');
+    }
     function index() {
         // $data['catar'] = $this->m_registrasi->get_data_join_all()->result(); 
         // $data['catar'] = $this->m_registrasi->get_data_all('tbl_catar_2021')->result(); 

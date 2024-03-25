@@ -134,6 +134,7 @@ $route['proses_bukti_bayar_daful'] = 'camhtar/upload_bukti_bayar_daful';
 // referral
 $route['referral_access'] = 'referral/login';
 $route['referral_home'] = 'referral/home';
+$route['referral_logout'] = 'referral/logout';
 
 // $route['cetakRegistrasi'] = 'welcome/insertReg';
 // $route['cetakRegistrasi2'] = 'welcome/insertReg2';
