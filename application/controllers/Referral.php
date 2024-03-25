@@ -56,7 +56,7 @@ class Referral extends CI_Controller {
 	}
 	 function logout(){
 		$this->session->sess_destroy();
-		redirect(base_url().'administrasi?pesan=logout');
+		redirect(base_url().'referral?pesan=logout');
 	}
 	public function home() {
         $where2= array(
