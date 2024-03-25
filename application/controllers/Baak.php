@@ -2638,10 +2638,7 @@ class Baak extends CI_Controller {
     public function referral()
     {
         # code...
-         $where = array(
-            'jalur' => 'reguler'
-        );
-        $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+        $data['ref'] = $this->m_registrasi->get_data_all('tbl_ref')->result();
         $this->load->view('baak/header');
         $this->load->view('baak/seleksi',$data);
         $this->load->view('baak/footer');

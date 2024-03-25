@@ -14,69 +14,21 @@
                 <tr>
                   <th>No.</th>
                   <th>Nama</th>
-                  <th>No. Pendf.</th>
-                  <th>L/P</th>
-                  <th>No. Telp/Hp</th>
-                  <th>Prodi</th>
+                  <th>Referral</th>
+                  <th>Status</th>
                   <th>Lihat</th>
                 </tr>
                 </thead>
                 <tbody>
                 <?php 
                 $no = 1;
-                foreach($catar as $c){ 
-                  $no_pendf = $c->no;
+                foreach($ref as $r){ 
                  ?>
                 <tr>
                   <td><?php echo $no++; ?></td>
-                  <td><?php $text1= strtolower($c->nama);echo ucwords($text1) ?></td>
-                  <td><?php echo $c->no ?></td>
-                  <td><?php if ($c->jk == "Pria") {
-                      # code...
-                      echo "L";
-                    }else{
-                      echo "P";
-                    } ?></td>
-                  <td><?php echo $c->telp ?></td>
-                  <td><?php 
-                    switch ($c->prodi) {
-
-                      // registrasi
-                       case '1':
-                        $pick = "D3 KETATALAKSANAAN PELAYARAN NIAGA DAN KEPELABUHAN";
-                      break;
-                      case '2' :
-                        $pick = "D3 TEKNIKA";
-                      break;
-                      case '3' :
-                        $pick = "D3 NAUTIKA";
-                      break;
-                      case '4' :
-                        $pick = "S1 TRANSPORTASI";
-                      break;
-                      case '5':
-                        $pick = "S1 TEKNIK TRANSPORTASI LAUT";
-                      break;
-                      case '6':
-                        $pick = "S1 TEKNIK MESIN";
-                      break;
-                      case '7':
-                        $pick = "S1 TEKNIK KESELAMATAN";
-                      break;
-                      case '8':
-                        $pick = "S1 PERDAGANGAN INTERNASIONAL";
-                      break;
-                      case '9':
-                        $pick = "D4 MPLM";
-                      break;
-                      case '10':
-                        $pick = "S1 BISNIS DIGITAL";
-                      break;
-                        
-                      }
-                      echo $pick;
-                    
-                  ?></td>
+                  <td><?php echo $r->nama ?></td>
+                  <td><?php echo $c->ref ?></td>
+                  <td><?php echo $c->aktif ?></td>
                   <td>
                       <button type="button" name="submit" id="editseleksigdr1" class="btn editseleksigdr1 btn-primary"  data-no="<?php echo $c->no; ?>">Lihat</button>
                    </td>
@@ -87,10 +39,8 @@
                 <tr>
                   <th>No.</th>
                   <th>Nama</th>
-                  <th>No. Pendf.</th>
-                  <th>L/P</th>
-                  <th>No. Telp/Hp</th>
-                  <th>Prodi</th>
+                  <th>Referral</th>
+                  <th>Status</th>
                   <th>Lihat</th>
                 </tr>
                 </tfoot>
