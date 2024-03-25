@@ -30,7 +30,7 @@
                   <td><?php echo $r->ref ?></td>
                   <td><?php echo $r->aktif ?></td>
                   <td>
-                      <button type="button" name="submit" id="editref" class="btn editref btn-primary"  data-no="<?php echo $r->id_ref; ?>">Edit</button>
+                      <button type="button" name="submit" id="editref" class="btn editref btn-primary"  data-id_ref="<?php echo $r->id_ref; ?>">Edit</button>
                    </td>
                 </tr>
                <?php } ?>
