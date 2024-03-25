@@ -2628,7 +2628,21 @@ class Baak extends CI_Controller {
     }
 
     ////////////////////////////////////////// .seleksi 2024 /////////////////////////////////////////////////////
+    ///////////////////////////////////////// Referral 2024 /////////////////////////////////////////////////////
 
+    ///////////////////////////////////////// .Referral 2024 /////////////////////////////////////////////////////
+    public function referral()
+    {
+        # code...
+         $where = array(
+            'jalur' => 'reguler'
+        );
+        $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+        $this->load->view('baak/header');
+        $this->load->view('baak/seleksi',$data);
+        $this->load->view('baak/footer');
+        $this->load->view('baak/seleksi_js');
+    }
     ///////////////////////////////////////////////////////summary 2024///////////////////////////////////////////
      public function getnamaprovinsi_2024($id)
     {
