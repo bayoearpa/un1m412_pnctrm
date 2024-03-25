@@ -339,8 +339,7 @@
             'tbl_catar_2024.prodi' => '5',
             'tbl_catar_2024.gelombang' => $gelombang,
             'tbl_catar_validasi_2024.aktif' => '1',
-            'tbl_catar_2024.ref' => $ref_code,
-            'tbl_catar_2024.kelas' => 'reg'      
+            'tbl_catar_2024.ref' => $ref_code,      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
