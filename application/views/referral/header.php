@@ -64,13 +64,13 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="<?php echo base_url() ?>assets/front1/img/amni1.png" class="user-image" alt="User Image">
+              <img src="<?php echo base_url() ?>assets/front1/img/amni-png.png" class="user-image" alt="User Image">
               <span class="hidden-xs"><?php echo $this->session->userdata('nama'); ?></span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="<?php echo base_url() ?>assets/front1/img/amni1.png" class="img-circle" alt="User Image">
+                <img src="<?php echo base_url() ?>assets/front1/img/amni-png.png" class="img-circle" alt="User Image">
 
                 <p>
                   <?php echo $this->session->userdata('nama'); ?>
@@ -302,6 +302,7 @@
               <!-- /.box-tools -->
             </div>
             <!-- /.box-header -->
+            
             <div class="box-body" style="">
               Reguler
               <?php 
@@ -309,7 +310,20 @@
             'tbl_catar_2024.prodi' => '4',
             'tbl_catar_2024.gelombang' => $gelombang,
             'tbl_catar_validasi_2024.aktif' => '1',
-            'tbl_catar_2024.ref' => $ref_code,     
+            'tbl_catar_2024.ref' => $ref_code,
+            'tbl_catar_2024.jalur' => 'reguler'     
+            ); ?>
+              <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
+            </div>
+            <div class="box-body" style="">
+              Kelas Transfer
+              <?php 
+            $where = array(
+            'tbl_catar_2024.prodi' => '4',
+            'tbl_catar_2024.gelombang' => $gelombang,
+            'tbl_catar_validasi_2024.aktif' => '1',
+            'tbl_catar_2024.ref' => $ref_code,
+            'tbl_catar_2024.jalur' => 'kelastransfer'     
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
