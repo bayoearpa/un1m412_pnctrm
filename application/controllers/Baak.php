@@ -2640,9 +2640,9 @@ class Baak extends CI_Controller {
         # code...
         $data['ref'] = $this->m_registrasi->get_data_all('tbl_ref')->result();
         $this->load->view('baak/header');
-        $this->load->view('baak/seleksi',$data);
+        $this->load->view('baak/referral',$data);
         $this->load->view('baak/footer');
-        $this->load->view('baak/seleksi_js');
+        $this->load->view('baak/referral_js');
     }
     ///////////////////////////////////////////////////////summary 2024///////////////////////////////////////////
      public function getnamaprovinsi_2024($id)
