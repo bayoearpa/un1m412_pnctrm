@@ -609,7 +609,7 @@ class Camhtar extends CI_Controller {
 	public function down_suket()
 	{
 		# code...
-		force_download('assets/download/surat_keterangan_siswa.docx',NULL);
+		force_download('assets/download/surat_keterangan_siswa2.docx',NULL);
 		redirect(base_url());
 	}
 	public function down_supersehat()
@@ -621,7 +621,7 @@ class Camhtar extends CI_Controller {
 	public function down_supersehatreg()
 	{
 		# code...
-		force_download('assets/download/surat_pernyataan_sehat_reg.docx',NULL);
+		force_download('assets/download/surat_pernyataan_sehat_reg.pdf',NULL);
 		redirect(base_url());
 	}
 	public function seleksigdr1()
