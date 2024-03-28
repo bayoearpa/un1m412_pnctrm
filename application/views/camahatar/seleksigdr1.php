@@ -64,7 +64,7 @@
                   </div>
                   <div class="form-group">
                   <label for="exampleInputEmail1">Surat pernyataan dan riwayat kesehatan</label>
-                  <input type="text" class="form-control" id="file_supersehat" name="file_supersehat" placeholder="File Surat pernyataan dan riwayat kesehatan">
+                  <input type="file" class="form-control" id="file_supersehat" name="file_supersehat" placeholder="File Surat pernyataan dan riwayat kesehatan">
                   </div>
                 
                
@@ -104,11 +104,11 @@
                                       <input type="hidden" name="id_link" id="id_link" value="<?php //echo $this->session->userdata('id_link'); ?>">
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">Link File KTP</label>
-                                      <input type="text" class="form-control" id="link_ktp" name="link_ktp" placeholder="Masukan Link File KTP">
+                                      <input type="text" class="form-control" id="file_ktp" name="file_ktp" placeholder="Masukan Link File KTP">
                                       </div>
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">Link File Ijasah atau surat keterangan dari sekolah (jika belum lulus)</label>
-                                      <input type="text" class="form-control" id="link_ijasah" name="link_ijasah" placeholder="Link File Ijasah atau surat keterangan dari sekolah (jika belum lulus)">
+                                      <input type="text" class="form-control" id="file_ijasah" name="file_ijasah" placeholder="Link File Ijasah atau surat keterangan dari sekolah (jika belum lulus)">
                                       </div>
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">Link File Transkip nilai atau rapor semster 1-5 (jika belum lulus)</label>
@@ -120,7 +120,7 @@
                                       </div>
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">Surat pernyataan dan riwayat kesehatan</label>
-                                      <input type="text" class="form-control" id="link_supersehat" name="link_supersehat" placeholder="Link File Surat pernyataan dan riwayat kesehatan">
+                                      <input type="file" class="form-control" id="file_supersehat" name="file_supersehat" placeholder="Link File Surat pernyataan dan riwayat kesehatan">
                                       </div>
                                      
                                       
