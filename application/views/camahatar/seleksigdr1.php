@@ -44,11 +44,11 @@
                  <form action="<?php echo base_url() ?>proses_seleksi_gelombangdini_reguler" name="form1" id="form1" method="post" enctype="multipart/form-data">
                   <input type="hidden" name="no" id="no" value="<?php echo $this->session->userdata('no'); ?>">
                   <div class="form-group">
-                  <label for="exampleInputEmail1">Link File KTP</label>
+                  <label for="exampleInputEmail1">File KTP</label>
                   <input type="file" class="form-control" id="file_ktp" name="file_ktp" placeholder="Masukan File KTP">
                   </div>
                   <div class="form-group">
-                  <label for="exampleInputEmail1">Link File Ijasah atau surat keterangan dari sekolah (jika belum lulus)</label>
+                  <label for="exampleInputEmail1">File Ijasah atau surat keterangan dari sekolah (jika belum lulus)</label>
                   <input type="file" class="form-control" id="file_ijasah" name="file_ijasah" placeholder="File Ijasah atau surat keterangan dari sekolah (jika belum lulus)">
                   </div>
                   <div class="form-group">
