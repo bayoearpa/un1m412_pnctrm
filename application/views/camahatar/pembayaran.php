@@ -58,10 +58,10 @@
                   # code... 
                   ?>
                     <p align="center">Untuk Pembayaran dapat di Transfer ke Bank BNI dengan nomor rekening <b>0838810730 an. UNIMAR AMNI</b> biaya yang harus anda bayar sebesar:</p>
-                    <h2 align="center">Rp. 450.000,-</h2>
+                    <h2 align="center">Rp. 500.000,-</h2>
                 <?php }else{ ?>
                     <p align="center">Untuk Pembayaran dapat di Transfer ke Bank BNI dengan nomor rekening <b>0838810730 an. UNIMAR AMNI</b> biaya yang harus anda bayar sebesar:</p>
-                    <h2 align="center">Rp. 750.000,-</h2>
+                    <h2 align="center">Rp. 800.000,-</h2>
                <?php } ?>
                
                <div class="form-group">
