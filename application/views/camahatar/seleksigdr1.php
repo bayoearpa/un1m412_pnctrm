@@ -53,14 +53,14 @@
                   </div>
                   <div class="form-group">
                   <label for="exampleInputEmail1">Rata-Rata Nilai Kelas 10</label>
-                  <input type="text" class="form-control" id="" name="" placeholder="Rata-Rata Nilai Semster 1">
-                  <input type="text" class="form-control" id="" name="" placeholder="Rata-Rata Nilai Semster 2">
+                  <input type="text" class="form-control" id="n101" name="n101" placeholder="Rata-Rata Nilai Semster 1">
+                  <input type="text" class="form-control" id="n102" name="n102" placeholder="Rata-Rata Nilai Semster 2">
                   <label for="exampleInputEmail1">Rata-Rata Nilai Kelas 11</label>
-                  <input type="text" class="form-control" id="" name="" placeholder="Rata-Rata Nilai Semster 1">
-                  <input type="text" class="form-control" id="" name="" placeholder="Rata-Rata Nilai Semster 2">
+                  <input type="text" class="form-control" id="n111" name="n111" placeholder="Rata-Rata Nilai Semster 1">
+                  <input type="text" class="form-control" id="n112" name="n112" placeholder="Rata-Rata Nilai Semster 2">
                   <label for="exampleInputEmail1">Rata-Rata Nilai Kelas 12</label>
-                  <input type="text" class="form-control" id="" name="" placeholder="Rata-Rata Nilai Semster 1">
-                  <input type="text" class="form-control" id="" name="" placeholder="Rata-Rata Nilai Semster 2">
+                  <input type="text" class="form-control" id="n121" name="n121" placeholder="Rata-Rata Nilai Semster 1">
+                  <input type="text" class="form-control" id="n122" name="n122" placeholder="Rata-Rata Nilai Semster 2">
                   </div>
                   <div class="form-group">
                   <label for="exampleInputEmail1">Surat pernyataan dan riwayat kesehatan</label>
