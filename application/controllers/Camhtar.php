@@ -798,21 +798,18 @@ class Camhtar extends CI_Controller {
     $config_ktp['upload_path']          = './assets/upload/2024/upload_seleksi_ktp';
     $config_ktp['allowed_types']        = 'pdf'; // Sesuaikan dengan jenis file yang diperbolehkan
     $config_ktp['max_size']             = 1048; // Ukuran maksimum file (dalam kilobyte)
-    $config_ktp['encrypt_name']         = TRUE; // Untuk mengenkripsi nama file
     $config_ktp['file_name']            = $no.'_ktp';
 
     // Konfigurasi upload file untuk file surat keterangan
     $config_suket['upload_path']        = './assets/upload/2024/upload_seleksi_suket';
     $config_suket['allowed_types']      = 'pdf';
     $config_suket['max_size']           = 1048;
-    $config_suket['encrypt_name']       = TRUE;
     $config_suket['file_name']          = $no.'_suket';
 
     // Konfigurasi upload file untuk file hasil pemeriksaan kesehatan
     $config_supersehat['upload_path']   = './assets/upload/2024/upload_seleksi_supersehat';
     $config_supersehat['allowed_types'] = 'pdf';
     $config_supersehat['max_size']      = 1048;
-    $config_supersehat['encrypt_name']  = TRUE;
     $config_supersehat['file_name']     = $no.'_supersehat';
 
     // Load library upload dengan konfigurasi yang sesuai untuk masing-masing jenis file
