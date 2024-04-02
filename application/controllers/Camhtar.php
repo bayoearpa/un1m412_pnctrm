@@ -791,6 +791,65 @@ class Camhtar extends CI_Controller {
 
 	    // Jika Anda memiliki lebih banyak jenis file yang diupload, lakukan hal yang sama untuk konfigurasi upload dan proses uploadnya
 	}
+	public function proses_seleksi_reguler() {
+        // Konfigurasi upload file untuk file KTP
+        $config_ktp['upload_path']          = './assets/upload/2024/upload_seleksi_ktp';
+        $config_ktp['allowed_types']        = 'pdf'; // Sesuaikan dengan jenis file yang diperbolehkan
+        $config_ktp['max_size']             = 2048; // Ukuran maksimum file (dalam kilobyte)
+        $config_ktp['encrypt_name']         = TRUE; // Untuk mengenkripsi nama file
+
+        // Konfigurasi upload file untuk file surat keterangan
+        $config_suket['upload_path']        = './assets/upload/2024/upload_seleksi_suket';
+        $config_suket['allowed_types']      = 'pdf';
+        $config_suket['max_size']           = 2048;
+        $config_suket['encrypt_name']       = TRUE;
+
+        // Konfigurasi upload file untuk file hasil pemeriksaan kesehatan
+        $config_supersehat['upload_path']   = './assets/upload/2024/upload_seleksi_supersehat';
+        $config_supersehat['allowed_types'] = 'pdf';
+        $config_supersehat['max_size']      = 2048;
+        $config_supersehat['encrypt_name']  = TRUE;
+
+        // Load library upload dengan konfigurasi yang sesuai untuk masing-masing jenis file
+        $this->load->library('upload', $config_ktp);
+        $this->load->library('upload', $config_suket);
+        $this->load->library('upload', $config_supersehat);
+
+        // Lakukan upload file untuk masing-masing jenis file
+        if ($this->upload->do_upload('file_ktp') &&
+            $this->upload->do_upload('file_suket') &&
+            $this->upload->do_upload('file_supersehat')) {
+
+            // Tangkap data dari form
+            $data = array(
+                'no' => $this->input->post('no'),
+                'file_ktp' => $this->upload->data('file_name'),
+                'file_suket' => $this->upload->data('file_name'),
+                'n101' => $this->input->post('n101'),
+                'n102' => $this->input->post('n102'),
+                'n111' => $this->input->post('n111'),
+                'n112' => $this->input->post('n112'),
+                'n121' => $this->input->post('n121'),
+                'n122' => $this->input->post('n122'),
+                'file_supersehat' => $this->upload->data('file_name')
+            );
+
+            // Panggil fungsi model untuk tambah data
+            $result = $this->m_registrasi->input_data($data, 'tbl_seleksi_20242');
+
+            if ($result) {
+                // Jika berhasil tambah data, tampilkan pesan sukses
+                echo "Data berhasil ditambahkan.";
+            } else {
+                // Jika gagal tambah data, tampilkan pesan error
+                echo "Gagal menambahkan data.";
+            }
+        } else {
+            // Jika gagal upload file, tampilkan pesan error
+            $error = array('error' => $this->upload->display_errors());
+            print_r($error);
+        }
+    }
 
 	public function proses_seleksi_gdr1()
 	{
