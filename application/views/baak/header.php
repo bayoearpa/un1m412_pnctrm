@@ -297,7 +297,7 @@
               );
               $gelombang=$this->m_registrasi->get_data_gelombang($where2);
             $where = array(
-            'tbl_catar_2024.gelombang' => $gelombang,
+            // 'tbl_catar_2024.gelombang' => $gelombang,
             'tbl_catar_2024.jalur' => 'reguler',
             'tbl_catar_validasi_2024.aktif' => '1'      
             );
