@@ -864,10 +864,10 @@ class Camhtar extends CI_Controller {
 
     if ($result) {
         // Jika berhasil tambah data, tampilkan pesan sukses
-        echo "Data berhasil ditambahkan.";
+        redirect("seleksi_reguler?pesan=success");
     } else {
         // Jika gagal tambah data, tampilkan pesan error
-        echo "Gagal menambahkan data.";
+       redirect("seleksi_reguler?pesan=error");
     }
 }
 
