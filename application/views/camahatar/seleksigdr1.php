@@ -49,7 +49,7 @@
                   </div>
                   <div class="form-group">
                   <label for="exampleInputEmail1">File Ijasah atau surat keterangan dari sekolah (jika belum lulus)</label>
-                  <input type="file" class="form-control" id="file_ijasah" name="file_ijasah" placeholder="File Ijasah atau surat keterangan dari sekolah (jika belum lulus)">
+                  <input type="file" class="form-control" id="file_suket" name="file_suket" placeholder="File Ijasah atau surat keterangan dari sekolah (jika belum lulus)">
                   </div>
                   <div class="form-group">
                   <label for="exampleInputEmail1">Rata-Rata Nilai Kelas 10</label>
