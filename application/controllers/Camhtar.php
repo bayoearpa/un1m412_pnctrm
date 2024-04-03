@@ -609,7 +609,7 @@ class Camhtar extends CI_Controller {
 	public function down_suket()
 	{
 		# code...
-		force_download('assets/download/surat_keterangan_siswa2.docx',NULL);
+		force_download('assets/download/surat_keterangan_siswa2.pdf',NULL);
 		redirect(base_url());
 	}
 	public function down_supersehat()
@@ -860,11 +860,12 @@ class Camhtar extends CI_Controller {
     $result = $this->m_registrasi->input_data($data, 'tbl_seleksi_20242');
 
     if ($result) {
-        // Jika berhasil tambah data, tampilkan pesan sukses
-        redirect("seleksi_reguler?pesan=success");
-    } else {
-        // Jika gagal tambah data, tampilkan pesan error
+		// Jika gagal tambah data, tampilkan pesan error
        redirect("seleksi_reguler?pesan=error");
+    } else {
+
+       // Jika berhasil tambah data, tampilkan pesan sukses
+        redirect("seleksi_reguler?pesan=success");
     }
 }
 
