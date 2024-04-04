@@ -9,7 +9,7 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-               <button type="button" name="submit" id="tambahref" class="btn tambahref btn-primary">Tambah Data Referral</button>
+               <button type="button" name="tambahref" id="tambahref" class="btn tambahref btn-primary">Tambah Data Referral</button>
               <table id="example4" class="table table-bordered table-striped">
                 <thead>
                 <tr>
