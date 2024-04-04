@@ -8,6 +8,12 @@
             "order": [[0, "asc"]]
         });
 
+          // Ketika tombol Tambah Data Referral diklik
+        $("#tambahref").click(function(){
+          // Tampilkan modal
+          $("#tambahFormModall").modal();
+        });
+
          $('#example4').on('click', '.editref', function() {
         var id_ref = $(this).data('id_ref');
         // Ambil data yang akan diedit dari server dengan AJAX

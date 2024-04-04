@@ -78,8 +78,8 @@
          <!-- <center><img src="<?php //echo base_url() ?>assets/front1/img/poster2.jpeg" width="100%"></center> -->
          <!-- <center><img src="<?php //echo base_url() ?>assets/front1/img/feed.jpg" width="100%"></center> -->
           </div>
-            <p class="lead">UNIMAR AMNI Semarang adalah sebuah Perguruan Tinggi yang diselenggarakan oleh masyrakat yang mengembangkan studi di bidang maritim dan transpor. Awalnya bernama “AMNI” ( Akademi Maritim Nasional Indonesia ) yang didirikan pada tanggal 9 September 1963. Sejalan dengan perkembangan kebutuhan dibidang  maritim dan transpor, maka pada tanggal 17 April 2007 , AMNI mengembangkan diri menjadi  Sekolah  Tinggi Maritim dan Transpor “ AMNI “ ( UNIMAR “ AMNI “) Semarang, sesuai dengan SK Mendiknas No. 53/D/O/2007.</p>
-             <p class="lead">UNIMAR AMNI Semarang bersertifikat ISO 9001:2015, semua Program Studi Terakreditasi Badan Akreditasi Nasional Perguruan Tinggi ( BAN PT ) Direktorat Jendral Pendidikan Tinggi dan Approval Direktorat Jendral Perhubungan Laut / Internasional Maritime Organization ( IMO ), dengan Program Studi:</p>
+            <p class="lead">UNIMAR AMNI Semarang adalah sebuah Perguruan Tinggi yang diselenggarakan oleh masyarakat yang mengembangkan studi di bidang maritim dan transpor. Awalnya bernama “AMNI” ( Akademi Maritim Nasional Indonesia ) yang didirikan pada tanggal 9 September 1963. Sejalan dengan perkembangan kebutuhan dibidang  maritim dan transpor, maka pada tanggal 17 April 2007 , AMNI mengembangkan diri menjadi  Sekolah  Tinggi Maritim dan Transpor “ AMNI “ ( UNIMAR “ AMNI “) Semarang, sesuai dengan SK Mendiknas No. 53/D/O/2007.</p>
+             <p class="lead">UNIMAR AMNI Semarang bersertifikat ISO 9001:2015, semua Program Studi Terakreditasi Badan Akreditasi Nasional Perguruan Tinggi ( BAN PT ) Direktorat Jenderal Pendidikan Tinggi dan Approval Direktorat Jenderal Perhubungan Laut / Internasional Maritime Organization ( IMO ), dengan Program Studi:</p>
              <ul>
                <li class="lead">D3 Ketatalaksanaan Pelayaran Niaga dan Kepelabuhan.</li>
                <li class="lead">D3 Nautika + Profesi ANT III (Deck Officer Class III).</li>
@@ -90,8 +90,9 @@
                <li class="lead">S1 Teknik Keselamatan.</li>
                <li class="lead">S1 Teknik Perdagangan Internasional.</li>
                <li class="lead">D4 Manajemen Pelabuhan dan Logistik Maritim.</li>
+               <li class="lead">S1 Bisnis Digital.</li>
              </ul>
-              <p class="lead">Sampai saat ini jumlah lulusan UNIMAR AMNI Semarang tersebar di instansi Pemerintahan maupun swasta, baik dalam maupun luar negeri sudah lebih dari 10.000 alumni. Pemerintah Lulusan UNIMAR AMNI Semarang terus meningkat, dibuktikan dengan kunjungan rutin instansi Pemerintah ataupun perusahan ke UNIMAR AMNI Semarang guna perekrutan kelulusan.</p>
+              <p class="lead">Sampai saat ini jumlah lulusan UNIMAR AMNI Semarang tersebar di instansi Pemerintahan maupun swasta, baik dalam maupun luar negeri sudah lebih dari 10.000 alumni. Permintaan Lulusan UNIMAR AMNI Semarang terus meningkat, dibuktikan dengan kunjungan rutin instansi Pemerintah ataupun perusahan ke UNIMAR AMNI Semarang guna perekrutan kelulusan.</p>
 
               <h4 class="lead"><b>VISI :</b></h4>
               <p class="lead">Menjadi pusat Pendidikan dan Pengembangan ilmu yang berorientasi kemaritiman, unggul dan berdaya saing.

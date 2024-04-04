@@ -9,6 +9,7 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
+               <button type="button" name="submit" id="tambahref" class="btn tambahref btn-primary">Tambah Data Referral</button>
               <table id="example4" class="table table-bordered table-striped">
                 <thead>
                 <tr>
@@ -56,6 +57,73 @@
     </section>
     <!-- /.content -->
 
+
+  <!-- ////////////////// modal-->
+                          <div class="modal fade" id="tambahFormModal" tabindex="-1" role="dialog" aria-labelledby="tambahFormModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title" id="tambahFormModalLabel">Lihat form Seleksi</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                  </button>
+                              </div>
+                              <div class="modal-body">
+                                  <!-- Isi formulir di sini -->
+                                  <form action="<?php echo base_url() ?>proses_reftambah" name="form1" id="form1" method="post" enctype="multipart/form-data">
+                                      <!-- ... (Formulir seperti yang Anda berikan) ... -->
+                                      <!-- <input type="hidden" name="id_ref" id="id_ref"> -->
+                                      <div class="form-group">
+                                      <label for="exampleInputEmail1">Nama :</label><p></p>
+                                      <input type="text" class="form-control" name="nama" id="nama">
+                                      </div>
+                                      <div class="form-group">
+                                      <label for="exampleInputEmail1">Alamat :</label><p></p>
+                                       <textarea class="form-control" rows="3" id="alamat" name="alamat"></textarea>
+                                      </div>
+                                      <div class="form-group">
+                                      <label for="exampleInputEmail1">No. telp/Hp :</label><p></p>
+                                      <input type="text" class="form-control" name="no_telp" id="no_telp">
+                                      </div>
+                                      <div class="form-group">
+                                      <label for="exampleInputEmail1">Referral :</label>
+                                      <p></p>
+                                       <input type="text" class="form-control" name="referral" id="referral">
+                                      </div>
+                                       <div class="form-group">
+                                      <label for="exampleInputEmail1">Password :</label>
+                                      <p></p>
+                                       <input type="text" class="form-control" name="password" id="password">
+                                      </div>
+                                      <div class="form-group">
+                                      <label for="exampleInputEmail1">Status Aktif :</label>
+                                      <p></p>
+                                      <select class="form-control" name="aktif" id="aktif">
+                                        <option> </option>
+                                        <option value="aktif">Aktif</option>
+                                        <option value="nonaktif">Nonaktif</option>
+                                      </select>
+                                      </div>
+                                      <div class="form-group">
+                                      <label for="exampleInputEmail1">Tipe:</label>
+                                      <p></p>
+                                      <select class="form-control" name="tipe" id="tipe">
+                                        <option> </option>
+                                        <option value="umum">Umum</option>
+                                        <option value="bk">BK</option>
+                                        <option value="mahatar">Mahatar</option>
+                                        <option value="ikani">Ikani</option>
+                                      </select>
+                                      </div>  
+                                      <button type="submit" class="btn btn-primary">Simpan</button>
+                                  </form>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
     <!-- ////////////////// modal-->
                           <div class="modal fade" id="editFormModal" tabindex="-1" role="dialog" aria-labelledby="editFormModalLabel" aria-hidden="true">
                       <div class="modal-dialog" role="document">
