@@ -184,6 +184,12 @@
             <li><a href="<?php echo base_url() ?>baak/seleksi"><i class="fa fa-paperclip"></i>Seleksi</a></li>
           </ul>
         </li>
+        $no = $this->session->userdata('no');
+        <?php 
+
+        if ($no = $this->session->userdata('id_admin') == '18') {
+          # code...
+         ?>
          <li class="treeview">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Referral</span>
@@ -196,6 +202,7 @@
             <li><a href="<?php echo base_url() ?>baak/referral"><i class="fa fa-paperclip"></i>Data Pereferral</a></li>
           </ul>
         </li>
+      <?php } ?>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Summary 2024</span>
