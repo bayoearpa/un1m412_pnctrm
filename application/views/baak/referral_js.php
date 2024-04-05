@@ -11,7 +11,7 @@
           // Ketika tombol Tambah Data Referral diklik
         $("#tambahref").click(function(){
           // Tampilkan modal
-          $("#tambahFormModall").modal('show');
+          $("#tambahFormModal").modal('show');
         });
 
          $('#example4').on('click', '.editref', function() {
