@@ -82,7 +82,7 @@
                           <td>Anda Telah Mengisi Form Seleksi</td>
                           <td>
                              <div class="form-group" align="center">
-                             <button type="button" name="submit" id="editseleksigdr1" class="btn editseleksigdr1 btn-primary"  data-no="<?php echo $this->session->userdata('no'); ?>">Edit Form Seleksi</button>
+                             <!-- <button type="button" name="submit" id="editseleksigdr1" class="btn editseleksigdr1 btn-primary"  data-no="<?php //echo $this->session->userdata('no'); ?>">Edit Form Seleksi</button> -->
                             </div>
                           </td>
                         </tr>

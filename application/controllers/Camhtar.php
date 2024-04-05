@@ -637,7 +637,7 @@ class Camhtar extends CI_Controller {
 			$data['nik'] = $key->nik;
 		}
 		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2024')->num_rows();
-		$data['seleksi'] = $this->m_registrasi->get_data($where, 'tbl_seleksi_2024')->num_rows();
+		$data['seleksi'] = $this->m_registrasi->get_data($where, 'tbl_seleksi_20242')->num_rows();
 		$data['seleksi_data'] = $this->m_registrasi->get_data($where, 'tbl_seleksi_2024')->result();
 
 		$this->load->view('camahatar/header',$data);
