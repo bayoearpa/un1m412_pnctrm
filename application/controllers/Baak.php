@@ -78,7 +78,7 @@ class Baak extends CI_Controller {
             }
             return $pick;
     }
-     function logout(){
+    function logout(){
         $this->session->sess_destroy();
         redirect(base_url().'administrasi?pesan=logout');
     }
@@ -97,6 +97,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/index',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
     public function data_sudah_validasi()
     {
@@ -108,6 +109,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/data_sudah_validasi',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
      public function data_sudah_validasi_tf()
     {
@@ -119,6 +121,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/data_sudah_validasi',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
     public function data_sudah_validasi_gd()
     {
@@ -130,6 +133,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/data_sudah_validasi_gd',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
      public function data_sudah_validasi_gdtf()
     {
@@ -141,6 +145,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/data_sudah_validasi_gd',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
       public function data_sudah_daful_reg()
     {
@@ -153,6 +158,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/data_sudah_validasi_gd',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
      public function data_sudah_daful_tf()
     {
@@ -165,6 +171,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/data_sudah_validasi_gd',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
      public function data_sudah_daful_gd()
     {
@@ -177,6 +184,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/data_sudah_validasi_gd',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
      public function data_sudah_daful_gdtf()
     {
@@ -189,177 +197,85 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/data_sudah_validasi_gd',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
-    // function validasi($id)
-    // {
-    //     # code...
-    //     $where = array(
-    //         'no' => $id       
-    //     );
-    //     $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2021')->result();
-    //     $this->load->view('baak/header');
-    //     $this->load->view('baak/validasi',$data);
-    //     $this->load->view('baak/footer');
-    // }
-    // function validasia()
-    // {
-    //     # code...
-    //     $no = $this->input->post('no');
-    //     $gelombang = $this->input->post('gelombang');
-    //     $prodi = $this->input->post('prodi');
-    //     $jml_byr = "0";
-    //     $thn_pel=$this->input->post('thn_pel');
-
-    //     // $cekReg=$this->m_registrasi->get_data(array('prodi'=>$prodi,'gelombang'=>$gelombang),'tbl_catar_2021_validasi')->num_rows();
-    //     $this->db->select_max('no_reg');
-    //     $this->db->where(array('prodi'=>$prodi,'thn_pel'=>$thn_pel));
-    //     $cekReg = $this->db->get('tbl_catar_2021_validasi');
-    //         foreach($cekReg->result() as $row)
-    //     {
-    //         $selNoReg = $row->no_reg;
-    //     }
-
-    //     $no_reg=$selNoReg+1;
-    //     $aktif="1";
-        
-
-    //     $data = array(
-    //         'no' => $no,
-    //         'gelombang' => $gelombang,
-    //         'prodi' => $prodi,
-    //         'no_reg' => $no_reg,
-    //         'jml_byr' => $jml_byr,
-    //         'aktif' => $aktif,
-    //         'thn_pel' => $thn_pel
-    //         );
-
-    //     $this->m_registrasi->input_data($data,'tbl_catar_2021_validasi');
-    //     redirect("baak");
-
-    // }
- //    public function viewijasah($id)
-	// {
- //        $where = array(
- //            'no' => $id       
- //        );
- //        $d = $this->m_registrasi->get_data($where,'tbl_catar_2021')->row();
- //        # code...
- //        $filenya = ".assets/upload/".$d->ijasah;
- //        if (file_exists($filenya)) {
- //            # code...
- //            force_download('assets/upload/'.$d->ijasah,NULL);
- //        }else{
- //            redirect(base_url()."baak/validasi/".$id);
- //        }
-	// 	//redirect(base_url());
-	// }
- //     function pindahjurusan($id)
- //    {
- //        # code...
- //        $where = array(
- //            'no' => $id       
- //        );
- //        $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2021')->result();
- //        $data['validasi'] = $this->m_registrasi->get_data($where,'tbl_catar_2021_validasi')->result();
- //        $this->load->view('baak/header');
- //        $this->load->view('baak/pindahjurusan',$data);
- //        $this->load->view('baak/footer');
- //    }
- //    function pindahjurusanp()
- //    {
- //        # code...
- //        $no = $this->input->post('no');
- //        $val_id = $this->input->post('val_id');
- //        $prodi = $this->input->post('prodi');
- //        $where = array(
- //            'no' => $no
- //        );
- //        $where2 = array(
- //            'val_id' => $val_id
- //        );
- //        $data = array(
- //            'no' => $no,
- //            'prodi' => $prodi
- //        );
-
- //        $data2 = array(
- //            'prodi' => $prodi
- //        );
-
- //        $this->m_registrasi->update_data($where2,$data,'tbl_catar_2021_validasi');
- //        $this->m_registrasi->update_data($where,$data2,'tbl_catar_2021');       
- //        $this->session->set_flashdata('message', '<div class="alert alert-success alert-dismissible">
- //                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
- //                <h4><i class="icon fa fa-check"></i> Alert!</h4>
- //                Anda berhasil mengubah jurusan.
- //              </div>');
- //        redirect("baak");
- //    }
     function rekap(){
         $this->load->view('baak/header');
         $this->load->view('baak/rekap');
         $this->load->view('baak/rekap_exl');
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
-     function rekap_peserta(){
+    function rekap_peserta(){
         $this->load->view('baak/header');
         $this->load->view('baak/rekap_peserta');
         $this->load->view('baak/rekap_peserta_exl');
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
     function rekap_peserta2022(){
         $this->load->view('baak/header');
         $this->load->view('baak/rekap_peserta2022');
         $this->load->view('baak/rekap_peserta_exl2022');
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
-     function rekap_targas(){
+
+    function rekap_targas(){
         $this->load->view('baak/header');
         $this->load->view('baak/rekap_targas');
         $this->load->view('baak/rekap_targas_exl');
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
     function rekap_tkd(){
         $this->load->view('baak/header');
         $this->load->view('baak/rekap_tkd');
         $this->load->view('baak/rekap_tkd_exl');
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
     function rekap_psykotest(){
         $this->load->view('baak/header');
         $this->load->view('baak/rekap_psykotest');
         $this->load->view('baak/rekap_psykotest_exl');
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
     function rekap_pantukir(){
         $this->load->view('baak/header');
         $this->load->view('baak/rekap_pantukir');
         $this->load->view('baak/rekap_pantukir_exl');
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
     function rekap_seleksi(){
         $this->load->view('baak/header');
         $this->load->view('baak/rekap_seleksi');
         $this->load->view('baak/rekap_seleksi_exl');
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
     function rekap_kesehatan(){
         $this->load->view('baak/header');
         $this->load->view('baak/rekap_kesehatan');
         $this->load->view('baak/rekap_kesehatan_exl');
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
     function rekap_samapta(){
         $this->load->view('baak/header');
         $this->load->view('baak/rekap_samapta');
         $this->load->view('baak/rekap_samapta_exl');
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
     function rekap_wawancara(){
         $this->load->view('baak/header');
         $this->load->view('baak/rekap_wawancara');
         $this->load->view('baak/rekap_wawancara_exl');
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
     function rekap_daftarhadirdp2022(){
         $data['get_tgl_pel'] = $this->m_registrasi->get_data_tgl_seleksi()->result();
@@ -367,6 +283,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/rekap_daftar_hadir_pesertadp2022',$data);
         $this->load->view('baak/rekap_daftar_hadir_pesertadp2022_exl');
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
     function rekap_daftarhadirpmbrks2022(){
         $data['get_tgl_pel'] = $this->m_registrasi->get_data_tgl_seleksi()->result();
@@ -374,13 +291,15 @@ class Baak extends CI_Controller {
         $this->load->view('baak/rekap_daftar_hadir_pesertapmbrks2022',$data);
         $this->load->view('baak/rekap_daftar_hadir_pesertapmbrks2022_exl');
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
-     function rekap_daftarhadir2022(){
+    function rekap_daftarhadir2022(){
         $data['get_tgl_pel'] = $this->m_registrasi->get_data_tgl_seleksi()->result();
         $this->load->view('baak/header');
         $this->load->view('baak/rekap_daftar_hadir_peserta2022',$data);
         $this->load->view('baak/rekap_daftar_hadir_peserta2022_exl');
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
     ////////////////////////// per periode saga //////////////////////////////////
     function rekap_periode(){
@@ -388,6 +307,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/rekap_periode');
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
     function rekap_periodep(){
         $data['Baak'] = $this;
@@ -464,6 +384,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/rekap_periode');
         $this->load->view('baak/rekap_periodep',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
          }else{
         $where= array(
             'tbl_catar_2024.prodi' => $prodi,
@@ -480,6 +401,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/rekap_periode');
         $this->load->view('baak/rekap_periodep',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
         }
     }
     ////////////////////////// ./per periode saga //////////////////////////////////
@@ -519,7 +441,7 @@ class Baak extends CI_Controller {
         exit();
     
     }  
-     function rekap_pdf_daftarpeserta2022(){
+    function rekap_pdf_daftarpeserta2022(){
 
 
         $prodi = $this->input->post('prodi');
@@ -566,7 +488,7 @@ class Baak extends CI_Controller {
         }
 
     }  
-     function rekap_pdf_daftarhadirpeserta2022(){
+    function rekap_pdf_daftarhadirpeserta2022(){
 
 
         $prodi = $this->input->post('prodi');
@@ -625,7 +547,7 @@ class Baak extends CI_Controller {
         }
 
     }  
-     function rekap_pdf_daftarhadirpesertadp2022(){
+    function rekap_pdf_daftarhadirpesertadp2022(){
 
 
         $prodi = $this->input->post('prodi');
@@ -684,7 +606,7 @@ class Baak extends CI_Controller {
         }
 
     }  
-     function rekap_pdf_daftarhadirpesertapmbrks2022(){
+    function rekap_pdf_daftarhadirpesertapmbrks2022(){
 
 
         $prodi = $this->input->post('prodi');
@@ -780,7 +702,7 @@ class Baak extends CI_Controller {
         exit();
     
     }  
-     function rekap_pdf_targas(){
+    function rekap_pdf_targas(){
         $where2= array(
             'id_gelombang' => '1',  
         );
@@ -799,8 +721,8 @@ class Baak extends CI_Controller {
             'tbl_catar_2021.jk' => $jk
         );
         
- $jurusan = $this->jurusan($prodi);;
- $data['jurusan'] = $jurusan;
+         $jurusan = $this->jurusan($prodi);;
+         $data['jurusan'] = $jurusan;
         $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
         $data['prodi'] = $prodi;
         $data['jk'] = $jk;
@@ -819,7 +741,7 @@ class Baak extends CI_Controller {
         exit();
     
     }        
-     function rekap_pdf_tkd(){
+    function rekap_pdf_tkd(){
        $where2= array(
             'id_gelombang' => '1',  
         );
@@ -838,8 +760,8 @@ class Baak extends CI_Controller {
             'tbl_catar_2021.jk' => $jk
         );
         
- $jurusan = $this->jurusan($prodi);;
- $data['jurusan'] = $jurusan;
+         $jurusan = $this->jurusan($prodi);;
+         $data['jurusan'] = $jurusan;
         $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
         $data['prodi'] = $prodi;
         $data['jk'] = $jk;
@@ -857,7 +779,7 @@ class Baak extends CI_Controller {
         exit();
     
     }      
-     function rekap_pdf_psykotest(){
+    function rekap_pdf_psykotest(){
         $where2= array(
             'id_gelombang' => '1',  
         );
@@ -876,8 +798,8 @@ class Baak extends CI_Controller {
             'tbl_catar_2021.jk' => $jk
         );
         
- $jurusan = $this->jurusan($prodi);;
- $data['jurusan'] = $jurusan;
+         $jurusan = $this->jurusan($prodi);;
+         $data['jurusan'] = $jurusan;
         $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
         $data['prodi'] = $prodi;
         $data['jk'] = $jk;
@@ -1268,8 +1190,8 @@ class Baak extends CI_Controller {
             'tbl_catar_2021.jk' => $jk
         );
         
- $jurusan = $this->jurusan($prodi);;
- $data['jurusan'] = $jurusan;
+        $jurusan = $this->jurusan($prodi);;
+        $data['jurusan'] = $jurusan;
         $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
         $data['prodi'] = $prodi;
         $data['jk'] = $jk;
@@ -1614,6 +1536,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header_pmdk');
         $this->load->view('baak/tpmdk',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
      function pmdk_kpn() {
         $where2= array(
@@ -1628,6 +1551,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header_pmdk');
         $this->load->view('baak/pmdk_peserta',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
      function pmdk_nautika() {
         $where2= array(
@@ -1642,6 +1566,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header_pmdk');
         $this->load->view('baak/pmdk_peserta',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
      function pmdk_teknika() {
         $where2= array(
@@ -1656,6 +1581,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header_pmdk');
         $this->load->view('baak/pmdk_peserta',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
      function pmdk_manajemen() {
         $where2= array(
@@ -1670,6 +1596,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header_pmdk');
         $this->load->view('baak/pmdk_peserta',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
     function insert_pmdk()
     {
@@ -1754,6 +1681,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/epmdk',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
     function edit_pmdk()
     {
@@ -1844,60 +1772,70 @@ class Baak extends CI_Controller {
         $this->load->view('baak/rekap_pmdk');
         $this->load->view('baak/rekap_exl_pmdk');
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
      function rekap_peserta_pmdk(){
         $this->load->view('baak/header_pmdk');
         $this->load->view('baak/rekap_peserta_pmdk');
         $this->load->view('baak/rekap_peserta_exl_pmdk');
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
      function rekap_targas_pmdk(){
         $this->load->view('baak/header_pmdk');
         $this->load->view('baak/rekap_targas_pmdk');
         $this->load->view('baak/rekap_targas_exl_pmdk');
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
     function rekap_tkd_pmdk(){
         $this->load->view('baak/header_pmdk');
         $this->load->view('baak/rekap_tkd_pmdk');
         $this->load->view('baak/rekap_tkd_exl_pmdk');
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
     function rekap_psykotest_pmdk(){
         $this->load->view('baak/header_pmdk');
         $this->load->view('baak/rekap_psykotest_pmdk');
         $this->load->view('baak/rekap_psykotest_exl_pmdk');
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
     function rekap_pantukir_pmdk(){
         $this->load->view('baak/header_pmdk');
         $this->load->view('baak/rekap_pantukir_pmdk');
         $this->load->view('baak/rekap_pantukir_exl_pmdk');
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
     function rekap_seleksi_pmdk(){
         $this->load->view('baak/header_pmdk');
         $this->load->view('baak/rekap_seleksi_pmdk');
         $this->load->view('baak/rekap_seleksi_exl_pmdk');
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
     function rekap_kesehatan_pmdk(){
         $this->load->view('baak/header_pmdk');
         $this->load->view('baak/rekap_kesehatan_pmdk');
         $this->load->view('baak/rekap_kesehatan_exl_pmdk');
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
     function rekap_samapta_pmdk(){
         $this->load->view('baak/header_pmdk');
         $this->load->view('baak/rekap_samapta_pmdk');
         $this->load->view('baak/rekap_samapta_exl_pmdk');
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
     function rekap_wawancara_pmdk(){
         $this->load->view('baak/header_pmdk');
         $this->load->view('baak/rekap_wawancara_pmdk');
         $this->load->view('baak/rekap_wawancara_exl_pmdk');
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
     function rekap_pdf_daftarhadirpeserta_pmdk(){
         $where2= array(
@@ -2607,6 +2545,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/seleksigd',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
         $this->load->view('baak/seleksigd_js');
     }
      public function getdataeditseleksi($no)
@@ -2628,7 +2567,31 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/seleksi',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
         $this->load->view('baak/seleksi_js');
+    }
+    public function seleksi2()
+    {
+        # code...
+        // $data['catar'] = $this->m_registrasi->get_data_all('')->result();
+        $this->load->view('baak/header');
+        $this->load->view('baak/seleksi',$data);
+        $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
+        $this->load->view('baak/seleksi_js');
+    }
+     function prosesseleksi($id)
+    {
+        # code...
+        $where = array(
+            'tbl_catar_2024.no' => $id       
+        );
+        $data['catar'] = $this->m_registrasi->get_data_prosesseleksi2024($where)->result();
+
+        $this->load->view('baak/header');
+        $this->load->view('baak/prosesseleksi',$data);
+        $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
 
     ////////////////////////////////////////// .seleksi 2024 /////////////////////////////////////////////////////
@@ -2642,6 +2605,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/referral',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
         $this->load->view('baak/referral_js');
     }
       public function getdataeditreferral($no)
@@ -2653,6 +2617,17 @@ class Baak extends CI_Controller {
         // Konversi data ke format JSON dan kirimkan ke view
         echo json_encode($data);
     }
+    ///////////////////// notifikasi seleksi /////////////////////////////
+     public function getNotifikasi() {
+
+        $data['notifikasi'] = $this->m_registrasi->getNotifikasiseleksi();
+         // Ubah hasil ke format JSON
+        $json_data = json_encode($data['notifikasi']);
+
+        // Tampilkan data JSON
+        echo $json_data;
+    }
+    ///////////////////// .notifikasi pembayaran ////////////////////////////
     ///////////////////////////////////////////////////////summary 2024///////////////////////////////////////////
      public function getnamaprovinsi_2024($id)
     {
@@ -2685,6 +2660,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/summary_2024_kabkota',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
 
     }
      public function get_summary_prov_2024()
@@ -2696,6 +2672,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/summary_2024_prov',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
 
     }
      public function get_summary_sekolah_2024()
@@ -2722,6 +2699,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/summary_2024_sekolah',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
 
     }
 
@@ -2752,6 +2730,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/summary_2024_sumber',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
         $this->load->view('baak/summary_2024_sumber_js',$data);
 
     }
@@ -2787,6 +2766,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/summary_2023_kabkota',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
 
     }
      public function get_summary_prov_2023()
@@ -2798,6 +2778,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/summary_2023_prov',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
 
     }
      public function get_summary_sekolah_2023()
@@ -2824,6 +2805,7 @@ class Baak extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/summary_2023_sekolah',$data);
         $this->load->view('bau/footer');
+        $this->load->view('baak/footer_js');
 
     }
 
@@ -2854,6 +2836,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/summary_2023_sumber',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
         $this->load->view('baak/summary_2023_sumber_js',$data);
 
     }
@@ -2890,6 +2873,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/summary_2022_kabkota',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
 
     }
      public function get_summary_prov_2022()
@@ -2901,6 +2885,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/summary_2022_prov',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
 
     }
      public function get_summary_sekolah_2022()
@@ -2927,6 +2912,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/summary_2022_sekolah',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
 
     }
 
@@ -2957,6 +2943,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/summary_2022_sumber',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
         $this->load->view('baak/summary_2022_sumber_js',$data);
 
     }
@@ -2982,6 +2969,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/summary_2021_prov',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
 
     }
     public function get_summary_prov_detail_2021($id)
@@ -2992,6 +2980,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/summary_2021_detail_prov',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
     }
     public function get_summary_ktkb_2021()
     {
@@ -3002,6 +2991,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/summary_2021_ktkb',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
 
     }
     public function get_summary_sekolah_2021()
@@ -3023,6 +3013,7 @@ class Baak extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/summary_2021_sekolah',$data);
         $this->load->view('bau/footer');
+        $this->load->view('baak/footer_js');
 
     }
     public function get_summary_sumber_2021_send($sumber)
@@ -3052,6 +3043,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/summary_2021_sumber',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
         $this->load->view('baak/summary_2021_sumber_js',$data);
 
     }
@@ -3076,6 +3068,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/summary_2020_sekolah',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
 
     }
      public function get_summary_sumber_2020_send($sumber)
@@ -3105,6 +3098,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/header');
         $this->load->view('baak/summary_2020_sumber',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
         $this->load->view('baak/summary_2020_sumber_js',$data);
 
     }

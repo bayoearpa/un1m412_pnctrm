@@ -60,6 +60,24 @@
 
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
+
+           <!-- start notif -->
+             <li class="dropdown notifications-menu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                      <i class="fa fa-bell-o"></i>
+                      <span class="label label-warning" id="jumlah-notifikasi">0</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li class="header">You have <span id="jumlah-notifikasi-menu">0</span> notifications</li>
+                      <li>
+                          <ul class="menu" id="notifikasi-menu">
+                              <!-- Notifikasi akan ditambahkan di sini secara dinamis -->
+                          </ul>
+                      </li>
+                      <li classpt="footer"><a href="#">View all</a></li>
+                  </ul>
+              </li>
+          <!-- end notif -->
          
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">

@@ -100,6 +100,20 @@ class m_registrasi extends CI_Model
     }
 
 	///////////////////////// .cek notifikasi bayar/////////////////////////////////////////////////
+	///////////////////////// cek notifikasi seleksi/////////////////////////////////////////////////
+
+    public function getNotifikasiseleksi() {
+        $this->db->select('c.no as nomor, c.nama, c.prodi, c.bukti_bayar');
+        $this->db->from('tbl_catar_2024 c');
+        $this->db->join('tbl_seleksi_20242 v', 'c.no = v.no', 'left');
+        $this->db->where('v.cek = belum');
+        //$this->db->where('v.no IS NULL');
+        $this->db->order_by('c.no', 'desc');
+        $query = $this->db->get();
+        return $query->result_array();
+    }
+
+	///////////////////////// .cek notifikasi seleksi/////////////////////////////////////////////////
 	function get_data_wilayah($where){
 		$this->db->select('tbl_kabkota.id_wil AS id_kota,
 		tbl_kabkota.nm_wil AS kabkota,
@@ -720,7 +734,34 @@ class m_registrasi extends CI_Model
             return null;
         }
     }
-  
+   function get_data_prosesseleksi2024($where)
+    {
+        // Gantilah 'nama_tabel' dengan nama tabel yang sesuai dalam database Anda
+	     $this->db->select('tbl_catar_2024.nama as nama,
+            tbl_catar_2024.prodi as prodi,
+            tbl_catar_2024.no as no,
+            tbl_catar_2024.tl as tl,
+            tbl_catar_2024.tgl_ as tgl_l,
+            tbl_catar_2024.jk as jk,
+            tbl_seleksi_20242.id_seleksi as id_seleksi,
+            tbl_seleksi_20242.file_ktp as file_ktp,
+            tbl_seleksi_20242.file_suket as file_suket,
+            tbl_seleksi_20242.n101 as n101,
+            tbl_seleksi_20242.n102 as n102,
+            tbl_seleksi_20242.n111 as n111,
+            tbl_seleksi_20242.n112 as n112,
+            tbl_seleksi_20242.n121 as n121,
+            tbl_seleksi_20242.n122 as n122,
+            tbl_seleksi_20242.file_supersehat as file_supersehat,
+            tbl_seleksi_20242.cek as cek');
+
+        $this->db->from('tbl_seleksi_20242');
+        $this->db->join('tbl_catar_2024', 'tbl_seleksi_20242.no = tbl_catar_2024.no', 'left');
+        $this->db->where($where);
+        $query = $this->db->get();
+
+        return $query;
+    }
   ////////////////////summary 2024///////////////////////////////////////////////////////////////////////////
 	function get_data_statistic_kabkota_2024(){
 		$this->db->select('tbl_catar_2024.ktkb as id_provinsi,
