@@ -170,7 +170,7 @@
                 </div>
 
           <!-- <a href="invoice-print.html" target="_blank" class="btn btn-default"><i class="fa fa-print"></i> Print</a> -->
-          <button type="submit" class="btn btn-primary pull-right"><i class="fa fa-credit-card"></i> Validasi
+          <button type="submit" class="btn btn-primary pull-right"><i class="fa fa-credit-card"></i> Proses
           </button>
         </form>
           <!-- <button type="button" class="btn btn-primary pull-right" style="margin-right: 5px;">

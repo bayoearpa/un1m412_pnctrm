@@ -2592,6 +2592,7 @@ class Baak extends CI_Controller {
         $this->load->view('baak/prosesseleksi',$data);
         $this->load->view('baak/footer');
         $this->load->view('baak/footer_js');
+        $this->load->view('baak/prosesseleksi_js');
     }
 
     ////////////////////////////////////////// .seleksi 2024 /////////////////////////////////////////////////////
