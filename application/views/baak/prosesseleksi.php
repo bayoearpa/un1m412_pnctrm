@@ -132,8 +132,9 @@
             <table class="table">
               
               <tr>
-                <th><a class="btn btn-success btn-sm" href="<?php echo base_url().'baak/viewijasah/'.$c->no; ?>"><i class="fa fa-eye"></i> Lihat Ijasah atau Surat Keterangan dari Sekolah</a></th>
-                <!-- <td><a class="btn btn-success btn-sm" href="<?php //echo base_url().'baak/validasi/'.$c->no; ?>"><i class="fa fa-eye"></i> Lihat Surat Keterangan dari Sekolah</a></td> -->
+                <th><button class="btn btn-success view-file-button" data-filename="<?php echo $c->file_ktp; ?>">Lihat File KTP</button></th>
+                <th><button class="btn btn-success view-file-buttonb" data-filename="<?php echo $c->file_suket; ?>">Lihat File Ijasah/Surat Keterangan</button></th>
+                <th><button class="btn btn-success view-file-buttonc" data-filename="<?php echo $c->file_supersehat; ?>">Lihat File Surat Pernyataan Sehat</button></th>
               </tr>
             </table>
           </div>

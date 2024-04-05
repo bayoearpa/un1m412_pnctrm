@@ -743,6 +743,8 @@ class m_registrasi extends CI_Model
             tbl_catar_2024.tl as tl,
             tbl_catar_2024.tgl_l as tgl_l,
             tbl_catar_2024.jk as jk,
+            tbl_catar_2024.gelombang as gelombang,
+            tbl_catar_2024.thn_pel as thn_pel,
             tbl_seleksi_20242.id_seleksi as id_seleksi,
             tbl_seleksi_20242.file_ktp as file_ktp,
             tbl_seleksi_20242.file_suket as file_suket,
