@@ -2594,6 +2594,41 @@ class Baak extends CI_Controller {
         $this->load->view('baak/footer_js');
         $this->load->view('baak/prosesseleksi_js');
     }
+     function prosesseleksip()
+    {
+        # code...
+        $id_seleksi = $this->input->post('id_seleksi');
+
+        $no = $this->input->post('no');
+        $gelombang = $this->input->post('gelombang');
+        $prodi = $this->input->post('prodi');
+        $thn_pel=$this->input->post('thn_pel');
+        $hasil=$this->input->post('hasil');
+
+
+        $data = array(
+            'no' => $no,
+            'gelombang' => $gelombang,
+            'prodi' => $prodi,
+            'tgl_byr' => $tgl_byr,
+            'thn_pel' => $thn_pel,
+            'hasil' => $hasil
+            );
+
+        // $this->m_registrasi->update_data($where,$data,'tbl_catar_2021_validasi');
+        $this->m_registrasi->input_data($data,'tbl_catar_hasil_seleksi_2024');
+
+        $where = array(
+            'id_seleksi' => $id_seleksi       
+        );
+        $data = array(
+            'cek' => 'sudah',
+            );
+        $this->m_registrasi->input_data($where,$data,'tbl_seleksi_20242');
+
+        redirect("baak/home");
+
+    }
 
     ////////////////////////////////////////// .seleksi 2024 /////////////////////////////////////////////////////
     ///////////////////////////////////////// Referral 2024 /////////////////////////////////////////////////////
