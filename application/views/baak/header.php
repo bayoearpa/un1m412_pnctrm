@@ -184,10 +184,9 @@
             <li><a href="<?php echo base_url() ?>baak/seleksi"><i class="fa fa-paperclip"></i>Seleksi</a></li>
           </ul>
         </li>
-        $no = $this->session->userdata('no');
         <?php 
 
-        if ($no = $this->session->userdata('id_admin') == '18') {
+        if ($this->session->userdata('id_admin') == '18') {
           # code...
          ?>
          <li class="treeview">
