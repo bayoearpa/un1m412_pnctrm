@@ -146,16 +146,31 @@
       <!-- this row will not appear when printing -->
       <div class="row no-print">
         <div class="col-xs-12">
-        <form method="post" action="<?php echo base_url() ?>baak/validasia" target="_blank">
+        <form method="post" action="<?php echo base_url() ?>baak/prosesseleksip" target="_blank">
         <input type="hidden" name="no" id="no" value="<?php echo $c->no ?>">
         <input type="hidden" name="gelombang" id="gelombang" value="<?php echo $c->gelombang ?>">
         <input type="hidden" name="tgl_byr" id="tgl_byr" value="<?php echo date("Y-m-d"); ?>">
         <input type="hidden" name="prodi" id="prodi" value="<?php echo $c->prodi ?>">
         <!-- <input type="hidden" name="jml_byr" id="jml_byr" value="500000"> -->
 		<input type="hidden" name="thn_pel" id="thn_pel" value="<?php echo $c->thn_pel?>">
+         <div class="form-group">
+                <label for="exampleInputEmail1">Hasil :</label>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="hasil" id="hasil" value="lulus">
+                      Lulus
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="hasil" id="hasil" value="tidak lulus">
+                      Tidak Lulus
+                    </label>
+                  </div>
+                </div>
 
           <!-- <a href="invoice-print.html" target="_blank" class="btn btn-default"><i class="fa fa-print"></i> Print</a> -->
-          <!-- <button type="submit" class="btn btn-primary pull-right"><i class="fa fa-credit-card"></i> Validasi -->
+          <button type="submit" class="btn btn-primary pull-right"><i class="fa fa-credit-card"></i> Validasi
           </button>
         </form>
           <!-- <button type="button" class="btn btn-primary pull-right" style="margin-right: 5px;">
