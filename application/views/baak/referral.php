@@ -63,7 +63,7 @@
                       <div class="modal-dialog" role="document">
                           <div class="modal-content">
                               <div class="modal-header">
-                                  <h5 class="modal-title" id="tambahFormModalLabel">Lihat form Seleksi</h5>
+                                  <h5 class="modal-title" id="tambahFormModalLabel">Tambah Data Pereferral</h5>
                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                       <span aria-hidden="true">&times;</span>
                                   </button>
@@ -86,7 +86,7 @@
                                       <input type="text" class="form-control" name="no_telp" id="no_telp">
                                       </div>
                                       <div class="form-group">
-                                      <label for="exampleInputEmail1">Referral :</label>
+                                      <label for="exampleInputEmail1">Kode Referral :</label>
                                       <p></p>
                                        <input type="text" class="form-control" name="referral" id="referral">
                                       </div>

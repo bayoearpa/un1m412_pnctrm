@@ -35,6 +35,13 @@
             Tempat Lahir<br>
             Tanggal Lahir<br>
             Jenis Kelamin<br>
+            Nilai Kelas 10 smt Ganjil<br>
+            Nilai Kelas 10 smt Genap<br>
+            Nilai Kelas 11 smt Ganjil<br>
+            Nilai Kelas 11 smt Genap<br>
+            Nilai Kelas 12 smt Ganjil<br>
+            Nilai Kelas 12 smt Genap<br>
+
           </address>
         </div>
         <!-- /.col -->
@@ -46,6 +53,12 @@
             <?php echo $c->tl ?><br>
             <?php echo $c->tgl_l ?><br>
             <?php echo $c->jk ?> <br>
+            <?php echo $c->n101 ?> <br>
+            <?php echo $c->n102 ?> <br>
+            <?php echo $c->n111 ?> <br>
+            <?php echo $c->n112 ?> <br>
+            <?php echo $c->n121 ?> <br>
+            <?php echo $c->n122 ?> <br>
 
           </address>
         </div>
