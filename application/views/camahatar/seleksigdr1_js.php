@@ -11,18 +11,18 @@
 	        // Isi modal dengan data yang diambil
 	        console.log(data); // Cetak nilai data ke konsol
 	        var parsedData = JSON.parse(data);
-	        $('#id_link').val(parsedData.id_link);
+	        $('#id_seleksi').val(parsedData.id_seleksi);
 	        $('#no').val(parsedData.no);
-	        $('#link_ktp').val(parsedData.link_ktp);
-	        $('#link_ijasah').val(parsedData.link_ijasah);
-	        $('#link_rapor').val(parsedData.link_rapor);
-	        $('#link_kesehatan').val(parsedData.link_kesehatan);
-	        $('#link_supersehat').val(parsedData.link_supersehat);
-	        $('#link_prestasi').val(parsedData.link_prestasi);
-	        $('#link_video_pushup').val(parsedData.link_video_pushup);
-	        $('#link_video_shitup').val(parsedData.link_video_shitup);
-	        $('#link_video_pullup').val(parsedData.link_video_pullup);
-	        $('#link_video_shuttle').val(parsedData.link_video_shuttle);
+	        $('#efile_ktp').val(parsedData.file_ktp);
+	        $('#efile_suket').val(parsedData.file_suket);
+	        $('#en101').val(parsedData.n101);
+	        $('#en102').val(parsedData.n102);
+	        $('#en111').val(parsedData.n111);
+	        $('#en112').val(parsedData.n112);
+	        $('#en121').val(parsedData.n121);
+	        $('#en122').val(parsedData.n122);
+	        $('#efile_supersehat').val(parsedData.file_supersehat);
+	       
 	        // Tambahkan input lain sesuai kebutuhan
 	        $('#editFormModal').modal('show');
 	      }
