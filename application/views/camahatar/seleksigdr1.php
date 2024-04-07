@@ -105,13 +105,10 @@
                                       <label for="exampleInputEmail1">File KTP</label>
                                       <input type="file" class="form-control" id="nfile_ktp" name="nfile_ktp" placeholder="Masukan File KTP">
                                       <input type="hidden" name="efile_ktp" id="efile_ktp">
-                                      </div>
-                                      <div class="form-group">
+                               
                                       <label for="exampleInputEmail1">File Ijasah atau surat keterangan dari sekolah (jika belum lulus)</label>
                                       <input type="file" class="form-control" id="nfile_suket" name="nfile_suket" placeholder="File Ijasah atau surat keterangan dari sekolah (jika belum lulus)">
                                       <input type="hidden" name="efile_suket" id="efile_suket">
-                                      </div>
-                                      <div class="form-group">
                                       <label for="exampleInputEmail1">Rata-Rata Nilai Kelas 10</label>
                                       <input type="text" class="form-control" id="en101" name="en101" placeholder="Rata-Rata Nilai Semster 1">
                                       <input type="text" class="form-control" id="en102" name="en102" placeholder="Rata-Rata Nilai Semster 2">
@@ -121,8 +118,6 @@
                                       <label for="exampleInputEmail1">Rata-Rata Nilai Kelas 12</label>
                                       <input type="text" class="form-control" id="en121" name="en121" placeholder="Rata-Rata Nilai Semster 1">
                                       <input type="text" class="form-control" id="en122" name="en122" placeholder="Rata-Rata Nilai Semster 2">
-                                      </div>
-                                      <div class="form-group">
                                       <label for="exampleInputEmail1">Surat pernyataan dan riwayat kesehatan</label>
                                       <input type="file" class="form-control" id="nfile_supersehat" name="nfile_supersehat" placeholder="File Surat pernyataan dan riwayat kesehatan">
                                       <input type="hidden" name="efile_supersehat" id="efile_supersehat">
