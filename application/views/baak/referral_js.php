@@ -27,9 +27,12 @@
                 var parsedData = JSON.parse(data);
                $('#id_ref').val(parsedData.id_ref);
                 $('#enama').val(parsedData.nama);
-                $('#ereferral').val(parsedData.referral);
+                $('#ealamat').val(parsedData.alamat);
+                $('#eno_telp').val(parsedData.no_telp);
+                $('#ereferral').val(parsedData.ref);
                 $('#epassword').val(parsedData.password);
                 $('#eaktif').val(parsedData.aktif);
+                 $('#etipe').val(parsedData.tipe);
                
                 // Tambahkan input lain sesuai kebutuhan
                 $('#editFormModal').modal('show');

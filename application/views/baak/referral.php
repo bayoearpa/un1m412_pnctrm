@@ -154,12 +154,20 @@
                                   <form action="<?php echo base_url() ?>proses_refedit" name="form1" id="form1" method="post" enctype="multipart/form-data">
                                       <!-- ... (Formulir seperti yang Anda berikan) ... -->
                                       <input type="hidden" name="id_ref" id="id_ref">
-                                      <div class="form-group">
+                                    <div class="form-group">
                                       <label for="exampleInputEmail1">Nama :</label><p></p>
                                       <input type="text" class="form-control" name="enama" id="enama">
                                       </div>
                                       <div class="form-group">
-                                      <label for="exampleInputEmail1">Referral :</label>
+                                      <label for="exampleInputEmail1">Alamat :</label><p></p>
+                                       <textarea class="form-control" rows="3" id="ealamat" name="ealamat"></textarea>
+                                      </div>
+                                      <div class="form-group">
+                                      <label for="exampleInputEmail1">No. telp/Hp :</label><p></p>
+                                      <input type="text" class="form-control" name="eno_telp" id="eno_telp">
+                                      </div>
+                                      <div class="form-group">
+                                      <label for="exampleInputEmail1">Kode Referral :</label>
                                       <p></p>
                                        <input type="text" class="form-control" name="ereferral" id="ereferral">
                                       </div>
@@ -175,6 +183,17 @@
                                         <option> </option>
                                         <option value="aktif">Aktif</option>
                                         <option value="nonaktif">Nonaktif</option>
+                                      </select>
+                                      </div>
+                                      <div class="form-group">
+                                      <label for="exampleInputEmail1">Tipe:</label>
+                                      <p></p>
+                                      <select class="form-control" name="etipe" id="etipe">
+                                        <option> </option>
+                                        <option value="umum">Umum</option>
+                                        <option value="bk">BK</option>
+                                        <option value="mahatar">Mahatar</option>
+                                        <option value="ikani">Ikani</option>
                                       </select>
                                       </div>  
                                       <button type="submit" class="btn btn-primary">Simpan</button>
