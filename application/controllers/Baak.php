@@ -2651,9 +2651,8 @@ class Baak extends CI_Controller {
         // Konversi data ke format JSON dan kirimkan ke view
         echo json_encode($data);
     }
-    public function referral_add()
+   public function referral_add()
     {
-        # code...
         $nama = $this->input->post('nama');
         $alamat = $this->input->post('alamat');
         $no_telp = $this->input->post('no_telp');
@@ -2666,15 +2665,23 @@ class Baak extends CI_Controller {
 
         $cek = $this->m_registrasi->get_data($where, 'tbl_ref');
 
-        if ($cek > 0) {
-            # code...
-             redirect("baak/referral?message=error");
-        }else{
-             $this->m_registrasi->input_data($data,'tbl_ref');
-             redirect("baak/referral?message=success");
+        if ($cek->num_rows() > 0) {
+            redirect("baak/referral?message=error");
+        } else {
+            $data = array(
+                'nama' => $nama,
+                'alamat' => $alamat,
+                'no_telp' => $no_telp,
+                'ref' => $referral,
+                'password' => $password,
+                'aktif' => $aktif,
+                'tipe' => $tipe
+            );
+            $this->m_registrasi->input_data($data,'tbl_ref');
+            redirect("baak/referral?message=success");
         }
-
     }
+
 
 
     ///////////////////////////////////////// .Referral 2024 /////////////////////////////////////////////////////
