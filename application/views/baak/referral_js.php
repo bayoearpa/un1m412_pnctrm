@@ -25,11 +25,11 @@
 
                 console.log(data); // Cetak nilai data ke konsol
                 var parsedData = JSON.parse(data);
-                $('#id_ref').data('link', parsedData.id_ref);
-                $('#enama').data('link', parsedData.nama);
-                $('#ereferral').data('link', parsedData.referral);
-                $('#epassword').data('link', parsedData.password);
-                $('#eaktif').data('link', parsedData.aktif);
+               $('#id_ref').val(parsedData.id_ref);
+                $('#enama').val(parsedData.nama);
+                $('#ereferral').val(parsedData.referral);
+                $('#epassword').val(parsedData.password);
+                $('#eaktif').val(parsedData.aktif);
                
                 // Tambahkan input lain sesuai kebutuhan
                 $('#editFormModal').modal('show');
