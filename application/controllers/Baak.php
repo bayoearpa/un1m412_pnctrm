@@ -2668,10 +2668,10 @@ class Baak extends CI_Controller {
 
         if ($cek > 0) {
             # code...
-             redirect("baak/referral?pesan=error");
+             redirect("baak/referral?message=error");
         }else{
              $this->m_registrasi->input_data($data,'tbl_ref');
-             redirect("baak/referral?pesan=success");
+             redirect("baak/referral?message=success");
         }
 
     }
