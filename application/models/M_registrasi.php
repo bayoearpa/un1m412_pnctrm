@@ -557,6 +557,9 @@ class m_registrasi extends CI_Model
 	     	tbl_ref.nama,
 	     	tbl_ref.password,
 	     	tbl_ref.aktif,
+	     	tbl_ref.tipe,
+	     	tbl_ref.no_telp,
+	     	tbl_ref.alamat,
 			');
 
 	     $this->db->from('tbl_ref');
