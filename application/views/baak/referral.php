@@ -9,9 +9,23 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-              <?php echo validation_errors(); 
-            echo $this->session->flashdata('success');
-            echo $this->session->flashdata('error'); ?>
+                  <?php echo validation_errors(); ?>
+              <?php if ($this->session->flashdata('success')): ?>
+                  <div class="alert alert-success alert-dismissible fade show" role="alert">
+                      <?php echo $this->session->flashdata('success'); ?>
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+              <?php endif; ?>
+            <?php if ($this->session->flashdata('error')): ?>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <?php echo $this->session->flashdata('error'); ?>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            <?php endif; ?>
                <button type="button" name="tambahref" id="tambahref" class="btn tambahref btn-primary">Tambah Data Referral</button>
               <table id="example4" class="table table-bordered table-striped">
                 <thead>
