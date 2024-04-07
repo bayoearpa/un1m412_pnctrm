@@ -33,9 +33,21 @@
                 <hr>
                 <!-- <h5><b>Seleksi samapta akan dilaksanakan secara offline, tunggu pengumuman selanjutnya.</b></h5> -->
                 <!-- <h5><b>Silakan mengisi form seleksi dibawah ini :</b></h5> -->
-                <?php echo validation_errors(); 
-                  echo $this->session->flashdata('success');
-                  echo $this->session->flashdata('error'); ?>
+                <?php echo validation_errors(); ?>
+                  <?php if ($this->session->flashdata('success')): ?>
+                  <div class="alert alert-success alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <h4><i class="icon fa fa-check"></i> Alert!</h4>
+                <?php echo $this->session->flashdata('success'); ?>
+              </div>
+              <?php endif; ?>
+
+            <?php if ($this->session->flashdata('error')): ?>
+                <div class="alert alert-danger alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <h4><i class="icon fa fa-ban"></i> Alert!</h4><?php echo $this->session->flashdata('error'); ?>
+              </div>
+            <?php endif; ?>
                 <p></p>
                 <?php if ($seleksi == null) {
                   # code... cek seleksi ?>
