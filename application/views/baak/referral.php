@@ -151,7 +151,7 @@
                               </div>
                               <div class="modal-body">
                                   <!-- Isi formulir di sini -->
-                                  <form action="<?php echo base_url() ?>proses_refedit" name="form1" id="form1" method="post" enctype="multipart/form-data">
+                                  <form action="<?php echo base_url() ?>baak/referral_edit" name="form1" id="form1" method="post" enctype="multipart/form-data">
                                       <!-- ... (Formulir seperti yang Anda berikan) ... -->
                                       <input type="hidden" name="id_ref" id="id_ref">
                                     <div class="form-group">
