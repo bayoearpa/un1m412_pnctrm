@@ -2694,7 +2694,7 @@ class Baak extends CI_Controller {
         $aktif = $this->input->post('eaktif');
         $tipe = $this->input->post('etipe');
 
-        $where = "ref LIKE '%" . $referral . "%'";
+        // $where = "ref LIKE '%" . $referral . "%'";
 
         // $cek = $this->m_registrasi->get_data($where, 'tbl_ref');
         $cek2 = $this->m_registrasi->get_data($where, 'tbl_catar_2024');
