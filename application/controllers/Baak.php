@@ -2690,22 +2690,18 @@ class Baak extends CI_Controller {
         $nama = $this->input->post('enama');
         $alamat = $this->input->post('ealamat');
         $no_telp = $this->input->post('eno_telp');
-        $referral = $this->input->post('ereferral');
         $password = $this->input->post('epassword');
         $aktif = $this->input->post('eaktif');
         $tipe = $this->input->post('etipe');
 
         $where = "ref LIKE '%" . $referral . "%'";
 
-        $cek = $this->m_registrasi->get_data($where, 'tbl_ref');
+        // $cek = $this->m_registrasi->get_data($where, 'tbl_ref');
         $cek2 = $this->m_registrasi->get_data($where, 'tbl_catar_2024');
 
         if ($cek2->num_rows() > 0) {
             # code...
              $this->session->set_flashdata('error', 'Referral sudah digunakan calon mahatar.');
-        }elseif ($cek->num_rows() > 0) {
-             $this->session->set_flashdata('error', 'Referral sudah ada.');
-            
         } else {
             $where2 = array(
             'id_ref' => $id_ref       
@@ -2714,7 +2710,6 @@ class Baak extends CI_Controller {
                 'nama' => $nama,
                 'alamat' => $alamat,
                 'no_telp' => $no_telp,
-                'ref' => $referral,
                 'password' => md5($password),
                 'aktif' => $aktif,
                 'tipe' => $tipe

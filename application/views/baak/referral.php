@@ -169,7 +169,7 @@
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">Kode Referral :</label>
                                       <p></p>
-                                       <input type="text" class="form-control" name="ereferral" id="ereferral">
+                                       <input type="text" class="form-control" name="ereferral" id="ereferral" readonly="">
                                       </div>
                                        <div class="form-group">
                                       <label for="exampleInputEmail1">Password :</label>
