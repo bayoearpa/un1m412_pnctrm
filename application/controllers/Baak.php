@@ -2666,7 +2666,8 @@ class Baak extends CI_Controller {
         $cek = $this->m_registrasi->get_data($where, 'tbl_ref');
 
         if ($cek->num_rows() > 0) {
-            redirect("baak/referral?message=error");
+             $this->session->set_flashdata('error', 'Referral sudah ada.');
+            
         } else {
             $data = array(
                 'nama' => $nama,
@@ -2678,8 +2679,10 @@ class Baak extends CI_Controller {
                 'tipe' => $tipe
             );
             $this->m_registrasi->input_data($data,'tbl_ref');
-            redirect("baak/referral?message=success");
+            $this->session->set_flashdata('success', 'Referral berhasil ditambahkan.');
         }
+
+        redirect("baak/referral");
     }
 
 
