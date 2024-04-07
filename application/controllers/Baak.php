@@ -2624,7 +2624,7 @@ class Baak extends CI_Controller {
         $data = array(
             'cek' => 'sudah',
             );
-        $this->m_registrasi->input_data($where,$data,'tbl_seleksi_20242');
+        $this->m_registrasi->update_data($where,$data,'tbl_seleksi_20242');
 
         redirect("baak/home");
 
@@ -2632,8 +2632,6 @@ class Baak extends CI_Controller {
 
     ////////////////////////////////////////// .seleksi 2024 /////////////////////////////////////////////////////
     ///////////////////////////////////////// Referral 2024 /////////////////////////////////////////////////////
-
-    ///////////////////////////////////////// .Referral 2024 /////////////////////////////////////////////////////
     public function referral()
     {
         # code...
@@ -2653,6 +2651,33 @@ class Baak extends CI_Controller {
         // Konversi data ke format JSON dan kirimkan ke view
         echo json_encode($data);
     }
+    public function referral_add()
+    {
+        # code...
+        $nama = $this->input->post('nama');
+        $alamat = $this->input->post('alamat');
+        $no_telp = $this->input->post('no_telp');
+        $referral = $this->input->post('referral');
+        $password = $this->input->post('password');
+        $aktif = $this->input->post('aktif');
+        $tipe = $this->input->post('tipe');
+
+        $where = "ref LIKE '%" . $referral . "%'";
+
+        $cek = $this->m_registrasi->get_data($where, 'tbl_ref');
+
+        if ($cek > 0) {
+            # code...
+             redirect("baak/referral?pesan=error");
+        }else{
+             $this->m_registrasi->input_data($data,'tbl_ref');
+             redirect("baak/referral?pesan=success");
+        }
+
+    }
+
+
+    ///////////////////////////////////////// .Referral 2024 /////////////////////////////////////////////////////
     ///////////////////// notifikasi seleksi /////////////////////////////
      public function getNotifikasi() {
 

@@ -9,6 +9,9 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
+              <?php echo validation_errors(); 
+            echo $this->session->flashdata('success');
+            echo $this->session->flashdata('error'); ?>
                <button type="button" name="tambahref" id="tambahref" class="btn tambahref btn-primary">Tambah Data Referral</button>
               <table id="example4" class="table table-bordered table-striped">
                 <thead>
@@ -70,7 +73,7 @@
                               </div>
                               <div class="modal-body">
                                   <!-- Isi formulir di sini -->
-                                  <form action="<?php echo base_url() ?>proses_reftambah" name="form1" id="form1" method="post" enctype="multipart/form-data">
+                                  <form action="<?php echo base_url() ?>baak/referral_add" name="form1" id="form1" method="post" enctype="multipart/form-data">
                                       <!-- ... (Formulir seperti yang Anda berikan) ... -->
                                       <!-- <input type="hidden" name="id_ref" id="id_ref"> -->
                                       <div class="form-group">

@@ -855,6 +855,7 @@ class Camhtar extends CI_Controller {
     $data['n112'] = $this->input->post('n112');
     $data['n121'] = $this->input->post('n121');
     $data['n122'] = $this->input->post('n122');
+    $data['cek'] = "belum";
 
     // Panggil fungsi model untuk tambah data
     $result = $this->m_registrasi->input_data($data, 'tbl_seleksi_20242');
