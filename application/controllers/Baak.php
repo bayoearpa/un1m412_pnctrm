@@ -2690,11 +2690,12 @@ class Baak extends CI_Controller {
         $nama = $this->input->post('enama');
         $alamat = $this->input->post('ealamat');
         $no_telp = $this->input->post('eno_telp');
+        $referral = $this->input->post('ereferral');
         $password = $this->input->post('epassword');
         $aktif = $this->input->post('eaktif');
         $tipe = $this->input->post('etipe');
 
-        // $where = "ref LIKE '%" . $referral . "%'";
+        $where = "ref LIKE '%" . $referral . "%'";
 
         // $cek = $this->m_registrasi->get_data($where, 'tbl_ref');
         $cek2 = $this->m_registrasi->get_data($where, 'tbl_catar_2024');
