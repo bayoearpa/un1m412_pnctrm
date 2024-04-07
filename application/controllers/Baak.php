@@ -2674,7 +2674,7 @@ class Baak extends CI_Controller {
                 'alamat' => $alamat,
                 'no_telp' => $no_telp,
                 'ref' => $referral,
-                'password' => $password,
+                'password' => md5($password),
                 'aktif' => $aktif,
                 'tipe' => $tipe
             );

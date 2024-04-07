@@ -552,16 +552,16 @@ class m_registrasi extends CI_Model
     function get_data_edit_ref($id)
     {
         // Gantilah 'nama_tabel' dengan nama tabel yang sesuai dalam database Anda
-	     $this->db->select('tbl_ref.id_ref as id_ref,
-	     	tbl_ref.ref as ref,
-	     	tbl_ref.nama as nama,
-	     	tbl_ref.password as password,
-	     	tbl_ref.aktif as aktif,
+	     $this->db->select('id_ref ,
+	     	tbl_ref.ref,
+	     	tbl_ref.nama,
+	     	tbl_ref.password,
+	     	tbl_ref.aktif,
 			');
 
 	     $this->db->from('tbl_ref');
 	     // $this->db->join('tbl_catar_2024','tbl_seleksi_2024.no = tbl_catar_2024.no','left');
-        $this->db->where('tbl_ref.id_ref', $id);
+        $this->db->where('id_ref', $id);
         $query = $this->db->get();
 
         if ($query->num_rows() > 0) {
