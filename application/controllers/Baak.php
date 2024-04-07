@@ -2686,6 +2686,9 @@ class Baak extends CI_Controller {
     }
     public function referral_edit()
     {
+        
+        if ($this->input->post('epassword') > 0) {
+            # code...
         $id_ref = $this->input->post('id_ref');
         $nama = $this->input->post('enama');
         $alamat = $this->input->post('ealamat');
@@ -2694,6 +2697,17 @@ class Baak extends CI_Controller {
         $password = $this->input->post('epassword');
         $aktif = $this->input->post('eaktif');
         $tipe = $this->input->post('etipe');
+        }else{
+        $id_ref = $this->input->post('id_ref');
+        $nama = $this->input->post('enama');
+        $alamat = $this->input->post('ealamat');
+        $no_telp = $this->input->post('eno_telp');
+        $referral = $this->input->post('ereferral');
+        $aktif = $this->input->post('eaktif');
+        $tipe = $this->input->post('etipe');
+        }
+
+        
 
         $where = "ref LIKE '%" . $referral . "%'";
 

@@ -30,7 +30,7 @@
                 $('#ealamat').val(parsedData.alamat);
                 $('#eno_telp').val(parsedData.no_telp);
                 $('#ereferral').val(parsedData.ref);
-                $('#epassword').val(parsedData.password);
+                // $('#epassword').val(parsedData.password);
                 $('#eaktif').val(parsedData.aktif);
                  $('#etipe').val(parsedData.tipe);
                
