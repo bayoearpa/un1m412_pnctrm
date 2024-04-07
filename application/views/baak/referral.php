@@ -156,22 +156,22 @@
                                       <input type="hidden" name="id_ref" id="id_ref">
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">Nama :</label><p></p>
-                                      <input type="text" class="form-control" name="nama" id="nama">
+                                      <input type="text" class="form-control" name="enama" id="enama">
                                       </div>
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">Referral :</label>
                                       <p></p>
-                                       <input type="text" class="form-control" name="referral" id="referral">
+                                       <input type="text" class="form-control" name="ereferral" id="ereferral">
                                       </div>
                                        <div class="form-group">
                                       <label for="exampleInputEmail1">Password :</label>
                                       <p></p>
-                                       <input type="text" class="form-control" name="password" id="password">
+                                       <input type="text" class="form-control" name="epassword" id="epassword">
                                       </div>
                                       <div class="form-group">
                                       <label for="exampleInputEmail1">Status Aktif :</label>
                                       <p></p>
-                                      <select class="form-control" name="aktif" id="aktif">
+                                      <select class="form-control" name="eaktif" id="eaktif">
                                         <option> </option>
                                         <option value="aktif">Aktif</option>
                                         <option value="nonaktif">Nonaktif</option>
