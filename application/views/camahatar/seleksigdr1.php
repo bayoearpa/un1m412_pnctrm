@@ -98,7 +98,7 @@
                               </div>
                               <div class="modal-body">
                                   <!-- Isi formulir di sini -->
-                                  <form action="<?php //echo base_url() ?>proses_seleksi_gelombangdini_reguler_edit" name="form1" id="form1" method="post" enctype="multipart/form-data">
+                                  <form action="<?php echo base_url() ?>proses_seleksi_gelombangdini_reguler_edit" name="form1" id="form1" method="post" enctype="multipart/form-data">
                                       <!-- ... (Formulir seperti yang Anda berikan) ... -->
                                       <input type="hidden" name="no" id="no" value="<?php echo $this->session->userdata('no'); ?>">
                                       <input type="hidden" name="id_seleksi" id="id_seleksi">

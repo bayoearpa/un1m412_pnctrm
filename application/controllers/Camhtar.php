@@ -869,6 +869,144 @@ class Camhtar extends CI_Controller {
         redirect("seleksi_reguler?pesan=success");
     }
 }
+public function edit_proses_seleksi()
+{
+	# code...
+	$id_seleksi = $this->input->post('id_seleksi');
+	$data['n101'] = $this->input->post('en101');
+    $data['n102'] = $this->input->post('en102');
+    $data['n111'] = $this->input->post('en111');
+    $data['n112'] = $this->input->post('en112');
+    $data['n121'] = $this->input->post('en121');
+    $data['n122'] = $this->input->post('en122');
+
+    $where = array(
+	        'id_seleksi' => $id_seleksi,
+	);
+	$this->m_registrasi->update_data($where,$data,'tbl_seleksi_20242');
+
+	// cek sudah input
+		if ($this->input->post('nfile_ktp') > 0) {
+			    // Konfigurasi upload file Ijasah D3
+	    $config_ktp['upload_path'] = './assets/upload/2024/upload_seleksi_ktp';
+	    $config_ktp['allowed_types'] = 'pdf';
+	    $config_ktp['max_size'] = 1048; // Ukuran maksimum file (dalam kilobyte)
+	    $config_ktp['file_name'] = $no.'_ktp'; // Nama file yang diunggah sesuai NIM
+
+	    // $this->load->library('upload', $config_ijasah_d3, 'upload_ijd3');
+	    $this->load->library('upload');
+    	$this->upload->initialize($config_ktp);
+
+	    // Jika upload berhasil
+	    if ($this->upload->do_upload('nfile_ktp')) {
+	        $upload_data = $this->upload->data();
+
+	        // Update data pada database
+	        $update_data = array(
+	            'file_ktp' => $upload_data['file_name'],
+	            // Tambahkan field lain sesuai kebutuhan
+	        );
+
+	        $this->m_registrasi->update_data($where,$update_data,'tbl_seleksi_20242');
+	    } else {
+	        // Jika upload gagal, tampilkan pesan kesalahan
+	        $error = array('error' => $this->upload_data->display_errors());
+	       	$this->session->set_flashdata('error', $error);
+			redirect(base_url('seleksi_reguler'));
+	    }
+
+		}else{
+		# code...
+			$update_data = array(
+	            'file_ktp' => $this->input->post('efile_ktp'),
+	            // Tambahkan field lain sesuai kebutuhan
+	        );
+			$this->m_registrasi->update_data($where,$update_data,'tbl_seleksi_20242');
+		}//end cek
+
+		// cek sudah input
+		if ($this->input->post('nfile_suket') > 0) {
+			    // Konfigurasi upload file Ijasah D3
+	    $config_ktp['upload_path'] = './assets/upload/2024/upload_seleksi_suket';
+	    $config_ktp['allowed_types'] = 'pdf';
+	    $config_ktp['max_size'] = 1048; // Ukuran maksimum file (dalam kilobyte)
+	    $config_ktp['file_name'] = $no.'_suket'; // Nama file yang diunggah sesuai NIM
+
+	    // $this->load->library('upload', $config_ijasah_d3, 'upload_ijd3');
+	    $this->load->library('upload');
+    	$this->upload->initialize($config_ktp);
+
+	    // Jika upload berhasil
+	    if ($this->upload->do_upload('nfile_suket')) {
+	        $upload_data = $this->upload->data();
+
+	        // Update data pada database
+	        $update_data = array(
+	            'file_suket' => $upload_data['file_name'],
+	            // Tambahkan field lain sesuai kebutuhan
+	        );
+
+	        $this->m_registrasi->update_data($where,$update_data,'tbl_seleksi_20242');
+	    } else {
+	        // Jika upload gagal, tampilkan pesan kesalahan
+	        $error = array('error' => $this->upload_data->display_errors());
+	       	$this->session->set_flashdata('error', $error);
+			redirect(base_url('seleksi_reguler'));
+	    }
+
+		}else{
+		# code...
+			$update_data = array(
+	            'file_suket' => $this->input->post('efile_suket'),
+	            // Tambahkan field lain sesuai kebutuhan
+	        );
+			$this->m_registrasi->update_data($where,$update_data,'tbl_seleksi_20242');
+		}//end cek
+
+		// cek sudah input
+		if ($this->input->post('nfile_supersehat') > 0) {
+			    // Konfigurasi upload file Ijasah D3
+	    $config_ktp['upload_path'] = './assets/upload/2024/upload_seleksi_supersehat';
+	    $config_ktp['allowed_types'] = 'pdf';
+	    $config_ktp['max_size'] = 1048; // Ukuran maksimum file (dalam kilobyte)
+	    $config_ktp['file_name'] = $no.'_supersehat'; // Nama file yang diunggah sesuai NIM
+
+	    // $this->load->library('upload', $config_ijasah_d3, 'upload_ijd3');
+	    $this->load->library('upload');
+    	$this->upload->initialize($config_ktp);
+
+	    // Jika upload berhasil
+	    if ($this->upload->do_upload('nfile_supersehat')) {
+	        $upload_data = $this->upload->data();
+
+	        // Update data pada database
+	        $update_data = array(
+	            'file_supersehat' => $upload_data['file_name'],
+	            // Tambahkan field lain sesuai kebutuhan
+	        );
+
+	        $this->m_registrasi->update_data($where,$update_data,'tbl_seleksi_20242');
+	    } else {
+	        // Jika upload gagal, tampilkan pesan kesalahan
+	        $error = array('error' => $this->upload_data->display_errors());
+	       	$this->session->set_flashdata('error', $error);
+			redirect(base_url('seleksi_reguler'));
+	    }
+
+		}else{
+		# code...
+			$update_data = array(
+	            'file_supersehat' => $this->input->post('efile_supersehat'),
+	            // Tambahkan field lain sesuai kebutuhan
+	        );
+			$this->m_registrasi->update_data($where,$update_data,'tbl_seleksi_20242');
+		}//end cek
+
+
+	$this->session->set_flashdata('success', 'Data Seleksi berhasil diedit.');	
+	redirect(base_url('seleksi_reguler'));
+
+}
 
 	public function proses_seleksi_gdr1()
 	{
