@@ -187,6 +187,10 @@
                     <option value="8">S1 Perdagangan Internasional</option> -->
                   </select>
                 </div>
+                <div class="form-group">
+                  <label>Kode Referral (di lewati jika tidak ada)</label>
+                 <input type="text" class="form-control" id="ref" name="ref" placeholder="Masukan kode referral">
+                </div>
                <!--   <div class="form-group">
                   <label>Prodi Pilihan 2</label>
                   <select class="form-control" name="prodi2" id="prodi2">
