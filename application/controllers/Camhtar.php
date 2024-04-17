@@ -927,14 +927,14 @@ public function edit_proses_seleksi()
 		// cek sudah input
 		if ($this->input->post('nfile_suket') > 0) {
 			    // Konfigurasi upload file Ijasah D3
-	    $config_ktp['upload_path'] = './assets/upload/2024/upload_seleksi_suket';
-	    $config_ktp['allowed_types'] = 'pdf';
-	    $config_ktp['max_size'] = 1048; // Ukuran maksimum file (dalam kilobyte)
-	    $config_ktp['file_name'] = $no.'_suket'; // Nama file yang diunggah sesuai NIM
+	    $config_suket['upload_path'] = './assets/upload/2024/upload_seleksi_suket';
+	    $config_suket['allowed_types'] = 'pdf';
+	    $config_suket['max_size'] = 1048; // Ukuran maksimum file (dalam kilobyte)
+	    $config_suket['file_name'] = $no.'_suket'; // Nama file yang diunggah sesuai NIM
 
 	    // $this->load->library('upload', $config_ijasah_d3, 'upload_ijd3');
 	    $this->load->library('upload');
-    	$this->upload->initialize($config_ktp);
+    	$this->upload->initialize($config_suket);
 
 	    // Jika upload berhasil
 	    if ($this->upload->do_upload('nfile_suket')) {
@@ -966,14 +966,14 @@ public function edit_proses_seleksi()
 		// cek sudah input
 		if ($this->input->post('nfile_supersehat') > 0) {
 			    // Konfigurasi upload file Ijasah D3
-	    $config_ktp['upload_path'] = './assets/upload/2024/upload_seleksi_supersehat';
-	    $config_ktp['allowed_types'] = 'pdf';
-	    $config_ktp['max_size'] = 1048; // Ukuran maksimum file (dalam kilobyte)
-	    $config_ktp['file_name'] = $no.'_supersehat'; // Nama file yang diunggah sesuai NIM
+	    $config_supersehat['upload_path'] = './assets/upload/2024/upload_seleksi_supersehat';
+	    $config_supersehat['allowed_types'] = 'pdf';
+	    $config_supersehat['max_size'] = 1048; // Ukuran maksimum file (dalam kilobyte)
+	    $config_supersehat['file_name'] = $no.'_supersehat'; // Nama file yang diunggah sesuai NIM
 
 	    // $this->load->library('upload', $config_ijasah_d3, 'upload_ijd3');
 	    $this->load->library('upload');
-    	$this->upload->initialize($config_ktp);
+    	$this->upload->initialize($config_supersehat);
 
 	    // Jika upload berhasil
 	    if ($this->upload->do_upload('nfile_supersehat')) {
