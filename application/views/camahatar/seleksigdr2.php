@@ -50,7 +50,7 @@
                         <?php } ?>
                 </div>
                 <div class="form-group">
-                  <label for="editufsignon">Mengisi dan Mengupload Surat Pernyataan Sehat <b>Bermaterai yang sudah disediakan</b> pada link berikut -> <a href="<?php echo base_url() ?>download_supersehat"><code>Download Surat Pernyataaan Sehat</code></a>  (Lalu Upload dalam format .pdf)</label>
+                  <label for="editufsignon">Mengisi dan Mengupload Surat Pernyataan Sehat <b>Bermaterai yang sudah disediakan</b> pada link berikut -> <a href="<?php echo base_url() ?>download_supersehattf"><code>Download Surat Pernyataaan Sehat</code></a>  (Lalu Upload dalam format .pdf)</label>
                         <input type="file" class="form-control" id="upload_supersehat" name="upload_supersehat">
                         <input type="hidden" id="eupload_supersehat" name="eupload_supersehat" value="<?php echo $c->upload_supersehat; ?>">
                         <?php if ($c->upload_supersehat) { ?>

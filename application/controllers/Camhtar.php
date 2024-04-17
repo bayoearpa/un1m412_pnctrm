@@ -618,6 +618,12 @@ class Camhtar extends CI_Controller {
 		force_download('assets/download/surat_kesehatan_kelas_reguler_2024.pdf',NULL);
 		redirect(base_url());
 	}
+	public function down_supersehattf()
+	{
+		# code...
+		force_download('assets/download/surat_kesehatan_kelas_transfer_2024.pdf',NULL);
+		redirect(base_url());
+	}
 	public function down_supersehatreg()
 	{
 		# code...
@@ -886,7 +892,7 @@ public function edit_proses_seleksi()
 	$this->m_registrasi->update_data($where,$data,'tbl_seleksi_20242');
 
 	// cek sudah input
-		if ($this->input->post('nfile_ktp') > 0) {
+		if ($this->input->post('nfile_ktp') > "0") {
 			    // Konfigurasi upload file Ijasah D3
 	    $config_ktp['upload_path'] = './assets/upload/2024/upload_seleksi_ktp';
 	    $config_ktp['allowed_types'] = 'pdf';
@@ -925,7 +931,7 @@ public function edit_proses_seleksi()
 		}//end cek
 
 		// cek sudah input
-		if ($this->input->post('nfile_suket') > 0) {
+		if ($this->input->post('nfile_suket') > "0") {
 			    // Konfigurasi upload file Ijasah D3
 	    $config_suket['upload_path'] = './assets/upload/2024/upload_seleksi_suket';
 	    $config_suket['allowed_types'] = 'pdf';
