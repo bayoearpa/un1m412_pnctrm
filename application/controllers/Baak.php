@@ -2610,7 +2610,6 @@ class Baak extends CI_Controller {
             'no' => $no,
             'gelombang' => $gelombang,
             'prodi' => $prodi,
-            'tgl_byr' => $tgl_byr,
             'thn_pel' => $thn_pel,
             'hasil' => $hasil
             );
