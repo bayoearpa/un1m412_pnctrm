@@ -78,8 +78,6 @@
                   <label for="exampleInputEmail1">Surat pernyataan dan riwayat kesehatan</label>
                   <input type="file" class="form-control" id="file_supersehat" name="file_supersehat" placeholder="File Surat pernyataan dan riwayat kesehatan">
                   </div>
-                
-               
                   <button type="submit" class="btn btn-primary">Simpan</button>
                 </form>
                 <?php }else{ ?>
@@ -133,7 +131,8 @@
                                       <label for="exampleInputEmail1">Surat pernyataan dan riwayat kesehatan</label>
                                       <input type="file" class="form-control" id="nfile_supersehat" name="nfile_supersehat" placeholder="File Surat pernyataan dan riwayat kesehatan">
                                       <input type="hidden" name="efile_supersehat" id="efile_supersehat">
-                                     
+                                     <button type="submit" class="btn btn-primary">Simpan</button>
+                                  </form>
                                       
                                    
                               <div class="modal-footer">
