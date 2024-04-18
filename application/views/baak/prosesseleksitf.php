@@ -154,7 +154,7 @@
         <input type="hidden" name="prodi" id="prodi" value="<?php echo $c->prodi ?>">
         <!-- <input type="hidden" name="jml_byr" id="jml_byr" value="500000"> -->
 		<input type="hidden" name="thn_pel" id="thn_pel" value="<?php echo $c->thn_pel?>">
-    <input type="hidden" name="id_seleksi" id="id_seleksi" value="<?php echo $c->id_seleksi?>">
+    <!-- <input type="hidden" name="id_seleksi" id="id_seleksi" value="<?php// echo $c->id_seleksi?>"> -->
          <div class="form-group">
                 <label for="exampleInputEmail1">Hasil :</label>
                   <div class="radio">
