@@ -2570,6 +2570,19 @@ class Baak extends CI_Controller {
         $this->load->view('baak/footer_js');
         $this->load->view('baak/seleksi_js');
     }
+    public function seleksitf()
+    {
+        # code...
+         $where = array(
+            'jalur' => 'kelastransfer'
+        );
+        $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+        $this->load->view('baak/header');
+        $this->load->view('baak/seleksitf',$data);
+        $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
+        $this->load->view('baak/seleksitf_js');
+    }
     public function seleksi2()
     {
         # code...
@@ -2742,6 +2755,15 @@ class Baak extends CI_Controller {
      public function getNotifikasi() {
 
         $data['notifikasi'] = $this->m_registrasi->getNotifikasiseleksi();
+         // Ubah hasil ke format JSON
+        $json_data = json_encode($data['notifikasi']);
+
+        // Tampilkan data JSON
+        echo $json_data;
+    }
+      public function getNotifikasitf() {
+
+        $data['notifikasi'] = $this->m_registrasi->getNotifikasiseleksitf();
          // Ubah hasil ke format JSON
         $json_data = json_encode($data['notifikasi']);
 

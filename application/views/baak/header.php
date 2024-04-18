@@ -78,6 +78,23 @@
                   </ul>
               </li>
           <!-- end notif -->
+           <!-- start notif -->
+             <li class="dropdown notifications-menu-tf">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                      <i class="fa fa-flag-o"></i>
+                      <span class="label label-danger" id="jumlah-notifikasi-tf">0</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li class="header">You have <span id="jumlah-notifikasi-menu-tf">0</span> notifications</li>
+                      <li>
+                          <ul class="menu" id="notifikasi-menu-tf">
+                              <!-- Notifikasi akan ditambahkan di sini secara dinamis -->
+                          </ul>
+                      </li>
+                      <li classpt="footer"><a href="#">View all</a></li>
+                  </ul>
+              </li>
+          <!-- end notif -->
          
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
@@ -182,6 +199,7 @@
             <!-- <li class="active"><a href="<?php //echo base_url() ?>baak/"><i class="fa fa-repeat"></i>Ganti Jurusan</a></li> -->
             <li><a href="<?php echo base_url() ?>baak/seleksigd"><i class="fa fa-paperclip"></i>Seleksi GD</a></li>
             <li><a href="<?php echo base_url() ?>baak/seleksi"><i class="fa fa-paperclip"></i>Seleksi</a></li>
+            <li><a href="<?php echo base_url() ?>baak/seleksitf"><i class="fa fa-paperclip"></i>Seleksi TF</a></li>
           </ul>
         </li>
         <?php 
