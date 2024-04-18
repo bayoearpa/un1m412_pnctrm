@@ -971,7 +971,7 @@ public function edit_proses_seleksi()
 		}//end cek
 
 		// cek sudah input
-		if ($this->input->post('nfile_supersehat') > '0') {
+		if ($_FILES['nfile_supersehat']['error'] === UPLOAD_ERR_OK) {
 			    // Konfigurasi upload file Ijasah D3
 	    $config_supersehat['upload_path'] = './assets/upload/2024/upload_seleksi_supersehat';
 	    $config_supersehat['allowed_types'] = 'pdf';
