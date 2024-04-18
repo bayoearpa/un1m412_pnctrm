@@ -48,7 +48,7 @@ function updateNotifikasitf(notifikasi) {
 
     // Tambahkan notifikasi baru
    for (var i = 0; i < jumlahNotifikasi; i++) {
-        var notifikasiLink = "<?php echo base_url('baak/prosesseleksi/'); ?>" + notifikasi[i].nomor;
+        var notifikasiLink = "<?php echo base_url('baak/prosesseleksitf/'); ?>" + notifikasi[i].nomor;
         $("#notifikasi-menu-tf").append("<li><a href='" + notifikasiLink + "'><i class='fa fa-user text-red'></i> Pendaftar No. Reg: " + notifikasi[i].nomor + " | " + notifikasi[i].nama + " belum divalidasi</a></li>");
     }
 }

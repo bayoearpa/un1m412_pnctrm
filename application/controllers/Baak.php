@@ -2607,6 +2607,20 @@ class Baak extends CI_Controller {
         $this->load->view('baak/footer_js');
         $this->load->view('baak/prosesseleksi_js');
     }
+     function prosesseleksitf($id)
+    {
+        # code...
+        $where = array(
+            'tbl_catar_2024.no' => $id       
+        );
+        $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+
+        $this->load->view('baak/header');
+        $this->load->view('baak/prosesseleksitf',$data);
+        $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
+        $this->load->view('baak/prosesseleksitf_js');
+    }
      function prosesseleksip()
     {
         # code...
