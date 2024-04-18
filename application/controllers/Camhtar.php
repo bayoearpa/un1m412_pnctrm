@@ -879,6 +879,7 @@ public function edit_proses_seleksi()
 {
 	# code...
 	$id_seleksi = $this->input->post('id_seleksi');
+	$no = $this->input->post('no');
 	$data['n101'] = $this->input->post('en101');
     $data['n102'] = $this->input->post('en102');
     $data['n111'] = $this->input->post('en111');
