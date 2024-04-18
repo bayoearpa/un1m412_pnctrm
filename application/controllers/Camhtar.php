@@ -893,7 +893,7 @@ public function edit_proses_seleksi()
 	$this->m_registrasi->update_data($where,$data,'tbl_seleksi_20242');
 
 	// cek sudah input
-		if ($this->input->post('nfile_ktp') > "0") {
+		if ($_FILES['nfile_ktp']['error'] === UPLOAD_ERR_OK) {
 			    // Konfigurasi upload file Ijasah D3
 	    $config_ktp['upload_path'] = './assets/upload/2024/upload_seleksi_ktp';
 	    $config_ktp['allowed_types'] = 'pdf';
@@ -932,7 +932,7 @@ public function edit_proses_seleksi()
 		}//end cek
 
 		// cek sudah input
-		if ($this->input->post('nfile_suket') > "0") {
+		if ($_FILES['nfile_suket']['error'] === UPLOAD_ERR_OK) {
 			    // Konfigurasi upload file Ijasah D3
 	    $config_suket['upload_path'] = './assets/upload/2024/upload_seleksi_suket';
 	    $config_suket['allowed_types'] = 'pdf';
