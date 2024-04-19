@@ -506,7 +506,7 @@ class Baak extends CI_Controller {
             'tbl_catar_2024.prodi' => $prodi,
             'tbl_catar_2024.jalur' => $kelas,
             'tbl_catar_2024.jk' => $jk,
-            'tbl_catar_2024.id_tgl_seleksi' => $tgl_pel,              
+            //'tbl_catar_2024.id_tgl_seleksi' => $tgl_pel,              
             );
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
             $data['kelas'] = $kelas;
@@ -527,7 +527,7 @@ class Baak extends CI_Controller {
             'tbl_catar_2024.prodi' => $prodi,
             'tbl_catar_2024.jalur' => $kelas,
             'tbl_catar_2024.jk' => $jk,
-            'tbl_catar_2024.id_tgl_seleksi' => $tgl_pel,    
+            //'tbl_catar_2024.id_tgl_seleksi' => $tgl_pel,    
             'tbl_catar_2024.gelombang' => $gelombang,                
             );
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
@@ -565,7 +565,7 @@ class Baak extends CI_Controller {
             'tbl_catar_2024.prodi' => $prodi,
             'tbl_catar_2024.jalur' => $kelas,
             'tbl_catar_2024.jk' => $jk,
-            'tbl_catar_2024.id_tgl_seleksi' => $tgl_pel,                
+            //'tbl_catar_2024.id_tgl_seleksi' => $tgl_pel,                
             );
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
             $data['kelas'] = $kelas;
@@ -586,7 +586,7 @@ class Baak extends CI_Controller {
             'tbl_catar_2024.prodi' => $prodi,
             'tbl_catar_2024.jalur' => $kelas,
             'tbl_catar_2024.jk' => $jk,
-            'tbl_catar_2024.id_tgl_seleksi' => $tgl_pel,    
+            //'tbl_catar_2024.id_tgl_seleksi' => $tgl_pel,    
             'tbl_catar_2024.gelombang' => $gelombang,                
             );
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
@@ -624,7 +624,7 @@ class Baak extends CI_Controller {
             'tbl_catar_2024.prodi' => $prodi,
             'tbl_catar_2024.jalur' => $kelas,
             'tbl_catar_2024.jk' => $jk,
-            'tbl_catar_2024.id_tgl_seleksi' => $tgl_pel,              
+            //'tbl_catar_2024.id_tgl_seleksi' => $tgl_pel,              
             );
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
             $data['kelas'] = $kelas;
@@ -645,7 +645,7 @@ class Baak extends CI_Controller {
             'tbl_catar_2024.prodi' => $prodi,
             'tbl_catar_2024.jalur' => $kelas,
             'tbl_catar_2024.jk' => $jk,
-            'tbl_catar_2024.id_tgl_seleksi' => $tgl_pel,    
+            //'tbl_catar_2024.id_tgl_seleksi' => $tgl_pel,    
             'tbl_catar_2024.gelombang' => $gelombang,               
             );
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
@@ -1027,7 +1027,7 @@ class Baak extends CI_Controller {
             'tbl_catar_2024.prodi' => $prodi,
             'tbl_catar_2024.jalur' => $kelas,
             'tbl_catar_2024.jk' => $jk,
-            'tbl_catar_2024.id_tgl_seleksi' => $tgl_pel,                
+            // 'tbl_catar_2024.id_tgl_seleksi' => $tgl_pel,                
             );
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
             $data['kelas'] = $kelas;
@@ -1046,7 +1046,7 @@ class Baak extends CI_Controller {
             'tbl_catar_2024.prodi' => $prodi,
             'tbl_catar_2024.jalur' => $kelas,
             'tbl_catar_2024.jk' => $jk,
-            'tbl_catar_2024.id_tgl_seleksi' => $tgl_pel,    
+            // 'tbl_catar_2024.id_tgl_seleksi' => $tgl_pel,    
             'tbl_catar_2024.gelombang' => $gelombang,                
             );
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
@@ -1100,7 +1100,7 @@ class Baak extends CI_Controller {
             'tbl_catar_2024.prodi' => $prodi,
             'tbl_catar_2024.jalur' => $kelas,
             'tbl_catar_2024.jk' => $jk,
-            'tbl_catar_2024.id_tgl_seleksi' => $tgl_pel,    
+            // 'tbl_catar_2024.id_tgl_seleksi' => $tgl_pel,    
             'tbl_catar_2024.gelombang' => $gelombang,                
             );
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
@@ -1135,7 +1135,7 @@ class Baak extends CI_Controller {
             'tbl_catar_2024.prodi' => $prodi,
             'tbl_catar_2024.jalur' => $kelas,
             'tbl_catar_2024.jk' => $jk,
-            'tbl_catar_2024.id_tgl_seleksi' => $tgl_pel,                
+            // 'tbl_catar_2024.id_tgl_seleksi' => $tgl_pel,                
             );
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
             $data['kelas'] = $kelas;
@@ -1154,7 +1154,7 @@ class Baak extends CI_Controller {
             'tbl_catar_2024.prodi' => $prodi,
             'tbl_catar_2024.jalur' => $kelas,
             'tbl_catar_2024.jk' => $jk,
-            'tbl_catar_2024.id_tgl_seleksi' => $tgl_pel,    
+            // 'tbl_catar_2024.id_tgl_seleksi' => $tgl_pel,    
             'tbl_catar_2024.gelombang' => $gelombang,                
             );
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
