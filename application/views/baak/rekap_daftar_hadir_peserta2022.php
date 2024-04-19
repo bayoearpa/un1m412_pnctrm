@@ -66,7 +66,7 @@
                       //foreach ($get_tgl_pel as $key) {
                         # code... ?>
                         <option value="<?php //echo $key->id_tgl_seleksi ?>"><?php //echo date_indo($key->tgl_seleksi); ?></option>
-                     <?php }
+                     <?php// }
                      ?>
                   </select>
                   </div> -->
