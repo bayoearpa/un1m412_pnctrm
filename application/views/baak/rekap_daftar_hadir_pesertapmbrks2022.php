@@ -22,15 +22,17 @@
                     <option value="5">S1 Teknik Transportasi Laut</option> 
                     <option value="6">S1 Teknik Mesin</option>
                     <option value="7">S1 Teknik Keselamatan</option>
-                    <option value="8">S1 Perdagangan Internasional</option>                  
+                    <option value="8">S1 Perdagangan Internasional</option>    
+                    <option value="7">D4 MPLM</option>
+                    <option value="8">S1 Bisnis Digital</option>               
                     </select> 
                   </div>
-                  <div class="form-group">
-                  <label>Pilih kelas</label>*wajib pilih
+                   <div class="form-group">
+                  <label>Pilih Jalur</label>*wajib pilih
                   <select class="form-control" name="kelas" id="kelas" required="harus dipilih">
                     <option selected>== Pilih ==</option>
-                    <option value="reg">Reguler</option>
-                    <option value="fastt">Fast Track</option>
+                    <option value="reguler">Reguler</option>
+                    <option value="gdr1">Fast Track</option>
                   </select>
                   </div>
                   <div class="form-group">
