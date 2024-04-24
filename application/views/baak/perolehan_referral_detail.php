@@ -9,6 +9,7 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
+              <a href="<?php echo base_url() ?>baak/perolehan_referral"><button type="button" class="btn btn-block btn-success"><i class="fa fa-fw fa-arrow-left"></i>Kembali</button></a> 
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
