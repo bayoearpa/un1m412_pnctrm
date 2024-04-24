@@ -61,7 +61,7 @@ class m_registrasi extends CI_Model
 	public function get_data_referral($where)
     {
         // Query untuk mengambil data dari kedua tabel dengan filter tipe='bk'
-        $this->db->select('*');
+        $this->db->select('c.no, c.nama, c.jk, c.prodi, r.ref');
         $this->db->from('tbl_catar_2024 c');
         $this->db->join('tbl_ref r', 'c.ref = r.ref', 'left');
         $this->db->where('r.tipe', $where);
@@ -75,7 +75,16 @@ class m_registrasi extends CI_Model
     $this->db->join('tbl_ref r', 'c.ref = r.ref');
     $this->db->where_in('r.tipe', $tipe_array);
     return $this->db->get()->row()->total;
-}
+	}
+	public function get_data_referral_all_result($tipe_array) {
+    $this->db->select('c.no, c.nama, c.jk, c.prodi, r.ref, COUNT(*) as total');
+    $this->db->from('tbl_catar_2024 c');
+    $this->db->join('tbl_ref r', 'c.ref = r.ref');
+    $this->db->where_in('r.tipe', $tipe_array);
+    $this->db->group_by('c.no, c.nama, c.jk, c.prodi, r.ref'); // Mengelompokkan hasil berdasarkan kolom yang dipilih
+    return $this->db->get()->result();
+	}
+
 //////////////////// .for login referral ////////////////////////////////////////////////////
 
 	///////////////////////// untuk cek user/////////////////////////////////////////////////

@@ -2779,6 +2779,36 @@ class Baak extends CI_Controller {
         $this->load->view('baak/footer');
         $this->load->view('baak/footer_js');
     }
+    public function perolehan_referral_detail($value)
+    {
+        # code...
+        if ($value == 'semua') {
+            # code...
+            $data['catar'] = $this->m_registrasi->get_data_referral_all_result(array('bk', 'mahatar', 'umum', 'ikani'));
+            $data['caption']= "DATA SEMUA REFERRAL"
+        }elseif ($value == 'bk') {
+            # code...
+            $data['catar'] = $this->m_registrasi->get_data_referral('bk')->result();
+            $data['caption']= "DATA SEMUA REFERRAL BK"
+        }elseif ($value == 'mahatar') {
+            # code...
+            $data['catar'] = $this->m_registrasi->get_data_referral('mahatar')->result();
+            $data['caption']= "DATA SEMUA REFERRAL MAHASISWA DAN TARUNA"
+        }elseif ($value == 'umum') {
+            # code...
+            $data['catar'] = $this->m_registrasi->get_data_referral('umum')->result();
+            $data['caption']= "DATA SEMUA REFERRAL KHUSUS"
+        }elseif ($value == 'ikani') {
+            # code...
+            $data['catar'] = $this->m_registrasi->get_data_referral('ikani')->result();
+            $data['caption']= "DATA SEMUA REFERRAL IKANI"
+        }
+
+        $this->load->view('baak/header');
+        $this->load->view('baak/perolehan_referral_detail',$data);
+        $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
+    }
 
     ///////////////////////////////////////// .Referral 2024 /////////////////////////////////////////////////////
     ///////////////////// notifikasi seleksi /////////////////////////////
