@@ -69,6 +69,13 @@ class m_registrasi extends CI_Model
         // Mengembalikan hasil query
         return $query;
     }
+    public function get_data_referral_count($tipe_array) {
+    $this->db->select('COUNT(*) as total');
+    $this->db->from('tbl_catar_2024 c');
+    $this->db->join('tbl_ref r', 'c.ref = r.ref');
+    $this->db->where_in('r.tipe', $tipe_array);
+    return $this->db->get()->row()->total;
+}
 //////////////////// .for login referral ////////////////////////////////////////////////////
 
 	///////////////////////// untuk cek user/////////////////////////////////////////////////

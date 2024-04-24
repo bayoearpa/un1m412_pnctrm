@@ -2767,7 +2767,7 @@ class Baak extends CI_Controller {
         # code...
         // Panggil method pada model untuk mendapatkan data
         
-        $data['all'] = $this->m_registrasi->get_data_referral(array('bk', 'mahatar', 'umum', 'ikani'))->num_rows();
+        $data['all'] = $this->m_registrasi->get_data_referral_count(array('bk', 'mahatar', 'umum', 'ikani'))->num_rows();
         $data['mahatar'] = $this->m_registrasi->get_data_referral('mahatar')->num_rows();
         $data['bk'] = $this->m_registrasi->get_data_referral('bk')->num_rows();
         $data['ikani'] = $this->m_registrasi->get_data_referral('ikani')->num_rows();
