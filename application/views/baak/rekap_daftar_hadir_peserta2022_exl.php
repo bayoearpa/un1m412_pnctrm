@@ -23,8 +23,8 @@
                     <option value="6">S1 Teknik Mesin</option>
                     <option value="7">S1 Teknik Keselamatan</option>
                     <option value="8">S1 Perdagangan Internasional</option>
-                    <option value="7">D4 MPLM</option>
-                    <option value="8">S1 Bisnis Digital</option>                   
+                     <option value="9">D4 MPLM</option>
+                    <option value="10">S1 Bisnis Digital</option>                      
                     </select> 
                   </div>
                    <div class="form-group">
