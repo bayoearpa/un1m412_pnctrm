@@ -2762,7 +2762,21 @@ class Baak extends CI_Controller {
         redirect("baak/referral");
     }
 
-
+    public function perolehan_referral()
+    {
+        # code...
+        // Panggil method pada model untuk mendapatkan data
+        $data['mahatar'] = $this->m_registrasi->get_data_referral('mahatar')->num_rows();
+        $data['bk'] = $this->m_registrasi->get_data_referral('bk')->num_rows();
+        $data['ikani'] = $this->m_registrasi->get_data_referral('ikani')->num_rows();
+        $data['umum'] = $this->m_registrasi->get_data_referral('umum')->num_rows();
+        
+        // Load view dan kirimkan data
+        $this->load->view('baak/header');
+        $this->load->view('baak/perolehan_referral',$data);
+        $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
+    }
 
     ///////////////////////////////////////// .Referral 2024 /////////////////////////////////////////////////////
     ///////////////////// notifikasi seleksi /////////////////////////////

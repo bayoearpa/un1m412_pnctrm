@@ -217,6 +217,7 @@
           <ul class="treeview-menu">
             <!-- <li class="active"><a href="<?php //echo base_url() ?>baak/"><i class="fa fa-repeat"></i>Ganti Jurusan</a></li> -->
             <li><a href="<?php echo base_url() ?>baak/referral"><i class="fa fa-paperclip"></i>Data Pereferral</a></li>
+            <li><a href="<?php echo base_url() ?>baak/perolehan_referral"><i class="fa fa-paperclip"></i>Perolehan</a></li>
           </ul>
         </li>
       <?php } ?>
