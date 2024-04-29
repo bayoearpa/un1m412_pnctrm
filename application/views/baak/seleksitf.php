@@ -78,7 +78,7 @@
                     
                   ?></td>
                   <td>
-                      <a href="<?php echo base_url() ?>baak/proses_seleksi/<?php echo $c->no; ?>"><button type="button" name="submit" id="prosesseleksi" class="btn btn-primary">Proses Seleksi</button></a>
+                      <a href="<?php echo base_url() ?>baak/proses_seleksitf/<?php echo $c->no; ?>"><button type="button" name="submit" id="prosesseleksi" class="btn btn-primary">Proses Seleksi</button></a>
                    </td>
                 </tr>
                <?php } ?>
