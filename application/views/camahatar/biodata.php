@@ -108,7 +108,7 @@
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Telp. / Hp</label>
-                  <input type="text" class="form-control" id="telp" name="telp" value="<?php echo $key->telp?>" placeholder="Masukan No. Telepon atau Hp Anda">
+                  <input type="number" class="form-control" id="telp" name="telp" value="<?php echo $key->telp?>" placeholder="Masukan No. Telepon atau Hp Anda">
                 </div>
                 <!-- <div class="form-group">
                   <label>Kategori Sekolah</label>
