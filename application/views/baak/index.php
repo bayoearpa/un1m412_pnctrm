@@ -12,55 +12,72 @@
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>No.</th>
                   <th>No. Pendf.</th>
                   <th>Nama</th>
                   <th>Telp / Hp</th>
                   <th>Prodi yang Dipilih</th>
-                  <th>Nama Ibu</th>
+                  <th>Jurusan SMK/SMA</th>
+                  <th>Kota/Kabupaten</th>
+                  <th>Provinsi</th>
                   <th>Telp / Hp Ortu</th>
                   <th>Validasi</th>
+                  <th>Lulus Seleksi</th>
+                  <th>Daftar Ulang</th>
                 </tr>
                 </thead>
                 <tbody>
                 <?php 
-                $no = 1;
                 foreach($catar as $c){ 
                  ?>
                 <tr>
-                  <td><?php echo $no++; ?></td>
                   <td><?php echo $c->no ?></td>
                   <td><?php echo $c->nama ?></td>
                   <td><?php echo $c->telp ?></td>
                   <td><?php echo $baak->prodi($c->prodi) ?></td>
-                  <td><?php echo $c->nama_i ?></td>
+                  <td><?php echo $c->prodi_lama?></td>
+                  <td><?php echo $c->kabkota?></td>
+                  <td><?php echo $c->propinsi?></td>
                   <td><?php echo $c->telp_ortu ?></td>
-                  <td>
-
-                  <?php 
-                  $where = array(
-                  'no' => $c->no       
-                  );
-                  $cek=$this->m_registrasi->get_data($where,'tbl_catar_validasi_2024')->num_rows(); ?>
-                   <?php if ($cek > 0){ ?>
-                      <a class="btn btn-success btn-sm" href="#"><i class="fa fa-check-circle"></i> Sudah Validasi</a>
-                  <?php }else{ ?>
-                      <a class="btn btn-warning btn-sm" href="<?php echo base_url().'baak/validasi/'.$c->no; ?>"><i class="fa fa-check-circle"></i>Belum Validasi</a>
-                  <?php }?>
-                  </td>
+                  <td><?php 
+                      if ($c->no_val == null) {
+                        # code... ?>
+                        <i class="fa fa-close bg-red"></i>
+                      <?php }else{ ?>
+                        <i class="fa fa-check bg-green"></i>
+                      <?php } ?>
+                   ?></td>
+                   <td><?php 
+                      if ($c->no_seleksi == null) {
+                        # code... ?>
+                        <i class="fa fa-close bg-red"></i>
+                      <?php }else{ ?>
+                        <i class="fa fa-check bg-green"></i>
+                      <?php } ?>
+                   ?></td>
+                   <td><?php 
+                      if ($c->no_daful == null) {
+                        # code... ?>
+                        <i class="fa fa-close bg-red"></i>
+                      <?php }else{ ?>
+                        <i class="fa fa-check bg-green"></i>
+                      <?php } ?>
+                   ?></td>
                 </tr>
                <?php } ?>
                 </tbody>
                 <tfoot>
                 <tr>
-                  <th>No.</th>
                   <th>No. Pendf.</th>
                   <th>Nama</th>
                   <th>Telp / Hp</th>
                   <th>Prodi yang Dipilih</th>
-                  <th>Nama Ibu</th>
+                  <th>Jurusan SMK/SMA</th>
+                  <th>Kota/Kabupaten</th>
+                  <th>Provinsi</th>
                   <th>Telp / Hp Ortu</th>
                   <th>Validasi</th>
+                  <th>Lulus Seleksi</th>
+                  <th>Daftar Ulang</th>
                 </tr>
                 </tfoot>
               </table>

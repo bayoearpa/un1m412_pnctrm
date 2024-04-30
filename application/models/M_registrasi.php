@@ -50,6 +50,33 @@ class m_registrasi extends CI_Model
 	       $this->db->where($where);
 	return $this->db->get()->row('ta');
 	}
+	//////////////////// get data 2024 /////////////////////////////////////////////////////////
+	function get_data_join_2024(){
+		$this->db->select('tbl_catar_2024.no as no,
+		tbl_catar_2024.nama as nama,
+		tbl_catar_2024.ktkb as ktkb,
+		tbl_catar_2024.provinsi as provinsi,
+		tbl_catar_2024.telp as telp,
+		tbl_catar_2024.prodi_lama as prodi_lama,
+		tbl_catar_2024.thn_lulus as tahun_lulus,
+		tbl_catar_2024.prodi as prodi,
+		tbl_catar_2024.gelombang as gelombang,
+		tbl_catar_validasi_2024.no as no_val,
+		tbl_catar_hasil_seleksi_2024.no as no_seleksi,
+		tbl_catar_daful_2024.no as no_daful,
+		tbl_kabkota.nm_wil as kabkota,
+		tbl_propinsi.nm_wil as propinsi');
+		$this->db->from('tbl_catar_2024');
+		$this->db->join('tbl_catar_validasi_2024','tbl_catar_2024.no = tbl_catar_validasi_2024.no','left');
+		$this->db->join('tbl_catar_hasil_seleksi_2024','tbl_catar_2024.no = tbl_catar_hasil_seleksi_2024.no','left');
+		$this->db->join('tbl_catar_daful_2024','tbl_catar_2024.no = tbl_catar_daful_2024.no','left');
+		$this->db->join('tbl_kabkota','tbl_catar_2024.ktkb = tbl_kabkota.id_wil','inner');
+		$this->db->join('tbl_propinsi','tbl_catar_2024.provinsi = tbl_propinsi.id_wil','inner');
+		$query=$this->db->get();
+		return $query;
+	}
+
+	//////////////////// .get data 2024 /////////////////////////////////////////////////////////
 	//////////////////// for login referral ////////////////////////////////////////////////////
 	function get_user_by_refcode($table,$where)
 	{

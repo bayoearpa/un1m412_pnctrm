@@ -93,7 +93,7 @@ class Baak extends CI_Controller {
         $where = array(
             'gelombang' => $gelombang       
         );
-        $data['catar'] = $this->m_registrasi->get_data_all('tbl_catar_2024')->result();
+        $data['catar'] = $this->m_registrasi->get_data_join_2024()->result();
         $this->load->view('baak/header');
         $this->load->view('baak/index',$data);
         $this->load->view('baak/footer');
