@@ -45,7 +45,7 @@
                       <?php }else{ ?>
                         <i class="fa fa-check bg-green"></i>
                       <?php } ?>
-                   ?></td>
+                   </td>
                    <td><?php 
                       if ($c->no_seleksi == null) {
                         # code... ?>
@@ -53,7 +53,7 @@
                       <?php }else{ ?>
                         <i class="fa fa-check bg-green"></i>
                       <?php } ?>
-                   ?></td>
+                   </td>
                    <td><?php 
                       if ($c->no_daful == null) {
                         # code... ?>
@@ -61,7 +61,7 @@
                       <?php }else{ ?>
                         <i class="fa fa-check bg-green"></i>
                       <?php } ?>
-                   ?></td>
+                   </td>
                 </tr>
                <?php } ?>
                 </tbody>
