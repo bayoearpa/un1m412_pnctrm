@@ -370,7 +370,7 @@ class Baak extends CI_Controller {
             'tbl_catar_2024.periode' => $periode,
             'tbl_catar_2024.jalur' => "reguler",  
         );
-            $where111= array(
+            $where11= array(
             'tbl_catar_2024.prodi' => "4",
             'tbl_catar_2024.periode' => $periode,
             'tbl_catar_2024.jalur' => "kelastransfer",  
