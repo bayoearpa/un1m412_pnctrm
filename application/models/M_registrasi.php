@@ -57,6 +57,7 @@ class m_registrasi extends CI_Model
 		tbl_catar_2024.ktkb as ktkb,
 		tbl_catar_2024.provinsi as provinsi,
 		tbl_catar_2024.telp as telp,
+		tbl_catar_2024.telp_ortu as telp_ortu,
 		tbl_catar_2024.prodi_lama as prodi_lama,
 		tbl_catar_2024.thn_lulus as tahun_lulus,
 		tbl_catar_2024.prodi as prodi,
