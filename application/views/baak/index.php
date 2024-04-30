@@ -41,25 +41,25 @@
                   <td><?php 
                       if ($c->no_val == null) {
                         # code... ?>
-                        <i class="fa fa-close bg-red"></i>
+                        <li><i class="fa fa-close bg-red"></i></li>
                       <?php }else{ ?>
-                        <i class="fa fa-check bg-green"></i>
+                        <li><i class="fa fa-check bg-green"></i></li>
                       <?php } ?>
                    </td>
                    <td><?php 
                       if ($c->no_seleksi == null) {
                         # code... ?>
-                        <i class="fa fa-close bg-red"></i>
+                       <li><i class="fa fa-close bg-red"></i></li> 
                       <?php }else{ ?>
-                        <i class="fa fa-check bg-green"></i>
+                        <li><i class="fa fa-check bg-green"></i></li>
                       <?php } ?>
                    </td>
                    <td><?php 
                       if ($c->no_daful == null) {
                         # code... ?>
-                        <i class="fa fa-close bg-red"></i>
+                       <li><i class="fa fa-close bg-red"></i></li>
                       <?php }else{ ?>
-                        <i class="fa fa-check bg-green"></i>
+                        <li><i class="fa fa-check bg-green"></i></li>
                       <?php } ?>
                    </td>
                 </tr>
