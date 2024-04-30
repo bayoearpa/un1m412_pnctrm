@@ -41,9 +41,9 @@
                   <td><?php 
                       if ($c->no_val == null) {
                         # code... ?>
-                        <li><i class="fa fa-close bg-red"></i></li>
+                        <i class="fa fa-close bg-red"></i>
                       <?php }else{ ?>
-                        <li><i class="fa fa-check bg-green"></i></li>
+                        <i class="fa fa-check bg-green"></i>
                       <?php } ?>
                    </td>
                    <td><?php 
@@ -51,15 +51,15 @@
                         # code... ?>
                        <li><i class="fa fa-close bg-red"></i></li> 
                       <?php }else{ ?>
-                        <li><i class="fa fa-check bg-green"></i></li>
+                        <i class="fa fa-check bg-green"></i>
                       <?php } ?>
                    </td>
                    <td><?php 
                       if ($c->no_daful == null) {
                         # code... ?>
-                       <li><i class="fa fa-close bg-red"></i></li>
+                        <i class="fa fa-close bg-red"></i>
                       <?php }else{ ?>
-                        <li><i class="fa fa-check bg-green"></i></li>
+                        <i class="fa fa-check bg-green"></i>
                       <?php } ?>
                    </td>
                 </tr>
