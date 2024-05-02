@@ -78,6 +78,52 @@ class Baak extends CI_Controller {
             }
             return $pick;
     }
+    function periode($id){
+        switch ($id) {
+
+            // registrasi
+               case '1':
+                    $pick = "Januari";
+                break;
+                case '2' :
+                    $pick = "Februari";
+                break;
+                case '3' :
+                    $pick = "Maret";
+                break;
+                case '4' :
+                    $pick = "April";
+                break;
+                case '5':
+                    $pick = "Mei";
+                break;
+                case '6':
+                    $pick = "Juni";
+                break;
+                case '7':
+                    $pick = "Juli";
+                break;
+                case '8':
+                    $pick = "Agustus";
+                break;
+                case '9':
+                    $pick = "September";
+                break;
+                 case '10':
+                    $pick = "Oktober";
+                break;
+                case '11':
+                    $pick = "November";
+                break;
+                 case '12':
+                    $pick = "Desember";
+                break;
+                default :
+                    $pick = "Periode tidak ditemukan";
+                
+            }
+            return $pick;
+    }
     function logout(){
         $this->session->sess_destroy();
         redirect(base_url().'administrasi?pesan=logout');

@@ -76,6 +76,7 @@
             <tr>
               <th>No.</th>
               <th>Jurusan yang Diambil</th>
+              <th>Periode Pendaftaran</th>
             </tr>
             </thead>
             <tbody>
@@ -121,6 +122,55 @@
                         
                       }
                       echo $pick;
+                ?>
+                </strong>
+              </td>
+               <td><strong>
+                <?php 
+                 switch ($c->periode) {
+
+            // registrasi
+               case '1':
+                    $pick = "Januari";
+                break;
+                case '2' :
+                    $pick = "Februari";
+                break;
+                case '3' :
+                    $pick = "Maret";
+                break;
+                case '4' :
+                    $pick = "April";
+                break;
+                case '5':
+                    $pick = "Mei";
+                break;
+                case '6':
+                    $pick = "Juni";
+                break;
+                case '7':
+                    $pick = "Juli";
+                break;
+                case '8':
+                    $pick = "Agustus";
+                break;
+                case '9':
+                    $pick = "September";
+                break;
+                 case '10':
+                    $pick = "Oktober";
+                break;
+                case '11':
+                    $pick = "November";
+                break;
+                 case '12':
+                    $pick = "Desember";
+                break;
+                default :
+                    $pick = "Periode tidak ditemukan";
+                
+            }
+            return $pick;
                 ?>
                 </strong>
               </td>

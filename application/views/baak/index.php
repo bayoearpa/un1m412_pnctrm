@@ -20,6 +20,7 @@
                   <th>Kota/Kabupaten</th>
                   <th>Provinsi</th>
                   <th>Telp / Hp Ortu</th>
+                  <th>Periode</th>
                   <th>Validasi</th>
                   <th>Lulus Seleksi</th>
                   <th>Daftar Ulang</th>
@@ -38,6 +39,7 @@
                   <td><?php echo $c->kabkota?></td>
                   <td><?php echo $c->propinsi?></td>
                   <td><?php echo $c->telp_ortu ?></td>
+                  <td><?php echo $baak->periode($c->periode) ?></td>
                   <td><?php 
                       if ($c->no_val == null) {
                         # code... ?>
@@ -66,7 +68,7 @@
                <?php } ?>
                 </tbody>
                 <tfoot>
-                <tr>
+               <tr>
                   <th>No. Pendf.</th>
                   <th>Nama</th>
                   <th>Telp / Hp</th>
@@ -75,6 +77,7 @@
                   <th>Kota/Kabupaten</th>
                   <th>Provinsi</th>
                   <th>Telp / Hp Ortu</th>
+                  <th>Periode</th>
                   <th>Validasi</th>
                   <th>Lulus Seleksi</th>
                   <th>Daftar Ulang</th>
