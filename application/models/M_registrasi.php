@@ -719,7 +719,7 @@ class m_registrasi extends CI_Model
 
         $this->db->from('tbl_catar_daful_2024');
         $this->db->join('tbl_catar_2024', 'tbl_catar_daful_2024.no = tbl_catar_2024.no', 'inner');
-        $this->db->where($where);
+        $this->db->where_in($where);
         $query = $this->db->get();
 
         return $query;
