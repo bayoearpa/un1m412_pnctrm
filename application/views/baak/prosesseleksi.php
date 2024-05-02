@@ -170,7 +170,7 @@
                     $pick = "Periode tidak ditemukan";
                 
             }
-            return $pick;
+            echo $pick;
                 ?>
                 </strong>
               </td>

@@ -305,6 +305,7 @@ class m_registrasi extends CI_Model
 		tbl_catar_2024.prodi,
 		tbl_catar_2024.jalur,
 		tbl_catar_2024.gelombang,
+		tbl_catar_2024.periode,
 		tbl_catar_2024.id_tgl_seleksi,
 		tbl_catar_2024.upload_ijd3,
 		tbl_catar_2024.upload_transd3,
