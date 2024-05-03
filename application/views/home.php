@@ -709,7 +709,6 @@
                 <li>Pria atau wanita</li>
                 <li>Pernyataan sanggup tidak menikah selama masa pendidikan.</li>
                 <li>Surat keterangan belum menikah dari lurah.</li> 
-                <li>Tinggi badan minimal Pria 160 Cm dan Wanita 155 Cm.</li>
                 <li>Foto Copy Ijasah berlegalisir :</li>
                 <ul>
                   <li>SMA atau Madrasah Aliyah (MA) – (Semua Program Studi).</li>
