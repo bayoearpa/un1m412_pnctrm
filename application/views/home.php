@@ -796,13 +796,12 @@
                 <li>Pernyataan sanggup tidak menikah selama masa pendidikan.</li>
                 <li>Surat keterangan belum menikah dari lurah.</li>
                 <li>Foto Copy Ijasah berlegalisir :</li>
-                <ul>
-                  <li>SMA atau Madrasah Aliyah (MA) – IPA.</li>
-                  <li>SMK – Pelayaran.</li>
-                  <li>SMK – Teknik.</li>
+               <ul>
+                  <li>SMA atau Madrasah Aliyah (MA) – (Semua Program Studi).</li>
+                  <li>SMK –(Semua Program Studi).</li>
                 </ul>
-                <li>SMK/MAK jurusan teknik mesin , teknik mekatronika, teknik elektro (teknik elektronika industri, teknik mekatronika, kecuali tekni audio video), teknik ketenagalistrikan, teknik pendinginan dan tata udara, teknik perkapalan untuk program keahlian instalasi permesinan kapal dan teknik instrumentasi industri.
-                </li>
+               <!--  <li>SMK/MAK jurusan teknik mesin , teknik mekatronika, teknik elektro (teknik elektronika industri, teknik mekatronika, kecuali tekni audio video), teknik ketenagalistrikan, teknik pendinginan dan tata udara, teknik perkapalan untuk program keahlian instalasi permesinan kapal dan teknik instrumentasi industri.
+                </li> -->
                 <li>Surat Keterangan Catatan Kepolisian ( SKCK).</li> 
                 <li>Pas photo hitam putih ukuran 3x4 sebanyak 2 (dua) lembar.</li> 
                 <li>Copy Surat kenal lahir / akte kelahiran.</li> 
@@ -888,12 +887,11 @@
                 <li>Surat keterangan belum menikah dari lurah.</li> 
                 <li>Foto Copy Ijasah berlegalisir :</li>
                 <ul>
-                  <li>SMA atau Madrasah Aliyah (MA) – IPA.</li>
-                  <li>SMK – Pelayaran.</li>
-                  <li>SMK – Teknik.</li>
+                  <li>SMA atau Madrasah Aliyah (MA) – (Semua Program Studi).</li>
+                  <li>SMK –(Semua Program Studi).</li>
                 </ul>
-                <li>SMK/MAK jurusan teknik mesin , teknik mekatronika, teknik elektro (teknik elektronika industri, teknik mekatronika, kecuali tekni audio video), teknik ketenagalistrikan, teknik pendinginan dan tata udara, teknik perkapalan untuk program keahlian instalasi permesinan kapal dan teknik instrumentasi industri.
-                </li>
+                <!-- <li>SMK/MAK jurusan teknik mesin , teknik mekatronika, teknik elektro (teknik elektronika industri, teknik mekatronika, kecuali tekni audio video), teknik ketenagalistrikan, teknik pendinginan dan tata udara, teknik perkapalan untuk program keahlian instalasi permesinan kapal dan teknik instrumentasi industri.
+                </li> -->
                 <li>Surat Keterangan Catatan Kepolisian ( SKCK).</li> 
                 <li>Pas photo hitam putih ukuran 3x4 sebanyak 2 (dua) lembar.</li> 
                 <li>Copy Surat kenal lahir / akte kelahiran.</li> 
@@ -979,8 +977,8 @@
                 <li>Surat keterangan belum menikah dari lurah.</li> 
                 <li>Foto Copy Ijasah berlegalisir :</li>
                 <ul>
-                  <li>SMA atau Madrasah Aliyah (MA) – (IPA).</li>
-                  <li>SMK –(Pelayaran, Teknik, Kesehatan).</li>
+                  <li>SMA atau Madrasah Aliyah (MA) – (Semua Program Studi).</li>
+                  <li>SMK –(Semua Program Studi).</li>
                 </ul>
                 <li>Surat Keterangan Catatan Kepolisian ( SKCK).</li> 
                 <li>Pas photo hitam putih ukuran 3x4 sebanyak 2 (dua) lembar.</li> 
