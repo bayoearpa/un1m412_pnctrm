@@ -490,7 +490,7 @@
                     <td><b>1234_Rian Ardianto_Transportasi_Januari</b></td>
                   </tr>
                 </table> -->
-                <li>Pemberkasan dilaksanakan setelah pendaftaran dinyatakan <b>LULUS SELEKSI</b></li>
+                <li>Pemberkasan dilaksanakan setelah dinyatakan <b>LULUS SELEKSI</b></li>
               </ul>
 
               
@@ -580,7 +580,7 @@
                     <td><b>1234_Rian Ardianto_Transportasi_Januari</b></td>
                   </tr>
                 </table> -->
-                <li>Pemberkasan dilaksanakan setelah pendaftaran dinyatakan <b>LULUS SELEKSI</b></li>
+                <li>Pemberkasan dilaksanakan setelah dinyatakan <b>LULUS SELEKSI</b></li>
               </ul>
               
               <center>
@@ -670,7 +670,7 @@
                     <td><b>1234_Rian Ardianto_Transportasi_Januari</b></td>
                   </tr>
                 </table> -->
-                <li>Pemberkasan dilaksanakan setelah pendaftaran dinyatakan <b>LULUS SELEKSI</b></li>
+                <li>Pemberkasan dilaksanakan setelah dinyatakan <b>LULUS SELEKSI</b></li>
               </ul>
               
                <center>
@@ -760,7 +760,7 @@
                     <td><b>1234_Rian Ardianto_Transportasi_Januari</b></td>
                   </tr>
                 </table> -->
-                <li>Pemberkasan dilaksanakan setelah pendaftaran dinyatakan <b>LULUS SELEKSI</b></li>
+                <li>Pemberkasan dilaksanakan setelah dinyatakan <b>LULUS SELEKSI</b></li>
               </ul>
               
                <center>
@@ -849,7 +849,7 @@
                     <td><b>1234_Rian Ardianto_Transportasi_Januari</b></td>
                   </tr>
                 </table> -->
-                <li>Pemberkasan dilaksanakan setelah pendaftaran dinyatakan <b>LULUS SELEKSI</b></li>
+                <li>Pemberkasan dilaksanakan setelah dinyatakan <b>LULUS SELEKSI</b></li>
               </ul>
               
                <center>
@@ -940,7 +940,7 @@
                     <td><b>1234_Rian Ardianto_Transportasi_Januari</b></td>
                   </tr>
                 </table> -->
-                <li>Pemberkasan dilaksanakan setelah pendaftaran dinyatakan <b>LULUS SELEKSI</b></li>
+                <li>Pemberkasan dilaksanakan setelah dinyatakan <b>LULUS SELEKSI</b></li>
               </ul>
               
               <center>
@@ -1028,7 +1028,7 @@
                     <td><b>1234_Rian Ardianto_Nautika_Januari</b></td>
                   </tr>
                 </table> -->
-                <li>Pemberkasan dilaksanakan setelah pendaftaran dinyatakan <b>LULUS SELEKSI</b></li>
+                <li>Pemberkasan dilaksanakan setelah dinyatakan <b>LULUS SELEKSI</b></li>
               </ul>
               
                <center>
@@ -1116,7 +1116,7 @@
                     <td><b>1234_Rian Ardianto_Transportasi_Januari</b></td>
                   </tr>
                 </table> -->
-                <li>Pemberkasan dilaksanakan setelah pendaftaran dinyatakan <b>LULUS SELEKSI</b></li>
+                <li>Pemberkasan dilaksanakan setelah dinyatakan <b>LULUS SELEKSI</b></li>
               </ul>
               
                <center>
@@ -1205,7 +1205,7 @@
                     <td><b>1234_Rian Ardianto_Transportasi_Januari</b></td>
                   </tr>
                 </table> -->
-                <li>Pemberkasan dilaksanakan setelah pendaftaran dinyatakan <b>LULUS SELEKSI</b></li>
+                <li>Pemberkasan dilaksanakan setelah dinyatakan <b>LULUS SELEKSI</b></li>
               </ul>
               
                <center>
@@ -1294,7 +1294,7 @@
                     <td><b>1234_Rian Ardianto_Transportasi_Januari</b></td>
                   </tr>
                 </table> -->
-                <li>Pemberkasan dilaksanakan setelah pendaftaran dinyatakan <b>LULUS SELEKSI</b></li>
+                <li>Pemberkasan dilaksanakan setelah dinyatakan <b>LULUS SELEKSI</b></li>
               </ul>
               
                <center>
