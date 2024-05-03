@@ -437,14 +437,13 @@
               <ul>
                 <!-- <li>Usia max 23 tahun pada bulan September 2022.</li> -->
                 <li>Pria atau wanita</li>
-                <li>Belum menikah dan sanggup tidak menikah selama masa pendidikan yang dibuktikan dengan surat keterangan belum pernah menikah.</li> 
-                <li>Tinggi badan minimal Pria 160 Cm dan Wanita 155 Cm.</li>
-                <li>Copy Ijazah:</li>
+                <li>Belum menikah dan sanggup tidak menikah selama masa pendidikan.</li>
+                <li>Surat pernyataan dibuktikan dengan surat keterangan belum pernah menikah dari kelurahan.</li> 
+                <li>Foto Copy Ijasah berlegalisir :</li>
                 <ul>
                   <li>SMA atau Madrasah Aliyah (MA) – (Semua Program Studi).</li>
                   <li>SMK –(Semua Program Studi).</li>
                 </ul>
-                <li>Dilegalisir dari instansi pemerintah dan pejabat yang berwenang.</li> 
                 <li>Surat Keterangan Catatan Kepolisian ( SKCK).</li> 
                 <li>Pas photo hitam putih ukuran 3x4 sebanyak 2 (dua) lembar.</li> 
                 <li>Copy Surat kenal lahir / akte kelahiran.</li> 
