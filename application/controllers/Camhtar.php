@@ -1232,6 +1232,7 @@ public function edit_proses_seleksi()
 				'no' => $no,
 			);
 		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2024')->result();
+		$data['hasil_sel'] = $this->m_registrasi->get_data($where, 'tbl_catar_hasil_seleksi_2024')->result();
 		foreach ($data['catar'] as $key) {
 			# code...
 			$data['nik'] = $key->nik;
