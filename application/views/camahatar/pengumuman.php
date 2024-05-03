@@ -34,7 +34,7 @@
                     </div>
 
                     <?php } ?>
-            <?php } ?>
+            <?php } } ?>
             </div>
             <!-- /.box-body -->
           </div>
