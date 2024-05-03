@@ -437,8 +437,8 @@
               <ul>
                 <!-- <li>Usia max 23 tahun pada bulan September 2022.</li> -->
                 <li>Pria atau wanita</li>
-                <li>Pernyataan sanggup tidak menikah selama masa pendidikan </li>
-                <li>Surat keterangan blm menikah dari lurah</li> 
+                <li>Pernyataan sanggup tidak menikah selama masa pendidikan.</li>
+                <li>Surat keterangan belum menikah dari lurah.</li> 
                 <li>Foto Copy Ijasah berlegalisir :</li>
                 <ul>
                   <li>SMA atau Madrasah Aliyah (MA) – (Semua Program Studi).</li>
@@ -452,7 +452,7 @@
               <p><i class="fa fa-warning"></i>Peringatan :</p>
               <ul>
                 <li>Pastikan anda melihat prasyarat sesuai <b>Program Studi (Prodi)</b> yang dipilih</li>
-                <li>Pendaftaran dapat dilaksanakan dengan datang langsung ke kampus biru maupun secara <i>online</i></li>
+                <li>Pendaftaran dapat dilaksanakan dengan datang langsung ke kampus biru UNIMAR AMNI SEMARANG maupun secara <i>online</i></li>
                <!--  <li>Bagi pendaftar  melalui <b><i>online</i></b> dapat melaksanakan pembayaran  pendaftaran melalui Bank/ATM :</li>
                 <table>
                   <tr>
