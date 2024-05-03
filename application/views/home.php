@@ -437,8 +437,8 @@
               <ul>
                 <!-- <li>Usia max 23 tahun pada bulan September 2022.</li> -->
                 <li>Pria atau wanita</li>
-                <li>Belum menikah dan sanggup tidak menikah selama masa pendidikan.</li>
-                <li>Surat pernyataan dibuktikan dengan surat keterangan belum pernah menikah dari kelurahan.</li> 
+                <li>Pernyataan sanggup tidak menikah selama masa pendidikan </li>
+                <li>Surat keterangan blm menikah dari lurah</li> 
                 <li>Foto Copy Ijasah berlegalisir :</li>
                 <ul>
                   <li>SMA atau Madrasah Aliyah (MA) – (Semua Program Studi).</li>
