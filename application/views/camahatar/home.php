@@ -38,7 +38,7 @@
                   Anda Harus Mengisi Biodata Terlebih Dahulu untuk melanjutkan ke Proses Berikutnya!
                 </div>
                 <div class="timeline-footer">
-                  <a class="btn btn-primary btn-flat btn-xs">Klik Untuk Mengakses Halaman isi Biodata</a>
+                  <a class="btn btn-primary btn-flat btn-xs" href="<?php echo base_url() ?>biodata">Klik Untuk Mengakses Halaman isi Biodata</a>
                 </div>
               </div>
             </li>
@@ -67,7 +67,7 @@
                   Anda Harus melakukan Pembayaran Terlebih Dahulu dan sudah divaliadsi bagian Keuangan UNIMAR AMNI Semarang untuk melanjutkan ke Proses Berikutnya!
                 </div>
                 <div class="timeline-footer">
-                  <a class="btn btn-primary btn-flat btn-xs">Klik Untuk Mengakses Halaman Pembayaran</a>
+                  <a class="btn btn-primary btn-flat btn-xs" href="<?php echo base_url() ?>pembayaran">Klik Untuk Mengakses Halaman Pembayaran</a>
                 </div>
               </div>
             </li>
@@ -95,7 +95,10 @@
                   Anda Harus melakukan Seleksi Terlebih dahulu dan <b>LULUS</b> seleksi untuk melanjutkan ke Proses Berikutnya!
                 </div>
                 <div class="timeline-footer">
-                  <a class="btn btn-primary btn-flat btn-xs">Klik Untuk Mengakses Halaman Seleksi</a>
+                  <?php 
+          $seleksiPage = ($this->session->userdata('jalur') == "reguler") ? 'seleksi_reguler' : 'seleksi_tf';
+           ?>
+                  <a class="btn btn-primary btn-flat btn-xs" href="<?php echo base_url($seleksiPage) ?>">Klik Untuk Mengakses Halaman Seleksi</a>
                 </div>
               </div>
             </li>
@@ -124,7 +127,7 @@
                   Anda Harus mengisi Form Ukur Pakaian untuk melanjutkan ke Proses Berikutnya!
                 </div>
                 <div class="timeline-footer">
-                  <a class="btn btn-primary btn-flat btn-xs">Klik Untuk Mengakses Halaman Ukur Pakaian</a>
+                  <a class="btn btn-primary btn-flat btn-xs" href="<?php echo base_url() ?>ukurpakaian">Klik Untuk Mengakses Halaman Ukur Pakaian</a>
                 </div>
               </div>
             </li>
@@ -153,7 +156,7 @@
                   Anda Harus mengisi Form Daftar Ulang Sebagai Proses Akhir Anda diterima di UNIMAR AMNI Semarang. Proses Daftar Ulang dinyatakan Selesai Jika Sudah divalidasi Pihak Keuangan!
                 </div>
                 <div class="timeline-footer">
-                  <a class="btn btn-primary btn-flat btn-xs">Klik Untuk Mengakses Halaman Daftar Ulang</a>
+                  <a class="btn btn-primary btn-flat btn-xs" href="<?php echo base_url() ?>daftarulang">>Klik Untuk Mengakses Halaman Daftar Ulang</a>
                 </div>
               </div>
             </li>
