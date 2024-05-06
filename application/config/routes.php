@@ -112,7 +112,7 @@ $route['download_pengumuman_gelombangdini'] = 'camhtar/down_pengumuman_gd';
 //pengumuman
 $route['pengumuman'] = 'camhtar/pengumuman';
 $route['download_pengumuman_januari'] 	= 'camhtar/down_pengumuman_jan';
-$route['download_pengumuman_februari_maret'] 	= 'camhtar/down_pengumuman_feb';
+$route['download_pengumuman_februari_maret'] 	= 'camhtar/down_pengumuman_feb_mar';
 $route['download_pengumuman_maret'] 	= 'camhtar/down_pengumuman_mar';
 $route['download_pengumuman_april'] 	= 'camhtar/down_pengumuman_apr';
 $route['download_pengumuman_mei'] 		= 'camhtar/down_pengumuman_mei';
