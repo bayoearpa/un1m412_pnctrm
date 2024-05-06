@@ -1205,6 +1205,12 @@ public function edit_proses_seleksi()
 		force_download('assets/download/sk_lulus_periode_januari_2024.pdf',NULL);
 		redirect(base_url());
 	}
+	public function down_pengumuman_feb_mar()
+	{
+		# code...
+		force_download('assets/download/sk_lulus_periode_februari_maret_2024.pdf',NULL);
+		redirect(base_url());
+	}
 	public function pengumuman_gd()
 	{
 		# code...
