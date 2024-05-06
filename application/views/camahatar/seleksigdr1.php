@@ -24,10 +24,10 @@
                 </div>
 
            <?php }else{ ?>
-                <div class="box-body"><h3>Pada Saat Seleksi diharapkan mengisi form yang menggunakan <b>KOP Sekolah dan ditandatangani oleh Kepala Sekolah.</b> untuk format bisa di download di bawah ini :</h3>
+                <div class="box-body"><h3>Surat keterangan dengan Kop Sekolah dan ditandatangai oleh Kepsek <b>(Bila belum mempunyai ijazah)</b> untuk format bisa di download di bawah ini :</h3>
                    <a href="<?php echo base_url() ?>download_suket?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Keterangan</button></a>
                 </div>
-                 <div class="box-body"><h3>Pada Saat Seleksi diharapkan mengisi form Surat Pernyataan Sehat.</b> yang bisa di download di bawah ini :</h3>
+                 <div class="box-body"><h3>Surat Pernyataan Sehat.</b> dapat di download di bawah ini :</h3>
                    <a href="<?php echo base_url() ?>download_supersehatreg?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan Sehat</button></a>
                 </div>
                 <hr>
