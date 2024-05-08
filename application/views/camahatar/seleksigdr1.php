@@ -86,7 +86,7 @@
                   </div>
                   <button type="submit" class="btn btn-primary">Simpan</button>
                 </form>
-                <?php }}else{ ?>
+                <?php }else{ ?>
                   <table class="table table-striped">
                         <tbody><tr>
                           <th style="width: 10px">#</th>
@@ -147,7 +147,7 @@
                           </div>
                       </div>
                   </div>
-                <?php } ?>                  
+                <?php } } ?>                  
 
 
             <?php } ?>
