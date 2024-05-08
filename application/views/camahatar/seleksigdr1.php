@@ -32,6 +32,12 @@
                 </div>
                 <hr>
                 <!-- <h5><b>Seleksi samapta akan dilaksanakan secara offline, tunggu pengumuman selanjutnya.</b></h5> -->
+                <?php if ($prodi == '2' || $prodi == '3') { ?>
+                   <div class="box-body"><h3>Pelaksanaan Seleksi Offline Untuk Calon Taruna Nautika dan Teknika dapat dilihat selengkapnya dengan.</b> download di bawah ini :</h3>
+                   <a href="<?php echo base_url() ?>download_supersehatreg?>" target="__blank"><button type="button" class="btn btn-primary">Pengumuman Seleksi</button></a>
+                </div>
+                 <?php # code...
+                }else{ ?>
                 <!-- <h5><b>Silakan mengisi form seleksi dibawah ini :</b></h5> -->
                 <?php echo validation_errors(); ?>
                   <?php if ($this->session->flashdata('success')): ?>
@@ -80,7 +86,7 @@
                   </div>
                   <button type="submit" class="btn btn-primary">Simpan</button>
                 </form>
-                <?php }else{ ?>
+                <?php }}else{ ?>
                   <table class="table table-striped">
                         <tbody><tr>
                           <th style="width: 10px">#</th>

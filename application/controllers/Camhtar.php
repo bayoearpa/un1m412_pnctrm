@@ -641,6 +641,7 @@ class Camhtar extends CI_Controller {
 		foreach ($data['catar'] as $key) {
 			# code...
 			$data['nik'] = $key->nik;
+			$data['prodi'] = $key->prodi;
 		}
 		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2024')->num_rows();
 		$data['seleksi'] = $this->m_registrasi->get_data($where, 'tbl_seleksi_20242')->num_rows();
