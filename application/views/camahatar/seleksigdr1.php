@@ -27,18 +27,19 @@
                 <div class="box-body"><h3>Surat keterangan dengan Kop Sekolah dan ditandatangai oleh Kepsek <b>(Bila belum mempunyai ijazah)</b> untuk format bisa di download di bawah ini :</h3>
                    <a href="<?php echo base_url() ?>download_suket?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Keterangan</button></a>
                 </div>
-                 <div class="box-body"><h3>Surat Pernyataan Sehat.</b> dapat di download di bawah ini :</h3>
-                   <a href="<?php echo base_url() ?>download_supersehatreg?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan Sehat</button></a>
-                </div>
+                
                 <hr>
                 <!-- <h5><b>Seleksi samapta akan dilaksanakan secara offline, tunggu pengumuman selanjutnya.</b></h5> -->
                 <?php if ($prodi == '2' || $prodi == '3') { ?>
                    <div class="box-body"><h3>Pelaksanaan Seleksi Offline Untuk Calon Taruna Nautika dan Teknika dapat dilihat selengkapnya dengan.</b> download di bawah ini :</h3>
-                   <a href="<?php echo base_url() ?>download_supersehatreg?>" target="__blank"><button type="button" class="btn btn-primary">Pengumuman Seleksi</button></a>
+                   <a href="<?php echo base_url() ?>download_pengumuman_seleksi?>" target="__blank"><button type="button" class="btn btn-primary">Pengumuman Seleksi</button></a>
                 </div>
                  <?php # code...
                 }else{ ?>
                 <!-- <h5><b>Silakan mengisi form seleksi dibawah ini :</b></h5> -->
+                 <div class="box-body"><h3>Surat Pernyataan Sehat.</b> dapat di download di bawah ini :</h3>
+                   <a href="<?php echo base_url() ?>download_supersehatreg?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan Sehat</button></a>
+                </div>
                 <?php echo validation_errors(); ?>
                   <?php if ($this->session->flashdata('success')): ?>
                   <div class="alert alert-success alert-dismissible">

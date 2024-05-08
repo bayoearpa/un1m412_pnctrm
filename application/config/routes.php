@@ -108,6 +108,7 @@ $route['download_tutorial_form_seleksi_gelombang_dini'] = 'camhtar/down_tutorial
 $route['download_panduan_pengisian_form_ukur_pakaian'] = 'camhtar/down_panduan_pengisian_form_ukur_pakaian';
 $route['pengumuman_gelombangdini'] = 'camhtar/pengumuman_gd';
 $route['download_pengumuman_gelombangdini'] = 'camhtar/down_pengumuman_gd';
+$route['download_pengumuman_seleksi'] = 'camhtar/down_pengumuman_seleksi';
 
 //pengumuman
 $route['pengumuman'] = 'camhtar/pengumuman';
