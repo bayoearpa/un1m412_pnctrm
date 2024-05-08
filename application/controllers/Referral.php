@@ -58,6 +58,92 @@ class Referral extends CI_Controller {
 		$this->session->sess_destroy();
 		redirect(base_url().'referral?pesan=logout');
 	}
+	function prodi($id){
+        switch ($id) {
+
+            // registrasi
+               case '1':
+                    $pick = "D3 KETATALAKSANAAN PELAYARAN NIAGA DAN KEPELABUHAN";
+                break;
+                case '2' :
+                    $pick = "D3 TEKNIKA";
+                break;
+                case '3' :
+                    $pick = "D3 NAUTIKA";
+                break;
+                case '4' :
+                    $pick = "S1 TRANSPORTASI";
+                break;
+                case '5':
+                    $pick = "S1 TEKNIK TRANSPORTASI LAUT";
+                break;
+                case '6':
+                    $pick = "S1 TEKNIK MESIN";
+                break;
+                case '7':
+                    $pick = "S1 TEKNIK KESELAMATAN";
+                break;
+                case '8':
+                    $pick = "S1 PERDAGANGAN INTERNASIONAL";
+                break;
+                case '9':
+                    $pick = "D4 MANAJEMEN PELABUHAN DAN LOGISTIK MARITIM";
+                break;
+                 case '10':
+                    $pick = "S1 BISNIS DIGITAL";
+                break;
+                default :
+                    $pick = "Belum Pilih Prodi";
+                
+            }
+            return $pick;
+    }
+    function periode($id){
+        switch ($id) {
+
+            // registrasi
+               case '1':
+                    $pick = "Januari";
+                break;
+                case '2' :
+                    $pick = "Februari";
+                break;
+                case '3' :
+                    $pick = "Maret";
+                break;
+                case '4' :
+                    $pick = "April";
+                break;
+                case '5':
+                    $pick = "Mei";
+                break;
+                case '6':
+                    $pick = "Juni";
+                break;
+                case '7':
+                    $pick = "Juli";
+                break;
+                case '8':
+                    $pick = "Agustus";
+                break;
+                case '9':
+                    $pick = "September";
+                break;
+                 case '10':
+                    $pick = "Oktober";
+                break;
+                case '11':
+                    $pick = "November";
+                break;
+                 case '12':
+                    $pick = "Desember";
+                break;
+                default :
+                    $pick = "Periode tidak ditemukan";
+                
+            }
+            return $pick;
+    }
 	public function home() {
         $where2= array(
             'id_gelombang' => '1',  
@@ -69,7 +155,9 @@ class Referral extends CI_Controller {
             'ref' => $ref
         );
         $data['ref_code'] = $ref;
-        $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
+        // $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
+        $data['referral'] = $this;
+        $data['catar'] = $this->m_registrasi->get_data_join_2024($where)->result();
         // $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2022')->result();
         // $data['catar'] = $this->m_registrasi->get_data_all('tbl_catar_2021')->result(); 
         $this->load->view('referral/header',$data);

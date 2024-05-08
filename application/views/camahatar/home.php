@@ -157,7 +157,7 @@
                   Anda Harus mengisi Form Daftar Ulang Sebagai Proses Akhir Anda diterima di UNIMAR AMNI Semarang. Proses Daftar Ulang dinyatakan Selesai Jika Sudah divalidasi Pihak Keuangan!
                 </div>
                 <div class="timeline-footer">
-                  <a class="btn btn-primary btn-flat btn-xs" href="<?php echo base_url() ?>daftarulang">>Klik Untuk Mengakses Halaman Daftar Ulang</a>
+                  <a class="btn btn-primary btn-flat btn-xs" href="<?php echo base_url() ?>daftarulang">Klik Untuk Mengakses Halaman Daftar Ulang</a>
                 </div>
               </div>
             </li>
