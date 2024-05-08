@@ -38,7 +38,7 @@
                   <td><?php echo $c->kabkota?></td>
                   <td><?php echo $c->propinsi?></td>
                   <td><?php echo $c->telp_ortu ?></td>
-                  <td><?php echo $baak->periode($c->periode) ?></td>
+                  <td><?php echo $referral->periode($c->periode) ?></td>
                   <td><?php 
                       if ($c->no_val == null) {
                         # code... ?>
