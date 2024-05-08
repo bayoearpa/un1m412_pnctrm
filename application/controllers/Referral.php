@@ -151,13 +151,12 @@ class Referral extends CI_Controller {
         $gelombang=$this->m_registrasi->get_data_gelombang($where2);
         $ref = $this->session->userdata('user_id');
         $where = array(
-            'gelombang' => $gelombang,
             'ref' => $ref
         );
         $data['ref_code'] = $ref;
         // $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
         $data['referral'] = $this;
-        $data['catar'] = $this->m_registrasi->get_data_join_2024($where)->result();
+        $data['catar'] = $this->m_registrasi->get_data_join_2024_where($where)->result();
         // $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2022')->result();
         // $data['catar'] = $this->m_registrasi->get_data_all('tbl_catar_2021')->result(); 
         $this->load->view('referral/header',$data);
