@@ -15,10 +15,8 @@
                   <th>Nama</th>
                   <th>Telp / Hp</th>
                   <th>Prodi yang Dipilih</th>
-                  <th>Jurusan SMK/SMA</th>
                   <th>Kota/Kabupaten</th>
                   <th>Provinsi</th>
-                  <th>Telp / Hp Ortu</th>
                   <th>Periode</th>
                   <th>Validasi</th>
                   <th>Lulus Seleksi</th>
@@ -34,10 +32,8 @@
                   <td><?php echo $c->nama ?></td>
                   <td><?php echo $c->telp ?></td>
                   <td><?php echo $referral->prodi($c->prodi) ?></td>
-                  <td><?php echo $c->prodi_lama?></td>
                   <td><?php echo $c->kabkota?></td>
                   <td><?php echo $c->propinsi?></td>
-                  <td><?php echo $c->telp_ortu ?></td>
                   <td><?php echo $referral->periode($c->periode) ?></td>
                   <td><?php 
                       if ($c->no_val == null) {
@@ -72,10 +68,8 @@
                   <th>Nama</th>
                   <th>Telp / Hp</th>
                   <th>Prodi yang Dipilih</th>
-                  <th>Jurusan SMK/SMA</th>
                   <th>Kota/Kabupaten</th>
                   <th>Provinsi</th>
-                  <th>Telp / Hp Ortu</th>
                   <th>Periode</th>
                   <th>Validasi</th>
                   <th>Lulus Seleksi</th>
