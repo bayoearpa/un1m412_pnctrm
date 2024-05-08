@@ -149,7 +149,11 @@
           $seleksiPage = ($this->session->userdata('jalur') == "reguler") ? 'seleksi_reguler' : 'seleksi_tf';
            ?>
           <li><a href="<?php echo base_url($seleksiPage) ?>"><i class="fa fa-users"></i><span>Seleksi</span></a></li>
-          <li><a href="<?php echo base_url() ?>ukurpakaian"><i class="fa fa-check"></i><span>Ukur Pakaian</span></a></li>
+          <?php if ($this->session->userdata('jalur') == "reguler") { ?>
+            <li><a href="<?php echo base_url() ?>ukurpakaian"><i class="fa fa-check"></i><span>Ukur Pakaian</span></a></li>
+           <?php  # code...
+          } ?>
+          
           <li><a href="<?php echo base_url() ?>pengumuman"><i class="fa fa-info-circle"></i><span>Pengumuman Lulus</span></a></li>
           <li><a href="<?php echo base_url() ?>daftarulang"><i class="fa fa-external-link"></i><span>Daftar Ulang</span></a></li>
           <?php } ?>

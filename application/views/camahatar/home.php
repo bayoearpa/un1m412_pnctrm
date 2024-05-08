@@ -114,6 +114,7 @@
             <!-- END timeline item -->
           <?php } ?>
 <!-------------------------------------------------------- .cek seleksi -->
+<?php if ($this->session->userdata('jalur') == "reguler") { ?>
 <!-------------------------------------------------------- cek ukur pakaian -->
           <?php if ($ukur == null) { ?>
              <!-- timeline item -->
@@ -141,7 +142,7 @@
               </div>
             </li>
             <!-- END timeline item -->
-          <?php } ?>
+          <?php } }?>
 <!-------------------------------------------------------- .cek ukur pakaian -->
 <!-------------------------------------------------------- cek Daftar ulang -->
             <?php if ($daful == null) { ?>
