@@ -29,7 +29,7 @@
                   <label>Pilih kelas</label>
                   <select class="form-control" name="kelas" id="kelas" required="harus dipilih">
                     <option> </option>
-                    <option value="reguer">Reguler</option>
+                    <option value="reguler">Reguler</option>
                     <option value="gdr1">Fast Track</option>
                   </select>
                   </div>
