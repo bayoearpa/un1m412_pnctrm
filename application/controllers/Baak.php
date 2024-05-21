@@ -533,7 +533,7 @@ class Baak extends CI_Controller {
             $where = array(
             'tbl_catar_2024.prodi' => $prodi,
             'tbl_catar_2024.jalur' => $kelas,
-            'tbl_catar_2024.gelombang' => $gelombang,                
+            'tbl_catar_2024.periode' => $gelombang,                
             );
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
             $data['kelas'] = $kelas;
@@ -1292,7 +1292,7 @@ class Baak extends CI_Controller {
             $where = array(
             'tbl_catar_2024.prodi' => $prodi,
             'tbl_catar_2024.jalur' => $kelas,
-            'tbl_catar_2024.gelombang' => $gelombang,                
+            'tbl_catar_2024.periode' => $gelombang,                
             );
             $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
             $data['kelas'] = $kelas;
