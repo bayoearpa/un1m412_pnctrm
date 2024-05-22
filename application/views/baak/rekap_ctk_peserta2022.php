@@ -59,12 +59,12 @@ table{
 <div class="page">
 <p style="margin: 0px;text-align: center;">UNIVERSITAS MARITIM AMNI SEMARANG</p>
 <p style="margin: 0px;text-align: center;">JALAN SOEKARNO HATTA NOMOR 180 SEMARANG</p>
-<center><p style="margin: 0px;text-align: center;">DAFTAR CALON TARUNA - MAHASISWA T.A 2023/2024</p></center>
+<center><p style="margin: 0px;text-align: center;">DAFTAR CALON TARUNA - MAHASISWA T.A 2024/2025</p></center>
 <center><p style="margin: 0px;text-align: center;">PRODI : <?php echo $prodi; ?></p></center>
-<center><p style="margin: 0px;text-align: center;">KELAS : <?php if ($kelas == "reg") {
+<center><p style="margin: 0px;text-align: center;">KELAS : <?php if ($kelas == "reguler") {
 	# code... 
 	echo "REGULER";
-}else{ echo "FAST TRACK";} ?></p></center>
+}else{ echo "GELOMBANG DINI";} ?></p></center>
 
 
 <table width="100%" border="1" style="border: 1px solid black;border-collapse: collapse;">
