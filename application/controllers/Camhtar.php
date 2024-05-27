@@ -1203,7 +1203,7 @@ public function edit_proses_seleksi()
 	public function down_pengumuman_seleksi()
 	{
 		# code...
-		force_download('assets/download/seleksi_mei_2024_2.pdf',NULL);
+		force_download('assets/download/seleksi_juni_2024.pdf',NULL);
 		redirect(base_url());
 	}
 	public function down_pengumuman_jan()
