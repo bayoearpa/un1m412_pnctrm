@@ -216,7 +216,9 @@
                     <td style="margin: 0px;padding: 0px;"><b><small>1234_Rian Ardianto_Nautika_Januari</small></b></td>
                   </tr>
                 </table> -->
-<!-- <p style="margin: 0px;padding: 0px;"><small>*Tes seleksi 30 Mei - 4 Agustus 2020.</small></p> -->
+<p style="margin: 0px;padding: 0px;"><small>*Program Studi Teknika dan Nautika <b>Wajib</b> melaksanakan Test Offline dan <b>Wajib</b> melakukan Test Kesehatan di UNIMAR AMNI Semarang
+<p style="margin: 0px;padding: 0px;"><small>*Program Studi lainnya bisa melaksanakan Test Online dengan melengkapi persyaratan yang ada di Sistem PMB UNIMAR AMNI Semarang
+</small></p>
 <p style="margin: 0px;padding: 0px;"><small>*Pemberkasan dilaksanakan setelah pendaftaran dinyatakan <b>DITERIMA</b></small></p>
 <p style="margin: 0px;padding: 0px;"><small>*<b><i>follow ig official kami @unimar.amni.semarang</i></b></small></p>
 <table>
