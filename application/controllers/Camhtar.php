@@ -1218,6 +1218,12 @@ public function edit_proses_seleksi()
 		force_download('assets/download/sk_lulus_periode_februari_maret_2024.pdf',NULL);
 		redirect(base_url());
 	}
+	public function down_pengumuman_mei()
+	{
+		# code...
+		force_download('assets/download/sk_lulus_periode_mei_2024.pdf',NULL);
+		redirect(base_url());
+	}
 	public function pengumuman_gd()
 	{
 		# code...
