@@ -258,8 +258,8 @@ a {
 .btn {
   border-width: 2px; }
 
-.bg-primary {
-  background-color: #FFD700 !important; }
+/*.bg-primary {
+  background-color: #FFD700 !important; }*/
 
 .bg-secondary {
   background-color: #2C3E50 !important; }
@@ -284,7 +284,14 @@ a {
     background-color: #1a252f;
     border-color: #1a252f; }
 
+/*untuk header*/
 
+.bg-primary {
+    position: relative;
+    overflow: hidden;
+    background: none !important;
+  }
+  
 .video-background {
     position: absolute;
     top: 0;
