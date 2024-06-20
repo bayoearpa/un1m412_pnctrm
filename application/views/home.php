@@ -40,7 +40,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Informasi</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Home</a>
             </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Program Studi</a>
@@ -73,13 +73,57 @@
     <!-- About Section -->
     <section class="about" id="about">
       <div class="container">
-        <h2 class="text-center text-uppercase text-black">Informasi</h2>
+        <h2 class="text-center text-uppercase text-black">Home</h2>
         <!-- <hr class="star-light mb-5"> -->
         <div class="row">
           <div class="col-lg-16 ml-auto">
             <div class="text-center mt-4">
-         <center><img src="<?php echo base_url() ?>assets/front1/img/pedangpora24.jpg" width="100%"></center>
-         <!-- <center><img src="<?php //echo base_url() ?>assets/front1/img/feed.jpg" width="100%"></center> -->
+
+         <!-- slider -->
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+              <!-- Indicators -->
+              <ul class="carousel-indicators">
+                <li data-target="#demox" data-slide-to="0" class="active"></li>
+                <li data-target="#demox" data-slide-to="1"></li>
+                <li data-target="#demox" data-slide-to="2"></li>
+                <li data-target="#demox" data-slide-to="3"></li>
+                <li data-target="#demox" data-slide-to="4"></li>
+                <li data-target="#demox" data-slide-to="5"></li>
+                <li data-target="#demox" data-slide-to="6"></li>
+              </ul>
+              
+              <!-- The slideshow -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="<?php echo base_url() ?>assets/front1/img/home1.jpg" alt="Join UNIMAR AMNI" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                  <img src="<?php echo base_url() ?>assets/front1/img/home2.jpg" alt="Join UNIMAR AMNI" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                  <img src="<?php echo base_url() ?>assets/front1/img/home3.jpg" alt="Join UNIMAR AMNI" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                  <img src="<?php echo base_url() ?>assets/front1/img/home4.jpg" alt="Join UNIMAR AMNI" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                  <img src="<?php echo base_url() ?>assets/front1/img/home5.jpg" alt="Join UNIMAR AMNI" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                  <img src="<?php echo base_url() ?>assets/front1/img/home6.jpg" alt="Join UNIMAR AMNI" width="1100" height="500">
+                </div>
+              </div>
+              
+              <!-- Left and right controls -->
+              <a class="carousel-control-prev" href="#demox" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#demox" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+        <!-- end slider -->
           </div>
             <p class="lead">UNIMAR AMNI Semarang adalah sebuah Perguruan Tinggi yang diselenggarakan oleh masyarakat yang mengembangkan studi di bidang maritim dan transpor. Awalnya bernama “AMNI” ( Akademi Maritim Nasional Indonesia ) yang didirikan pada tanggal 9 September 1963. Sejalan dengan perkembangan kebutuhan dibidang  maritim dan transpor, maka pada tanggal 17 April 2007 , AMNI mengembangkan diri menjadi  Sekolah  Tinggi Maritim dan Transpor “ AMNI “ ( UNIMAR “ AMNI “) Semarang, sesuai dengan SK Mendiknas No. 53/D/O/2007.</p>
              <p class="lead">UNIMAR AMNI Semarang bersertifikat ISO 9001:2015, semua Program Studi Terakreditasi Badan Akreditasi Nasional Perguruan Tinggi ( BAN PT ) Direktorat Jenderal Pendidikan Tinggi dan Approval Direktorat Jenderal Perhubungan Laut / Internasional Maritime Organization ( IMO ), dengan Program Studi:</p>
