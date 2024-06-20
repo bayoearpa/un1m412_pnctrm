@@ -59,7 +59,7 @@
     </nav>
 
     <!-- Header -->
-   <header></header>
+   <header class="masthead bg-primary text-black text-center"></header>
 
 
 
