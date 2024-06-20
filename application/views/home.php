@@ -59,18 +59,7 @@
     </nav>
 
     <!-- Header -->
-   <header class="masthead bg-primary text-black text-center">
-  <div class="container">
-   <!--  <img class="img-fluid mb-5 d-block mx-auto" src="<?php //echo base_url() ?>assets/front1/img/amni-png.png" alt="" width="20%">
-    <h1 class="text-uppercase mb-0">S I P M B</h1>
-    <h2 class="font-weight-light mb-0">SISTEM INFORMASI PENERIMAAN MAHATAR BARU UNIMAR AMNI SEMARANG</h2> -->
-    <div class="video-background">
-    <div class="video-foreground">
-      <iframe class="video-iframe" src="https://www.youtube.com/embed/MVKBSZ4xFjk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-  </div>
-  </div>
-</header>
+
 
 
 
