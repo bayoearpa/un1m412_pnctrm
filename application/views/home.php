@@ -71,7 +71,7 @@
     <header class="masthead bg-primary text-black text-center">
       <div class="container">
         <div class="video-container">
-          <iframe class="video-iframe" src="https://www.youtube.com/embed/MVKBSZ4xFjk?si=XlqM1vSxku7FAwf9&autoplay=1&mute=1&loop=1&playlist=MVKBSZ4xFjk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <iframe class="video-iframe" src="https://www.youtube.com/embed/MVKBSZ4xFjk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
     </header>
