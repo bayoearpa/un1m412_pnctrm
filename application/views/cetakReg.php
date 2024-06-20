@@ -220,7 +220,7 @@
 <p style="margin: 0px;padding: 0px;"><small>*Program Studi lainnya bisa melaksanakan Test Online dengan melengkapi persyaratan yang ada di Sistem PMB UNIMAR AMNI Semarang
 </small></p>
 <p style="margin: 0px;padding: 0px;"><small>*Pemberkasan dilaksanakan setelah pendaftaran dinyatakan <b>DITERIMA</b></small></p>
-<p style="margin: 0px;padding: 0px;"><small>*<b><i>follow ig official kami @unimar.amni.semarang</i></b></small></p>
+<p style="margin: 0px;padding: 0px;"><small>*<b><i>follow ig official kami @unimaramni.official</i></b></small></p>
 <table>
 <!-- halaman 2 -->
 <div style="page-break-before:always; ">
