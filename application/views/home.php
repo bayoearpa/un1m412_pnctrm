@@ -22,7 +22,8 @@
     <link href="<?php echo base_url() ?>assets/front1/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
-    <link href="<?php echo base_url() ?>assets/front1/css/freelancer.min.css" rel="stylesheet">
+    <!-- <link href="<?php //echo base_url() ?>assets/front1/css/freelancer.min.css" rel="stylesheet"> -->
+    <link href="<?php echo base_url() ?>assets/front1/css/freelancer.css" rel="stylesheet">
 
   </head>
 
