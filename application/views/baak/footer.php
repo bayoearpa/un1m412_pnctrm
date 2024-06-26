@@ -169,6 +169,16 @@
                   }
  
               })
+
+              $('#example1').DataTable({
+                "paging": true,
+                      "lengthChange": true,
+                      "searching": true,
+                      "ordering": true,
+                      "info": true,
+                      "autoWidth": true,
+                      "responsive": true
+              })
           });
 
     //Date picker
@@ -183,15 +193,7 @@
   </script>
 <script>
   $(function () {
-    $('#example1').DataTable({
-      "paging": true,
-            "lengthChange": true,
-            "searching": true,
-            "ordering": true,
-            "info": true,
-            "autoWidth": true,
-            "responsive": true
-    })
+   
     $('#example2').DataTable()
     $('#example3').DataTable()
     // $('#example2').DataTable({
