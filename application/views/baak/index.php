@@ -14,6 +14,8 @@
                 <tr>
                   <th>No. Pendf.</th>
                   <th>Nama</th>
+                  <th>Jenis Kel.</th>
+                  <th>Tgl Lahir</th>
                   <th>Telp / Hp</th>
                   <th>Prodi yang Dipilih</th>
                   <th>Jurusan SMK/SMA</th>
@@ -33,6 +35,8 @@
                 <tr>
                   <td><?php echo $c->no ?></td>
                   <td><?php echo $c->nama ?></td>
+                  <td><?php echo $c->jk ?></td>
+                  <td><?php echo $c->tgl_l ?></td>
                   <td><?php echo $c->telp ?></td>
                   <td><?php echo $baak->prodi($c->prodi) ?></td>
                   <td><?php echo $c->prodi_lama?></td>
@@ -71,6 +75,8 @@
                <tr>
                   <th>No. Pendf.</th>
                   <th>Nama</th>
+                  <th>Jenis Kel.</th>
+                  <th>Tgl Lahir</th>
                   <th>Telp / Hp</th>
                   <th>Prodi yang Dipilih</th>
                   <th>Jurusan SMK/SMA</th>

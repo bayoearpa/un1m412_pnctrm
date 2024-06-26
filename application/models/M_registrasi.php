@@ -63,6 +63,8 @@ class m_registrasi extends CI_Model
 		tbl_catar_2024.thn_lulus as tahun_lulus,
 		tbl_catar_2024.prodi as prodi,
 		tbl_catar_2024.gelombang as gelombang,
+		tbl_catar_2024.tgl_l as tgl_l,
+		tbl_catar_2024.jk as jk,
 		tbl_catar_validasi_2024.no as no_val,
 		tbl_catar_hasil_seleksi_2024.no as no_seleksi,
 		tbl_catar_daful_2024.no as no_daful,
