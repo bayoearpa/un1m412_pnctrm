@@ -51,7 +51,7 @@
                    <td><?php 
                       if ($c->no_seleksi == null) {
                         # code... ?>
-                       <li><i class="fa fa-close bg-red"></i></li> 
+                       <i class="fa fa-close bg-red"></i></li> 
                       <?php }else{ ?>
                         <i class="fa fa-check bg-green"></i>
                       <?php } ?>
