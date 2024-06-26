@@ -177,7 +177,8 @@
                       "ordering": true,
                       "info": true,
                       "autoWidth": false,
-                      "responsive": true
+                      "responsive": true,
+                      "scrollX": true // Enable horizontal scrolling
               })
           });
 
