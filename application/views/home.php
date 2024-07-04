@@ -96,7 +96,7 @@
               <!-- The slideshow -->
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="<?php echo base_url() ?>assets/front1/img/home1.jpg" alt="Join UNIMAR AMNI" width="1100" height="500">
+                  <img src="<?php echo base_url() ?>assets/front1/img/home1_2.jpg" alt="Join UNIMAR AMNI" width="1100" height="500">
                 </div>
                 <div class="carousel-item">
                   <img src="<?php echo base_url() ?>assets/front1/img/home2.jpg" alt="Join UNIMAR AMNI" width="1100" height="500">
