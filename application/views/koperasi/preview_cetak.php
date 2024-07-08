@@ -9,6 +9,7 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
+              <div class="form-group">
               <form method="post" action="<?php echo base_url() ?>koperasi/cetak_excel">
                 <input type="hidden" name="jalur" value="<?php echo $frm_jalur ?>">
                 <input type="hidden" name="prodi" value="<?php echo $frm_prodi ?>">
@@ -16,6 +17,7 @@
                 <button type="button" class="btn btn-block btn-primary btn-sm" width="30%"><i class="fa fa-fw fa-print"></i>Cetak</button>
               </form>
               <a href="<?php echo base_url() ?>koperasi/cetak"><button type="button" class="btn btn-block btn-success btn-sm" width="30%"><i class="fa fa-fw fa-backward"></i>Kembali</button></a>
+              </div>
               <table id="example4" class="table table-bordered table-striped">
                 <thead>
                 <tr>
