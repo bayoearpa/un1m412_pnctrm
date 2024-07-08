@@ -29,7 +29,7 @@
                 <tbody>
                 <?php 
                 $no = 1;
-                foreach($catar as $c){ 
+                foreach($result as $c){ 
                  ?>
                 <tr>
                   <td><?php echo $no++; ?></td>
