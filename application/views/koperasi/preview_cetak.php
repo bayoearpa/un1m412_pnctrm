@@ -14,7 +14,7 @@
                 <input type="hidden" name="jalur" value="<?php echo $frm_jalur ?>">
                 <input type="hidden" name="prodi" value="<?php echo $frm_prodi ?>">
                 <input type="hidden" name="gelombang" value="<?php echo $frm_gelombang ?>">
-                <button type="button" class="btn btn-primary btn-sm" width="30%"><i class="fa fa-fw fa-print"></i>Cetak</button>
+                <button type="submit" class="btn btn-primary btn-sm" width="30%"><i class="fa fa-fw fa-print"></i>Cetak</button>
                 <a href="<?php echo base_url() ?>koperasi/cetak"><button type="button" class="btn btn-success btn-sm" width="30%"><i class="fa fa-fw fa-backward"></i>Kembali</button></a>
               </form>
               </div>
