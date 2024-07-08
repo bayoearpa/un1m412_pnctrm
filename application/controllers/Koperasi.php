@@ -100,6 +100,7 @@ class Koperasi extends CI_Controller {
     public function preview_cetak()
     {
         # code...
+        $data['koperasi'] = $this;
         $jalur = $this->input->post('jalur');
         $prodi = $this->input->post('prodi');
         $gelombang = $this->input->post('gelombang');
