@@ -295,7 +295,7 @@ class Koperasi extends CI_Controller {
 
             if ($result->pdhpdub_celana == 'lainnya') {
             	# code...
-            $objPHPExcel->getActiveSheet()->setCellValue('M' . $row, $result->pdhpdub_celana_lainnya);
+            $objPHPExcel->getActiveSheet()->setCellValue('M' . $row, $result->pdhpdub_celana_lainny);
             }else{
             $objPHPExcel->getActiveSheet()->setCellValue('M' . $row, $result->pdhpdub_celana);
             }
