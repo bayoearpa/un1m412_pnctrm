@@ -97,6 +97,47 @@ class Koperasi extends CI_Controller {
         // Konversi data ke format JSON dan kirimkan ke view
         echo json_encode($data);
     }
+    public function preview_cetak()
+    {
+        # code...
+        $jalur = $this->input->post('jalur');
+        $prodi = $this->input->post('prodi');
+        $gelombang = $this->input->post('gelombang');
+
+        if ($jalur == "reguler") {
+            # code...
+            $where= array(
+            'tbl_catar_2024.jalur' => $jalur,
+            'tbl_catar_2024.prodi' => $prodi,
+            'tbl_catar_2024.gelombang' => $gelombang, 
+            );
+
+            $data['frm_jalur'] = $jalur;
+            $data['frm_prodi'] = $prodi;
+            $data['frm_gelombang'] = $gelombang;
+
+           $data['results'] = $this->m_registrasi->get_data_rekap_ukurpakaian($where);
+
+            $this->load->view('koperasi/header');
+            $this->load->view('koperasi/preview_cetak',$data);        
+            $this->load->view('koperasi/footer');
+        }else{
+            $where= array(
+            'tbl_catar_2024.jalur' => $jalur,
+            'tbl_catar_2024.prodi' => $prodi,
+            );
+
+            $data['frm_jalur'] = $jalur;
+            $data['frm_prodi'] = $prodi;
+
+           $data['results'] = $this->m_registrasi->get_data_rekap_ukurpakaian($where);
+
+            $this->load->view('koperasi/header');
+            $this->load->view('koperasi/preview_cetak',$data);        
+            $this->load->view('koperasi/footer');
+        }
+
+    }
     public function cetak_excel()
 	{
 		# code...
