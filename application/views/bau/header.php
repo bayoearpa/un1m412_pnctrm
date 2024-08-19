@@ -172,6 +172,7 @@
           </ul>
         </li>
         <li><a href="<?php echo base_url() ?>bau/edit"><i class="fa fa-pencil"></i> <span>Ganti Prodi</span></a></li>
+        <li><a href="<?php echo base_url() ?>bau/edit"><i class="fa fa-pencil"></i> <span>Referral</span></a></li>
          <li class="treeview">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Summary 2024</span>
