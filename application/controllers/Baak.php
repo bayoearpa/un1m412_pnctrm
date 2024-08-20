@@ -2592,7 +2592,7 @@ class Baak extends CI_Controller {
     {
         # code...
         // Ambil data berdasarkan ID dari model Anda
-        $data = $this->m_registrasi->get_data_edit_gdr1($no); // Gantilah 'get_data_by_id' dengan metode yang sesuai dalam model Anda
+        $data = $this->m_registrasi->get_data_edit_gdr12($no); // Gantilah 'get_data_by_id' dengan metode yang sesuai dalam model Anda
 
         // Konversi data ke format JSON dan kirimkan ke view
         echo json_encode($data);
