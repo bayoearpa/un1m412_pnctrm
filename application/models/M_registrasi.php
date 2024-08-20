@@ -715,9 +715,9 @@ class m_registrasi extends CI_Model
 	     	tbl_catar_2024.nama,
 			');
 
-	     $this->db->from('tbl_seleksi_20242');
-	     $this->db->join('tbl_catar_2024','tbl_seleksi_20242.no = tbl_catar_2024.no','left');
-        $this->db->where('tbl_seleksi_20242.no', $id);
+	     $this->db->from('tbl_seleksi_2024');
+	     $this->db->join('tbl_catar_2024','tbl_seleksi_2024.no = tbl_catar_2024.no','left');
+        $this->db->where('tbl_seleksi_2024.no', $id);
         $query = $this->db->get();
 
         if ($query->num_rows() > 0) {
