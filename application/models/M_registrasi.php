@@ -697,6 +697,35 @@ class m_registrasi extends CI_Model
             return null;
         }
     }
+    function get_data_edit_gdr12($id)
+    {
+        // Gantilah 'nama_tabel' dengan nama tabel yang sesuai dalam database Anda
+	     $this->db->select('tbl_seleksi_2024.id_link as id_link,
+	     	tbl_seleksi_2024.no as no,
+	     	tbl_seleksi_2024.link_ktp as link_ktp,
+	     	tbl_seleksi_2024.link_ijasah as link_ijasah,
+	     	tbl_seleksi_2024.link_rapor as link_rapor,
+	     	tbl_seleksi_2024.link_kesehatan as link_kesehatan,
+	     	tbl_seleksi_2024.link_supersehat as link_supersehat,
+	     	tbl_seleksi_2024.link_prestasi as link_prestasi,
+	     	tbl_seleksi_2024.link_video_pushup as link_video_pushup,
+	     	tbl_seleksi_2024.link_video_shitup as link_video_shitup,
+	     	tbl_seleksi_2024.link_video_pullup as link_video_pullup,
+	     	tbl_seleksi_2024.link_video_shuttle as link_video_shuttle,
+	     	tbl_catar_2024.nama,
+			');
+
+	     $this->db->from('tbl_seleksi_20242');
+	     $this->db->join('tbl_catar_2024','tbl_seleksi_20242.no = tbl_catar_2024.no','left');
+        $this->db->where('tbl_seleksi_20242.no', $id);
+        $query = $this->db->get();
+
+        if ($query->num_rows() > 0) {
+            return $query->row();
+        } else {
+            return null;
+        }
+    }
     function get_data_edit_ref($id)
     {
         // Gantilah 'nama_tabel' dengan nama tabel yang sesuai dalam database Anda
