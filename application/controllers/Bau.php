@@ -494,6 +494,20 @@ class Bau extends CI_Controller {
             $this->load->view('bau/footer_js');
         }
     }
+    ////////////////////////////////////// get referral data/////////////////////////////////////////////////
+    public function referral()
+    {
+        # code...
+        // Fetch data from the model
+        $data['refs'] = $this->m_registrasi->get_ref_data_keu();
+        
+        // Load view and pass the data
+        $this->load->view('bau/header');
+        $this->load->view('bau/referral', $data);
+        $this->load->view('bau/footer');
+
+    }
+    ////////////////////////////////////// .get referral data/////////////////////////////////////////////////
     ///////////////////////////////////////////////////////summary 2024///////////////////////////////////////////
      public function getnamaprovinsi_2024($id)
     {
