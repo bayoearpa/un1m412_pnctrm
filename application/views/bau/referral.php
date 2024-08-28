@@ -27,7 +27,7 @@
                  ?>
                 <tr>
                   <td><?php echo $no++; ?></td>
-                  <td><?php echo $c->refferal ?></td>
+                  <td><?php echo $c->referral ?></td>
                   <td><?php echo $c->nama_pereferal ?></td>
                   <td><?php echo $c->alamat_pereferal ?></td>
                   <td><?php echo $c->no_telp_pereferal ?></td>
