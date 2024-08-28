@@ -966,28 +966,25 @@ class m_registrasi extends CI_Model
    ///////////////////////////////////////// get total ref for keu ///////////////////////////////////////// 
      public function get_ref_data_keu() {
         // Select the required fields from tbl_ref
-        $this->db->select('tbl_ref.ref as refferal, tbl_ref.nama as nama_pereferal, tbl_ref.alamat as alamat_pereferal, tbl_ref.no_telp as no_telp_pereferal');
-        
-        // Count the total occurrences of 'ref' in tbl_catar_2024
-        $this->db->select('COUNT(tbl_catar_2024.ref) as total');
-        
-        // Calculate the total perolehan as total * 300000
-        $this->db->select('(COUNT(tbl_catar_2024.ref) * 300000) as total_perolehan');
-        
-        // From tbl_ref
-        $this->db->from('tbl_ref');
-        
-        // Left join with tbl_catar_2024 on the ref field
-        $this->db->join('tbl_catar_2024', 'tbl_ref.ref = tbl_catar_2024.ref', 'left');
-        
-        // Group by tbl_ref.ref to get a count per ref
-        $this->db->group_by('tbl_ref.ref');
-        
-        // Execute the query
-        $query = $this->db->get();
-        
-        // Return the result
-        return $query->result();
+           // Select the necessary fields from tbl_ref
+    $this->db->select('tbl_ref.ref, tbl_ref.nama, tbl_ref.alamat, tbl_ref.no_telp, COUNT(tbl_catar_2024.no) as total');
+    
+    // Join with tbl_catar_2024
+    $this->db->from('tbl_ref');
+    $this->db->join('tbl_catar_2024', 'tbl_ref.ref = tbl_catar_2024.ref', 'left');
+    
+    // Add a subquery to check if 'no' exists in tbl_catar_daful_2024
+    $this->db->join('tbl_catar_daful_2024', 'tbl_catar_2024.no = tbl_catar_daful_2024.no', 'inner');
+
+    // Group by ref to get the count per ref
+    $this->db->group_by('tbl_ref.ref');
+    
+    // Calculate total perolehan by multiplying the count by 300,000
+    $this->db->select('(COUNT(tbl_catar_2024.no) * 300000) as total_perolehan', false);
+    
+    $query = $this->db->get();
+    
+    return $query->result();
     }
     ///////////////////////////////////////// .get total ref for keu /////////////////////////////////////////
   ////////////////////summary 2024///////////////////////////////////////////////////////////////////////////
