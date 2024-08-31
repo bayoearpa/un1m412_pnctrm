@@ -352,10 +352,10 @@ class Baak extends CI_Controller {
     public function rekap_daful()
     {
         # code...
-        $this->load->view('koperasi/header');
-        $this->load->view('koperasi/rekap_daful');        
-        $this->load->view('koperasi/footer');
-        $this->load->view('koperasi/rekap_daful_js');
+        $this->load->view('baak/header');
+        $this->load->view('baak/rekap_daful');        
+        $this->load->view('baak/footer');
+        $this->load->view('baak/rekap_daful_js');
     }
     public function rekap_dafulp()
     {
