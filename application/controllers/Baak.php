@@ -456,7 +456,7 @@ class Baak extends CI_Controller {
         $objPHPExcel->getActiveSheet()->setCellValue('P' . $rowCount, $row->alamat_sekolah);
         $objPHPExcel->getActiveSheet()->setCellValue('Q' . $rowCount, $row->nama_ayah);
         $objPHPExcel->getActiveSheet()->setCellValue('R' . $rowCount, $row->nama_ibu);
-        $objPHPExcel->getActiveSheet()->setCellValue('S' . $rowCount, $row->alamat_ortu);
+        $objPHPExcel->getActiveSheet()->setCellValue('S' . $rowCount, $row->alamat_orangtua);
         $objPHPExcel->getActiveSheet()->setCellValue('T' . $rowCount, $row->telepon_orangtua);
         $objPHPExcel->getActiveSheet()->setCellValue('U' . $rowCount, $row->prodi);
         $objPHPExcel->getActiveSheet()->setCellValue('V' . $rowCount, $row->gelombang);
