@@ -175,6 +175,7 @@
             <li><a href="<?php echo base_url() ?>baak/rekap_daftarhadir2022"><i class="fa fa-paperclip"></i>Daftar Hadir Peserta</a></li>
             <li><a href="<?php echo base_url() ?>baak/rekap_daftarhadirdp2022"><i class="fa fa-paperclip"></i>Daftar Hadir Peserta Dtg Plg</a></li>
             <li><a href="<?php echo base_url() ?>baak/rekap_daftarhadirpmbrks2022"><i class="fa fa-paperclip"></i>Daftar Hadir Pemberkasan</a></li>
+            <li><a href="<?php echo base_url() ?>baak/rekap_daful"><i class="fa fa-paperclip"></i>Rekap Daful</a></li>
             <!-- <li><a href="<?php //echo base_url() ?>baak/rekap_abs_tda"><i class="fa fa-paperclip"></i>Rekap Abasen TDA</a></li>
             <li><a href="<?php //echo base_url() ?>baak/rekap"><i class="fa fa-paperclip"></i>Rekap Daftar Hadir</a></li>
             <li><a href="<?php// echo base_url() ?>baak/rekap_targas"><i class="fa fa-paperclip"></i>Rekap Daftar Hadir Targas</a></li>

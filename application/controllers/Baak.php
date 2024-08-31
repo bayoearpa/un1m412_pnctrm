@@ -347,6 +347,134 @@ class Baak extends CI_Controller {
         $this->load->view('baak/footer');
         $this->load->view('baak/footer_js');
     }
+
+    //////////////////////////// rekap daful ///////////////////////////////////////////
+    public function rekap_daful()
+    {
+        # code...
+        $this->load->view('koperasi/header');
+        $this->load->view('koperasi/rekap_daful');        
+        $this->load->view('koperasi/footer');
+        $this->load->view('koperasi/rekap_daful_js');
+    }
+    public function rekap_dafulp()
+    {
+        # code...
+        // Load necessary models and libraries here
+        // Fetch data from the database
+        $jalur = $this->input->post('jalur');
+        $prodi = $this->input->post('prodi');
+        $gelombang = $this->input->post('gelombang');
+
+        if ($jalur == "reguler") {
+            # code...
+            $where= array(
+            'tbl_catar_2024.jalur' => $jalur,
+            'tbl_catar_2024.prodi' => $prodi,
+            'tbl_catar_2024.gelombang' => $gelombang, 
+            );
+
+           $data['results'] = $this->m_registrasi->get_data_rekap_daful($where);
+        }else{
+            $where= array(
+            'tbl_catar_2024.jalur' => $jalur,
+            'tbl_catar_2024.prodi' => $prodi,
+            );
+
+           $data['results'] = $this->m_registrasi->get_data_rekap_daful($where);
+        }
+
+
+        
+
+        // Load PHPExcel
+        // Load plugin PHPExcel nya
+        ob_start();
+        include APPPATH.'third_party/PHPExcel/PHPExcel.php';
+        $this->load->library('PHPExcel');
+        
+        // Create a new PHPExcel object
+        $objPHPExcel = new PHPExcel();
+
+        // Set document properties
+        $objPHPExcel->getProperties()->setCreator("UNIMAR AMNI SEMARANG")
+                                     ->setLastModifiedBy("UNIMAR AMNI SEMARANG")
+                                     ->setTitle("Data Daftar Ulang")
+                                     ->setSubject("Data Daftar Ulang")
+                                     ->setDescription("Data Daftar Ulang");
+
+        // Add a worksheet
+        $objPHPExcel->setActiveSheetIndex(0);
+        $objPHPExcel->getActiveSheet()->setTitle('Data Daftar Ulang');
+
+        // Set headers
+        $objPHPExcel->setActiveSheetIndex(0)
+                ->setCellValue('A1', 'No')
+                ->setCellValue('B1', 'NIK')
+                ->setCellValue('C1', 'Nama')
+                ->setCellValue('D1', 'Tempat Lahir')
+                ->setCellValue('E1', 'Tanggal Lahir')
+                ->setCellValue('F1', 'Agama')
+                ->setCellValue('G1', 'Jenis Kelamin')
+                ->setCellValue('H1', 'Alamat')
+                ->setCellValue('I1', 'Kota/Kabupaten')
+                ->setCellValue('J1', 'Provinsi')
+                ->setCellValue('K1', 'Telepon')
+                ->setCellValue('L1', 'Kategori Sekolah')
+                ->setCellValue('M1', 'Prodi Lama')
+                ->setCellValue('N1', 'Tahun Lulus')
+                ->setCellValue('O1', 'Asal Sekolah')
+                ->setCellValue('P1', 'Alamat Sekolah')
+                ->setCellValue('Q1', 'Nama Ayah')
+                ->setCellValue('R1', 'Nama Ibu')
+                ->setCellValue('S1', 'Alamat Orang Tua')
+                ->setCellValue('T1', 'Telepon Orang Tua')
+                ->setCellValue('U1', 'Prodi')
+                ->setCellValue('V1', 'Gelombang')
+                ->setCellValue('W1', 'Berat Badan')
+                ->setCellValue('X1', 'Tinggi Badan')
+                ->setCellValue('Y1', 'Email');
+
+        // Mengisi data ke dalam file Excel
+    $rowCount = 2;
+    foreach ($data['results'] as $row) {
+        $objPHPExcel->getActiveSheet()->setCellValue('A' . $rowCount, $row->no);
+        $objPHPExcel->getActiveSheet()->setCellValue('B' . $rowCount, $row->nik);
+        $objPHPExcel->getActiveSheet()->setCellValue('C' . $rowCount, $row->nama);
+        $objPHPExcel->getActiveSheet()->setCellValue('D' . $rowCount, $row->tl);
+        $objPHPExcel->getActiveSheet()->setCellValue('E' . $rowCount, $row->tgl_l);
+        $objPHPExcel->getActiveSheet()->setCellValue('F' . $rowCount, $row->agama);
+        $objPHPExcel->getActiveSheet()->setCellValue('G' . $rowCount, $row->jk);
+        $objPHPExcel->getActiveSheet()->setCellValue('H' . $rowCount, $row->alamat);
+        $objPHPExcel->getActiveSheet()->setCellValue('I' . $rowCount, $row->ktkb);
+        $objPHPExcel->getActiveSheet()->setCellValue('J' . $rowCount, $row->provinsi);
+        $objPHPExcel->getActiveSheet()->setCellValue('K' . $rowCount, $row->telp);
+        $objPHPExcel->getActiveSheet()->setCellValue('L' . $rowCount, $row->kategori_sek);
+        $objPHPExcel->getActiveSheet()->setCellValue('M' . $rowCount, $row->prodi_lama);
+        $objPHPExcel->getActiveSheet()->setCellValue('N' . $rowCount, $row->thn_lulus);
+        $objPHPExcel->getActiveSheet()->setCellValue('O' . $rowCount, $row->asek);
+        $objPHPExcel->getActiveSheet()->setCellValue('P' . $rowCount, $row->alamat_sek);
+        $objPHPExcel->getActiveSheet()->setCellValue('Q' . $rowCount, $row->nama_a);
+        $objPHPExcel->getActiveSheet()->setCellValue('R' . $rowCount, $row->nama_i);
+        $objPHPExcel->getActiveSheet()->setCellValue('S' . $rowCount, $row->alamat_ortu);
+        $objPHPExcel->getActiveSheet()->setCellValue('T' . $rowCount, $row->telp_ortu);
+        $objPHPExcel->getActiveSheet()->setCellValue('U' . $rowCount, $row->prodi);
+        $objPHPExcel->getActiveSheet()->setCellValue('V' . $rowCount, $row->gelombang);
+        $objPHPExcel->getActiveSheet()->setCellValue('W' . $rowCount, $row->bb);
+        $objPHPExcel->getActiveSheet()->setCellValue('X' . $rowCount, $row->tb);
+        $objPHPExcel->getActiveSheet()->setCellValue('Y' . $rowCount, $row->email);
+        $rowCount++;
+    }
+
+        // Save Excel file
+        $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
+        $filename = 'Rekap_Daful.xlsx';
+        header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+        header('Content-Disposition: attachment;filename="' . $filename . '"');
+        header('Cache-Control: max-age=0');
+        $objWriter->save('php://output');
+    }
+    //////////////////////////// .rekap daful ///////////////////////////////////////////
     ////////////////////////// per periode saga //////////////////////////////////
     function rekap_periode(){
         // $data['Baak'] = $this;
