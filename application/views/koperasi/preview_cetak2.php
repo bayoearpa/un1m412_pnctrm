@@ -5,12 +5,12 @@
     <input type="hidden" name="gelombang" value="<?php echo isset($frm_gelombang) ? $frm_gelombang : ''; ?>">
     
     <button type="submit" class="btn btn-primary btn-sm" style="width:30%;">
-        <i class="fa fa-fw fa-print"></i> Cetak
+        <i class="fa fa-fw fa-print"></i> Cetak Semua
     </button>
     
-    <a href="<?php echo base_url() ?>koperasi/cetak" class="btn btn-success btn-sm" style="width:30%;">
+   <!--  <a href="<?php //echo base_url() ?>koperasi/cetak" class="btn btn-success btn-sm" style="width:30%;">
         <i class="fa fa-fw fa-backward"></i> Kembali
-    </a>
+    </a> -->
 </form>
 <table id="example4" class="table table-bordered table-striped">
   <thead>
