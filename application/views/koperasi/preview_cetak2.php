@@ -18,7 +18,7 @@
       <td><?php echo $c->no ?></td>
       <td><?php echo $c->nama ?></td>
       <td><?php echo $c->telp ?></td>
-      <td><?php echo $this->koperasi->prodi($c->prodi) ?></td>
+      <td><?php echo $koperasi->prodi($c->prodi) ?></td>
     </tr>
     <?php } ?>
   </tbody>
