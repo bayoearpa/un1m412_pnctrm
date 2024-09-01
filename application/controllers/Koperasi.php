@@ -139,6 +139,45 @@ class Koperasi extends CI_Controller {
         }
 
     }
+    public function preview_cetak2()
+    {
+        // Ambil data dari request POST
+        $jalur = $this->input->post('jalur');
+        $prodi = $this->input->post('prodi');
+        $gelombang = $this->input->post('gelombang');
+
+        $data['koperasi'] = $this; // Jika diperlukan di dalam view
+
+        // Tentukan kondisi berdasarkan pilihan jalur
+        if ($jalur == "reguler") {
+            $where = array(
+                'tbl_catar_2024.jalur' => $jalur,
+                'tbl_catar_2024.prodi' => $prodi,
+                'tbl_catar_2024.gelombang' => $gelombang, 
+            );
+
+            // Siapkan data untuk view
+            $data['frm_jalur'] = $jalur;
+            $data['frm_prodi'] = $prodi;
+            $data['frm_gelombang'] = $gelombang;
+        } else {
+            $where = array(
+                'tbl_catar_2024.jalur' => $jalur,
+                'tbl_catar_2024.prodi' => $prodi,
+            );
+
+            // Siapkan data untuk view
+            $data['frm_jalur'] = $jalur;
+            $data['frm_prodi'] = $prodi;
+        }
+
+        // Ambil data dari model
+        $data['results'] = $this->m_registrasi->get_data_rekap_ukurpakaian($where);
+
+        // Load the view with the data, returning the HTML string (no headers or footers)
+        $this->load->view('koperasi/preview_cetak2', $data);
+    }
+
     public function cetak_excel()
 	{
 		# code...
