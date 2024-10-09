@@ -158,6 +158,26 @@
       </form>
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
+      <?php if ($this->session->userdata('id_admin') == '19') {
+        # code... ?>
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">MENU UTAMA</li>
+        <li><a href="<?php echo base_url() ?>baak/"><i class="fa fa-book"></i> <span>Home</span></a></li>
+         <li class="treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Rekapitulasi Catar</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo base_url() ?>baak/rekap_daful"><i class="fa fa-paperclip"></i>Rekap Daful</a></li>
+          </ul>
+        </li>
+      </ul>
+
+     <?php }else{
+       ?>
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MENU UTAMA</li>
         <li><a href="<?php echo base_url() ?>baak/"><i class="fa fa-book"></i> <span>Home</span></a></li>
@@ -293,6 +313,8 @@
           </ul>
         </li>
       </ul>
+      <?php } ?>
+    
     </section>
     <!-- /.sidebar -->
   </aside>
