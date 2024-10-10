@@ -60,7 +60,10 @@
 
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
-
+          <?php if ($this->session->userdata('id_admin') == '19') {
+               # code... 
+          }else{
+            ?>
            <!-- start notif -->
              <li class="dropdown notifications-menu">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
@@ -95,6 +98,7 @@
                   </ul>
               </li>
           <!-- end notif -->
+        <?php } ?>
          
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
