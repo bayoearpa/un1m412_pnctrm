@@ -162,7 +162,7 @@
         # code... ?>
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MENU UTAMA</li>
-        <li><a href="<?php echo base_url() ?>baak/"><i class="fa fa-book"></i> <span>Home</span></a></li>
+        <!-- <li><a href="<?php //echo base_url() ?>baak/"><i class="fa fa-book"></i> <span>Home</span></a></li> -->
          <li class="treeview">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Rekapitulasi Catar</span>
@@ -336,7 +336,11 @@
 
 <!-- ////////////////////////////////////////////////////////////new -->
 
+ <?php if ($this->session->userdata('id_admin') == '19') {
+        # code... 
 
+}else{
+  ?>
 
  <!-- pendaftaran -->
         <div class="col-lg-3 col-xs-6">
@@ -903,7 +907,7 @@
           <!-- /.box -->
         </div>
 
-
+<?php } ?>
 
 
         
