@@ -91,10 +91,12 @@ footer {
 		<h1>Mohon Maaf, Pendaftaran Sudah Ditutup</h1>
 		<p>Pendaftaran Mahasiswa dan Taruna UNIMAR AMNI Semarang Tahun 2024 sudah kami tutup. Terima kasih atas minat Anda. Untuk informasi lebih lanjut, Anda dapat menghubungi kami melalui WA. 0851 6161 0180<!--  <a href="#">kontak ini</a> -->.</p>
 		<!-- Audio for background music -->
-		<audio id="playAudio" controls autoplay loop>
+		<audio id="playAudio" autoplay loop muted>
 		  <source src="<?php echo base_url() ?>assets/download/boba_date.mp3" type="audio/mpeg">
 		  Your browser does not support the audio element.
 		</audio>
+		<!-- Button to enable sound -->
+		<button onclick="enableSound()">Aktifkan Suara</button>
 		<!-- <button onclick="window.location.href='<?php //echo base_url(); ?>'">Kembali ke Beranda</button> -->
 		<footer>
 			<p id="footer-text">© 2024 UNIMAR AMNI Semarang. All rights reserved.</p>
@@ -102,10 +104,12 @@ footer {
 	</div>
 
 <script>
-var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-  if (!isChrome){
-      document.getElementById('playAudio').remove(); // Remove audio element if not Chrome
-  }
+function enableSound() {
+	// Remove muted attribute and play the audio
+	var audio = document.getElementById('playAudio');
+	audio.muted = false;
+	audio.play();
+}
 </script>
 </body>
 </html>
