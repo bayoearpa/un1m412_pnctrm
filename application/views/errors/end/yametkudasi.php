@@ -96,7 +96,7 @@ footer {
 		  Your browser does not support the audio element.
 		</audio>
 		<!-- Button to enable sound -->
-		<!-- <button onclick="enableSound()">Aktifkan Suara</button> -->
+		<button onclick="enableSound()">Aktifkan Backsound</button>
 		<!-- <button onclick="window.location.href='<?php //echo base_url(); ?>'">Kembali ke Beranda</button> -->
 		<footer>
 			<p id="footer-text">© 2024 UNIMAR AMNI Semarang. All rights reserved.</p>
