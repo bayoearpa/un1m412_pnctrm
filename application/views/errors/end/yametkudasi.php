@@ -57,7 +57,7 @@ p {
 </head>
 <body>
 	<div id="container">
-		<h1>Mohon Maaf Pendaftaran Mahasiswa dan Taruna UNIMAR AMNI Semarang Tahun 2023 Sudah Kami Tutup</h1>
+		<h1>Mohon Maaf Pendaftaran Mahasiswa dan Taruna UNIMAR AMNI Semarang Tahun 2024 Sudah Kami Tutup</h1>
 		<!-- <audio id="playAudio" controls autoplay>
 		  <source src="<?php //echo base_url() ?>assets/download/yamete_kudasai.mp3" type="audio/mpeg">
 		</audio>
