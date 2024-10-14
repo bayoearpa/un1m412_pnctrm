@@ -38,8 +38,8 @@ class Camhtar extends CI_Controller {
 				'username' => $username,
 				'password' => md5($password)			
 			);
-			$data = $this->m_registrasi->get_data($where, 'tbl_catar_2024');
-			$d = $this->m_registrasi->get_data($where, 'tbl_catar_2024')->row();
+			$data = $this->m_registrasi->get_data($where, 'tbl_catar_2025');
+			$d = $this->m_registrasi->get_data($where, 'tbl_catar_2025')->row();
 			$cek = $data->num_rows();
 			if($cek > 0){
 				$session = array(
@@ -70,8 +70,8 @@ class Camhtar extends CI_Controller {
 				'no' => $no,
 				// 'password' => md5($password)			
 			);
-			$data = $this->m_registrasi->get_data($where, 'tbl_catar_2024');
-			$d = $this->m_registrasi->get_data($where, 'tbl_catar_2024')->row();
+			$data = $this->m_registrasi->get_data($where, 'tbl_catar_2025');
+			$d = $this->m_registrasi->get_data($where, 'tbl_catar_2025')->row();
 			$cek = $data->num_rows();
 			if($cek > 0){
 				$session = array(
@@ -157,7 +157,7 @@ class Camhtar extends CI_Controller {
 
             // Lakukan validasi data yang diterima jika diperlukan
 
-            // Simpan data pendaftaran ke dalam tabel "tbl_catar_2024"
+            // Simpan data pendaftaran ke dalam tabel "tbl_catar_2025"
             $data = array(
                 'nama' => $nama,
                 'username' => $username,
@@ -166,7 +166,7 @@ class Camhtar extends CI_Controller {
                 // Tambahkan kolom lain sesuai dengan struktur tabel
             );
 
-            $insert_result = $this->m_registrasi->input_data($data,'tbl_catar_2024');
+            $insert_result = $this->m_registrasi->input_data($data,'tbl_catar_2025');
 
             if ($insert_result) {
                echo "error";
@@ -273,23 +273,23 @@ class Camhtar extends CI_Controller {
 		$where = array(
 				'no' => $no,
 			);
-		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2024')->result();
+		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2025')->result();
 		foreach ($data['catar'] as $key) {
 			# code...
 			//cek biodata
 			$data['nik'] = $key->nik;
 		}
 		//cek pembayaran
-		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2024')->num_rows();
+		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2025')->num_rows();
 
 		//cek seleksi
-		$data['hs'] = $this->m_registrasi->get_data($where, 'tbl_catar_hasil_seleksi_2024')->num_rows();
+		$data['hs'] = $this->m_registrasi->get_data($where, 'tbl_catar_hasil_seleksi_2025')->num_rows();
 
 		//cek ukur pakaian
 		$data['ukur'] = $this->m_registrasi->get_data($where, 'tbl_ukurpakaian')->num_rows();
 
 		//cek Daftar Ulang
-		$data['daful'] = $this->m_registrasi->get_data($where, 'tbl_catar_daful_2024')->num_rows();
+		$data['daful'] = $this->m_registrasi->get_data($where, 'tbl_catar_daful_2025')->num_rows();
 
 		
 		$this->load->view('camahatar/header',$data);
@@ -306,7 +306,7 @@ class Camhtar extends CI_Controller {
 		$where = array(
 				'no' => $no,
 			);
-		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2024')->result();
+		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2025')->result();
 
 		foreach ($data['catar'] as $key) {
 			# code...
@@ -375,7 +375,7 @@ class Camhtar extends CI_Controller {
 		$jalur = $this->input->post('jalur');
 		// $ref_radio = $this->input->post('ref_radio');
 		$ref = strtolower($this->input->post('ref'));
-		$thn_pel="2024";
+		$thn_pel="2025";
 		$periode=date('n');
  		$id_tgl_seleksi = $this->getTglSelAktif();
 		
@@ -462,7 +462,7 @@ class Camhtar extends CI_Controller {
 					);
 				
 				
-				$proses_insert = $this->m_registrasi->update_data($where,$data,'tbl_catar_2024');
+				$proses_insert = $this->m_registrasi->update_data($where,$data,'tbl_catar_2025');
 				// $lastid = $this->db->insert_id();
 				// $where = array('no' => $lastid);
 				// $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
@@ -506,7 +506,7 @@ class Camhtar extends CI_Controller {
 		$where = array(
 				'no' => $no,
 			);
-		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2024')->result();
+		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2025')->result();
 		foreach ($data['catar'] as $key) {
 			# code...
 			$data['nik'] = $key->nik;
@@ -514,7 +514,7 @@ class Camhtar extends CI_Controller {
 		}
 		$data['prodi'] = $this->getProdi($programStudi);
 
-		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2024')->num_rows();
+		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2025')->num_rows();
 
 		$this->load->view('camahatar/header',$data);
         $this->load->view('camahatar/pembayaran',$data);
@@ -528,7 +528,7 @@ class Camhtar extends CI_Controller {
 		$where = array(
 				'no' => $no,
 			);
-		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2024')->result();
+		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2025')->result();
 		foreach ($data['catar'] as $key) {
 			# code...
 			$data['nik'] = $key->nik;
@@ -536,7 +536,7 @@ class Camhtar extends CI_Controller {
 		}
 		$data['prodi'] = $this->getProdi($programStudi);
 
-		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2024')->num_rows();
+		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2025')->num_rows();
 
 		$this->load->view('camahatar/header',$data);
         $this->load->view('camahatar/validasi',$data);
@@ -552,7 +552,7 @@ class Camhtar extends CI_Controller {
 	        'no' => $no,
 	    );
 
-        $config['upload_path'] = './assets/upload/2024/bukti_bayar';
+        $config['upload_path'] = './assets/upload/2025/bukti_bayar';
         $config['max_size'] = 1048;
         $config['allowed_types'] = 'pdf'; // Sesuaikan dengan jenis file yang diizinkan
         $config['file_name'] = $no.'_bukti_bayar'; // Nama file yang diunggah sesuai NIM
@@ -567,7 +567,7 @@ class Camhtar extends CI_Controller {
             $data = array(
                 'bukti_bayar' => $file_name
             );
-            $this->m_registrasi->update_data($where,$data,'tbl_catar_2024');
+            $this->m_registrasi->update_data($where,$data,'tbl_catar_2025');
 
             // ($this->session->userdata('jalur') == "fasttrack") ? redirect(base_url().'validasi') : redirect(base_url().'pembayaran');
             redirect(base_url().'pembayaran');
@@ -580,7 +580,7 @@ class Camhtar extends CI_Controller {
 	{
 		# code...
 		$where = array('no' => $no);
-		$data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2024')->result();
+		$data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2025')->result();
 		foreach ($data['catar'] as $key) {
 			# code...
 			$po = $key->ktkb;
@@ -615,13 +615,13 @@ class Camhtar extends CI_Controller {
 	public function down_supersehat()
 	{
 		# code...
-		force_download('assets/download/surat_kesehatan_kelas_reguler_2024.pdf',NULL);
+		force_download('assets/download/surat_kesehatan_kelas_reguler_2025.pdf',NULL);
 		redirect(base_url());
 	}
 	public function down_supersehattf()
 	{
 		# code...
-		force_download('assets/download/surat_kesehatan_kelas_transfer_2024.pdf',NULL);
+		force_download('assets/download/surat_kesehatan_kelas_transfer_2025.pdf',NULL);
 		redirect(base_url());
 	}
 	public function down_supersehatreg()
@@ -637,15 +637,15 @@ class Camhtar extends CI_Controller {
 		$where = array(
 				'no' => $no,
 			);
-		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2024')->result();
+		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2025')->result();
 		foreach ($data['catar'] as $key) {
 			# code...
 			$data['nik'] = $key->nik;
 			$data['prodi'] = $key->prodi;
 		}
-		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2024')->num_rows();
-		$data['seleksi'] = $this->m_registrasi->get_data($where, 'tbl_seleksi_20242')->num_rows();
-		$data['seleksi_data'] = $this->m_registrasi->get_data($where, 'tbl_seleksi_2024')->result();
+		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2025')->num_rows();
+		$data['seleksi'] = $this->m_registrasi->get_data($where, 'tbl_seleksi_2025')->num_rows();
+		$data['seleksi_data'] = $this->m_registrasi->get_data($where, 'tbl_seleksi_2025')->result();
 
 		$this->load->view('camahatar/header',$data);
         $this->load->view('camahatar/seleksigdr1',$data);
@@ -659,12 +659,12 @@ class Camhtar extends CI_Controller {
 		$where = array(
 				'no' => $no,
 			);
-		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2024')->result();
+		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2025')->result();
 		foreach ($data['catar'] as $key) {
 			# code...
 			$data['nik'] = $key->nik;
 		}
-		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2024')->num_rows();
+		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2025')->num_rows();
 
 		$this->load->view('camahatar/header',$data);
         $this->load->view('camahatar/seleksigdr2',$data);
@@ -686,11 +686,11 @@ class Camhtar extends CI_Controller {
 	            'upload_ijd3' => $this->input->post('eupload_ijd3'),
 	            // Tambahkan field lain sesuai kebutuhan
 	        );
-			$this->m_registrasi->update_data($where,$update_data,'tbl_catar_2024');
+			$this->m_registrasi->update_data($where,$update_data,'tbl_catar_2025');
 
 		}else{
 		    // Konfigurasi upload file Ijasah D3
-	    $config_ijasah_d3['upload_path'] = './assets/upload/2024/upload_ijasah_d3/';
+	    $config_ijasah_d3['upload_path'] = './assets/upload/2025/upload_ijasah_d3/';
 	    $config_ijasah_d3['allowed_types'] = 'pdf';
 	    $config_ijasah_d3['max_size'] = 1048; // Ukuran maksimum file (dalam kilobyte)
 	    $config_ijasah_d3['file_name'] = $no.'_ijasah_D3'; // Nama file yang diunggah sesuai NIM
@@ -709,7 +709,7 @@ class Camhtar extends CI_Controller {
 	            // Tambahkan field lain sesuai kebutuhan
 	        );
 
-	        $this->m_registrasi->update_data($where,$update_data,'tbl_catar_2024');
+	        $this->m_registrasi->update_data($where,$update_data,'tbl_catar_2025');
 	    } else {
 	        // Jika upload gagal, tampilkan pesan kesalahan
 	        $error = array('error' => $this->upload_ijasah_d3->display_errors());
@@ -725,11 +725,11 @@ class Camhtar extends CI_Controller {
 	            'upload_transd3' => $this->input->post('eupload_transd3'),
 	            // Tambahkan field lain sesuai kebutuhan
 	        );
-			$this->m_registrasi->update_data($where,$update_data,'tbl_catar_2024');
+			$this->m_registrasi->update_data($where,$update_data,'tbl_catar_2025');
 
 		}else{
 	       // Konfigurasi upload file Transkip D3
-	    $config_transkip_d3['upload_path'] = './assets/upload/2024/upload_transkip_d3/';
+	    $config_transkip_d3['upload_path'] = './assets/upload/2025/upload_transkip_d3/';
 	    $config_transkip_d3['allowed_types'] = 'pdf';
 	    $config_transkip_d3['max_size'] = 1048; // Ukuran maksimum file (dalam kilobyte)
 	    $config_transkip_d3['file_name'] = $no.'_Transkip_D3'; // Nama file yang diunggah sesuai NIM
@@ -746,7 +746,7 @@ class Camhtar extends CI_Controller {
 	            // Tambahkan field lain sesuai kebutuhan
 	        );
 
-	        $this->m_registrasi->update_data($where,$update_data,'tbl_catar_2024');
+	        $this->m_registrasi->update_data($where,$update_data,'tbl_catar_2025');
 	    } else {
 	        // Jika upload gagal, tampilkan pesan kesalahan
 	        $error = array('error' => $this->upload_transkip_d3->display_errors());
@@ -763,11 +763,11 @@ class Camhtar extends CI_Controller {
 	            'upload_supersehat' => $this->input->post('eupload_supersehat'),
 	            // Tambahkan field lain sesuai kebutuhan
 	        );
-			$this->m_registrasi->update_data($where,$update_data,'tbl_catar_2024');
+			$this->m_registrasi->update_data($where,$update_data,'tbl_catar_2025');
 
 		}else{
 	      // Konfigurasi upload file Surat Pernyataan Sehat
-	    $config_supersehat['upload_path'] = './assets/upload/2024/upload_surat_pernyataan_sehat/';
+	    $config_supersehat['upload_path'] = './assets/upload/2025/upload_surat_pernyataan_sehat/';
 	    $config_supersehat['allowed_types'] = 'pdf';
 	    $config_supersehat['max_size'] = 1048; // Ukuran maksimum file (dalam kilobyte)
 	    $config_supersehat['file_name'] = $no.'_Surat_Pernyataan_sehat'; // Nama file yang diunggah sesuai NIM
@@ -784,7 +784,7 @@ class Camhtar extends CI_Controller {
 	            // Tambahkan field lain sesuai kebutuhan
 	        );
 
-	        $this->m_registrasi->update_data($where,$update_data,'tbl_catar_2024');
+	        $this->m_registrasi->update_data($where,$update_data,'tbl_catar_2025');
 	    } else {
 	        // Jika upload gagal, tampilkan pesan kesalahan
 	        $error = array('error' => $this->upload_supersehat->display_errors());
@@ -802,19 +802,19 @@ class Camhtar extends CI_Controller {
     $no = $this->session->userdata('no');
 
     // Konfigurasi upload file untuk file KTP
-    $config_ktp['upload_path']          = './assets/upload/2024/upload_seleksi_ktp';
+    $config_ktp['upload_path']          = './assets/upload/2025/upload_seleksi_ktp';
     $config_ktp['allowed_types']        = 'pdf'; // Sesuaikan dengan jenis file yang diperbolehkan
     $config_ktp['max_size']             = 1048; // Ukuran maksimum file (dalam kilobyte)
     $config_ktp['file_name']            = $no.'_ktp';
 
     // Konfigurasi upload file untuk file surat keterangan
-    $config_suket['upload_path']        = './assets/upload/2024/upload_seleksi_suket';
+    $config_suket['upload_path']        = './assets/upload/2025/upload_seleksi_suket';
     $config_suket['allowed_types']      = 'pdf';
     $config_suket['max_size']           = 1048;
     $config_suket['file_name']          = $no.'_suket';
 
     // Konfigurasi upload file untuk file hasil pemeriksaan kesehatan
-    $config_supersehat['upload_path']   = './assets/upload/2024/upload_seleksi_supersehat';
+    $config_supersehat['upload_path']   = './assets/upload/2025/upload_seleksi_supersehat';
     $config_supersehat['allowed_types'] = 'pdf';
     $config_supersehat['max_size']      = 1048;
     $config_supersehat['file_name']     = $no.'_supersehat';
@@ -865,7 +865,7 @@ class Camhtar extends CI_Controller {
     $data['cek'] = "belum";
 
     // Panggil fungsi model untuk tambah data
-    $result = $this->m_registrasi->input_data($data, 'tbl_seleksi_20242');
+    $result = $this->m_registrasi->input_data($data, 'tbl_seleksi_2025');
 
     if ($result) {
 		// Jika gagal tambah data, tampilkan pesan error
@@ -891,12 +891,12 @@ public function edit_proses_seleksi()
     $where = array(
 	        'id_seleksi' => $id_seleksi,
 	);
-	$this->m_registrasi->update_data($where,$data,'tbl_seleksi_20242');
+	$this->m_registrasi->update_data($where,$data,'tbl_seleksi_2025');
 
 	// cek sudah input
 		if ($_FILES['nfile_ktp']['error'] === UPLOAD_ERR_OK) {
 			    // Konfigurasi upload file Ijasah D3
-	    $config_ktp['upload_path'] = './assets/upload/2024/upload_seleksi_ktp';
+	    $config_ktp['upload_path'] = './assets/upload/2025/upload_seleksi_ktp';
 	    $config_ktp['allowed_types'] = 'pdf';
 	    $config_ktp['max_size'] = 1048; // Ukuran maksimum file (dalam kilobyte)
 	    $config_ktp['file_name'] = $no.'_ktp'; // Nama file yang diunggah sesuai NIM
@@ -915,7 +915,7 @@ public function edit_proses_seleksi()
 	            // Tambahkan field lain sesuai kebutuhan
 	        );
 
-	        $this->m_registrasi->update_data($where,$update_data,'tbl_seleksi_20242');
+	        $this->m_registrasi->update_data($where,$update_data,'tbl_seleksi_2025');
 	    } else {
 	        // Jika upload gagal, tampilkan pesan kesalahan
 	        $error = array('error' => $this->upload_data->display_errors());
@@ -929,13 +929,13 @@ public function edit_proses_seleksi()
 	            'file_ktp' => $this->input->post('efile_ktp'),
 	            // Tambahkan field lain sesuai kebutuhan
 	        );
-			$this->m_registrasi->update_data($where,$update_data,'tbl_seleksi_20242');
+			$this->m_registrasi->update_data($where,$update_data,'tbl_seleksi_2025');
 		}//end cek
 
 		// cek sudah input
 		if ($_FILES['nfile_suket']['error'] === UPLOAD_ERR_OK) {
 			    // Konfigurasi upload file Ijasah D3
-	    $config_suket['upload_path'] = './assets/upload/2024/upload_seleksi_suket';
+	    $config_suket['upload_path'] = './assets/upload/2025/upload_seleksi_suket';
 	    $config_suket['allowed_types'] = 'pdf';
 	    $config_suket['max_size'] = 1048; // Ukuran maksimum file (dalam kilobyte)
 	    $config_suket['file_name'] = $no.'_suket'; // Nama file yang diunggah sesuai NIM
@@ -954,7 +954,7 @@ public function edit_proses_seleksi()
 	            // Tambahkan field lain sesuai kebutuhan
 	        );
 
-	        $this->m_registrasi->update_data($where,$update_data,'tbl_seleksi_20242');
+	        $this->m_registrasi->update_data($where,$update_data,'tbl_seleksi_2025');
 	    } else {
 	        // Jika upload gagal, tampilkan pesan kesalahan
 	        $error = array('error' => $this->upload_data->display_errors());
@@ -968,13 +968,13 @@ public function edit_proses_seleksi()
 	            'file_suket' => $this->input->post('efile_suket'),
 	            // Tambahkan field lain sesuai kebutuhan
 	        );
-			$this->m_registrasi->update_data($where,$update_data,'tbl_seleksi_20242');
+			$this->m_registrasi->update_data($where,$update_data,'tbl_seleksi_2025');
 		}//end cek
 
 		// cek sudah input
 		if ($_FILES['nfile_supersehat']['error'] === UPLOAD_ERR_OK) {
 			    // Konfigurasi upload file Ijasah D3
-	    $config_supersehat['upload_path'] = './assets/upload/2024/upload_seleksi_supersehat';
+	    $config_supersehat['upload_path'] = './assets/upload/2025/upload_seleksi_supersehat';
 	    $config_supersehat['allowed_types'] = 'pdf';
 	    $config_supersehat['max_size'] = 1048; // Ukuran maksimum file (dalam kilobyte)
 	    $config_supersehat['file_name'] = $no.'_supersehat'; // Nama file yang diunggah sesuai NIM
@@ -993,7 +993,7 @@ public function edit_proses_seleksi()
 	            // Tambahkan field lain sesuai kebutuhan
 	        );
 
-	        $this->m_registrasi->update_data($where,$update_data,'tbl_seleksi_20242');
+	        $this->m_registrasi->update_data($where,$update_data,'tbl_seleksi_2025');
 	    } else {
 	        // Jika upload gagal, tampilkan pesan kesalahan
 	        $error = array('error' => $this->upload_data->display_errors());
@@ -1007,7 +1007,7 @@ public function edit_proses_seleksi()
 	            'file_supersehat' => $this->input->post('efile_supersehat'),
 	            // Tambahkan field lain sesuai kebutuhan
 	        );
-			$this->m_registrasi->update_data($where,$update_data,'tbl_seleksi_20242');
+			$this->m_registrasi->update_data($where,$update_data,'tbl_seleksi_2025');
 		}//end cek
 
 
@@ -1043,7 +1043,7 @@ public function edit_proses_seleksi()
 					'link_video_pullup' => $link_video_pullup,
 					'link_video_shuttle' => $link_video_shuttle,
 					);
-		$proses_insert = $this->m_registrasi->input_data($data,'tbl_seleksi_2024');
+		$proses_insert = $this->m_registrasi->input_data($data,'tbl_seleksi_2025');
 				if ($proses_insert) {
 					# code...
 					redirect("seleksi_reguler?pesan=succsess");
@@ -1092,7 +1092,7 @@ public function edit_proses_seleksi()
 					'link_video_pullup' => $link_video_pullup,
 					'link_video_shuttle' => $link_video_shuttle,
 					);
-		$proses_insert = $this->m_registrasi->update_data($where,$update_data,'tbl_seleksi_2024');
+		$proses_insert = $this->m_registrasi->update_data($where,$update_data,'tbl_seleksi_2025');
 				if ($proses_insert) {
 					# code...
 					redirect("seleksi_reguler?pesan=succsess");
@@ -1107,14 +1107,14 @@ public function edit_proses_seleksi()
 		$where = array(
 				'no' => $no,
 			);
-		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2024')->result();
+		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2025')->result();
 		foreach ($data['catar'] as $key) {
 			# code...
 			$data['nik'] = $key->nik;
 		}
 		//cek seleksi
-		$data['hs'] = $this->m_registrasi->get_data($where, 'tbl_catar_hasil_seleksi_2024')->num_rows();
-		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2024')->num_rows();
+		$data['hs'] = $this->m_registrasi->get_data($where, 'tbl_catar_hasil_seleksi_2025')->num_rows();
+		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2025')->num_rows();
 		$data['ukurpakaian'] = $this->m_registrasi->get_data($where, 'tbl_ukurpakaian')->num_rows();
 		// $data['ukurpakaian_data'] = $this->m_registrasi->get_data($where, 'tbl_ukurpakaian')->result();
 
@@ -1197,37 +1197,37 @@ public function edit_proses_seleksi()
 	public function down_pengumuman_gd()
 	{
 		# code...
-		force_download('assets/download/sk_lulus_periode_gelombang_dini_tahun_ajaran_2024.pdf',NULL);
+		force_download('assets/download/sk_lulus_periode_gelombang_dini_tahun_ajaran_2025.pdf',NULL);
 		redirect(base_url());
 	}
 	public function down_pengumuman_seleksi()
 	{
 		# code...
-		force_download('assets/download/seleksi_september_20242.pdf',NULL);
+		force_download('assets/download/seleksi_september_20252.pdf',NULL);
 		redirect(base_url());
 	}
 	public function down_pengumuman_jan()
 	{
 		# code...
-		force_download('assets/download/sk_lulus_periode_januari_2024.pdf',NULL);
+		force_download('assets/download/sk_lulus_periode_januari_2025.pdf',NULL);
 		redirect(base_url());
 	}
 	public function down_pengumuman_feb_mar()
 	{
 		# code...
-		force_download('assets/download/sk_lulus_periode_februari_maret_2024.pdf',NULL);
+		force_download('assets/download/sk_lulus_periode_februari_maret_2025.pdf',NULL);
 		redirect(base_url());
 	}
 	public function down_pengumuman_mei()
 	{
 		# code...
-		force_download('assets/download/sk_lulus_periode_mei_2024.pdf',NULL);
+		force_download('assets/download/sk_lulus_periode_mei_2025.pdf',NULL);
 		redirect(base_url());
 	}
 	public function down_pengumuman_juni()
 	{
 		# code...
-		force_download('assets/download/sk_lulus_periode_juni_2024.pdf',NULL);
+		force_download('assets/download/sk_lulus_periode_juni_2025.pdf',NULL);
 		redirect(base_url());
 	}
 	public function pengumuman_gd()
@@ -1237,12 +1237,12 @@ public function edit_proses_seleksi()
 		$where = array(
 				'no' => $no,
 			);
-		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2024')->result();
+		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2025')->result();
 		foreach ($data['catar'] as $key) {
 			# code...
 			$data['nik'] = $key->nik;
 		}
-		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2024')->num_rows();
+		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2025')->num_rows();
 
 		$this->load->view('camahatar/header',$data);
         $this->load->view('camahatar/pengumuman_gd',$data);
@@ -1256,15 +1256,15 @@ public function edit_proses_seleksi()
 		$where = array(
 				'no' => $no,
 			);
-		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2024')->result();
-		$data['hasil_sel'] = $this->m_registrasi->get_data($where, 'tbl_catar_hasil_seleksi_2024')->result();
+		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2025')->result();
+		$data['hasil_sel'] = $this->m_registrasi->get_data($where, 'tbl_catar_hasil_seleksi_2025')->result();
 		foreach ($data['catar'] as $key) {
 			# code...
 			$data['nik'] = $key->nik;
 		}
 				//cek seleksi
-		$data['hs'] = $this->m_registrasi->get_data($where, 'tbl_catar_hasil_seleksi_2024')->num_rows();
-		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2024')->num_rows();
+		$data['hs'] = $this->m_registrasi->get_data($where, 'tbl_catar_hasil_seleksi_2025')->num_rows();
+		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2025')->num_rows();
 
 		$this->load->view('camahatar/header',$data);
         $this->load->view('camahatar/pengumuman',$data);
@@ -1297,7 +1297,7 @@ public function edit_proses_seleksi()
 		$where = array(
 				'no' => $no,
 			);
-		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2024')->result();
+		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2025')->result();
 		foreach ($data['catar'] as $key) {
 			# code...
 			$data['nik'] = $key->nik;
@@ -1306,13 +1306,13 @@ public function edit_proses_seleksi()
 		$data['prodi'] = $this->getProdi($programStudi);
 
 				//cek seleksi
-		$data['hs'] = $this->m_registrasi->get_data($where, 'tbl_catar_hasil_seleksi_2024')->result();
+		$data['hs'] = $this->m_registrasi->get_data($where, 'tbl_catar_hasil_seleksi_2025')->result();
 		foreach ($data['hs'] as $key) {
 			# code...
 			$data['cek_lulus'] = $key->hasil;
 		}
 
-		$data['daful'] = $this->m_registrasi->get_data($where, 'tbl_catar_daful_2024')->num_rows();
+		$data['daful'] = $this->m_registrasi->get_data($where, 'tbl_catar_daful_2025')->num_rows();
 
 		$this->load->view('camahatar/header',$data);
         $this->load->view('camahatar/daful',$data);
@@ -1328,7 +1328,7 @@ public function edit_proses_seleksi()
 	        'no' => $no,
 	    );
 
-        $config['upload_path'] = './assets/upload/2024/bukti_bayar_daful';
+        $config['upload_path'] = './assets/upload/2025/bukti_bayar_daful';
         $config['max_size'] = 1048;
         $config['allowed_types'] = 'pdf'; // Sesuaikan dengan jenis file yang diizinkan
         $config['file_name'] = $no.'_bukti_bayar_daful'; // Nama file yang diunggah sesuai NIM
@@ -1343,7 +1343,7 @@ public function edit_proses_seleksi()
             $data = array(
                 'bukti_bayar_daful' => $file_name
             );
-            $this->m_registrasi->update_data($where,$data,'tbl_catar_2024');
+            $this->m_registrasi->update_data($where,$data,'tbl_catar_2025');
 
             // ($this->session->userdata('jalur') == "fasttrack") ? redirect(base_url().'validasi') : redirect(base_url().'pembayaran');
             redirect(base_url().'daftarulang');

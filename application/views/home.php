@@ -164,16 +164,16 @@
               </ol> 
 
               <br>
-              <center><h4 class="text-uppercase"> BIAYA PENDIDIKAN MAHASISWA / TARUNA T.A 2024 - 2025 DAN TUTORIAL</h4></center>
+              <center><h4 class="text-uppercase"> BIAYA PENDIDIKAN MAHASISWA / TARUNA T.A 2025 - 2026 DAN TUTORIAL</h4></center>
 
              <div class="col-lg-16 mr-auto">
-            <p class="lead">Berikut lampiran biaya pendidikan Mahasiswa / Taruna UNIMAR AMNI Semarang tahun ajaran 2024 - 2025 yang dapat di download di bawah ini.</p>
+            <p class="lead">Berikut lampiran biaya pendidikan Mahasiswa / Taruna UNIMAR AMNI Semarang tahun ajaran 2025 - 2026 yang dapat di download di bawah ini.</p>
             <p>nb : segala bentuk pembayaran yang sudah di setorkan ke unimar amni tidak dapat ditarik kembali dengan alasan apapun</p>
                <div class="col-lg-16 mr-auto text-center">
-                <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="<?php echo base_url() ?>biaya_download" target="_blank">
+                <!-- <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="<?php //echo base_url() ?>biaya_download" target="_blank">
                 <i class="fa fa-money mr-2"></i>
                 <font color="black">Biaya Pendidikan</font>
-                </a>
+                </a> -->
                 <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="<?php echo base_url() ?>tutorial_download" target="_blank">
                 <i class="fa fa-book mr-2"></i>
                 <font color="black">Tutorial Pendaftaran</font></a>
@@ -483,7 +483,7 @@
                <p><i class="fa fa-question-circle"></i>Syarat :</p>
               <ul>
                 <!-- <li>Usia max 23 tahun pada bulan September 2022.</li> -->
-                <li>Pria atau wanita</li>
+                <!-- <li>Pria atau wanita</li>
                 <li>Pernyataan sanggup tidak menikah selama masa pendidikan.</li>
                 <li>Surat keterangan belum menikah dari lurah.</li> 
                 <li>Foto Copy Ijasah berlegalisir :</li>
@@ -494,7 +494,17 @@
                 <li>Surat Keterangan Catatan Kepolisian ( SKCK).</li> 
                 <li>Pas photo hitam putih ukuran 3x4 sebanyak 2 (dua) lembar.</li> 
                 <li>Copy Surat kenal lahir / akte kelahiran.</li> 
-                <li>Copy tanda pengenal yang sah, KTP atau SIM.</li> 
+                <li>Copy tanda pengenal yang sah, KTP atau SIM.</li>  -->
+                <li>Mengisi pendaftaran online di website : pmb.unimar-amni.ac.id</li>
+                <li>Lulusan SMA/MA/SMK</li>
+                <li>Bagi MAHATAR reguler sanggup tidak menikah selama masa pendidikan dengan melampirkan surat keterangan belum menikah dari kelurahan</li>
+                <li>Fotokopi ijasah yang dilegalisir</li>
+                <li>Fotokopi KTP</li>
+                <li>Fotokopi Kartu Keluarga</li>
+                <li>SKCK(Surat Keterangan Catatan Kepolisian)</li>
+                <li>Fotokopi akte kelahiran</li>
+                <li>Fotokopi hitam putih ukuran 3 x 4 sebanyak 2 lembar</li>
+
               </ul>
               <p><i class="fa fa-warning"></i>Peringatan :</p>
               <ul>
@@ -570,7 +580,7 @@
              <p><i class="fa fa-question-circle"></i>Syarat :</p>
               <ul>
                 <li>Pria atau wanita</li>
-                <li>Usia max 23 tahun pada bulan September 2024.</li>
+                <li>Usia max 23 tahun pada bulan September 2025.</li>
                 <li>Pernyataan sanggup tidak menikah selama masa pendidikan.</li>
                 <li>Surat keterangan belum menikah dari lurah.</li> 
                 <li>Tinggi badan minimal Pria 160 Cm dan Wanita 155 Cm.</li>
@@ -753,18 +763,15 @@
                <p><i class="fa fa-question-circle"></i>Syarat :</p>
                 <ul>
                 <!-- <li>Usia max 23 tahun pada bulan September 2022.</li> -->
-                <li>Pria atau wanita</li>
-                <li>Pernyataan sanggup tidak menikah selama masa pendidikan.</li>
-                <li>Surat keterangan belum menikah dari lurah.</li> 
-                <li>Foto Copy Ijasah berlegalisir :</li>
-                <ul>
-                  <li>SMA atau Madrasah Aliyah (MA) – (Semua Program Studi).</li>
-                  <li>SMK –(Semua Program Studi).</li>
-                </ul>
-                <li>Surat Keterangan Catatan Kepolisian ( SKCK).</li> 
-                <li>Pas photo hitam putih ukuran 3x4 sebanyak 2 (dua) lembar.</li> 
-                <li>Copy Surat kenal lahir / akte kelahiran.</li> 
-                <li>Copy tanda pengenal yang sah, KTP atau SIM.</li> 
+               <li>Mengisi pendaftaran online di website : pmb.unimar-amni.ac.id</li>
+                <li>Lulusan SMA/MA/SMK</li>
+                <li>Bagi MAHATAR reguler sanggup tidak menikah selama masa pendidikan dengan melampirkan surat keterangan belum menikah dari kelurahan</li>
+                <li>Fotokopi ijasah yang dilegalisir</li>
+                <li>Fotokopi KTP</li>
+                <li>Fotokopi Kartu Keluarga</li>
+                <li>SKCK(Surat Keterangan Catatan Kepolisian)</li>
+                <li>Fotokopi akte kelahiran</li>
+                <li>Fotokopi hitam putih ukuran 3 x 4 sebanyak 2 lembar</li>
               </ul>
               <p><i class="fa fa-warning"></i>Peringatan :</p>
             <ul>
@@ -839,20 +846,15 @@
              <p><i class="fa fa-question-circle"></i>Syarat :</p>
               <ul>
                 <!-- <li>Usia max 23 tahun pada bulan September 2022.</li> -->
-                <li>Pria atau wanita</li>
-                <li>Pernyataan sanggup tidak menikah selama masa pendidikan.</li>
-                <li>Surat keterangan belum menikah dari lurah.</li>
-                <li>Foto Copy Ijasah berlegalisir :</li>
-               <ul>
-                  <li>SMA atau Madrasah Aliyah (MA) – (Semua Program Studi).</li>
-                  <li>SMK –(Semua Program Studi).</li>
-                </ul>
-               <!--  <li>SMK/MAK jurusan teknik mesin , teknik mekatronika, teknik elektro (teknik elektronika industri, teknik mekatronika, kecuali tekni audio video), teknik ketenagalistrikan, teknik pendinginan dan tata udara, teknik perkapalan untuk program keahlian instalasi permesinan kapal dan teknik instrumentasi industri.
-                </li> -->
-                <li>Surat Keterangan Catatan Kepolisian ( SKCK).</li> 
-                <li>Pas photo hitam putih ukuran 3x4 sebanyak 2 (dua) lembar.</li> 
-                <li>Copy Surat kenal lahir / akte kelahiran.</li> 
-                <li>Copy tanda pengenal yang sah, KTP atau SIM.</li> 
+                <li>Mengisi pendaftaran online di website : pmb.unimar-amni.ac.id</li>
+                <li>Lulusan SMA/MA/SMK</li>
+                <li>Bagi MAHATAR reguler sanggup tidak menikah selama masa pendidikan dengan melampirkan surat keterangan belum menikah dari kelurahan</li>
+                <li>Fotokopi ijasah yang dilegalisir</li>
+                <li>Fotokopi KTP</li>
+                <li>Fotokopi Kartu Keluarga</li>
+                <li>SKCK(Surat Keterangan Catatan Kepolisian)</li>
+                <li>Fotokopi akte kelahiran</li>
+                <li>Fotokopi hitam putih ukuran 3 x 4 sebanyak 2 lembar</li>
               </ul>
               <p><i class="fa fa-warning"></i>Peringatan :</p>
              <ul>
@@ -928,21 +930,15 @@
                <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/ttl2.png" alt=""> -->
                <p><i class="fa fa-question-circle"></i>Syarat :</p>
                 <ul>
-                <!-- <li>Usia max 23 tahun pada bulan September 2022.</li> -->
-                <li>Pria atau wanita</li>
-                <li>Pernyataan sanggup tidak menikah selama masa pendidikan.</li>
-                <li>Surat keterangan belum menikah dari lurah.</li> 
-                <li>Foto Copy Ijasah berlegalisir :</li>
-                <ul>
-                  <li>SMA atau Madrasah Aliyah (MA) – (Semua Program Studi).</li>
-                  <li>SMK –(Semua Program Studi).</li>
-                </ul>
-                <!-- <li>SMK/MAK jurusan teknik mesin , teknik mekatronika, teknik elektro (teknik elektronika industri, teknik mekatronika, kecuali tekni audio video), teknik ketenagalistrikan, teknik pendinginan dan tata udara, teknik perkapalan untuk program keahlian instalasi permesinan kapal dan teknik instrumentasi industri.
-                </li> -->
-                <li>Surat Keterangan Catatan Kepolisian ( SKCK).</li> 
-                <li>Pas photo hitam putih ukuran 3x4 sebanyak 2 (dua) lembar.</li> 
-                <li>Copy Surat kenal lahir / akte kelahiran.</li> 
-                <li>Copy tanda pengenal yang sah, KTP atau SIM.</li> 
+               <li>Mengisi pendaftaran online di website : pmb.unimar-amni.ac.id</li>
+                <li>Lulusan SMA/MA/SMK</li>
+                <li>Bagi MAHATAR reguler sanggup tidak menikah selama masa pendidikan dengan melampirkan surat keterangan belum menikah dari kelurahan</li>
+                <li>Fotokopi ijasah yang dilegalisir</li>
+                <li>Fotokopi KTP</li>
+                <li>Fotokopi Kartu Keluarga</li>
+                <li>SKCK(Surat Keterangan Catatan Kepolisian)</li>
+                <li>Fotokopi akte kelahiran</li>
+                <li>Fotokopi hitam putih ukuran 3 x 4 sebanyak 2 lembar</li>
               </ul>
               <p><i class="fa fa-warning"></i>Peringatan :</p>
             <ul>
@@ -1018,19 +1014,15 @@
                <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/tk2.png" alt=""> -->
                <p><i class="fa fa-question-circle"></i>Syarat :</p>
                 <ul>
-                <!-- <li>Usia max 23 tahun pada bulan September 2022.</li> -->
-                <li>Pria atau wanita</li>
-                <li>Pernyataan sanggup tidak menikah selama masa pendidikan.</li>
-                <li>Surat keterangan belum menikah dari lurah.</li> 
-                <li>Foto Copy Ijasah berlegalisir :</li>
-                <ul>
-                  <li>SMA atau Madrasah Aliyah (MA) – (Semua Program Studi).</li>
-                  <li>SMK –(Semua Program Studi).</li>
-                </ul>
-                <li>Surat Keterangan Catatan Kepolisian ( SKCK).</li> 
-                <li>Pas photo hitam putih ukuran 3x4 sebanyak 2 (dua) lembar.</li> 
-                <li>Copy Surat kenal lahir / akte kelahiran.</li> 
-                <li>Copy tanda pengenal yang sah, KTP atau SIM.</li> 
+                <li>Mengisi pendaftaran online di website : pmb.unimar-amni.ac.id</li>
+                <li>Lulusan SMA/MA/SMK</li>
+                <li>Bagi MAHATAR reguler sanggup tidak menikah selama masa pendidikan dengan melampirkan surat keterangan belum menikah dari kelurahan</li>
+                <li>Fotokopi ijasah yang dilegalisir</li>
+                <li>Fotokopi KTP</li>
+                <li>Fotokopi Kartu Keluarga</li>
+                <li>SKCK(Surat Keterangan Catatan Kepolisian)</li>
+                <li>Fotokopi akte kelahiran</li>
+                <li>Fotokopi hitam putih ukuran 3 x 4 sebanyak 2 lembar</li> 
               </ul>
               <p><i class="fa fa-warning"></i>Peringatan :</p>
             <ul>
@@ -1106,19 +1098,15 @@
                <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/pi2.png" alt=""> -->
                <p><i class="fa fa-question-circle"></i>Syarat :</p>
                 <ul>
-                <!-- <li>Usia max 23 tahun pada bulan September 2022.</li> -->
-                <li>Pria atau wanita</li>
-                <li>Pernyataan sanggup tidak menikah selama masa pendidikan.</li>
-                <li>Surat keterangan belum menikah dari lurah.</li> 
-                <li>Foto Copy Ijasah berlegalisir :</li>
-                <ul>
-                  <li>SMA atau Madrasah Aliyah (MA) – (Semua Program Studi).</li>
-                  <li>SMK –(Semua Program Studi).</li>
-                </ul>
-                <li>Surat Keterangan Catatan Kepolisian ( SKCK).</li> 
-                <li>Pas photo hitam putih ukuran 3x4 sebanyak 2 (dua) lembar.</li> 
-                <li>Copy Surat kenal lahir / akte kelahiran.</li> 
-                <li>Copy tanda pengenal yang sah, KTP atau SIM.</li> 
+               <li>Mengisi pendaftaran online di website : pmb.unimar-amni.ac.id</li>
+                <li>Lulusan SMA/MA/SMK</li>
+                <li>Bagi MAHATAR reguler sanggup tidak menikah selama masa pendidikan dengan melampirkan surat keterangan belum menikah dari kelurahan</li>
+                <li>Fotokopi ijasah yang dilegalisir</li>
+                <li>Fotokopi KTP</li>
+                <li>Fotokopi Kartu Keluarga</li>
+                <li>SKCK(Surat Keterangan Catatan Kepolisian)</li>
+                <li>Fotokopi akte kelahiran</li>
+                <li>Fotokopi hitam putih ukuran 3 x 4 sebanyak 2 lembar</li>
               </ul>
               <p><i class="fa fa-warning"></i>Peringatan :</p>
             <ul>
@@ -1195,19 +1183,15 @@
                <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/pi2.png" alt=""> -->
                <p><i class="fa fa-question-circle"></i>Syarat :</p>
                 <ul>
-                <!-- <li>Usia max 23 tahun pada bulan September 2022.</li> -->
-               <li>Pria atau wanita</li>
-               <li>Pernyataan sanggup tidak menikah selama masa pendidikan.</li>
-                <li>Surat keterangan belum menikah dari lurah.</li> 
-                <li>Foto Copy Ijasah berlegalisir :</li>
-                <ul>
-                  <li>SMA atau Madrasah Aliyah (MA) – (Semua Program Studi).</li>
-                  <li>SMK –(Semua Program Studi).</li>
-                </ul> 
-                <li>Surat Keterangan Catatan Kepolisian ( SKCK).</li> 
-                <li>Pas photo hitam putih ukuran 3x4 sebanyak 2 (dua) lembar.</li> 
-                <li>Copy Surat kenal lahir / akte kelahiran.</li> 
-                <li>Copy tanda pengenal yang sah, KTP atau SIM.</li> 
+               <li>Mengisi pendaftaran online di website : pmb.unimar-amni.ac.id</li>
+                <li>Lulusan SMA/MA/SMK</li>
+                <li>Bagi MAHATAR reguler sanggup tidak menikah selama masa pendidikan dengan melampirkan surat keterangan belum menikah dari kelurahan</li>
+                <li>Fotokopi ijasah yang dilegalisir</li>
+                <li>Fotokopi KTP</li>
+                <li>Fotokopi Kartu Keluarga</li>
+                <li>SKCK(Surat Keterangan Catatan Kepolisian)</li>
+                <li>Fotokopi akte kelahiran</li>
+                <li>Fotokopi hitam putih ukuran 3 x 4 sebanyak 2 lembar</li>
               </ul>
               <p><i class="fa fa-warning"></i>Peringatan :</p>
             <ul>
@@ -1284,19 +1268,15 @@
                <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/pi2.png" alt=""> -->
                <p><i class="fa fa-question-circle"></i>Syarat :</p>
                 <ul>
-                <!-- <li>Usia max 23 tahun pada bulan September 2022.</li> -->
-                <li>Pria atau wanita</li>
-                <li>Pernyataan sanggup tidak menikah selama masa pendidikan.</li>
-                <li>Surat keterangan belum menikah dari lurah.</li> 
-                <li>Foto Copy Ijasah berlegalisir :</li>
-                <ul>
-                  <li>SMA atau Madrasah Aliyah (MA) – (Semua Program Studi).</li>
-                  <li>SMK –(Semua Program Studi).</li>
-                </ul> 
-                <li>Surat Keterangan Catatan Kepolisian ( SKCK).</li> 
-                <li>Pas photo hitam putih ukuran 3x4 sebanyak 2 (dua) lembar.</li> 
-                <li>Copy Surat kenal lahir / akte kelahiran.</li> 
-                <li>Copy tanda pengenal yang sah, KTP atau SIM.</li> 
+                <li>Mengisi pendaftaran online di website : pmb.unimar-amni.ac.id</li>
+                <li>Lulusan SMA/MA/SMK</li>
+                <li>Bagi MAHATAR reguler sanggup tidak menikah selama masa pendidikan dengan melampirkan surat keterangan belum menikah dari kelurahan</li>
+                <li>Fotokopi ijasah yang dilegalisir</li>
+                <li>Fotokopi KTP</li>
+                <li>Fotokopi Kartu Keluarga</li>
+                <li>SKCK(Surat Keterangan Catatan Kepolisian)</li>
+                <li>Fotokopi akte kelahiran</li>
+                <li>Fotokopi hitam putih ukuran 3 x 4 sebanyak 2 lembar</li>
               </ul>
               <p><i class="fa fa-warning"></i>Peringatan :</p>
             <ul>
