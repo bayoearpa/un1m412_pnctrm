@@ -202,6 +202,8 @@ class Camhtar extends CI_Controller {
 					case '7':
 						$pick = "Sekolah / Guru";
 					break;
+					default:
+						$pick = "Belum Pilih";
 					
 				}
 				return $pick;
