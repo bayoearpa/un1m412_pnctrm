@@ -20,7 +20,7 @@
                     //   $gelombang=$this->m_registrasi->get_data_gelombang($where2);
                     $where = array(
                     // 'tbl_catar_2021.gelombang' => $gelombang,
-                    'tbl_catar_2021.jalur' => 'reguler',
+                    // 'tbl_catar_2021.jalur' => 'reguler',
                     'tbl_catar_validasi_2021.aktif' => '1'      
                     );
                      ?>
