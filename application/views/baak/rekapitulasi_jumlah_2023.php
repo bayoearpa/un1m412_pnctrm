@@ -4,7 +4,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Rekapitulasi Jumlah Pendaftar 2023</h3>
+              <h3 class="box-title">Rekapitulasi Jumlah Pendaftar 2024</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -19,12 +19,12 @@
                     //   );
                     //   $gelombang=$this->m_registrasi->get_data_gelombang($where2);
                     $where = array(
-                    // 'tbl_catar_2023.gelombang' => $gelombang,
-                    'tbl_catar_2023.jalur' => 'reguler',
-                    'tbl_catar_validasi_2023.aktif' => '1'      
+                    // 'tbl_catar_2024.gelombang' => $gelombang,
+                    'tbl_catar_2024.jalur' => 'reguler',
+                    'tbl_catar_validasi_2024.aktif' => '1'      
                     );
                      ?>
-                    <h3><?php echo $this->m_registrasi->get_data_join_where($where)->num_rows(); ?></h3>
+                    <h3><?php echo $this->m_registrasi->get_data_join_where_2023($where)->num_rows(); ?></h3>
 
                     <p>Total Sudah Validasi</p>
                   </div>
@@ -49,101 +49,101 @@
                   <td>KPN</td>
                   <?php 
                   $where_kpn = array(
-                  'tbl_catar_2023.prodi' => '1',
-                  'tbl_catar_validasi_2023.aktif' => '1',
-                  // 'tbl_catar_2023.jalur' => 'reguler'      
+                  'tbl_catar_2024.prodi' => '1',
+                  'tbl_catar_validasi_2024.aktif' => '1',
+                  // 'tbl_catar_2024.jalur' => 'reguler'      
                   ); ?>
-                  <td><?php echo $this->m_registrasi->get_data_join_where_row($where_kpn)->num_rows(); ?></td>
+                  <td><?php echo $this->m_registrasi->get_data_join_where_row_2023($where_kpn)->num_rows(); ?></td>
                 </tr>
                  <tr>
                   <td>TEKNIKA</td>
                   <?php 
                   $where_t = array(
-                  'tbl_catar_2023.prodi' => '2',
-                  'tbl_catar_validasi_2023.aktif' => '1',
-                  // 'tbl_catar_2023.jalur' => 'reguler'      
+                  'tbl_catar_2024.prodi' => '2',
+                  'tbl_catar_validasi_2024.aktif' => '1',
+                  // 'tbl_catar_2024.jalur' => 'reguler'      
                   ); ?>
-                  <td><?php echo $this->m_registrasi->get_data_join_where_row($where_t)->num_rows(); ?></td>
+                  <td><?php echo $this->m_registrasi->get_data_join_where_row_2023($where_t)->num_rows(); ?></td>
                 </tr>
                 <tr>
                   <td>NAUTIKA</td>
                   <?php 
                   $where_n = array(
-                  'tbl_catar_2023.prodi' => '3',
-                  'tbl_catar_validasi_2023.aktif' => '1',
-                  // 'tbl_catar_2023.jalur' => 'reguler'      
+                  'tbl_catar_2024.prodi' => '3',
+                  'tbl_catar_validasi_2024.aktif' => '1',
+                  // 'tbl_catar_2024.jalur' => 'reguler'      
                   ); ?>
-                  <td><?php echo $this->m_registrasi->get_data_join_where_row($where_n)->num_rows(); ?></td>
+                  <td><?php echo $this->m_registrasi->get_data_join_where_row_2023($where_n)->num_rows(); ?></td>
                 </tr>
                 <tr>
                   <td>TRANSPORTASI</td>
                   <?php 
                   $where_t = array(
-                  'tbl_catar_2023.prodi' => '4',
-                  'tbl_catar_validasi_2023.aktif' => '1',
-                  // 'tbl_catar_2023.jalur' => 'reguler'      
+                  'tbl_catar_2024.prodi' => '4',
+                  'tbl_catar_validasi_2024.aktif' => '1',
+                  // 'tbl_catar_2024.jalur' => 'reguler'      
                   ); ?>
-                  <td><?php echo $this->m_registrasi->get_data_join_where_row($where_t)->num_rows(); ?></td>
+                  <td><?php echo $this->m_registrasi->get_data_join_where_row_2023($where_t)->num_rows(); ?></td>
                 </tr>
                 <tr>
                   <td>T. TRANSPORTASI LAUT</td>
                   <?php 
                   $where_tl = array(
-                  'tbl_catar_2023.prodi' => '5',
-                  'tbl_catar_validasi_2023.aktif' => '1',
-                  // 'tbl_catar_2023.jalur' => 'reguler'      
+                  'tbl_catar_2024.prodi' => '5',
+                  'tbl_catar_validasi_2024.aktif' => '1',
+                  // 'tbl_catar_2024.jalur' => 'reguler'      
                   ); ?>
-                  <td><?php echo $this->m_registrasi->get_data_join_where_row($where_tl)->num_rows(); ?></td>
+                  <td><?php echo $this->m_registrasi->get_data_join_where_row_2023($where_tl)->num_rows(); ?></td>
                 </tr>
                  <tr>
                   <td>T. MESIN</td>
                   <?php 
                   $where_tm = array(
-                  'tbl_catar_2023.prodi' => '6',
-                  'tbl_catar_validasi_2023.aktif' => '1',
-                  // 'tbl_catar_2023.jalur' => 'reguler'      
+                  'tbl_catar_2024.prodi' => '6',
+                  'tbl_catar_validasi_2024.aktif' => '1',
+                  // 'tbl_catar_2024.jalur' => 'reguler'      
                   ); ?>
-                  <td><?php echo $this->m_registrasi->get_data_join_where_row($where_tm)->num_rows(); ?></td>
+                  <td><?php echo $this->m_registrasi->get_data_join_where_row_2023($where_tm)->num_rows(); ?></td>
                 </tr>
                 <tr>
                   <td>T. KESELAMATAN</td>
                   <?php 
                   $where_tk = array(
-                  'tbl_catar_2023.prodi' => '7',
-                  'tbl_catar_validasi_2023.aktif' => '1',
-                  // 'tbl_catar_2023.jalur' => 'reguler'      
+                  'tbl_catar_2024.prodi' => '7',
+                  'tbl_catar_validasi_2024.aktif' => '1',
+                  // 'tbl_catar_2024.jalur' => 'reguler'      
                   ); ?>
-                  <td><?php echo $this->m_registrasi->get_data_join_where_row($where_tk)->num_rows(); ?></td>
+                  <td><?php echo $this->m_registrasi->get_data_join_where_row_2023($where_tk)->num_rows(); ?></td>
                 </tr>
                 <tr>
                   <td>PERDAGANGAN INTERNASIONAL</td>
                   <?php 
                   $where_pi = array(
-                  'tbl_catar_2023.prodi' => '8',
-                  'tbl_catar_validasi_2023.aktif' => '1',
-                  // 'tbl_catar_2023.jalur' => 'reguler'      
+                  'tbl_catar_2024.prodi' => '8',
+                  'tbl_catar_validasi_2024.aktif' => '1',
+                  // 'tbl_catar_2024.jalur' => 'reguler'      
                   ); ?>
-                  <td><?php echo $this->m_registrasi->get_data_join_where_row($where_pi)->num_rows(); ?></td>
+                  <td><?php echo $this->m_registrasi->get_data_join_where_row_2023($where_pi)->num_rows(); ?></td>
                 </tr>
                  <tr>
                   <td>MPLM</td>
                   <?php 
                   $where_mplm = array(
-                  'tbl_catar_2023.prodi' => '9',
-                  'tbl_catar_validasi_2023.aktif' => '1',
-                  // 'tbl_catar_2023.jalur' => 'reguler'      
+                  'tbl_catar_2024.prodi' => '9',
+                  'tbl_catar_validasi_2024.aktif' => '1',
+                  // 'tbl_catar_2024.jalur' => 'reguler'      
                   ); ?>
-                  <td><?php echo $this->m_registrasi->get_data_join_where_row($where_mplm)->num_rows(); ?></td>
+                  <td><?php echo $this->m_registrasi->get_data_join_where_row_2023($where_mplm)->num_rows(); ?></td>
                 </tr>
                  <tr>
                   <td>BISNIS DIGITAL</td>
                   <?php 
                   $where_bd = array(
-                  'tbl_catar_2023.prodi' => '10',
-                  'tbl_catar_validasi_2023.aktif' => '1',
-                  // 'tbl_catar_2023.jalur' => 'reguler'      
+                  'tbl_catar_2024.prodi' => '10',
+                  'tbl_catar_validasi_2024.aktif' => '1',
+                  // 'tbl_catar_2024.jalur' => 'reguler'      
                   ); ?>
-                  <td><?php echo $this->m_registrasi->get_data_join_where_row($where_bd)->num_rows(); ?></td>
+                  <td><?php echo $this->m_registrasi->get_data_join_where_row_2023($where_bd)->num_rows(); ?></td>
                 </tr>
                 </tbody>
                 <tfoot>

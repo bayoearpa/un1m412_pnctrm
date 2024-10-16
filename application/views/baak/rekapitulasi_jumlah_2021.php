@@ -24,7 +24,7 @@
                     'tbl_catar_validasi_2021.aktif' => '1'      
                     );
                      ?>
-                    <h3><?php echo $this->m_registrasi->get_data_join_where($where)->num_rows(); ?></h3>
+                    <h3><?php echo $this->m_registrasi->get_data_join_where_2021($where)->num_rows(); ?></h3>
 
                     <p>Total Sudah Validasi</p>
                   </div>
@@ -53,7 +53,7 @@
                   'tbl_catar_validasi_2021.aktif' => '1',
                   // 'tbl_catar_2021.jalur' => 'reguler'      
                   ); ?>
-                  <td><?php echo $this->m_registrasi->get_data_join_where_row($where_kpn)->num_rows(); ?></td>
+                  <td><?php echo $this->m_registrasi->get_data_join_where_row_2021($where_kpn)->num_rows(); ?></td>
                 </tr>
                  <tr>
                   <td>TEKNIKA</td>
@@ -63,7 +63,7 @@
                   'tbl_catar_validasi_2021.aktif' => '1',
                   // 'tbl_catar_2021.jalur' => 'reguler'      
                   ); ?>
-                  <td><?php echo $this->m_registrasi->get_data_join_where_row($where_t)->num_rows(); ?></td>
+                  <td><?php echo $this->m_registrasi->get_data_join_where_row_2021($where_t)->num_rows(); ?></td>
                 </tr>
                 <tr>
                   <td>NAUTIKA</td>
@@ -73,7 +73,7 @@
                   'tbl_catar_validasi_2021.aktif' => '1',
                   // 'tbl_catar_2021.jalur' => 'reguler'      
                   ); ?>
-                  <td><?php echo $this->m_registrasi->get_data_join_where_row($where_n)->num_rows(); ?></td>
+                  <td><?php echo $this->m_registrasi->get_data_join_where_row_2021($where_n)->num_rows(); ?></td>
                 </tr>
                 <tr>
                   <td>TRANSPORTASI</td>
@@ -83,7 +83,7 @@
                   'tbl_catar_validasi_2021.aktif' => '1',
                   // 'tbl_catar_2021.jalur' => 'reguler'      
                   ); ?>
-                  <td><?php echo $this->m_registrasi->get_data_join_where_row($where_t)->num_rows(); ?></td>
+                  <td><?php echo $this->m_registrasi->get_data_join_where_row_2021($where_t)->num_rows(); ?></td>
                 </tr>
                 <tr>
                   <td>T. TRANSPORTASI LAUT</td>
@@ -93,7 +93,7 @@
                   'tbl_catar_validasi_2021.aktif' => '1',
                   // 'tbl_catar_2021.jalur' => 'reguler'      
                   ); ?>
-                  <td><?php echo $this->m_registrasi->get_data_join_where_row($where_tl)->num_rows(); ?></td>
+                  <td><?php echo $this->m_registrasi->get_data_join_where_row_2021($where_tl)->num_rows(); ?></td>
                 </tr>
                  <tr>
                   <td>T. MESIN</td>
@@ -103,7 +103,7 @@
                   'tbl_catar_validasi_2021.aktif' => '1',
                   // 'tbl_catar_2021.jalur' => 'reguler'      
                   ); ?>
-                  <td><?php echo $this->m_registrasi->get_data_join_where_row($where_tm)->num_rows(); ?></td>
+                  <td><?php echo $this->m_registrasi->get_data_join_where_row_2021($where_tm)->num_rows(); ?></td>
                 </tr>
                 <tr>
                   <td>T. KESELAMATAN</td>
@@ -113,7 +113,7 @@
                   'tbl_catar_validasi_2021.aktif' => '1',
                   // 'tbl_catar_2021.jalur' => 'reguler'      
                   ); ?>
-                  <td><?php echo $this->m_registrasi->get_data_join_where_row($where_tk)->num_rows(); ?></td>
+                  <td><?php echo $this->m_registrasi->get_data_join_where_row_2021($where_tk)->num_rows(); ?></td>
                 </tr>
                 <tr>
                   <td>PERDAGANGAN INTERNASIONAL</td>
@@ -123,7 +123,7 @@
                   'tbl_catar_validasi_2021.aktif' => '1',
                   // 'tbl_catar_2021.jalur' => 'reguler'      
                   ); ?>
-                  <td><?php echo $this->m_registrasi->get_data_join_where_row($where_pi)->num_rows(); ?></td>
+                  <td><?php echo $this->m_registrasi->get_data_join_where_row_2021($where_pi)->num_rows(); ?></td>
                 </tr>
                  <tr>
                   <td>MPLM</td>
@@ -133,7 +133,7 @@
                   'tbl_catar_validasi_2021.aktif' => '1',
                   // 'tbl_catar_2021.jalur' => 'reguler'      
                   ); ?>
-                  <td><?php echo $this->m_registrasi->get_data_join_where_row($where_mplm)->num_rows(); ?></td>
+                  <td><?php echo $this->m_registrasi->get_data_join_where_row_2021($where_mplm)->num_rows(); ?></td>
                 </tr>
                  <tr>
                   <td>BISNIS DIGITAL</td>
@@ -143,7 +143,7 @@
                   'tbl_catar_validasi_2021.aktif' => '1',
                   // 'tbl_catar_2021.jalur' => 'reguler'      
                   ); ?>
-                  <td><?php echo $this->m_registrasi->get_data_join_where_row($where_bd)->num_rows(); ?></td>
+                  <td><?php echo $this->m_registrasi->get_data_join_where_row_2021($where_bd)->num_rows(); ?></td>
                 </tr>
                 </tbody>
                 <tfoot>
