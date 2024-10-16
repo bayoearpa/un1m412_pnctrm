@@ -34,7 +34,7 @@
                   <!-- <a href="<?php //echo base_url() ?>baak/perolehan_referral_detail/mahatar" class="small-box-footer">Lihat Selengkapnya <i class="fa fa-arrow-circle-right"></i></a> -->
                 </div>
               </div>
-
+              <br>
 
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
