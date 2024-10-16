@@ -3162,6 +3162,18 @@ class Baak extends CI_Controller {
         }
         return $nama;
     }
+     public function rekapitulasi_jumlah_2023()
+    {
+        # code...
+        // $data['bau'] = $this;
+        // $data['stat'] = $this->m_registrasi->get_data_statistic_kabkota_2024()->result();
+
+        $this->load->view('baak/header');
+        $this->load->view('baak/rekapitulasi_jumlah_2023');
+        $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
+
+    }
      public function get_summary_kabkota_2023()
     {
         # code...
@@ -3269,6 +3281,18 @@ class Baak extends CI_Controller {
         }
         return $nama;
     }
+     public function rekapitulasi_jumlah_2022()
+    {
+        # code...
+        // $data['bau'] = $this;
+        // $data['stat'] = $this->m_registrasi->get_data_statistic_kabkota_2024()->result();
+
+        $this->load->view('baak/header');
+        $this->load->view('baak/rekapitulasi_jumlah_2022');
+        $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
+
+    }
      public function get_summary_kabkota_2022()
     {
         # code...
@@ -3364,6 +3388,18 @@ class Baak extends CI_Controller {
             $nama = $key->provinsi;
         }
         return $nama;
+    }
+     public function rekapitulasi_jumlah_2021()
+    {
+        # code...
+        // $data['bau'] = $this;
+        // $data['stat'] = $this->m_registrasi->get_data_statistic_kabkota_2024()->result();
+
+        $this->load->view('baak/header');
+        $this->load->view('baak/rekapitulasi_jumlah_2021');
+        $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
+
     }
     public function get_summary_prov_2021()
     {
