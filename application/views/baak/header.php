@@ -254,6 +254,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
+            <li class="active"><a href="<?php echo base_url() ?>baak/rekapitulasi_jumlah_2024"><i class="fa fa-money"></i>Rekapitulasi Jumlah</a></li>
             <li class="active"><a href="<?php echo base_url() ?>baak/get_summary_prov_2024"><i class="fa fa-money"></i>Statistik per Provinsi</a></li>
             <li class="active"><a href="<?php echo base_url() ?>baak/get_summary_kabkota_2024"><i class="fa fa-money"></i>Statistik per Kab / Kota</a></li>
             <li><a href="<?php echo base_url() ?>baak/get_summary_sekolah_2024"><i class="fa fa-paperclip"></i>Statistik per sekolah</a></li>
@@ -268,6 +269,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
+            <li class="active"><a href="<?php echo base_url() ?>baak/rekapitulasi_jumlah_2023"><i class="fa fa-money"></i>Rekapitulasi Jumlah</a></li>
             <li class="active"><a href="<?php echo base_url() ?>baak/get_summary_prov_2023"><i class="fa fa-money"></i>Statistik per Provinsi</a></li>
             <li class="active"><a href="<?php echo base_url() ?>baak/get_summary_kabkota_2023"><i class="fa fa-money"></i>Statistik per Kab / Kota</a></li>
             <li><a href="<?php echo base_url() ?>baak/get_summary_sekolah_2023"><i class="fa fa-paperclip"></i>Statistik per sekolah</a></li>
@@ -282,6 +284,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
+            <li class="active"><a href="<?php echo base_url() ?>baak/rekapitulasi_jumlah_2022"><i class="fa fa-money"></i>Rekapitulasi Jumlah</a></li>
             <li class="active"><a href="<?php echo base_url() ?>baak/get_summary_prov_2022"><i class="fa fa-money"></i>Statistik per Provinsi</a></li>
             <li class="active"><a href="<?php echo base_url() ?>baak/get_summary_kabkota_2022"><i class="fa fa-money"></i>Statistik per Kab / Kota</a></li>
             <li><a href="<?php echo base_url() ?>baak/get_summary_sekolah_2022"><i class="fa fa-paperclip"></i>Statistik per sekolah</a></li>
@@ -297,6 +300,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
+            <li class="active"><a href="<?php echo base_url() ?>baak/rekapitulasi_jumlah_2021"><i class="fa fa-money"></i>Rekapitulasi Jumlah</a></li>
             <li class="active"><a href="<?php echo base_url() ?>baak/get_summary_prov_2021"><i class="fa fa-money"></i>Statistik per Provinsi</a></li>
             <li class="active"><a href="<?php echo base_url() ?>baak/get_summary_ktkb_2021"><i class="fa fa-money"></i>Statistik per Kota / Kab</a></li>
             <li><a href="<?php echo base_url() ?>baak/get_summary_sekolah_2021"><i class="fa fa-paperclip"></i>Statistik per sekolah</a></li>
@@ -312,6 +316,7 @@
           </a>
           <ul class="treeview-menu">
            <!--  <li class="active"><a href="<?php //echo base_url() ?>bau/get_summary_prov_2021"><i class="fa fa-money"></i>Statistik per Provinsi</a></li> -->
+           <li class="active"><a href="<?php echo base_url() ?>baak/rekapitulasi_jumlah_2020"><i class="fa fa-money"></i>Rekapitulasi Jumlah</a></li>
             <li><a href="<?php echo base_url() ?>baak/get_summary_sekolah_2020"><i class="fa fa-paperclip"></i>Statistik per sekolah</a></li>
             <li><a href="<?php echo base_url() ?>baak/get_summary_sumber_2020"><i class="fa fa-paperclip"></i>Statistik Sumber Informasi</a></li>
           </ul>
