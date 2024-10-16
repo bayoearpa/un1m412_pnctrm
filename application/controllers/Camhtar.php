@@ -492,9 +492,9 @@ class Camhtar extends CI_Controller {
 		  //       exit();
 				if ($proses_insert) {
 					# code...
-					redirect("pembayaran?pesan=succsess");
+					redirect("validasi?pesan=succsess");
 				}
-				redirect("pembayaran?pesan=error");
+				redirect("validasi?pesan=error");
 
 				//////////////// .proses biasa//////////////////////////////////////
  	

@@ -15,7 +15,9 @@
                     <select onchange="toggleGelombangForm()" name="jalur" id="jalur" class="form-control" style="width:50%;">  
                     <option selected>== Pilih ==</option>
                     <option value="gdr1">Gelombang Dini</option>
-                    <option value="reguler">Reguler</option>                       
+                    <option value="gdr2">Gelombang Dini (Kelas Transfer)</option>
+                    <option value="reguler">Reguler</option>
+                    <option value="kelastransfer">Kelas Transfer</option>                       
                     </select> 
                     </div>  
                     <div class="form-group">
