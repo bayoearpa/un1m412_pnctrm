@@ -223,6 +223,7 @@
           <ul class="treeview-menu">
             <!-- <li class="active"><a href="<?php //echo base_url() ?>baak/"><i class="fa fa-repeat"></i>Ganti Jurusan</a></li> -->
             <li><a href="<?php echo base_url() ?>baak/seleksigd"><i class="fa fa-paperclip"></i>Seleksi GD</a></li>
+            <li><a href="<?php echo base_url() ?>baak/seleksigd2"><i class="fa fa-paperclip"></i>Seleksi GD TF</a></li>
             <li><a href="<?php echo base_url() ?>baak/seleksi"><i class="fa fa-paperclip"></i>Seleksi</a></li>
             <li><a href="<?php echo base_url() ?>baak/seleksitf"><i class="fa fa-paperclip"></i>Seleksi TF</a></li>
           </ul>

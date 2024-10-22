@@ -2738,6 +2738,19 @@ class Baak extends CI_Controller {
         $this->load->view('baak/footer_js');
         $this->load->view('baak/seleksigd_js');
     }
+    public function seleksigd2()
+    {
+        # code...
+         $where = array(
+            'jalur' => 'gdr2'
+        );
+        $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
+        $this->load->view('baak/header');
+        $this->load->view('baak/seleksigd2',$data);
+        $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
+        $this->load->view('baak/seleksigd2_js');
+    }
      public function getdataeditseleksi($no)
     {
         # code...
