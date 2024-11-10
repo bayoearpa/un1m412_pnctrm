@@ -572,6 +572,39 @@ class Camhtar extends CI_Controller {
             $this->m_registrasi->update_data($where,$data,'tbl_catar_2025');
 
             // ($this->session->userdata('jalur') == "fasttrack") ? redirect(base_url().'validasi') : redirect(base_url().'pembayaran');
+            redirect(base_url().'validasi');
+        } else {
+            // ($this->session->userdata('jalur') == "fasttrack") ? redirect(base_url().'validasi') : redirect(base_url().'pembayaran');
+            redirect(base_url().'validasi');
+        }
+	}
+	public function upload_bukti_bayar2()
+	{
+		# code...
+		// Tangani unggahan file
+		$no = $this->session->userdata('no');
+		$where = array(
+	        'no' => $no,
+	    );
+
+        $config['upload_path'] = './assets/upload/2025/bukti_bayar';
+        $config['max_size'] = 1048;
+        $config['allowed_types'] = 'pdf|jpg'; // Sesuaikan dengan jenis file yang diizinkan
+        $config['file_name'] = $no.'_bukti_bayar'; // Nama file yang diunggah sesuai NIM
+        $this->load->library('upload', $config);
+
+        if ($this->upload->do_upload('bukti_bayar')) {
+            // Jika unggahan berhasil
+            $upload_data = $this->upload->data();
+            $file_name = $upload_data['file_name'];
+
+            // Simpan data ke database (contoh)
+            $data = array(
+                'bukti_bayar' => $file_name
+            );
+            $this->m_registrasi->update_data($where,$data,'tbl_catar_2025');
+
+            // ($this->session->userdata('jalur') == "fasttrack") ? redirect(base_url().'validasi') : redirect(base_url().'pembayaran');
             redirect(base_url().'pembayaran');
         } else {
             // ($this->session->userdata('jalur') == "fasttrack") ? redirect(base_url().'validasi') : redirect(base_url().'pembayaran');

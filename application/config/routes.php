@@ -92,6 +92,7 @@ $route['proses_biodata'] = 'camhtar/insertReg';
 $route['pembayaran'] = 'camhtar/pembayaran';
 $route['validasi'] = 'camhtar/validasi';
 $route['proses_bukti_bayar'] = 'camhtar/upload_bukti_bayar';
+$route['proses_bukti_bayar2'] = 'camhtar/upload_bukti_bayar2';
 $route['seleksi_geldini_reguler'] = 'camhtar/seleksigdr1';
 $route['seleksi_geldini_tf'] = 'camhtar/seleksigdr2';
 $route['proses_seleksi_gdtf'] = 'camhtar/seleksigdr2p';

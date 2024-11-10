@@ -66,7 +66,7 @@
                <?php } ?>
                
                <div class="form-group">
-                        <label for="editufsignon">Upload Bukti Pembayaran (Upload dalam format .pdf, Maks. File 1 MB)</label>
+                        <label for="editufsignon">Upload Bukti Pembayaran (Upload dalam format .pdf dan .jpg, Maks. File 1 MB)</label>
                         <input type="file" class="form-control" id="bukti_bayar" name="bukti_bayar">
                         <!-- <input type="hidden" id="editufsignon_existing" name="ufsignon_existing" value="<?php //echo $c->upload_file_signon; ?>"> -->
                         <?php if ($c->bukti_bayar) { ?>
