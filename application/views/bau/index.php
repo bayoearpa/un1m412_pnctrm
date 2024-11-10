@@ -4,7 +4,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Data Pencatarma</h3>
+              <h3 class="box-title">Data PMB</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -39,7 +39,7 @@
                   'no' => $c->no,
                   'aktif' => "1"       
                   );
-                  $cek=$this->m_registrasi->get_data($where,'tbl_catar_validasi_2024')->row();
+                  $cek=$this->m_registrasi->get_data($where,'tbl_catar_validasi_2025')->row();
                    ?>
                   <?php 
                   if ($cek > "0"){ ?>
