@@ -143,31 +143,31 @@
 		<td><center><b>PARAF PETUGAS</b></center></td>
 	</tr>
 	<tr>
-		<td align="left" height="30px">TPA</td>
+		<td align="left" height="25px">TPA</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td align="left" height="30px">KESEHATAN</td>
+		<td align="left" height="25px">KESEHATAN</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td align="left" height="30px">WAWANCARA</td>
+		<td align="left" height="25px">WAWANCARA</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td align="left" height="30px">SAMAPTA</td>
+		<td align="left" height="25px">SAMAPTA</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td align="left" height="30px">UKUR PAKAIAN</td>
+		<td align="left" height="25px">UKUR PAKAIAN</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td align="left" height="30px">PANTUKHIR</td>
+		<td align="left" height="25px">PANTUKHIR</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td align="left" height="30px">PSIKOTES</td>
+		<td align="left" height="25px">PSIKOTES</td>
 		<td></td>
 	</tr>
 </table>
