@@ -161,8 +161,8 @@ class m_registrasi extends CI_Model
 
     public function getNotifikasi() {
         $this->db->select('c.no as nomor, c.nama, c.prodi, c.bukti_bayar');
-        $this->db->from('tbl_catar_2024 c');
-        $this->db->join('tbl_catar_validasi_2024 v', 'c.no = v.no', 'left');
+        $this->db->from('tbl_catar_2025 c');
+        $this->db->join('tbl_catar_validasi_2025 v', 'c.no = v.no', 'left');
         $this->db->where('c.bukti_bayar > 0');
         $this->db->where('v.no IS NULL');
         $this->db->order_by('c.no', 'desc');
@@ -175,8 +175,8 @@ class m_registrasi extends CI_Model
 
     public function getNotifikasi_du() {
         $this->db->select('c.no as nomor, c.nama, c.prodi, c.bukti_bayar_daful');
-        $this->db->from('tbl_catar_2024 c');
-        $this->db->join('tbl_catar_daful_2024 v', 'c.no = v.no', 'left');
+        $this->db->from('tbl_catar_2025 c');
+        $this->db->join('tbl_catar_daful_2025 v', 'c.no = v.no', 'left');
         $this->db->where('c.bukti_bayar_daful > 0');
         $this->db->where('v.no IS NULL');
         $this->db->order_by('c.no', 'desc');
