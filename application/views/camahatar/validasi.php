@@ -59,14 +59,14 @@
                   # code... 
                   ?>
                     <p align="center">Untuk Pembayaran dapat di Transfer ke Bank BNI dengan nomor rekening <b>0838810730 an. UNIMAR AMNI</b> biaya yang harus anda bayar sebesar:</p>
-                    <h2 align="center">Rp. 250.000,-</h2>
+                    <h2 align="center"><u>Rp. 250.000,-</u> Rp. 250.000,-</h2>
                 <?php }else{ ?>
                     <p align="center">Untuk Pembayaran dapat di Transfer ke Bank BNI dengan nomor rekening <b>0838810730 an. UNIMAR AMNI</b> biaya yang harus anda bayar sebesar:</p>
-                    <h2 align="center">Rp. 500.000,-</h2>
+                    <h2 align="center"><u>Rp. 500.000,-</u>Rp. 500.000,-</h2>
                <?php } ?>
                
                <div class="form-group">
-                        <label for="editufsignon">Upload Bukti Pembayaran (Upload dalam format .pdf)</label>
+                        <label for="editufsignon">Upload Bukti Pembayaran (Upload dalam format .pdf, Maks. File 1 MB)</label>
                         <input type="file" class="form-control" id="bukti_bayar" name="bukti_bayar">
                         <!-- <input type="hidden" id="editufsignon_existing" name="ufsignon_existing" value="<?php //echo $c->upload_file_signon; ?>"> -->
                         <?php if ($c->bukti_bayar) { ?>

@@ -556,7 +556,7 @@ class Camhtar extends CI_Controller {
 
         $config['upload_path'] = './assets/upload/2025/bukti_bayar';
         $config['max_size'] = 1048;
-        $config['allowed_types'] = 'pdf'; // Sesuaikan dengan jenis file yang diizinkan
+        $config['allowed_types'] = 'pdf|jpg'; // Sesuaikan dengan jenis file yang diizinkan
         $config['file_name'] = $no.'_bukti_bayar'; // Nama file yang diunggah sesuai NIM
         $this->load->library('upload', $config);
 
