@@ -701,6 +701,7 @@ class Camhtar extends CI_Controller {
 			# code...
 			$data['nik'] = $key->nik;
 			$data['prodi'] = $key->prodi;
+			$data['jk'] = $key->jk;
 		}
 		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2025')->num_rows();
 		$data['seleksi'] = $this->m_registrasi->get_data($where, 'tbl_seleksi_2025')->num_rows();
