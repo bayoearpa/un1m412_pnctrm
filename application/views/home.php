@@ -167,10 +167,10 @@
               </ol> 
 
               <br>
-              <center><h4 class="text-uppercase"> BIAYA PENDIDIKAN MAHASISWA / TARUNA T.A 2025 - 2026 DAN TUTORIAL</h4></center>
+              <center><h4 class="text-uppercase"> BIAYA PENDIDIKAN MAHASISWA / TARUNA T.A 2024 - 2025 DAN TUTORIAL</h4></center>
 
              <div class="col-lg-16 mr-auto">
-            <p class="lead">Berikut lampiran biaya pendidikan Mahasiswa / Taruna UNIMAR AMNI Semarang tahun ajaran 2025 - 2026 yang dapat di download di bawah ini.</p>
+            <p class="lead">Berikut lampiran biaya pendidikan Mahasiswa / Taruna UNIMAR AMNI Semarang tahun ajaran 2024 - 2025 yang dapat di download di bawah ini.</p>
             <p>nb : segala bentuk pembayaran yang sudah di setorkan ke unimar amni tidak dapat ditarik kembali dengan alasan apapun</p>
                <div class="col-lg-16 mr-auto text-center">
                 <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="<?php echo base_url() ?>biaya_download" target="_blank">
