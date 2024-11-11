@@ -110,6 +110,11 @@ $route['download_panduan_pengisian_form_ukur_pakaian'] = 'camhtar/down_panduan_p
 $route['pengumuman_gelombangdini'] = 'camhtar/pengumuman_gd';
 $route['download_pengumuman_gelombangdini'] = 'camhtar/down_pengumuman_gd';
 $route['download_pengumuman_seleksi'] = 'camhtar/down_pengumuman_seleksi';
+//download 2025
+$route['download_suket_sanggup_tidak_menikah25'] = 'camhtar/down_sanggup_tidak_menikah25';
+$route['download_suket_sanggup_menaati_peraturan25'] = 'camhtar/down_sanggup_menaati_peraturan25';
+$route['download_super_sanggup_tinggal_diasrama25'] = 'camhtar/down_perny_tinggal_asrama25';
+$route['download_suket_sehat_gelombang_dini25'] = 'camhtar/down_suket_sehat_geldini25';
 
 //pengumuman
 $route['pengumuman'] = 'camhtar/pengumuman';

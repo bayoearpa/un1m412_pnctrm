@@ -641,6 +641,30 @@ class Camhtar extends CI_Controller {
 		redirect("validasi");
 
 	}
+	public function down_sanggup_tidak_menikah25()
+	{
+		# code...
+		force_download('assets/download/surat_pernyataan_sanggup_tidak_menikah_2025.pdf',NULL);
+		redirect(base_url());
+	}
+	public function down_sanggup_menaati_peraturan25()
+	{
+		# code...
+		force_download('assets/download/surat_pernyataan_sanggup_mentaati_peraturan_2025.pdf',NULL);
+		redirect(base_url());
+	}
+	public function down_perny_tinggal_asrama25()
+	{
+		# code...
+		force_download('assets/download/surat_pernyataan_di_asrama_2025.pdf',NULL);
+		redirect(base_url());
+	}
+	public function down_suket_sehat_geldini25()
+	{
+		# code...
+		force_download('assets/download/surat_kesehatan_kelas_reguler_2025.pdf',NULL);
+		redirect(base_url());
+	}
 	public function down_suket()
 	{
 		# code...
