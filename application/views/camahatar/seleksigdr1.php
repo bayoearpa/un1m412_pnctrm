@@ -28,14 +28,14 @@
                    <a href="<?php //echo base_url() ?>download_suket?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Keterangan</button></a>
                 </div> -->
 
-                <div class="box-body"><h3>Silakan download file surat keterangan yang ada dibawah ini, lalu dibawa pada saat <b>test gelombang dini</b>.file bisa di download di bawah ini :</h3>
+                <div class="box-body"><h3>Silakan download file surat keterangan yang ada dibawah ini, lalu dibawa pada saat <b>Test gelombang dini</b>.file bisa di download di bawah ini :</h3>
 
                    <label>Surat Keterangan Sehat</label>
-                   <a href="<?php echo base_url() ?>download_suket_sehat_gelombang_dini25?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Keterangan Sehat</button></a>
+                   <a href="<?php echo base_url() ?>download_suket_sehat_gelombang_dini25?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Keterangan Sehat</button></a><br>
                    <label>Surat Keterangan Sanggup Menaati Peraturan</label>
-                   <a href="<?php echo base_url() ?>download_suket_sanggup_menaati_peraturan25?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Keterangan Sanggup Menaati Peraturan</button></a>
+                   <a href="<?php echo base_url() ?>download_suket_sanggup_menaati_peraturan25?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Keterangan Sanggup Menaati Peraturan</button></a><br>
                    <label>Surat Pernyataan Sanggup Tinggal di Asrama</label>
-                   <a href="<?php echo base_url() ?>download_super_sanggup_tinggal_diasrama25?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan Sanggup Tinggal di Asrama</button></a>
+                   <a href="<?php echo base_url() ?>download_super_sanggup_tinggal_diasrama25?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan Sanggup Tinggal di Asrama</button></a><br>
                    <label>Surat Pernyataan Sanggup Tidak Menikah</label>
                    <a href="<?php echo base_url() ?>download_suket_sanggup_tidak_menikah25?>" target="__blank"><button type="button" class="btn btn-primary">Surat Pernyataan Sanggup Tidak Menikah</button></a>
                 </div>
