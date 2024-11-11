@@ -25,9 +25,20 @@
 
            <?php }else{ ?>
                 <?php  foreach ($catar as $c) { ?>
-                 <form action="<?php echo base_url() ?>proses_seleksi_gdtf" name="form1" id="form1" method="post" enctype="multipart/form-data">               
+                 <form action="<?php echo base_url() ?>proses_seleksi_gdtf" name="form1" id="form1" method="post" enctype="multipart/form-data">
+                 <div class="form-group">
+                  <label for="editufsignon">Upload KTP (Upload dalam format .pdf, Maks File 1 MB)</label>
+                        <input type="file" class="form-control" id="upload_transd3" name="upload_transd3">
+                        <input type="hidden" id="eupload_ktp" name="eupload_ktp" value="<?php echo $c->upload_ktp; ?>">
+                        <?php if ($c->upload_transd3) { ?>
+                        <button class="btn btn-success view-filektp-button" data-filename="<?php echo $c->upload_ktp; ?>">Lihat KTP</button>
+                        <?php } else { ?>
+                        <!-- Tampilkan pesan jika file tidak ada -->
+                        File tidak tersedia
+                        <?php } ?>
+                </div>               
                <div class="form-group">
-                        <label for="editufsignon">Upload Ijasah D3 (Upload dalam format .pdf)</label>
+                        <label for="editufsignon">Upload Ijasah D3 (Upload dalam format .pdf, Maks File 1 MB)</label>
                         <input type="file" class="form-control" id="upload_ijd3" name="upload_ijd3">
                         <input type="hidden" id="eupload_ijd3" name="eupload_ijd3" value="<?php echo $c->upload_ijd3; ?>">
                         <?php if ($c->upload_ijd3) { ?>
@@ -39,7 +50,7 @@
                         
                 </div>
                 <div class="form-group">
-                  <label for="editufsignon">Upload Transkip D3 (Upload dalam format .pdf)</label>
+                  <label for="editufsignon">Upload Transkip D3 (Upload dalam format .pdf, Maks File 1 MB)</label>
                         <input type="file" class="form-control" id="upload_transd3" name="upload_transd3">
                         <input type="hidden" id="eupload_transd3" name="eupload_transd3" value="<?php echo $c->upload_transd3; ?>">
                         <?php if ($c->upload_transd3) { ?>
@@ -49,17 +60,16 @@
                         File tidak tersedia
                         <?php } ?>
                 </div>
-                <div class="form-group">
-                  <label for="editufsignon">Mengisi dan Mengupload Surat Pernyataan Sehat <b>Bermaterai yang sudah disediakan</b> pada link berikut -> <a href="<?php echo base_url() ?>download_supersehattf"><code>Download Surat Pernyataaan Sehat</code></a>  (Lalu Upload dalam format .pdf)</label>
+               <!--  <div class="form-group">
+                  <label for="editufsignon">Mengisi dan Mengupload Surat Pernyataan Sehat <b>Bermaterai yang sudah disediakan</b> pada link berikut -> <a href="<?php //echo base_url() ?>download_supersehattf"><code>Download Surat Pernyataaan Sehat</code></a>  (Lalu Upload dalam format .pdf)</label>
                         <input type="file" class="form-control" id="upload_supersehat" name="upload_supersehat">
-                        <input type="hidden" id="eupload_supersehat" name="eupload_supersehat" value="<?php echo $c->upload_supersehat; ?>">
-                        <?php if ($c->upload_supersehat) { ?>
-                        <button class="btn btn-success view-filess-button" data-filename="<?php echo $c->upload_supersehat; ?>">Lihat Surat Pernyataan Sehat</button>
-                        <?php } else { ?>
-                        <!-- Tampilkan pesan jika file tidak ada -->
+                        <input type="hidden" id="eupload_supersehat" name="eupload_supersehat" value="<?php //echo $c->upload_supersehat; ?>">
+                        <?php // if ($c->upload_supersehat) { ?>
+                        <button class="btn btn-success view-filess-button" data-filename="<?php //echo $c->upload_supersehat; ?>">Lihat Surat Pernyataan Sehat</button>
+                        <?php // } else { ?>
                         File tidak tersedia
                         <?php } ?>
-                </div>
+                </div> -->
                 <div class="form-group"><button type="submit" class="btn btn-primary">Simpan</button></div>
                   <?php } ?>
               </form>
