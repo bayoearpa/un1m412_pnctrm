@@ -739,6 +739,43 @@ class Camhtar extends CI_Controller {
 	        'no' => $no,
 	    );
 
+	    		// cek sudah input
+		if ($this->input->post('eupload_ktp') > 0) {
+			# code...
+			$update_data = array(
+	            'upload_ktp' => $this->input->post('eupload_ktp'),
+	            // Tambahkan field lain sesuai kebutuhan
+	        );
+			$this->m_registrasi->update_data($where,$update_data,'tbl_catar_2025');
+
+		}else{
+	      // Konfigurasi upload file Surat Pernyataan Sehat
+	    $config_supersehat['upload_path'] = './assets/upload/2025/upload_ktp/';
+	    $config_supersehat['allowed_types'] = 'pdf';
+	    $config_supersehat['max_size'] = 1048; // Ukuran maksimum file (dalam kilobyte)
+	    $config_supersehat['file_name'] = $no.'_KTP'; // Nama file yang diunggah sesuai NIM
+
+	    $this->load->library('upload');
+	    $this->upload->initialize($config_supersehat);
+	    // Jika upload berhasil
+	    if ($this->upload->do_upload('upload_ktp')) {
+	        $upload_data = $this->upload->data();
+
+	        // Update data pada database
+	        $update_data = array(
+	            'upload_ktp' => $upload_data['file_name'],
+	            // Tambahkan field lain sesuai kebutuhan
+	        );
+
+	        $this->m_registrasi->update_data($where,$update_data,'tbl_catar_2025');
+	    } else {
+	        // Jika upload gagal, tampilkan pesan kesalahan
+	        $error = array('error' => $this->upload_supersehat->display_errors());
+	       	$this->session->set_flashdata('error', $error);
+			redirect(base_url('seleksi_geldini_tf'));
+	    }
+		} // end cek
+
 		// cek sudah input
 		if ($this->input->post('eupload_ijd3') > 0) {
 			# code...
@@ -816,42 +853,44 @@ class Camhtar extends CI_Controller {
 		} // end cek
 
 
-		// cek sudah input
-		if ($this->input->post('eupload_supersehat') > 0) {
-			# code...
-			$update_data = array(
-	            'upload_supersehat' => $this->input->post('eupload_supersehat'),
-	            // Tambahkan field lain sesuai kebutuhan
-	        );
-			$this->m_registrasi->update_data($where,$update_data,'tbl_catar_2025');
+		// // cek sudah input
+		// if ($this->input->post('eupload_supersehat') > 0) {
+		// 	# code...
+		// 	$update_data = array(
+	 //            'upload_supersehat' => $this->input->post('eupload_supersehat'),
+	 //            // Tambahkan field lain sesuai kebutuhan
+	 //        );
+		// 	$this->m_registrasi->update_data($where,$update_data,'tbl_catar_2025');
 
-		}else{
-	      // Konfigurasi upload file Surat Pernyataan Sehat
-	    $config_supersehat['upload_path'] = './assets/upload/2025/upload_surat_pernyataan_sehat/';
-	    $config_supersehat['allowed_types'] = 'pdf';
-	    $config_supersehat['max_size'] = 1048; // Ukuran maksimum file (dalam kilobyte)
-	    $config_supersehat['file_name'] = $no.'_Surat_Pernyataan_sehat'; // Nama file yang diunggah sesuai NIM
+		// }else{
+	 //      // Konfigurasi upload file Surat Pernyataan Sehat
+	 //    $config_supersehat['upload_path'] = './assets/upload/2025/upload_surat_pernyataan_sehat/';
+	 //    $config_supersehat['allowed_types'] = 'pdf';
+	 //    $config_supersehat['max_size'] = 1048; // Ukuran maksimum file (dalam kilobyte)
+	 //    $config_supersehat['file_name'] = $no.'_Surat_Pernyataan_sehat'; // Nama file yang diunggah sesuai NIM
 
-	    $this->load->library('upload');
-	    $this->upload->initialize($config_supersehat);
-	    // Jika upload berhasil
-	    if ($this->upload->do_upload('upload_supersehat')) {
-	        $upload_data = $this->upload->data();
+	 //    $this->load->library('upload');
+	 //    $this->upload->initialize($config_supersehat);
+	 //    // Jika upload berhasil
+	 //    if ($this->upload->do_upload('upload_supersehat')) {
+	 //        $upload_data = $this->upload->data();
 
-	        // Update data pada database
-	        $update_data = array(
-	            'upload_supersehat' => $upload_data['file_name'],
-	            // Tambahkan field lain sesuai kebutuhan
-	        );
+	 //        // Update data pada database
+	 //        $update_data = array(
+	 //            'upload_supersehat' => $upload_data['file_name'],
+	 //            // Tambahkan field lain sesuai kebutuhan
+	 //        );
 
-	        $this->m_registrasi->update_data($where,$update_data,'tbl_catar_2025');
-	    } else {
-	        // Jika upload gagal, tampilkan pesan kesalahan
-	        $error = array('error' => $this->upload_supersehat->display_errors());
-	       	$this->session->set_flashdata('error', $error);
-			redirect(base_url('seleksi_geldini_tf'));
-	    }
-		} // end cek
+	 //        $this->m_registrasi->update_data($where,$update_data,'tbl_catar_2025');
+	 //    } else {
+	 //        // Jika upload gagal, tampilkan pesan kesalahan
+	 //        $error = array('error' => $this->upload_supersehat->display_errors());
+	 //       	$this->session->set_flashdata('error', $error);
+		// 	redirect(base_url('seleksi_geldini_tf'));
+	 //    }
+		// } // end cek
+
+
 	    // Lakukan hal yang sama untuk file-file lainnya
 	    // ...
 	    redirect(base_url('seleksi_tf'));

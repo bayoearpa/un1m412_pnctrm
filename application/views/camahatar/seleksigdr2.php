@@ -68,7 +68,7 @@
                         <button class="btn btn-success view-filess-button" data-filename="<?php //echo $c->upload_supersehat; ?>">Lihat Surat Pernyataan Sehat</button>
                         <?php // } else { ?>
                         File tidak tersedia
-                        <?php } ?>
+                        <?php //} ?>
                 </div> -->
                 <div class="form-group"><button type="submit" class="btn btn-primary">Simpan</button></div>
                   <?php } ?>
