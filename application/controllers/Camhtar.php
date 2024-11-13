@@ -770,7 +770,7 @@ class Camhtar extends CI_Controller {
 	        $this->m_registrasi->update_data($where,$update_data,'tbl_catar_2025');
 	    } else {
 	        // Jika upload gagal, tampilkan pesan kesalahan
-	        $error = array('error' => $this->upload_supersehat->display_errors());
+	        $error = array('error' => $this->upload_ktp->display_errors());
 	       	$this->session->set_flashdata('error', $error);
 			redirect(base_url('seleksi_geldini_tf'));
 	    }
