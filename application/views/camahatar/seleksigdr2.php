@@ -28,9 +28,9 @@
                  <form action="<?php echo base_url() ?>proses_seleksi_gdtf" name="form1" id="form1" method="post" enctype="multipart/form-data">
                  <div class="form-group">
                   <label for="editufsignon">Upload KTP (Upload dalam format .pdf, Maks File 1 MB)</label>
-                        <input type="file" class="form-control" id="upload_transd3" name="upload_transd3">
+                        <input type="file" class="form-control" id="upload_ktp" name="upload_ktp">
                         <input type="hidden" id="eupload_ktp" name="eupload_ktp" value="<?php echo $c->upload_ktp; ?>">
-                        <?php if ($c->upload_transd3) { ?>
+                        <?php if ($c->upload_ktp) { ?>
                         <button class="btn btn-success view-filektp-button" data-filename="<?php echo $c->upload_ktp; ?>">Lihat KTP</button>
                         <?php } else { ?>
                         <!-- Tampilkan pesan jika file tidak ada -->
