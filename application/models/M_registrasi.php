@@ -189,8 +189,8 @@ class m_registrasi extends CI_Model
 
     public function getNotifikasiseleksi() {
         $this->db->select('v.no as nomor, v.nama, v.prodi');
-        $this->db->from('tbl_seleksi_20242 c');
-        $this->db->join('tbl_catar_2024 v', 'c.no = v.no', 'left');
+        $this->db->from('tbl_seleksi_2025 c');
+        $this->db->join('tbl_catar_2025 v', 'c.no = v.no', 'left');
         $this->db->where("c.cek = 'belum'");
         //$this->db->where('v.no IS NULL');
         $this->db->order_by('c.no', 'desc');
@@ -199,8 +199,8 @@ class m_registrasi extends CI_Model
     }
         public function getNotifikasiseleksitf() {
         $this->db->select('c.no as nomor, c.nama, c.prodi, c.upload_ijd3');
-        $this->db->from('tbl_catar_2024 c');
-        $this->db->join('tbl_catar_hasil_seleksi_2024 v', 'c.no = v.no', 'left');
+        $this->db->from('tbl_catar_2025 c');
+        $this->db->join('tbl_catar_hasil_seleksi_2025 v', 'c.no = v.no', 'left');
         $this->db->where('c.upload_ijd3 > 0');
         $this->db->where('v.no IS NULL');
         $this->db->order_by('c.no', 'desc');
