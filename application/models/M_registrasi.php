@@ -447,6 +447,7 @@ class m_registrasi extends CI_Model
 		tbl_catar_2025.upload_ijd3,
 		tbl_catar_2025.upload_transd3,
 		tbl_catar_2025.upload_supersehat,
+		tbl_catar_2025.upload_ktp,
 		tbl_catar_validasi_2025.val_id,
 		tbl_catar_validasi_2025.no,
 		tbl_catar_validasi_2025.gelombang,
