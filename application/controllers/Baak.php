@@ -2845,7 +2845,7 @@ class Baak extends CI_Controller {
             );
 
         // $this->m_registrasi->update_data($where,$data,'tbl_catar_2021_validasi');
-        $this->m_registrasi->input_data($data,'tbl_catar_hasil_seleksi_2024');
+        $this->m_registrasi->input_data($data,'tbl_catar_hasil_seleksi_2025');
 
         $where = array(
             'id_seleksi' => $id_seleksi       
@@ -2853,7 +2853,7 @@ class Baak extends CI_Controller {
         $data = array(
             'cek' => 'sudah',
             );
-        $this->m_registrasi->update_data($where,$data,'tbl_seleksi_20242');
+        $this->m_registrasi->update_data($where,$data,'tbl_seleksi_2025');
 
         redirect("baak/home");
 
