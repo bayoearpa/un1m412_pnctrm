@@ -442,8 +442,8 @@
               );
               $gelombang=$this->m_registrasi->get_data_gelombang($where2);
             $where = array(
-            'tbl_catar_2024.jalur' => 'reguler',
-            'tbl_catar_daful_2024.aktif' => '1'      
+            'tbl_catar_2025.jalur' => 'reguler',
+            'tbl_catar_daful_2025.aktif' => '1'      
             );
              ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_sudah_daful($where)->num_rows(); ?></span>
@@ -456,8 +456,8 @@
               );
               $gelombang=$this->m_registrasi->get_data_gelombang($where2);
             $where = array(
-            'tbl_catar_2024.jalur' => 'kelastransfer',
-            'tbl_catar_daful_2024.aktif' => '1'      
+            'tbl_catar_2025.jalur' => 'kelastransfer',
+            'tbl_catar_daful_2025.aktif' => '1'      
             );
              ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_sudah_daful($where)->num_rows(); ?></span>
@@ -470,8 +470,8 @@
               );
               $gelombang=$this->m_registrasi->get_data_gelombang($where2);
             $where = array(
-            'tbl_catar_2024.jalur' => 'gdr1',
-            'tbl_catar_daful_2024.aktif' => '1'      
+            'tbl_catar_2025.jalur' => 'gdr1',
+            'tbl_catar_daful_2025.aktif' => '1'      
             );
              ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_sudah_daful($where)->num_rows(); ?></span>
@@ -484,8 +484,8 @@
               );
               $gelombang=$this->m_registrasi->get_data_gelombang($where2);
             $where = array(
-            'tbl_catar_2024.jalur' => 'gdr2',
-            'tbl_catar_daful_2024.aktif' => '1'      
+            'tbl_catar_2025.jalur' => 'gdr2',
+            'tbl_catar_daful_2025.aktif' => '1'      
             );
              ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_sudah_daful($where)->num_rows(); ?></span>
@@ -512,10 +512,10 @@
               Reguler
               <?php 
             $where = array(
-            'tbl_catar_2024.prodi' => '4',
+            'tbl_catar_2025.prodi' => '4',
             // 'tbl_catar_2024.gelombang' => $gelombang,
-            'tbl_catar_validasi_2024.aktif' => '1',
-            'tbl_catar_2024.jalur' => 'reguler'      
+            'tbl_catar_validasi_2025.aktif' => '1',
+            'tbl_catar_2025.jalur' => 'reguler'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
@@ -523,10 +523,10 @@
               Ekstensi
               <?php 
             $where = array(
-            'tbl_catar_2024.prodi' => '4',
+            'tbl_catar_2025.prodi' => '4',
             // 'tbl_catar_2024.gelombang' => $gelombang,
-            'tbl_catar_validasi_2024.aktif' => '1',
-            'tbl_catar_2024.jalur' => 'kelastransfer'      
+            'tbl_catar_validasi_2025.aktif' => '1',
+            'tbl_catar_2025.jalur' => 'kelastransfer'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
@@ -534,10 +534,10 @@
               Gelombang Dini
               <?php 
             $where_ft = array(
-            'tbl_catar_2024.prodi' => '4',
+            'tbl_catar_2025.prodi' => '4',
             // 'tbl_catar_2023.gelombang' => $gelombang,
-            'tbl_catar_validasi_2024.aktif' => '1',
-            'tbl_catar_2024.jalur' => 'gdr1'      
+            'tbl_catar_validasi_2025.aktif' => '1',
+            'tbl_catar_2025.jalur' => 'gdr1'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where_ft)->num_rows(); ?></span>
             </div>
@@ -545,10 +545,10 @@
               Gelombang Dini TF
               <?php 
             $where_ft = array(
-            'tbl_catar_2024.prodi' => '4',
+            'tbl_catar_2025.prodi' => '4',
             // 'tbl_catar_2023.gelombang' => $gelombang,
-            'tbl_catar_validasi_2024.aktif' => '1',
-            'tbl_catar_2024.jalur' => 'gdr2'      
+            'tbl_catar_validasi_2025.aktif' => '1',
+            'tbl_catar_2025.jalur' => 'gdr2'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where_ft)->num_rows(); ?></span>
             </div>
@@ -574,10 +574,10 @@
               Reguler
               <?php 
             $where = array(
-            'tbl_catar_2024.prodi' => '1',
+            'tbl_catar_2025.prodi' => '1',
             // 'tbl_catar_2024.gelombang' => $gelombang,
-            'tbl_catar_validasi_2024.aktif' => '1',
-            'tbl_catar_2024.jalur' => 'reguler'      
+            'tbl_catar_validasi_2025.aktif' => '1',
+            'tbl_catar_2025.jalur' => 'reguler'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
@@ -585,10 +585,10 @@
               Gelombang Dini
               <?php 
             $where_ft = array(
-            'tbl_catar_2024.prodi' => '1',
+            'tbl_catar_2025.prodi' => '1',
             // 'tbl_catar_2023.gelombang' => $gelombang,
-            'tbl_catar_validasi_2024.aktif' => '1',
-            'tbl_catar_2024.jalur' => 'gdr1'      
+            'tbl_catar_validasi_2025.aktif' => '1',
+            'tbl_catar_2025.jalur' => 'gdr1'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where_ft)->num_rows(); ?></span>
             </div>
@@ -614,10 +614,10 @@
               Reguler
               <?php 
             $where = array(
-            'tbl_catar_2024.prodi' => '2',
+            'tbl_catar_2025.prodi' => '2',
             // 'tbl_catar_2024.gelombang' => $gelombang,
-            'tbl_catar_validasi_2024.aktif' => '1',
-            'tbl_catar_2024.jalur' => 'reguler'      
+            'tbl_catar_validasi_2025.aktif' => '1',
+            'tbl_catar_2025.jalur' => 'reguler'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
@@ -625,10 +625,10 @@
               Gelombang Dini
               <?php 
             $where_ft = array(
-            'tbl_catar_2024.prodi' => '2',
+            'tbl_catar_2025.prodi' => '2',
             // 'tbl_catar_2023.gelombang' => $gelombang,
-            'tbl_catar_validasi_2024.aktif' => '1',
-            'tbl_catar_2024.jalur' => 'gdr1'      
+            'tbl_catar_validasi_2025.aktif' => '1',
+            'tbl_catar_2025.jalur' => 'gdr1'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where_ft)->num_rows(); ?></span>
             </div>
@@ -654,10 +654,10 @@
               Reguler
                 <?php 
             $where = array(
-            'tbl_catar_2024.prodi' => '3',
+            'tbl_catar_2025.prodi' => '3',
             // 'tbl_catar_2024.gelombang' => $gelombang,
-            'tbl_catar_validasi_2024.aktif' => '1',
-            'tbl_catar_2024.jalur' => 'reguler'      
+            'tbl_catar_validasi_2025.aktif' => '1',
+            'tbl_catar_2025.jalur' => 'reguler'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
@@ -665,10 +665,10 @@
               Gelombang Dini
               <?php 
             $where_ft = array(
-            'tbl_catar_2024.prodi' => '3',
+            'tbl_catar_2025.prodi' => '3',
             // 'tbl_catar_2023.gelombang' => $gelombang,
-            'tbl_catar_validasi_2024.aktif' => '1',
-            'tbl_catar_2024.jalur' => 'gdr1'      
+            'tbl_catar_validasi_2025.aktif' => '1',
+            'tbl_catar_2025.jalur' => 'gdr1'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where_ft)->num_rows(); ?></span>
             </div>
@@ -694,10 +694,10 @@
               Reguler
               <?php 
             $where = array(
-            'tbl_catar_2024.prodi' => '5',
+            'tbl_catar_2025.prodi' => '5',
             // 'tbl_catar_2024.gelombang' => $gelombang,
-            'tbl_catar_validasi_2024.aktif' => '1',
-            'tbl_catar_2024.jalur' => 'reguler'      
+            'tbl_catar_validasi_2025.aktif' => '1',
+            'tbl_catar_2025.jalur' => 'reguler'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
@@ -705,10 +705,10 @@
               Gelombang Dini
               <?php 
             $where_ft = array(
-            'tbl_catar_2024.prodi' => '5',
+            'tbl_catar_2025.prodi' => '5',
             // 'tbl_catar_2023.gelombang' => $gelombang,
-            'tbl_catar_validasi_2024.aktif' => '1',
-            'tbl_catar_2024.jalur' => 'gdr1'      
+            'tbl_catar_validasi_2025.aktif' => '1',
+            'tbl_catar_2025.jalur' => 'gdr1'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where_ft)->num_rows(); ?></span>
             </div>
@@ -734,10 +734,10 @@
               Reguler
               <?php 
             $where = array(
-            'tbl_catar_2024.prodi' => '6',
+            'tbl_catar_2025.prodi' => '6',
             // 'tbl_catar_2024.gelombang' => $gelombang,
-            'tbl_catar_validasi_2024.aktif' => '1',
-            'tbl_catar_2024.jalur' => 'reguler'      
+            'tbl_catar_validasi_2025.aktif' => '1',
+            'tbl_catar_2025.jalur' => 'reguler'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
@@ -745,10 +745,10 @@
               Gelombang Dini
               <?php 
             $where_ft = array(
-            'tbl_catar_2024.prodi' => '6',
+            'tbl_catar_2025.prodi' => '6',
             // 'tbl_catar_2023.gelombang' => $gelombang,
-            'tbl_catar_validasi_2024.aktif' => '1',
-            'tbl_catar_2024.jalur' => 'gdr1'      
+            'tbl_catar_validasi_2025.aktif' => '1',
+            'tbl_catar_2025.jalur' => 'gdr1'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where_ft)->num_rows(); ?></span>
             </div>
@@ -774,10 +774,10 @@
               Reguler
               <?php 
             $where = array(
-            'tbl_catar_2024.prodi' => '7',
+            'tbl_catar_2025.prodi' => '7',
             // 'tbl_catar_2024.gelombang' => $gelombang,
-            'tbl_catar_validasi_2024.aktif' => '1',
-            'tbl_catar_2024.jalur' => 'reguler'      
+            'tbl_catar_validasi_2025.aktif' => '1',
+            'tbl_catar_2025.jalur' => 'reguler'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
@@ -785,10 +785,10 @@
               Gelombang Dini
               <?php 
             $where_ft = array(
-            'tbl_catar_2024.prodi' => '7',
+            'tbl_catar_2025.prodi' => '7',
             // 'tbl_catar_2023.gelombang' => $gelombang,
-            'tbl_catar_validasi_2024.aktif' => '1',
-            'tbl_catar_2024.jalur' => 'gdr1'      
+            'tbl_catar_validasi_2025.aktif' => '1',
+            'tbl_catar_2025.jalur' => 'gdr1'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where_ft)->num_rows(); ?></span>
             </div>
@@ -814,10 +814,10 @@
               Reguler
               <?php 
             $where = array(
-            'tbl_catar_2024.prodi' => '8',
+            'tbl_catar_2025.prodi' => '8',
             // 'tbl_catar_2024.gelombang' => $gelombang,
-            'tbl_catar_validasi_2024.aktif' => '1',
-            'tbl_catar_2024.jalur' => 'reguler'      
+            'tbl_catar_validasi_2025.aktif' => '1',
+            'tbl_catar_2025.jalur' => 'reguler'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
@@ -825,10 +825,10 @@
               Gelombang Dini
               <?php 
             $where_ft = array(
-            'tbl_catar_2024.prodi' => '8',
+            'tbl_catar_2025.prodi' => '8',
             // 'tbl_catar_2023.gelombang' => $gelombang,
-            'tbl_catar_validasi_2024.aktif' => '1',
-            'tbl_catar_2024.jalur' => 'gdr1'      
+            'tbl_catar_validasi_2025.aktif' => '1',
+            'tbl_catar_2025.jalur' => 'gdr1'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where_ft)->num_rows(); ?></span>
             </div>
@@ -854,10 +854,10 @@
               Reguler
               <?php 
             $where = array(
-            'tbl_catar_2024.prodi' => '9',
+            'tbl_catar_2025.prodi' => '9',
             // 'tbl_catar_2024.gelombang' => $gelombang,
-            'tbl_catar_validasi_2024.aktif' => '1',
-            'tbl_catar_2024.jalur' => 'reguler'      
+            'tbl_catar_validasi_2025.aktif' => '1',
+            'tbl_catar_2025.jalur' => 'reguler'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
@@ -865,10 +865,10 @@
               Gelombang Dini
               <?php 
             $where_ft = array(
-            'tbl_catar_2024.prodi' => '9',
+            'tbl_catar_2025.prodi' => '9',
             // 'tbl_catar_2023.gelombang' => $gelombang,
-            'tbl_catar_validasi_2024.aktif' => '1',
-            'tbl_catar_2024.jalur' => 'gdr1'      
+            'tbl_catar_validasi_2025.aktif' => '1',
+            'tbl_catar_2025.jalur' => 'gdr1'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where_ft)->num_rows(); ?></span>
             </div>
@@ -894,10 +894,10 @@
               Reguler
               <?php 
             $where = array(
-            'tbl_catar_2024.prodi' => '10',
+            'tbl_catar_2025.prodi' => '10',
             // 'tbl_catar_2024.gelombang' => $gelombang,
-            'tbl_catar_validasi_2024.aktif' => '1',
-            'tbl_catar_2024.jalur' => 'reguler'      
+            'tbl_catar_validasi_2025.aktif' => '1',
+            'tbl_catar_2025.jalur' => 'reguler'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where)->num_rows(); ?></span>
             </div>
@@ -905,10 +905,10 @@
               Gelombang Dini
               <?php 
             $where_ft = array(
-            'tbl_catar_2024.prodi' => '10',
+            'tbl_catar_2025.prodi' => '10',
             // 'tbl_catar_2023.gelombang' => $gelombang,
-            'tbl_catar_validasi_2024.aktif' => '1',
-            'tbl_catar_2024.jalur' => 'gdr1'      
+            'tbl_catar_validasi_2025.aktif' => '1',
+            'tbl_catar_2025.jalur' => 'gdr1'      
             ); ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where_row($where_ft)->num_rows(); ?></span>
             </div>
