@@ -183,9 +183,11 @@
             <table class="table">
               
               <tr>
+                <th><button class="btn btn-success view-file-buttonk" data-filename="<?php echo $c->upload_ktp; ?>">Lihat KTP</button></th>
                 <th><button class="btn btn-success view-file-button" data-filename="<?php echo $c->upload_ijd3; ?>">Lihat Ijasah D3</button></th>
                 <th><button class="btn btn-success view-file-buttonb" data-filename="<?php echo $c->upload_transd3; ?>">Lihat Transkip D3</button></th>
-                <th><button class="btn btn-success view-file-buttonc" data-filename="<?php echo $c->upload_supersehat; ?>">Lihat File Surat Pernyataan Sehat</button></th>
+
+                <!-- <th><button class="btn btn-success view-file-buttonc" data-filename="<?php //echo $c->upload_supersehat; ?>">Lihat File Surat Pernyataan Sehat</button></th> -->
               </tr>
             </table>
           </div>
