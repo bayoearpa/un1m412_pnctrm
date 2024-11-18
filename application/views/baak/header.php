@@ -432,7 +432,7 @@
             <!-- /.box-header -->
             <div class="box-body" style="">
               Total
-              <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_all('tbl_catar_daful_2024')->num_rows(); ?><sup style="font-size: 20px"></span>
+              <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_all('tbl_catar_daful_2025')->num_rows(); ?><sup style="font-size: 20px"></span>
             </div>
             <div class="box-body" style="">
             <a href="<?php echo base_url() ?>bau/data_sudah_daful_reg">Daftar Ulang (Reguler)</a>
