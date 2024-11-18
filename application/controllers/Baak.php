@@ -2800,7 +2800,7 @@ class Baak extends CI_Controller {
     {
         # code...
         $where = array(
-            'tbl_catar_2024.no' => $id       
+            'tbl_catar_2025.no' => $id       
         );
         $data['catar'] = $this->m_registrasi->get_data_prosesseleksi2024($where)->result();
 
