@@ -367,7 +367,7 @@
             <!-- /.box-header -->
             <div class="box-body" style="">
               Total
-              <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_all('tbl_catar_2024')->num_rows(); ?><sup style="font-size: 20px"></span>
+              <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_all('tbl_catar_2025')->num_rows(); ?><sup style="font-size: 20px"></span>
             </div>
             <div class="box-body" style="">
               <a href="<?php echo base_url() ?>bau/data_sudah_validasi">Sudah Validasi</a>
@@ -378,8 +378,8 @@
               $gelombang=$this->m_registrasi->get_data_gelombang($where2);
             $where = array(
             // 'tbl_catar_2024.gelombang' => $gelombang,
-            'tbl_catar_2024.jalur' => 'reguler',
-            'tbl_catar_validasi_2024.aktif' => '1'      
+            'tbl_catar_2025.jalur' => 'reguler',
+            'tbl_catar_validasi_2025.aktif' => '1'      
             );
              ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where($where)->num_rows(); ?></span>
@@ -392,8 +392,8 @@
               );
               $gelombang=$this->m_registrasi->get_data_gelombang($where2);
             $where = array(
-            'tbl_catar_2024.jalur' => 'gdr1',
-            'tbl_catar_validasi_2024.aktif' => '1'      
+            'tbl_catar_2025.jalur' => 'gdr1',
+            'tbl_catar_validasi_2025.aktif' => '1'      
             );
              ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where($where)->num_rows(); ?></span>
