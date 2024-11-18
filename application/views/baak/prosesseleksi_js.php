@@ -6,7 +6,7 @@
             e.preventDefault();
             var filename = $(this).data('filename');
             // Gantilah '/uploads/' dengan direktori tempat Anda menyimpan file
-            var fileUrl = '/assets/upload/2024/upload_seleksi_ktp/' + filename;
+            var fileUrl = '/assets/upload/2025/upload_seleksi_ktp/' + filename;
             
             // Buka tautan ke file di jendela baru
             window.open(fileUrl, '_blank');
@@ -15,7 +15,7 @@
             e.preventDefault();
             var filename = $(this).data('filename');
             // Gantilah '/uploads/' dengan direktori tempat Anda menyimpan file
-            var fileUrl = '/assets/upload/2024/upload_seleksi_suket/' + filename;
+            var fileUrl = '/assets/upload/2025/upload_seleksi_suket/' + filename;
             
             // Buka tautan ke file di jendela baru
             window.open(fileUrl, '_blank');
@@ -24,7 +24,7 @@
             e.preventDefault();
             var filename = $(this).data('filename');
             // Gantilah '/uploads/' dengan direktori tempat Anda menyimpan file
-            var fileUrl = '/assets/upload/2024/upload_seleksi_supersehat/' + filename;
+            var fileUrl = '/assets/upload/2025/upload_seleksi_supersehat/' + filename;
             
             // Buka tautan ke file di jendela baru
             window.open(fileUrl, '_blank');

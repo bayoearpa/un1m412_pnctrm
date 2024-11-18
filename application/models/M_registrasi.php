@@ -1218,6 +1218,37 @@ class m_registrasi extends CI_Model
 
         return $query;
     }
+    function get_data_prosesseleksi2025($where)
+    {
+        // Gantilah 'nama_tabel' dengan nama tabel yang sesuai dalam database Anda
+	     $this->db->select('tbl_catar_2025.nama as nama,
+            tbl_catar_2025.prodi as prodi,
+            tbl_catar_2025.no as no,
+            tbl_catar_2025.tl as tl,
+            tbl_catar_2025.tgl_l as tgl_l,
+            tbl_catar_2025.jk as jk,
+            tbl_catar_2025.gelombang as gelombang,
+            tbl_catar_2025.periode as periode,
+            tbl_catar_2025.thn_pel as thn_pel,
+            tbl_seleksi_2025.id_seleksi as id_seleksi,
+            tbl_seleksi_2025.file_ktp as file_ktp,
+            tbl_seleksi_2025.file_suket as file_suket,
+            tbl_seleksi_2025.n101 as n101,
+            tbl_seleksi_2025.n102 as n102,
+            tbl_seleksi_2025.n111 as n111,
+            tbl_seleksi_2025.n112 as n112,
+            tbl_seleksi_2025.n121 as n121,
+            tbl_seleksi_2025.n122 as n122,
+            tbl_seleksi_2025.file_supersehat as file_supersehat,
+            tbl_seleksi_2025.cek as cek');
+
+        $this->db->from('tbl_seleksi_2025');
+        $this->db->join('tbl_catar_2025', 'tbl_seleksi_2025.no = tbl_catar_2025.no', 'left');
+        $this->db->where($where);
+        $query = $this->db->get();
+
+        return $query;
+    }
 
    ///////////////////////////////////////// get total ref for keu ///////////////////////////////////////// 
      public function get_ref_data_keu() {
