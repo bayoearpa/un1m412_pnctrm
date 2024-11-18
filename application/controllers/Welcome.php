@@ -32,6 +32,10 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('home');
 	}
+	public function jajal()
+	{
+		$this->load->view('home_dev');
+	}
 	public function get_kabkota(){
         $id=$this->input->post('id');
         $data=$this->m_registrasi->get_kabkota($id);

@@ -55,6 +55,9 @@ $route['default_controller'] = 'welcome';
 //dev
 // $route['dev'] = 'welcome';
 
+// untuk dev page
+$route['index_dev'] = 'welcome/home_dev';
+
 //ditutup karena sudah berakhir
 // $route['registrasi'] = 'welcome/registrasi';
 // $route['registrasi_d3'] = 'welcome/registrasid3';
