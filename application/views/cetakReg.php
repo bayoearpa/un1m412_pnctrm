@@ -18,7 +18,7 @@
 		<td width="12%"><img src="<?php echo base_url() ?>assets/front1/img/amni-png-doc.png" width="15%"></td>
 		<td align="center">
 		<p style="margin: 0px;padding: 0px;"><b>FORMULIR PENERIMAAN MAHATAR BARU</b></p>
-		<p style="margin: 0px;padding: 0px;"><b>TAHUN AKADEMIK 2024 / 2025 </b></p>
+		<p style="margin: 0px;padding: 0px;"><b>TAHUN AKADEMIK 2025 / 2026 </b></p>
 		<p style="margin: 0px;padding: 0px;"><b>UNIVERSITAS MARITIM AMNI SEMARANG</b></p>
 <!-- 		<p style="margin: 0px;padding: 0px;"><b>UNIMAR AMNI SEMARANG</b></p> -->
 		<p style="margin: 0px;padding: 0px;">Jl. Soekarno-Hatta No. 180 Semarang 50199</p>
@@ -159,15 +159,11 @@
 		<td></td>
 	</tr>
 	<tr>
-		<td align="left" height="25px">UKUR PAKAIAN</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td align="left" height="25px">PANTUKHIR</td>
-		<td></td>
-	</tr>
-	<tr>
 		<td align="left" height="25px">PSIKOTES</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td align="left" height="25px">UKUR PAKAIAN</td>
 		<td></td>
 	</tr>
 </table>
@@ -180,13 +176,12 @@
 <p style="margin: 0px;padding: 0px;"><b>Catatan :</b></p>
 <ul>
 	<li><small>Copy Ijazah (Dilegalisir) 1 Lembar</small></li>
-	<li><small>SKCK (Surat Keterangan Catatan Kepolisian) 1 lembar</small></li>
+	<li><small>SKCK (Surat Keterangan Catatan Kepolisian) asli</small></li>
 	<li><small>Copy Surat kenal lahir / akte kelahiran 1 Lembar</small></li>
 	<li><small>Copy tanda pengenal yang sah, KTP atau SIM 1 lembar</small></li>
 	<li><small>Pas photo hitam putih ukuran 3x4 sebanyak 2  lembar</small></li>
-	<li><small>Membawa surat pernyataan dan riwayat kesehatan</small></li>
 </ul>
-<p style="margin: 0px;padding: 0px;"><small>*Jika anda salah mengisi data anda dapat mengulanginya lagi dari awal. Simpanlah file pdf anda!!</small></p>
+<!-- <p style="margin: 0px;padding: 0px;"><small>*Jika anda salah mengisi data anda dapat mengulanginya lagi dari awal. Simpanlah file pdf anda!!</small></p> -->
 <!-- <p style="margin: 0px;padding: 0px;"><small>*Bagi pendaftar  melalui <b><i>online</i></b> dapat melaksanakan pembayaran pendaftaran melalui Bank/ATM :</small></p>
                   <tr>
                     <td style="margin: 0px;padding: 0px;"><b><small>BANK BNI</small></b></td>
@@ -223,10 +218,10 @@
                     <td style="margin: 0px;padding: 0px;"><b><small>1234_Rian Ardianto_Nautika_Januari</small></b></td>
                   </tr>
                 </table> -->
-<p style="margin: 0px;padding: 0px;"><small>*Program Studi Teknika dan Nautika <b>Wajib</b> melaksanakan Test Offline dan <b>Wajib</b> melakukan Test Kesehatan di UNIMAR AMNI Semarang
+<!-- <p style="margin: 0px;padding: 0px;"><small>*Program Studi Teknika dan Nautika <b>Wajib</b> melaksanakan Test Offline dan <b>Wajib</b> melakukan Test Kesehatan di UNIMAR AMNI Semarang
 <p style="margin: 0px;padding: 0px;"><small>*Program Studi lainnya bisa melaksanakan Test Online dengan melengkapi persyaratan yang ada di Sistem PMB UNIMAR AMNI Semarang
 </small></p>
-<p style="margin: 0px;padding: 0px;"><small>*Pemberkasan dilaksanakan setelah pendaftaran dinyatakan <b>DITERIMA</b></small></p>
+<p style="margin: 0px;padding: 0px;"><small>*Pemberkasan dilaksanakan setelah pendaftaran dinyatakan <b>DITERIMA</b></small></p> -->
 <p style="margin: 0px;padding: 0px;"><small>*<b><i>follow ig official kami @unimaramni.official</i></b></small></p>
 <table>
 <!-- halaman 2 -->
