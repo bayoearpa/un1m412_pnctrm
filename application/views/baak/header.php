@@ -406,8 +406,8 @@
               );
               $gelombang=$this->m_registrasi->get_data_gelombang($where2);
             $where = array(
-            'tbl_catar_2024.jalur' => 'gdr2',
-            'tbl_catar_validasi_2024.aktif' => '1'      
+            'tbl_catar_2025.jalur' => 'gdr2',
+            'tbl_catar_validasi_2025.aktif' => '1'      
             );
              ?>
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where($where)->num_rows(); ?></span>
