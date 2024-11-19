@@ -75,49 +75,43 @@
       <div class="container">
         <!-- <hr class="star-light mb-5"> -->
         <div class="row">
-          <div class="col-lg-16 ml-auto">
-            <div class="text-center mt-4">
-              
-
-             </div>
-           
-           
-              <br>
-        <center><h4 class="text-uppercase"> BIAYA PENDIDIKAN MAHASISWA / TARUNA T.A 2024 - 2025 DAN TUTORIAL</h4></center>
-
-        <div class="col-lg-16 mr-auto">
-            <p class="lead">Berikut lampiran biaya pendidikan Mahasiswa / Taruna UNIMAR AMNI Semarang tahun ajaran 2024 - 2025 yang dapat di download di bawah ini.</p>
-            <p>nb : segala bentuk pembayaran yang sudah di setorkan ke unimar amni tidak dapat ditarik kembali dengan alasan apapun</p>
-               <div class="col-lg-16 mr-auto text-center">
-                <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="<?php echo base_url() ?>biaya_download" target="_blank">
-                <i class="fa fa-money mr-2"></i>
-                <font color="black">Biaya Pendidikan</font>
-                </a>
-                <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="<?php echo base_url() ?>tutorial_download" target="_blank">
-                <i class="fa fa-book mr-2"></i>
-                <font color="black">Tutorial Pendaftaran</font></a>
-                <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="https://linktr.ee/pmbunimaramni" target="_blank">
-                <i class="fa fa-info mr-2"></i>
-                <font color="black">Informasi Selengkapnya</font>
-                </a>
+           <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                  <p class="lead">Klik Untuk Lihat Detail</p>
+                </div>
               </div>
-            </div>
+              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/fak_maritim.jpg" alt="">
+              <p class="lead text-center"> <font color="black">Fakultas Kemaritiman</font></p>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                  <p class="lead">Klik Untuk Lihat Detail</p>
+                </div>
+              </div>
+              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/fak_ebis.jpg" alt="">
+              <p class="lead text-center"> <font color="black">Fakultas Ekonomi Bisnis</font></p>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                  <p class="lead">Klik Untuk Lihat Detail</p>
+                </div>
+              </div>
+              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/fak_teknik.jpg" alt="">
+              <p class="lead text-center"> <font color="black">Fakultas Kemaritiman</font></p>
+            </a>
           </div>
         </div>
-        <div class="text-center mt-4">
-           <center><h1 class="text-uppercase"> JOIN UNIMAR AMNI TO SEE THE WORLD</h1></center>
-          <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="#portfolio">
-            <i class="fa fa-sign-in mr-2"></i>
-            <font color="black">Daftar Sekarang!</font>
-          </a>
-        </div>
-        <!--  <div class="text-center mt-4">
-           <center><h4 class="text-uppercase"> PENGUMUMAN KELULUSAN PERIODE MARET</h4></center>
-          <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="https://unimar-amni.ac.id/new/2022/04/01/pengumuman-calon-mahasiswa-taruna-universitas-maritim-amni-semarang-yang-dinyatakan-lulus-dan-diterima-periode-januari-maret-ta-2022-2023/" target="__blank">
-            <i class="fa fa-sign-in mr-2"></i>
-            <font color="black">Cek Disini</font>
-          </a>
-        </div> -->
       </div>
     </section>
 
