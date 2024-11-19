@@ -67,7 +67,7 @@
       </div>
     </div>
   </section>
-
+<center><img src="<?php echo base_url() ?>assets/front1/img/alur2025.jpg" width="100%"></center>
 
 
     <!-- About Section -->
@@ -77,7 +77,7 @@
         <div class="row">
           <div class="col-lg-16 ml-auto">
             <div class="text-center mt-4">
-              <center><img src="<?php echo base_url() ?>assets/front1/img/alur2025.jpg" width="100%"></center>
+              
 
              </div>
            
