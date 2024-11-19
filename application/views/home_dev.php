@@ -73,99 +73,15 @@
     <!-- About Section -->
     <section class="about" id="about">
       <div class="container">
-        <h2 class="text-center text-uppercase text-black">Home</h2>
         <!-- <hr class="star-light mb-5"> -->
         <div class="row">
           <div class="col-lg-16 ml-auto">
             <div class="text-center mt-4">
 
-         <!-- slider -->
-            <div id="demo" class="carousel slide" data-ride="carousel">
 
-              <!-- Indicators -->
-              <ul class="carousel-indicators">
-                <li data-target="#demox" data-slide-to="0" class="active"></li>
-                <li data-target="#demox" data-slide-to="1"></li>
-                <li data-target="#demox" data-slide-to="2"></li>
-                <li data-target="#demox" data-slide-to="3"></li>
-                <li data-target="#demox" data-slide-to="4"></li>
-                <li data-target="#demox" data-slide-to="5"></li>
-                <li data-target="#demox" data-slide-to="6"></li>
-              </ul>
-              
-              <!-- The slideshow -->
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="<?php echo base_url() ?>assets/front1/img/home1_251.jpg" alt="Join UNIMAR AMNI" width="1100" height="500">
-                </div>
-                <div class="carousel-item active">
-                  <img src="<?php echo base_url() ?>assets/front1/img/home1_252.jpg" alt="Join UNIMAR AMNI" width="1100" height="500">
-                </div>
-                <div class="carousel-item">
-                  <img src="<?php echo base_url() ?>assets/front1/img/home2.jpg" alt="Join UNIMAR AMNI" width="1100" height="500">
-                </div>
-                <div class="carousel-item">
-                  <img src="<?php echo base_url() ?>assets/front1/img/home3.jpg" alt="Join UNIMAR AMNI" width="1100" height="500">
-                </div>
-                <div class="carousel-item">
-                  <img src="<?php echo base_url() ?>assets/front1/img/home4.jpg" alt="Join UNIMAR AMNI" width="1100" height="500">
-                </div>
-                <div class="carousel-item">
-                  <img src="<?php echo base_url() ?>assets/front1/img/home5.jpg" alt="Join UNIMAR AMNI" width="1100" height="500">
-                </div>
-                <div class="carousel-item">
-                  <img src="<?php echo base_url() ?>assets/front1/img/home6.jpg" alt="Join UNIMAR AMNI" width="1100" height="500">
-                </div>
-              </div>
-              
-              <!-- Left and right controls -->
-              <a class="carousel-control-prev" href="#demox" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-              </a>
-              <a class="carousel-control-next" href="#demox" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-              </a>
-            </div>
-        <!-- end slider -->
-          </div>
-            <p class="lead">UNIMAR AMNI Semarang adalah sebuah Perguruan Tinggi yang diselenggarakan oleh masyarakat yang mengembangkan studi di bidang maritim dan transpor. Awalnya bernama “AMNI” ( Akademi Maritim Nasional Indonesia ) yang didirikan pada tanggal 9 September 1963. Sejalan dengan perkembangan kebutuhan dibidang  maritim dan transpor, maka pada tanggal 17 April 2007 , AMNI mengembangkan diri menjadi  Sekolah  Tinggi Maritim dan Transpor “ AMNI “ ( UNIMAR “ AMNI “) Semarang, sesuai dengan SK Mendiknas No. 53/D/O/2007.</p>
-             <p class="lead">UNIMAR AMNI Semarang bersertifikat ISO 9001:2015, semua Program Studi Terakreditasi Badan Akreditasi Nasional Perguruan Tinggi ( BAN PT ) Direktorat Jenderal Pendidikan Tinggi dan Approval Direktorat Jenderal Perhubungan Laut / Internasional Maritime Organization ( IMO ), dengan Program Studi:</p>
-             <ul>
-               <li class="lead">D3 Ketatalaksanaan Pelayaran Niaga dan Kepelabuhan.</li>
-               <li class="lead">D3 Nautika + Profesi ANT III (Deck Officer Class III).</li>
-               <li class="lead">D3 Teknika + Profesi ATT III (Engineer Officer Class III).</li>
-               <li class="lead">S1 Transportasi.</li>
-               <li class="lead">S1 Teknik Mesin.</li>
-               <li class="lead">S1 Teknik Transportasi Laut.</li>
-               <li class="lead">S1 Teknik Keselamatan.</li>
-               <li class="lead">S1 Teknik Perdagangan Internasional.</li>
-               <li class="lead">D4 Manajemen Pelabuhan dan Logistik Maritim.</li>
-               <li class="lead">S1 Bisnis Digital.</li>
-             </ul>
-              <p class="lead">Sampai saat ini jumlah lulusan UNIMAR AMNI Semarang tersebar di instansi Pemerintahan maupun swasta, baik dalam maupun luar negeri sudah lebih dari 10.000 alumni. Permintaan Lulusan UNIMAR AMNI Semarang terus meningkat, dibuktikan dengan kunjungan rutin instansi Pemerintah ataupun perusahan ke UNIMAR AMNI Semarang guna perekrutan kelulusan.</p>
-
-              <h4 class="lead"><b>VISI :</b></h4>
-              <p class="lead">Menjadi pusat Pendidikan dan Pengembangan ilmu yang berorientasi kemaritiman, unggul dan berdaya saing.
-              </p>
-              <p class="lead"><b>MISI :</b></p>
-              <ol>
-                <li class="lead">Melaksanakan Tri Dharma Perguruan tinggi yang berwawasan kemaritiman, dan berkarakter</li>
-                <li class="lead">Mengembangkan ilmu pengetahuan, teknologi, seni dan budaya melalui riset dan inovasi berbasis kemaritiman yang berkelanjutan</li>
-                <li class="lead">Memanfaatkan dan menyebarluaskan hasil riset dan inovasi yang berwawasan kemaritiman</li>
-                <li class="lead">Membangun kerjasama institusi dengan berbagai pihak dalam dan luar negeri untuk mempercepat pengembangan dan penguatan kelembagaan</li>
-              </ol> 
-               <p class="lead"><b>TUJUAN :</b></p>
-              <ol>
-                <li class="lead">Menghasilkan sumber daya manusia yang berkarakter dan berkualitas, bertakwa kepada Tuhan Yang Maha Esa, berjiwa entrepreneur, memiliki wawasan yang luas, memiliki disiplin, dan etos kerja sehingga menjadi insan akademis dan profesional yang tangguh dan mampu bersaing di tingkat nasional maupun internasional,</li>
-                <li class="lead">Mentranformasikan, mengembangkan, dan menyebarluaskan ilmu pengetahuan, teknologi, dan seni guna mendorong pembangunan bangsa,</li>
-                <li class="lead">Membantu pemberdayaan masyarakat melalui penerapan ilmu pengetahuan, teknologi, dan seni,</li>
-                <li class="lead">Mewujudkan tata kelola Universitas Maritim AMNI yang kredibel, transparan, akuntabel, bertanggung jawab, dan adil.</li>
-                <li class="lead">Tercapainya kuantitas dan kualitas kegiatan penelitian yang mendukung kualitas proses pembelajaran, penerapan ilmu pengetahuan dan teknologi, serta menghasilkan karya-karya intelektual yang bermanfaat bagi pembangunan.</li>
-                 <li class="lead">Terlaksananya kegiatan pengabdian kepada masyarakat secara profesional dan bermartabat untuk peningkatan pemberdayaan masyarakat dan reputasi Universitas Maritim AMNI.</li>
-                 <li class="lead">Terwujudnya kemandirian kelembagaan dan jaringan kerjasama untuk meningkatkan daya saing dan reputasi Universitas Maritim AMNI secara Nasional maupun Internasional.</li>
-                 <li class="lead">Tercapainya efektivitas dan efisiensi pengelolaan sarana maupun prasarana untuk mewujudkan visi, misi, dan tujuan Universitas Maritim AMNI</li>
-              </ol> 
-
+             </div>
+           
+           
               <br>
               <center><h4 class="text-uppercase"> BIAYA PENDIDIKAN MAHASISWA / TARUNA T.A 2024 - 2025 DAN TUTORIAL</h4></center>
 
