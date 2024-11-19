@@ -83,7 +83,7 @@
                   <p class="lead">Klik Untuk Lihat Detail</p>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/fak_maritim.jpg" alt="">
+              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/fak_maritim.jpg" alt="">
               <p class="lead text-center"> <font color="black">Fakultas Kemaritiman</font></p>
             </a>
           </div>
@@ -95,7 +95,7 @@
                   <p class="lead">Klik Untuk Lihat Detail</p>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/fak_ebis.jpg" alt="">
+              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/fak_ebis.jpg" alt="">
               <p class="lead text-center"> <font color="black">Fakultas Ekonomi Bisnis</font></p>
             </a>
           </div>
@@ -107,7 +107,7 @@
                   <p class="lead">Klik Untuk Lihat Detail</p>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/portfolio/fak_teknik.jpg" alt="">
+              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/fak_teknik.jpg" alt="">
               <p class="lead text-center"> <font color="black">Fakultas Kemaritiman</font></p>
             </a>
           </div>
