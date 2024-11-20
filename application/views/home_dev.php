@@ -70,50 +70,50 @@
 <center><img src="<?php echo base_url() ?>assets/front1/img/alur2025.jpg" width="100%"></center>
 
 
-    <!-- About Section -->
     <section class="about" id="about">
-      <div class="container">
-        <!-- <hr class="star-light mb-5"> -->
-        <div class="row">
-           <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                  <p class="lead">Klik Untuk Lihat Detail</p>
-                </div>
-              </div>
-              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/fak_maritim.jpg" alt="">
-              <p class="lead text-center"> <font color="black">Fakultas Kemaritiman</font></p>
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                  <p class="lead">Klik Untuk Lihat Detail</p>
-                </div>
-              </div>
-              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/fak_ebis.jpg" alt="">
-              <p class="lead text-center"> <font color="black">Fakultas Ekonomi Bisnis</font></p>
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                  <p class="lead">Klik Untuk Lihat Detail</p>
-                </div>
-              </div>
-              <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/fak_teknik.jpg" alt="">
-              <p class="lead text-center"> <font color="black">Fakultas Kemaritiman</font></p>
-            </a>
-          </div>
+  <div class="container">
+    <div class="row">
+      <!-- Fakultas Kemaritiman -->
+      <div class="col-md-6">
+        <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/fak_maritim.jpg" alt="Fakultas Kemaritiman">
+      </div>
+      <div class="col-md-6 d-flex align-items-center">
+        <div>
+          <h3>Fakultas Kemaritiman</h3>
+          <p>Fakultas Kemaritiman menyediakan program unggulan untuk mendukung industri kelautan dan perkapalan. Pelajari lebih banyak tentang program yang ditawarkan.</p>
+          <a class="btn btn-primary" href="#portfolio-modal">Selengkapnya</a>
         </div>
       </div>
-    </section>
+    </div>
+    <div class="row mt-5">
+      <!-- Fakultas Ekonomi Bisnis -->
+      <div class="col-md-6 order-md-2">
+        <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/fak_ebis.jpg" alt="Fakultas Ekonomi Bisnis">
+      </div>
+      <div class="col-md-6 order-md-1 d-flex align-items-center">
+        <div>
+          <h3>Fakultas Ekonomi Bisnis</h3>
+          <p>Fakultas Ekonomi Bisnis memberikan pendidikan berbasis bisnis yang relevan dengan kebutuhan industri masa kini. Temukan berbagai program studi yang kami tawarkan.</p>
+          <a class="btn btn-primary" href="#portfolio-modal">Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <!-- Fakultas Teknik -->
+      <div class="col-md-6">
+        <img class="img-fluid" src="<?php echo base_url() ?>assets/front1/img/fak_teknik.jpg" alt="Fakultas Teknik">
+      </div>
+      <div class="col-md-6 d-flex align-items-center">
+        <div>
+          <h3>Fakultas Teknik</h3>
+          <p>Fakultas Teknik berfokus pada pengembangan teknologi dan inovasi untuk masa depan. Bergabunglah dengan kami dan wujudkan impian Anda.</p>
+          <a class="btn btn-primary" href="#portfolio-modal">Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Portfolio Grid Section -->
     <section class="bg-primary text-white mb-0 portfolio" id="portfolio">
