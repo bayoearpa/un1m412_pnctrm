@@ -51,8 +51,11 @@
             </li> 
 
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="<?php echo base_url() ?>masuk">Masuk</a>
-            </li> 
+              <a 
+                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger btn-masuk" 
+                href="<?php echo base_url() ?>masuk">Masuk
+              </a>
+            </li
           </ul>
         </div>
       </div>
