@@ -148,37 +148,12 @@
             <i class="fa fa-sign-in mr-2"></i>
             <font color="black">Daftar Sekarang!</font>
           </a>
-        </div>
-         
-          
-        
-         
-         
-         
+        </div> 
            
         </div>
       </div>
     </section>
    <section class="contact" id="contact">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-black">Alur Pendaftaran</h2>
-        <!-- <hr class="star-light mb-5"> -->
-        <div class="row">
-          <div class="col-lg-16 ml-auto">
-    
-              
-          </div>
-        </div>
-        <div class="text-center mt-4">
-         <center><img src="<?php echo base_url() ?>assets/front1/img/alur2024.jpg" width="100%"></center>
-        </div>
-      <!--   <div class="text-center mt-4">
-         <center><img src="<?php //echo base_url() ?>assets/front1/img/alur.jpg" width="100%"></center>
-        </div>
-      </div> -->
-    </section>
-      <!-- About Section -->
-    <section class="bg-primary text-white mb-0" id="testimoni">
       <div class="container">
         <h2 class="text-center text-uppercase text-secondary mb-0">Testimoni</h2><br>
         
@@ -213,9 +188,47 @@
                 <span class="carousel-control-next-icon"></span>
               </a>
             </div>
+      </div> 
+    </section>
+      <!-- About Section -->
+    <!-- <section class="bg-primary text-white mb-0" id="testimoni">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Testimoni</h2><br>
+         -->
+        <!-- slider -->
+           <!--  <div id="demo" class="carousel slide" data-ride="carousel"> -->
+
+              <!-- Indicators -->
+              <!-- <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+              </ul> -->
+              
+              <!-- The slideshow -->
+             <!--  <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="<?php //echo base_url() ?>assets/front1/img/testi1.PNG" alt="Los Angeles" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                  <img src="<?php //echo base_url() ?>assets/front1/img/testi2.PNG" alt="Chicago" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                  <img src="<?php //echo base_url() ?>assets/front1/img/testi3.PNG" alt="New York" width="1100" height="500">
+                </div> -->
+             <!--  </div> -->
+              
+              <!-- Left and right controls -->
+              <!-- <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
        
       </div>
-    </section>
+    </section> -->
     <!-- Footer -->
     <footer class="footer text-center">
       <div class="container">
