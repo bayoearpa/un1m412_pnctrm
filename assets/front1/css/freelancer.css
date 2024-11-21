@@ -101,6 +101,21 @@ section {
   #mainNav .navbar-toggler {
     font-size: 80%;
     padding: 0.8rem; }
+    #mainnav .btn-masuk {
+      background-color: #fcc400; /* Warna kuning */
+      color: #000; /* Warna teks hitam */
+      border-radius: 50px; /* Membuat elemen menjadi membulat */
+      padding: 10px 20px; /* Memberikan ruang di dalam tombol */
+      text-align: center;
+      font-weight: bold; /* Teks lebih tebal */
+      transition: background-color 0.3s, color 0.3s; /* Efek transisi */
+    }
+
+    #mainnav .btn-masuk:hover {
+      background-color: #e5b700; /* Warna kuning lebih gelap saat hover */
+      color: #fff; /* Teks berubah menjadi putih */
+      text-decoration: none; /* Hilangkan garis bawah saat hover */
+    }
 
 @media (min-width: 992px) {
   #mainNav {
@@ -126,7 +141,23 @@ section {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem; }
     #mainNav.navbar-shrink .navbar-brand {
-      font-size: 1.5em; } }
+      font-size: 1.5em; } 
+  #mainnav .btn-masuk {
+  background-color: #fcc400; /* Warna kuning */
+  color: #000; /* Warna teks hitam */
+  border-radius: 50px; /* Membuat elemen menjadi membulat */
+  padding: 10px 20px; /* Memberikan ruang di dalam tombol */
+  text-align: center;
+  font-weight: bold; /* Teks lebih tebal */
+  transition: background-color 0.3s, color 0.3s; /* Efek transisi */
+}
+
+#mainnav .btn-masuk:hover {
+  background-color: #e5b700; /* Warna kuning lebih gelap saat hover */
+  color: #fff; /* Teks berubah menjadi putih */
+  text-decoration: none; /* Hilangkan garis bawah saat hover */
+}
+    }
 
 header.masthead {
   padding-top: calc(0rem + 72px);
