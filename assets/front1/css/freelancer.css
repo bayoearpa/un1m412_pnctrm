@@ -142,7 +142,7 @@ section {
     padding-bottom: 0.5rem; }
     #mainNav.navbar-shrink .navbar-brand {
       font-size: 1.5em; } 
-  #mainnav .btn-masuk {
+  #mainNav .btn-masuk {
   background-color: #fcc400; /* Warna kuning */
   color: #000; /* Warna teks hitam */
   border-radius: 50px; /* Membuat elemen menjadi membulat */
@@ -152,7 +152,7 @@ section {
   transition: background-color 0.3s, color 0.3s; /* Efek transisi */
 }
 
-#mainnav .btn-masuk:hover {
+#mainNav .btn-masuk:hover {
   background-color: #e5b700; /* Warna kuning lebih gelap saat hover */
   color: #fff; /* Teks berubah menjadi putih */
   text-decoration: none; /* Hilangkan garis bawah saat hover */
