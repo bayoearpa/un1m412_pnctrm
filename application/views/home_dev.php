@@ -118,7 +118,7 @@
 </section>
 
     <!-- Portfolio Grid Section -->
-    <section class="bg-primary text-white mb-0 portfolio" id="portfolio">
+    <section class="bg-primary text-black mb-0 portfolio" id="portfolio">
       <div class="container">
         <h2 class="text-center text-uppercase text-secondary mb-0">Program Studi</h2><br>
         <!-- <hr class="star-dark mb-5"> -->
