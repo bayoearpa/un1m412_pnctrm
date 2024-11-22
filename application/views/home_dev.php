@@ -78,7 +78,7 @@
     <div class="row">
       <!-- Fakultas Kemaritiman -->
       <div class="col-md-6">
-        <img class="img-fluid w-100" src="<?php echo base_url() ?>assets/front1/img/fak_maritim.jpg" alt="Fakultas Kemaritiman">
+        <img class="img-fluid rounded-image w-100" src="<?php echo base_url() ?>assets/front1/img/fak_maritim.jpg" alt="Fakultas Kemaritiman">
       </div>
       <div class="col-md-6 d-flex align-items-center">
         <div>
@@ -91,7 +91,7 @@
     <div class="row mt-5">
       <!-- Fakultas Ekonomi Bisnis -->
       <div class="col-md-6 order-md-2">
-        <img class="img-fluid w-100" src="<?php echo base_url() ?>assets/front1/img/fak_ebis.jpg" alt="Fakultas Ekonomi Bisnis">
+        <img class="img-fluid rounded-image w-100" src="<?php echo base_url() ?>assets/front1/img/fak_ebis.jpg" alt="Fakultas Ekonomi Bisnis">
       </div>
       <div class="col-md-6 order-md-1 d-flex align-items-center">
         <div>
@@ -104,7 +104,7 @@
     <div class="row mt-5">
       <!-- Fakultas Teknik -->
       <div class="col-md-6">
-        <img class="img-fluid w-100" src="<?php echo base_url() ?>assets/front1/img/fak_teknik.jpg" alt="Fakultas Teknik">
+        <img class="img-fluid rounded-image w-100" src="<?php echo base_url() ?>assets/front1/img/fak_teknik.jpg" alt="Fakultas Teknik">
       </div>
       <div class="col-md-6 d-flex align-items-center">
         <div>

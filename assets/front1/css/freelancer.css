@@ -343,3 +343,6 @@ a {
   pointer-events: none; /* Disable mouse interactions */;
 }
 
+.rounded-image {
+  border-radius: 15px; /* Sudut tumpul */
+}
