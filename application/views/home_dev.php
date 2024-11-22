@@ -156,7 +156,7 @@
         </div>
       </div>
     </section>
-   <section class="contact" id="contact">
+   <section class="contact" id="contact" style="background-color: #01317d; color: white;">
       <div class="container">
         <h2 class="text-center text-uppercase text-secondary mb-0">Testimoni</h2><br>
         
