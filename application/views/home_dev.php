@@ -124,20 +124,20 @@
         <!-- <hr class="star-dark mb-5"> -->
         <div class="row">
          
-         <center><h4 class="text-uppercase"> BIAYA PENDIDIKAN MAHASISWA / TARUNA T.A 2024 - 2025 DAN TUTORIAL</h4></center>
+         <center><h4 class="text-uppercase"> BIAYA PENDIDIKAN MAHASISWA / TARUNA T.A 2025 - 2026 DAN TUTORIAL</h4></center>
 
              <div class="col-lg-16 mr-auto">
-            <p class="lead">Berikut lampiran biaya pendidikan Mahasiswa / Taruna UNIMAR AMNI Semarang tahun ajaran 2024 - 2025 yang dapat di download di bawah ini.</p>
+            <p class="lead">Berikut lampiran biaya pendidikan Mahasiswa / Taruna UNIMAR AMNI Semarang tahun ajaran 2025 - 2026 yang dapat di download di bawah ini.</p>
             <p>nb : segala bentuk pembayaran yang sudah di setorkan ke unimar amni tidak dapat ditarik kembali dengan alasan apapun</p>
                <div class="col-lg-16 mr-auto text-center">
-                <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="<?php echo base_url() ?>biaya_download" target="_blank">
+                <a class="btn-secondary btn-xl btn-outline-warning js-scroll-trigger" href="<?php echo base_url() ?>biaya_download" target="_blank">
                 <i class="fa fa-money mr-2"></i>
                 <font color="black">Biaya Pendidikan</font>
                 </a>
-                <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="<?php echo base_url() ?>tutorial_download" target="_blank">
+                <a class="btn-secondary btn-xl btn-outline-warning js-scroll-trigger" href="<?php echo base_url() ?>tutorial_download" target="_blank">
                 <i class="fa fa-book mr-2"></i>
                 <font color="black">Tutorial Pendaftaran</font></a>
-                <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="https://linktr.ee/pmbunimaramni" target="_blank">
+                <a class="btn-secondary btn-xl btn-outline-warning js-scroll-trigger" href="https://linktr.ee/pmbunimaramni" target="_blank">
                 <i class="fa fa-info mr-2"></i>
                 <font color="black">Informasi Selengkapnya</font>
                 </a>
