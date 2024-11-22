@@ -39,15 +39,15 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-          <li class="nav-item mx-0 mx-lg-1">
+         <!--  <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Home</a>
-            </li>
+            </li> -->
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Program Studi</a>
           </li>
             
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Alur Pendaftaran</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Informasi</a>
             </li> 
 
             <li class="nav-item mx-0 mx-lg-1">
@@ -73,7 +73,7 @@
 <center><img src="<?php echo base_url() ?>assets/front1/img/alur2025.jpg" width="100%"></center>
 
 
-<section class="about" id="about">
+<section class="about" id="about" style="background-color: #01317d; color: white;">
   <div class="container-fluid">
     <div class="row">
       <!-- Fakultas Kemaritiman -->
