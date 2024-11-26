@@ -318,10 +318,10 @@ a {
 /* Custom button styling */
 .btn-custom {
   display: inline-block;
-  background-color: #18BC9C; /* Warna tombol kuning */
+  background-color: #01317d; /* Warna tombol kuning */
   color: #000; /* Warna teks hitam */
   padding: 12px 20px; /* Padding untuk tombol */
-  border: 2px solid #18BC9C; /* Border dengan warna tombol */
+  border: 2px solid #01317d; /* Border dengan warna tombol */
   border-radius: 30px; /* Membuat tombol membulat */
   font-size: 18px; /* Ukuran font */
   font-weight: bold; /* Menonjolkan teks */
@@ -332,9 +332,9 @@ a {
 
 /* Hover effect */
 .btn-custom:hover {
-  background-color: #e5b700; /* Warna kuning lebih gelap */
+  background-color: #18BC9C; /* Warna kuning lebih gelap */
   color: #fff; /* Teks berubah menjadi putih */
-  border-color: #e5b700; /* Sesuaikan warna border */
+  border-color: #18BC9C; /* Sesuaikan warna border */
   transform: scale(1.05); /* Sedikit memperbesar tombol saat hover */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
 }
