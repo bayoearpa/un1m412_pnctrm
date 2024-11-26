@@ -146,7 +146,7 @@
           </div>
         </div>
         <div class="text-center mt-4">
-           <center><h1 class="text-uppercase"> JOIN UNIMAR AMNI TO SEE THE WORLD</h1></center>
+           <center> <img src="<?php echo base_url() ?>assets/front1/img/join_unimar.png"></center>
           <a class="btn btn-xl btn-outline-warning js-scroll-trigger" href="#portfolio">
             <i class="fa fa-sign-in mr-2"></i>
             <font color="black">Daftar Sekarang!</font>
@@ -158,7 +158,7 @@
     </section>
    <section class="contact" id="contact" style="background-color: #01317d; color: white;">
       <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">Testimoni</h2><br>
+        <h2 class="text-center text-uppercase text-secondary text-white mb-0">Testimoni</h2><br>
         
         <!-- slider -->
             <div id="demo" class="carousel slide" data-ride="carousel">
