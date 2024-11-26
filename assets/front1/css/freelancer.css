@@ -318,10 +318,10 @@ a {
 /* Custom button styling */
 .btn-custom {
   display: inline-block;
-  background-color: #fcc400; /* Warna tombol kuning */
+  background-color: #18BC9C; /* Warna tombol kuning */
   color: #000; /* Warna teks hitam */
   padding: 12px 20px; /* Padding untuk tombol */
-  border: 2px solid #fcc400; /* Border dengan warna tombol */
+  border: 2px solid #18BC9C; /* Border dengan warna tombol */
   border-radius: 30px; /* Membuat tombol membulat */
   font-size: 18px; /* Ukuran font */
   font-weight: bold; /* Menonjolkan teks */
