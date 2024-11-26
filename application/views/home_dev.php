@@ -150,6 +150,7 @@
         </div>
       </div>
     </div>
+    <center><img src="<?php echo base_url() ?>assets/front1/img/join_unimar.png" width="30%"></center>
     <div class="text-center mt-4">
       <a class="btn-custom btn-xl" href="#portfolio">
         <i class="fa fa-sign-in mr-2"></i>
@@ -158,7 +159,7 @@
     </div>
   </div>
 </section>
-    
+
    <section class="contact" id="contact" style="background-color: #01317d; color: white;">
       <div class="container">
         <h2 class="text-center text-uppercase text-secondary text-white mb-0">Testimoni</h2><br>
