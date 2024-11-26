@@ -315,6 +315,36 @@ a {
     background-color: #1a252f;
     border-color: #1a252f; }
 
+/* Custom button styling */
+.btn-custom {
+  display: inline-block;
+  background-color: #fcc400; /* Warna tombol kuning */
+  color: #000; /* Warna teks hitam */
+  padding: 12px 20px; /* Padding untuk tombol */
+  border: 2px solid #fcc400; /* Border dengan warna tombol */
+  border-radius: 30px; /* Membuat tombol membulat */
+  font-size: 18px; /* Ukuran font */
+  font-weight: bold; /* Menonjolkan teks */
+  text-transform: uppercase; /* Semua teks menjadi huruf besar */
+  transition: all 0.3s ease; /* Animasi transisi */
+  text-decoration: none; /* Hilangkan garis bawah */
+}
+
+/* Hover effect */
+.btn-custom:hover {
+  background-color: #e5b700; /* Warna kuning lebih gelap */
+  color: #fff; /* Teks berubah menjadi putih */
+  border-color: #e5b700; /* Sesuaikan warna border */
+  transform: scale(1.05); /* Sedikit memperbesar tombol saat hover */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+}
+
+/* Tambahkan jarak antar tombol */
+.btn-custom + .btn-custom {
+  margin-left: 15px; /* Jarak antar tombol */
+}
+
+
 /*untuk video section*/
 .video-section {
   position: relative;
