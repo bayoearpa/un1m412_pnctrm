@@ -150,7 +150,7 @@
         </div>
       </div>
     </div>
-    <center><img src="<?php echo base_url() ?>assets/front1/img/join_unimar.png" width="30%"></center>
+    <center><img src="<?php echo base_url() ?>assets/front1/img/join_unimar.png" width="50%"></center>
     <div class="text-center mt-4">
       <a class="btn-custom btn-xl" href="#portfolio">
         <i class="fa fa-sign-in mr-2"></i>
