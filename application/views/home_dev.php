@@ -81,7 +81,7 @@
         <img class="img-fluid rounded-image w-100" src="<?php echo base_url() ?>assets/front1/img/fak_maritim.jpg" alt="Fakultas Kemaritiman">
       </div>
       <div class="col-md-6 d-flex align-items-center">
-        <div>
+        <div class="text-container">
           <h3>Fakultas Kemaritiman</h3>
           <p>Fakultas Kemaritiman menyediakan program unggulan untuk mendukung industri kelautan dan perkapalan. Pelajari lebih banyak tentang program yang ditawarkan.</p>
           <a class="btn btn-primary" href="#portfolio-modal">Selengkapnya</a>
@@ -94,7 +94,7 @@
         <img class="img-fluid rounded-image w-100" src="<?php echo base_url() ?>assets/front1/img/fak_ebis.jpg" alt="Fakultas Ekonomi Bisnis">
       </div>
       <div class="col-md-6 order-md-1 d-flex align-items-center">
-        <div>
+        <div class="text-container">
           <h3>Fakultas Ekonomi Bisnis</h3>
           <p>Fakultas Ekonomi Bisnis memberikan pendidikan berbasis bisnis yang relevan dengan kebutuhan industri masa kini. Temukan berbagai program studi yang kami tawarkan.</p>
           <a class="btn btn-primary" href="#portfolio-modal">Selengkapnya</a>
@@ -107,7 +107,7 @@
         <img class="img-fluid rounded-image w-100" src="<?php echo base_url() ?>assets/front1/img/fak_teknik.jpg" alt="Fakultas Teknik">
       </div>
       <div class="col-md-6 d-flex align-items-center">
-        <div>
+        <div class="text-container">
           <h3>Fakultas Teknik</h3>
           <p>Fakultas Teknik berfokus pada pengembangan teknologi dan inovasi untuk masa depan. Bergabunglah dengan kami dan wujudkan impian Anda.</p>
           <a class="btn btn-primary" href="#portfolio-modal">Selengkapnya</a>
@@ -116,6 +116,7 @@
     </div>
   </div>
 </section>
+
 
     <!-- Portfolio Grid Section -->
 <section class="bg-primary text-black mb-0 portfolio" id="portfolio">
