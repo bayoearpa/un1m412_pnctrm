@@ -121,10 +121,10 @@
     <!-- Portfolio Grid Section -->
 <section class="bg-primary text-black mb-0 portfolio" id="portfolio">
   <div class="container">
-    <h2 class="text-center text-uppercase text-secondary mb-0">Program Studi</h2><br>
+    <!-- <h2 class="text-center text-uppercase text-secondary mb-0">Program Studi</h2><br> -->
     <center>
       <h4 class="text-uppercase">
-        BIAYA PENDIDIKAN MAHASISWA / TARUNA T.A 2025 - 2026 DAN TUTORIAL
+        BIAYA PENDIDIKAN MAHASISWA / TARUNA T.A 2025 - 2026
       </h4>
     </center>
     <div class="row">
@@ -262,7 +262,7 @@
 
 
            <div class="col-md-12 mb-2">
-            <h4 class="text-uppercase mb-4">Kerjasama</h4>
+            <!-- <h4 class="text-uppercase mb-4">Kerjasama</h4> -->
             <center><img src="<?php echo base_url() ?>assets/front1/img/kerjasama.png" width="100%"></center>
               <!-- <a href="http://startbootstrap.com">Start Bootstrap</a>.</p> -->
           </div>
