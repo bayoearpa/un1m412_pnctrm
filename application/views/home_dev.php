@@ -43,11 +43,11 @@
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Home</a>
             </li> -->
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Program Studi</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Program Studi</a>
           </li>
             
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Informasi</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Informasi</a>
             </li> 
 
             <li class="nav-item mx-0 mx-lg-1">
@@ -84,7 +84,7 @@
         <div class="text-container">
           <h3>Fakultas Kemaritiman</h3>
           <p>Fakultas Kemaritiman menyediakan program unggulan untuk mendukung industri kelautan dan perkapalan. Pelajari lebih banyak tentang program yang ditawarkan.</p>
-          <a class="btn btn-primary" href="#portfolio-modal">Selengkapnya</a>
+          <a class="btn btn-primary" href="#portfolio-modal-1">Selengkapnya</a>
         </div>
       </div>
     </div>
@@ -97,7 +97,7 @@
         <div class="text-container">
           <h3>Fakultas Ekonomi Bisnis</h3>
           <p>Fakultas Ekonomi Bisnis memberikan pendidikan berbasis bisnis yang relevan dengan kebutuhan industri masa kini. Temukan berbagai program studi yang kami tawarkan.</p>
-          <a class="btn btn-primary" href="#portfolio-modal">Selengkapnya</a>
+          <a class="btn btn-primary" href="#portfolio-modal-2">Selengkapnya</a>
         </div>
       </div>
     </div>
@@ -110,7 +110,7 @@
         <div class="text-container">
           <h3>Fakultas Teknik</h3>
           <p>Fakultas Teknik berfokus pada pengembangan teknologi dan inovasi untuk masa depan. Bergabunglah dengan kami dan wujudkan impian Anda.</p>
-          <a class="btn btn-primary" href="#portfolio-modal">Selengkapnya</a>
+          <a class="btn btn-primary" href="#portfolio-modal-3">Selengkapnya</a>
         </div>
       </div>
     </div>
@@ -186,13 +186,13 @@
               <!-- The slideshow -->
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="<?php //echo base_url() ?>assets/front1/img/testi1.PNG" alt="Los Angeles" width="1100" height="500">
+                  <img src="<?php echo base_url() ?>assets/front1/img/testi1.PNG" alt="Los Angeles" width="1100" height="500">
                 </div>
                 <div class="carousel-item">
-                  <img src="<?php //echo base_url() ?>assets/front1/img/testi2.PNG" alt="Chicago" width="1100" height="500">
+                  <img src="<?php echo base_url() ?>assets/front1/img/testi2.PNG" alt="Chicago" width="1100" height="500">
                 </div>
                 <div class="carousel-item">
-                  <img src="<?php //echo base_url() ?>assets/front1/img/testi3.PNG" alt="New York" width="1100" height="500">
+                  <img src="<?php echo base_url() ?>assets/front1/img/testi3.PNG" alt="New York" width="1100" height="500">
                 </div>
               </div>
               
