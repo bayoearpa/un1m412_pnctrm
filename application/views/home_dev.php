@@ -150,7 +150,7 @@
         </div>
       </div>
     </div>
-    <center><img src="<?php echo base_url() ?>assets/front1/img/join_unimar.png" width="50%"></center>
+    <center><img src="<?php echo base_url() ?>assets/front1/img/join_unimar2.png" width="50%"></center>
     <div class="text-center mt-4">
       <a class="btn-custom btn-xl" href="#portfolio">
         <i class="fa fa-sign-in mr-2"></i>
@@ -160,12 +160,20 @@
   </div>
 </section>
 
-   <section class="contact" id="contact" style="background-color: #01317d; color: white;">
+   <section class="contact text-white" id="contact" style="background-color: #01317d; color: white;">
       <div class="container">
-        <h2 class="text-center text-uppercase text-secondary text-white mb-0">Testimoni</h2><br>
+        <h2 class="text-center text-uppercase text-secondary mb-0">Jadwal Seleksi</h2><br>
+         <center><img src="<?php echo base_url() ?>assets/front1/img/join_unimar.png" width="50%"></center>
+        
+      </div> 
+    </section>
+      <!-- About Section -->
+    <section class="bg-primary text-white mb-0" id="testimoni">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Testimoni</h2><br>
         
         <!-- slider -->
-            <div id="demo" class="carousel slide" data-ride="carousel">
+           <!--  <div id="demo" class="carousel slide" data-ride="carousel"> -->
 
               <!-- Indicators -->
               <ul class="carousel-indicators">
@@ -177,13 +185,13 @@
               <!-- The slideshow -->
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="<?php echo base_url() ?>assets/front1/img/testi1.PNG" alt="Los Angeles" width="1100" height="500">
+                  <img src="<?php //echo base_url() ?>assets/front1/img/testi1.PNG" alt="Los Angeles" width="1100" height="500">
                 </div>
                 <div class="carousel-item">
-                  <img src="<?php echo base_url() ?>assets/front1/img/testi2.PNG" alt="Chicago" width="1100" height="500">
+                  <img src="<?php //echo base_url() ?>assets/front1/img/testi2.PNG" alt="Chicago" width="1100" height="500">
                 </div>
                 <div class="carousel-item">
-                  <img src="<?php echo base_url() ?>assets/front1/img/testi3.PNG" alt="New York" width="1100" height="500">
+                  <img src="<?php //echo base_url() ?>assets/front1/img/testi3.PNG" alt="New York" width="1100" height="500">
                 </div>
               </div>
               
@@ -195,47 +203,9 @@
                 <span class="carousel-control-next-icon"></span>
               </a>
             </div>
-      </div> 
-    </section>
-      <!-- About Section -->
-    <!-- <section class="bg-primary text-white mb-0" id="testimoni">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">Testimoni</h2><br>
-         -->
-        <!-- slider -->
-           <!--  <div id="demo" class="carousel slide" data-ride="carousel"> -->
-
-              <!-- Indicators -->
-              <!-- <ul class="carousel-indicators">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
-                <li data-target="#demo" data-slide-to="2"></li>
-              </ul> -->
-              
-              <!-- The slideshow -->
-             <!--  <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="<?php //echo base_url() ?>assets/front1/img/testi1.PNG" alt="Los Angeles" width="1100" height="500">
-                </div>
-                <div class="carousel-item">
-                  <img src="<?php //echo base_url() ?>assets/front1/img/testi2.PNG" alt="Chicago" width="1100" height="500">
-                </div>
-                <div class="carousel-item">
-                  <img src="<?php //echo base_url() ?>assets/front1/img/testi3.PNG" alt="New York" width="1100" height="500">
-                </div> -->
-             <!--  </div> -->
-              
-              <!-- Left and right controls -->
-              <!-- <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-              </a>
-              <a class="carousel-control-next" href="#demo" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-              </a>
-            </div>
        
       </div>
-    </section> -->
+    </section>
     <!-- Footer -->
     <footer class="footer text-center">
       <div class="container">
@@ -292,7 +262,7 @@
 
            <div class="col-md-12 mb-2">
             <h4 class="text-uppercase mb-4">Kerjasama</h4>
-            <center><img src="<?php echo base_url() ?>assets/front1/img/mou2.png" width="100%"></center>
+            <center><img src="<?php echo base_url() ?>assets/front1/img/kerjasama.png" width="100%"></center>
               <!-- <a href="http://startbootstrap.com">Start Bootstrap</a>.</p> -->
           </div>
         </div>
