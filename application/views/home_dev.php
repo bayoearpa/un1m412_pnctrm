@@ -216,36 +216,7 @@
             <p class="lead mb-0">Jl. Soekarno-Hatta No.180
               <br>Semarang, 50199</p>
           </div>
-          <!-- <div class="col-md-4 mb-2">
-            <h4 class="text-uppercase mb-4">website</h4>
-            <ul class="list-inline mb-0">
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-facebook"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-google-plus"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-linkedin"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="http://unimar-amni.ac.id/new/">
-                  <i class="fa fa-fw fa-dribbble"></i>
-                </a>
-              </li>
-            </ul>
-          </div> -->
+
           <div class="col-md-4 mb-2">
             <h4 class="text-uppercase mb-4">Contact Person</h4>
           

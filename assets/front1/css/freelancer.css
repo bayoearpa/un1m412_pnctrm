@@ -4,7 +4,9 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
  */
 body {
-  font-family: 'Lato'; }
+  font-family: 'Lato'; 
+  background-color: #fcc400; /* Pastikan warna latar belakang body sama */
+  margin: 0; /* Hilangkan margin default */}
 
 h1,
 h2,
