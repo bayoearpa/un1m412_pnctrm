@@ -303,6 +303,11 @@ a {
 
 .text-third {
   color: #FFFFFF !important; }
+  
+.text-container {
+  max-width: 600px; /* Batas lebar maksimal paragraf */
+  margin: 0 auto;   /* Pusatkan jika diperlukan */
+}
 
 .btn-primary {
   background-color: #18BC9C;
