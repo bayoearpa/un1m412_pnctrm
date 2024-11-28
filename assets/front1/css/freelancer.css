@@ -305,7 +305,7 @@ a {
   color: #FFFFFF !important; }
 
 .text-container {
-  max-width: 500px; /* Batas lebar maksimal paragraf */
+  max-width: 600px; /* Batas lebar maksimal paragraf */
   margin: 0 auto;   /* Pusatkan jika diperlukan */
 }
 
