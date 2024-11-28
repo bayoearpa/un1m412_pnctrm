@@ -174,7 +174,7 @@
         <h2 class="text-center text-uppercase text-secondary mb-0">Testimoni</h2><br>
         
         <!-- slider -->
-           <!--  <div id="demo" class="carousel slide" data-ride="carousel"> -->
+            <div id="demo" class="carousel slide" data-ride="carousel">
 
               <!-- Indicators -->
               <ul class="carousel-indicators">
