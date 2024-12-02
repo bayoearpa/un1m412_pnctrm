@@ -267,113 +267,114 @@
             <div class="col-lg-8 mx-auto">
               <h2 class="text-secondary text-uppercase mb-0  text-center">FAKULTAS KEMARITIMAN</h2>
               <section class="program-list">
-                <div class="container">
-                  <!-- Fakultas Kemaritiman -->
-                  <h3>Fakultas Kemaritiman</h3>
-                  <ul>
-                    <li>
-                      <div class="program-header">
-                        <span>KPN</span>
-                        <button class="toggle-btn">+</button>
-                      </div>
-                      <div class="details">
-                        <p>Syarat:</p>
-                        <p>Bla bla bla</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="program-header">
-                        <span>Teknika</span>
-                        <button class="toggle-btn">+</button>
-                      </div>
-                      <div class="details">
-                        <p>Syarat:</p>
-                        <p>Bla bla bla</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="program-header">
-                        <span>Nautika</span>
-                        <button class="toggle-btn">+</button>
-                      </div>
-                      <div class="details">
-                        <p>Syarat:</p>
-                        <p>Bla bla bla</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="program-header">
-                        <span>D4 MPLM</span>
-                        <button class="toggle-btn">+</button>
-                      </div>
-                      <div class="details">
-                        <p>Syarat:</p>
-                        <p>Bla bla bla</p>
-                      </div>
-                    </li>
-                  </ul>
+  <div class="container">
+    <!-- Fakultas Kemaritiman -->
+    <h3>Fakultas Kemaritiman</h3>
+    <ul>
+      <li>
+        <div class="program-header">
+          <span><i class="fa fa-ship mr-2"></i>KPN</span>
+          <button class="toggle-btn">+</button>
+        </div>
+        <div class="details">
+          <p><strong>Syarat:</strong></p>
+          <p>Bla bla bla</p>
+        </div>
+      </li>
+      <li>
+        <div class="program-header">
+          <span><i class="fa fa-anchor mr-2"></i>Teknika</span>
+          <button class="toggle-btn">+</button>
+        </div>
+        <div class="details">
+          <p><strong>Syarat:</strong></p>
+          <p>Bla bla bla</p>
+        </div>
+      </li>
+      <li>
+        <div class="program-header">
+          <span><i class="fa fa-compass mr-2"></i>Nautika</span>
+          <button class="toggle-btn">+</button>
+        </div>
+        <div class="details">
+          <p><strong>Syarat:</strong></p>
+          <p>Bla bla bla</p>
+        </div>
+      </li>
+      <li>
+        <div class="program-header">
+          <span><i class="fa fa-map mr-2"></i>D4 MPLM</span>
+          <button class="toggle-btn">+</button>
+        </div>
+        <div class="details">
+          <p><strong>Syarat:</strong></p>
+          <p>Bla bla bla</p>
+        </div>
+      </li>
+    </ul>
 
-                  <!-- Fakultas Ekonomi Bisnis -->
-                  <h3>Fakultas Ekonomi Bisnis</h3>
-                  <ul>
-                    <li>
-                      <div class="program-header">
-                        <span>Perdagangan Internasional</span>
-                        <button class="toggle-btn">+</button>
-                      </div>
-                      <div class="details">
-                        <p>Syarat:</p>
-                        <p>Bla bla bla</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="program-header">
-                        <span>Bisnis Digital</span>
-                        <button class="toggle-btn">+</button>
-                      </div>
-                      <div class="details">
-                        <p>Syarat:</p>
-                        <p>Bla bla bla</p>
-                      </div>
-                    </li>
-                  </ul>
+    <!-- Fakultas Ekonomi Bisnis -->
+    <h3>Fakultas Ekonomi Bisnis</h3>
+    <ul>
+      <li>
+        <div class="program-header">
+          <span><i class="fa fa-globe mr-2"></i>Perdagangan Internasional</span>
+          <button class="toggle-btn">+</button>
+        </div>
+        <div class="details">
+          <p><strong>Syarat:</strong></p>
+          <p>Bla bla bla</p>
+        </div>
+      </li>
+      <li>
+        <div class="program-header">
+          <span><i class="fa fa-chart-line mr-2"></i>Bisnis Digital</span>
+          <button class="toggle-btn">+</button>
+        </div>
+        <div class="details">
+          <p><strong>Syarat:</strong></p>
+          <p>Bla bla bla</p>
+        </div>
+      </li>
+    </ul>
 
-                  <!-- Fakultas Teknik -->
-                  <h3>Fakultas Teknik</h3>
-                  <ul>
-                    <li>
-                      <div class="program-header">
-                        <span>Teknik Transportasi Laut</span>
-                        <button class="toggle-btn">+</button>
-                      </div>
-                      <div class="details">
-                        <p>Syarat:</p>
-                        <p>Bla bla bla</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="program-header">
-                        <span>Teknik Mesin</span>
-                        <button class="toggle-btn">+</button>
-                      </div>
-                      <div class="details">
-                        <p>Syarat:</p>
-                        <p>Bla bla bla</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="program-header">
-                        <span>Transportasi</span>
-                        <button class="toggle-btn">+</button>
-                      </div>
-                      <div class="details">
-                        <p>Syarat:</p>
-                        <p>Bla bla bla</p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </section>
+    <!-- Fakultas Teknik -->
+    <h3>Fakultas Teknik</h3>
+    <ul>
+      <li>
+        <div class="program-header">
+          <span><i class="fa fa-cogs mr-2"></i>Teknik Transportasi Laut</span>
+          <button class="toggle-btn">+</button>
+        </div>
+        <div class="details">
+          <p><strong>Syarat:</strong></p>
+          <p>Bla bla bla</p>
+        </div>
+      </li>
+      <li>
+        <div class="program-header">
+          <span><i class="fa fa-tools mr-2"></i>Teknik Mesin</span>
+          <button class="toggle-btn">+</button>
+        </div>
+        <div class="details">
+          <p><strong>Syarat:</strong></p>
+          <p>Bla bla bla</p>
+        </div>
+      </li>
+      <li>
+        <div class="program-header">
+          <span><i class="fa fa-traffic-light mr-2"></i>Transportasi</span>
+          <button class="toggle-btn">+</button>
+        </div>
+        <div class="details">
+          <p><strong>Syarat:</strong></p>
+          <p>Bla bla bla</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
 
             </div>
           </div>
@@ -1184,7 +1185,7 @@
         })(jQuery);
 
 
-        document.querySelectorAll('.toggle-btn').forEach(button => {
+       document.querySelectorAll('.toggle-btn').forEach(button => {
           button.addEventListener('click', () => {
             const details = button.parentElement.nextElementSibling;
             const isOpen = details.style.display === 'block';
@@ -1196,6 +1197,7 @@
             button.textContent = isOpen ? '+' : '-';
           });
         });
+
 
     </script>
 

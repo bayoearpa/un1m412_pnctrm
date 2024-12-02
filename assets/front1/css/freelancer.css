@@ -390,15 +390,19 @@ a {
   border-radius: 15px; /* Sudut tumpul */
 }
 
-
+/*tampilan dalam modal*/
 .program-list {
   font-family: Arial, sans-serif;
+  padding: 2rem;
   line-height: 1.6;
 }
 
 .program-list h3 {
   color: #01317d;
-  margin-top: 20px;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  border-left: 4px solid #fcc400;
+  padding-left: 10px;
 }
 
 ul {
@@ -408,8 +412,10 @@ ul {
 
 li {
   margin-bottom: 15px;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .program-header {
@@ -418,11 +424,18 @@ li {
   align-items: center;
   font-size: 16px;
   font-weight: bold;
+  background-color: #01317d;
+  color: white;
+  padding: 10px 15px;
+}
+
+.program-header i {
+  color: #fcc400;
 }
 
 .toggle-btn {
-  background-color: #01317d;
-  color: white;
+  background-color: #fcc400;
+  color: #01317d;
   border: none;
   border-radius: 50%;
   width: 30px;
@@ -434,17 +447,30 @@ li {
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .toggle-btn:hover {
-  background-color: #0a459e;
+  background-color: #ffcc00;
+  transform: scale(1.1);
 }
 
 .details {
   display: none; /* Initially hidden */
   margin-top: 10px;
-  padding: 10px;
-  background-color: #f1f1f1;
-  border-left: 4px solid #01317d;
+  padding: 15px;
+  background-color: #f8f9fa;
+  color: #333;
+  animation: fadeIn 0.5s ease;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*tampilan dalam modal*/
