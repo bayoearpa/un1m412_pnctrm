@@ -274,12 +274,12 @@
       <!-- KPN -->
       <div class="accordion-item mb-3">
         <h3 class="accordion-header d-flex justify-content-between align-items-center">
-          <button class="btn btn-link text-decoration-none text-dark w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKPN" aria-expanded="true" aria-controls="collapseKPN">
+         <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseKPN" aria-expanded="true" aria-controls="collapseKPN">
             KPN
           </button>
           <span class="toggle-icon text-primary">+</span>
         </h3>
-        <div id="collapseKPN" class="accordion-collapse collapse" data-bs-parent="#maritimeAccordion">
+        <div id="collapseKPN" class="accordion-collapse collapse">
           <div class="accordion-body">
             <p><strong>Syarat:</strong></p>
             <p>Bla bla bla</p>
