@@ -292,7 +292,15 @@
         <div id="collapseKPN" class="collapse" data-parent="#maritimeAccordion">
           <div class="card-body">
             <p><strong>Syarat:</strong></p>
-            <p>Bla bla bla</p>
+            <p>>Sanggup tidak menikah selama masa pendidikan dengan melampirkan surat keterangan belum menikah dari Kelurahan</p>
+            <p>> Foto copy ijazah yang dilegalisir</p>
+            <p>> Foto copy KTP</p>
+            <p>> SKCK (Surat Keterangan Catatan Kepolisian) asli</p>
+            <p>> Foto copy Akte Kelahiran</p>
+            <p>> Foto hitam putih ukuran 3 x 4 sebanyak 2 lembar</p>
+            <p>> Wajib Asrama untuk Taruna TEKNIKA dan NAUTIKA</p>
+            <p>> Wajib Asrama untuk Taruni (semua jurusan)</p>
+            <p>> Lulusan SMA/MA/SMK seluruh jurusan</p>
           </div>
         </div>
       </div>
@@ -335,9 +343,9 @@
               D3 Nautika
             </button>
           </h3>
-          <span class="toggle-icon text-primary" data-toggle="collapse" data-target="#collapseTeknika">+</span>
+          <span class="toggle-icon text-primary" data-toggle="collapse" data-target="#collapseNautika">+</span>
         </div>
-        <div id="collapseTeknika" class="collapse" data-parent="#maritimeAccordion">
+        <div id="collapseNautika" class="collapse" data-parent="#maritimeAccordion">
           <div class="card-body">
             <p><strong>Syarat:</strong></p>
             <p>Bla bla bla</p>
@@ -359,9 +367,9 @@
               D4 Manajemen Pelabuhan dan Logistik Maritim
             </button>
           </h3>
-          <span class="toggle-icon text-primary" data-toggle="collapse" data-target="#collapseTeknika">+</span>
+          <span class="toggle-icon text-primary" data-toggle="collapse" data-target="#collapseMplm">+</span>
         </div>
-        <div id="collapseTeknika" class="collapse" data-parent="#maritimeAccordion">
+        <div id="collapseMplm" class="collapse" data-parent="#maritimeAccordion">
           <div class="card-body">
             <p><strong>Syarat:</strong></p>
             <p>Bla bla bla</p>
