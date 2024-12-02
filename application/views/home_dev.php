@@ -266,36 +266,55 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <h2 class="text-secondary text-uppercase mb-0  text-center">FAKULTAS KEMARITIMAN</h2>
-         <section class="program-list py-5">
+
+       <section class="program-list py-5">
   <div class="container">
     <!-- Fakultas Kemaritiman -->
     <h3 class="faculty-header mb-4">Fakultas Kemaritiman</h3>
-    <div class="accordion" id="maritimeAccordion">
+    <div id="maritimeAccordion">
       <!-- KPN -->
-      <div class="accordion-item mb-3">
-        <h3 class="accordion-header d-flex justify-content-between align-items-center">
-          <button class="btn btn-link text-decoration-none text-dark w-100 text-start d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKPN" aria-expanded="true" aria-controls="collapseKPN">
-            KPN
-          </button>
-          <span class="toggle-icon text-primary" data-bs-toggle="collapse" data-bs-target="#collapseKPN">+</span>
-        </h3>
-        <div id="collapseKPN" class="accordion-collapse collapse" data-bs-parent="#maritimeAccordion">
-          <div class="accordion-body">
+      <div class="card mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <h3 class="mb-0">
+            <button
+              class="btn btn-link text-decoration-none text-dark"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseKPN"
+              aria-expanded="true"
+              aria-controls="collapseKPN"
+            >
+              KPN
+            </button>
+          </h3>
+          <span class="toggle-icon text-primary" data-toggle="collapse" data-target="#collapseKPN">+</span>
+        </div>
+        <div id="collapseKPN" class="collapse" data-parent="#maritimeAccordion">
+          <div class="card-body">
             <p><strong>Syarat:</strong></p>
             <p>Bla bla bla</p>
           </div>
         </div>
       </div>
       <!-- Teknika -->
-      <div class="accordion-item mb-3">
-        <h3 class="accordion-header d-flex justify-content-between align-items-center">
-          <button class="btn btn-link text-decoration-none text-dark w-100 text-start d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTeknika" aria-expanded="false" aria-controls="collapseTeknika">
-            Teknika
-          </button>
-          <span class="toggle-icon text-primary" data-bs-toggle="collapse" data-bs-target="#collapseTeknika">+</span>
-        </h3>
-        <div id="collapseTeknika" class="accordion-collapse collapse" data-bs-parent="#maritimeAccordion">
-          <div class="accordion-body">
+      <div class="card mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <h3 class="mb-0">
+            <button
+              class="btn btn-link text-decoration-none text-dark"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseTeknika"
+              aria-expanded="false"
+              aria-controls="collapseTeknika"
+            >
+              Teknika
+            </button>
+          </h3>
+          <span class="toggle-icon text-primary" data-toggle="collapse" data-target="#collapseTeknika">+</span>
+        </div>
+        <div id="collapseTeknika" class="collapse" data-parent="#maritimeAccordion">
+          <div class="card-body">
             <p><strong>Syarat:</strong></p>
             <p>Bla bla bla</p>
           </div>
@@ -304,9 +323,6 @@
     </div>
   </div>
 </section>
-
-
-
 
             </div>
           </div>
@@ -1118,9 +1134,10 @@
 
 
 
-  document.querySelectorAll(".accordion-item").forEach((item) => {
-    const button = item.querySelector("button");
-    const icon = item.querySelector(".toggle-icon");
+
+  document.querySelectorAll(".card-header").forEach((header) => {
+    const button = header.querySelector("button");
+    const icon = header.querySelector(".toggle-icon");
 
     button.addEventListener("click", () => {
       const isExpanded = button.getAttribute("aria-expanded") === "true";
