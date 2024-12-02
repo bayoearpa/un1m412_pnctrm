@@ -266,59 +266,80 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <h2 class="text-secondary text-uppercase mb-0  text-center">FAKULTAS KEMARITIMAN</h2>
-           <section class="program-list">
+          <section class="program-list py-5">
   <div class="container">
     <!-- Fakultas Kemaritiman -->
-    <h3 class="faculty-header">Fakultas Kemaritiman</h3>
-    <ul>
-      <li>
-        <div class="program-header">
-          <h3 class="program-title">KPN</h3>
-          <span class="toggle-icon">+</span>
+    <h3 class="faculty-header mb-4">Fakultas Kemaritiman</h3>
+    <div class="accordion" id="maritimeAccordion">
+      <!-- KPN -->
+      <div class="accordion-item mb-3">
+        <h3 class="accordion-header d-flex justify-content-between align-items-center">
+          <button class="btn btn-link text-decoration-none text-dark w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKPN" aria-expanded="true" aria-controls="collapseKPN">
+            KPN
+          </button>
+          <span class="toggle-icon text-primary">+</span>
+        </h3>
+        <div id="collapseKPN" class="accordion-collapse collapse" data-bs-parent="#maritimeAccordion">
+          <div class="accordion-body">
+            <p><strong>Syarat:</strong></p>
+            <p>Bla bla bla</p>
+          </div>
         </div>
-        <div class="details">
-          <p><strong>Syarat:</strong></p>
-          <p>Bla bla bla</p>
+      </div>
+      <!-- Teknika -->
+      <div class="accordion-item mb-3">
+        <h3 class="accordion-header d-flex justify-content-between align-items-center">
+          <button class="btn btn-link text-decoration-none text-dark w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTeknika" aria-expanded="false" aria-controls="collapseTeknika">
+            Teknika
+          </button>
+          <span class="toggle-icon text-primary">+</span>
+        </h3>
+        <div id="collapseTeknika" class="accordion-collapse collapse" data-bs-parent="#maritimeAccordion">
+          <div class="accordion-body">
+            <p><strong>Syarat:</strong></p>
+            <p>Bla bla bla</p>
+          </div>
         </div>
-      </li>
-      <li>
-        <div class="program-header">
-          <h3 class="program-title">Teknika</h3>
-          <span class="toggle-icon">+</span>
+      </div>
+      <!-- Nautika -->
+      <div class="accordion-item mb-3">
+        <h3 class="accordion-header d-flex justify-content-between align-items-center">
+          <button class="btn btn-link text-decoration-none text-dark w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNautika" aria-expanded="false" aria-controls="collapseNautika">
+            Nautika
+          </button>
+          <span class="toggle-icon text-primary">+</span>
+        </h3>
+        <div id="collapseNautika" class="accordion-collapse collapse" data-bs-parent="#maritimeAccordion">
+          <div class="accordion-body">
+            <p><strong>Syarat:</strong></p>
+            <p>Bla bla bla</p>
+          </div>
         </div>
-        <div class="details">
-          <p><strong>Syarat:</strong></p>
-          <p>Bla bla bla</p>
-        </div>
-      </li>
-      <li>
-        <div class="program-header">
-          <h3 class="program-title">Nautika</h3>
-          <span class="toggle-icon">+</span>
-        </div>
-        <div class="details">
-          <p><strong>Syarat:</strong></p>
-          <p>Bla bla bla</p>
-        </div>
-      </li>
-    </ul>
+      </div>
+    </div>
 
     <!-- Fakultas Ekonomi Bisnis -->
-    <h3 class="faculty-header">Fakultas Ekonomi Bisnis</h3>
-    <ul>
-      <li>
-        <div class="program-header">
-          <h3 class="program-title">Perdagangan Internasional</h3>
-          <span class="toggle-icon">+</span>
+    <h3 class="faculty-header my-4">Fakultas Ekonomi Bisnis</h3>
+    <div class="accordion" id="businessAccordion">
+      <!-- Perdagangan Internasional -->
+      <div class="accordion-item mb-3">
+        <h3 class="accordion-header d-flex justify-content-between align-items-center">
+          <button class="btn btn-link text-decoration-none text-dark w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePI" aria-expanded="true" aria-controls="collapsePI">
+            Perdagangan Internasional
+          </button>
+          <span class="toggle-icon text-primary">+</span>
+        </h3>
+        <div id="collapsePI" class="accordion-collapse collapse" data-bs-parent="#businessAccordion">
+          <div class="accordion-body">
+            <p><strong>Syarat:</strong></p>
+            <p>Bla bla bla</p>
+          </div>
         </div>
-        <div class="details">
-          <p><strong>Syarat:</strong></p>
-          <p>Bla bla bla</p>
-        </div>
-      </li>
-    </ul>
+      </div>
+    </div>
   </div>
 </section>
+
 
 
 

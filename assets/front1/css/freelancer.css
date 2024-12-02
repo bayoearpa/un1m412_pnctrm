@@ -391,70 +391,49 @@ a {
 }
 
 /*tampilan dalam modal*/
-.program-list {
-  font-family: Arial, sans-serif;
-  padding: 2rem;
-}
-
 .faculty-header {
-  color: #01317d;
-  margin-bottom: 1.5rem;
-  font-weight: bold;
-  border-left: 5px solid #fcc400;
+  border-left: 5px solid #01317d;
   padding-left: 10px;
+  color: #01317d;
+  font-weight: bold;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  margin-bottom: 20px;
+.accordion-item {
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.program-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #01317d;
-  color: white;
-  padding: 15px;
-  cursor: pointer;
-}
-
-.program-title {
-  font-size: 18px;
-  margin: 0;
+.accordion-header {
+  padding: 10px 20px;
+  background-color: #f8f9fa;
 }
 
 .toggle-icon {
   font-size: 24px;
   font-weight: bold;
-  color: #fcc400;
   line-height: 1;
-  transition: transform 0.3s ease;
 }
 
-.details {
-  display: none; /* Default tertutup */
-  padding: 15px;
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.accordion-body {
   background-color: #f8f9fa;
   color: #333;
-  animation: fadeIn 0.5s ease;
+  padding: 20px;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.accordion-collapse:not(.show) .toggle-icon {
+  content: "+";
+  transform: rotate(0deg);
+}
+
+.accordion-collapse.show .toggle-icon {
+  content: "-";
+  transform: rotate(180deg);
 }
 
 
