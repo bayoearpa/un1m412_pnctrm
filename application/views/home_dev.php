@@ -84,7 +84,7 @@
         <div class="text-container">
           <h3>Fakultas Kemaritiman</h3>
           <p>Fakultas Kemaritiman menyediakan program unggulan untuk mendukung industri kelautan dan perkapalan. Pelajari lebih banyak tentang program yang ditawarkan.</p>
-          <a class="btn btn-primary" href="#portfolio-modal-1">Selengkapnya</a>
+          <a class="btn btn-primary portfolio-item d-block mx-auto" href="#portfolio-modal-1">Selengkapnya</a>
         </div>
       </div>
     </div>
