@@ -266,17 +266,14 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <h2 class="text-secondary text-uppercase mb-0  text-center">FAKULTAS KEMARITIMAN</h2>
-            <section class="program-list">
+           <section class="program-list">
   <div class="container">
     <!-- Fakultas Kemaritiman -->
-    <h3>Fakultas Kemaritiman</h3>
+    <h3 class="faculty-header">Fakultas Kemaritiman</h3>
     <ul>
       <li>
         <div class="program-header">
-          <div class="program-info">
-            <img src="<?php echo base_url() ?>assets/front1/img/icon_kpn.png" alt="KPN" class="program-icon">
-            <span>KPN</span>
-          </div>
+          <h3 class="program-title">KPN</h3>
           <span class="toggle-icon">+</span>
         </div>
         <div class="details">
@@ -286,10 +283,7 @@
       </li>
       <li>
         <div class="program-header">
-          <div class="program-info">
-            <img src="<?php echo base_url() ?>assets/front1/img/icon_teknika.png" alt="Teknika" class="program-icon">
-            <span>Teknika</span>
-          </div>
+          <h3 class="program-title">Teknika</h3>
           <span class="toggle-icon">+</span>
         </div>
         <div class="details">
@@ -299,10 +293,7 @@
       </li>
       <li>
         <div class="program-header">
-          <div class="program-info">
-            <img src="<?php echo base_url() ?>assets/front1/img/icon_nautika.png" alt="Nautika" class="program-icon">
-            <span>Nautika</span>
-          </div>
+          <h3 class="program-title">Nautika</h3>
           <span class="toggle-icon">+</span>
         </div>
         <div class="details">
@@ -311,15 +302,13 @@
         </div>
       </li>
     </ul>
+
     <!-- Fakultas Ekonomi Bisnis -->
-    <h3>Fakultas Ekonomi Bisnis</h3>
+    <h3 class="faculty-header">Fakultas Ekonomi Bisnis</h3>
     <ul>
       <li>
         <div class="program-header">
-          <div class="program-info">
-            <img src="<?php echo base_url() ?>assets/front1/img/icon_perdagangan.png" alt="Perdagangan Internasional" class="program-icon">
-            <span>Perdagangan Internasional</span>
-          </div>
+          <h3 class="program-title">Perdagangan Internasional</h3>
           <span class="toggle-icon">+</span>
         </div>
         <div class="details">
@@ -330,6 +319,7 @@
     </ul>
   </div>
 </section>
+
 
 
             </div>
@@ -1151,10 +1141,10 @@
           details.style.display = isOpen ? 'none' : 'block';
 
           // Change toggle icon
-          toggleIcon.classList.toggle('open');
           toggleIcon.textContent = isOpen ? '+' : '-';
         });
       });
+
 
 
 
