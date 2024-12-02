@@ -97,7 +97,7 @@
         <div class="text-container">
           <h3>Fakultas Ekonomi Bisnis</h3>
           <p>Fakultas Ekonomi Bisnis memberikan pendidikan berbasis bisnis yang relevan dengan kebutuhan industri masa kini. Temukan berbagai program studi yang kami tawarkan.</p>
-          <a class="btn btn-primary" href="#portfolio-modal-2">Selengkapnya</a>
+          <a class="btn btn-primary portfolio-item" href="#portfolio-modal-2">Selengkapnya</a>
         </div>
       </div>
     </div>
@@ -110,7 +110,7 @@
         <div class="text-container">
           <h3>Fakultas Teknik</h3>
           <p>Fakultas Teknik berfokus pada pengembangan teknologi dan inovasi untuk masa depan. Bergabunglah dengan kami dan wujudkan impian Anda.</p>
-          <a class="btn btn-primary" href="#portfolio-modal-3">Selengkapnya</a>
+          <a class="btn btn-primary portfolio-item" href="#portfolio-modal-3">Selengkapnya</a>
         </div>
       </div>
     </div>
