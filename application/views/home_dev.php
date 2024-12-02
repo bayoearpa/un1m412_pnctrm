@@ -292,15 +292,17 @@
         <div id="collapseKPN" class="collapse" data-parent="#maritimeAccordion">
           <div class="card-body">
             <p><strong>Syarat:</strong></p>
-            <p>>Sanggup tidak menikah selama masa pendidikan dengan melampirkan surat keterangan belum menikah dari Kelurahan</p>
-            <p>> Foto copy ijazah yang dilegalisir</p>
-            <p>> Foto copy KTP</p>
-            <p>> SKCK (Surat Keterangan Catatan Kepolisian) asli</p>
-            <p>> Foto copy Akte Kelahiran</p>
-            <p>> Foto hitam putih ukuran 3 x 4 sebanyak 2 lembar</p>
-            <p>> Wajib Asrama untuk Taruna TEKNIKA dan NAUTIKA</p>
-            <p>> Wajib Asrama untuk Taruni (semua jurusan)</p>
-            <p>> Lulusan SMA/MA/SMK seluruh jurusan</p>
+            <ul>
+            <li> Sanggup tidak menikah selama masa pendidikan dengan melampirkan surat keterangan belum menikah dari Kelurahan</li>
+            <li> Foto copy ijazah yang dilegalisir</li>
+            <li> Foto copy KTP</li>
+            <li> SKCK (Surat Keterangan Catatan Kepolisian) asli</li>
+            <li> Foto copy Akte Kelahiran</li>
+            <li> Foto hitam putih ukuran 3 x 4 sebanyak 2 lembar</li>
+            <li> Wajib Asrama untuk Taruna TEKNIKA dan NAUTIKA</li>
+            <li> Wajib Asrama untuk Taruni (semua jurusan)</li>
+            <li> Lulusan SMA/MA/SMK seluruh jurusan</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -324,7 +326,24 @@
         <div id="collapseTeknika" class="collapse" data-parent="#maritimeAccordion">
           <div class="card-body">
             <p><strong>Syarat:</strong></p>
-            <p>Bla bla bla</p>
+            <ul>
+            <li> Usia maksimum 23 tahun;</li>
+<li> Pria atau wanita;</li>
+<li> Belum menikah dan sanggup tidak menikah selama masa pendidikan yang dibuktikan dengan surat keterangan belum pernah menikah dari Kelurahan;</li>
+<li> Tinggi badan minimal Pria 160 cm dan Wanita 155 cm;</li>
+<li>Berijazah:</li> 
+<ul>
+  <li>a. SMA/MA IPA sederajat, dengan wajib melampirkan foto copy rapor kelas 10, 11 dan 12. </li>
+  <li>b. Sekolah  Menengah  Kejuruan  (SMK)  Pelayaran  yang telah memiliki approval Program Studi Ahli Teknika Tingkat (ATT) IV.</li> 
+  <li>c. SMK   jurusan   otomotif,   listrik,   elektronika,  teknik pedingin dan tata udara, teknik perkapalan program keahlian instalasi permesinan kapal dan teknik listrik kapal serta jurusan instrumentasi industri program keahlian kontrol proses dan kontrol mekanik yang dibuktikan dengan foto copy ijazah yang telah dilegalisir dari instansi pemerintah dan pejabat yang berwenang.</li> 
+</ul>
+<li>Surat Keterangan Catatan Kepolisian (SKCK);</li> 
+<li>Surat   keterangan   bebas   narkoba   dari   rumah   sakit pemerintah dan kepolisian;</li> 
+<li>Akte kelahiran/Surat Kenal Lahir;</li> 
+<li>Kartu Tanda Penduduk (KTP) atau tanda bukti diri lainnya yang sah;</li> 
+<li>Lulus seleksi penerimaan calon peserta didik;</li> 
+<li>Wajib Asrama taruna/taruni.</li> 
+</ul>
           </div>
         </div>
       </div>
