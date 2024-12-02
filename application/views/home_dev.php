@@ -1152,19 +1152,19 @@
         })(jQuery);
 
 
-      document.querySelectorAll('.program-header').forEach(header => {
-        header.addEventListener('click', () => {
-          const details = header.nextElementSibling;
-          const toggleIcon = header.querySelector('.toggle-icon');
-          const isOpen = details.style.display === 'block';
+      // document.querySelectorAll('.program-header').forEach(header => {
+      //   header.addEventListener('click', () => {
+      //     const details = header.nextElementSibling;
+      //     const toggleIcon = header.querySelector('.toggle-icon');
+      //     const isOpen = details.style.display === 'block';
 
-          // Toggle detail section visibility
-          details.style.display = isOpen ? 'none' : 'block';
+      //     // Toggle detail section visibility
+      //     details.style.display = isOpen ? 'none' : 'block';
 
-          // Change toggle icon
-          toggleIcon.textContent = isOpen ? '+' : '-';
-        });
-      });
+      //     // Change toggle icon
+      //     toggleIcon.textContent = isOpen ? '+' : '-';
+      //   });
+      // });
 
 
 
