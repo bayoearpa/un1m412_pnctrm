@@ -270,7 +270,7 @@
        <section class="program-list py-5">
   <div class="container">
     <!-- Fakultas Kemaritiman -->
-    <h3 class="faculty-header mb-4">Fakultas Kemaritiman</h3>
+    <!-- <h3 class="faculty-header mb-4">Fakultas Kemaritiman</h3> -->
     <div id="maritimeAccordion">
       <!-- KPN -->
       <div class="card mb-3">
@@ -284,7 +284,7 @@
               aria-expanded="true"
               aria-controls="collapseKPN"
             >
-              KPN
+              D3 Ketatalaksanaan Pelayaran Niaga dan Kepelabuhan
             </button>
           </h3>
           <span class="toggle-icon text-primary" data-toggle="collapse" data-target="#collapseKPN">+</span>
@@ -308,7 +308,7 @@
               aria-expanded="false"
               aria-controls="collapseTeknika"
             >
-              Teknika
+              D3 Teknika
             </button>
           </h3>
           <span class="toggle-icon text-primary" data-toggle="collapse" data-target="#collapseTeknika">+</span>
@@ -320,6 +320,55 @@
           </div>
         </div>
       </div>
+       <!-- Nautika -->
+      <div class="card mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <h3 class="mb-0">
+            <button
+              class="btn btn-link text-decoration-none text-dark"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseTeknika"
+              aria-expanded="false"
+              aria-controls="collapseTeknika"
+            >
+              D3 Nautika
+            </button>
+          </h3>
+          <span class="toggle-icon text-primary" data-toggle="collapse" data-target="#collapseTeknika">+</span>
+        </div>
+        <div id="collapseTeknika" class="collapse" data-parent="#maritimeAccordion">
+          <div class="card-body">
+            <p><strong>Syarat:</strong></p>
+            <p>Bla bla bla</p>
+          </div>
+        </div>
+      </div>
+       <!-- Nautika -->
+      <div class="card mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <h3 class="mb-0">
+            <button
+              class="btn btn-link text-decoration-none text-dark"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseTeknika"
+              aria-expanded="false"
+              aria-controls="collapseTeknika"
+            >
+              D4 Manajemen Pelabuhan dan Logistik Maritim
+            </button>
+          </h3>
+          <span class="toggle-icon text-primary" data-toggle="collapse" data-target="#collapseTeknika">+</span>
+        </div>
+        <div id="collapseTeknika" class="collapse" data-parent="#maritimeAccordion">
+          <div class="card-body">
+            <p><strong>Syarat:</strong></p>
+            <p>Bla bla bla</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
