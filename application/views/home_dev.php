@@ -265,87 +265,116 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0  text-center">D3 KETATALAKSANAAN PELAYARAN NIAGA DAN KEPELABUHAN</h2>
-              <!-- <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/cabin.png" alt=""> -->
-               <!-- <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/kpn1.png" alt="">
-               <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/kpn2.png" alt=""> -->
-               <p><i class="fa fa-question-circle"></i>Syarat :</p>
-              <ul>
-                <!-- <li>Usia max 23 tahun pada bulan September 2022.</li> -->
-                <!-- <li>Pria atau wanita</li>
-                <li>Pernyataan sanggup tidak menikah selama masa pendidikan.</li>
-                <li>Surat keterangan belum menikah dari lurah.</li> 
-                <li>Foto Copy Ijasah berlegalisir :</li>
-                <ul>
-                  <li>SMA atau Madrasah Aliyah (MA) – (Semua Program Studi).</li>
-                  <li>SMK –(Semua Program Studi).</li>
-                </ul>
-                <li>Surat Keterangan Catatan Kepolisian ( SKCK).</li> 
-                <li>Pas photo hitam putih ukuran 3x4 sebanyak 2 (dua) lembar.</li> 
-                <li>Copy Surat kenal lahir / akte kelahiran.</li> 
-                <li>Copy tanda pengenal yang sah, KTP atau SIM.</li>  -->
-                <li>Mengisi pendaftaran online di website : pmb.unimar-amni.ac.id</li>
-                <li>Lulusan SMA/MA/SMK</li>
-                <li>Bagi MAHATAR reguler sanggup tidak menikah selama masa pendidikan dengan melampirkan surat keterangan belum menikah dari kelurahan</li>
-                <li>Fotokopi ijasah yang dilegalisir</li>
-                <li>Fotokopi KTP</li>
-                <li>Fotokopi Kartu Keluarga</li>
-                <li>SKCK(Surat Keterangan Catatan Kepolisian)</li>
-                <li>Fotokopi akte kelahiran</li>
-                <li>Fotokopi hitam putih ukuran 3 x 4 sebanyak 2 lembar</li>
+              <h2 class="text-secondary text-uppercase mb-0  text-center">FAKULTAS KEMARITIMAN</h2>
+              <section class="program-list">
+                <div class="container">
+                  <!-- Fakultas Kemaritiman -->
+                  <h3>Fakultas Kemaritiman</h3>
+                  <ul>
+                    <li>
+                      <div class="program-header">
+                        <span>KPN</span>
+                        <button class="toggle-btn">+</button>
+                      </div>
+                      <div class="details">
+                        <p>Syarat:</p>
+                        <p>Bla bla bla</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="program-header">
+                        <span>Teknika</span>
+                        <button class="toggle-btn">+</button>
+                      </div>
+                      <div class="details">
+                        <p>Syarat:</p>
+                        <p>Bla bla bla</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="program-header">
+                        <span>Nautika</span>
+                        <button class="toggle-btn">+</button>
+                      </div>
+                      <div class="details">
+                        <p>Syarat:</p>
+                        <p>Bla bla bla</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="program-header">
+                        <span>D4 MPLM</span>
+                        <button class="toggle-btn">+</button>
+                      </div>
+                      <div class="details">
+                        <p>Syarat:</p>
+                        <p>Bla bla bla</p>
+                      </div>
+                    </li>
+                  </ul>
 
-              </ul>
-              <p><i class="fa fa-warning"></i>Peringatan :</p>
-              <ul>
-                <li>Pastikan anda melihat prasyarat sesuai <b>Program Studi (Prodi)</b> yang dipilih</li>
-                <li>Pendaftaran dapat dilaksanakan dengan datang langsung ke kampus biru UNIMAR AMNI SEMARANG maupun secara <i>online</i></li>
-               <!--  <li>Bagi pendaftar  melalui <b><i>online</i></b> dapat melaksanakan pembayaran  pendaftaran melalui Bank/ATM :</li>
-                <table>
-                  <tr>
-                    <td><b>BANK BNI</b></td>
-                    <td><b>:</b></td>
-                    <td><b>an. UNIMAR AMNI</b></td>
-                  </tr>
-                  <tr>
-                    <td><b>No. Rekening</b></td>
-                    <td><b>:</b></td>
-                    <td><b>0838810730</b></td>
-                  </tr>
-                  <tr>
-                    <td><b>Biaya Pendaftaran</b></td>
-                    <td><b>:</b></td>
-                    <td><b>Rp. 500.000,-</b></td>
-                  </tr>
-                </table> -->
-                <!-- <li>Bukti Pembayaran dapat dikirim melalui :</li>
-                <table>
-                  <tr>
-                    <td><b>No. WA</b></td>
-                    <td><b>:</b></td>
-                    <td><b>0822.46.900.800</b></td>
-                  </tr>
-                  <tr>
-                    <td colspan="3">Dengan mencantumkan informasi :</td>
-                  </tr>
-                  <tr>
-                    <td colspan="3"><b>No. Pendaftaran Online_Nama Pendaftar_Prodi yang dipilih_Periode Pendaftaran</b></td>
-                  </tr>
-                  <tr>
-                    <td>Contoh</td>
-                    <td>:</td>
-                    <td><b>1234_Rian Ardianto_Transportasi_Januari</b></td>
-                  </tr>
-                </table> -->
-                <li>Pemberkasan dilaksanakan setelah dinyatakan <b>LULUS SELEKSI</b></li>
-              </ul>
+                  <!-- Fakultas Ekonomi Bisnis -->
+                  <h3>Fakultas Ekonomi Bisnis</h3>
+                  <ul>
+                    <li>
+                      <div class="program-header">
+                        <span>Perdagangan Internasional</span>
+                        <button class="toggle-btn">+</button>
+                      </div>
+                      <div class="details">
+                        <p>Syarat:</p>
+                        <p>Bla bla bla</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="program-header">
+                        <span>Bisnis Digital</span>
+                        <button class="toggle-btn">+</button>
+                      </div>
+                      <div class="details">
+                        <p>Syarat:</p>
+                        <p>Bla bla bla</p>
+                      </div>
+                    </li>
+                  </ul>
 
-              
-               <center>
-                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>daftar">
-                <i class="fa fa-sign-in"></i>
-                Daftar Sekarang!</a>
-              </center>
+                  <!-- Fakultas Teknik -->
+                  <h3>Fakultas Teknik</h3>
+                  <ul>
+                    <li>
+                      <div class="program-header">
+                        <span>Teknik Transportasi Laut</span>
+                        <button class="toggle-btn">+</button>
+                      </div>
+                      <div class="details">
+                        <p>Syarat:</p>
+                        <p>Bla bla bla</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="program-header">
+                        <span>Teknik Mesin</span>
+                        <button class="toggle-btn">+</button>
+                      </div>
+                      <div class="details">
+                        <p>Syarat:</p>
+                        <p>Bla bla bla</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="program-header">
+                        <span>Transportasi</span>
+                        <button class="toggle-btn">+</button>
+                      </div>
+                      <div class="details">
+                        <p>Syarat:</p>
+                        <p>Bla bla bla</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+
             </div>
           </div>
         </div>
@@ -1153,6 +1182,21 @@
         }, 0);
     });
         })(jQuery);
+
+
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+          button.addEventListener('click', () => {
+            const details = button.parentElement.nextElementSibling;
+            const isOpen = details.style.display === 'block';
+
+            // Toggle the display of the details
+            details.style.display = isOpen ? 'none' : 'block';
+
+            // Update the button text
+            button.textContent = isOpen ? '+' : '-';
+          });
+        });
+
     </script>
 
   </body>

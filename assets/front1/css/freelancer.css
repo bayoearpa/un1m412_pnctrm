@@ -389,3 +389,62 @@ a {
 .rounded-image {
   border-radius: 15px; /* Sudut tumpul */
 }
+
+
+.program-list {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.program-list h3 {
+  color: #01317d;
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.program-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.toggle-btn {
+  background-color: #01317d;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #0a459e;
+}
+
+.details {
+  display: none; /* Initially hidden */
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-left: 4px solid #01317d;
+}
