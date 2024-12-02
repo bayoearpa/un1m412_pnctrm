@@ -332,11 +332,11 @@
 <li> Belum menikah dan sanggup tidak menikah selama masa pendidikan yang dibuktikan dengan surat keterangan belum pernah menikah dari Kelurahan;</li>
 <li> Tinggi badan minimal Pria 160 cm dan Wanita 155 cm;</li>
 <li>Berijazah:</li> 
-<ul>
-  <li>a. SMA/MA IPA sederajat, dengan wajib melampirkan foto copy rapor kelas 10, 11 dan 12. </li>
-  <li>b. Sekolah  Menengah  Kejuruan  (SMK)  Pelayaran  yang telah memiliki approval Program Studi Ahli Teknika Tingkat (ATT) IV.</li> 
-  <li>c. SMK   jurusan   otomotif,   listrik,   elektronika,  teknik pedingin dan tata udara, teknik perkapalan program keahlian instalasi permesinan kapal dan teknik listrik kapal serta jurusan instrumentasi industri program keahlian kontrol proses dan kontrol mekanik yang dibuktikan dengan foto copy ijazah yang telah dilegalisir dari instansi pemerintah dan pejabat yang berwenang.</li> 
-</ul>
+<ol>
+  <li> SMA/MA IPA sederajat, dengan wajib melampirkan foto copy rapor kelas 10, 11 dan 12. </li>
+  <li> Sekolah  Menengah  Kejuruan  (SMK)  Pelayaran  yang telah memiliki approval Program Studi Ahli Teknika Tingkat (ATT) IV.</li> 
+  <li> SMK   jurusan   otomotif,   listrik,   elektronika,  teknik pedingin dan tata udara, teknik perkapalan program keahlian instalasi permesinan kapal dan teknik listrik kapal serta jurusan instrumentasi industri program keahlian kontrol proses dan kontrol mekanik yang dibuktikan dengan foto copy ijazah yang telah dilegalisir dari instansi pemerintah dan pejabat yang berwenang.</li> 
+</ol>
 <li>Surat Keterangan Catatan Kepolisian (SKCK);</li> 
 <li>Surat   keterangan   bebas   narkoba   dari   rumah   sakit pemerintah dan kepolisian;</li> 
 <li>Akte kelahiran/Surat Kenal Lahir;</li> 
