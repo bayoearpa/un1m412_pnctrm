@@ -266,7 +266,7 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <h2 class="text-secondary text-uppercase mb-0  text-center">FAKULTAS KEMARITIMAN</h2>
-          <section class="program-list py-5">
+         <section class="program-list py-5">
   <div class="container">
     <!-- Fakultas Kemaritiman -->
     <h3 class="faculty-header mb-4">Fakultas Kemaritiman</h3>
@@ -274,10 +274,10 @@
       <!-- KPN -->
       <div class="accordion-item mb-3">
         <h3 class="accordion-header d-flex justify-content-between align-items-center">
-          <button class="btn btn-link text-decoration-none text-dark w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKPN" aria-expanded="true" aria-controls="collapseKPN">
+          <button class="btn btn-link text-decoration-none text-dark w-100 text-start d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKPN" aria-expanded="true" aria-controls="collapseKPN">
             KPN
           </button>
-          <span class="toggle-icon text-primary">+</span>
+          <span class="toggle-icon text-primary" data-bs-toggle="collapse" data-bs-target="#collapseKPN">+</span>
         </h3>
         <div id="collapseKPN" class="accordion-collapse collapse" data-bs-parent="#maritimeAccordion">
           <div class="accordion-body">
@@ -289,47 +289,12 @@
       <!-- Teknika -->
       <div class="accordion-item mb-3">
         <h3 class="accordion-header d-flex justify-content-between align-items-center">
-          <button class="btn btn-link text-decoration-none text-dark w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTeknika" aria-expanded="false" aria-controls="collapseTeknika">
+          <button class="btn btn-link text-decoration-none text-dark w-100 text-start d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTeknika" aria-expanded="false" aria-controls="collapseTeknika">
             Teknika
           </button>
-          <span class="toggle-icon text-primary">+</span>
+          <span class="toggle-icon text-primary" data-bs-toggle="collapse" data-bs-target="#collapseTeknika">+</span>
         </h3>
         <div id="collapseTeknika" class="accordion-collapse collapse" data-bs-parent="#maritimeAccordion">
-          <div class="accordion-body">
-            <p><strong>Syarat:</strong></p>
-            <p>Bla bla bla</p>
-          </div>
-        </div>
-      </div>
-      <!-- Nautika -->
-      <div class="accordion-item mb-3">
-        <h3 class="accordion-header d-flex justify-content-between align-items-center">
-          <button class="btn btn-link text-decoration-none text-dark w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNautika" aria-expanded="false" aria-controls="collapseNautika">
-            Nautika
-          </button>
-          <span class="toggle-icon text-primary">+</span>
-        </h3>
-        <div id="collapseNautika" class="accordion-collapse collapse" data-bs-parent="#maritimeAccordion">
-          <div class="accordion-body">
-            <p><strong>Syarat:</strong></p>
-            <p>Bla bla bla</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Fakultas Ekonomi Bisnis -->
-    <h3 class="faculty-header my-4">Fakultas Ekonomi Bisnis</h3>
-    <div class="accordion" id="businessAccordion">
-      <!-- Perdagangan Internasional -->
-      <div class="accordion-item mb-3">
-        <h3 class="accordion-header d-flex justify-content-between align-items-center">
-          <button class="btn btn-link text-decoration-none text-dark w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePI" aria-expanded="true" aria-controls="collapsePI">
-            Perdagangan Internasional
-          </button>
-          <span class="toggle-icon text-primary">+</span>
-        </h3>
-        <div id="collapsePI" class="accordion-collapse collapse" data-bs-parent="#businessAccordion">
           <div class="accordion-body">
             <p><strong>Syarat:</strong></p>
             <p>Bla bla bla</p>
@@ -1152,21 +1117,16 @@
         })(jQuery);
 
 
-      // document.querySelectorAll('.program-header').forEach(header => {
-      //   header.addEventListener('click', () => {
-      //     const details = header.nextElementSibling;
-      //     const toggleIcon = header.querySelector('.toggle-icon');
-      //     const isOpen = details.style.display === 'block';
 
-      //     // Toggle detail section visibility
-      //     details.style.display = isOpen ? 'none' : 'block';
+  document.querySelectorAll(".accordion-item").forEach((item) => {
+    const button = item.querySelector("button");
+    const icon = item.querySelector(".toggle-icon");
 
-      //     // Change toggle icon
-      //     toggleIcon.textContent = isOpen ? '+' : '-';
-      //   });
-      // });
-
-
+    button.addEventListener("click", () => {
+      const isExpanded = button.getAttribute("aria-expanded") === "true";
+      icon.textContent = isExpanded ? "+" : "-";
+    });
+  });
 
 
     </script>
