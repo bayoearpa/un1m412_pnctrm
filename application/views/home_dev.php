@@ -367,7 +367,23 @@
         <div id="collapseNautika" class="collapse" data-parent="#maritimeAccordion">
           <div class="card-body">
             <p><strong>Syarat:</strong></p>
-            <p>Bla bla bla</p>
+            <ul>
+           <li> Usia maksimum 23 tahun;</li>
+<li> Pria atau wanita;</li> 
+<li> Belum menikah dan sanggup tidak menikah selama masa pendidikan yang dibuktikan dengan surat keterangan belum pernah menikah dari Kelurahan;</li> 
+<li> Tinggi badan minimal Pria 160 cm dan Wanita 155 cm;</li>
+<li> Berijazah:</li> 
+<ol type="a">
+  <li> SMA/MA IPA/sederajat, dengan wajib melampirkan foto copy rapor kelas 10, 11 dan 12;</li>
+  <li>Sekolah  Menengah  Kejuruan  (SMK)  Pelayaran  yang telah  memiliki  approval program  studi  Ahli  Nautika Tingkat (ANT) IV.</li> 
+  </ol>
+<li> Surat Keterangan Catatan Kepolisian (SKCK);</li> 
+<li> Surat   keterangan   bebas   narkoba   dari   rumah   sakit pemerintah dan kepolisian;</li>
+<li> Akte kelahiran/Surat Kenal Lahir;</li>
+<li> Kartu Tanda Penduduk (KTP) atau tanda bukti diri lainnya yang sah;</li>
+<li> Lulus seleksi penerimaan calon peserta didik.</li>
+<li> Wajib Asrama taruna/taruni</li>
+</ul>
           </div>
         </div>
       </div>
@@ -391,7 +407,17 @@
         <div id="collapseMplm" class="collapse" data-parent="#maritimeAccordion">
           <div class="card-body">
             <p><strong>Syarat:</strong></p>
-            <p>Bla bla bla</p>
+            <ul>
+            <li> Sanggup tidak menikah selama masa pendidikan dengan melampirkan surat keterangan belum menikah dari Kelurahan</li>
+            <li> Foto copy ijazah yang dilegalisir</li>
+            <li> Foto copy KTP</li>
+            <li> SKCK (Surat Keterangan Catatan Kepolisian) asli</li>
+            <li> Foto copy Akte Kelahiran</li>
+            <li> Foto hitam putih ukuran 3 x 4 sebanyak 2 lembar</li>
+            <li> Wajib Asrama untuk Taruna TEKNIKA dan NAUTIKA</li>
+            <li> Wajib Asrama untuk Taruni (semua jurusan)</li>
+            <li> Lulusan SMA/MA/SMK seluruh jurusan</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -399,7 +425,11 @@
     </div>
   </div>
 </section>
-
+              <center>
+                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>daftar">
+                <i class="fa fa-sign-in"></i>
+                Daftar Sekarang!</a>
+              </center>
             </div>
           </div>
         </div>
@@ -415,75 +445,86 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0  text-center">D3 TEKNIKA</h2>
-              <!-- <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/cake.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p> -->
-               <!-- <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/t1.png" alt="">
-               <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/t2.png" alt=""> -->
-             <p><i class="fa fa-question-circle"></i>Syarat :</p>
-              <ul>
-                <li>Pria atau wanita</li>
-                <li>Usia max 23 tahun pada bulan September 2025.</li>
-                <li>Pernyataan sanggup tidak menikah selama masa pendidikan.</li>
-                <li>Surat keterangan belum menikah dari lurah.</li> 
-                <li>Tinggi badan minimal Pria 160 Cm dan Wanita 155 Cm.</li>
-                <li>Foto Copy Ijasah berlegalisir :</li>
-                <ul>
-                  <li>SMA atau Madrasah Aliyah (MA) – IPA.</li>
-                  <li>SMK – Pelayaran.</li>
-                </ul>
-                <li>SMK/MAK jurusan teknik mesin , teknik mekatronika, teknik elektro (teknik elektronika industri, teknik mekatronika, kecuali tekni audio video), teknik ketenagalistrikan, teknik pendinginan dan tata udara, teknik perkapalan untuk program keahlian instalasi permesinan kapal dan teknik instrumentasi industri.
-                </li>
-                <li>Surat Keterangan Catatan Kepolisian ( SKCK).</li> 
-                <li>Pas photo hitam putih ukuran 3x4 sebanyak 2 (dua) lembar.</li> 
-                <li>Copy Surat kenal lahir / akte kelahiran.</li> 
-                <li>Copy tanda pengenal yang sah, KTP atau SIM.</li> 
-              </ul>
-              <p><i class="fa fa-warning"></i>Peringatan :</p>
-             <ul>
-                <li>Pastikan anda melihat prasyarat sesuai <b>Program Studi (Prodi)</b> yang dipilih</li>
-                <li>Pendaftaran dapat dilaksanakan dengan datang langsung ke kampus biru UNIMAR AMNI SEMARANG maupun secara <i>online</i></li>
-               <!--  <li>Bagi pendaftar melalui <b><i>online</i></b> dapat melaksanakan pembayaran pendaftaran melalui Bank/ATM :</li>
-                <table>
-                  <tr>
-                    <td><b>BANK BNI</b></td>
-                    <td><b>:</b></td>
-                    <td><b>an. UNIMAR AMNI</b></td>
-                  </tr>
-                  <tr>
-                    <td><b>No. Rekening</b></td>
-                    <td><b>:</b></td>
-                    <td><b>0838810730</b></td>
-                  </tr>
-                  <tr>
-                    <td><b>Biaya Pendaftaran</b></td>
-                    <td><b>:</b></td>
-                    <td><b>Rp. 500.000,-</b></td>
-                  </tr>
-                </table> -->
-               <!--  <li>Bukti Pembayaran dapat dikirim melalui :</li>
-                <table>
-                  <tr>
-                    <td><b>No. WA</b></td>
-                    <td><b>:</b></td>
-                    <td><b>0822.46.900.800</b></td>
-                  </tr>
-                  <tr>
-                    <td colspan="3">Dengan mencantumkan informasi :</td>
-                  </tr>
-                  <tr>
-                    <td colspan="3"><b>No. Pendaftaran Online_Nama Pendaftar_Prodi yang dipilih_Periode Pendaftaran</b></td>
-                  </tr>
-                  <tr>
-                    <td>Contoh</td>
-                    <td>:</td>
-                    <td><b>1234_Rian Ardianto_Transportasi_Januari</b></td>
-                  </tr>
-                </table> -->
-                <li>Pemberkasan dilaksanakan setelah dinyatakan <b>LULUS SELEKSI</b></li>
-              </ul>
-              
+              <h2 class="text-secondary text-uppercase mb-0  text-center">FAKULTAS EKONOMI DAN BISNIS</h2>
+
+       <section class="program-list py-5">
+  <div class="container">
+    <!-- Fakultas Kemaritiman -->
+    <!-- <h3 class="faculty-header mb-4">Fakultas Kemaritiman</h3> -->
+    <div id="maritimeAccordion">
+      <!-- KPN -->
+      <div class="card mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <h3 class="mb-0">
+            <button
+              class="btn btn-link text-decoration-none text-dark"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseKPN"
+              aria-expanded="true"
+              aria-controls="collapseKPN"
+            >
+              S1 Perdagangan Internasional
+            </button>
+          </h3>
+          <span class="toggle-icon text-primary" data-toggle="collapse" data-target="#collapsePi">+</span>
+        </div>
+        <div id="collapsePi" class="collapse" data-parent="#maritimeAccordion">
+          <div class="card-body">
+            <p><strong>Syarat:</strong></p>
+            <ul>
+            <li> Sanggup tidak menikah selama masa pendidikan dengan melampirkan surat keterangan belum menikah dari Kelurahan</li>
+            <li> Foto copy ijazah yang dilegalisir</li>
+            <li> Foto copy KTP</li>
+            <li> SKCK (Surat Keterangan Catatan Kepolisian) asli</li>
+            <li> Foto copy Akte Kelahiran</li>
+            <li> Foto hitam putih ukuran 3 x 4 sebanyak 2 lembar</li>
+            <li> Wajib Asrama untuk Taruna TEKNIKA dan NAUTIKA</li>
+            <li> Wajib Asrama untuk Taruni (semua jurusan)</li>
+            <li> Lulusan SMA/MA/SMK seluruh jurusan</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+     
+       <!-- Nautika -->
+      <div class="card mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <h3 class="mb-0">
+            <button
+              class="btn btn-link text-decoration-none text-dark"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseTeknika"
+              aria-expanded="false"
+              aria-controls="collapseTeknika"
+            >
+              S1 Bisnis Digital
+            </button>
+          </h3>
+          <span class="toggle-icon text-primary" data-toggle="collapse" data-target="#collapseBd">+</span>
+        </div>
+        <div id="collapseBd" class="collapse" data-parent="#maritimeAccordion">
+          <div class="card-body">
+            <p><strong>Syarat:</strong></p>
+            <ul>
+            <li> Sanggup tidak menikah selama masa pendidikan dengan melampirkan surat keterangan belum menikah dari Kelurahan</li>
+            <li> Foto copy ijazah yang dilegalisir</li>
+            <li> Foto copy KTP</li>
+            <li> SKCK (Surat Keterangan Catatan Kepolisian) asli</li>
+            <li> Foto copy Akte Kelahiran</li>
+            <li> Foto hitam putih ukuran 3 x 4 sebanyak 2 lembar</li>
+            <li> Wajib Asrama untuk Taruna TEKNIKA dan NAUTIKA</li>
+            <li> Wajib Asrama untuk Taruni (semua jurusan)</li>
+            <li> Lulusan SMA/MA/SMK seluruh jurusan</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
               <center>
                 <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>daftar">
                 <i class="fa fa-sign-in"></i>
@@ -504,76 +545,156 @@
         <div class="container ">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0 text-center">D3 NAUTIKA</h2>
-             <!--  <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/circus.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a> -->
-                 <!-- <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/nt1.png" alt="">
-               <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/nt2.png" alt=""> -->
-               <p><i class="fa fa-question-circle"></i>Syarat :</p>
-                <ul>
-                <li>Pria atau wanita</li>
-                <li>Usia max 23 tahun pada bulan September 2024.</li>
-                <li>Pernyataan sanggup tidak menikah selama masa pendidikan.</li>
-                <li>Surat keterangan belum menikah dari lurah.</li> 
-                <li>Tinggi badan minimal Pria 160 Cm dan Wanita 155 Cm.</li>
-                <li>Foto Copy Ijasah berlegalisir :</li>
-                <ul>
-                  <li>SMA atau Madrasah Aliyah (MA) – IPA.</li>
-                  <li>SMK – Pelayaran.</li>
-                </ul> 
-                <li>Surat Keterangan Catatan Kepolisian ( SKCK).</li> 
-                <li>Pas photo hitam putih ukuran 3x4 sebanyak 2 (dua) lembar.</li> 
-                <li>Copy Surat kenal lahir / akte kelahiran.</li> 
-                <li>Copy tanda pengenal yang sah, KTP atau SIM.</li> 
-              </ul>
-              <p><i class="fa fa-warning"></i>Peringatan :</p>
+              <h2 class="text-secondary text-uppercase mb-0 text-center">FAKULTAS TEKNIK</h2>
+              <section class="program-list py-5">
+  <div class="container">
+    <!-- Fakultas Kemaritiman -->
+    <!-- <h3 class="faculty-header mb-4">Fakultas Kemaritiman</h3> -->
+    <div id="maritimeAccordion">
+      <!-- Nautika -->
+      <div class="card mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <h3 class="mb-0">
+            <button
+              class="btn btn-link text-decoration-none text-dark"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseTeknika"
+              aria-expanded="false"
+              aria-controls="collapseTeknika"
+            >
+              S1 Transportasi
+            </button>
+          </h3>
+          <span class="toggle-icon text-primary" data-toggle="collapse" data-target="#collapseTra">+</span>
+        </div>
+        <div id="collapseTra" class="collapse" data-parent="#maritimeAccordion">
+          <div class="card-body">
+            <p><strong>Syarat:</strong></p>
             <ul>
-               <li>Pastikan anda melihat prasyarat sesuai <b>Program Studi (Prodi)</b> yang dipilih</li>
-                <li>Pendaftaran dapat dilaksanakan dengan datang langsung ke kampus biru UNIMAR AMNI SEMARANG maupun secara <i>online</i></li>
-               <!--  <li>Bagi pendaftar  melalui <b><i>online</i></b> dapat melaksanakan pembayaran  pendaftaran melalui Bank/ATM :</li>
-                <table>
-                  <tr>
-                    <td><b>BANK BNI</b></td>
-                    <td><b>:</b></td>
-                    <td><b>an. UNIMAR AMNI</b></td>
-                  </tr>
-                  <tr>
-                    <td><b>No. Rekening</b></td>
-                    <td><b>:</b></td>
-                    <td><b>0838810730</b></td>
-                  </tr>
-                  <tr>
-                    <td><b>Biaya Pendaftaran</b></td>
-                    <td><b>:</b></td>
-                    <td><b>Rp. 500.000,-</b></td>
-                  </tr>
-                </table> -->
-               <!--  <li>Bukti Pembayaran dapat dikirim melalui :</li>
-                <table>
-                  <tr>
-                    <td><b>No. WA</b></td>
-                    <td><b>:</b></td>
-                    <td><b>0822.46.900.800</b></td>
-                  </tr>
-                  <tr>
-                    <td colspan="3">Dengan mencantumkan informasi :</td>
-                  </tr>
-                  <tr>
-                    <td colspan="3"><b>No. Pendaftaran Online_Nama Pendaftar_Prodi yang dipilih_Periode Pendaftaran</b></td>
-                  </tr>
-                  <tr>
-                    <td>Contoh</td>
-                    <td>:</td>
-                    <td><b>1234_Rian Ardianto_Transportasi_Januari</b></td>
-                  </tr>
-                </table> -->
-                <li>Pemberkasan dilaksanakan setelah dinyatakan <b>LULUS SELEKSI</b></li>
-              </ul>
-              
+            <li> Sanggup tidak menikah selama masa pendidikan dengan melampirkan surat keterangan belum menikah dari Kelurahan</li>
+            <li> Foto copy ijazah yang dilegalisir</li>
+            <li> Foto copy KTP</li>
+            <li> SKCK (Surat Keterangan Catatan Kepolisian) asli</li>
+            <li> Foto copy Akte Kelahiran</li>
+            <li> Foto hitam putih ukuran 3 x 4 sebanyak 2 lembar</li>
+            <li> Wajib Asrama untuk Taruna TEKNIKA dan NAUTIKA</li>
+            <li> Wajib Asrama untuk Taruni (semua jurusan)</li>
+            <li> Lulusan SMA/MA/SMK seluruh jurusan</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- KPN -->
+      <div class="card mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <h3 class="mb-0">
+            <button
+              class="btn btn-link text-decoration-none text-dark"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseKPN"
+              aria-expanded="true"
+              aria-controls="collapseKPN"
+            >
+              S1 Teknik Transportasi Laut
+            </button>
+          </h3>
+          <span class="toggle-icon text-primary" data-toggle="collapse" data-target="#collapseTtl">+</span>
+        </div>
+        <div id="collapseTtl" class="collapse" data-parent="#maritimeAccordion">
+          <div class="card-body">
+            <p><strong>Syarat:</strong></p>
+            <ul>
+            <li> Sanggup tidak menikah selama masa pendidikan dengan melampirkan surat keterangan belum menikah dari Kelurahan</li>
+            <li> Foto copy ijazah yang dilegalisir</li>
+            <li> Foto copy KTP</li>
+            <li> SKCK (Surat Keterangan Catatan Kepolisian) asli</li>
+            <li> Foto copy Akte Kelahiran</li>
+            <li> Foto hitam putih ukuran 3 x 4 sebanyak 2 lembar</li>
+            <li> Wajib Asrama untuk Taruna TEKNIKA dan NAUTIKA</li>
+            <li> Wajib Asrama untuk Taruni (semua jurusan)</li>
+            <li> Lulusan SMA/MA/SMK seluruh jurusan</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+     
+       <!-- Nautika -->
+      <div class="card mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <h3 class="mb-0">
+            <button
+              class="btn btn-link text-decoration-none text-dark"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseTeknika"
+              aria-expanded="false"
+              aria-controls="collapseTeknika"
+            >
+              S1 Teknik Mesin
+            </button>
+          </h3>
+          <span class="toggle-icon text-primary" data-toggle="collapse" data-target="#collapseTm">+</span>
+        </div>
+        <div id="collapseTm" class="collapse" data-parent="#maritimeAccordion">
+          <div class="card-body">
+            <p><strong>Syarat:</strong></p>
+            <ul>
+            <li> Sanggup tidak menikah selama masa pendidikan dengan melampirkan surat keterangan belum menikah dari Kelurahan</li>
+            <li> Foto copy ijazah yang dilegalisir</li>
+            <li> Foto copy KTP</li>
+            <li> SKCK (Surat Keterangan Catatan Kepolisian) asli</li>
+            <li> Foto copy Akte Kelahiran</li>
+            <li> Foto hitam putih ukuran 3 x 4 sebanyak 2 lembar</li>
+            <li> Wajib Asrama untuk Taruna TEKNIKA dan NAUTIKA</li>
+            <li> Wajib Asrama untuk Taruni (semua jurusan)</li>
+            <li> Lulusan SMA/MA/SMK seluruh jurusan</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+       <!-- Nautika -->
+      <div class="card mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <h3 class="mb-0">
+            <button
+              class="btn btn-link text-decoration-none text-dark"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseTeknika"
+              aria-expanded="false"
+              aria-controls="collapseTeknika"
+            >
+              S1 Teknik Keselamatan
+            </button>
+          </h3>
+          <span class="toggle-icon text-primary" data-toggle="collapse" data-target="#collapseTk">+</span>
+        </div>
+        <div id="collapseTk" class="collapse" data-parent="#maritimeAccordion">
+          <div class="card-body">
+            <p><strong>Syarat:</strong></p>
+            <ul>
+            <li> Sanggup tidak menikah selama masa pendidikan dengan melampirkan surat keterangan belum menikah dari Kelurahan</li>
+            <li> Foto copy ijazah yang dilegalisir</li>
+            <li> Foto copy KTP</li>
+            <li> SKCK (Surat Keterangan Catatan Kepolisian) asli</li>
+            <li> Foto copy Akte Kelahiran</li>
+            <li> Foto hitam putih ukuran 3 x 4 sebanyak 2 lembar</li>
+            <li> Wajib Asrama untuk Taruna TEKNIKA dan NAUTIKA</li>
+            <li> Wajib Asrama untuk Taruni (semua jurusan)</li>
+            <li> Lulusan SMA/MA/SMK seluruh jurusan</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</section>
                <center>
                 <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>daftar">
                 <i class="fa fa-sign-in"></i>
