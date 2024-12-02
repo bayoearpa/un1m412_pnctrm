@@ -399,9 +399,9 @@ a {
 
 .program-list h3 {
   color: #01317d;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-weight: bold;
-  border-left: 4px solid #fcc400;
+  border-left: 5px solid #fcc400;
   padding-left: 10px;
 }
 
@@ -411,7 +411,7 @@ ul {
 }
 
 li {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
@@ -422,42 +422,40 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 16px;
-  font-weight: bold;
   background-color: #01317d;
   color: white;
   padding: 10px 15px;
-}
-
-.program-header i {
-  color: #fcc400;
-}
-
-.toggle-btn {
-  background-color: #fcc400;
-  color: #01317d;
-  border: none;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  font-size: 18px;
-  font-weight: bold;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.toggle-btn:hover {
-  background-color: #ffcc00;
-  transform: scale(1.1);
+.program-header:hover {
+  background-color: #01509c;
+}
+
+.program-info {
+  display: flex;
+  align-items: center;
+}
+
+.program-info img {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.toggle-icon {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fcc400;
+  transition: transform 0.3s ease;
+}
+
+.toggle-icon.open {
+  transform: rotate(45deg); /* Ganti + dengan - */
 }
 
 .details {
-  display: none; /* Initially hidden */
-  margin-top: 10px;
+  display: none; /* Default tertutup */
   padding: 15px;
   background-color: #f8f9fa;
   color: #333;
@@ -472,5 +470,6 @@ li {
     opacity: 1;
   }
 }
+
 
 /*tampilan dalam modal*/

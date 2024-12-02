@@ -266,15 +266,18 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <h2 class="text-secondary text-uppercase mb-0  text-center">FAKULTAS KEMARITIMAN</h2>
-              <section class="program-list">
+            <section class="program-list">
   <div class="container">
     <!-- Fakultas Kemaritiman -->
     <h3>Fakultas Kemaritiman</h3>
     <ul>
       <li>
         <div class="program-header">
-          <span><i class="fa fa-ship mr-2"></i>KPN</span>
-          <button class="toggle-btn">+</button>
+          <div class="program-info">
+            <img src="<?php echo base_url() ?>assets/front1/img/icon_kpn.png" alt="KPN" class="program-icon">
+            <span>KPN</span>
+          </div>
+          <span class="toggle-icon">+</span>
         </div>
         <div class="details">
           <p><strong>Syarat:</strong></p>
@@ -283,8 +286,11 @@
       </li>
       <li>
         <div class="program-header">
-          <span><i class="fa fa-anchor mr-2"></i>Teknika</span>
-          <button class="toggle-btn">+</button>
+          <div class="program-info">
+            <img src="<?php echo base_url() ?>assets/front1/img/icon_teknika.png" alt="Teknika" class="program-icon">
+            <span>Teknika</span>
+          </div>
+          <span class="toggle-icon">+</span>
         </div>
         <div class="details">
           <p><strong>Syarat:</strong></p>
@@ -293,18 +299,11 @@
       </li>
       <li>
         <div class="program-header">
-          <span><i class="fa fa-compass mr-2"></i>Nautika</span>
-          <button class="toggle-btn">+</button>
-        </div>
-        <div class="details">
-          <p><strong>Syarat:</strong></p>
-          <p>Bla bla bla</p>
-        </div>
-      </li>
-      <li>
-        <div class="program-header">
-          <span><i class="fa fa-map mr-2"></i>D4 MPLM</span>
-          <button class="toggle-btn">+</button>
+          <div class="program-info">
+            <img src="<?php echo base_url() ?>assets/front1/img/icon_nautika.png" alt="Nautika" class="program-icon">
+            <span>Nautika</span>
+          </div>
+          <span class="toggle-icon">+</span>
         </div>
         <div class="details">
           <p><strong>Syarat:</strong></p>
@@ -312,59 +311,16 @@
         </div>
       </li>
     </ul>
-
     <!-- Fakultas Ekonomi Bisnis -->
     <h3>Fakultas Ekonomi Bisnis</h3>
     <ul>
       <li>
         <div class="program-header">
-          <span><i class="fa fa-globe mr-2"></i>Perdagangan Internasional</span>
-          <button class="toggle-btn">+</button>
-        </div>
-        <div class="details">
-          <p><strong>Syarat:</strong></p>
-          <p>Bla bla bla</p>
-        </div>
-      </li>
-      <li>
-        <div class="program-header">
-          <span><i class="fa fa-chart-line mr-2"></i>Bisnis Digital</span>
-          <button class="toggle-btn">+</button>
-        </div>
-        <div class="details">
-          <p><strong>Syarat:</strong></p>
-          <p>Bla bla bla</p>
-        </div>
-      </li>
-    </ul>
-
-    <!-- Fakultas Teknik -->
-    <h3>Fakultas Teknik</h3>
-    <ul>
-      <li>
-        <div class="program-header">
-          <span><i class="fa fa-cogs mr-2"></i>Teknik Transportasi Laut</span>
-          <button class="toggle-btn">+</button>
-        </div>
-        <div class="details">
-          <p><strong>Syarat:</strong></p>
-          <p>Bla bla bla</p>
-        </div>
-      </li>
-      <li>
-        <div class="program-header">
-          <span><i class="fa fa-tools mr-2"></i>Teknik Mesin</span>
-          <button class="toggle-btn">+</button>
-        </div>
-        <div class="details">
-          <p><strong>Syarat:</strong></p>
-          <p>Bla bla bla</p>
-        </div>
-      </li>
-      <li>
-        <div class="program-header">
-          <span><i class="fa fa-traffic-light mr-2"></i>Transportasi</span>
-          <button class="toggle-btn">+</button>
+          <div class="program-info">
+            <img src="<?php echo base_url() ?>assets/front1/img/icon_perdagangan.png" alt="Perdagangan Internasional" class="program-icon">
+            <span>Perdagangan Internasional</span>
+          </div>
+          <span class="toggle-icon">+</span>
         </div>
         <div class="details">
           <p><strong>Syarat:</strong></p>
@@ -1185,18 +1141,21 @@
         })(jQuery);
 
 
-       document.querySelectorAll('.toggle-btn').forEach(button => {
-          button.addEventListener('click', () => {
-            const details = button.parentElement.nextElementSibling;
-            const isOpen = details.style.display === 'block';
+      document.querySelectorAll('.program-header').forEach(header => {
+        header.addEventListener('click', () => {
+          const details = header.nextElementSibling;
+          const toggleIcon = header.querySelector('.toggle-icon');
+          const isOpen = details.style.display === 'block';
 
-            // Toggle the display of the details
-            details.style.display = isOpen ? 'none' : 'block';
+          // Toggle detail section visibility
+          details.style.display = isOpen ? 'none' : 'block';
 
-            // Update the button text
-            button.textContent = isOpen ? '+' : '-';
-          });
+          // Change toggle icon
+          toggleIcon.classList.toggle('open');
+          toggleIcon.textContent = isOpen ? '+' : '-';
         });
+      });
+
 
 
     </script>
