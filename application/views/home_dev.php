@@ -136,7 +136,8 @@
           nb : segala bentuk pembayaran yang sudah disetorkan ke unimar amni tidak dapat ditarik kembali dengan alasan apapun.
         </p>
         <div class="col-lg-12 text-center">
-          <a class="btn-custom btn-xl" href="<?php echo base_url() ?>biaya_download" target="_blank">
+          <!-- <a class="btn-custom btn-xl" href="<?php //echo base_url() ?>biaya_download" target="_blank"> -->
+          <a class="btn-custom btn-xl portfolio-item" href="#portfolio-modal-4" target="_blank">
             <i class="fa fa-money mr-2"></i>
             Biaya Pendidikan
           </a>
