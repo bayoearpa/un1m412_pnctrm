@@ -33,7 +33,21 @@
                   <td><?php echo $c->tl ?></td>
                   <td><?php echo $c->tgl_l ?></td>
                   <td><?php echo $c->nama_i?></td>
-                  <td> <a class="btn btn-primary btn-sm" href="<?php echo base_url().'bau/validasi_cek/'.$c->no; ?>"><i class="fa fa-eye"></i>Lihat</a></td>
+                  <td>
+
+                  <?php 
+                  $where = array(
+                  'no' => $c->no,
+                  'aktif' => "1"       
+                  );
+                  $cek=$this->m_registrasi->get_data($where,'tbl_catar_validasi_2025')->row();
+                   ?>
+                  <?php 
+                  if ($cek > "0"){ ?>
+                    <a class="btn btn-primary btn-sm" href="<?php echo base_url().'bau/validasi_cek/'.$c->no; ?>"><i class="fa fa-eye"></i>Lihat</a>
+                  <?php }else{ ?>
+                    
+                  <?php }?> </td>
                   <td>
 
                   <?php 
