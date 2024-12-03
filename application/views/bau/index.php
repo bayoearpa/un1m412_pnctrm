@@ -33,7 +33,7 @@
                   <td><?php echo $c->tl ?></td>
                   <td><?php echo $c->tgl_l ?></td>
                   <td><?php echo $c->nama_i?></td>
-                  <td> <a class="btn btn-success btn-sm" href="<?php echo base_url().'bau/validasi_cek/'.$c->no; ?>"><i class="fa fa-check-circle"></i>Lihat</a></td>
+                  <td> <a class="btn btn-primary btn-sm" href="<?php echo base_url().'bau/validasi_cek/'.$c->no; ?>"><i class="fa fa-eye"></i>Lihat</a></td>
                   <td>
 
                   <?php 
