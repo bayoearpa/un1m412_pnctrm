@@ -17,6 +17,7 @@
                   <th>Tempat Lahir</th>
                   <th>Tanggal Lahir</th>
                   <th>Nama Ibu</th>
+                  <th>Lihat</th>
                   <th>Validasi</th>
                 </tr>
                 </thead>
@@ -32,6 +33,7 @@
                   <td><?php echo $c->tl ?></td>
                   <td><?php echo $c->tgl_l ?></td>
                   <td><?php echo $c->nama_i?></td>
+                  <td> <a class="btn btn-success btn-sm" href="<?php echo base_url().'bau/validasi/'.$c->no; ?>"><i class="fa fa-check-circle"></i>Lihat</a></td>
                   <td>
 
                   <?php 
@@ -54,11 +56,12 @@
                 <tfoot>
                 <tr>
                  <th>No.</th>
-                 <th>No. Pendf.</th>
+                  <th>No. Pendf.</th>
                   <th>Nama</th>
                   <th>Tempat Lahir</th>
                   <th>Tanggal Lahir</th>
                   <th>Nama Ibu</th>
+                  <th>Lihat</th>
                   <th>Validasi</th>
                 </tr>
                 </tfoot>
