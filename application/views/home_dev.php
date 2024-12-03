@@ -1236,20 +1236,7 @@
       </div>
     </div>
 
-    <!-- whatsapp -->
-
-    <div class="whatsapp-logo">
-      <a href="https://web.whatsapp.com/send?phone=+6285161610180" target="_blank">
-        <img src="<?php echo base_url() ?>assets/front1/img/logo_wa.png" alt="WhatsApp" class="whatsapp-icon">
-      </a>
-      <div class="qr-code">
-        <img src="<?php echo base_url() ?>assets/front1/img/qrcode_wa.jpg" alt="Scan QR Code">
-        <span>Scan Me</span>
-      </div>
-    </div>
-
-
-    <!-- Bootstrap core JavaScript -->
+   <!-- Bootstrap core JavaScript -->
     <script src="<?php echo base_url() ?>assets/front1/vendor/jquery/jquery.min.js"></script>
     <script src="<?php echo base_url() ?>assets/front1/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -1295,7 +1282,18 @@
 
 
     </script>
+    
+    <!-- whatsapp -->
 
+    <div class="whatsapp-logo">
+      <a href="https://web.whatsapp.com/send?phone=+6285161610180" target="_blank">
+        <img src="<?php echo base_url() ?>assets/front1/img/logo_wa.png" alt="WhatsApp" class="whatsapp-icon">
+      </a>
+      <div class="qr-code">
+        <img src="<?php echo base_url() ?>assets/front1/img/qrcode_wa.jpg" alt="Scan QR Code">
+        <span>Scan Me</span>
+      </div>
+    </div>
   </body>
 
 </html>
