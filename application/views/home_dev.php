@@ -141,11 +141,11 @@
             <i class="fa fa-money mr-2"></i>
             Biaya Pendidikan
           </a>
-          <a class="btn-custom btn-xl" href="<?php echo base_url() ?>tutorial_download" target="_blank">
+          <a class="btn-custom btn-xl portfolio-item" href="<?php echo base_url() ?>tutorial_download" target="_blank">
             <i class="fa fa-book mr-2"></i>
             Tutorial Pendaftaran
           </a>
-          <a class="btn-custom btn-xl" href="https://linktr.ee/pmbunimaramni" target="_blank">
+          <a class="btn-custom btn-xl portfolio-item" href="https://linktr.ee/pmbunimaramni" target="_blank">
             <i class="fa fa-info mr-2"></i>
             Informasi Selengkapnya
           </a>
