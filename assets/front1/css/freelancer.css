@@ -438,3 +438,57 @@ a {
 
 
 /*tampilan dalam modal*/
+
+/*whatsapp*/
+.whatsapp-logo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 1000;
+}
+
+.whatsapp-logo .whatsapp-icon {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-logo .qr-code {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  display: none;
+  text-align: center;
+  width: 150px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+}
+
+.whatsapp-logo .qr-code img {
+  max-width: 100%;
+  height: auto;
+}
+
+.whatsapp-logo .qr-code span {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #333;
+}
+
+.whatsapp-logo:hover .qr-code {
+  display: block;
+}
+
+.whatsapp-logo .whatsapp-icon:hover {
+  transform: scale(1.1);
+}
+
+/*whatsapp*/

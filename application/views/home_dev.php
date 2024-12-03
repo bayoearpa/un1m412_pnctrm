@@ -356,9 +356,9 @@
               class="btn btn-link text-decoration-none text-dark"
               type="button"
               data-toggle="collapse"
-              data-target="#collapseTeknika"
+              data-target="#collapseNautika"
               aria-expanded="false"
-              aria-controls="collapseTeknika"
+              aria-controls="collapseNautika"
             >
               D3 Nautika
             </button>
@@ -396,9 +396,9 @@
               class="btn btn-link text-decoration-none text-dark"
               type="button"
               data-toggle="collapse"
-              data-target="#collapseTeknika"
+              data-target="#collapseMplm"
               aria-expanded="false"
-              aria-controls="collapseTeknika"
+              aria-controls="collapseMplm"
             >
               D4 Manajemen Pelabuhan dan Logistik Maritim
             </button>
@@ -461,9 +461,9 @@
               class="btn btn-link text-decoration-none text-dark"
               type="button"
               data-toggle="collapse"
-              data-target="#collapseKPN"
+              data-target="#collapsePi"
               aria-expanded="true"
-              aria-controls="collapseKPN"
+              aria-controls="collapsePi"
             >
               S1 Perdagangan Internasional
             </button>
@@ -496,9 +496,9 @@
               class="btn btn-link text-decoration-none text-dark"
               type="button"
               data-toggle="collapse"
-              data-target="#collapseTeknika"
+              data-target="#collapseBd"
               aria-expanded="false"
-              aria-controls="collapseTeknika"
+              aria-controls="collapseBd"
             >
               S1 Bisnis Digital
             </button>
@@ -560,9 +560,9 @@
               class="btn btn-link text-decoration-none text-dark"
               type="button"
               data-toggle="collapse"
-              data-target="#collapseTeknika"
+              data-target="#collapseTra"
               aria-expanded="false"
-              aria-controls="collapseTeknika"
+              aria-controls="collapseTra"
             >
               S1 Transportasi
             </button>
@@ -594,9 +594,9 @@
               class="btn btn-link text-decoration-none text-dark"
               type="button"
               data-toggle="collapse"
-              data-target="#collapseKPN"
+              data-target="#collapseTtl"
               aria-expanded="true"
-              aria-controls="collapseKPN"
+              aria-controls="collapseTtl"
             >
               S1 Teknik Transportasi Laut
             </button>
@@ -629,9 +629,9 @@
               class="btn btn-link text-decoration-none text-dark"
               type="button"
               data-toggle="collapse"
-              data-target="#collapseTeknika"
+              data-target="#collapseTm"
               aria-expanded="false"
-              aria-controls="collapseTeknika"
+              aria-controls="collapseTm"
             >
               S1 Teknik Mesin
             </button>
@@ -664,9 +664,9 @@
               class="btn btn-link text-decoration-none text-dark"
               type="button"
               data-toggle="collapse"
-              data-target="#collapseTeknika"
+              data-target="#collapseTk"
               aria-expanded="false"
-              aria-controls="collapseTeknika"
+              aria-controls="collapseTk"
             >
               S1 Teknik Keselamatan
             </button>
@@ -1235,6 +1235,19 @@
         </div>
       </div>
     </div>
+
+    <!-- whatsapp -->
+
+    <div class="whatsapp-logo">
+      <a href="https://web.whatsapp.com/send?phone=+6285161610180" target="_blank">
+        <img src="<?php echo base_url() ?>assets/front1/img/logo_wa.png" alt="WhatsApp" class="whatsapp-icon">
+      </a>
+      <div class="qr-code">
+        <img src="<?php echo base_url() ?>assets/front1/img/qrcode_wa.jpg" alt="Scan QR Code">
+        <span>Scan Me</span>
+      </div>
+    </div>
+
 
     <!-- Bootstrap core JavaScript -->
     <script src="<?php echo base_url() ?>assets/front1/vendor/jquery/jquery.min.js"></script>
