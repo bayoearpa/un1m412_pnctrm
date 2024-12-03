@@ -717,76 +717,13 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0  text-center">S1 TRANSPORTASI</h2>
-              <!-- <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/game.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a> -->
-               <!--  <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/tra1.png" alt="">
-               <img class="img-fluid mb-5" src="<?php //echo base_url() ?>assets/front1/img/flyer/tra2.png" alt=""> -->
-               <p><i class="fa fa-question-circle"></i>Syarat :</p>
-                <ul>
-                <!-- <li>Usia max 23 tahun pada bulan September 2022.</li> -->
-               <li>Mengisi pendaftaran online di website : pmb.unimar-amni.ac.id</li>
-                <li>Lulusan SMA/MA/SMK</li>
-                <li>Bagi MAHATAR reguler sanggup tidak menikah selama masa pendidikan dengan melampirkan surat keterangan belum menikah dari kelurahan</li>
-                <li>Fotokopi ijasah yang dilegalisir</li>
-                <li>Fotokopi KTP</li>
-                <li>Fotokopi Kartu Keluarga</li>
-                <li>SKCK(Surat Keterangan Catatan Kepolisian)</li>
-                <li>Fotokopi akte kelahiran</li>
-                <li>Fotokopi hitam putih ukuran 3 x 4 sebanyak 2 lembar</li>
-              </ul>
-              <p><i class="fa fa-warning"></i>Peringatan :</p>
-            <ul>
-               <li>Pastikan anda melihat prasyarat sesuai <b>Program Studi (Prodi)</b> yang dipilih</li>
-                <li>Pendaftaran dapat dilaksanakan dengan datang langsung ke kampus biru UNIMAR AMNI SEMARANG maupun secara <i>online</i></li>
-                <!-- <li>Bagi pendaftar melalui <b><i>online</i></b> dapat melaksanakan pembayaran  pendaftaran melalui Bank/ATM :</li>
-                <table>
-                  <tr>
-                    <td><b>BANK BNI</b></td>
-                    <td><b>:</b></td>
-                    <td><b>an. UNIMAR AMNI</b></td>
-                  </tr>
-                  <tr>
-                    <td><b>No. Rekening</b></td>
-                    <td><b>:</b></td>
-                    <td><b>0838810730</b></td>
-                  </tr>
-                  <tr>
-                    <td><b>Biaya Pendaftaran</b></td>
-                    <td><b>:</b></td>
-                    <td><b>Rp. 500.000,-</b></td>
-                  </tr>
-                </table> -->
-                <!-- <li>Bukti Pembayaran dapat dikirim melalui :</li>
-                <table>
-                  <tr>
-                    <td><b>No. WA</b></td>
-                    <td><b>:</b></td>
-                    <td><b>0822.46.900.800</b></td>
-                  </tr>
-                  <tr>
-                    <td colspan="3">Dengan mencantumkan informasi :</td>
-                  </tr>
-                  <tr>
-                    <td colspan="3"><b>No. Pendaftaran Online_Nama Pendaftar_Prodi yang dipilih_Periode Pendaftaran</b></td>
-                  </tr>
-                  <tr>
-                    <td>Contoh</td>
-                    <td>:</td>
-                    <td><b>1234_Rian Ardianto_Transportasi_Januari</b></td>
-                  </tr>
-                </table> -->
-                <li>Pemberkasan dilaksanakan setelah dinyatakan <b>LULUS SELEKSI</b></li>
-              </ul>
+              <img class="img-fluid rounded-image w-100" src="<?php echo base_url() ?>assets/front1/img/biaya_pendidikan_2025.png">
+              
               
                <center>
-                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>daftar">
+                <a class="btn btn-primary btn-lg rounded-pill" href="<?php echo base_url() ?>biaya_download" target="_blank">
                 <i class="fa fa-sign-in"></i>
-                Daftar Sekarang!</a>
+                Download File!</a>
               </center>
             </div>
           </div>
