@@ -140,6 +140,9 @@
 	</tr>
 </table>
 <br>
+<?php if ($c->jalur == "reguler" || $c->jalur == "gdr1") {
+	# code... ?>
+
 <table align="center" border="1" style="border: 1px solid black;border-collapse: collapse;" width="90%">
 	<tr>
 		<td><center><b>KEGIATAN</b></center></td>
@@ -184,6 +187,7 @@
 	<li><small>Copy tanda pengenal yang sah, KTP atau SIM 1 lembar</small></li>
 	<li><small>Pas photo hitam putih ukuran 3x4 sebanyak 2  lembar</small></li>
 </ul>
+<?php }else{ }?>
 <!-- <p style="margin: 0px;padding: 0px;"><small>*Jika anda salah mengisi data anda dapat mengulanginya lagi dari awal. Simpanlah file pdf anda!!</small></p> -->
 <!-- <p style="margin: 0px;padding: 0px;"><small>*Bagi pendaftar  melalui <b><i>online</i></b> dapat melaksanakan pembayaran pendaftaran melalui Bank/ATM :</small></p>
                   <tr>
