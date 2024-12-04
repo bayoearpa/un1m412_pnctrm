@@ -81,6 +81,11 @@
                   </select>
       </div>
       <p id="jalurMessage"></p>
+      <p><b>Perlu diperhatikan !</b></p>
+      <ul>
+      <li>Kelas Reguler untuk pendaftar dari SMA/SMK/MA</li>
+      <li>Kelas Transfer/RPL untuk pendaftar dari D3 melanjutkan ke S1</li>
+      </ul>
       <div class="row">
         <!-- <div class="col-xs-8">
           <div class="checkbox icheck">
