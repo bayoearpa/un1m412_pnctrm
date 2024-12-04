@@ -19,5 +19,10 @@
                 }
             });
         });
+
+        function validateNumber(input) {
+            // Menghapus karakter selain angka
+            input.value = input.value.replace(/\D/g, '');
+        }
     });
 </script>

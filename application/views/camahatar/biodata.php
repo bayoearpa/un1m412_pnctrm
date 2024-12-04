@@ -107,8 +107,14 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Telp. / Hp</label>
-                  <input type="number" class="form-control" id="telp" name="telp" value="<?php echo $key->telp?>" placeholder="Masukan No. Telepon atau Hp Anda">
+                    <label for="telp">Telp. / Hp</label>
+                    <div class="input-group">
+                        <span class="input-group-addon">+62</span>
+                        <input type="tel" class="form-control" id="telp" name="telp" 
+                            value="<?php echo substr($key->telp, 0, 3) === '+62' ? substr($key->telp, 3) : $key->telp; ?>" 
+                            placeholder="Masukan No. Telepon atau Hp Anda" 
+                            maxlength="15" oninput="validateNumber(this)">
+                    </div>
                 </div>
                 <!-- <div class="form-group">
                   <label>Kategori Sekolah</label>
@@ -339,8 +345,14 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Telp. / Hp</label>
-                  <input type="text" class="form-control" id="telp" name="telp" placeholder="Masukan No. Telepon atau Hp Anda" value="<?php echo $key->telp?>" required>
+                    <label for="telp">Telp. / Hp</label>
+                    <div class="input-group">
+                        <span class="input-group-addon">+62</span>
+                        <input type="tel" class="form-control" id="telp" name="telp" 
+                            value="<?php echo substr($key->telp, 0, 3) === '+62' ? substr($key->telp, 3) : $key->telp; ?>" 
+                            placeholder="Masukan No. Telepon atau Hp Anda" 
+                            maxlength="15" oninput="validateNumber(this)">
+                    </div>
                 </div>
                 <div class="form-group">
                   <label>Kategori Sekolah</label>
