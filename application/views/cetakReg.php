@@ -1,6 +1,9 @@
 <style type="text/css">
-	td,li,p{
+	td,p{
 		font-size: 10px;
+	}
+	li{
+		font-size: 12px;
 	}
 	body{
 		margin-top: 0px;
@@ -173,7 +176,7 @@
 	<tr><td align="center" style="height: 100px;">Ketua PMB</td><td align="center">Calon MAHATAR</td></tr>
 	<tr><td><hr style="border-style: dotted;width: 50%;"></td><td><hr style="border-style: dotted;width: 50%;"></td></tr>
 </table>
-<p style="margin: 0px;padding: 0px;"><b>Catatan :</b></p>
+<p style="margin: 0px;padding: 0px;"><b>Berkas yang harus dibawa saat seleksi :</b></p>
 <ul>
 	<li><small>Copy Ijazah (Dilegalisir) 1 Lembar</small></li>
 	<li><small>SKCK (Surat Keterangan Catatan Kepolisian) asli</small></li>
