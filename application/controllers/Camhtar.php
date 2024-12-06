@@ -361,6 +361,7 @@ class Camhtar extends CI_Controller {
 		$telp = $this->input->post('telp');
 		$kategori_sek = $this->input->post('kategori_sek');
 		$prodi_lama = $this->input->post('prodi_lama');
+		$prodi_lama_lainnya = $this->input->post('prodi_lama_lainnya');
 		$thn_lulus = $this->input->post('thn_lulus');
 		$asek = $this->input->post('asek');
 		$alamat_sek = $this->input->post('alamat_sek');
@@ -440,6 +441,7 @@ class Camhtar extends CI_Controller {
 					'telp' => $telp,
 					'kategori_sek' => $kategori_sek,
 					'prodi_lama' => $prodi_lama,
+					'prodi_lama_lainnya' => $prodi_lama_lainnya,
 					'thn_lulus' => $thn_lulus,
 					'asek' => $asek,
 					'alamat_sek' => $alamat_sek,
