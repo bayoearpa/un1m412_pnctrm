@@ -19,8 +19,8 @@
                 }
             });
         });
-
-        function validateNumber(input) {
+    });
+     function validateNumber(input) {
             // Menghapus karakter selain angka
             input.value = input.value.replace(/\D/g, '');
         }
@@ -36,6 +36,5 @@
                 document.getElementById('prodi_lama_lainnya').value = ''; // Clear other input
             }
         }
-    });
 </script>
 
