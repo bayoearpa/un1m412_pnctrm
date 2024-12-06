@@ -33,7 +33,7 @@
                 otherInputContainer.style.display = 'block';
             } else {
                 otherInputContainer.style.display = 'none';
-                document.getElementById('prodi_lama_other').value = ''; // Clear other input
+                document.getElementById('prodi_lama_lainnya').value = ''; // Clear other input
             }
         }
     });

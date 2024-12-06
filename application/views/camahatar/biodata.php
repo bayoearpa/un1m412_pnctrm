@@ -391,7 +391,7 @@
 
             <div class="form-group" id="otherInputContainer" style="display: none;">
                 <label>Masukkan Jurusan SLTA/SMK Lainnya</label>
-                <input type="text" class="form-control" id="prodi_lama_other" name="prodi_lama_other" placeholder="Masukkan Jurusan Lainnya">
+                <input type="text" class="form-control" id="prodi_lama_lainnya" name="prodi_lama_lainnya" placeholder="Masukkan Jurusan Lainnya">
             </div>
                 <!-- /.form-group -->
                 <div class="form-group">
