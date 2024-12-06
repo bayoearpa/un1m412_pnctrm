@@ -24,5 +24,18 @@
             // Menghapus karakter selain angka
             input.value = input.value.replace(/\D/g, '');
         }
+
+        function toggleOtherInput() {
+            const select = document.getElementById('prodi_lama');
+            const otherInputContainer = document.getElementById('otherInputContainer');
+
+            if (select.value === 'other') {
+                otherInputContainer.style.display = 'block';
+            } else {
+                otherInputContainer.style.display = 'none';
+                document.getElementById('prodi_lama_other').value = ''; // Clear other input
+            }
+        }
     });
 </script>
+

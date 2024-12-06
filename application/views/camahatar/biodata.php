@@ -108,14 +108,17 @@
                 </div>
                 <div class="form-group">
                     <label for="telp">Telp. / Hp</label>
-                    <div class="input-group">
-                        <span class="input-group-addon">+62</span>
-                        <input type="tel" class="form-control" id="telp" name="telp" 
-                            value="<?php echo substr($key->telp, 0, 3) === '+62' ? substr($key->telp, 3) : $key->telp; ?>" 
-                            placeholder="Masukan No. Telepon atau Hp Anda" 
-                            maxlength="15" oninput="validateNumber(this)">
-                    </div>
+                    <input 
+                        type="tel" 
+                        class="form-control" 
+                        id="telp" 
+                        name="telp" 
+                        value="<?php echo preg_replace('/\D/', '', $key->telp); ?>" 
+                        placeholder="Masukan No. Telepon atau Hp Anda" 
+                        maxlength="15" 
+                        oninput="validateNumber(this)">
                 </div>
+
                 <!-- <div class="form-group">
                   <label>Kategori Sekolah</label>
                   <select class="form-control" name="kategori_sek" id="kategori_sek">
@@ -344,15 +347,17 @@
                   <option value="<?php echo $key->ktkb?>"><?php echo $getktkb; ?> </option>
                   </select>
                 </div>
-                <div class="form-group">
+               <div class="form-group">
                     <label for="telp">Telp. / Hp</label>
-                    <div class="input-group">
-                        <span class="input-group-addon">+62</span>
-                        <input type="tel" class="form-control" id="telp" name="telp" 
-                            value="<?php echo substr($key->telp, 0, 3) === '+62' ? substr($key->telp, 3) : $key->telp; ?>" 
-                            placeholder="Masukan No. Telepon atau Hp Anda" 
-                            maxlength="15" oninput="validateNumber(this)">
-                    </div>
+                    <input 
+                        type="tel" 
+                        class="form-control" 
+                        id="telp" 
+                        name="telp" 
+                        value="<?php echo preg_replace('/\D/', '', $key->telp); ?>" 
+                        placeholder="Masukan No. Telepon atau Hp Anda" 
+                        maxlength="15" 
+                        oninput="validateNumber(this)">
                 </div>
                 <div class="form-group">
                   <label>Kategori Sekolah</label>
@@ -364,15 +369,30 @@
                   </select>
                 </div>
                    <!-- /.form-group -->
-                <div class="form-group">
+               <!--  <div class="form-group">
                   <label>Jurusan SLTA/SMK</label>
                   <select class="form-control select2" id="prodi_lama" name="prodi_lama" style="width: 100%;" required>
-                    <option value="<?php echo $key->prodi_lama?>"><?php echo $key->prodi_lama ?> </option>
-                    <?php foreach ($jurusan as $j): ?>
-                      <option value="<?php echo $j->nama_jurusan; ?>"><?php echo $j->nama_jurusan; ?></option>
-                    <?php endforeach ?>
+                    <option value="<?php //echo $key->prodi_lama?>"><?php //echo $key->prodi_lama ?> </option>
+                    <?php //foreach ($jurusan as $j): ?>
+                      <option value="<?php //echo $j->nama_jurusan; ?>"><?php //echo $j->nama_jurusan; ?></option>
+                    <?php //endforeach ?>
                   </select>
-                </div>
+                </div> -->
+                <div class="form-group">
+                <label>Jurusan SLTA/SMK</label>
+                <select class="form-control select2" id="prodi_lama" name="prodi_lama" style="width: 100%;" onchange="toggleOtherInput()" required>
+                    <option value="<?php echo $key->prodi_lama ?>"><?php echo $key->prodi_lama ?></option>
+                    <?php foreach ($jurusan as $j): ?>
+                        <option value="<?php echo $j->nama_jurusan; ?>"><?php echo $j->nama_jurusan; ?></option>
+                    <?php endforeach; ?>
+                    <option value="other">Lainnya</option>
+                </select>
+            </div>
+
+            <div class="form-group" id="otherInputContainer" style="display: none;">
+                <label>Masukkan Jurusan SLTA/SMK Lainnya</label>
+                <input type="text" class="form-control" id="prodi_lama_other" name="prodi_lama_other" placeholder="Masukkan Jurusan Lainnya">
+            </div>
                 <!-- /.form-group -->
                 <div class="form-group">
                   <label for="exampleInputEmail1">Tahun Lulus</label>
