@@ -237,6 +237,8 @@
                   </div>
                   <button type="submit" class="btn btn-primary">Simpan</button>
                   </form>
+
+
                 <?php }else{ ?>
 
                 <!-- selain Kemartiman -->
@@ -415,6 +417,7 @@
                   <input type="text" class="form-control" name="jaspdpm_lainnya" id="jaspdpm_lainnya" placeholder="Silakan isi Ukuran Jas PDPM lainnya">
                   </div> -->
                   <button type="submit" class="btn btn-primary">Simpan</button>
+                <?php } ?>
                 <?php }else{ ?>           
                <center><h4><b>Anda sudah mengisi form ukur pakaian</b><span class="badge bg-green"><i class="fa fa-check"></i></span></h4></center>
                 <?php } ?>
