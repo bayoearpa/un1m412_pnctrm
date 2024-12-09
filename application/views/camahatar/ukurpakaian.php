@@ -244,6 +244,7 @@
                 <!-- selain Kemartiman -->
                 <h5><b>Pilih salah satu :</b></h5>
                 <center><img src="<?php echo base_url() ?>assets/download/list_uk_jas_almamater.jpg" width="75%"></center>
+                <center><p>Tabel diatas untuk ukuran Jas Almamater</p></center>
                 <br>
                  <div class="form-group">
                   <label for="exampleInputEmail1">Jas Almamater :</label>
