@@ -162,7 +162,7 @@
                   </select>
                   <input type="text" class="form-control" name="kaos_or_lainnya" id="kaos_or_lainnya" placeholder="Silakan isi Ukuran Kaos Olahraga lainnya">
                   </div>
-                  <div class="form-group">
+                 <!--  <div class="form-group">
                   <label for="exampleInputEmail1">Baju Renang :</label>
                  <select class="form-control" name="baju_renang" id="baju_renang" required="">
                     <option>--Pilih Ukuran Baju Renang--</option>
@@ -174,7 +174,7 @@
                     <option value="lainnya">lainnya</option>
                   </select>
                   <input type="text" class="form-control" name="baju_renang_lainnya" id="baju_renang_lainnya" placeholder="Silakan isi Ukuran Baju Renang lainnya">
-                  </div>
+                  </div> -->
                    <div class="form-group">
                   <label for="exampleInputEmail1">DOGI* :</label>
                  <select class="form-control" name="dogi" id="dogi" required="">
