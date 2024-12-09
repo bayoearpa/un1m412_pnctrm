@@ -243,7 +243,8 @@
 
                 <!-- selain Kemartiman -->
                 <h5><b>Pilih salah satu :</b></h5>
-                <center><img src="<?php echo base_url() ?>assets/download/list_uk_jas_almamater.jpg" width="100%"></center>
+                <center><img src="<?php echo base_url() ?>assets/download/list_uk_jas_almamater.jpg" width="75%"></center>
+                <br>
                  <div class="form-group">
                   <label for="exampleInputEmail1">Jas Almamater :</label>
                  <select class="form-control" name="jas_almamater" id="jas_almamater" required="">
