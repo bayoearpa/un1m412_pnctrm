@@ -82,6 +82,15 @@ $(document).ready(function() {
 		    }
 		  });
 
+		  $("#jas_almamater_lainnya").hide();
+		  $("#jas_almamater").change(function() {
+		    if ($(this).val() == "lainnya") {
+		      $("#jas_almamater_lainnya").show();
+		    } else {
+		      $("#jas_almamater_lainnya").hide();
+		    }
+		  });
+
 });
 
 </script>
