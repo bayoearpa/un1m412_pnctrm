@@ -60,6 +60,7 @@ class m_registrasi extends CI_Model
 		tbl_catar_2025.periode as periode,
 		tbl_catar_2025.telp_ortu as telp_ortu,
 		tbl_catar_2025.prodi_lama as prodi_lama,
+		tbl_catar_2025.prodi_lama as prodi_lama_lainnya,
 		tbl_catar_2025.thn_lulus as tahun_lulus,
 		tbl_catar_2025.prodi as prodi,
 		tbl_catar_2025.gelombang as gelombang,
