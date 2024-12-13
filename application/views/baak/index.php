@@ -41,9 +41,9 @@
                   <td><?php echo $baak->prodi($c->prodi) ?></td>
                   <td><?php if ($c->prodi_lama == "other") {
                     # code...
-                    echo $c->prodi_lama_lainnya
+                    echo $c->prodi_lama_lainnya;
                   }else{ 
-                    echo $c->prodi_lama 
+                    echo $c->prodi_lama ;
                   }?></td>
                   <td><?php echo $c->kabkota?></td>
                   <td><?php echo $c->propinsi?></td>
