@@ -59,7 +59,7 @@ class Dekan extends CI_Controller {
         $where = array(
 			'gelombang' => $gelombang,			       
         );
-		$data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2024')->result();
+		$data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2025')->result();
 		foreach ($data['catar'] as $row)
 		{
         $prodi = $row->prodi;
@@ -86,7 +86,7 @@ class Dekan extends CI_Controller {
             'gelombang' => $gelombang,
             'prodi'     => $prodi,                 
         );
-        $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2024')->result();
+        $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2025')->result();
         $this->load->view('dekan/header');
         $this->load->view('dekan/data_pendf_per_bln');
         $this->load->view('dekan/data_pendf_per_blnp',$data);
