@@ -249,7 +249,7 @@
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_all('tbl_catar_2025')->num_rows(); ?><sup style="font-size: 20px"></span>
             </div>
             <div class="box-body" style="">
-              <a href="<?php echo base_url() ?>bau/data_sudah_validasi">Sudah Validasi</a>
+              Sudah Validasi
                <?php 
              $where2= array(
             'id_gelombang' => '1',  
@@ -264,7 +264,7 @@
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where($where)->num_rows(); ?></span>
             </div>
              <div class="box-body" style="">
-              <a href="<?php echo base_url() ?>bau/data_sudah_validasi_gd">Sudah Validasi (Gelombang Dini)</a>
+              Sudah Validasi (Gelombang Dini)
                <?php 
              $where2= array(
             'id_gelombang' => '1',  
@@ -278,7 +278,7 @@
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_join_where($where)->num_rows(); ?></span>
             </div>
              <div class="box-body" style="">
-              <a href="<?php echo base_url() ?>bau/data_sudah_validasi_gdtf">Sudah Validasi (Gelombang Dini TF)</a>
+              Sudah Validasi (Gelombang Dini TF)
                <?php 
              $where2= array(
             'id_gelombang' => '1',  
@@ -314,7 +314,7 @@
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_all('tbl_catar_daful_2025')->num_rows(); ?><sup style="font-size: 20px"></span>
             </div>
             <div class="box-body" style="">
-            <a href="<?php echo base_url() ?>bau/data_sudah_daful_reg">Daftar Ulang (Reguler)</a>
+            Daftar Ulang (Reguler)
                <?php 
              $where2= array(
             'id_gelombang' => '1',  
@@ -328,7 +328,7 @@
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_sudah_daful($where)->num_rows(); ?></span>
             </div>
              <div class="box-body" style="">
-              <a href="<?php echo base_url() ?>bau/data_sudah_daful_tf">Daftar Ulang (Kelas Transfer)</a>
+             Daftar Ulang (Kelas Transfer)
                <?php 
              $where2= array(
             'id_gelombang' => '1',  
@@ -342,7 +342,7 @@
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_sudah_daful($where)->num_rows(); ?></span>
             </div>
             <div class="box-body" style="">
-              <a href="<?php echo base_url() ?>bau/data_sudah_daful_gd">Daftar Ulang (Gelombang Dini)</a>
+              Daftar Ulang (Gelombang Dini)
                <?php 
              $where2= array(
             'id_gelombang' => '1',  
@@ -356,7 +356,7 @@
               <span class="pull-right badge bg-blue"><?php echo $this->m_registrasi->get_data_sudah_daful($where)->num_rows(); ?></span>
             </div>
              <div class="box-body" style="">
-              <a href="<?php echo base_url() ?>bau/data_sudah_daful_gdtf">Daftar Ulang (Gelombang Dini TF)</a>
+             Daftar Ulang (Gelombang Dini TF)
                <?php 
              $where2= array(
             'id_gelombang' => '1',  
