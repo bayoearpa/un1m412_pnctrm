@@ -175,9 +175,9 @@ foreach($catar as $c){
 
 <?php }else{ ?>
 
-<tr><td><p style="margin:1px;">BIAYA KESEHATAN</p></td><td>:</td><td></td><td></td><td>Rp. 170.000,-</td></tr>
-<tr><td style="border-top-style:dotted;border-bottom-style:dotted;border-width: 1px;" colspan="4"><p style="margin:1px;"><b>TOTAL</b></p></td><td width="30%" style="border-top-style:dotted;border-bottom-style:dotted;border-width: 1px;"><p style="margin:1px;"><b>Rp. 170.000,-</b></p></td></tr>
-<tr><td style="border-bottom-style:dotted;border-width:1px;" colspan="4"><p><b>Terbilang</b></p></td><td  width="30%" style="border-bottom-style:dotted;border-width:1px;"><p><b>SERATUS TUJUH PULUH RIBU RUPIAH</b></p></td></tr>
+<tr><td><p style="margin:1px;">BIAYA KESEHATAN</p></td><td>:</td><td></td><td></td><td>Rp. 120.000,-</td></tr>
+<tr><td style="border-top-style:dotted;border-bottom-style:dotted;border-width: 1px;" colspan="4"><p style="margin:1px;"><b>TOTAL</b></p></td><td width="30%" style="border-top-style:dotted;border-bottom-style:dotted;border-width: 1px;"><p style="margin:1px;"><b>Rp. 120.000,-</b></p></td></tr>
+<tr><td style="border-bottom-style:dotted;border-width:1px;" colspan="4"><p><b>Terbilang</b></p></td><td  width="30%" style="border-bottom-style:dotted;border-width:1px;"><p><b>SERATUS DUA PULUH RIBU RUPIAH</b></p></td></tr>
 
 <?php } ?>
 
