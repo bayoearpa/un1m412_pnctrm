@@ -266,7 +266,8 @@ class Bau extends CI_Controller {
     public function cetak_kesehatan($no')
     {
         # code...
-        $where = array('val_id' => $lastid);
+
+        $where = array('no' => $no);
         $data['validasi'] = $this->m_registrasi->get_data($where,'tbl_catar_validasi_2025')->result();
         $where2 = array('no' => $no);
         $data['catar'] = $this->m_registrasi->get_data($where2,'tbl_catar_2025')->result();
