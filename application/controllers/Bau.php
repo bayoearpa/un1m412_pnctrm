@@ -263,7 +263,7 @@ class Bau extends CI_Controller {
         $this->load->view('bau/cetak',$data);
 
     }
-    public function cetak_kesehatan($no')
+    public function cetak_kesehatan($no)
     {
         # code...
 
