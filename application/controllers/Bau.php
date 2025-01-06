@@ -263,6 +263,16 @@ class Bau extends CI_Controller {
         $this->load->view('bau/cetak',$data);
 
     }
+    public function cetak_kesehatan($no')
+    {
+        # code...
+        $where = array('val_id' => $lastid);
+        $data['validasi'] = $this->m_registrasi->get_data($where,'tbl_catar_validasi_2025')->result();
+        $where2 = array('no' => $no);
+        $data['catar'] = $this->m_registrasi->get_data($where2,'tbl_catar_2025')->result();
+
+        $this->load->view('bau/cetak_kesehatan',$data);
+    }
     function dafula()
     {
         # code...

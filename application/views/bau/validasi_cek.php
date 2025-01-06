@@ -136,6 +136,7 @@
           <!-- <a href="invoice-print.html" target="_blank" class="btn btn-default"><i class="fa fa-print"></i> Print</a> -->
             <?php if ($c->bukti_bayar) { ?>
             <button class="btn btn-success view-file-button" data-filename="<?php echo $c->bukti_bayar; ?>">Lihat Bukti Bayar</button>
+             <a href="<?php echo base_url() ?>bau/cetak_kesehatan/<?php echo $c->no ?>" target="__blank"><button type="button" name="submit" class="btn btn-primary">Cetak Kesehatan</button></a>
             <?php } else { ?>
             <!-- Tampilkan pesan jika file tidak ada -->
             File tidak tersedia
