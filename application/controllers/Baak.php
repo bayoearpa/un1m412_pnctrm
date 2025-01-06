@@ -2833,6 +2833,7 @@ class Baak extends CI_Controller {
         $gelombang = $this->input->post('gelombang');
         $prodi = $this->input->post('prodi');
         $thn_pel=$this->input->post('thn_pel');
+        $tgl_pengumman=$this->input->post('tgl_pengumman');
         $hasil=$this->input->post('hasil');
 
 
@@ -2841,7 +2842,8 @@ class Baak extends CI_Controller {
             'gelombang' => $gelombang,
             'prodi' => $prodi,
             'thn_pel' => $thn_pel,
-            'hasil' => $hasil
+            'hasil' => $hasil,
+            'tgl_pengumuman' => $tgl_pengumuman
             );
 
         // $this->m_registrasi->update_data($where,$data,'tbl_catar_2021_validasi');
