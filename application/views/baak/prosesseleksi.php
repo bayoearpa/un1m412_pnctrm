@@ -231,8 +231,14 @@
                   </div>
                   <div class="radio">
                     <label>
-                      <input type="radio" name="hasil" id="hasil" value="tidak lulus">
+                      <input type="radio" name="hasil" id="hasil" value="tidak_lulus">
                       Tidak Lulus
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="hasil" id="hasil" value="cadangan">
+                      Cadangan
                     </label>
                   </div>
                 </div>

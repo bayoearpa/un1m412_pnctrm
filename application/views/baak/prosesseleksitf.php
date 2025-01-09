@@ -211,7 +211,7 @@
                 <label for="exampleInputEmail1">Tanggal Pengumuman</label>
                   <input type="date" class="form-control" name="tgl_pengumuman" id="tgl_pengumuman" required>
             </div>
-         <div class="form-group">
+        <div class="form-group">
                 <label for="exampleInputEmail1">Hasil :</label>
                   <div class="radio">
                     <label>
@@ -221,8 +221,14 @@
                   </div>
                   <div class="radio">
                     <label>
-                      <input type="radio" name="hasil" id="hasil" value="tidak lulus">
+                      <input type="radio" name="hasil" id="hasil" value="tidak_lulus">
                       Tidak Lulus
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="hasil" id="hasil" value="cadangan">
+                      Cadangan
                     </label>
                   </div>
                 </div>
