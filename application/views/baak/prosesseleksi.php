@@ -221,6 +221,22 @@
                 <label for="exampleInputEmail1">Tanggal Pengumuman</label>
                   <input type="date" class="form-control" name="tgl_pengumuman" id="tgl_pengumuman" required>
             </div>
+             <div class="form-group">
+                <label for="exampleInputEmail1">No. Surat Hal 1</label>
+                  <input type="text" class="form-control" name="no_surat_hal_1" id="no_surat_hal_1" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">No. Surat Hal 2</label>
+                  <input type="text" class="form-control" name="no_surat_hal_2" id="no_surat_hal_2" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Jenis Seleksi (contoh : Gelombang dini, Periode Januari)</label>
+                  <input type="text" class="form-control" name="jenis_seleksi" id="jenis_seleksi" required>
+            </div>
+             <div class="form-group">
+                <label for="exampleInputEmail1">Waktu Seleksi (contoh : 01 s/d  31 Januari 2025 )</label>
+                  <input type="text" class="form-control" name="waktu_daful" id="waktu_daful" required>
+            </div>
          <div class="form-group">
                 <label for="exampleInputEmail1">Hasil :</label>
                   <div class="radio">

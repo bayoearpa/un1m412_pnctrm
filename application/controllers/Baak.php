@@ -2834,6 +2834,10 @@ class Baak extends CI_Controller {
         $prodi = $this->input->post('prodi');
         $thn_pel=$this->input->post('thn_pel');
         $tgl_pengumman=$this->input->post('tgl_pengumman');
+        $no_surat_hal_1=$this->input->post('no_surat_hal_1');
+        $no_surat_hal_2=$this->input->post('no_surat_hal_2');
+        $jenis_seleksi=$this->input->post('jenis_seleksi');
+        $waktu_daful=$this->input->post('waktu_daful');
         $hasil=$this->input->post('hasil');
 
 
@@ -2843,7 +2847,11 @@ class Baak extends CI_Controller {
             'prodi' => $prodi,
             'thn_pel' => $thn_pel,
             'hasil' => $hasil,
-            'tgl_pengumuman' => $tgl_pengumuman
+            'tgl_pengumuman' => $tgl_pengumuman,
+            'no_surat_hal_1' => $no_surat_hal_1,
+            'no_surat_hal_2' => $no_surat_hal_2,
+            'jenis_seleksi' => $jenis_seleksi,
+            'waktu_daful' => $waktu_daful,
             );
 
         // $this->m_registrasi->update_data($where,$data,'tbl_catar_2021_validasi');
