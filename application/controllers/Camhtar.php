@@ -643,6 +643,36 @@ class Camhtar extends CI_Controller {
 		redirect("validasi");
 
 	}
+	public function download_sk($no)
+	{
+		# code...
+		$where = array('no' => $no);
+		$data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2025')->result();
+		// foreach ($data['catar'] as $key) {
+		// 	# code...
+		// 	$po = $key->ktkb;
+		// 	$where_prov = array('tbl_kabkota.id_wil' => $po);
+		// }
+		// $provinsi_get = $this->m_registrasi->get_data_wilayah($where_prov)->result();
+		// foreach ($provinsi_get as $keyp) {
+		// 	# code...
+		// 	$data['kabkota'] = $keyp->kabkota;
+		// 	$data['provinsi'] = $keyp->provinsi;
+		// }
+		$this->load->view('camahatar/cetaksk',$data);
+
+		//pdf
+		$pdfFilePath="SK_LULUS_SELEKSI_UNIMAR_AMNI.pdf";
+		$html=$this->load->view('camahatar/cetaksk',$data, TRUE);
+		$pdf = $this->m_pdf->load();
+ 		ob_clean();
+        $pdf->AddPage('P');
+        $pdf->WriteHTML($html);
+        $pdf->Output($pdfFilePath, "D");
+        exit();
+		redirect("pengumuman");
+
+	}
 	public function down_sanggup_tidak_menikah25()
 	{
 		# code...
