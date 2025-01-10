@@ -400,7 +400,6 @@ class m_registrasi extends CI_Model
 		tbl_catar_validasi_2025.no_reg,
 		tbl_catar_validasi_2025.jml_byr,
 		tbl_catar_validasi_2025.aktif,
-		tbl_seleksi_2025.id_link,
 		tbl_seleksi_2025.no,
 		tbl_seleksi_2025.link_ktp,
 		tbl_seleksi_2025.link_ijasah,

@@ -20,22 +20,22 @@
 
 <?php foreach($catar as $c){ ?>
 	<p><b><u>SURAT KEPUTUSAN</u></b></p>
-	<p>Nomor :      / PMB /UNIMAR-AMNI/I/ 2025</p>
+	<p>Nomor :   <?php echo $no_surat_hal_1 ?></p>
 
 	<br><br><br>
 	<p><b>T e n t a n g</b></p>
 	<p><b>CALON MAHASISWA DAN TARUNA BARU UNIMAR AMNI SEMARANG</b></p>
-	<p><b>YANG DINYATAKAN <i>LULUS GELOMBANG DINI</i></b></p>
+	<p><b>YANG DINYATAKAN <i>LULUS <?php echo strtoupper($c->jenis_seleksi) ?></i></b></p>
 	<p><b>TAHUN AKADEMIK 2025 / 2026</b></p>
 
 	<ol type="number">
-		<li>Berdasarkan hasil keputusan rapat Panitia Penerimaan Mahasiswa dan Taruna  UNIMAR AMNI Semarang Tahun Akademik 2025/2026 Gelombang Dini, ditetapkan bahwa peserta seleksi Penerimaam Mahatar Baru (PMB) sebagaimana tersebut dalam lampiran, <b>dinyatakan lulus</b> sebagai Calon Mahasiswa dan Taruna Universitas Maritim AMNI (UNIMAR AMNI) Semarang Tahun Akademik 2025/2026.</li>
-		<li>Untuk kegiatan selanjutnya,  daftar ulang bagi yang dinyatakan LULUS menjadi Calon Mahasiswa dan Taruna Universitas Maritim AMNI (UNIMAR AMNI) Semarang Gelombang Dini dilaksanakan secara online.</li>
+		<li>Berdasarkan hasil keputusan rapat Panitia Penerimaan Mahasiswa dan Taruna  UNIMAR AMNI Semarang Tahun Akademik 2025/2026 <?php echo ucfirst($c->jenis_seleksi) ?>, ditetapkan bahwa peserta atas nama <?php echo ucfirst($c->nama) ?> telah mengikuti seleksi Penerimaam Mahatar Baru (PMB), <b>dinyatakan lulus</b> sebagai Calon Mahasiswa dan Taruna Universitas Maritim AMNI (UNIMAR AMNI) Semarang Tahun Akademik 2025/2026.</li>
+		<li>Untuk kegiatan selanjutnya,  daftar ulang bagi yang dinyatakan LULUS menjadi Calon Mahasiswa dan Taruna Universitas Maritim AMNI (UNIMAR AMNI) Semarang <?php echo ucfirst($c->jenis_seleksi) ?> dilaksanakan secara online.</li>
 		<li>Persyaratan Daftar Ulang TERLAMPIR.</li>
 		<li>Apabila dikemudian hari terdapat kekeliruan dalam Surat Keputusan ini, akan diadakan pembetulan sebagaimana mestinya.</li>
 	</ol>
 	<table align="right">
-		<tr><td>Semarang, 09 Januari 2025</td></tr>
+		<tr><td><?php echo $c->tgl_pengumuman ?></td></tr>
 		<tr><td>Ketua Panitia PMB</td></tr>
 		<tr><td>TTD</td></tr>
 		<tr><td><u>Supriyanto, S.Sos., M.M</u></td></tr>
