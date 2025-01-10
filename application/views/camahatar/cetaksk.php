@@ -55,7 +55,11 @@
 		<li>Apabila dikemudian hari terdapat kekeliruan dalam Surat Keputusan ini, akan diadakan pembetulan sebagaimana mestinya.</li>
 	</ol>
 	<table align="right">
-		<tr><td align="center"><?php echo $c->tgl_pengumuman ?></td></tr>
+		<tr><td align="center"><?php
+            // Konversi format tanggal dari database
+            $tanggal = strtotime($c->tgl_pengumuman); // Ubah menjadi timestamp
+            echo "Semarang, " . date('d-m-Y', $tanggal); // Format menjadi dd-mm-yyyy
+            ?></td></tr>
 		<tr><td align="center">Ketua Panitia PMB</td></tr>
 		<tr><td align="center"><img src="<?php echo base_url() ?>assets/front1/img/ttd.png" width="20%"></td></tr>
 		<tr><td align="center"><u>Supriyanto, S.Sos., M.M</u></td></tr>
