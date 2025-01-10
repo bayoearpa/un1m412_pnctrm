@@ -647,7 +647,8 @@ class Camhtar extends CI_Controller {
 	{
 		# code...
 		$where = array('no' => $no);
-		$data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2025')->result();
+		// $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2025')->result();
+		$data['catar'] = $this->m_registrasi->get_data_join_2025_where($where)->result();
 		// foreach ($data['catar'] as $key) {
 		// 	# code...
 		// 	$po = $key->ktkb;

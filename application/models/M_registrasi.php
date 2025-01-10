@@ -94,6 +94,11 @@ class m_registrasi extends CI_Model
 		tbl_catar_2025.gelombang as gelombang,
 		tbl_catar_validasi_2025.no as no_val,
 		tbl_catar_hasil_seleksi_2025.no as no_seleksi,
+		tbl_catar_hasil_seleksi_2025.tgl_pengumuman as tgl_pengumuman,
+		tbl_catar_hasil_seleksi_2025.no_surat_hal_1 as no_surat_hal_1,
+		tbl_catar_hasil_seleksi_2025.no_surat_hal_2 as no_surat_hal_2,
+		tbl_catar_hasil_seleksi_2025.jenis_seleksi as jenis_seleksi,
+		tbl_catar_hasil_seleksi_2025.waktu_daful as waktu_daful,
 		tbl_catar_daful_2025.no as no_daful,
 		tbl_kabkota.nm_wil as kabkota,
 		tbl_propinsi.nm_wil as propinsi');
