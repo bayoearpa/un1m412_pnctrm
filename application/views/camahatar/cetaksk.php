@@ -22,25 +22,28 @@
 
 	<table align="center">
 		<tr>
-			<td><p><b><u>SURAT KEPUTUSAN</u></b></p></td>
+			<td align="center"><p><b><u>SURAT KEPUTUSAN</u></b></p></td>
 		</tr>
 		<tr>
-			<td><p>Nomor :   <?php echo $c->no_surat_hal_1 ?></p></td>
+			<td align="center"><p>Nomor :   <?php echo $c->no_surat_hal_1 ?></p></td>
 		</tr>
 		<tr>
 			<td></td>
 		</tr>
 		<tr>
-			<td><p><b>T e n t a n g</b></p></td>
+			<td></td>
 		</tr>
 		<tr>
-			<td><p><b>CALON MAHASISWA DAN TARUNA BARU UNIMAR AMNI SEMARANG</b></p></td>
+			<td align="center"><p><b>T e n t a n g</b></p></td>
 		</tr>
 		<tr>
-			<td><p><b>YANG DINYATAKAN <i>LULUS <?php echo strtoupper($c->jenis_seleksi) ?></i></b></p></td>
+			<td align="center"><p><b>CALON MAHASISWA DAN TARUNA BARU UNIMAR AMNI SEMARANG</b></p></td>
 		</tr>
 		<tr>
-			<td><p><b>TAHUN AKADEMIK 2025 / 2026</b></p></td>
+			<td align="center"><p><b>YANG DINYATAKAN <i>LULUS <?php echo strtoupper($c->jenis_seleksi) ?></i></b></p></td>
+		</tr>
+		<tr>
+			<td align="center"><p><b>TAHUN AKADEMIK 2025 / 2026</b></p></td>
 		</tr>
 	</table>
 	
