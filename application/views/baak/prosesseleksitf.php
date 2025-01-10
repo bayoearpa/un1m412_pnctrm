@@ -224,7 +224,7 @@
                   <input type="text" class="form-control" name="jenis_seleksi" id="jenis_seleksi" required>
             </div>
              <div class="form-group">
-                <label for="exampleInputEmail1">Waktu Seleksi (contoh : 01 s/d  31 Januari 2025 )</label>
+                <label for="exampleInputEmail1">Waktu Daftar Ulang (contoh : 01 s/d  31 Januari 2025 )</label>
                   <input type="text" class="form-control" name="waktu_daful" id="waktu_daful" required>
             </div>
         <div class="form-group">

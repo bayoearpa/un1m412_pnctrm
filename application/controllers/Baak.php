@@ -2833,7 +2833,7 @@ class Baak extends CI_Controller {
         $gelombang = $this->input->post('gelombang');
         $prodi = $this->input->post('prodi');
         $thn_pel=$this->input->post('thn_pel');
-        $tgl_pengumman=$this->input->post('tgl_pengumman');
+        $tgl_pengumuman=$this->input->post('tgl_pengumuman');
         $no_surat_hal_1=$this->input->post('no_surat_hal_1');
         $no_surat_hal_2=$this->input->post('no_surat_hal_2');
         $jenis_seleksi=$this->input->post('jenis_seleksi');
