@@ -646,7 +646,7 @@ class Camhtar extends CI_Controller {
 	public function download_sk($no)
 	{
 		# code...
-		$where = array('no' => $no);
+		$where = array('tbl_catar_2025.no' => $no);
 		// $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2025')->result();
 		$data['catar'] = $this->m_registrasi->get_data_join_2025_where($where)->result();
 		// foreach ($data['catar'] as $key) {
