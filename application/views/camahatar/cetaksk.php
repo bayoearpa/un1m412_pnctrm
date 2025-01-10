@@ -20,7 +20,7 @@
 
 <?php foreach($catar as $c){ ?>
 	<p><b><u>SURAT KEPUTUSAN</u></b></p>
-	<p>Nomor :   <?php echo $no_surat_hal_1 ?></p>
+	<p>Nomor :   <?php echo $c->no_surat_hal_1 ?></p>
 
 	<br><br><br>
 	<p><b>T e n t a n g</b></p>
@@ -37,7 +37,7 @@
 	<table align="right">
 		<tr><td><?php echo $c->tgl_pengumuman ?></td></tr>
 		<tr><td>Ketua Panitia PMB</td></tr>
-		<tr><td><img src="<?php echo base_url() ?>assets/front1/img/header_sk_lulus25.jpg" width="20%"></td></tr>
+		<tr><td><img src="<?php echo base_url() ?>assets/front1/img/ttd.png" width="20%"></td></tr>
 		<tr><td><u>Supriyanto, S.Sos., M.M</u></td></tr>
 		<tr><td>NIDN. 0603046504</td></tr>
 	</table>
