@@ -19,14 +19,14 @@
 <img src="<?php echo base_url() ?>assets/front1/img/header_sk_lulus25.jpg" width="100%">
 
 <?php foreach($catar as $c){ ?>
-	<p><b><u>SURAT KEPUTUSAN</u></b></p>
-	<p>Nomor :   <?php echo $c->no_surat_hal_1 ?></p>
+	<center><p><b><u>SURAT KEPUTUSAN</u></b></p></center>
+	<center><p>Nomor :   <?php echo $c->no_surat_hal_1 ?></p></center>
 
-	<br><br><br>
-	<p><b>T e n t a n g</b></p>
-	<p><b>CALON MAHASISWA DAN TARUNA BARU UNIMAR AMNI SEMARANG</b></p>
-	<p><b>YANG DINYATAKAN <i>LULUS <?php echo strtoupper($c->jenis_seleksi) ?></i></b></p>
-	<p><b>TAHUN AKADEMIK 2025 / 2026</b></p>
+	<br>
+	<center><p><b>T e n t a n g</b></p></center>
+	<center><p><b>CALON MAHASISWA DAN TARUNA BARU UNIMAR AMNI SEMARANG</b></p></center>
+	<center><p><b>YANG DINYATAKAN <i>LULUS <?php echo strtoupper($c->jenis_seleksi) ?></i></b></p></center>
+	<center><p><b>TAHUN AKADEMIK 2025 / 2026</b></p></center>
 
 	<ol type="number">
 		<li>Berdasarkan hasil keputusan rapat Panitia Penerimaan Mahasiswa dan Taruna  UNIMAR AMNI Semarang Tahun Akademik 2025/2026 <?php echo ucfirst($c->jenis_seleksi) ?>, ditetapkan bahwa peserta atas nama <?php echo ucfirst($c->nama) ?> telah mengikuti seleksi Penerimaam Mahatar Baru (PMB), <b>dinyatakan lulus</b> sebagai Calon Mahasiswa dan Taruna Universitas Maritim AMNI (UNIMAR AMNI) Semarang Tahun Akademik 2025/2026.</li>
