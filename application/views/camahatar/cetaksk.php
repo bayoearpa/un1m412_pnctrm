@@ -37,7 +37,7 @@
 	<table align="right">
 		<tr><td><?php echo $c->tgl_pengumuman ?></td></tr>
 		<tr><td>Ketua Panitia PMB</td></tr>
-		<tr><td>TTD</td></tr>
+		<tr><td><img src="<?php echo base_url() ?>assets/front1/img/header_sk_lulus25.jpg" width="20%"></td></tr>
 		<tr><td><u>Supriyanto, S.Sos., M.M</u></td></tr>
 		<tr><td>NIDN. 0603046504</td></tr>
 	</table>
