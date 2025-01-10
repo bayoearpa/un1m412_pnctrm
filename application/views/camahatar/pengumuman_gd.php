@@ -30,7 +30,7 @@
 
                     <!-- <div class="box-body"><h4>Anda belum Test Seleksi</h4> -->
                     </div>
-                   <a href="<?php echo base_url() ?>download_sk/$c->no?>" target="__blank"><button type="button" class="btn btn-primary">Download SK lulus</button></a>
+                   <a href="<?php echo base_url() ?>download_sk/<?php echo $c->no ?>" target="__blank"><button type="button" class="btn btn-primary">Download SK lulus</button></a>
                    <!-- <a href="<?php //echo base_url() ?>download_pengumuman_juni" target="__blank"><button type="button" class="btn btn-primary">Download biaya daftar ulang</button></a> -->
                     </div>
                   <?php }else if ($c->hasil == 'tidak_lulus') {
