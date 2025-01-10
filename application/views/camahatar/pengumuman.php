@@ -30,13 +30,17 @@
 
                     <!-- <div class="box-body"><h4>Anda belum Test Seleksi</h4> -->
                     </div>
-                   <a href="<?php echo base_url() ?>download_pengumuman_januari?>" target="__blank"><button type="button" class="btn btn-primary">Download SK lulus</button></a>
-                   <a href="<?php echo base_url() ?>download_pengumuman_juni" target="__blank"><button type="button" class="btn btn-primary">Download biaya daftar ulang</button></a>
+                   <a href="<?php echo base_url() ?>download_sk/$c->no?>" target="__blank"><button type="button" class="btn btn-primary">Download SK lulus</button></a>
+                   <!-- <a href="<?php //echo base_url() ?>download_pengumuman_juni" target="__blank"><button type="button" class="btn btn-primary">Download biaya daftar ulang</button></a> -->
                     </div>
-                  <?php }else{ ?>
-                  <!--  <div class="box-body"><h4>Berdasarkan hasil keputusan Panitia Penerimaan Mahasiswa dan Taruna UNIMAR AMNI Semarang Tahun Akademik 2024/2025, ditetapkan bahwa peserta seleksi Penerimaan Mahatar Baru (PMB) sebagaimana tersebut dalam lampiran <b>dinyatakan tidak lulus </b>sebagai Calon Mahasiswa dan Taruna Universitas Maritim AMNI (UNIMAR AMNI) Semarang Tahun Akademik 2024/2025. untuk selengkapnya dapat kalian download dibawah ini :</h4>
-                    </div> -->
-                    <div class="box-body"><h4>Anda belum Test Seleksi</h4>
+                  <?php }else if ($c->hasil == 'tidak_lulus') {
+                    # code...
+                  }else if ($c->hasil == 'cadangan') {
+                    # code...
+                  }else{ ?>
+                   <div class="box-body"><h4>Berdasarkan hasil keputusan Panitia Penerimaan Mahasiswa dan Taruna UNIMAR AMNI Semarang Tahun Akademik 2024/2025, ditetapkan bahwa peserta seleksi Penerimaan Mahatar Baru (PMB) sebagaimana tersebut dalam lampiran <b>dinyatakan tidak lulus </b>sebagai Calon Mahasiswa dan Taruna Universitas Maritim AMNI (UNIMAR AMNI) Semarang Tahun Akademik 2024/2025. untuk selengkapnya dapat kalian download dibawah ini :</h4>
+                    </div>
+                    <!-- <div class="box-body"><h4>Anda belum Test Seleksi</h4> -->
 
                     <?php } ?>
             <?php } } ?>

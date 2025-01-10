@@ -1373,10 +1373,13 @@ public function edit_proses_seleksi()
 				'no' => $no,
 			);
 		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2025')->result();
+		$data['hasil_sel'] = $this->m_registrasi->get_data($where, 'tbl_catar_hasil_seleksi_2025')->result();
 		foreach ($data['catar'] as $key) {
 			# code...
 			$data['nik'] = $key->nik;
 		}
+				//cek seleksi
+		$data['hs'] = $this->m_registrasi->get_data($where, 'tbl_catar_hasil_seleksi_2025')->num_rows();
 		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2025')->num_rows();
 
 		$this->load->view('camahatar/header',$data);
