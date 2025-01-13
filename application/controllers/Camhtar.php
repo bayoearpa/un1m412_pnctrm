@@ -1293,7 +1293,7 @@ public function edit_proses_seleksi()
 					'training_pack' => $training_pack,
 					'wearpack' => $wearpack,
 					'kaos_or' => $kaos_or,
-					'baju_renang' => $baju_renang,
+					'baju_renang' => "0",
 					'dogi' => $dogi,
 					'pdhpdub_kemeja' => $pdhpdub_kemeja,
 					'pdhpdub_celana' => $pdhpdub_celana,
