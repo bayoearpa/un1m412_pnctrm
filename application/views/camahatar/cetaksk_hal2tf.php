@@ -51,27 +51,18 @@
 			<li><b>Waktu daftar ulang :</b></li>
 			<p><?php echo $c->waktu_daful ?></p>
 			<li><b>Syarat-syarat Daftar Ulang :</b></li>
-			<p>Melunasi Biaya Pra Akademik, SPP semester 1 dan Asrama (khusus taruna <b>(prodi D3 Nautika dan D3 Teknika)</b> dan taruni), disesuaikan dengan Program Studi masing-masing (terlampir)</p>
+			<p>Melunasi Biaya Pra Akademik, SPP semester 1 dan Matrikulasi (terlampir)</p>
 		</ol>
-		<li><b>PEMBAYARAN BIAYA PENDIDIKAN, ASRAMA (KHUSUS TARUNA (PRODI D3 NAUTIKA DAN D3 TEKNIKA) DAN TARUNI) DAN SPI</b></li>
-		<img src="<?php echo base_url() ?>assets/front1/img/biaya/biaya_reguler1_25.jpg" width="100%">
-		<img src="<?php echo base_url() ?>assets/front1/img/biaya/biaya_reguler2_25.jpg" width="100%">
+		<li><b>PEMBAYARAN BIAYA PENDIDIKAN DAN SPI</b></li>
+		<img src="<?php echo base_url() ?>assets/front1/img/biaya/biaya_kelastransfer_25.jpg" width="100%">
 		<p><b>Catatan : </b></p>
-		<ul>
-			<li><ul>Kelas Reguler (Prodi D3 KPN, D3 Teknika, D3 Nautika dan S1 Transportasi)</ul></li>
-			<ol type="a">
-				<li>Pelunasan SPI 100% yang dibayarkan pada tahap I (November 2025) mendapatkan potongan dana Rp 2.000.000,-</li>
-				<li>Pelunasan SPI 100% yang dibayarkan pada tahap II (Mei 2026) mendapatkan potongan dana Rp 1.500.000,-</li>
-				<li>Pelunasan SPI 100% yang dibayarkan pada tahap III (November 2026) mendapatkan potongan dana Rp 1.000.000,-</li>
-			</ol>
-			<li><ul>Kelas Reguler (Prodi D4 MPLM, S1 Perdagangan Internasional, S1 Bisnis Digital, S1 Teknik Transportasi Laut, S1 Teknik Keselamatan, dan S1 Teknik Mesin)</ul></li>
-			<p>Pelunasan SPI 100% yang dibayarkan pada tahap I (November 2025) mendapatkan potongan dana Rp 1.000.000,-</p>
-			<li><ul>Kelas Transfer (RPL</ul></li>
+			
+			<p><ul>Kelas Transfer (RPL</ul></p>
 			<ol type="a">
 				<li>Pelunasan SPI 100% yang dibayarkan pada tahap I (November 2025) mendapatkan potongan dana Rp 1.500.000,-</li>
 				<li>Potongan SPI alumni UNIMAR AMNI Semarang sebesar Rp 2.000.000,-</li>
 			</ol>
-		</ul>
+
 		<p>Pembayaran Pra Akademik, SPP Semester I, Biaya Asrama satu bulan (khusus taruna (prodi D3 Nautika dan D3 Teknika) dan taruni) dan Sumbangan Pengembangan Institusi (SPI), dapat dilakukan melalui transfer <b>ke BANK Mandiri 1350002900197 a/n Yayasan Bina Kemaritiman Indonesia</b> sesuai waktu pembayaran diatas, dengan mencantumkan : <b>Nomor Pendaftaran, Nama Calon Mahasiswa/Taruna dan Program Studi.</b></p>
 		<ul>
 			<li>Setelah melaksanakan pembayaran, <b>harap memberikan konfirmasi pembayaran dengan mengirimkan bukti transfer ke :</b></li>

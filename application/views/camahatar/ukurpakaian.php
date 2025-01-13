@@ -68,6 +68,7 @@
                 <div class="form-group">
                   <label for="exampleInputEmail1">No Hp/ Wa :</label>
                   <input type="text" class="form-control" id="telp" name="telp" placeholder="Masukan Link File KTP" value="<?php echo $c->telp ?>" readonly>
+                  <input type="hidden" name="jalur" value="<?php echo $c->jalur ?>">
                   </div>
 
                   <hr>
