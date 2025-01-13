@@ -54,10 +54,10 @@
 			<p>Melunasi Biaya Pra Akademik, SPP semester 1 dan Matrikulasi (terlampir)</p>
 		</ol>
 		<li><b>PEMBAYARAN BIAYA PENDIDIKAN DAN SPI</b></li>
-		<img src="<?php echo base_url() ?>assets/front1/img/biaya/biaya_kelastransfer_25.jpg" width="100%">
+		<img src="<?php echo base_url() ?>assets/front1/img/biaya/biaya_kelastransfer_25.jpg" width="85%">
 		<p><b>Catatan : </b></p>
 			
-			<p><ul>Kelas Transfer (RPL</ul></p>
+			<p>Kelas Transfer (RPL)</p>
 			<ol type="a">
 				<li>Pelunasan SPI 100% yang dibayarkan pada tahap I (November 2025) mendapatkan potongan dana Rp 1.500.000,-</li>
 				<li>Potongan SPI alumni UNIMAR AMNI Semarang sebesar Rp 2.000.000,-</li>
