@@ -91,6 +91,15 @@ $(document).ready(function() {
 		    }
 		  });
 
+		   $("#topipet_lainnya").hide();
+		  $("#topipet").change(function() {
+		    if ($(this).val() == "lainnya") {
+		      $("#topipet_lainnya").show();
+		    } else {
+		      $("#topipet_lainnya").hide();
+		    }
+		  });
+
 });
 
 </script>
