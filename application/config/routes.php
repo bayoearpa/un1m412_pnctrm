@@ -157,6 +157,8 @@ $route['tutorial_download'] = 'welcome/tutorial_download';
 // $route['cekstatusp/(:num)'] = 'welcome/cekstatusp/$1';
 $route['download/(:num)'] = 'camhtar/download/$1';
 $route['download_sk/(:num)'] = 'camhtar/download_sk/$1';
+$route['download_sk_hal2_reguler/(:num)'] = 'camhtar/download_sk2reg/$1';
+$route['download_sk_hal2_kelas_transfer/(:num)'] = 'camhtar/download_sk2tf/$1';
 // $route['voucher/(:num)'] = 'welcome/voucher/$1';
 
 $route['getkabkota'] = 'camhtar/get_kabkota';

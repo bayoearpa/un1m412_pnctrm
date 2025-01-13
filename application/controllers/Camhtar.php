@@ -674,6 +674,68 @@ class Camhtar extends CI_Controller {
 		redirect("pengumuman");
 
 	}
+	public function download_sk2reg($no)
+	{
+		# code...
+		$where = array('tbl_catar_2025.no' => $no);
+		// $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2025')->result();
+		$data['catar'] = $this->m_registrasi->get_data_join_2025_where($where)->result();
+		// foreach ($data['catar'] as $key) {
+		// 	# code...
+		// 	$po = $key->ktkb;
+		// 	$where_prov = array('tbl_kabkota.id_wil' => $po);
+		// }
+		// $provinsi_get = $this->m_registrasi->get_data_wilayah($where_prov)->result();
+		// foreach ($provinsi_get as $keyp) {
+		// 	# code...
+		// 	$data['kabkota'] = $keyp->kabkota;
+		// 	$data['provinsi'] = $keyp->provinsi;
+		// }
+		$this->load->view('camahatar/cetaksk_hal2reg',$data);
+
+		//pdf
+		$pdfFilePath="DAFTAR_ULANG_LULUS_SELEKSI_UNIMAR_AMNI.pdf";
+		$html=$this->load->view('camahatar/cetaksk_hal2reg',$data, TRUE);
+		$pdf = $this->m_pdf->load();
+ 		ob_clean();
+        $pdf->AddPage('P');
+        $pdf->WriteHTML($html);
+        $pdf->Output($pdfFilePath, "D");
+        exit();
+		redirect("pengumuman");
+
+	}
+	public function download_sk2tf($no)
+	{
+		# code...
+		$where = array('tbl_catar_2025.no' => $no);
+		// $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2025')->result();
+		$data['catar'] = $this->m_registrasi->get_data_join_2025_where($where)->result();
+		// foreach ($data['catar'] as $key) {
+		// 	# code...
+		// 	$po = $key->ktkb;
+		// 	$where_prov = array('tbl_kabkota.id_wil' => $po);
+		// }
+		// $provinsi_get = $this->m_registrasi->get_data_wilayah($where_prov)->result();
+		// foreach ($provinsi_get as $keyp) {
+		// 	# code...
+		// 	$data['kabkota'] = $keyp->kabkota;
+		// 	$data['provinsi'] = $keyp->provinsi;
+		// }
+		$this->load->view('camahatar/cetaksk_hal2tf',$data);
+
+		//pdf
+		$pdfFilePath="DAFTAR_ULANG_LULUS_SELEKSI_UNIMAR_AMNI.pdf";
+		$html=$this->load->view('camahatar/cetaksk_hal2tf',$data, TRUE);
+		$pdf = $this->m_pdf->load();
+ 		ob_clean();
+        $pdf->AddPage('P');
+        $pdf->WriteHTML($html);
+        $pdf->Output($pdfFilePath, "D");
+        exit();
+		redirect("pengumuman");
+
+	}
 	public function down_sanggup_tidak_menikah25()
 	{
 		# code...
@@ -1259,8 +1321,8 @@ public function edit_proses_seleksi()
 	public function proses_ukurpakaian($value='')
 	{
 		# code...
-		$jalur = $this->input->post('jalur');
-		if ($jalur == "reguler" || $jalur == "gdr1") {
+		$prodi = $this->input->post('prodi');
+		if ($prodi == "2" || $prodi == "3" || $prodi == "1") {
 			# code...
 		$no = $this->input->post('no');
 		$jk_pakaian = $this->input->post('jk');
@@ -1276,7 +1338,7 @@ public function edit_proses_seleksi()
 		$pdhpdub_kemeja = $this->input->post('pdhpdub_kemeja');
 		$pdhpdub_celana = $this->input->post('pdhpdub_celana');
 		$jaspdpm = $this->input->post('jaspdpm');
-		$jas_almamater = $this->input->post('jas_almamater');
+		$jas_almamater = "0";
 		$ukuran_sepatu_lainnya = $this->input->post('ukuran_sepatu_lainnya');
 		$seragam_pdl_lainnya = $this->input->post('seragam_pdl_lainnya');
 		$training_pack_lainnya = $this->input->post('training_pack_lainnya');
@@ -1327,8 +1389,8 @@ public function edit_proses_seleksi()
 		// $baju_renang = $this->input->post('baju_renang');
 		$baju_renang = "0";
 		$dogi = $this->input->post('dogi');
-		$pdhpdub_kemeja = "0";
-		$pdhpdub_celana = "0";
+		$pdhpdub_kemeja =" $this->input->post('pdhpdub_kemeja')";
+		$pdhpdub_celana = $this->input->post('pdhpdub_celana');
 		$jaspdpm = "0";
 		$jas_almamater = $this->input->post('jas_almamater');
 		$ukuran_sepatu_lainnya = $this->input->post('ukuran_sepatu_lainnya');

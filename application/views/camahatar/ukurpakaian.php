@@ -375,7 +375,7 @@
                   <input type="text" class="form-control" id="telp" name="telp" placeholder="Masukan Link File KTP" value="<?php echo $c->tb ?>" readonly>
                   </div>
 
-                  <!-- <hr>
+                  <hr>
                   <h5><b><u>SERAGAM DINAS*</u></b></h5>
                   <p><b>Seragam PDH & Seragam PDUB</b></p>
                    <div class="form-group">
@@ -405,7 +405,7 @@
                   <input type="text" class="form-control" name="pdhpdub_celana_lainnya" id="pdhpdub_celana_lainnya" placeholder="Silakan isi Ukuran Celana untuk Seragam PDH & Seragam PDUB lainnya">
                   </div>
 
-                  <hr>
+                 <!--  <hr>
 
                    <div class="form-group">
                   <label for="exampleInputEmail1"> Jas PDPM :</label>
