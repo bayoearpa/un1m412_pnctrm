@@ -1500,6 +1500,7 @@ public function edit_proses_seleksi()
 		foreach ($data['catar'] as $key) {
 			# code...
 			$data['nik'] = $key->nik;
+			$data['jalur'] = $key->jalur;
 		}
 				//cek seleksi
 		$data['hs'] = $this->m_registrasi->get_data($where, 'tbl_catar_hasil_seleksi_2025')->num_rows();
@@ -1522,6 +1523,7 @@ public function edit_proses_seleksi()
 		foreach ($data['catar'] as $key) {
 			# code...
 			$data['nik'] = $key->nik;
+			$data['jalur'] = $key->jalur;
 		}
 				//cek seleksi
 		$data['hs'] = $this->m_registrasi->get_data($where, 'tbl_catar_hasil_seleksi_2025')->num_rows();
