@@ -1321,7 +1321,7 @@ public function edit_proses_seleksi()
 	public function proses_ukurpakaian($value='')
 	{
 		# code...
-		$prodi = $this->input->post('prodi');
+		$prodi = $this->input->post('prodix');
 		if ($prodi == "2" || $prodi == "3" || $prodi == "1" || $prodi == "4") {
 			# code...
 		$no = $this->input->post('no');
