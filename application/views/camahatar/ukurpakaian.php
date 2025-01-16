@@ -64,6 +64,7 @@
                 <div class="form-group">
                   <label for="exampleInputEmail1">Program Studi :</label>
                   <input type="text" class="form-control" id="prodi" name="prodi" placeholder="Masukan Link File KTP" value="<?php echo $camhtar->prodi($c->prodi) ?>" readonly>
+                  <input type="hidden" name="prodix" id="prodix" value="<?php echo $c->prodi ?>">
                   </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">No Hp/ Wa :</label>

@@ -1322,7 +1322,7 @@ public function edit_proses_seleksi()
 	{
 		# code...
 		$prodi = $this->input->post('prodi');
-		if ($prodi == "2" || $prodi == "3" || $prodi == "1") {
+		if ($prodi == "2" || $prodi == "3" || $prodi == "1" || $prodi == "4") {
 			# code...
 		$no = $this->input->post('no');
 		$jk_pakaian = $this->input->post('jk');
