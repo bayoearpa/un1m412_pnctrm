@@ -1376,6 +1376,12 @@ public function edit_proses_seleksi()
 					'jaspdpm_lainnya' => $jaspdpm_lainnya,
 					'jas_almamater_lainnya' => $jas_almamater_lainnya,
 					);
+		$proses_insert = $this->m_registrasi->input_data($data,'tbl_ukurpakaian');
+				if ($proses_insert) {
+					# code...
+					redirect("ukurpakaian?pesan=succsess");
+				}
+				redirect("ukurpakaian?pesan=error");
 		}else{
 
 		$no = $this->input->post('no');
@@ -1430,15 +1436,14 @@ public function edit_proses_seleksi()
 					'jaspdpm_lainnya' => $jaspdpm_lainnya,
 					'jas_almamater_lainnya' => $jas_almamater_lainnya,
 					);
-		}
 		
-		$proses_insert = $this->m_registrasi->input_data($data,'tbl_ukurpakaian');
+			$proses_insert = $this->m_registrasi->input_data($data,'tbl_ukurpakaian');
 				if ($proses_insert) {
 					# code...
 					redirect("ukurpakaian?pesan=succsess");
 				}
 				redirect("ukurpakaian?pesan=error");
-
+		}
 	}
 	public function down_tutorial_form_seleksi_gelombang_dini()
 	{

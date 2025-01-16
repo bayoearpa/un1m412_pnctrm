@@ -55,14 +55,14 @@
               <hr>
               <form action="<?php echo base_url() ?>proses_bukti_bayar_daful" name="form1" id="form1" method="post" enctype="multipart/form-data">
               <?php if ($this->session->userdata('jalur')=="gdr1" || $this->session->userdata('jalur')=="reguler"): ?>
-                <div class="box-body"><h3>Pada Saat Madabintal diharapkan mengisi form yang sudah disiapkan tim PMB.</b> untuk format bisa di download di bawah ini :</h3>
+                <!-- <div class="box-body"><h3>Pada Saat Madabintal diharapkan mengisi form yang sudah disiapkan tim PMB.</b> untuk format bisa di download di bawah ini :</h3>
                 <p></p>
-                 <a href="<?php echo base_url() ?>download_super_asrama?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan di Asrama (Khusus Putri)</button></a>
+                 <a href="<?php //echo base_url() ?>download_super_asrama?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan di Asrama (Khusus Putri)</button></a>
                 <p></p>
-                <a href="<?php echo base_url() ?>download_super_taat?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan Sanggup Mentaati Peraturan</button></a>
+                <a href="<?php //echo base_url() ?>download_super_taat?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan Sanggup Mentaati Peraturan</button></a>
                 <p></p>
-                <a href="<?php echo base_url() ?>download_super_tidak_menikah?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan Sanggup Tidak Menikah</button></a>
-                </div>
+                <a href="<?php //echo base_url() ?>download_super_tidak_menikah?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan Sanggup Tidak Menikah</button></a>
+                </div> -->
                 
               <?php endif ?>
                
