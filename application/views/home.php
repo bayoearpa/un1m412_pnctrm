@@ -165,7 +165,7 @@
    <section class="contact text-white" id="contact" style="background-color: #01317d; color: white;">
       <div class="container">
         <h2 class="text-center text-uppercase text-third mb-0">Jadwal Seleksi</h2><br>
-         <center><img src="<?php echo base_url() ?>assets/front1/img/jadwal_test25.png" width="100%"></center>
+         <center><img src="<?php echo base_url() ?>assets/front1/img/jadwal_test252.png" width="100%"></center>
         
       </div> 
     </section>
