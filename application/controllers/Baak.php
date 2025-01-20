@@ -2816,7 +2816,7 @@ class Baak extends CI_Controller {
         $where = array(
             'tbl_catar_2025.no' => $id       
         );
-        $data['catar'] = $this->m_registrasi->get_data_prosesseleksi2025($where)->result();
+        $data['catar'] = $this->m_registrasi->get_data_join_2025_where($where)->result();
 
         $this->load->view('baak/header');
         $this->load->view('baak/editprosesseleksi',$data);

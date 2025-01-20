@@ -219,23 +219,23 @@
     <input type="hidden" name="id_seleksi" id="id_seleksi" value="<?php echo $c->id_seleksi?>">
             <div class="form-group">
                 <label for="exampleInputEmail1">Tanggal Pengumuman</label>
-                  <input type="date" class="form-control" name="tgl_pengumuman" id="tgl_pengumuman" required>
+                  <input type="date" class="form-control" name="tgl_pengumuman" id="tgl_pengumuman" value="<?php echo $c->tgl_pengumuman?>" required>
             </div>
              <div class="form-group">
                 <label for="exampleInputEmail1">No. Surat Hal 1</label>
-                  <input type="text" class="form-control" name="no_surat_hal_1" id="no_surat_hal_1" required>
+                  <input type="text" class="form-control" name="no_surat_hal_1" id="no_surat_hal_1" value="<?php echo $c->no_surat_hal_1?>" required>
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">No. Surat Hal 2</label>
-                  <input type="text" class="form-control" name="no_surat_hal_2" id="no_surat_hal_2" required>
+                  <input type="text" class="form-control" name="no_surat_hal_2" id="no_surat_hal_2" value="<?php echo $c->no_surat_hal_2?>" required>
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Jenis Seleksi (contoh : Gelombang dini, Periode Januari)</label>
-                  <input type="text" class="form-control" name="jenis_seleksi" id="jenis_seleksi" required>
+                  <input type="text" class="form-control" name="jenis_seleksi" id="jenis_seleksi" value="<?php echo $c->jenis_seleksi ?>" required>
             </div>
              <div class="form-group">
                 <label for="exampleInputEmail1">Waktu Daftar Ulang (contoh : 01 s/d  31 Januari 2025 )</label>
-                  <input type="text" class="form-control" name="waktu_daful" id="waktu_daful" required>
+                  <input type="text" class="form-control" name="waktu_daful" id="waktu_daful" value="<?php echo $c->waktu_daful ?>" required>
             </div>
          <div class="form-group">
                 <label for="exampleInputEmail1">Hasil :</label>
