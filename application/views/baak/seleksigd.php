@@ -18,6 +18,7 @@
                   <th>L/P</th>
                   <th>No. Telp/Hp</th>
                   <th>Prodi</th>
+                  <th>Edit</th>
                   <th>Lihat</th>
                 </tr>
                 </thead>
@@ -71,19 +72,29 @@
                       echo $pick;
                     
                   ?></td>
+                   <td>
+                  <?php 
+                  if ($c->no_seleksi > "0"){ ?>
+                    <a class="btn btn-primary btn-sm" href="<?php echo base_url().'baak/editprosesseleksi/'.$c->no; ?>"><i class="fa fa-eye"></i>Lihat</a>
+                  <?php }else{ ?>
+                    
+                  <?php }?> </td>
                   <td> <button type="button" name="submit" id="editseleksigdr1" class="btn editseleksigdr1 btn-primary"  data-no="<?php echo $c->no; ?>">Lihat</button></td>
                 </tr>
                <?php } ?>
                 </tbody>
                 <tfoot>
                 <tr>
+                 <tr>
                   <th>No.</th>
                   <th>Nama</th>
                   <th>No. Pendf.</th>
                   <th>L/P</th>
                   <th>No. Telp/Hp</th>
                   <th>Prodi</th>
+                  <th>Edit</th>
                   <th>Lihat</th>
+                </tr>
                 </tr>
                 </tfoot>
               </table>
