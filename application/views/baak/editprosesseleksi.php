@@ -209,7 +209,7 @@
       <!-- this row will not appear when printing -->
       <div class="row no-print">
         <div class="col-xs-12">
-        <form method="post" action="<?php echo base_url() ?>baak/prosesseleksip" target="_blank">
+        <form method="post" action="<?php echo base_url() ?>baak/editprosesseleksip" target="_blank">
        <!--  <input type="hidden" name="no" id="no" value="<?php //echo $c->no ?>">
         <input type="hidden" name="gelombang" id="gelombang" value="<?php //echo $c->gelombang ?>">
         <input type="hidden" name="tgl_byr" id="tgl_byr" value="<?php //echo date("Y-m-d"); ?>">

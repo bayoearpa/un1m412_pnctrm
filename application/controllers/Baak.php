@@ -2882,6 +2882,39 @@ class Baak extends CI_Controller {
         redirect("baak/home");
 
     }
+     function editprosesseleksip()
+    {
+        # code...
+        $hs_id = $this->input->post('hs_id');
+
+        // $no = $this->input->post('no');
+        // $gelombang = $this->input->post('gelombang');
+        // $prodi = $this->input->post('prodi');
+        // $thn_pel=$this->input->post('thn_pel');
+        $tgl_pengumuman=$this->input->post('tgl_pengumuman');
+        $no_surat_hal_1=$this->input->post('no_surat_hal_1');
+        $no_surat_hal_2=$this->input->post('no_surat_hal_2');
+        $jenis_seleksi=$this->input->post('jenis_seleksi');
+        $waktu_daful=$this->input->post('waktu_daful');
+        $hasil=$this->input->post('hasil');
+
+        $where = array(
+            'hs_id' => $hs_id       
+        );
+        $data = array(
+            'hasil' => $hasil,
+            'tgl_pengumuman' => $tgl_pengumuman,
+            'no_surat_hal_1' => $no_surat_hal_1,
+            'no_surat_hal_2' => $no_surat_hal_2,
+            'jenis_seleksi' => $jenis_seleksi,
+            'waktu_daful' => $waktu_daful,
+            );
+
+        // $this->m_registrasi->update_data($where,$data,'tbl_catar_2021_validasi');
+        $this->m_registrasi->update_data($where, $data,'tbl_catar_hasil_seleksi_2025');
+        redirect("baak/home");
+
+    }
 
     ////////////////////////////////////////// .seleksi 2024 /////////////////////////////////////////////////////
     ///////////////////////////////////////// Referral 2024 /////////////////////////////////////////////////////
