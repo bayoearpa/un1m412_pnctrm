@@ -405,11 +405,13 @@ class m_registrasi extends CI_Model
 		tbl_catar_validasi_2025.no_reg,
 		tbl_catar_validasi_2025.jml_byr,
 		tbl_catar_validasi_2025.aktif,
+		tbl_catar_hasil_seleksi_2025.no as no_seleksi,
 		tbl_seleksi_2025.no');
 		
 		$this->db->from('tbl_catar_2025');
 		$this->db->join('tbl_catar_validasi_2025','tbl_catar_validasi_2025.no = tbl_catar_2025.no','inner');
 		$this->db->join('tbl_seleksi_2025','tbl_seleksi_2025.no = tbl_catar_2025.no','inner');
+		$this->db->join('tbl_catar_hasil_seleksi_2025','tbl_catar_2025.no = tbl_catar_hasil_seleksi_2025.no','left');
 		$this->db->where($where);
 		$query=$this->db->get();
 		return $query;
