@@ -1395,7 +1395,7 @@ public function edit_proses_seleksi()
 		// $baju_renang = $this->input->post('baju_renang');
 		$baju_renang = "0";
 		$dogi = $this->input->post('dogi');
-		$pdhpdub_kemeja =" $this->input->post('pdhpdub_kemeja')";
+		$pdhpdub_kemeja = $this->input->post('pdhpdub_kemeja');
 		$pdhpdub_celana = $this->input->post('pdhpdub_celana');
 		$jaspdpm = "0";
 		$jas_almamater = $this->input->post('jas_almamater');
