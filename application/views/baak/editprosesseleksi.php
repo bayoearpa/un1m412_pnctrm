@@ -210,13 +210,14 @@
       <div class="row no-print">
         <div class="col-xs-12">
         <form method="post" action="<?php echo base_url() ?>baak/prosesseleksip" target="_blank">
-        <input type="hidden" name="no" id="no" value="<?php echo $c->no ?>">
-        <input type="hidden" name="gelombang" id="gelombang" value="<?php echo $c->gelombang ?>">
-        <input type="hidden" name="tgl_byr" id="tgl_byr" value="<?php echo date("Y-m-d"); ?>">
-        <input type="hidden" name="prodi" id="prodi" value="<?php echo $c->prodi ?>">
+       <!--  <input type="hidden" name="no" id="no" value="<?php //echo $c->no ?>">
+        <input type="hidden" name="gelombang" id="gelombang" value="<?php //echo $c->gelombang ?>">
+        <input type="hidden" name="tgl_byr" id="tgl_byr" value="<?php //echo date("Y-m-d"); ?>">
+        <input type="hidden" name="prodi" id="prodi" value="<?php //echo $c->prodi ?>"> -->
         <!-- <input type="hidden" name="jml_byr" id="jml_byr" value="500000"> -->
-		<input type="hidden" name="thn_pel" id="thn_pel" value="<?php echo $c->thn_pel?>">
-    <input type="hidden" name="id_seleksi" id="id_seleksi" value="<?php echo $c->id_seleksi?>">
+		<!-- <input type="hidden" name="thn_pel" id="thn_pel" value="<?php //echo $c->thn_pel?>"> -->
+    <!-- <input type="hidden" name="id_seleksi" id="id_seleksi" value="<?php //echo $c->id_seleksi?>"> -->
+            <input type="hidden" name="hs_id" id="hs_id" value="<?php echo $c->hs_id?>">
             <div class="form-group">
                 <label for="exampleInputEmail1">Tanggal Pengumuman</label>
                   <input type="date" class="form-control" name="tgl_pengumuman" id="tgl_pengumuman" value="<?php echo $c->tgl_pengumuman?>" required>
@@ -241,19 +242,19 @@
                 <label for="exampleInputEmail1">Hasil :</label>
                   <div class="radio">
                     <label>
-                      <input type="radio" name="hasil" id="hasil" value="lulus">
+                      <input type="radio" name="hasil" id="hasil" value="lulus" <?php echo ($c->hasil == 'lulus') ? 'checked' : ''; ?>>
                       Lulus
                     </label>
                   </div>
                   <div class="radio">
                     <label>
-                      <input type="radio" name="hasil" id="hasil" value="tidak_lulus">
+                      <input type="radio" name="hasil" id="hasil" value="tidak_lulus" <?php echo ($c->hasil == 'tidak_lulus') ? 'checked' : ''; ?>>
                       Tidak Lulus
                     </label>
                   </div>
                   <div class="radio">
                     <label>
-                      <input type="radio" name="hasil" id="hasil" value="cadangan">
+                      <input type="radio" name="hasil" id="hasil" value="cadangan" <?php echo ($c->hasil == 'cadangan') ? 'checked' : ''; ?>>
                       Cadangan
                     </label>
                   </div>
