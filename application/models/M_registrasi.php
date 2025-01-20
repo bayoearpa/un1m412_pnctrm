@@ -1267,7 +1267,13 @@ class m_registrasi extends CI_Model
      public function get_ref_data_keu() {
         // Select the required fields from tbl_ref
            // Select the necessary fields from tbl_ref
-    $this->db->select('tbl_ref.ref as referral, tbl_ref.nama as nama_pereferal, tbl_ref.alamat as alamat_pereferal, tbl_ref.no_telp as no_telp_pereferal, COUNT(tbl_catar_2024.no) as total');
+    $this->db->select('tbl_ref.ref as referral, 
+    	tbl_ref.nama as nama_pereferal, 
+    	tbl_ref.alamat as alamat_pereferal, 
+    	tbl_ref.no_telp as no_telp_pereferal,
+    	tbl_catar_2024.no as no,
+    	tbl_catar_2024.nama as nama, 
+    	COUNT(tbl_catar_2024.no) as total');
     
     // Join with tbl_catar_2024
     $this->db->from('tbl_ref');

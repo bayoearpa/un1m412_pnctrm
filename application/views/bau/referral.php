@@ -16,6 +16,8 @@
                   <th>Nama</th>
                   <th>Alamat</th>
                   <th>No. Telp</th>
+                  <th>No. Pendft</th>
+                  <th>Nama Catarma</th>
                   <th>Total</th>
                   <th>Total perolehan</th>
                 </tr>
@@ -31,6 +33,8 @@
                   <td><?php echo $c->nama_pereferal ?></td>
                   <td><?php echo $c->alamat_pereferal ?></td>
                   <td><?php echo $c->no_telp_pereferal ?></td>
+                  <td><?php echo $c->no ?></td>
+                  <td><?php echo $c->nama ?></td>
                   <td><?php echo $c->total?></td>
                   <td><?php echo $c->total_perolehan?></td>
                 </tr>
@@ -38,11 +42,13 @@
                 </tbody>
                 <tfoot>
                 <tr>
-                <th>No.</th>
+                  <th>No.</th>
                   <th>ref</th>
                   <th>Nama</th>
                   <th>Alamat</th>
                   <th>No. Telp</th>
+                  <th>No. Pendft</th>
+                  <th>Nama Catarma</th>
                   <th>Total</th>
                   <th>Total perolehan</th>
                 </tr>
