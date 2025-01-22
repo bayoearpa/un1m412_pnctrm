@@ -551,7 +551,7 @@ class Bau extends CI_Controller {
     public function getdatareferral($ref)
     {
         # code...
-        $data = $this->m_registrasi->get_ref_data_by_id_ref($no);
+        $data = $this->m_registrasi->get_ref_data_by_id_ref($ref);
         echo json_encode($data);
     }
     ////////////////////////////////////// .get referral data/////////////////////////////////////////////////

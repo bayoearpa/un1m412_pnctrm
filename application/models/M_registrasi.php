@@ -1292,6 +1292,7 @@ class m_registrasi extends CI_Model
     
     return $query->result();
     }
+    
     public function get_ref_data_by_id_ref($no) {
         $this->db->select('*'); // Pilih semua kolom
         $this->db->from('tbl_catar_2024'); // Ganti dengan nama tabel Anda
