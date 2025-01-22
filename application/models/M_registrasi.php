@@ -1292,6 +1292,15 @@ class m_registrasi extends CI_Model
     
     return $query->result();
     }
+    public function get_ref_data_by_id_ref($no) {
+        $this->db->select('*'); // Pilih semua kolom
+        $this->db->from('tbl_catar_2024'); // Ganti dengan nama tabel Anda
+        $this->db->where('ref', $no); // Filter berdasarkan kolom 'no'
+        $query = $this->db->get();
+
+        // Kembalikan hasil sebagai array
+        return $query->result_array();
+    }
     ///////////////////////////////////////// .get total ref for keu /////////////////////////////////////////
   ////////////////////summary 2024///////////////////////////////////////////////////////////////////////////
 	function get_data_statistic_kabkota_2024(){

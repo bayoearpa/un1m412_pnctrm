@@ -545,7 +545,14 @@ class Bau extends CI_Controller {
         $this->load->view('bau/header');
         $this->load->view('bau/referral', $data);
         $this->load->view('bau/footer');
+        $this->load->view('bau/referral_js', $data);
 
+    }
+    public function getdatareferral($ref)
+    {
+        # code...
+        $data = $this->m_registrasi->get_ref_data_by_id_ref($no);
+        echo json_encode($data);
     }
     ////////////////////////////////////// .get referral data/////////////////////////////////////////////////
     ///////////////////////////////////////////////////////summary 2024///////////////////////////////////////////

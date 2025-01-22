@@ -16,10 +16,9 @@
                   <th>Nama</th>
                   <th>Alamat</th>
                   <th>No. Telp</th>
-                  <th>No. Pendft</th>
-                  <th>Nama Catarma</th>
                   <th>Total</th>
                   <th>Total perolehan</th>
+                  <th>Daftar Catarma</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -33,24 +32,22 @@
                   <td><?php echo $c->nama_pereferal ?></td>
                   <td><?php echo $c->alamat_pereferal ?></td>
                   <td><?php echo $c->no_telp_pereferal ?></td>
-                  <td><?php echo $c->no ?></td>
-                  <td><?php echo $c->nama ?></td>
                   <td><?php echo $c->total?></td>
                   <td><?php echo $c->total_perolehan?></td>
+                  <td> <button type="button" name="submit" id="editseleksigdr1" class="btn editseleksigdr1 btn-primary"  data-no="<?php echo $c->no; ?>">Lihat</button></td>
                 </tr>
                <?php } ?>
                 </tbody>
                 <tfoot>
-                <tr>
+                 <tr>
                   <th>No.</th>
                   <th>ref</th>
                   <th>Nama</th>
                   <th>Alamat</th>
                   <th>No. Telp</th>
-                  <th>No. Pendft</th>
-                  <th>Nama Catarma</th>
                   <th>Total</th>
                   <th>Total perolehan</th>
+                  <th>Daftar Catarma</th>
                 </tr>
                 </tfoot>
               </table>
@@ -64,3 +61,38 @@
       <!-- /.row -->
     </section>
     <!-- /.content -->
+
+
+        <!-- ////////////////// modal-->
+                          <div class="modal fade" id="editFormModal" tabindex="-1" role="dialog" aria-labelledby="editFormModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title" id="editFormModalLabel">Data Catarma Referral</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                  </button>
+                              </div>
+                              <div class="modal-body">
+                                  <!-- Isi formulir di sini -->
+                                  <table id="selectTable" class="table table-bordered table-striped">
+                                    <thead>
+                                      <tr>
+                                        <th>No</th>
+                                        <th>No. Pendft</th>
+                                        <th>Nama</th>
+                                        <th>Alamat</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <!-- Isi tabel akan di-load secara dinamis -->
+                                    </tbody>
+                                  </table>
+
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
