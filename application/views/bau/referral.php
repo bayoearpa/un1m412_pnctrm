@@ -34,7 +34,7 @@
                   <td><?php echo $c->no_telp_pereferal ?></td>
                   <td><?php echo $c->total?></td>
                   <td><?php echo $c->total_perolehan?></td>
-                  <td> <button type="button" name="submit" id="editseleksigdr1" class="btn editseleksigdr1 btn-primary"  data-no="<?php echo $c->no; ?>">Lihat</button></td>
+                  <td> <button type="button" name="submit" id="editseleksigdr1" class="btn editseleksigdr1 btn-primary"  data-no="<?php echo $c->referral; ?>">Lihat</button></td>
                 </tr>
                <?php } ?>
                 </tbody>
