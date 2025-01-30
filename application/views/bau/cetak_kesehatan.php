@@ -102,22 +102,25 @@ foreach($catar as $c){
                           $pick = "/N/".date("Y");
                         break;
                         case '4' :
-                          $pick = "/M/".date("Y");
+                          $pick = "/TRA/".date("Y");
                         break;
                         case '5':
-                          $pick = "/Ms/".date("Y");
+                          $pick = "/TTL/".date("Y");
                         break;
                         case '6':
                           $pick = "/TM/".date("Y");
                         break;
                         case '7':
-                          $pick = "/TL/".date("Y");
-                        break;
-                        case '8':
                           $pick = "/TK/".date("Y");
                         break;
-                        case '9':
+                        case '8':
                           $pick = "/PI/".date("Y");
+                        break;
+                        case '9':
+                          $pick = "/MPLM/".date("Y");
+                        break;
+                         case '10':
+                          $pick = "/BD/".date("Y");
                         break;
                         
                       }
@@ -154,6 +157,12 @@ foreach($catar as $c){
                       break;
                       case '8':
                         $pick = "S1 PERDAGANGAN INTERNASIONAL";
+                      break;
+                       case '9':
+                        $pick = "D4 MANAJEMEN PELABUHAN DAN LOGISTIK MARITIM";
+                      break; 
+                      case '10':
+                        $pick = "S1 BISNIS DIGITAL";
                       break;
                         
                       }
