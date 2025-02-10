@@ -1310,7 +1310,7 @@ public function edit_proses_seleksi()
 		$data['hs'] = $this->m_registrasi->get_data($where, 'tbl_catar_hasil_seleksi_2025')->num_rows();
 		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2025')->num_rows();
 		$data['ukurpakaian'] = $this->m_registrasi->get_data($where, 'tbl_ukurpakaian')->num_rows();
-		// $data['ukurpakaian_data'] = $this->m_registrasi->get_data($where, 'tbl_ukurpakaian')->result();
+		$data['ukurpakaian_data'] = $this->m_registrasi->get_data($where, 'tbl_ukurpakaian')->result();
 
 		$this->load->view('camahatar/header',$data);
         $this->load->view('camahatar/ukurpakaian',$data);
