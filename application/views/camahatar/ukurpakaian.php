@@ -486,7 +486,14 @@
                   <tr>
                     <td>Topi Pet</td>
                     <td>:</td>
-                    <td><?php echo $key->topi_pet; ?></td>
+                    <td><?php 
+                      if ($key->topi_pet == "lainnya") {
+                        # code...
+                        echo $key->topi_pet_lainnya;
+                      }else{
+                        echo $key->topi_pet;
+                      }
+                     ?></td>
                   </tr>
                   <tr>
                     <td>Seragam PDL</td>
@@ -597,7 +604,14 @@
                   <tr>
                     <td>Topi Pet</td>
                     <td>:</td>
-                    <td><?php echo $key->topi_pet; ?></td>
+                    <td><?php 
+                      if ($key->topi_pet == "lainnya") {
+                        # code...
+                        echo $key->topi_pet_lainnya;
+                      }else{
+                        echo $key->topi_pet;
+                      }
+                     ?></td>
                   </tr>
                   <tr>
                     <td>Seragam PDL</td>
