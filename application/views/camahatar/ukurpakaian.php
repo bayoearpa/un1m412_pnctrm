@@ -424,8 +424,262 @@
                   <button type="submit" class="btn btn-primary">Simpan</button>
                 <?php } ?>
                 <?php }else{ ?>           
-               <center><h4><b>Anda sudah mengisi form ukur pakaian</b><span class="badge bg-green"><i class="fa fa-check"></i></span></h4></center>
-                <?php } ?>
+               <center><h4><b>Anda sudah mengisi form ukur pakaian, silakan cek kembali hasil inputan anda dibawah ini :</b><span class="badge bg-green"><i class="fa fa-check"></i></span></h4></center>
+                <!-- --------reguler
+                  ukuran Sepatu
+                  topi pet
+                  seagam PDL
+                  training pack
+                  wearpack
+                  kaos olahraga
+                  dogi
+
+                  seragam dinas
+                  - seragam PDH & seragam PDUB
+                  --kemeja
+                  --celana
+
+                  jas PDPM
+
+                  ----- reguler non maritim
+
+                  jas almamater
+                  ukuran sepatu
+                  topi pet
+                  seragam PDL
+                  training pack
+                  wearpack
+                  kaos olahraga
+                  dogi
+
+                  seragam dinas
+                  - seragam PDH & seragam PDUB
+                  --kemeja
+                  --celana
+                 -->
+               <?php if ($c->prodi == "1" || $c->prodi == "2" || $c->prodi == "3" || $c->prodi == "9" ) { 
+
+                  foreach ($ukurpakaian_data as $key) {
+                    # code...
+
+                ?>
+
+
+                <table>
+                  <tr>
+                   <td>Jas PDPM</td>
+                    <td>:</td>
+                    <td><?php 
+                      if ($key->jaspdpm == "lainnya") {
+                        # code...
+                        echo $key->jaspdpm_lainnya;
+                      }else{
+                        echo $key->jaspdpm;
+                      }
+                     ?></td>
+                  </tr>
+                  <tr>
+                    <td>Ukuran Sepatu</td>
+                    <td>:</td>
+                    <td><?php echo $key->ukuran_sepatu; ?></td>
+                  </tr>
+                  <tr>
+                    <td>Topi Pet</td>
+                    <td>:</td>
+                    <td><?php echo $key->topi_pet; ?></td>
+                  </tr>
+                  <tr>
+                    <td>Seragam PDL</td>
+                    <td>:</td>
+                    <td><?php 
+                      if ($key->seragam_pdl == "lainnya") {
+                        # code...
+                        echo $key->seragam_pdl_lainnya;
+                      }else{
+                        echo $key->seragam_pdl;
+                      }
+                     ?></td>
+                  </tr>
+                  <tr>
+                    <td>Training Pack</td>
+                    <td>:</td>
+                    <td><?php 
+                      if ($key->training_pack == "lainnya") {
+                        # code...
+                        echo $key->training_pack_lainnya;
+                      }else{
+                        echo $key->training_pack;
+                      }
+                     ?></td>
+                  </tr>
+                  <tr>
+                    <td>Wearpack</td>
+                    <td>:</td>
+                    <td><?php 
+                      if ($key->wearpack == "lainnya") {
+                        # code...
+                        echo $key->wearpack_lainnya;
+                      }else{
+                        echo $key->wearpack;
+                      }
+                     ?></td>
+                  </tr>
+                   <tr>
+                    <td>Kaos Olahraga</td>
+                    <td>:</td>
+                    <td><?php 
+                      if ($key->kaos_or == "lainnya") {
+                        # code...
+                        echo $key->kaos_or_lainnya;
+                      }else{
+                        echo $key->kaos_or;
+                      }
+                     ?></td>
+                  </tr>
+
+                  <tr>
+                    <td>Dogi</td>
+                    <td>:</td>
+                    <td><?php echo $key->dogi; ?></td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">Seragam PDH & Seragam PDUB</td>
+                  </tr>
+                  <tr>
+                    <td>Kemeja</td>
+                    <td>:</td>
+                    <td><?php 
+                      if ($key->pdhpdub_kemeja == "lainnya") {
+                        # code...
+                        echo $key->pdhpdub_kemeja_lainnya;
+                      }else{
+                        echo $key->pdhpdub_kemeja;
+                      }
+                     ?></td>
+                  </tr>
+                   <tr>
+                    <td>Celana</td>
+                    <td>:</td>
+                    <td><?php 
+                      if ($key->pdhpdub_celana == "lainnya") {
+                        # code...
+                        echo $key->pdhpdub_celana_lainnya;
+                      }else{
+                        echo $key->pdhpdub_celana;
+                      }
+                     ?></td>
+                  </tr>
+                </table>
+
+
+               <?php }}else{ ?>
+
+                <table>
+                  <tr>
+                   <td>Jas Almamater</td>
+                    <td>:</td>
+                    <td><?php 
+                      if ($key->jas_almamater == "lainnya") {
+                        # code...
+                        echo $key->jas_almamater_lainnya;
+                      }else{
+                        echo $key->jas_almamater;
+                      }
+                     ?></td>
+                  </tr>
+                  <tr>
+                    <td>Ukuran Sepatu</td>
+                    <td>:</td>
+                    <td><?php echo $key->ukuran_sepatu; ?></td>
+                  </tr>
+                  <tr>
+                    <td>Topi Pet</td>
+                    <td>:</td>
+                    <td><?php echo $key->topi_pet; ?></td>
+                  </tr>
+                  <tr>
+                    <td>Seragam PDL</td>
+                    <td>:</td>
+                    <td><?php 
+                      if ($key->seragam_pdl == "lainnya") {
+                        # code...
+                        echo $key->seragam_pdl_lainnya;
+                      }else{
+                        echo $key->seragam_pdl;
+                      }
+                     ?></td>
+                  </tr>
+                  <tr>
+                    <td>Training Pack</td>
+                    <td>:</td>
+                    <td><?php 
+                      if ($key->training_pack == "lainnya") {
+                        # code...
+                        echo $key->training_pack_lainnya;
+                      }else{
+                        echo $key->training_pack;
+                      }
+                     ?></td>
+                  </tr>
+                  <tr>
+                    <td>Wearpack</td>
+                    <td>:</td>
+                    <td><?php 
+                      if ($key->wearpack == "lainnya") {
+                        # code...
+                        echo $key->wearpack_lainnya;
+                      }else{
+                        echo $key->wearpack;
+                      }
+                     ?></td>
+                  </tr>
+                   <tr>
+                    <td>Kaos Olahraga</td>
+                    <td>:</td>
+                    <td><?php 
+                      if ($key->kaos_or == "lainnya") {
+                        # code...
+                        echo $key->kaos_or_lainnya;
+                      }else{
+                        echo $key->kaos_or;
+                      }
+                     ?></td>
+                  </tr>
+
+                  <tr>
+                    <td>Dogi</td>
+                    <td>:</td>
+                    <td><?php echo $key->dogi; ?></td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">Seragam PDH & Seragam PDUB</td>
+                  </tr>
+                  <tr>
+                    <td>Kemeja</td>
+                    <td>:</td>
+                    <td><?php 
+                      if ($key->pdhpdub_kemeja == "lainnya") {
+                        # code...
+                        echo $key->pdhpdub_kemeja_lainnya;
+                      }else{
+                        echo $key->pdhpdub_kemeja;
+                      }
+                     ?></td>
+                  </tr>
+                   <tr>
+                    <td>Celana</td>
+                    <td>:</td>
+                    <td><?php 
+                      if ($key->pdhpdub_celana == "lainnya") {
+                        # code...
+                        echo $key->pdhpdub_celana_lainnya;
+                      }else{
+                        echo $key->pdhpdub_celana;
+                      }
+                     ?></td>
+                  </tr>
+                </table>
+                <?php }} ?>
                 
                   <?php } ?>
               
