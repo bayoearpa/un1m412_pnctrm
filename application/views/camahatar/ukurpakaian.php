@@ -487,11 +487,11 @@
                     <td>Topi Pet</td>
                     <td>:</td>
                     <td><?php 
-                      if ($key->topi_pet == "lainnya") {
+                      if ($key->topipet == "lainnya") {
                         # code...
-                        echo $key->topi_pet_lainnya;
+                        echo $key->topipet_lainnya;
                       }else{
-                        echo $key->topi_pet;
+                        echo $key->topipet;
                       }
                      ?></td>
                   </tr>
@@ -605,11 +605,11 @@
                     <td>Topi Pet</td>
                     <td>:</td>
                     <td><?php 
-                      if ($key->topi_pet == "lainnya") {
+                      if ($key->topipet == "lainnya") {
                         # code...
-                        echo $key->topi_pet_lainnya;
+                        echo $key->topipet_lainnya;
                       }else{
-                        echo $key->topi_pet;
+                        echo $key->topipet;
                       }
                      ?></td>
                   </tr>
