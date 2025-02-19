@@ -572,7 +572,9 @@
                 </table>
 
 
-               <?php }else{ ?>
+               <?php }}else{ 
+                foreach ($ukurpakaian_data as $key) {
+                  ?>
 
                 <table>
                   <tr>
