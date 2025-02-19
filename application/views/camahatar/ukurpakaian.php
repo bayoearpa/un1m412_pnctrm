@@ -572,7 +572,7 @@
                 </table>
 
 
-               <?php }}else{ ?>
+               <?php }else{ ?>
 
                 <table>
                   <tr>
@@ -679,7 +679,7 @@
                      ?></td>
                   </tr>
                 </table>
-                <?php }} ?>
+                <?php }}} ?>
                 
                   <?php } ?>
               
