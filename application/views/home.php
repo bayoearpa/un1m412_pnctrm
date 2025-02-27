@@ -154,7 +154,7 @@
     </div>
     <center><img src="<?php echo base_url() ?>assets/front1/img/join_unimar3.png" width="100%"></center>
     <div class="text-center mt-4">
-      <a class="btn-custom btn-xl" href="#portfolio">
+      <a class="btn-custom btn-xl" href="<?php echo base_url() ?>daftar">
         <i class="fa fa-sign-in mr-2"></i>
         Daftar Sekarang!
       </a>
