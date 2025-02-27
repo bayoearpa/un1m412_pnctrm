@@ -39,7 +39,7 @@
                   <td><?php echo $c->tgl_l ?></td>
                   <td><?php echo $c->telp ?></td>
                   <td><?php echo $baak->prodi($c->prodi) ?></td>
-                  <td><?php if ($c->prodi_lama == "other") {
+                  <td><?php if ($c->prodi_lama_lainnya > 0) {
                     # code...
                     echo $c->prodi_lama_lainnya;
                   }else{ 
