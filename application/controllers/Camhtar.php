@@ -781,7 +781,7 @@ class Camhtar extends CI_Controller {
 	public function down_supersehatreg()
 	{
 		# code...
-		force_download('assets/download/surat_pernyataan_sehat_reg3.pdf',NULL);
+		force_download('assets/download/surat_kesehatan_kelas_reguler_20252.pdf',NULL);
 		redirect(base_url());
 	}
 	public function seleksigdr1()
@@ -806,6 +806,29 @@ class Camhtar extends CI_Controller {
         $this->load->view('camahatar/seleksigdr1',$data);
         $this->load->view('camahatar/footer');
         $this->load->view('camahatar/seleksigdr1_js');
+	}
+	public function seleksi_reguler()
+	{
+		# code...
+		$no = $this->session->userdata('no');
+		$where = array(
+				'no' => $no,
+			);
+		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2025')->result();
+		foreach ($data['catar'] as $key) {
+			# code...
+			$data['nik'] = $key->nik;
+			$data['prodi'] = $key->prodi;
+			$data['jk'] = $key->jk;
+		}
+		$data['validasi'] = $this->m_registrasi->get_data($where, 'tbl_catar_validasi_2025')->num_rows();
+		$data['seleksi'] = $this->m_registrasi->get_data($where, 'tbl_seleksi_2025')->num_rows();
+		$data['seleksi_data'] = $this->m_registrasi->get_data($where, 'tbl_seleksi_2025')->result();
+
+		$this->load->view('camahatar/header',$data);
+        $this->load->view('camahatar/seleksireg',$data);
+        $this->load->view('camahatar/footer');
+        $this->load->view('camahatar/seleksireg_js');
 	}
 	public function seleksigdr2()
 	{

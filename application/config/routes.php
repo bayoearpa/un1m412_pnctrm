@@ -133,7 +133,7 @@ $route['download_pengumuman_september'] = 'camhtar/down_pengumuman_sep';
 $route['download_pengumuman_oktober'] 	= 'camhtar/down_pengumuman_nov';
 $route['download_pengumuman_november'] 	= 'camhtar/down_pengumuman_des';
 
-$route['seleksi_reguler'] = 'camhtar/seleksigdr1';
+$route['seleksi_reguler'] = 'camhtar/seleksi_reguler';
 $route['seleksi_tf'] = 'camhtar/seleksigdr2';
 $route['download_super_asrama'] = 'camhtar/down_super_asrama';
 $route['download_super_taat'] = 'camhtar/down_super_taat';
