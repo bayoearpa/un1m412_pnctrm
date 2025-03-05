@@ -1372,6 +1372,7 @@ public function edit_proses_seleksi()
 		$pdhpdub_celana_lainny = $this->input->post('pdhpdub_celana_lainny');
 		$jaspdpm_lainnya = $this->input->post('jaspdpm_lainnya');
 		$jas_almamater_lainnya = $this->input->post('jas_almamater_lainnya');
+		$topipet_lainnya = $this->input->post('topipet_lainnya');
 
 		$data = array(
 					'no'=> $this->session->userdata('no'),
@@ -1398,6 +1399,7 @@ public function edit_proses_seleksi()
 					'pdhpdub_celana_lainny' => $pdhpdub_celana_lainny,
 					'jaspdpm_lainnya' => $jaspdpm_lainnya,
 					'jas_almamater_lainnya' => $jas_almamater_lainnya,
+					'topipet_lainnya' => $topipet_lainnya,
 					);
 		$proses_insert = $this->m_registrasi->input_data($data,'tbl_ukurpakaian');
 				if ($proses_insert) {
@@ -1432,6 +1434,7 @@ public function edit_proses_seleksi()
 		$pdhpdub_celana_lainny = $this->input->post('pdhpdub_celana_lainny');
 		$jaspdpm_lainnya = $this->input->post('jaspdpm_lainnya');
 		$jas_almamater_lainnya = $this->input->post('jas_almamater_lainnya');
+		$topipet_lainnya = $this->input->post('topipet_lainnya');
 
 		$data = array(
 					'no'=> $this->session->userdata('no'),
@@ -1458,6 +1461,7 @@ public function edit_proses_seleksi()
 					'pdhpdub_celana_lainny' => $pdhpdub_celana_lainny,
 					'jaspdpm_lainnya' => $jaspdpm_lainnya,
 					'jas_almamater_lainnya' => $jas_almamater_lainnya,
+					'topipet_lainnya' => $topipet_lainnya,
 					);
 		
 			$proses_insert = $this->m_registrasi->input_data($data,'tbl_ukurpakaian');
