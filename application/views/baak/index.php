@@ -39,11 +39,11 @@
                   <td><?php echo $c->tgl_l ?></td>
                   <td><?php echo $c->telp ?></td>
                   <td><?php echo $baak->prodi($c->prodi) ?></td>
-                  <td><?php if ($c->prodi_lama_lainnya > 0) {
+                   <td><?php if ($c->prodi_lama = "other") {
                     # code...
-                    echo $c->prodi_lama_lainnya;
+                    echo $c->prodi_lama;
                   }else{ 
-                    echo $c->prodi_lama ;
+                    echo $c->prodi_lama_lainnya ;
                   }?></td>
                   <td><?php echo $c->kabkota?></td>
                   <td><?php echo $c->propinsi?></td>
