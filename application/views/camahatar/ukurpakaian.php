@@ -295,6 +295,7 @@
                     <option value="59">59</option>
                     <option value="60">60</option>
                   </select>
+                  <input type="text" class="form-control" name="topipet_lainnya" id="topipet_lainnya" placeholder="Silakan isi Ukuran Seragam PDL lainnya">
                   </div>
                    <div class="form-group">
                   <label for="exampleInputEmail1">Seragam PDL :</label>
