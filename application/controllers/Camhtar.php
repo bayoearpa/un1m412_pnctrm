@@ -310,6 +310,9 @@ class Camhtar extends CI_Controller {
 			);
 		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2025')->result();
 
+		//cek seleksi
+		$data['hs'] = $this->m_registrasi->get_data($where, 'tbl_catar_hasil_seleksi_2025')->num_rows();
+
 		foreach ($data['catar'] as $key) {
 			# code...
 			$data['getprovinsi'] = $this->getProvinsi($key->provinsi);
