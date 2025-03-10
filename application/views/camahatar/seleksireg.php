@@ -38,7 +38,7 @@
 
                     <div class="box-body"><h3>Silakan download file surat keterangan yang ada dibawah ini, lalu dibawa pada saat <b>Test gelombang dini</b>.file bisa di download di bawah ini :</h3>
 
-                   <label>Surat Keterangan Sehat :</label><br>
+                   <label>Surat Keterangan Sehat : </label><br>
                    <a href="<?php echo base_url() ?>download_suket_sehat_gelombang_dini25?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Keterangan Sehat</button></a><br>
                    <label>Surat Keterangan Sanggup Menaati Peraturan :</label><br>
                    <a href="<?php echo base_url() ?>download_suket_sanggup_menaati_peraturan25?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Keterangan Sanggup Menaati Peraturan</button></a><br>
@@ -88,11 +88,11 @@
                  <form action="<?php echo base_url() ?>proses_seleksi_gelombangdini_reguler" name="form1" id="form1" method="post" enctype="multipart/form-data">
                   <input type="hidden" name="no" id="no" value="<?php echo $this->session->userdata('no'); ?>">
                   <div class="form-group">
-                  <label for="exampleInputEmail1">File KTP</label>
+                  <label for="exampleInputEmail1">File KTP (Format .pdf dan maksimum file size 1 mb)</label>
                   <input type="file" class="form-control" id="file_ktp" name="file_ktp" placeholder="Masukan File KTP">
                   </div>
                   <div class="form-group">
-                  <label for="exampleInputEmail1">File Ijasah atau surat keterangan dari sekolah (jika belum lulus)</label>
+                  <label for="exampleInputEmail1">File Ijasah atau surat keterangan dari sekolah (jika belum lulus) (Format .pdf dan maksimum file size 1 mb)</label>
                   <input type="file" class="form-control" id="file_suket" name="file_suket" placeholder="File Ijasah atau surat keterangan dari sekolah (jika belum lulus)">
                   </div>
                   <div class="form-group">
