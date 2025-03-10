@@ -144,11 +144,11 @@
                                       <!-- ... (Formulir seperti yang Anda berikan) ... -->
                                       <input type="hidden" name="no" id="no" value="<?php echo $this->session->userdata('no'); ?>">
                                       <input type="hidden" name="id_seleksi" id="id_seleksi">
-                                      <label for="exampleInputEmail1">File KTP</label>
+                                      <label for="exampleInputEmail1">File KTP (Format .pdf dan maksimum file size 1 mb)</label>
                                       <input type="file" class="form-control" id="nfile_ktp" name="nfile_ktp" placeholder="Masukan File KTP">
                                       <input type="hidden" name="efile_ktp" id="efile_ktp">
                                
-                                      <label for="exampleInputEmail1">File Ijasah atau surat keterangan dari sekolah (jika belum lulus)</label>
+                                      <label for="exampleInputEmail1">File Ijasah atau surat keterangan dari sekolah (jika belum lulus) (Format .pdf dan maksimum file size 1 mb)</label>
                                       <input type="file" class="form-control" id="nfile_suket" name="nfile_suket" placeholder="File Ijasah atau surat keterangan dari sekolah (jika belum lulus)">
                                       <input type="hidden" name="efile_suket" id="efile_suket">
                                       <label for="exampleInputEmail1">Rata-Rata Nilai Kelas 10</label>
