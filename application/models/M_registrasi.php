@@ -1143,15 +1143,15 @@ class m_registrasi extends CI_Model
 	     	tbl_ukurpakaian.pdhpdub_kemeja_lainnya as pdhpdub_kemeja_lainnya,
 	     	tbl_ukurpakaian.pdhpdub_celana_lainny as pdhpdub_celana_lainny,
 	     	tbl_ukurpakaian.jaspdpm_lainnya,
-            tbl_catar_2024.nama as nama,
-            tbl_catar_2024.prodi as prodi,
-            tbl_catar_2024.telp as telp,
-            tbl_catar_2024.no as no,
-            tbl_catar_2024.jk');
+            tbl_catar_2025.nama as nama,
+            tbl_catar_2025.prodi as prodi,
+            tbl_catar_2025.telp as telp,
+            tbl_catar_2025.no as no,
+            tbl_catar_2025.jk');
 
-         $this->db->from('tbl_catar_daful_2024');
-	     $this->db->join('tbl_catar_2024','tbl_catar_daful_2024.no = tbl_catar_2024.no','left');
-	     $this->db->join('tbl_ukurpakaian','tbl_catar_daful_2024.no = tbl_ukurpakaian.no','left');
+         $this->db->from('tbl_catar_daful_2025');
+	     $this->db->join('tbl_catar_2025','tbl_catar_daful_2025.no = tbl_catar_2025.no','left');
+	     $this->db->join('tbl_ukurpakaian','tbl_catar_daful_2025.no = tbl_ukurpakaian.no','left');
         $this->db->where($where);
         $this->db->order_by('tbl_ukurpakaian.id_pakaian', 'ASC');
         $query = $this->db->get();
@@ -1182,16 +1182,16 @@ class m_registrasi extends CI_Model
 	     	tbl_ukurpakaian.pdhpdub_kemeja_lainnya,
 	     	tbl_ukurpakaian.pdhpdub_celana_lainny,
 	     	tbl_ukurpakaian.jaspdpm_lainnya,
-            tbl_catar_2024.nama as nama,
-            tbl_catar_2024.prodi as prodi,
-            tbl_catar_2024.telp as telp,
-            tbl_catar_2024.tb as tb,
-            tbl_catar_2024.no,
-            tbl_catar_2024.jk');
+            tbl_catar_2025.nama as nama,
+            tbl_catar_2025.prodi as prodi,
+            tbl_catar_2025.telp as telp,
+            tbl_catar_2025.tb as tb,
+            tbl_catar_2025.no,
+            tbl_catar_2025.jk');
 
-	     $this->db->from('tbl_catar_2024');
-	     $this->db->join('tbl_ukurpakaian','tbl_catar_2024.no = tbl_ukurpakaian.no','left');
-        $this->db->where('tbl_catar_2024.no', $id);
+	     $this->db->from('tbl_catar_2025');
+	     $this->db->join('tbl_ukurpakaian','tbl_catar_2025.no = tbl_ukurpakaian.no','left');
+        $this->db->where('tbl_catar_2025.no', $id);
         $query = $this->db->get();
 
         if ($query->num_rows() > 0) {
