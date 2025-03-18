@@ -108,9 +108,9 @@ class Koperasi extends CI_Controller {
         if ($jalur == "reguler") {
             # code...
             $where= array(
-            'tbl_catar_2024.jalur' => $jalur,
-            'tbl_catar_2024.prodi' => $prodi,
-            'tbl_catar_2024.gelombang' => $gelombang, 
+            'tbl_catar_2025.jalur' => $jalur,
+            'tbl_catar_2025.prodi' => $prodi,
+            'tbl_catar_2025.gelombang' => $gelombang, 
             );
 
             $data['frm_jalur'] = $jalur;
@@ -124,8 +124,8 @@ class Koperasi extends CI_Controller {
             $this->load->view('koperasi/footer');
         }else{
             $where= array(
-            'tbl_catar_2024.jalur' => $jalur,
-            'tbl_catar_2024.prodi' => $prodi,
+            'tbl_catar_2025.jalur' => $jalur,
+            'tbl_catar_2025.prodi' => $prodi,
             );
 
             $data['frm_jalur'] = $jalur;
@@ -151,9 +151,9 @@ class Koperasi extends CI_Controller {
         // Tentukan kondisi berdasarkan pilihan jalur
         if ($jalur == "reguler") {
             $where = array(
-                'tbl_catar_2024.jalur' => $jalur,
-                'tbl_catar_2024.prodi' => $prodi,
-                'tbl_catar_2024.gelombang' => $gelombang, 
+                'tbl_catar_2025.jalur' => $jalur,
+                'tbl_catar_2025.prodi' => $prodi,
+                'tbl_catar_2025.gelombang' => $gelombang, 
             );
 
             // Siapkan data untuk view
@@ -162,8 +162,8 @@ class Koperasi extends CI_Controller {
             $data['frm_gelombang'] = $gelombang;
         } else {
             $where = array(
-                'tbl_catar_2024.jalur' => $jalur,
-                'tbl_catar_2024.prodi' => $prodi,
+                'tbl_catar_2025.jalur' => $jalur,
+                'tbl_catar_2025.prodi' => $prodi,
             );
 
             // Siapkan data untuk view
@@ -190,16 +190,16 @@ class Koperasi extends CI_Controller {
         if ($jalur == "reguler") {
         	# code...
         	$where= array(
-            'tbl_catar_2024.jalur' => $jalur,
-            'tbl_catar_2024.prodi' => $prodi,
-            'tbl_catar_2024.gelombang' => $gelombang, 
+            'tbl_catar_2025.jalur' => $jalur,
+            'tbl_catar_2025.prodi' => $prodi,
+            'tbl_catar_2025.gelombang' => $gelombang, 
 	        );
 
 	       $data['results'] = $this->m_registrasi->get_data_rekap_ukurpakaian($where);
         }else{
         	$where= array(
-            'tbl_catar_2024.jalur' => $jalur,
-            'tbl_catar_2024.prodi' => $prodi,
+            'tbl_catar_2025.jalur' => $jalur,
+            'tbl_catar_2025.prodi' => $prodi,
 	        );
 
 	       $data['results'] = $this->m_registrasi->get_data_rekap_ukurpakaian($where);
