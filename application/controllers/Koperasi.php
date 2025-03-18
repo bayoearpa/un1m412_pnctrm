@@ -286,7 +286,13 @@ class Koperasi extends CI_Controller {
             $objPHPExcel->getActiveSheet()->setCellValue('D' . $row, $result->ukuran_sepatu);
             }
             
+            // $objPHPExcel->getActiveSheet()->setCellValue('E' . $row, $result->topipet);
+            if ($result->topipet == 'lainnya') {
+                # code...
+            $objPHPExcel->getActiveSheet()->setCellValue('E' . $row, $result->topipet_lainnya);
+            }else{
             $objPHPExcel->getActiveSheet()->setCellValue('E' . $row, $result->topipet);
+            }
 
             if ($result->seragam_pdl == 'lainnya') {
             	# code...
