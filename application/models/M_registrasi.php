@@ -904,22 +904,22 @@ class m_registrasi extends CI_Model
     {
         // Gantilah 'nama_tabel' dengan nama tabel yang sesuai dalam database Anda
 	     $this->db->select('tbl_seleksi_20242.id_seleksi as id_seleksi,
-	     	tbl_seleksi_20242.no as no,
-	     	tbl_seleksi_20242.file_ktp as file_ktp,
-	     	tbl_seleksi_20242.file_suket as file_suket,
-	     	tbl_seleksi_20242.n101 as n101,
-	     	tbl_seleksi_20242.n102 as n102,
-	     	tbl_seleksi_20242.n111 as n111,
-	     	tbl_seleksi_20242.n112 as n112,
-	     	tbl_seleksi_20242.n121 as n121,
-	     	tbl_seleksi_20242.n122 as n122,
-	     	tbl_seleksi_20242.file_supersehat as file_supersehat,
-	     	tbl_catar_2024.nama,
+	     	tbl_seleksi_2025.no as no,
+	     	tbl_seleksi_2025.file_ktp as file_ktp,
+	     	tbl_seleksi_2025.file_suket as file_suket,
+	     	tbl_seleksi_2025.n101 as n101,
+	     	tbl_seleksi_2025.n102 as n102,
+	     	tbl_seleksi_2025.n111 as n111,
+	     	tbl_seleksi_2025.n112 as n112,
+	     	tbl_seleksi_2025.n121 as n121,
+	     	tbl_seleksi_2025.n122 as n122,
+	     	tbl_seleksi_2025.file_supersehat as file_supersehat,
+	     	tbl_catar_2025.nama,
 			');
 
-	     $this->db->from('tbl_seleksi_20242');
-	     $this->db->join('tbl_catar_2024','tbl_seleksi_20242.no = tbl_catar_2024.no','left');
-        $this->db->where('tbl_seleksi_20242.no', $id);
+	     $this->db->from('tbl_seleksi_2025');
+	     $this->db->join('tbl_catar_2025','tbl_seleksi_2025.no = tbl_catar_2025.no','left');
+        $this->db->where('tbl_seleksi_2025.no', $id);
         $query = $this->db->get();
 
         if ($query->num_rows() > 0) {

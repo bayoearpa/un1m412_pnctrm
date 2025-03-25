@@ -134,8 +134,9 @@
           </a>
           <ul class="treeview-menu">
             <!-- <li class="active"><a href="<?php //echo base_url() ?>baak/"><i class="fa fa-repeat"></i>Ganti Jurusan</a></li> -->
-            <li><a href="<?php echo base_url() ?>koperasi/rekap"><i class="fa fa-papper"></i>Rekap</a></li>
-            <li><a href="<?php echo base_url() ?>koperasi/cetak"><i class="fa fa-print"></i>Cetak</a></li>
+            <li><a href="<?php echo base_url() ?>koperasi/rekap"><i class="fa fa-paper"></i>Rekap</a></li>
+            <li><a href="<?php echo base_url() ?>koperasi/cetak"><i class="fa fa-print"></i>Cetak Semua</a></li>
+            <li><a href="<?php echo base_url() ?>koperasi/cetak_terkini"><i class="fa fa-print"></i>Cetak Terkini</a></li>
             <!-- <li><a href="<?php //echo base_url() ?>samapta/rekapseleksi"><i class="fa fa-paperclip"></i>Rekap Seleksi</a></li> -->
           </ul>
         </li>
