@@ -1154,6 +1154,8 @@ class m_registrasi extends CI_Model
 	     	tbl_ukurpakaian.pdhpdub_celana_lainny as pdhpdub_celana_lainny,
 	     	tbl_ukurpakaian.jaspdpm_lainnya,
 	     	tbl_ukurpakaian.topipet_lainnya,
+			tbl_ukurpakaian.status_cetak,
+	     	tbl_ukurpakaian.tgl_cetak,
             tbl_catar_2025.nama as nama,
             tbl_catar_2025.prodi as prodi,
             tbl_catar_2025.telp as telp,
