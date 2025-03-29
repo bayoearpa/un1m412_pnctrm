@@ -1119,6 +1119,16 @@ class m_registrasi extends CI_Model
 
         return $query->result();
     }
+     // Fungsi untuk update status cetak dan tanggal cetak
+    public function update_status_cetak($where)
+    {
+        $this->db->where($where);
+        $this->db->where('status_cetak', 'belum'); // Pastikan hanya yang statusnya "belum" yang diupdate
+        $this->db->update('tbl_ukurpakaian', [
+            'status_cetak' => 'sudah',
+            'tgl_cetak' => date('Y-m-d H:i:s')
+        ]);
+    }
     function get_data_rekap_ukurpakaian($where)
     {
         // Gantilah 'nama_tabel' dengan nama tabel yang sesuai dalam database Anda
