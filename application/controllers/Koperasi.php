@@ -221,7 +221,7 @@ class Koperasi extends CI_Controller {
         $data['results'] = $this->m_registrasi->get_data_rekap_ukurpakaian($where);
 
         // Load the view with the data, returning the HTML string (no headers or footers)
-        $this->load->view('koperasi/preview_cetak2', $data);
+        $this->load->view('koperasi/preview_cetak3', $data);
     }
 
     public function cetak_excel()
