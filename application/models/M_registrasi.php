@@ -903,7 +903,7 @@ class m_registrasi extends CI_Model
 	function get_data_edit_gdr1($id)
     {
         // Gantilah 'nama_tabel' dengan nama tabel yang sesuai dalam database Anda
-	     $this->db->select('tbl_seleksi_20242.id_seleksi as id_seleksi,
+	     $this->db->select('tbl_seleksi_2025.id_seleksi as id_seleksi,
 	     	tbl_seleksi_2025.no as no,
 	     	tbl_seleksi_2025.file_ktp as file_ktp,
 	     	tbl_seleksi_2025.file_suket as file_suket,
