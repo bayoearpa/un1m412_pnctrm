@@ -1,5 +1,5 @@
 
-<form method="post" action="<?php echo base_url() ?>koperasi/cetak_excel">
+<form method="post" action="<?php echo base_url() ?>koperasi/cetak_excel_terkini">
     <input type="hidden" name="jalur" value="<?php echo isset($frm_jalur) ? $frm_jalur : ''; ?>">
     <input type="hidden" name="prodi" value="<?php echo isset($frm_prodi) ? $frm_prodi : ''; ?>">
     <input type="hidden" name="gelombang" value="<?php echo isset($frm_gelombang) ? $frm_gelombang : ''; ?>">
