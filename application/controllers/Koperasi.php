@@ -68,7 +68,7 @@ class Koperasi extends CI_Controller {
         );
         $gelombang=$this->m_registrasi->get_data_gelombang($where2);
         $where = array('reguler', 'gdr1');
-		$data['catar'] = $this->m_registrasi->get_data_sudah_daful($where)->result();
+		$data['catar'] = $this->m_registrasi->get_data_sudah_daful2($where)->result();
 		foreach ($data['catar'] as $row)
 		{
         $prodi = $row->prodi;
