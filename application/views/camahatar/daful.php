@@ -53,7 +53,20 @@
                 </tr>
               </table>
               <hr>
-              <?php if ($prodi == '1' || $prodi == '4'|| $prodi == '5'|| $prodi == '6'|| $prodi == '7'|| $prodi == '8'|| $prodi == '9'|| $prodi == '10') { ?>
+              <form action="<?php echo base_url() ?>proses_bukti_bayar_daful" name="form1" id="form1" method="post" enctype="multipart/form-data">
+              <?php if ($this->session->userdata('jalur')=="gdr1" || $this->session->userdata('jalur')=="reguler"): ?>
+                <!-- <div class="box-body"><h3>Pada Saat Madabintal diharapkan mengisi form yang sudah disiapkan tim PMB.</b> untuk format bisa di download di bawah ini :</h3>
+                <p></p>
+                 <a href="<?php //echo base_url() ?>download_super_asrama?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan di Asrama (Khusus Putri)</button></a>
+                <p></p>
+                <a href="<?php //echo base_url() ?>download_super_taat?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan Sanggup Mentaati Peraturan</button></a>
+                <p></p>
+                <a href="<?php //echo base_url() ?>download_super_tidak_menikah?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan Sanggup Tidak Menikah</button></a>
+                </div> -->
+                
+              <?php endif ?>
+               
+                  <?php if ($prodi == '1' || $prodi == '4'|| $prodi == '5'|| $prodi == '6'|| $prodi == '7'|| $prodi == '8'|| $prodi == '9'|| $prodi == '10') { ?>
 
                   <!-- /////// prodi teknik nautik -->
                    <!-- <div class="box-body"><h3>Pelaksanaan Seleksi Offline Untuk Calon Taruna Nautika dan Teknika dapat dilihat selengkapnya dengan.</b> download di bawah ini :</h3>
@@ -77,20 +90,8 @@
                     <label>Surat Pernyataan Sanggup Tinggal di Asrama :</label><br>
                    <a href="<?php echo base_url() ?>download_super_sanggup_tinggal_diasrama25?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan Sanggup Tinggal di Asrama</button></a><br>
                   <?php }else{}} ?>
-              <form action="<?php echo base_url() ?>proses_bukti_bayar_daful" name="form1" id="form1" method="post" enctype="multipart/form-data">
-              <?php if ($this->session->userdata('jalur')=="gdr1" || $this->session->userdata('jalur')=="reguler"): ?>
-                <!-- <div class="box-body"><h3>Pada Saat Madabintal diharapkan mengisi form yang sudah disiapkan tim PMB.</b> untuk format bisa di download di bawah ini :</h3>
-                <p></p>
-                 <a href="<?php //echo base_url() ?>download_super_asrama?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan di Asrama (Khusus Putri)</button></a>
-                <p></p>
-                <a href="<?php //echo base_url() ?>download_super_taat?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan Sanggup Mentaati Peraturan</button></a>
-                <p></p>
-                <a href="<?php //echo base_url() ?>download_super_tidak_menikah?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan Sanggup Tidak Menikah</button></a>
-                </div> -->
-                
-              <?php endif ?>
-               
-               
+
+                  
                <div class="form-group">
                         <label for="editufsignon">Upload Bukti Pembayaran Daftar Ulang (Upload dalam format .pdf)</label>
                         <input type="file" class="form-control" id="bukti_bayar_daful" name="bukti_bayar_daful">
