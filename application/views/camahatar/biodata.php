@@ -248,8 +248,11 @@
                   <label>Ijasah atau Surat Ketarangan dari Sekolah (.pdf file maksimal 5 MB)</label>
                  <input type="file" name="ijasah" id="ijasah" class="form-control">
                 </div> -->
-               
+               <?php if ($hs > 0) {
+                 # code...
+               }else{ ?>
                 <button type="submit" class="btn btn-primary">Simpan</button>
+              <?php } ?>
                 </form>
                 <?php } ?>
 
@@ -496,8 +499,11 @@
                   <label>Ijasah atau Surat Ketarangan dari Sekolah (.pdf file maksimal 5 MB)</label>
                  <input type="file" name="ijasah" id="ijasah" class="form-control">
                 </div> -->
-               
+                <?php if ($hs > 0) {
+                 # code...
+               }else{ ?>
                 <button type="submit" class="btn btn-primary">Simpan</button>
+              <?php } ?>
                 </form>
               <?php }} ?>
 
