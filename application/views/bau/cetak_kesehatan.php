@@ -179,7 +179,7 @@ foreach($catar as $c){
 
   <tr><td><p style="margin:1px;">BIAYA KESEHATAN</p></td><td>:</td><td></td><td></td><td>Rp. 500.000,-</td></tr>
 <tr><td style="border-top-style:dotted;border-bottom-style:dotted;border-width: 1px;" colspan="4"><p style="margin:1px;"><b>TOTAL</b></p></td><td width="30%" style="border-top-style:dotted;border-bottom-style:dotted;border-width: 1px;"><p style="margin:1px;"><b>Rp. 500.000,-</b></p></td></tr>
-<tr><td style="border-bottom-style:dotted;border-width:1px;" colspan="4"><p><b>Terbilang</b></p></td><td  width="30%" style="border-bottom-style:dotted;border-width:1px;"><p><b>LIMA RATUS PULUH RIBU RUPIAH</b></p></td></tr>
+<tr><td style="border-bottom-style:dotted;border-width:1px;" colspan="4"><p><b>Terbilang</b></p></td><td  width="30%" style="border-bottom-style:dotted;border-width:1px;"><p><b>LIMA RATUS RIBU RUPIAH</b></p></td></tr>
 
 
 <?php }else{ ?>
