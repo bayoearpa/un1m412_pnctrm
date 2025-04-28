@@ -36,7 +36,7 @@
                    <!-- <div class="box-body"><h3>Pelaksanaan Seleksi Offline Untuk Calon Taruna Nautika dan Teknika dapat dilihat selengkapnya dengan.</b> download di bawah ini :</h3>
                    <a href="<?php //echo base_url() ?>download_pengumuman_seleksi?>" target="__blank"><button type="button" class="btn btn-primary">Pengumuman Seleksi</button></a> -->
 
-                    <div class="box-body"><h3>Silakan download file surat keterangan yang ada dibawah ini, lalu dibawa pada saat <b>Test gelombang dini</b>.file bisa di download di bawah ini :</h3>
+                    <div class="box-body"><h3>Silakan download file surat keterangan yang ada dibawah ini, lalu dibawa pada saat <b>Seleksi</b>.file bisa di download di bawah ini :</h3>
 
                    <label>Surat Keterangan Sehat : </label><br>
                    <a href="<?php echo base_url() ?>download_suket_sehat_gelombang_dini25?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Keterangan Sehat</button></a><br>
