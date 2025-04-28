@@ -185,7 +185,7 @@
 	<li><small>SKCK (Surat Keterangan Catatan Kepolisian) asli</small></li>
 	<li><small>Copy Surat kenal lahir / akte kelahiran 1 Lembar</small></li>
 	<li><small>Copy tanda pengenal yang sah, KTP atau SIM 1 lembar</small></li>
-	<li><small>Pas photo hitam putih ukuran 3x4 sebanyak 2  lembar</small></li>
+	<li><small>Pas photo ukuran 3x4 sebanyak 2  lembar</small></li>
 </ul>
 <?php }else{ }?>
 <!-- <p style="margin: 0px;padding: 0px;"><small>*Jika anda salah mengisi data anda dapat mengulanginya lagi dari awal. Simpanlah file pdf anda!!</small></p> -->
