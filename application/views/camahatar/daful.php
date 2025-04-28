@@ -63,56 +63,35 @@
                 <p></p>
                 <a href="<?php //echo base_url() ?>download_super_tidak_menikah?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan Sanggup Tidak Menikah</button></a>
                 </div> -->
+
+                jawa jawa jawa
                 
               <?php endif ?>
                
-                 <?php
-                // Daftar surat
-                $surat_list = [
-                    'download_suket_sehat_gelombang_dini25' => 'Download Surat Keterangan Sehat',
-                    'download_suket_sanggup_menaati_peraturan25' => 'Download Surat Keterangan Sanggup Menaati Peraturan',
-                    'download_suket_sanggup_tidak_menikah25' => 'Surat Pernyataan Sanggup Tidak Menikah'
-                ];
+                  <?php if ($prodi == '1' || $prodi == '4'|| $prodi == '5'|| $prodi == '6'|| $prodi == '7'|| $prodi == '8'|| $prodi == '9'|| $prodi == '10') { ?>
 
-                // Surat tambahan khusus untuk wanita atau prodi 2/3
-                $surat_asrama = [
-                    'download_super_sanggup_tinggal_diasrama25' => 'Download Surat Pernyataan Sanggup Tinggal di Asrama'
-                ];
-                ?>
+                  <!-- /////// prodi teknik nautik -->
+                   <!-- <div class="box-body"><h3>Pelaksanaan Seleksi Offline Untuk Calon Taruna Nautika dan Teknika dapat dilihat selengkapnya dengan.</b> download di bawah ini :</h3>
+                   <a href="<?php //echo base_url() ?>download_pengumuman_seleksi?>" target="__blank"><button type="button" class="btn btn-primary">Pengumuman Seleksi</button></a> -->
 
-                <?php if (in_array($prodi, ['1', '4', '5', '6', '7', '8', '9', '10'])): ?>
-                    <div class="box-body">
-                        <h3>Silakan download file surat keterangan di bawah ini, lalu dibawa saat <b>Test Gelombang Dini</b>:</h3>
+                    <div class="box-body"><h3>Silakan download file surat keterangan yang ada dibawah ini, lalu dibawa pada saat <b>Test gelombang dini</b>.file bisa di download di bawah ini :</h3>
 
-                        <?php foreach ($surat_list as $link => $label): ?>
-                            <label><?php echo $label; ?></label><br>
-                            <a href="<?php echo base_url($link); ?>" target="_blank">
-                                <button type="button" class="btn btn-primary"><?php echo $label; ?></button>
-                            </a><br>
-                        <?php endforeach; ?>
+                   <label>Surat Keterangan Sehat : </label><br>
+                   <a href="<?php echo base_url() ?>download_suket_sehat_gelombang_dini25?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Keterangan Sehat</button></a><br>
+                   <label>Surat Keterangan Sanggup Menaati Peraturan :</label><br>
+                   <a href="<?php echo base_url() ?>download_suket_sanggup_menaati_peraturan25?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Keterangan Sanggup Menaati Peraturan</button></a><br>
+                   <label>Surat Pernyataan Sanggup Tidak Menikah :</label><br>
+                   <a href="<?php echo base_url() ?>download_suket_sanggup_tidak_menikah25?>" target="__blank"><button type="button" class="btn btn-primary">Surat Pernyataan Sanggup Tidak Menikah</button></a><br>
 
-                        <?php if ($jk == 'Wanita'): ?>
-                            <?php foreach ($surat_asrama as $link => $label): ?>
-                                <label><?php echo $label; ?></label><br>
-                                <a href="<?php echo base_url($link); ?>" target="_blank">
-                                    <button type="button" class="btn btn-primary"><?php echo $label; ?></button>
-                                </a><br>
-                            <?php endforeach; ?>
-                        <?php endif; ?>
-                    </div>
-                <?php endif; ?>
-
-                <?php if (in_array($prodi, ['2', '3'])): ?>
-                    <div class="box-body">
-                        <?php foreach ($surat_asrama as $link => $label): ?>
-                            <label><?php echo $label; ?></label><br>
-                            <a href="<?php echo base_url($link); ?>" target="_blank">
-                                <button type="button" class="btn btn-primary"><?php echo $label; ?></button>
-                            </a><br>
-                        <?php endforeach; ?>
-                    </div>
-                <?php endif; ?>
-
+                   <?php if ($jk == 'Wanita') {
+                     # code... ?>
+                    <label>Surat Pernyataan Sanggup Tinggal di Asrama :</label><br>
+                   <a href="<?php echo base_url() ?>download_super_sanggup_tinggal_diasrama25?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan Sanggup Tinggal di Asrama</button></a><br>
+                   <?php }elseif ($prodi == '2' || $prodi == '3') {
+                     # code... ?>
+                    <label>Surat Pernyataan Sanggup Tinggal di Asrama :</label><br>
+                   <a href="<?php echo base_url() ?>download_super_sanggup_tinggal_diasrama25?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan Sanggup Tinggal di Asrama</button></a><br>
+                  <?php }else{}} ?>
 
                   
                <div class="form-group">
