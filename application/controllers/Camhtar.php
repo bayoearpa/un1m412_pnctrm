@@ -1602,6 +1602,7 @@ public function edit_proses_seleksi()
 			$programStudi = $key->prodi;
 		}
 		$data['prodi'] = $this->getProdi($programStudi);
+		$data['kdprodi'] = $programStudi;
 
 				//cek seleksi
 		$data['hs'] = $this->m_registrasi->get_data($where, 'tbl_catar_hasil_seleksi_2025')->result();
