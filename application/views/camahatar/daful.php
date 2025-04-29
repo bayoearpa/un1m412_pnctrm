@@ -63,7 +63,7 @@
                 <p></p>
                 <a href="<?php //echo base_url() ?>download_super_tidak_menikah?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan Sanggup Tidak Menikah</button></a>
                 </div> -->
-                 <?php if ($prodi == '1' || $prodi == '4'|| $prodi == '5'|| $prodi == '6'|| $prodi == '7'|| $prodi == '8'|| $prodi == '9'|| $prodi == '10') { ?>
+                 <?php if ($kdprodi == '1' || $kdprodi == '4'|| $kdprodi == '5'|| $kdprodi == '6'|| $kdprodi == '7'|| $kdprodi == '8'|| $kdprodi == '9'|| $kdprodi == '10') { ?>
 
                   <!-- /////// prodi teknik nautik -->
                    <!-- <div class="box-body"><h3>Pelaksanaan Seleksi Offline Untuk Calon Taruna Nautika dan Teknika dapat dilihat selengkapnya dengan.</b> download di bawah ini :</h3>
@@ -82,7 +82,7 @@
                      # code... ?>
                     <label>Surat Pernyataan Sanggup Tinggal di Asrama :</label><br>
                    <a href="<?php echo base_url() ?>download_super_sanggup_tinggal_diasrama25?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan Sanggup Tinggal di Asrama</button></a><br>
-                   <?php }elseif ($prodi == '2' || $prodi == '3') {
+                   <?php }elseif ($kdprodi == '2' || $kdprodi == '3') {
                      # code... ?>
                     <label>Surat Pernyataan Sanggup Tinggal di Asrama :</label><br>
                    <a href="<?php echo base_url() ?>download_super_sanggup_tinggal_diasrama25?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan Sanggup Tinggal di Asrama</button></a><br>
