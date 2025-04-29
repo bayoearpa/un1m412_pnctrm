@@ -63,18 +63,13 @@
                 <p></p>
                 <a href="<?php //echo base_url() ?>download_super_tidak_menikah?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan Sanggup Tidak Menikah</button></a>
                 </div> -->
-
-                jawa jawa jawa
-                
-              <?php endif ?>
-               
-                  <?php if ($prodi == '1' || $prodi == '4'|| $prodi == '5'|| $prodi == '6'|| $prodi == '7'|| $prodi == '8'|| $prodi == '9'|| $prodi == '10') { ?>
+                 <?php if ($prodi == '1' || $prodi == '4'|| $prodi == '5'|| $prodi == '6'|| $prodi == '7'|| $prodi == '8'|| $prodi == '9'|| $prodi == '10') { ?>
 
                   <!-- /////// prodi teknik nautik -->
                    <!-- <div class="box-body"><h3>Pelaksanaan Seleksi Offline Untuk Calon Taruna Nautika dan Teknika dapat dilihat selengkapnya dengan.</b> download di bawah ini :</h3>
                    <a href="<?php //echo base_url() ?>download_pengumuman_seleksi?>" target="__blank"><button type="button" class="btn btn-primary">Pengumuman Seleksi</button></a> -->
 
-                    <div class="box-body"><h3>Silakan download file surat keterangan yang ada dibawah ini, lalu dibawa pada saat <b>Test gelombang dini</b>.file bisa di download di bawah ini :</h3>
+                    <div class="box-body"><h3>Silakan download file surat keterangan yang ada dibawah ini, lalu dibawa pada saat <b>ke UNIMAR AMNI Semarang</b>.file bisa di download di bawah ini :</h3>
 
                    <label>Surat Keterangan Sehat : </label><br>
                    <a href="<?php echo base_url() ?>download_suket_sehat_gelombang_dini25?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Keterangan Sehat</button></a><br>
@@ -92,6 +87,12 @@
                     <label>Surat Pernyataan Sanggup Tinggal di Asrama :</label><br>
                    <a href="<?php echo base_url() ?>download_super_sanggup_tinggal_diasrama25?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan Sanggup Tinggal di Asrama</button></a><br>
                   <?php }else{}} ?>
+
+                
+                
+              <?php endif ?>
+               
+                 
 
                   
                <div class="form-group">
