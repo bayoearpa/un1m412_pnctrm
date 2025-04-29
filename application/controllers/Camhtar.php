@@ -1600,6 +1600,7 @@ public function edit_proses_seleksi()
 			# code...
 			$data['nik'] = $key->nik;
 			$programStudi = $key->prodi;
+			$data['jk'] = $key->jk;
 		}
 		$data['prodi'] = $this->getProdi($programStudi);
 		$data['kdprodi'] = $programStudi;
