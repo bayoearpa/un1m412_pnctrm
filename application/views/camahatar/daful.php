@@ -86,7 +86,7 @@
                      # code... ?>
                     <label>Surat Pernyataan Sanggup Tinggal di Asrama :</label><br>
                    <a href="<?php echo base_url() ?>download_super_sanggup_tinggal_diasrama25?>" target="__blank"><button type="button" class="btn btn-primary">Download Surat Pernyataan Sanggup Tinggal di Asrama</button></a><br>
-                  <?php }else{ echo "ora ono";}} ?>
+                  <?php }else{}} ?>
 
                 
                 
