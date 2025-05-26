@@ -57,7 +57,7 @@ class Tpa extends CI_Controller {
         $where = array(
 			'gelombang' => $gelombang,			       
         );
-		$data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
+		$data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2025')->result();
 		foreach ($data['catar'] as $row)
 		{
         $prodi = $row->prodi;
@@ -85,8 +85,8 @@ class Tpa extends CI_Controller {
 		if ($gelombang == null) {
 			# code...
 			$where = array(
-            'tbl_catar_2023.prodi' => $prodi,
-            'tbl_catar_2023.kelas' => $kelas,                
+            'tbl_catar_2025.prodi' => $prodi,
+            'tbl_catar_2025.kelas' => $kelas,                
         	);
         	$data['catar'] = $this->m_registrasi->get_data_join_where_tpa($where)->result();
 			$this->load->view('tpa/header');
@@ -95,9 +95,9 @@ class Tpa extends CI_Controller {
 			$this->load->view('tpa/footer');
 		}else{
 			$where = array(
-            'tbl_catar_2023.prodi' => $prodi,
-            'tbl_catar_2023.kelas' => $kelas,
-            'tbl_catar_2023.gelombang' => $gelombang,                
+            'tbl_catar_2025.prodi' => $prodi,
+            'tbl_catar_2025.kelas' => $kelas,
+            'tbl_catar_2025.gelombang' => $gelombang,                
         	);
         	$data['catar'] = $this->m_registrasi->get_data_join_where_tpa($where)->result();
 			$this->load->view('tpa/header');
@@ -149,8 +149,8 @@ class Tpa extends CI_Controller {
 		$where = array(
             'no' => $prodi,                
         );
-        $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2023')->result();
-        $data['cek_validasi'] = $this->m_registrasi->get_data($where,'tbl_catar_validasi_2023')->result();
+        $data['catar'] = $this->m_registrasi->get_data($where,'tbl_catar_2025')->result();
+        $data['cek_validasi'] = $this->m_registrasi->get_data($where,'tbl_catar_validasi_2025')->result();
         $data['cek_tpa'] = $this->m_registrasi->get_data($where,'tbl_seleksi_tpa')->result();
         	
 
@@ -207,9 +207,9 @@ class Tpa extends CI_Controller {
 		if ($gelombang == "0") {
 			# code...
 			$where = array(
-            'tbl_catar_2023.prodi' => $prodi,
-            'tbl_catar_2023.kelas' => $kelas,
-            'tbl_catar_2023.id_tgl_seleksi' => $tgl_pel,                
+            'tbl_catar_2025.prodi' => $prodi,
+            'tbl_catar_2025.kelas' => $kelas,
+            'tbl_catar_2025.id_tgl_seleksi' => $tgl_pel,                
         	);
         	$data['get_tgl_pel'] = $this->m_registrasi->get_data_tgl_seleksi()->result();
         	$data['catar'] = $this->m_registrasi->get_data_test_tpa($where)->result();
@@ -220,10 +220,10 @@ class Tpa extends CI_Controller {
 			$this->load->view('tpa/footer');
 		}else{
 			$where = array(
-            'tbl_catar_2023.prodi' => $prodi,
-            'tbl_catar_2023.kelas' => $kelas,
-            'tbl_catar_2023.id_tgl_seleksi' => $tgl_pel, 
-            'tbl_catar_2023.gelombang' => $gelombang,                
+            'tbl_catar_2025.prodi' => $prodi,
+            'tbl_catar_2025.kelas' => $kelas,
+            'tbl_catar_2025.id_tgl_seleksi' => $tgl_pel, 
+            'tbl_catar_2025.gelombang' => $gelombang,                
         	);
         	$data['get_tgl_pel'] = $this->m_registrasi->get_data_tgl_seleksi()->result();
         	$data['catar'] = $this->m_registrasi->get_data_test_tpa($where)->result();
@@ -247,9 +247,9 @@ class Tpa extends CI_Controller {
         if ($gelombang == "0") {
             # code...
             $where = array(
-            'tbl_catar_2023.prodi' => $prodi,
-            'tbl_catar_2023.kelas' => $kelas,
-            'tbl_catar_2023.id_tgl_seleksi' => $tgl_pel,                
+            'tbl_catar_2025.prodi' => $prodi,
+            'tbl_catar_2025.kelas' => $kelas,
+            'tbl_catar_2025.id_tgl_seleksi' => $tgl_pel,                
             );
             $data['catar'] = $this->m_registrasi->get_data_test_tpa($where)->result();
             $data['kelas'] = $kelas;
@@ -267,10 +267,10 @@ class Tpa extends CI_Controller {
             // $this->load->view('baak/rekap_ctk_daftar_hadir_peserta2022',$data);
         }else{
             $where = array(
-            'tbl_catar_2023.prodi' => $prodi,
-            'tbl_catar_2023.kelas' => $kelas,
-            'tbl_catar_2023.id_tgl_seleksi' => $tgl_pel,    
-            'tbl_catar_2023.gelombang' => $gelombang,                
+            'tbl_catar_2025.prodi' => $prodi,
+            'tbl_catar_2025.kelas' => $kelas,
+            'tbl_catar_2025.id_tgl_seleksi' => $tgl_pel,    
+            'tbl_catar_2025.gelombang' => $gelombang,                
             );
             $data['catar'] = $this->m_registrasi->get_data_test_tpa($where)->result();
             $data['kelas'] = $kelas;
@@ -294,7 +294,7 @@ class Tpa extends CI_Controller {
 		# code...
 		$data['tpa'] = $this;
 		$where = array(
-            'tbl_catar_2023.no' => $id,                
+            'tbl_catar_2025.no' => $id,                
         );
         $data['catar'] = $this->m_registrasi->get_data_test_tpa($where)->result();
         	$this->load->view('tpa/header');
