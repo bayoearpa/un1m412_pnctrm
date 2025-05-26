@@ -107,33 +107,41 @@ class Tpa extends CI_Controller {
 		}
 	}
 	public function input_carip()
-	{
-		# code...
+{
+	$result = array();
 
-		/////////////////////////////input arry///////////////////////////////////////
-		$result = array();
-		foreach ($_POST['hasil_tpa'] as $key => $val) {
-			$result[] = array( 
-				'no'     		=> $_POST['no'][$key],		
-				'hasil_tpa' 	=> $_POST['hasil_tpa'][$key],
-				'petugas' 		=> $_POST['petugas'][$key],			
-			);		
-		}		
-		$this->db->insert_batch('tbl_seleksi_tpa',$result);
-
-		/////////////////////////////./input arry///////////////////////////////////////	
-		if ($this->db->affected_rows() != 1) {
-			$this->session->set_flashdata('success', 'Input data berhasil.');
-		    $this->load->view('tpa/header');
-			$this->load->view('tpa/input');
-			$this->load->view('tpa/footer');
-		} else {
-		    $this->session->set_flashdata('error', 'Input data gagal.');
-		    $this->load->view('tpa/header');
-			$this->load->view('tpa/input');
-			$this->load->view('tpa/footer');
+	foreach ($_POST['hasil_tpa'] as $key => $val) {
+		$markup = 0;
+		// Proses hasil_tpa_markup
+		if ($val >= 1 && $val <= 2) {
+			$markup = 70;
+		} elseif ($val >= 3 && $val <= 4) {
+			$markup = 71;
+		} elseif ($val >= 5 && $val <= 6) {
+			$markup = 72;
 		}
+
+		$result[] = array( 
+			'no'				=> $_POST['no'][$key],		
+			'hasil_tpa'			=> $val,
+			'hasil_tpa_markup'	=> $markup,
+			'petugas'			=> $_POST['petugas'][$key],			
+		);		
+	}		
+
+	$this->db->insert_batch('tbl_seleksi_tpa', $result);
+
+	if ($this->db->affected_rows() > 0) {
+		$this->session->set_flashdata('success', 'Input data berhasil.');
+	} else {
+		$this->session->set_flashdata('error', 'Input data gagal.');
 	}
+
+	$this->load->view('tpa/header');
+	$this->load->view('tpa/input');
+	$this->load->view('tpa/footer');
+}
+
 	public function input_single()
 	{
 		# code...
@@ -160,32 +168,42 @@ class Tpa extends CI_Controller {
 		$this->load->view('tpa/footer');
 	}
 	public function insert_singlep()
-	{
-		# code...
-		$no = $this->input->post('no');
-		$hasil_tpa = $this->input->post('hasil_tpa');
-		$petugas = $this->input->post('petugas');
+{
+	$no = $this->input->post('no');
+	$hasil_tpa = $this->input->post('hasil_tpa');
+	$petugas = $this->input->post('petugas');
 
-		$data = array(
-			'no' => $no,
-			'hasil_tpa' => $hasil_tpa,
-			'petugas' => $petugas,
-			);
-		$this->m_registrasi->input_data($data,'tbl_seleksi_tpa');
-		// ($this->db->affected_rows() != 1) ? false : true;
-
-		if ($this->db->affected_rows() != 1) {
-			$this->session->set_flashdata('error', 'Input data gagal.');
-		    $this->load->view('tpa/header');
-			$this->load->view('tpa/input_single');
-			$this->load->view('tpa/footer');
-		} else {
-		    $this->session->set_flashdata('success', 'Input data berhasil.');
-		    $this->load->view('tpa/header');
-			$this->load->view('tpa/input_single');
-			$this->load->view('tpa/footer');
-		}
+	// Hitung hasil_tpa_markup
+	if ($hasil_tpa >= 1 && $hasil_tpa <= 2) {
+		$markup = 70;
+	} elseif ($hasil_tpa >= 3 && $hasil_tpa <= 4) {
+		$markup = 71;
+	} elseif ($hasil_tpa >= 5 && $hasil_tpa <= 6) {
+		$markup = 72;
+	} else {
+		$markup = null; // atau angka default lain jika di luar jangkauan
 	}
+
+	$data = array(
+		'no' => $no,
+		'hasil_tpa' => $hasil_tpa,
+		'hasil_tpa_markup' => $markup,
+		'petugas' => $petugas
+	);
+
+	$this->m_registrasi->input_data($data, 'tbl_seleksi_tpa');
+
+	if ($this->db->affected_rows() != 1) {
+		$this->session->set_flashdata('error', 'Input data gagal.');
+	} else {
+		$this->session->set_flashdata('success', 'Input data berhasil.');
+	}
+
+	$this->load->view('tpa/header');
+	$this->load->view('tpa/input_single');
+	$this->load->view('tpa/footer');
+}
+
 	public function data_masuk()
 	{
 		# code...
