@@ -497,7 +497,6 @@ class m_registrasi extends CI_Model
 		tbl_catar_2025.alamat_ortu,
 		tbl_catar_2025.telp_ortu,
 		tbl_catar_2025.prodi,
-		tbl_catar_2025.kelas,
 		tbl_catar_2025.gelombang,
 		tbl_catar_validasi_2025.val_id,
 		tbl_catar_validasi_2025.no,
