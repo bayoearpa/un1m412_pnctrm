@@ -113,12 +113,14 @@ class Tpa extends CI_Controller {
 	foreach ($_POST['hasil_tpa'] as $key => $val) {
 		$markup = 0;
 		// Proses hasil_tpa_markup
-		if ($val >= 1 && $val <= 2) {
+		if ($hasil_tpa >= 1 && $hasil_tpa <= 29) {
 			$markup = 70;
-		} elseif ($val >= 3 && $val <= 4) {
+		} elseif ($hasil_tpa >= 30 && $hasil_tpa <= 49) {
 			$markup = 71;
-		} elseif ($val >= 5 && $val <= 6) {
+		} elseif ($hasil_tpa >= 50 && $hasil_tpa <= 69) {
 			$markup = 72;
+		} else {
+			$markup = null; // atau angka default lain jika di luar jangkauan
 		}
 
 		$result[] = array( 
@@ -174,11 +176,11 @@ class Tpa extends CI_Controller {
 	$petugas = $this->input->post('petugas');
 
 	// Hitung hasil_tpa_markup
-	if ($hasil_tpa >= 1 && $hasil_tpa <= 2) {
+	if ($hasil_tpa >= 1 && $hasil_tpa <= 29) {
 		$markup = 70;
-	} elseif ($hasil_tpa >= 3 && $hasil_tpa <= 4) {
+	} elseif ($hasil_tpa >= 30 && $hasil_tpa <= 49) {
 		$markup = 71;
-	} elseif ($hasil_tpa >= 5 && $hasil_tpa <= 6) {
+	} elseif ($hasil_tpa >= 50 && $hasil_tpa <= 69) {
 		$markup = 72;
 	} else {
 		$markup = null; // atau angka default lain jika di luar jangkauan
