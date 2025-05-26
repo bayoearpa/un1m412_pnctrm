@@ -86,7 +86,7 @@ class Tpa extends CI_Controller {
 			# code...
 			$where = array(
             'tbl_catar_2025.prodi' => $prodi,
-            'tbl_catar_2025.kelas' => $kelas,                
+            'tbl_catar_2025.jalur' => $kelas,                
         	);
         	$data['catar'] = $this->m_registrasi->get_data_join_where_tpa($where)->result();
 			$this->load->view('tpa/header');
@@ -96,7 +96,7 @@ class Tpa extends CI_Controller {
 		}else{
 			$where = array(
             'tbl_catar_2025.prodi' => $prodi,
-            'tbl_catar_2025.kelas' => $kelas,
+            'tbl_catar_2025.jalur' => $kelas,
             'tbl_catar_2025.gelombang' => $gelombang,                
         	);
         	$data['catar'] = $this->m_registrasi->get_data_join_where_tpa($where)->result();
