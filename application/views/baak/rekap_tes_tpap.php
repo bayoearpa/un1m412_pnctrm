@@ -36,7 +36,7 @@
                       echo "P";
                     } ?></td>
                   <td><?php echo $c->nm_prodi ?></td>
-                  <td><?php echo $c->nilai_tpa ?></td>
+                  <td><?php echo $c->hasil_tpa ?></td>
                 </tr>
                <?php } ?>
                 </tbody>
