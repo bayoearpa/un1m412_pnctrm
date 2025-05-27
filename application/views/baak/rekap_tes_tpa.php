@@ -42,19 +42,6 @@
                     <option value="fastt">Fast Track</option>
                   </select>
                   </div>
-                    <!-- <div class="form-group">
-                  <label>Tanggal Pelaksanaan</label>*wajib pilih
-                  <select class="form-control" name="tgl_pel" id="tgl_pel" required="harus dipilih">
-                    <option selected>== Pilih ==</option>
-                    <?php 
-                      // get_instance()->load->helper('tgl_indo');
-                      // foreach ($get_tgl_pel as $key) {
-                        # code... ?>
-                        <option value="<?php //echo $key->id_tgl_seleksi ?>"><?php //echo date_indo($key->tgl_seleksi); ?></option>
-                     <?php }
-                     ?>
-                  </select>
-                  </div> -->
                   <div class="form-group">
                   <label>Periode</label>
                   <select class="form-control" name="periode" id="periode">
