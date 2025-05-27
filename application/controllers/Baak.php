@@ -3093,7 +3093,7 @@ class Baak extends CI_Controller {
     ///////////////////// .notifikasi pembayaran ////////////////////////////
 
     /////////////////////////////// rekap tes tpa 2025 ////////////////////////////////////////////////////////
-     function rekap_tes_tpa(){
+     function rekaptestpa(){
         $this->load->view('baak/header');
         $this->load->view('baak/rekap_tes_tpa');
         $this->load->view('baak/footer');
