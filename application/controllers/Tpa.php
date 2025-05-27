@@ -120,7 +120,7 @@ class Tpa extends CI_Controller {
 		} elseif ($hasil_tpa >= 50 && $hasil_tpa <= 69) {
 			$markup = 72;
 		} else {
-			$markup = null; // atau angka default lain jika di luar jangkauan
+			$markup = $hasil_tpa; // atau angka default lain jika di luar jangkauan
 		}
 
 		$result[] = array( 
@@ -183,7 +183,7 @@ class Tpa extends CI_Controller {
 	} elseif ($hasil_tpa >= 50 && $hasil_tpa <= 69) {
 		$markup = 72;
 	} else {
-		$markup = null; // atau angka default lain jika di luar jangkauan
+		$markup = $hasil_tpa; // atau angka default lain jika di luar jangkauan
 	}
 
 	$data = array(
