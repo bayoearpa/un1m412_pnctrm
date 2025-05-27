@@ -522,7 +522,7 @@ class m_registrasi extends CI_Model
 		tbl_catar_2025.nama as nama,
 		tbl_catar_2025.jk as jk,
 		tbl_catar_2025.prodi as kd_prodi,
-		tbl_prodi.prodi as nm_prodi
+		tbl_prodi.prodi as nm_prodi,
 		tbl_seleksi_tpa.hasil_tpa_markup as hasil_tpa');
 		$this->db->from('tbl_catar_2025');
 		$this->db->join('tbl_seleksi_tpa','tbl_catar_2025.no = tbl_seleksi_tpa.no','left');
