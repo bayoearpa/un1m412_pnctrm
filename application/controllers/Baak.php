@@ -3108,7 +3108,7 @@ class Baak extends CI_Controller {
              'tbl_catar_2025.jalur' => $jalur,
              'tbl_catar_2025.periode' => $periode      
         );
-        $data['datatpa'] = $this->m_registrasi->get_data_join_where_tpa2()->result();
+        $data['datatpa'] = $this->m_registrasi->get_data_join_where_tpa2($where)->result();
         $this->load->view('baak/header');
         $this->load->view('baak/rekap_tes_tpap',$data);
         $this->load->view('baak/footer');
