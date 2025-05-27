@@ -226,6 +226,7 @@
             <li><a href="<?php echo base_url() ?>baak/seleksigd2"><i class="fa fa-paperclip"></i>Seleksi GD TF</a></li>
             <li><a href="<?php echo base_url() ?>baak/seleksi"><i class="fa fa-paperclip"></i>Seleksi</a></li>
             <li><a href="<?php echo base_url() ?>baak/seleksitf"><i class="fa fa-paperclip"></i>Seleksi TF</a></li>
+            <li><a href="<?php echo base_url() ?>baak/rekaptestpa"><i class="fa fa-paperclip"></i>Rekap tes TPA</a></li>
           </ul>
         </li>
         <?php 

@@ -3091,6 +3091,16 @@ class Baak extends CI_Controller {
         echo $json_data;
     }
     ///////////////////// .notifikasi pembayaran ////////////////////////////
+
+    /////////////////////////////// rekap tes tpa 2025 ////////////////////////////////////////////////////////
+     function rekap_tes_tpa(){
+        $this->load->view('baak/header');
+        $this->load->view('baak/rekap_tes_tpa');
+        $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
+    }
+
+    /////////////////////////////// .rekap tes tpa 2025 ////////////////////////////////////////////////////////
     ///////////////////////////////////////////////////////summary 2024///////////////////////////////////////////
      public function getnamaprovinsi_2024($id)
     {
