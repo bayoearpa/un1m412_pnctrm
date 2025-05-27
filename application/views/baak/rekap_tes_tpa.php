@@ -38,26 +38,26 @@
                   <label>Pilih kelas</label>*wajib pilih
                   <select class="form-control" name="kelas" id="kelas" required="harus dipilih">
                     <option selected>== Pilih == </option>
-                    <option value="reg">Reguler</option>
+                    <option value="reguler">Reguler</option>
                     <option value="fastt">Fast Track</option>
                   </select>
                   </div>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                   <label>Tanggal Pelaksanaan</label>*wajib pilih
                   <select class="form-control" name="tgl_pel" id="tgl_pel" required="harus dipilih">
                     <option selected>== Pilih ==</option>
                     <?php 
-                      get_instance()->load->helper('tgl_indo');
-                      foreach ($get_tgl_pel as $key) {
+                      // get_instance()->load->helper('tgl_indo');
+                      // foreach ($get_tgl_pel as $key) {
                         # code... ?>
-                        <option value="<?php echo $key->id_tgl_seleksi ?>"><?php echo date_indo($key->tgl_seleksi); ?></option>
+                        <option value="<?php //echo $key->id_tgl_seleksi ?>"><?php //echo date_indo($key->tgl_seleksi); ?></option>
                      <?php }
                      ?>
                   </select>
-                  </div>
+                  </div> -->
                   <div class="form-group">
                   <label>Periode</label>
-                  <select class="form-control" name="gelombang" id="gelombang">
+                  <select class="form-control" name="periode" id="periode">
                     <option value="0" selected>== Pilih == </option>
                     <option value="1">Januari</option>
                     <option value="2">Februari</option>

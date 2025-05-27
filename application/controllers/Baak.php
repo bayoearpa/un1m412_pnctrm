@@ -3099,6 +3099,21 @@ class Baak extends CI_Controller {
         $this->load->view('baak/footer');
         $this->load->view('baak/footer_js');
     }
+     function rekaptestpap(){
+        $prodi = $this->input->post('prodi');
+        $jalur = $this->input->post('kelas');
+        $periode = $this->input->post('periode');
+        $where = array(
+            'tbl_catar_2025.prodi' => $prodi,
+             'tbl_catar_2025.jalur' => $jalur,
+             'tbl_catar_2025.periode' => $periode      
+        );
+        $data['datatpa'] = $this->m_registrasi->get_data_join_where_tpa2()->result();
+        $this->load->view('baak/header');
+        $this->load->view('baak/rekap_tes_tpap',$data);
+        $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
+    }
 
     /////////////////////////////// .rekap tes tpa 2025 ////////////////////////////////////////////////////////
     ///////////////////////////////////////////////////////summary 2024///////////////////////////////////////////

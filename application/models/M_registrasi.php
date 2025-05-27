@@ -517,6 +517,22 @@ class m_registrasi extends CI_Model
 		return $query;
 		
 	}
+	function get_data_join_where_tpa2($where){
+		$this->db->select('tbl_catar_2025.no as no,
+		tbl_catar_2025.nama as nama,
+		tbl_catar_2025.jk as jk,
+		tbl_catar_2025.prodi as kd_prodi,
+		tbl_prodi.prodi as nm_prodi
+		tbl_seleksi_tpa.hasil_tpa_markup as hasil_tpa');
+		$this->db->from('tbl_catar_2025');
+		$this->db->join('tbl_seleksi_tpa','tbl_catar_validasi_2025.no = tbl_seleksi_tpa.no','left');
+		$this->db->join('tbl_prodi','tbl_prodi.id_prodi = tbl_catar_2025.prodi','inner');
+		$this->db->where($where);
+		// $this->db->order_by('tbl_catar_validasi_2025.no_reg', "asc");
+		$query=$this->db->get();
+		return $query;
+		
+	}
 
 	function get_data_join_where_2023($where){
 		$this->db->select('tbl_catar_2023.no,
