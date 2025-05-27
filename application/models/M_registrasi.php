@@ -525,7 +525,7 @@ class m_registrasi extends CI_Model
 		tbl_prodi.prodi as nm_prodi
 		tbl_seleksi_tpa.hasil_tpa_markup as hasil_tpa');
 		$this->db->from('tbl_catar_2025');
-		$this->db->join('tbl_seleksi_tpa','tbl_catar_validasi_2025.no = tbl_seleksi_tpa.no','left');
+		$this->db->join('tbl_seleksi_tpa','tbl_catar_2025.no = tbl_seleksi_tpa.no','left');
 		$this->db->join('tbl_prodi','tbl_prodi.id_prodi = tbl_catar_2025.prodi','inner');
 		$this->db->where($where);
 		// $this->db->order_by('tbl_catar_validasi_2025.no_reg', "asc");
