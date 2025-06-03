@@ -70,7 +70,7 @@
       </div>
     </div>
   </section>
-<center><img src="<?php echo base_url() ?>assets/front1/img/alur2025.jpg" width="100%"></center>
+<center><img src="<?php echo base_url() ?>assets/front1/img/alur20252.jpg" width="100%"></center>
 
 
 <section class="about" id="about" style="background-color: #01317d; color: white;">
