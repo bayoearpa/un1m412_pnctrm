@@ -1141,7 +1141,7 @@ class m_registrasi extends CI_Model
         $this->db->where('status_cetak', 'belum'); // Pastikan hanya yang statusnya "belum" yang diupdate
         $this->db->update('tbl_ukurpakaian', [
             'status_cetak' => 'sudah',
-            'tgl_cetak' => date('Y-m-d H:i:s')
+            'tgl_cetak2' => date('Y-m-d H:i:s')
         ]);
     }
     function get_data_rekap_ukurpakaian($where)
