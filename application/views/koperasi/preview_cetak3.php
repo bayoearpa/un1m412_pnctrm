@@ -35,7 +35,7 @@
       <td><?php echo $c->nama ?></td>
       <td><?php echo $c->telp ?></td>
       <td><?php echo $koperasi->prodi($c->prodi) ?></td>
-      <td><?php echo $c->tgl_cetak ?></td>
+      <td><?php echo $c->tgl_cetak2 ?></td>
       <td><?php echo $c->status_cetak ?></td>
     </tr>
     <?php } ?>
