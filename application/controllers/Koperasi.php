@@ -417,9 +417,14 @@ class Koperasi extends CI_Controller {
         $jalur = $this->input->post('jalur');
         $prodi = $this->input->post('prodi');
         $gelombang = $this->input->post('gelombang');
+        $wherex= array(
+            'tbl_catar_2025.jalur' => $jalur,
+            'tbl_catar_2025.prodi' => $prodi,
+            'tbl_catar_2025.gelombang' => $gelombang, 
+            );
 
          // 🚀 **UPDATE STATUS CETAK SEBELUM PROSES EXPORT EXCEL**
-        $this->m_registrasi->update_status_cetak($where);
+        $this->m_registrasi->update_status_cetak($wherex);
 
         if ($jalur == "reguler") {
             # code...
