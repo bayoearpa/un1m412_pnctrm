@@ -308,6 +308,7 @@ class Koperasi extends CI_Controller {
         $objPHPExcel->getActiveSheet()->setCellValue('L6', 'Kemeja PDH PDUB');
         $objPHPExcel->getActiveSheet()->setCellValue('M6', 'Celana PDH PDUB');
         $objPHPExcel->getActiveSheet()->setCellValue('N6', 'Jas PDPM');
+        $objPHPExcel->getActiveSheet()->setCellValue('O6', 'Jas ALMAMATER');
 
         // Loop through the data and populate the worksheet
         $row = 7;
@@ -396,6 +397,13 @@ class Koperasi extends CI_Controller {
             $objPHPExcel->getActiveSheet()->setCellValue('N' . $row, $result->jaspdpm_lainnya);
             }else{
             $objPHPExcel->getActiveSheet()->setCellValue('N' . $row, $result->jaspdpm);
+            }
+
+            if ($result->jas_almamater == 'lainnya') {
+                # code...
+            $objPHPExcel->getActiveSheet()->setCellValue('O' . $row, $result->jas_almamater_lainnya);
+            }else{
+            $objPHPExcel->getActiveSheet()->setCellValue('O' . $row, $result->jas_almamater);
             }
 
             $row++;
