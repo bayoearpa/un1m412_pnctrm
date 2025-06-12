@@ -11,14 +11,16 @@
                   <div class="box-body">
                     <!-- <form method="post" action="<?php //echo base_url() ?>koperasi/preview_cetak"> -->
                     <form id="previewForm">
-                   <!--  <div class="form-group">
+                   <div class="form-group">
                     <label> Pilih Jalur Pendaftaran</label>
-                    <select onchange="toggleGelombangForm()" name="jalur" id="jalur" class="form-control" style="width:50%;">  
+                    <select onchange="toggleGelombangForm()" name="jalur" id="jalur" class="form-control" style="width:50%;">
                     <option selected>== Pilih ==</option>
                     <option value="gdr1">Gelombang Dini</option>
-                    <option value="reguler">Reguler</option>                       
+                    <option value="gdr2">Gelombang Dini (Kelas Transfer)</option>
+                    <option value="reguler">Reguler</option>
+                    <option value="kelastransfer">Kelas Transfer</option>                       
                     </select> 
-                    </div>   -->
+                    </div>  
                     <div class="form-group">
                     <label> Pilih Program Studi</label>
                     <select name="prodi" id="prodi" class="form-control" style="width:50%;">  
