@@ -109,42 +109,54 @@ class Koperasi extends CI_Controller {
     {
         # code...
         $data['koperasi'] = $this;
-        $jalur = $this->input->post('jalur');
+        // $jalur = $this->input->post('jalur');
         $prodi = $this->input->post('prodi');
-        $gelombang = $this->input->post('gelombang');
+        // $gelombang = $this->input->post('gelombang');
 
-        if ($jalur == "reguler") {
-            # code...
-            $where= array(
-            // 'tbl_catar_2025.jalur' => $jalur,
+        // if ($jalur == "reguler") {
+        //     # code...
+        //     $where= array(
+        //     'tbl_catar_2025.jalur' => $jalur,
+        //     'tbl_catar_2025.prodi' => $prodi,
+        //     'tbl_catar_2025.gelombang' => $gelombang, 
+        //     );
+
+        //     $data['frm_jalur'] = $jalur;
+        //     $data['frm_prodi'] = $prodi;
+        //     $data['frm_gelombang'] = $gelombang;
+
+        //    $data['results'] = $this->m_registrasi->get_data_rekap_ukurpakaian($where);
+
+        //     $this->load->view('koperasi/header');
+        //     $this->load->view('koperasi/preview_cetak',$data);        
+        //     $this->load->view('koperasi/footer');
+        // }else{
+        //     $where= array(
+        //     'tbl_catar_2025.jalur' => $jalur,
+        //     'tbl_catar_2025.prodi' => $prodi,
+        //     );
+
+        //     $data['frm_jalur'] = $jalur;
+        //     $data['frm_prodi'] = $prodi;
+
+        //    $data['results'] = $this->m_registrasi->get_data_rekap_ukurpakaian($where);
+
+        //     $this->load->view('koperasi/header');
+        //     $this->load->view('koperasi/preview_cetak',$data);        
+        //     $this->load->view('koperasi/footer');
+        // }
+
+         $where= array(
             'tbl_catar_2025.prodi' => $prodi,
-            'tbl_catar_2025.gelombang' => $gelombang, 
             );
 
-            // $data['frm_jalur'] = $jalur;
             $data['frm_prodi'] = $prodi;
-            $data['frm_gelombang'] = $gelombang;
 
            $data['results'] = $this->m_registrasi->get_data_rekap_ukurpakaian($where);
 
             $this->load->view('koperasi/header');
             $this->load->view('koperasi/preview_cetak',$data);        
             $this->load->view('koperasi/footer');
-        }else{
-            $where= array(
-            // 'tbl_catar_2025.jalur' => $jalur,
-            'tbl_catar_2025.prodi' => $prodi,
-            );
-
-            // $data['frm_jalur'] = $jalur;
-            $data['frm_prodi'] = $prodi;
-
-           $data['results'] = $this->m_registrasi->get_data_rekap_ukurpakaian($where);
-
-            $this->load->view('koperasi/header');
-            $this->load->view('koperasi/preview_cetak',$data);        
-            $this->load->view('koperasi/footer');
-        }
 
     }
     public function preview_cetak2()
@@ -152,32 +164,39 @@ class Koperasi extends CI_Controller {
         // Ambil data dari request POST
         // $jalur = $this->input->post('jalur');
         $prodi = $this->input->post('prodi');
-        $gelombang = $this->input->post('gelombang');
+        // $gelombang = $this->input->post('gelombang');
 
         $data['koperasi'] = $this; // Jika diperlukan di dalam view
 
         // Tentukan kondisi berdasarkan pilihan jalur
-        if ($jalur == "reguler") {
-            $where = array(
-                // 'tbl_catar_2025.jalur' => $jalur,
+        // if ($jalur == "reguler") {
+        //     $where = array(
+        //         'tbl_catar_2025.jalur' => $jalur,
+        //         'tbl_catar_2025.prodi' => $prodi,
+        //         'tbl_catar_2025.gelombang' => $gelombang, 
+        //     );
+
+        //     // Siapkan data untuk view
+        //     $data['frm_jalur'] = $jalur;
+        //     $data['frm_prodi'] = $prodi;
+        //     $data['frm_gelombang'] = $gelombang;
+        // } else {
+        //     $where = array(
+        //         'tbl_catar_2025.jalur' => $jalur,
+        //         'tbl_catar_2025.prodi' => $prodi,
+        //     );
+
+        //     // Siapkan data untuk view
+        //     $data['frm_jalur'] = $jalur;
+        //     $data['frm_prodi'] = $prodi;
+        // }
+
+         $where = array(
                 'tbl_catar_2025.prodi' => $prodi,
-                'tbl_catar_2025.gelombang' => $gelombang, 
             );
 
             // Siapkan data untuk view
-            // $data['frm_jalur'] = $jalur;
             $data['frm_prodi'] = $prodi;
-            $data['frm_gelombang'] = $gelombang;
-        } else {
-            $where = array(
-                // 'tbl_catar_2025.jalur' => $jalur,
-                'tbl_catar_2025.prodi' => $prodi,
-            );
-
-            // Siapkan data untuk view
-            // $data['frm_jalur'] = $jalur;
-            $data['frm_prodi'] = $prodi;
-        }
 
         // Ambil data dari model
         $data['results'] = $this->m_registrasi->get_data_rekap_ukurpakaian($where);
@@ -190,32 +209,39 @@ class Koperasi extends CI_Controller {
         // Ambil data dari request POST
         // $jalur = $this->input->post('jalur');
         $prodi = $this->input->post('prodi');
-        $gelombang = $this->input->post('gelombang');
+        // $gelombang = $this->input->post('gelombang');
 
         $data['koperasi'] = $this; // Jika diperlukan di dalam view
 
         // Tentukan kondisi berdasarkan pilihan jalur
-        if ($jalur == "reguler") {
-            $where = array(
-                // 'tbl_catar_2025.jalur' => $jalur,
+        // if ($jalur == "reguler") {
+        //     $where = array(
+        //         'tbl_catar_2025.jalur' => $jalur,
+        //         'tbl_catar_2025.prodi' => $prodi,
+        //         'tbl_catar_2025.gelombang' => $gelombang, 
+        //     );
+
+        //     // Siapkan data untuk view
+        //     $data['frm_jalur'] = $jalur;
+        //     $data['frm_prodi'] = $prodi;
+        //     $data['frm_gelombang'] = $gelombang;
+        // } else {
+        //     $where = array(
+        //         'tbl_catar_2025.jalur' => $jalur,
+        //         'tbl_catar_2025.prodi' => $prodi,
+        //     );
+
+        //     // Siapkan data untuk view
+        //     $data['frm_jalur'] = $jalur;
+        //     $data['frm_prodi'] = $prodi;
+        // }
+
+          $where = array(
                 'tbl_catar_2025.prodi' => $prodi,
-                'tbl_catar_2025.gelombang' => $gelombang, 
             );
 
             // Siapkan data untuk view
-            // $data['frm_jalur'] = $jalur;
             $data['frm_prodi'] = $prodi;
-            $data['frm_gelombang'] = $gelombang;
-        } else {
-            $where = array(
-                // 'tbl_catar_2025.jalur' => $jalur,
-                'tbl_catar_2025.prodi' => $prodi,
-            );
-
-            // Siapkan data untuk view
-            // $data['frm_jalur'] = $jalur;
-            $data['frm_prodi'] = $prodi;
-        }
 
         // Ambil data dari model
         $data['results'] = $this->m_registrasi->get_data_rekap_ukurpakaian($where);
@@ -231,14 +257,14 @@ class Koperasi extends CI_Controller {
         // Fetch data from the database
         // $jalur = $this->input->post('jalur');
         $prodi = $this->input->post('prodi');
-        $gelombang = $this->input->post('gelombang');
+        // $gelombang = $this->input->post('gelombang');
 
         if ($jalur == "reguler") {
         	# code...
         	$where= array(
             // 'tbl_catar_2025.jalur' => $jalur,
             'tbl_catar_2025.prodi' => $prodi,
-            'tbl_catar_2025.gelombang' => $gelombang, 
+            // 'tbl_catar_2025.gelombang' => $gelombang, 
 	        );
 
 	       $data['results'] = $this->m_registrasi->get_data_rekap_ukurpakaian($where);
@@ -422,13 +448,13 @@ class Koperasi extends CI_Controller {
         # code...
         // Load necessary models and libraries here
         // Fetch data from the database
-        $jalur = $this->input->post('jalur');
+        // $jalur = $this->input->post('jalur');
         $prodi = $this->input->post('prodi');
-        $gelombang = $this->input->post('gelombang');
+        // $gelombang = $this->input->post('gelombang');
         $wherex= array(
-            'tbl_catar_2025.jalur' => $jalur,
+            // 'tbl_catar_2025.jalur' => $jalur,
             'tbl_catar_2025.prodi' => $prodi,
-            'tbl_catar_2025.gelombang' => $gelombang, 
+            // 'tbl_catar_2025.gelombang' => $gelombang, 
             );
 
          // 🚀 **UPDATE STATUS CETAK SEBELUM PROSES EXPORT EXCEL**
@@ -437,15 +463,15 @@ class Koperasi extends CI_Controller {
         if ($jalur == "reguler") {
             # code...
             $where= array(
-            'tbl_catar_2025.jalur' => $jalur,
+            // 'tbl_catar_2025.jalur' => $jalur,
             'tbl_catar_2025.prodi' => $prodi,
-            'tbl_catar_2025.gelombang' => $gelombang, 
+            // 'tbl_catar_2025.gelombang' => $gelombang, 
             );
 
            $data['results'] = $this->m_registrasi->get_data_rekap_ukurpakaian($where);
         }else{
             $where= array(
-            'tbl_catar_2025.jalur' => $jalur,
+            // 'tbl_catar_2025.jalur' => $jalur,
             'tbl_catar_2025.prodi' => $prodi,
             );
 

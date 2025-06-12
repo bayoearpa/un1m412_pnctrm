@@ -35,7 +35,7 @@
                     <option value="10">S1 Bisnis Digital</option>      
                     </select> 
                     </div>
-                    <div class="form-group">
+                  <!--   <div class="form-group">
                     <label> Pilih Gelombang Pendaftaran</label>
                     <select name="gelombang" id="gelombang" class="form-control" style="width:50%;">  
                     <option selected>== Pilih ==</option>
@@ -43,7 +43,7 @@
                     <option value="2">Gelombang 2</option>               
                     <option value="3">Gelombang 3</option>
                     </select> 
-                    </div>
+                    </div> -->
                     <div class="form-group">
                       <input type="submit" class="btn btn-block btn-success" id="cek" name="cek" style="width:20%;" value="Klik Untuk Export ke Excel">
                     </div>
