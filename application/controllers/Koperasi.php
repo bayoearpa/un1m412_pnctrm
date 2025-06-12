@@ -116,12 +116,12 @@ class Koperasi extends CI_Controller {
         if ($jalur == "reguler") {
             # code...
             $where= array(
-            'tbl_catar_2025.jalur' => $jalur,
+            // 'tbl_catar_2025.jalur' => $jalur,
             'tbl_catar_2025.prodi' => $prodi,
             'tbl_catar_2025.gelombang' => $gelombang, 
             );
 
-            $data['frm_jalur'] = $jalur;
+            // $data['frm_jalur'] = $jalur;
             $data['frm_prodi'] = $prodi;
             $data['frm_gelombang'] = $gelombang;
 
@@ -132,11 +132,11 @@ class Koperasi extends CI_Controller {
             $this->load->view('koperasi/footer');
         }else{
             $where= array(
-            'tbl_catar_2025.jalur' => $jalur,
+            // 'tbl_catar_2025.jalur' => $jalur,
             'tbl_catar_2025.prodi' => $prodi,
             );
 
-            $data['frm_jalur'] = $jalur;
+            // $data['frm_jalur'] = $jalur;
             $data['frm_prodi'] = $prodi;
 
            $data['results'] = $this->m_registrasi->get_data_rekap_ukurpakaian($where);
@@ -150,7 +150,7 @@ class Koperasi extends CI_Controller {
     public function preview_cetak2()
     {
         // Ambil data dari request POST
-        $jalur = $this->input->post('jalur');
+        // $jalur = $this->input->post('jalur');
         $prodi = $this->input->post('prodi');
         $gelombang = $this->input->post('gelombang');
 
@@ -159,23 +159,23 @@ class Koperasi extends CI_Controller {
         // Tentukan kondisi berdasarkan pilihan jalur
         if ($jalur == "reguler") {
             $where = array(
-                'tbl_catar_2025.jalur' => $jalur,
+                // 'tbl_catar_2025.jalur' => $jalur,
                 'tbl_catar_2025.prodi' => $prodi,
                 'tbl_catar_2025.gelombang' => $gelombang, 
             );
 
             // Siapkan data untuk view
-            $data['frm_jalur'] = $jalur;
+            // $data['frm_jalur'] = $jalur;
             $data['frm_prodi'] = $prodi;
             $data['frm_gelombang'] = $gelombang;
         } else {
             $where = array(
-                'tbl_catar_2025.jalur' => $jalur,
+                // 'tbl_catar_2025.jalur' => $jalur,
                 'tbl_catar_2025.prodi' => $prodi,
             );
 
             // Siapkan data untuk view
-            $data['frm_jalur'] = $jalur;
+            // $data['frm_jalur'] = $jalur;
             $data['frm_prodi'] = $prodi;
         }
 
@@ -188,7 +188,7 @@ class Koperasi extends CI_Controller {
     public function preview_cetak3()
     {
         // Ambil data dari request POST
-        $jalur = $this->input->post('jalur');
+        // $jalur = $this->input->post('jalur');
         $prodi = $this->input->post('prodi');
         $gelombang = $this->input->post('gelombang');
 
@@ -197,23 +197,23 @@ class Koperasi extends CI_Controller {
         // Tentukan kondisi berdasarkan pilihan jalur
         if ($jalur == "reguler") {
             $where = array(
-                'tbl_catar_2025.jalur' => $jalur,
+                // 'tbl_catar_2025.jalur' => $jalur,
                 'tbl_catar_2025.prodi' => $prodi,
                 'tbl_catar_2025.gelombang' => $gelombang, 
             );
 
             // Siapkan data untuk view
-            $data['frm_jalur'] = $jalur;
+            // $data['frm_jalur'] = $jalur;
             $data['frm_prodi'] = $prodi;
             $data['frm_gelombang'] = $gelombang;
         } else {
             $where = array(
-                'tbl_catar_2025.jalur' => $jalur,
+                // 'tbl_catar_2025.jalur' => $jalur,
                 'tbl_catar_2025.prodi' => $prodi,
             );
 
             // Siapkan data untuk view
-            $data['frm_jalur'] = $jalur;
+            // $data['frm_jalur'] = $jalur;
             $data['frm_prodi'] = $prodi;
         }
 
@@ -229,14 +229,14 @@ class Koperasi extends CI_Controller {
 		# code...
 		// Load necessary models and libraries here
         // Fetch data from the database
-        $jalur = $this->input->post('jalur');
+        // $jalur = $this->input->post('jalur');
         $prodi = $this->input->post('prodi');
         $gelombang = $this->input->post('gelombang');
 
         if ($jalur == "reguler") {
         	# code...
         	$where= array(
-            'tbl_catar_2025.jalur' => $jalur,
+            // 'tbl_catar_2025.jalur' => $jalur,
             'tbl_catar_2025.prodi' => $prodi,
             'tbl_catar_2025.gelombang' => $gelombang, 
 	        );
@@ -244,7 +244,7 @@ class Koperasi extends CI_Controller {
 	       $data['results'] = $this->m_registrasi->get_data_rekap_ukurpakaian($where);
         }else{
         	$where= array(
-            'tbl_catar_2025.jalur' => $jalur,
+            // 'tbl_catar_2025.jalur' => $jalur,
             'tbl_catar_2025.prodi' => $prodi,
 	        );
 
