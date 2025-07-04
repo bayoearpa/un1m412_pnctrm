@@ -72,7 +72,7 @@
 				<li>Potongan SPI alumni UNIMAR AMNI Semarang sebesar Rp 2.000.000,-</li>
 			</ol>
 		</ul>
-		<p>Pembayaran Pra Akademik, SPP Semester I, Biaya Asrama satu bulan (khusus taruna (prodi D3 Nautika dan D3 Teknika) dan taruni) dan Sumbangan Pengembangan Institusi (SPI), dapat dilakukan melalui transfer <b>ke BANK Mandiri 1350002900197 a/n Yayasan Bina Kemaritiman Indonesia</b> sesuai waktu pembayaran diatas, dengan mencantumkan : <b>Nomor Pendaftaran, Nama Calon Mahasiswa/Taruna dan Program Studi.</b></p>
+		<p>Pembayaran Pra Akademik, SPP Semester I, Biaya Asrama satu bulan (khusus taruna (prodi D3 Nautika dan D3 Teknika) dan taruni) dan Sumbangan Pengembangan Institusi (SPI), dapat dilakukan melalui transfer <b>ke BANK Mandiri 1350002900197 a/n Yayasan Bina Kemaritiman Indonesia</b>, Pembayaran asrama putra (D3 Nautika dan D3 Teknika) Transfer ke <b> BANK BNI 194118438 a/n Asrama Taruna Unimar AMNI</b> sesuai waktu pembayaran diatas, dengan mencantumkan : <b>Nomor Pendaftaran, Nama Calon Mahasiswa/Taruna dan Program Studi.</b></p>
 		<ul>
 			<li>Setelah melaksanakan pembayaran, <b>harap memberikan konfirmasi pembayaran dengan mengirimkan bukti transfer ke :</b></li>
 			<p>CP 1 : No WA : 0851-6161-0180 </p>
