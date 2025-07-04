@@ -54,8 +54,8 @@
 			<p>Melunasi Biaya Pra Akademik, SPP semester 1 dan Asrama (khusus taruna <b>(prodi D3 Nautika dan D3 Teknika)</b> dan taruni), disesuaikan dengan Program Studi masing-masing (terlampir)</p>
 		</ol>
 		<li><b>PEMBAYARAN BIAYA PENDIDIKAN, ASRAMA (KHUSUS TARUNA (PRODI D3 NAUTIKA DAN D3 TEKNIKA) DAN TARUNI) DAN SPI</b></li>
-		<img src="<?php echo base_url() ?>assets/front1/img/biaya/biaya_reguler12_25.jpg" width="100%">
-		<img src="<?php echo base_url() ?>assets/front1/img/biaya/biaya_reguler2_25.jpg" width="100%">
+		<img src="<?php echo base_url() ?>assets/front1/img/biaya/biaya_reguler14_25.jpg" width="100%">
+		<img src="<?php echo base_url() ?>assets/front1/img/biaya/biaya_reguler23_25.jpg" width="100%">
 		<p><b>Catatan : </b></p>
 		<ul>
 			<li><ul>Kelas Reguler (Prodi D3 KPN, D3 Teknika, D3 Nautika dan S1 Transportasi)</ul></li>
