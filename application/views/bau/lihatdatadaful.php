@@ -10,6 +10,10 @@
                 
                   <div class="box-body">
                   <div class="form-group">
+                    <label>Nomor Pendaftaran</label>
+                    <input type="text" name="no" id="no" class="form-control">
+                  </div>  
+                  <div class="form-group">
                       <form method="post" action="<?php echo base_url() ?>bau/lihatdatadafulp">
                       <label> Pilih Prodi
                     </label>

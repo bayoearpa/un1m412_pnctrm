@@ -570,7 +570,23 @@ class Bau extends CI_Controller {
     {
         $prodi      = $this->input->post('prodi');
         $gelombang  = $this->input->post('gelombang');
-        if ($prodi == 0) {
+        $no      = $this->input->post('no');
+        
+        if($no > 0) {
+            $where = array(
+            'tbl_catar_2025.no' => $no,
+            // 'prodi'     => $prodi,                 
+             );
+            $data['catar'] = $this->m_registrasi->get_data_sudah_daful($where)->result();
+            $data['label'] = "by Nomor Pendaftaran";
+            $this->load->view('bau/header');
+            $this->load->view('bau/lihatdatadaful');
+            $this->load->view('bau/lihatdatadafulp',$data);
+            $this->load->view('bau/footer');
+            $this->load->view('bau/footer_js');
+            $this->load->view('bau/lihatdatadafulp_js');
+
+        }elseif ($prodi == 0) {
              # code...
             $where = array(
             'tbl_catar_2025.gelombang' => $gelombang,
