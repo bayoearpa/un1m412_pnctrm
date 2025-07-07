@@ -64,13 +64,15 @@
                       echo $pick;
                     
                   ?></td>
-                   <!-- Tombol Lihat File Sign On -->
+                  <td>
+                     <!-- Tombol Lihat File Sign On -->
                     <?php if ($c->bukti_bayar_daful) { ?>
                         <button class="btn btn-info view-file-button" data-filename="<?php echo $c->bukti_bayar_daful; ?>">Lihat</button>
                     <?php } else { ?>
                         <!-- Tampilkan pesan jika file tidak ada -->
                         File tidak tersedia
                     <?php } ?>
+                  </td>
                   <td>
 
                   <?php 
