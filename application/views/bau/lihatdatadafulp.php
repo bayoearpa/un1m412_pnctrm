@@ -65,7 +65,7 @@
                     
                   ?></td>
                    <!-- Tombol Lihat File Sign On -->
-                    <?php if ($i->upload_file_signon) { ?>
+                    <?php if ($c->bukti_bayar_daful) { ?>
                         <button class="btn btn-info view-file-button" data-filename="<?php echo $c->bukti_bayar_daful; ?>">Lihat</button>
                     <?php } else { ?>
                         <!-- Tampilkan pesan jika file tidak ada -->
