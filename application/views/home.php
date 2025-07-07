@@ -717,7 +717,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <img class="img-fluid rounded-image w-100" src="<?php echo base_url() ?>assets/front1/img/biaya_pendidikan_20255.jpg">
+              <img class="img-fluid rounded-image w-100" src="<?php echo base_url() ?>assets/front1/img/biaya_pendidikan_20256.jpg">
               
               
                <center>
