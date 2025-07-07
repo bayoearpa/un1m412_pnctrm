@@ -94,12 +94,10 @@
                  <th>No.</th>
                   <th>No. Pendf.</th>
                   <th>Nama</th>
-                  <th>Tempat Lahir</th>
-                  <th>Tanggal Lahir</th>
-                  <th>Nama Ibu</th>
                   <th>Telp</th>
                   <th>Prodi</th>
-                  <th>Validasi</th>
+                  <th>Lihat file</th>
+                  <th>Proses</th>
                 </tr>
                 </tfoot>
               </table>

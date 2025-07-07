@@ -566,7 +566,7 @@ class Bau extends CI_Controller {
         // $this->load->view('bau/referral_js', $data);
 
     }
-    public function lihatdatadafulp($where)
+    public function lihatdatadafulp()
     {
         $prodi      = $this->input->post('prodi');
         $gelombang  = $this->input->post('gelombang');
