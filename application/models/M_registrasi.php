@@ -1070,8 +1070,10 @@ class m_registrasi extends CI_Model
 	     $this->db->select('tbl_catar_2025.nama as nama,
             tbl_catar_2025.prodi as prodi,
             tbl_catar_2025.telp as telp,
-            tbl_catar_2025.no,
-            tbl_catar_2025.jk');
+            tbl_catar_2025.no as no,
+            tbl_catar_2025.jk as jk,
+            tbl_catar_2025.bukti_bayar_daful as bukti_bayar_daful,
+            tbl_catar_daful_2025.no as no_daful');
 
         $this->db->from('tbl_catar_daful_2025');
         $this->db->join('tbl_catar_2025', 'tbl_catar_daful_2025.no = tbl_catar_2025.no', 'inner');

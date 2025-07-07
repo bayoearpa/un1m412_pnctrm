@@ -555,6 +555,65 @@ class Bau extends CI_Controller {
         echo json_encode($data);
     }
     ////////////////////////////////////// .get referral data/////////////////////////////////////////////////
+
+    ////////////////////////////////////// lihat data daful //////////////////////////////////////////////////
+     public function lihatdatadaful()
+    {
+        // Load view and pass the data
+        $this->load->view('bau/header');
+        $this->load->view('bau/referral', $data);
+        $this->load->view('bau/footer');
+        $this->load->view('bau/referral_js', $data);
+
+    }
+    public function lihatdatadafulp($where)
+    {
+        $prodi      = $this->input->post('prodi');
+        $gelombang  = $this->input->post('gelombang');
+        if ($prodi == 0) {
+             # code...
+            $where = array(
+            'tbl_catar_2025.gelombang' => $gelombang,
+            // 'prodi'     => $prodi,                 
+             );
+            $data['catar'] = $this->m_registrasi->get_data_sudah_daful($where)->result();
+            $data['label'] = "by Gelombang";
+            $this->load->view('bau/header');
+            $this->load->view('bau/lihatdatadaful');
+            $this->load->view('bau/lihatdatadafulp',$data);
+            $this->load->view('bau/footer');
+            $this->load->view('bau/footer_js');
+         }elseif ($gelombang == null) {
+             # code...
+             $where = array(
+            // 'gelombang' => $gelombang,
+            'tbl_catar_2025.prodi'     => $prodi,                 
+             );
+            $data['catar'] = $this->m_registrasi->get_data_sudah_daful($where)->result();
+            $data['label'] = "by Prodi";
+            $this->load->view('bau/header');
+            $this->load->view('bau/lihatdatadaful');
+            $this->load->view('bau/lihatdatadafulp',$data);
+            $this->load->view('bau/footer');
+            $this->load->view('bau/footer_js');
+         }else{
+            $where = array(
+            'tbl_catar_2025.gelombang' => $gelombang,
+            'tbl_catar_2025.prodi'     => $prodi,                 
+            );
+            $data['catar'] = $this->m_registrasi->get_data_sudah_daful($where)->result();
+            $data['label'] = "by Prodi & Gelombang";
+            $this->load->view('bau/header');
+            $this->load->view('bau/lihatdatadaful');
+            $this->load->view('bau/lihatdatadafulp',$data);
+            $this->load->view('bau/footer');
+            $this->load->view('bau/footer_js');
+            $this->load->view('bau/lihatdatadafulp_js');
+         } 
+        
+    }
+    }
+    ////////////////////////////////////// .lihat data daful //////////////////////////////////////////////////
     ///////////////////////////////////////////////////////summary 2024///////////////////////////////////////////
      public function getnamaprovinsi_2024($id)
     {

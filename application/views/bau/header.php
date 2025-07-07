@@ -169,6 +169,7 @@
           <ul class="treeview-menu">
             <li><a href="<?php echo base_url() ?>bau/index"><i class="fa fa-money"></i>Pembayaran</a></li>
             <li><a href="<?php echo base_url() ?>bau/rekap_validasi"><i class="fa fa-paperclip"></i>Rekap Validasi</a></li>
+            <li><a href="<?php echo base_url() ?>bau/lihatdatadaful"><i class="fa fa-paperclip"></i>Daftar Ulang</a></li>
           </ul>
         </li>
         <li><a href="<?php echo base_url() ?>bau/edit"><i class="fa fa-pencil"></i> <span>Ganti Prodi</span></a></li>
