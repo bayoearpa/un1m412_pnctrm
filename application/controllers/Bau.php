@@ -583,6 +583,7 @@ class Bau extends CI_Controller {
             $this->load->view('bau/lihatdatadafulp',$data);
             $this->load->view('bau/footer');
             $this->load->view('bau/footer_js');
+            $this->load->view('bau/lihatdatadafulp_js');
          }elseif ($gelombang == null) {
              # code...
              $where = array(
@@ -596,6 +597,7 @@ class Bau extends CI_Controller {
             $this->load->view('bau/lihatdatadafulp',$data);
             $this->load->view('bau/footer');
             $this->load->view('bau/footer_js');
+            $this->load->view('bau/lihatdatadafulp_js');
          }else{
             $where = array(
             'tbl_catar_2025.gelombang' => $gelombang,
