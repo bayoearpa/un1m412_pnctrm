@@ -561,7 +561,7 @@ class Bau extends CI_Controller {
     {
         // Load view and pass the data
         $this->load->view('bau/header');
-        $this->load->view('bau/lihatdatadaful', $data);
+        $this->load->view('bau/lihatdatadaful');
         $this->load->view('bau/footer');
         // $this->load->view('bau/referral_js', $data);
 
