@@ -570,7 +570,7 @@ class Bau extends CI_Controller {
     {
         $prodi      = $this->input->post('prodi');
         $gelombang  = $this->input->post('gelombang');
-        $no      = $this->input->post('no');
+        $no         = $this->input->post('no');
         
         if($no > 0) {
             $where = array(
