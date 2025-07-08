@@ -1149,8 +1149,9 @@ class m_registrasi extends CI_Model
     public function update_status_cetak($where)
 	{
 	    // Ambil semua NO mahasiswa dari tbl_catar_2025 sesuai filter
-	    $this->db->select('no');
+	    $this->db->select('tbl_catar_2025.no');
 	    $this->db->from('tbl_catar_2025');
+	    $this->db->join('tbl_ukurpakaian', 'tbl_catar_2025.no = tbl_ukurpakaian.no', 'inner');
 	    $this->db->where($where);
 	    $result = $this->db->get()->result();
 
