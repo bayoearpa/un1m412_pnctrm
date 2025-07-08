@@ -460,7 +460,8 @@ class Koperasi extends CI_Controller {
         $wherex= array(
             'tbl_catar_2025.jalur' => $jalur,
             'tbl_catar_2025.prodi' => $prodi,
-            'tbl_catar_2025.gelombang' => $gelombang, 
+            'tbl_catar_2025.gelombang' => $gelombang,
+            'tbl_ukurpakaian.status_cetak' => 'belum', 
             );
 
          // 🚀 **UPDATE STATUS CETAK SEBELUM PROSES EXPORT EXCEL**
@@ -471,7 +472,8 @@ class Koperasi extends CI_Controller {
             $where= array(
             'tbl_catar_2025.jalur' => $jalur,
             'tbl_catar_2025.prodi' => $prodi,
-            'tbl_catar_2025.gelombang' => $gelombang, 
+            'tbl_catar_2025.gelombang' => $gelombang,
+            'tbl_ukurpakaian.status_cetak' => 'belum', 
             );
 
            $data['results'] = $this->m_registrasi->get_data_rekap_ukurpakaian($where);
@@ -479,6 +481,7 @@ class Koperasi extends CI_Controller {
             $where= array(
             'tbl_catar_2025.jalur' => $jalur,
             'tbl_catar_2025.prodi' => $prodi,
+            'tbl_ukurpakaian.status_cetak' => 'belum',
             );
 
            $data['results'] = $this->m_registrasi->get_data_rekap_ukurpakaian($where);
