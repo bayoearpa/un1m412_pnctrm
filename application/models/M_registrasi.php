@@ -1137,15 +1137,38 @@ class m_registrasi extends CI_Model
         return $query->result();
     }
      // Fungsi untuk update status cetak dan tanggal cetak
+    // public function update_status_cetak($where)
+    // {
+    //     $this->db->where($where);
+    //     $this->db->where('status_cetak', 'belum'); // Pastikan hanya yang statusnya "belum" yang diupdate
+    //     $this->db->update('tbl_ukurpakaian', [
+    //         'status_cetak' => 'sudah',
+    //         'tgl_cetak2' => date('Y-m-d H:i:s')
+    //     ]);
+    // }
     public function update_status_cetak($where)
-    {
-        $this->db->where($where);
-        $this->db->where('status_cetak', 'belum'); // Pastikan hanya yang statusnya "belum" yang diupdate
-        $this->db->update('tbl_ukurpakaian', [
-            'status_cetak' => 'sudah',
-            'tgl_cetak2' => date('Y-m-d H:i:s')
-        ]);
-    }
+	{
+	    // Ambil semua NO mahasiswa dari tbl_catar_2025 sesuai filter
+	    $this->db->select('no');
+	    $this->db->from('tbl_catar_2025');
+	    $this->db->where($where);
+	    $result = $this->db->get()->result();
+
+	    // Ambil semua 'no' jadi array
+	    $list_no = array_map(function ($row) {
+	        return $row->no;
+	    }, $result);
+
+	    // Jika ada data, lakukan update ke tbl_ukurpakaian
+	    if (!empty($list_no)) {
+	        $this->db->where_in('no', $list_no);
+	        $this->db->where('status_cetak', 'belum'); // hanya update jika masih 'belum'
+	        $this->db->update('tbl_ukurpakaian', [
+	            'status_cetak' => 'sudah',
+	            'tgl_cetak2' => date('Y-m-d H:i:s')
+	        ]);
+	    }
+	}
     function get_data_rekap_ukurpakaian($where)
     {
         // Gantilah 'nama_tabel' dengan nama tabel yang sesuai dalam database Anda
