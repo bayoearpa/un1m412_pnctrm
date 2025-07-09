@@ -270,7 +270,7 @@ class Koperasi extends CI_Controller {
         	$where= array(
             'tbl_catar_2025.jalur' => $jalur,
             'tbl_catar_2025.prodi' => $prodi,
-            'tbl_catar_2025.gelombang' => $gelombang, 
+            // 'tbl_catar_2025.gelombang' => $gelombang, 
 	        );
 
 	       $data['results'] = $this->m_registrasi->get_data_rekap_ukurpakaian($where);
