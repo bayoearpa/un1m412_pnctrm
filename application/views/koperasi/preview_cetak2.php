@@ -1,8 +1,8 @@
 
 <form method="post" action="<?php echo base_url() ?>koperasi/cetak_excel">
-    <input type="hidden" name="jalur" value="<?php echo isset($frm_jalur) ? $frm_jalur : ''; ?>">
-    <input type="hidden" name="prodi" value="<?php echo isset($frm_prodi) ? $frm_prodi : ''; ?>">
-    <input type="hidden" name="gelombang" value="<?php echo isset($frm_gelombang) ? $frm_gelombang : ''; ?>">
+    <input type="text" name="jalur" value="<?php echo isset($frm_jalur) ? $frm_jalur : ''; ?>">
+    <input type="text" name="prodi" value="<?php echo isset($frm_prodi) ? $frm_prodi : ''; ?>">
+    <input type="text" name="gelombang" value="<?php echo isset($frm_gelombang) ? $frm_gelombang : ''; ?>">
     
     <button type="submit" class="btn btn-primary btn-sm" style="width:30%;">
         <i class="fa fa-fw fa-print"></i> Cetak Semua
