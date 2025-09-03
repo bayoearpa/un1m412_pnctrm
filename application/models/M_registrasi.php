@@ -1101,37 +1101,37 @@ class m_registrasi extends CI_Model
     function get_data_rekap_daful($where)
     {
         // Gantilah 'nama_tabel' dengan nama tabel yang sesuai dalam database Anda
-	     $this->db->select('tbl_catar_2024.no AS no,
-            tbl_catar_2024.nik AS nik,
-            tbl_catar_2024.nama AS nama,
-            tbl_catar_2024.tl AS tempat_lahir,
-            tbl_catar_2024.tgl_l AS tanggal_lahir,
-            tbl_catar_2024.agama AS agama,
-            tbl_catar_2024.jk AS jenis_kelamin,
-            tbl_catar_2024.alamat AS alamat,
-            tbl_catar_2024.ktkb AS kota_kabupaten,
-            tbl_catar_2024.provinsi AS provinsi,
-            tbl_catar_2024.telp AS telepon,
-            tbl_catar_2024.kategori_sek AS kategori_sekolah,
-            tbl_catar_2024.prodi_lama AS prodi_lama,
-            tbl_catar_2024.thn_lulus AS tahun_lulus,
-            tbl_catar_2024.asek AS asal_sekolah,
-            tbl_catar_2024.alamat_sek AS alamat_sekolah,
-            tbl_catar_2024.nama_a AS nama_ayah,
-            tbl_catar_2024.nama_i AS nama_ibu,
-            tbl_catar_2024.alamat_ortu AS alamat_orangtua,
-            tbl_catar_2024.telp_ortu AS telepon_orangtua,
-            tbl_catar_2024.prodi AS prodi,
-            tbl_catar_2024.gelombang AS gelombang,
-            tbl_catar_2024.bb AS berat_badan,
-            tbl_catar_2024.tb AS tinggi_badan,
-            tbl_catar_2024.email AS email');
+	     $this->db->select('tbl_catar_2025.no AS no,
+            tbl_catar_2025.nik AS nik,
+            tbl_catar_2025.nama AS nama,
+            tbl_catar_2025.tl AS tempat_lahir,
+            tbl_catar_2025.tgl_l AS tanggal_lahir,
+            tbl_catar_2025.agama AS agama,
+            tbl_catar_2025.jk AS jenis_kelamin,
+            tbl_catar_2025.alamat AS alamat,
+            tbl_catar_2025.ktkb AS kota_kabupaten,
+            tbl_catar_2025.provinsi AS provinsi,
+            tbl_catar_2025.telp AS telepon,
+            tbl_catar_2025.kategori_sek AS kategori_sekolah,
+            tbl_catar_2025.prodi_lama AS prodi_lama,
+            tbl_catar_2025.thn_lulus AS tahun_lulus,
+            tbl_catar_2025.asek AS asal_sekolah,
+            tbl_catar_2025.alamat_sek AS alamat_sekolah,
+            tbl_catar_2025.nama_a AS nama_ayah,
+            tbl_catar_2025.nama_i AS nama_ibu,
+            tbl_catar_2025.alamat_ortu AS alamat_orangtua,
+            tbl_catar_2025.telp_ortu AS telepon_orangtua,
+            tbl_catar_2025.prodi AS prodi,
+            tbl_catar_2025.gelombang AS gelombang,
+            tbl_catar_2025.bb AS berat_badan,
+            tbl_catar_2025.tb AS tinggi_badan,
+            tbl_catar_2025.email AS email');
 
-         $this->db->from('tbl_catar_daful_2024');
-	     $this->db->join('tbl_catar_2024','tbl_catar_daful_2024.no = tbl_catar_2024.no','left');
+         $this->db->from('tbl_catar_daful_2025');
+	     $this->db->join('tbl_catar_2025','tbl_catar_daful_2025.no = tbl_catar_2025.no','left');
 	
         $this->db->where($where);
-        $this->db->order_by('tbl_catar_2024.no', 'ASC');
+        $this->db->order_by('tbl_catar_2025.no', 'ASC');
         $query = $this->db->get();
 
         return $query->result();

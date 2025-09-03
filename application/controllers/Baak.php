@@ -369,16 +369,16 @@ class Baak extends CI_Controller {
         if ($jalur == "reguler") {
             # code...
             $where= array(
-            'tbl_catar_2024.jalur' => $jalur,
-            'tbl_catar_2024.prodi' => $prodi,
-            'tbl_catar_2024.gelombang' => $gelombang, 
+            'tbl_catar_2025.jalur' => $jalur,
+            'tbl_catar_2025.prodi' => $prodi,
+            'tbl_catar_2025.gelombang' => $gelombang, 
             );
 
            $data['results'] = $this->m_registrasi->get_data_rekap_daful($where);
         }else{
             $where= array(
-            'tbl_catar_2024.jalur' => $jalur,
-            'tbl_catar_2024.prodi' => $prodi,
+            'tbl_catar_2025.jalur' => $jalur,
+            'tbl_catar_2025.prodi' => $prodi,
             );
 
            $data['results'] = $this->m_registrasi->get_data_rekap_daful($where);
