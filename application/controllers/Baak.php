@@ -3128,6 +3128,18 @@ class Baak extends CI_Controller {
         }
         return $nama;
     }
+    public function rekapitulasi_jumlah_2025()
+    {
+        # code...
+        // $data['bau'] = $this;
+        // $data['stat'] = $this->m_registrasi->get_data_statistic_kabkota_2024()->result();
+
+        $this->load->view('baak/header');
+        $this->load->view('baak/rekapitulasi_jumlah_2025');
+        $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
+
+    }
       public function getnamakabkota_2025($id)
     {
         # code...
