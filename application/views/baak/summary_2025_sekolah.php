@@ -30,7 +30,7 @@
                   <td><?php echo $c->jml_pendaftar ?></td>
                   <td><?php echo $c->almt_sek ?></td>
                   <td><?php echo $c->kotakab ?></td>
-                  <td><?php echo $bau->getnamaprovinsi_2025($c->id_provinsi) ?></td>
+                  <td><?php echo $baak->getnamaprovinsi_2025($c->id_provinsi) ?></td>
                   
                 </tr>
                <?php } ?>
@@ -83,7 +83,7 @@
                   <td><?php echo $c->jml_pendaftar ?></td>
                   <td><?php echo $c->almt_sek ?></td>
                   <td><?php echo $c->kotakab ?></td>
-                  <td><?php echo $bau->getnamaprovinsi_2025($c->id_provinsi) ?></td>
+                  <td><?php echo $baak->getnamaprovinsi_2025($c->id_provinsi) ?></td>
                   
                 </tr>
                <?php } ?>
@@ -137,7 +137,7 @@
                   <td><?php echo $c->jml_pendaftar ?></td>
                   <td><?php echo $c->almt_sek ?></td>
                   <td><?php echo $c->kotakab ?></td>
-                  <td><?php echo $bau->getnamaprovinsi_2025($c->id_provinsi) ?></td>
+                  <td><?php echo $baak->getnamaprovinsi_2025($c->id_provinsi) ?></td>
                 </tr>
                <?php } ?>
                 </tbody>
@@ -190,7 +190,7 @@
                   <td><?php echo $c->jml_pendaftar ?></td>
                   <td><?php echo $c->almt_sek ?></td>
                   <td><?php echo $c->kotakab ?></td>
-                  <td><?php echo $bau->getnamaprovinsi_2025($c->id_provinsi) ?></td>
+                  <td><?php echo $baak->getnamaprovinsi_2025($c->id_provinsi) ?></td>
                   
                 </tr>
                <?php } ?>

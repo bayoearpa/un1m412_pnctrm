@@ -24,7 +24,7 @@
                  ?>
                 <tr>
                   <td><?php echo $no++; ?></td>
-                  <td><?php echo $bau->getnamakabkota_2025($c->id_provinsi) ?></td>
+                  <td><?php echo $baak->getnamakabkota_2025($c->id_provinsi) ?></td>
                   <td><?php echo $c->jml_pendaftar ?></td>
                   <!-- <td><a class="btn btn-success btn-sm" href="<?php //echo base_url().'bau/get_summary_prov_detail_2021/'.$c->id_provinsi; ?>"><i class="fa fa-eye"></i>Selengkapnya</a></td> -->
                 </tr>
