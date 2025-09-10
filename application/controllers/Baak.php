@@ -3154,31 +3154,31 @@ class Baak extends CI_Controller {
      public function get_summary_kabkota_2025()
     {
         # code...
-        $data['bau'] = $this;
+        $data['baak'] = $this;
         $data['stat'] = $this->m_registrasi->get_data_statistic_kabkota_2025()->result();
 
-        $this->load->view('bau/header');
-        $this->load->view('bau/summary_2025_kabkota',$data);
-        $this->load->view('bau/footer');
-        $this->load->view('bau/footer_js');
+        $this->load->view('baak/header');
+        $this->load->view('baak/summary_2025_kabkota',$data);
+        $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
 
     }
      public function get_summary_prov_2025()
     {
         # code...
-        $data['bau'] = $this;
+        $data['baak'] = $this;
         $data['stat'] = $this->m_registrasi->get_data_statistic_prov_2025()->result();
 
-        $this->load->view('bau/header');
-        $this->load->view('bau/summary_2025_prov',$data);
-        $this->load->view('bau/footer');
-        $this->load->view('bau/footer_js');
+        $this->load->view('baak/header');
+        $this->load->view('baak/summary_2025_prov',$data);
+        $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
 
     }
      public function get_summary_sekolah_2025()
     {
         # code...
-        $data['bau'] = $this;
+        $data['baak'] = $this;
 
          //get sma
         $w_d3 = array('tbl_catar_2025.kategori_sek' => 'D3');
@@ -3196,10 +3196,10 @@ class Baak extends CI_Controller {
         $w_ma = array('tbl_catar_2025.kategori_sek' => 'MA');
         $data['stat_ma'] = $this->m_registrasi->get_data_statistic_sekolah_2025($w_ma)->result();
 
-        $this->load->view('bau/header');
-        $this->load->view('bau/summary_2025_sekolah',$data);
-        $this->load->view('bau/footer');
-        $this->load->view('bau/footer_js');
+        $this->load->view('baak/header');
+        $this->load->view('baak/summary_2025_sekolah',$data);
+        $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
 
     }
 
@@ -3226,12 +3226,12 @@ class Baak extends CI_Controller {
     public function get_summary_sumber_2025()
     {
         # code...
-        $data['bau'] = $this;
-        $this->load->view('bau/header');
-        $this->load->view('bau/summary_2025_sumber',$data);
-        $this->load->view('bau/footer');
-        $this->load->view('bau/footer_js');
-        $this->load->view('bau/summary_2025_sumber_js',$data);
+        $data['baak'] = $this;
+        $this->load->view('baak/header');
+        $this->load->view('baak/summary_2025_sumber',$data);
+        $this->load->view('baak/footer');
+        $this->load->view('baak/footer_js');
+        $this->load->view('baak/summary_2025_sumber_js',$data);
 
     }
     ///////////////////////////////////////////////////////summary 2024///////////////////////////////////////////
