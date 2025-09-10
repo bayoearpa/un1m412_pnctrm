@@ -1360,6 +1360,55 @@ class m_registrasi extends CI_Model
         return $query->result_array();
     }
     ///////////////////////////////////////// .get total ref for keu /////////////////////////////////////////
+     ////////////////////summary 2025///////////////////////////////////////////////////////////////////////////
+	function get_data_statistic_kabkota_2025(){
+		$this->db->select('tbl_catar_2025.ktkb as id_provinsi,
+		Count(tbl_catar_2025.no) as jml_pendaftar');
+		$this->db->from('tbl_catar_2025');
+		$this->db->join('tbl_catar_validasi_2025','tbl_catar_2025.no = tbl_catar_validasi_2025.no','inner');
+		$this->db->group_by('tbl_catar_2025.ktkb');
+		$this->db->order_by('count(tbl_catar_2025.no)', 'DESC');
+		$query=$this->db->get();
+		return $query;
+	}
+	function get_data_statistic_prov_2025(){
+		$this->db->select('tbl_catar_2025.provinsi as id_provinsi,
+		Count(tbl_catar_2025.no) as jml_pendaftar');
+		$this->db->from('tbl_catar_2025');
+		$this->db->join('tbl_catar_validasi_2025','tbl_catar_2025.no = tbl_catar_validasi_2025.no','inner');
+		$this->db->group_by('tbl_catar_2025.provinsi');
+		$this->db->order_by('count(tbl_catar_2025.no)', 'DESC');
+		$query=$this->db->get();
+		return $query;
+	}
+	function get_data_statistic_sekolah_2025($where){
+		$this->db->select('tbl_catar_2025.asek as asal_sekolah,
+		Count(tbl_catar_2025.asek) as jml_pendaftar,
+		tbl_catar_2025.provinsi as id_provinsi,
+		tbl_catar_2025.alamat_sek as almt_sek,
+		tbl_catar_2025.ktkb as kotakab');
+		$this->db->from('tbl_catar_2025');
+		$this->db->join('tbl_catar_validasi_2025','tbl_catar_2025.no = tbl_catar_validasi_2025.no','inner');
+		$this->db->group_by('tbl_catar_2025.asek');
+		$this->db->order_by('Count(tbl_catar_2025.asek)', 'DESC');
+		$this->db->where($where);
+		$query=$this->db->get();
+		return $query;
+	}
+	function get_data_statistic_sumber_all_2025(){
+		$this->db->select('Count(tbl_catar_2025.informasi) as informasi');
+		$this->db->from('tbl_catar_2025');
+		// $this->db->where($where);
+		$query=$this->db->get();
+		return $query;
+	}
+	function get_data_statistic_sumber_where_2025($where){
+		$this->db->select('Count(tbl_catar_2025.informasi) as informasi ');
+		$this->db->from('tbl_catar_2025');
+		$this->db->where($where);
+		$query=$this->db->get();
+		return $query;
+	}
   ////////////////////summary 2024///////////////////////////////////////////////////////////////////////////
 	function get_data_statistic_kabkota_2024(){
 		$this->db->select('tbl_catar_2024.ktkb as id_provinsi,
