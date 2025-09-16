@@ -184,6 +184,25 @@
        ?>
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MENU UTAMA</li>
+        <?php 
+
+        if ($this->session->userdata('id_admin') == '18') {
+          # code...
+         ?>
+         <li class="treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Referral</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <!-- <li class="active"><a href="<?php //echo base_url() ?>baak/"><i class="fa fa-repeat"></i>Ganti Jurusan</a></li> -->
+            <li><a href="<?php echo base_url() ?>baak/referral"><i class="fa fa-paperclip"></i>Data Pereferral</a></li>
+            <li><a href="<?php echo base_url() ?>baak/perolehan_referral"><i class="fa fa-paperclip"></i>Perolehan</a></li>
+          </ul>
+        </li>
+      <?php } ?>
         <?php if ($this->session->userdata('id_admin') == '3') { ?>
         <li><a href="<?php echo base_url() ?>baak/"><i class="fa fa-book"></i> <span>Home</span></a></li>
          <li class="treeview">
@@ -230,25 +249,7 @@
             <li><a href="<?php echo base_url() ?>baak/rekaptestpa"><i class="fa fa-paperclip"></i>Rekap tes TPA</a></li>
           </ul>
         </li>
-        <?php 
-
-        if ($this->session->userdata('id_admin') == '18') {
-          # code...
-         ?>
-         <li class="treeview">
-          <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Referral</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <!-- <li class="active"><a href="<?php //echo base_url() ?>baak/"><i class="fa fa-repeat"></i>Ganti Jurusan</a></li> -->
-            <li><a href="<?php echo base_url() ?>baak/referral"><i class="fa fa-paperclip"></i>Data Pereferral</a></li>
-            <li><a href="<?php echo base_url() ?>baak/perolehan_referral"><i class="fa fa-paperclip"></i>Perolehan</a></li>
-          </ul>
-        </li>
-      <?php } ?>
+        
         <li class="treeview">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Summary 2025</span>
