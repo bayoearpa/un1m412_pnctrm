@@ -184,6 +184,7 @@
        ?>
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MENU UTAMA</li>
+        <?php if ($this->session->userdata('id_admin') == '3') { ?>
         <li><a href="<?php echo base_url() ?>baak/"><i class="fa fa-book"></i> <span>Home</span></a></li>
          <li class="treeview">
           <a href="#">
@@ -338,6 +339,7 @@
             <li><a href="<?php echo base_url() ?>baak/get_summary_sumber_2020"><i class="fa fa-paperclip"></i>Statistik Sumber Informasi</a></li>
           </ul>
         </li>
+      <?php } ?>
       </ul>
       <?php } ?>
     
