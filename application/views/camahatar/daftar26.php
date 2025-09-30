@@ -112,7 +112,7 @@
     <!-- /.social-auth-links -->
 <!-- 
     <a href="#">I forgot my password</a><br> -->
-    <a href="<?php echo base_url() ?>masuk" class="text-center">Masuk jika sudah memiliki akun</a>
+    <a href="<?php echo base_url() ?>masuk" class="text-center">Masuk jika sudah memiliki akun</a></br>
     <a href="<?php echo base_url() ?>lupa_password" class="text-center">lupa password</a>
 
   </div>
