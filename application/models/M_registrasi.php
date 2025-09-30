@@ -50,6 +50,21 @@ class m_registrasi extends CI_Model
 	       $this->db->where($where);
 	return $this->db->get()->row('ta');
 	}
+	////////////////////// login 2026 /////////////////////////////////////////////////////////
+
+    // ambil 1 baris data berdasarkan email
+    public function get_by_email($email)
+    {
+        return $this->db->get_where('tbl_catar_2026',['email'=>$email])->row();
+    }
+
+    // update password (sudah di-hash bcrypt)
+    public function update_password($email,$hash)
+    {
+        $this->db->where('email',$email);
+        return $this->db->update('tbl_catar_2026',['password'=>$hash]);
+    }
+    ////////////////////// .login 2026 /////////////////////////////////////////////////////////
 	//////////////////// get data 2025 /////////////////////////////////////////////////////////
 	function get_data_join_2025(){
 		$this->db->select('tbl_catar_2025.no as no,

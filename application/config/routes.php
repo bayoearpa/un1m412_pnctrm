@@ -85,8 +85,10 @@ $route['tabraktabrakmasuk'] = 'camhtar/tabrak';
 $route['proses_tabrak'] = 'camhtar/tabrakp';
 $route['masuk'] = 'camhtar';
 $route['keluar'] = 'camhtar/logout';
+$route['lupa_password'] = 'camhtar/forgot_password';
 $route['proses_masuk'] = 'camhtar/loginp';
 $route['daftar'] = 'camhtar/daftar';
+$route['daftar26'] = 'camhtar/daftar26';
 $route['pendaftaran'] = 'camhtar/daftarp';
 $route['cek'] = 'camhtar/cek_user';
 $route['home'] = 'camhtar/home';
@@ -113,6 +115,7 @@ $route['download_panduan_pengisian_form_ukur_pakaian'] = 'camhtar/down_panduan_p
 $route['pengumuman_gelombangdini'] = 'camhtar/pengumuman_gd';
 $route['download_pengumuman_gelombangdini'] = 'camhtar/down_pengumuman_gd';
 $route['download_pengumuman_seleksi'] = 'camhtar/down_pengumuman_seleksi';
+
 //download 2025
 $route['download_suket_sanggup_tidak_menikah25'] = 'camhtar/down_sanggup_tidak_menikah25';
 $route['download_suket_sanggup_menaati_peraturan25'] = 'camhtar/down_sanggup_menaati_peraturan25';

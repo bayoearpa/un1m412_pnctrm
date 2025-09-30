@@ -12,6 +12,7 @@ class Camhtar extends CI_Controller {
 		$this->load->helper('download');
 		$this->load->helper('judul_seo');
 		$this->load->library('m_pdf');
+		$this->load->library('email');
 	}
 
 	public function index()
@@ -58,6 +59,78 @@ class Camhtar extends CI_Controller {
 			redirect(base_url().'masuk');
 		}
 	}
+
+	//////////////////////////////////////////////////login for 2026 /////////////////////////////////////////////
+	    // === LOGIN ===
+	public function daftar26()
+	{
+		$this->load->view('camahatar/daftar26');
+		$this->load->view('camahatar/daftar_js');
+	}
+    public function loginp26()
+    {
+        if ($this->input->post()) {
+            $email = $this->input->post('email', TRUE);
+            $pass  = $this->input->post('password', TRUE);
+
+            $user = $this->m_registrasi->get_by_email($email);
+            if ($user && password_verify($pass, $user->password)) {
+                $this->session->set_userdata([
+                    'login' => TRUE,
+                    'no'    => $user->no,
+                    'nama'  => $user->nama,
+                    'jalur' => $user->jalur
+                ]);
+                redirect(base_url().'home');
+            } else {
+                //$data['error'] = 'Email atau password salah';
+                // $this->load->view('auth2026/login', $data);
+                redirect(base_url().'masuk?pesan=gagal');
+            }
+        } else {
+            // $this->load->view('auth2026/login');
+            redirect(base_url().'masuk?pesan=gagal');
+        }
+    }
+
+    // === LUPA PASSWORD ===
+    public function forgot_password()
+    {
+        if ($this->input->post()) {
+            $email = $this->input->post('email', TRUE);
+            $user  = $this->catar->get_by_email($email);
+
+            if ($user) {
+                $new_pass = substr(str_shuffle('ABCDEFGHJKLMNPQRSTUVWXYZ23456789'),0,8);
+                $hash     = password_hash($new_pass, PASSWORD_BCRYPT);
+
+                $this->catar->update_password($email, $hash);
+
+                // kirim email pakai config/email.php
+                $this->email->from($this->config->item('smtp_user'), 'PMB 2026');
+                $this->email->to($email);
+                $this->email->subject('Reset Password PMB 2026');
+                $this->email->message("
+                    Hai {$user->nama},<br><br>
+                    Password baru Anda: <b>{$new_pass}</b><br>
+                    Silakan login dan segera ubah password Anda.
+                ");
+
+                if ($this->email->send()) {
+                    $data['success'] = 'Password baru sudah dikirim ke email Anda.';
+                } else {
+                    $data['error']   = 'Gagal mengirim email reset password.';
+                }
+            } else {
+                $data['error'] = 'Email tidak terdaftar.';
+            }
+            $this->load->view('auth2026/forgot_password', $data);
+        } else {
+            $this->load->view('auth2026/forgot_password');
+        }
+    }
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 	public function tabrakp()
 	{
 		# code...
