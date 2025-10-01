@@ -87,6 +87,7 @@ $route['masuk'] = 'camhtar';
 $route['keluar'] = 'camhtar/logout';
 $route['lupa_password'] = 'camhtar/forgot_password';
 $route['proses_masuk'] = 'camhtar/loginp';
+$route['proses_masuk26'] = 'camhtar/loginp26';
 $route['daftar'] = 'camhtar/daftar';
 $route['daftar26'] = 'camhtar/daftar26';
 $route['pendaftaran'] = 'camhtar/daftarp';

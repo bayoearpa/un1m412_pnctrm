@@ -48,10 +48,10 @@
   <div class="login-box-body">
     <p class="login-box-msg">Masuk untuk mengakses sistem</p>
 
-    <form action="<?php echo base_url().'proses_masuk' ?>" method="post">
+    <form action="<?php echo base_url().'proses_masuk26'?>" method="post">
       <div class="form-group has-feedback">
-        <input type="text" name="email" id="email" class="form-control" placeholder="Email">
-        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
         <input type="password" name="password" id="password" class="form-control" placeholder="Password">

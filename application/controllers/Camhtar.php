@@ -109,6 +109,10 @@ class Camhtar extends CI_Controller {
             }
         }
 	}
+	public function login26()
+	{
+		$this->load->view('camahatar/login26');
+	}
     public function loginp26()
     {
         if ($this->input->post()) {
