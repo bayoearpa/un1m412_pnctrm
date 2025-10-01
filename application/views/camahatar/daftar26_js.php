@@ -150,7 +150,7 @@ function submitRegistration() {
 
   $.ajax({
     type: "POST",
-    url: "<?php echo base_url() ?>pendaftaran", // Gantilah dengan URL yang sesuai di sisi server untuk menangani pendaftaran
+    url: "<?php echo base_url() ?>pendaftaran26", // Gantilah dengan URL yang sesuai di sisi server untuk menangani pendaftaran
     data: {
       nama: nama,
       email: email,

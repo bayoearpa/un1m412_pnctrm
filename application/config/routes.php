@@ -90,6 +90,7 @@ $route['proses_masuk'] = 'camhtar/loginp';
 $route['daftar'] = 'camhtar/daftar';
 $route['daftar26'] = 'camhtar/daftar26';
 $route['pendaftaran'] = 'camhtar/daftarp';
+$route['pendaftaran26'] = 'camhtar/daftarp26';
 $route['cek'] = 'camhtar/cek_user';
 $route['cek26'] = 'camhtar/cek_user26';
 $route['home'] = 'camhtar/home';
