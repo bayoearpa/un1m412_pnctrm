@@ -160,7 +160,7 @@ function submitRegistration() {
     success: function (response) {
       if (response === "success") {
         // Pendaftaran berhasil, arahkan ke halaman login
-        window.location.href = "<?php echo base_url() ?>masuk";
+        window.location.href = "<?php echo base_url() ?>masuk26";
       } else {
         // Pendaftaran gagal, Anda dapat menampilkan pesan kesalahan jika diperlukan
         alert("Pendaftaran gagal. Silakan coba lagi."+ response);

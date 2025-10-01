@@ -84,6 +84,7 @@ $route['index_dev'] = 'welcome/jajal';
 $route['tabraktabrakmasuk'] = 'camhtar/tabrak';
 $route['proses_tabrak'] = 'camhtar/tabrakp';
 $route['masuk'] = 'camhtar';
+$route['masuk26'] = 'camhtar/login26';
 $route['keluar'] = 'camhtar/logout';
 $route['lupa_password'] = 'camhtar/forgot_password';
 $route['proses_masuk'] = 'camhtar/loginp';
