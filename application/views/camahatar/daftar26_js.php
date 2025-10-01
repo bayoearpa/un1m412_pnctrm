@@ -1,39 +1,39 @@
 <script>
  // Fungsi untuk memeriksa panjang username
-  function checkUsernameLength() {
-    var username = document.getElementById("username").value;
-    var usernameLengthMessage = document.getElementById("usernameLengthMessage");
+  // function checkUsernameLength() {
+  //   var username = document.getElementById("username").value;
+  //   var usernameLengthMessage = document.getElementById("usernameLengthMessage");
 
-    if (username.length >= 8) {
-      isUsernameAvailable(username);
-    } else {
-      usernameLengthMessage.innerHTML = "Username harus memiliki setidaknya 8 karakter.";
-      usernameLengthMessage.style.color = "red";
-      disableForm();
-    }
-  }
+  //   if (username.length >= 8) {
+  //     isUsernameAvailable(username);
+  //   } else {
+  //     usernameLengthMessage.innerHTML = "Username harus memiliki setidaknya 8 karakter.";
+  //     usernameLengthMessage.style.color = "red";
+  //     disableForm();
+  //   }
+  // }
   // Fungsi untuk memeriksa apakah username sudah tersedia (menggunakan jQuery Ajax)
-function isUsernameAvailable(username) {
-  $.ajax({
-    type: "POST",
-    url: "<?php echo base_url() ?>cek?>", // Gantilah dengan URL yang sesuai di sisi server
-    data: { username: username },
-    success: function (response) {
-      if (response === "available") {
-        usernameLengthMessage.innerHTML = "Panjang username mencukupi dan tersedia.";
-        usernameLengthMessage.style.color = "green";
-        validateForm();
-      } else {
-        usernameLengthMessage.innerHTML = "Username sudah digunakan. Silakan pilih username lain.";
-        usernameLengthMessage.style.color = "red";
-        disableForm();
-      }
-    },
-    error: function () {
-      // Penanganan kesalahan jika permintaan gagal
-    }
-  });
-}
+// function isUsernameAvailable(username) {
+//   $.ajax({
+//     type: "POST",
+//     url: "<?php //echo base_url() ?>cek?>", // Gantilah dengan URL yang sesuai di sisi server
+//     data: { username: username },
+//     success: function (response) {
+//       if (response === "available") {
+//         usernameLengthMessage.innerHTML = "Panjang username mencukupi dan tersedia.";
+//         usernameLengthMessage.style.color = "green";
+//         validateForm();
+//       } else {
+//         usernameLengthMessage.innerHTML = "Username sudah digunakan. Silakan pilih username lain.";
+//         usernameLengthMessage.style.color = "red";
+//         disableForm();
+//       }
+//     },
+//     error: function () {
+//       // Penanganan kesalahan jika permintaan gagal
+//     }
+//   });
+// }
 
  // Fungsi untuk memeriksa validitas email
   function checkEmail() {
@@ -129,7 +129,9 @@ function checkJalur() {
   }
 
   // Menambahkan event listener untuk memeriksa panjang username saat pengguna memasukkan data
-  document.getElementById("username").addEventListener("input", checkUsernameLength);
+  // document.getElementById("username").addEventListener("input", checkUsernameLength);
+
+   document.getElementById("email").addEventListener("input", checkEmail);
 
   // Menambahkan event listener untuk memeriksa panjang password dan kesesuaian kedua password saat pengguna memasukkan data
   document.getElementById("password").addEventListener("input", checkPassword);
@@ -142,7 +144,7 @@ function checkJalur() {
   // Fungsi untuk mengirim data pendaftaran ke tabel tbl_catar_2024
 function submitRegistration() {
   var nama = document.getElementById("nama").value;
-  var username = document.getElementById("username").value;
+  var email = document.getElementById("email").value;
   var password = document.getElementById("password").value;
   var jalur = document.getElementById("jalur").value;
 
@@ -151,7 +153,7 @@ function submitRegistration() {
     url: "<?php echo base_url() ?>pendaftaran", // Gantilah dengan URL yang sesuai di sisi server untuk menangani pendaftaran
     data: {
       nama: nama,
-      username: username,
+      email: email,
       password: password,
       jalur: jalur,
     },
