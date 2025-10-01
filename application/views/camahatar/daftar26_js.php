@@ -57,7 +57,7 @@
   function isEmailAvailable(email) {
     $.ajax({
       type: "POST",
-      url: "<?php echo base_url('cek'); ?>", // endpoint di controller
+      url: "<?php echo base_url('cek26'); ?>", // endpoint di controller
       data: { email: email },
       success: function (response) {
         var emailMessage = document.getElementById("emailMessage");
