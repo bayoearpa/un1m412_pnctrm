@@ -48,14 +48,14 @@
   <div class="login-box-body">
     <p class="login-box-msg">Daftar untuk mengakses sistem</p>
 
-    <form action="<?php echo base_url().'daftarp' ?>" method="post">
+    <form action="<?php echo base_url().'daftarp26' ?>" method="post">
       <div class="form-group has-feedback">
         <input type="text" name="nama" id="nama" class="form-control" placeholder="Nama Lengkap">
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
         <input type="text" name="email" id="email" class="form-control" placeholder="email">
-        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        <span class="glyphicon glyphicon-email form-control-feedback"></span>
       </div>
       <p id="usernameLengthMessage"></p>
       <div class="form-group has-feedback">
@@ -72,12 +72,12 @@
         <label>Pilih Jalur Pendaftaran:</label>
                   <select class="form-control" name="jalur" id="jalur" placeholder="Pilih Jalur" required="">
                     <option> </option>
-                    <!-- <option value="gdr1">Gelombang Dini (Reguler)</option>
-                    <option value="gdr2">Gelombang Dini (RPL/Transfer)</option> -->
+                    <option value="gdr1">Gelombang Dini (Reguler)</option>
+                    <option value="gdr2">Gelombang Dini (RPL/Transfer)</option>
                     <option value="reguler">Reguler</option>
-                    <option value="kelastransfer">Kelas Transfer</option>
-                    <!-- <option value="prestasi">Prestasi</option>
-                    <option value="hafizh">Hafizh</option> -->
+                    <option value="regulers">Reguler Sore</option>
+                    <option value="rpl">Kelas Transfer / RPL</option>
+                    <option value="beayb">Beasiswa Yasbinmar</option>
                   </select>
       </div>
       <p id="jalurMessage"></p>

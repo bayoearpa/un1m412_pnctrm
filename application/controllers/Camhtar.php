@@ -67,6 +67,34 @@ class Camhtar extends CI_Controller {
 		$this->load->view('camahatar/daftar26');
 		$this->load->view('camahatar/daftar_js');
 	}
+	public function daftarp26()
+	{
+		if ($this->input->post()) {
+            $nama = $this->input->post('nama');
+            $email = $this->input->post('email');
+            $password = password_hash($this->input->post('password'), PASSWORD_BCRYPT);
+            $jalur = $this->input->post('jalur');
+
+            // Lakukan validasi data yang diterima jika diperlukan
+
+            // Simpan data pendaftaran ke dalam tabel "tbl_catar_2025"
+            $data = array(
+                'nama' => $nama,
+                'email' => $email,
+                'password' => $password,
+                'jalur' => $jalur
+                // Tambahkan kolom lain sesuai dengan struktur tabel
+            );
+
+            $insert_result = $this->m_registrasi->input_data($data,'tbl_catar_2026');
+
+            if ($insert_result) {
+               echo "error";
+            } else {
+                 echo "success";
+            }
+        }
+	}
     public function loginp26()
     {
         if ($this->input->post()) {
@@ -129,7 +157,7 @@ class Camhtar extends CI_Controller {
             $this->load->view('auth2026/forgot_password');
         }
     }
- ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ ////////////////////////////////////////////////// .login 2026 //////////////////////////////////////////////////////////
 
 	public function tabrakp()
 	{
