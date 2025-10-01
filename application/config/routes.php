@@ -91,6 +91,7 @@ $route['daftar'] = 'camhtar/daftar';
 $route['daftar26'] = 'camhtar/daftar26';
 $route['pendaftaran'] = 'camhtar/daftarp';
 $route['cek'] = 'camhtar/cek_user';
+$route['cek26'] = 'camhtar/cek_user26';
 $route['home'] = 'camhtar/home';
 $route['biodata'] = 'camhtar/biodata';
 $route['proses_biodata'] = 'camhtar/insertReg';

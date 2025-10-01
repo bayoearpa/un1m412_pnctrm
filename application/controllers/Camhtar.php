@@ -95,6 +95,20 @@ class Camhtar extends CI_Controller {
             }
         }
 	}
+	public function cek_user26()
+	{
+		# code...
+		if ($this->input->post('email')) {
+            $username = $this->input->post('email');
+            $is_available = $this->m_registrasi->cek_user($username);
+
+            if ($is_available) {
+                echo "available"; // Username tersedia
+            } else {
+                echo "unavailable"; // Username sudah digunakan
+            }
+        }
+	}
     public function loginp26()
     {
         if ($this->input->post()) {
