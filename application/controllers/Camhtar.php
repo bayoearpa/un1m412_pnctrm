@@ -100,7 +100,7 @@ class Camhtar extends CI_Controller {
 		# code...
 		if ($this->input->post('email')) {
             $username = $this->input->post('email');
-            $is_available = $this->m_registrasi->cek_user($username);
+            $is_available = $this->m_registrasi->cek_user26($username);
 
             if ($is_available) {
                 echo "available"; // Username tersedia

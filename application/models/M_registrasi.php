@@ -241,7 +241,17 @@ class m_registrasi extends CI_Model
 
 	///////////////////////// untuk cek user/////////////////////////////////////////////////
 	public function cek_user($username) {
-        $this->db->where('email', $username);
+        $this->db->where('username', $username);
+        $query = $this->db->get('tbl_catar_2026'); // Gantilah dengan nama tabel yang sesuai
+
+        if ($query->num_rows() > 0) {
+            return false; // Username sudah digunakan
+        } else {
+            return true; // Username tersedia
+        }
+    }
+    public function cek_user26($email) {
+        $this->db->where('email', $email);
         $query = $this->db->get('tbl_catar_2026'); // Gantilah dengan nama tabel yang sesuai
 
         if ($query->num_rows() > 0) {
