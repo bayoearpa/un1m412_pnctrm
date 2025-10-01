@@ -65,7 +65,7 @@ class Camhtar extends CI_Controller {
 	public function daftar26()
 	{
 		$this->load->view('camahatar/daftar26');
-		$this->load->view('camahatar/daftar_js');
+		$this->load->view('camahatar/daftar26_js');
 	}
 	public function daftarp26()
 	{

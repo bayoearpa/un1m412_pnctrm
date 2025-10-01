@@ -56,6 +56,7 @@
       <div class="form-group has-feedback">
         <input type="text" name="email" id="email" class="form-control" placeholder="email">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+        <span id="emailMessage"></span>
       </div>
       <p id="usernameLengthMessage"></p>
       <div class="form-group has-feedback">
