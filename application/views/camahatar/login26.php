@@ -83,7 +83,7 @@
     <!-- /.social-auth-links -->
 
    <!--  <a href="#">I forgot my password</a><br> -->
-    <a href="<?php echo base_url() ?>daftar" class="text-center">Daftar untuk pengguna baru</a>
+    <a href="<?php echo base_url() ?>daftar" class="text-center">Daftar untuk pengguna baru</a></br>
     <a href="<?php echo base_url() ?>lupa_password" class="text-center">Lupa Password</a>
 
   </div>
