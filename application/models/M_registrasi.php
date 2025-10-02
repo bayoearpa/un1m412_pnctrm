@@ -62,7 +62,7 @@ class m_registrasi extends CI_Model
         $this->db->where('email', $email);
         $this->db->update('tbl_catar_2026', [
             'reset_token' => $token,
-            'reset_expire' => $expire
+            'reset_expired' => $expire
         ]);
     }
 
