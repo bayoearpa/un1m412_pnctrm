@@ -1,14 +1,14 @@
 <?php
-$config['protocol']  = 'smtp';
-$config['smtp_host'] = 'ssl://mail.unimar-amni.ac.id';
-$config['smtp_user'] = 'pmb@unimar-amni.ac.id';
-$config['smtp_pass'] = 'fywygjFSvJSt39';
-$config['smtp_port'] = 465;
-$config['smtp_crypto'] = ''; // kosongkan, jangan isi ssl lagi
-$config['mailtype']  = 'html';
-$config['charset']   = 'utf-8';
-$config['newline']   = "\r\n";
-$config['crlf']      = "\r\n";
+$config['protocol']    = 'smtp';
+$config['smtp_host']   = 'smtp.gmail.com';
+$config['smtp_user']   = 'pencatarma.unimaramni@gmail.com';   // ganti dengan email Gmail
+$config['smtp_pass']   = 'qbsmkvsdywjsdqfy';     // bukan password Gmail biasa, tapi APP PASSWORD
+$config['smtp_port']   = 587;
+$config['smtp_crypto'] = 'tls';                   // atau 'ssl' dengan port 465
+$config['mailtype']    = 'html';
+$config['charset']     = 'utf-8';
+$config['newline']     = "\r\n";
+$config['crlf']        = "\r\n";
 
 
 

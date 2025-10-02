@@ -215,7 +215,7 @@ class Camhtar extends CI_Controller {
     // 🔹 Kirim email reset
    private function _sendEmail($to, $link) {
 	    $this->load->library('email');
-	    $this->email->from('pmb@unimar-amni.ac.id', 'PMB UNIMAR AMNI');
+	    $this->email->from('pencatarma.unimaramni@gmail.com', 'PMB UNIMAR AMNI');
 	    $this->email->to($to);
 	    $this->email->subject('Reset Password');
 	    $this->email->message("Klik link berikut untuk reset password Anda: <a href='".$link."'>Reset Password</a>");
