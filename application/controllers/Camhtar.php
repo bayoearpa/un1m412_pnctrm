@@ -191,7 +191,7 @@ class Camhtar extends CI_Controller {
     public function reset_password($token = NULL) {
         if (!$token) show_404();
 
-        $user = $this->catar->get_by_token($token);
+        $user = $this->m_registrasi->get_by_token($token);
 
         if (!$user || strtotime($user->reset_expire) < time()) {
             $this->session->set_flashdata('error', 'Token tidak valid atau sudah kadaluarsa.');
@@ -202,7 +202,7 @@ class Camhtar extends CI_Controller {
             $password = $this->input->post('password');
             $password_hash = password_hash($password, PASSWORD_BCRYPT);
 
-            $this->catar->update_password($user->email, $password_hash);
+            $this->m_registrasi->update_password($user->email, $password_hash);
 
             $this->session->set_flashdata('success', 'Password berhasil direset. Silakan login.');
             redirect('login2026');
