@@ -143,7 +143,7 @@ class Camhtar extends CI_Controller {
     public function forgot_password() {
         if ($this->input->post()) {
             $email = $this->input->post('email', TRUE);
-            $user = $this->catar->get_by_email($email);
+            $user = $this->m_registrasi->get_by_email($email);
 
             if ($user) {
                 // generate token
