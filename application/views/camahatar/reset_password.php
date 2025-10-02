@@ -41,7 +41,7 @@
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg">Silakan masukan email anda nanti akan kami akan kirimkan link reset akun ke email anda.</p>
+    <p class="login-box-msg">Silakan masukan password baru anda.</p>
 
     <form method="post">
       <div class="form-group has-feedback">
@@ -57,7 +57,7 @@
           </div>
         </div> -->
         <!-- /.col -->
-        <div class="col-xs-4">
+        <div class="col-xs-6">
          <center> <button type="submit" class="btn btn-primary btn-block btn-flat">Ganti Password</button></center>
         </div>
         <!-- /.col -->

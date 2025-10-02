@@ -75,7 +75,7 @@ class m_registrasi extends CI_Model
         $this->db->update('tbl_catar_2026', [
             'password' => $password_hash,
             'reset_token' => NULL,
-            'reset_expire' => NULL
+            'reset_expired' => NULL
         ]);
     }
     ////////////////////// .login 2026 /////////////////////////////////////////////////////////
