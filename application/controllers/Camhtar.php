@@ -140,43 +140,52 @@ class Camhtar extends CI_Controller {
     }
 
    // 🔹 Form lupa password
-    public function forgot_password() {
-        if ($this->input->post()) {
-            $email = $this->input->post('email', TRUE);
-            $user = $this->m_registrasi->get_by_email($email);
+   public function forgot_password() {
+    if ($this->input->post()) {
+        $email = $this->input->post('email', TRUE);
+        $user  = $this->m_registrasi->get_by_email($email);
 
-            if ($user) {
-                // generate token
-                $token = $this->generateToken(50);
-                $expire = date("Y-m-d H:i:s", strtotime("+1 hour"));
+        if ($user) {
+            // generate token
+            $token  = $this->generateToken(50);
+            $expire = date("Y-m-d H:i:s", strtotime("+1 hour"));
 
-                // simpan ke db
-                $this->m_registrasi->save_token($email, $token, $expire);
+            // simpan token & expire ke database
+            $this->m_registrasi->save_token($email, $token, $expire);
 
-                // kirim email
-                $reset_link = base_url("reset-password/".$token);
-                $this->_sendEmail($email, $reset_link);
+            // buat reset link
+            $reset_link = base_url("reset_password/" . $token);
 
+            // kirim email
+            if ($this->_sendEmail($email, $reset_link)) {
                 $this->session->set_flashdata('success', 'Link reset password sudah dikirim ke email Anda.');
-                redirect('forgot-password');
             } else {
-                $this->session->set_flashdata('error', 'Email tidak ditemukan.');
-                redirect('forgot-password');
+                // tampilkan debug error biar ketahuan masalah
+                $this->session->set_flashdata('error', 
+                    'Gagal mengirim email. <br><pre>' . $this->email->print_debugger(['headers']) . '</pre>'
+                );
             }
-        }
 
-        $this->load->view('camahatar/forgot_password');
+            redirect('lupa_password');
+        } else {
+            $this->session->set_flashdata('error', 'Email tidak ditemukan.');
+            redirect('lupa_password');
+        }
     }
-    private function generateToken($length = 50) {
-    if (function_exists('random_bytes')) {
-        return bin2hex(random_bytes($length));
-    } elseif (function_exists('openssl_random_pseudo_bytes')) {
-        return bin2hex(openssl_random_pseudo_bytes($length));
-    } else {
-        // fallback sederhana
-        return bin2hex(substr(str_shuffle(md5(time())), 0, $length));
-    }
+
+    $this->load->view('camahatar/forgot_password');
 }
+
+    private function generateToken($length = 50) {
+	    if (function_exists('random_bytes')) {
+	        return bin2hex(random_bytes($length));
+	    } elseif (function_exists('openssl_random_pseudo_bytes')) {
+	        return bin2hex(openssl_random_pseudo_bytes($length));
+	    } else {
+	        // fallback sederhana
+	        return bin2hex(substr(str_shuffle(md5(time())), 0, $length));
+	    }
+	}
 
     // 🔹 Reset password (via token)
     public function reset_password($token = NULL) {
