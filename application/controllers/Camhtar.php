@@ -195,7 +195,7 @@ class Camhtar extends CI_Controller {
 
         if (!$user || strtotime($user->reset_expired) < time()) {
             $this->session->set_flashdata('error', 'Token tidak valid atau sudah kadaluarsa.');
-            redirect('forgot-password');
+            redirect('lupa_password');
         }
 
         if ($this->input->post()) {
