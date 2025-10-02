@@ -193,7 +193,7 @@ class Camhtar extends CI_Controller {
 
         $user = $this->m_registrasi->get_by_token($token);
 
-        if (!$user || strtotime($user->reset_expire) < time()) {
+        if (!$user || strtotime($user->reset_expired) < time()) {
             $this->session->set_flashdata('error', 'Token tidak valid atau sudah kadaluarsa.');
             redirect('forgot-password');
         }
@@ -215,7 +215,7 @@ class Camhtar extends CI_Controller {
     // 🔹 Kirim email reset
    private function _sendEmail($to, $link) {
 	    $this->load->library('email');
-	    $this->email->from('pencatarma.unimaramni@gmail.com', 'PMB UNIMAR AMNI');
+	    $this->email->from('pencatarma.unimaramni@gmail.com', 'PMB UNIMAR AMNI SEMARANG');
 	    $this->email->to($to);
 	    $this->email->subject('Reset Password');
 	    $this->email->message("Klik link berikut untuk reset password Anda: <a href='".$link."'>Reset Password</a>");
