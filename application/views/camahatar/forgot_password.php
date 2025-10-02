@@ -28,17 +28,12 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 <body class="hold-transition login-page">
-<?php 
-    if(isset($_GET['pesan'])){
-      if($_GET['pesan'] == "gagal"){
-        echo "<div class='alert alert-danger'>Login gagal! Username dan password salah.</div>";
-      }else if($_GET['pesan'] == "logout"){
-        echo "<div class='alert alert-danger'>Anda telah logout.</div>";
-      }else if($_GET['pesan'] == "belumlogin"){
-        echo "<div class='alert alert-success'>Silahkan login dulu.</div>";
-      }
-    }
-    ?>
+<?php if($this->session->flashdata('success')): ?>
+  <p style="color:green"><?= $this->session->flashdata('success') ?></p>
+<?php endif; ?>
+<?php if($this->session->flashdata('error')): ?>
+  <p style="color:red"><?= $this->session->flashdata('error') ?></p>
+<?php endif; ?>
 <div class="login-box">
   <div class="login-logo">
   <img src="<?php echo base_url() ?>assets/front1/img/amni-png.png" width="20%">
