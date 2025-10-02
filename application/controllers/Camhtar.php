@@ -151,7 +151,7 @@ class Camhtar extends CI_Controller {
                 $expire = date("Y-m-d H:i:s", strtotime("+1 hour"));
 
                 // simpan ke db
-                $this->catar->save_token($email, $token, $expire);
+                $this->m_registrasi->save_token($email, $token, $expire);
 
                 // kirim email
                 $reset_link = base_url("reset-password/".$token);
