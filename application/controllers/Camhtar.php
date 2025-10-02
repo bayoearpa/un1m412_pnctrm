@@ -165,7 +165,7 @@ class Camhtar extends CI_Controller {
             }
         }
 
-        $this->load->view('camhtar/forgot_password');
+        $this->load->view('camahatar/forgot_password');
     }
 
     // 🔹 Reset password (via token)
@@ -190,7 +190,7 @@ class Camhtar extends CI_Controller {
         }
 
         $data['token'] = $token;
-        $this->load->view('camhtar/reset_password', $data);
+        $this->load->view('camahatar/reset_password', $data);
     }
 
     // 🔹 Kirim email reset
