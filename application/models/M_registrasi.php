@@ -58,11 +58,25 @@ class m_registrasi extends CI_Model
         return $this->db->get_where('tbl_catar_2026',['email'=>$email])->row();
     }
 
-    // update password (sudah di-hash bcrypt)
-    public function update_password($email,$hash)
-    {
-        $this->db->where('email',$email);
-        return $this->db->update('tbl_catar_2026',['password'=>$hash]);
+    public function save_token($email, $token, $expire) {
+        $this->db->where('email', $email);
+        $this->db->update('tbl_catar_2026', [
+            'reset_token' => $token,
+            'reset_expire' => $expire
+        ]);
+    }
+
+    public function get_by_token($token) {
+        return $this->db->get_where('tbl_catar_2026', ['reset_token' => $token])->row();
+    }
+
+    public function update_password($email, $password_hash) {
+        $this->db->where('email', $email);
+        $this->db->update('tbl_catar_2026', [
+            'password' => $password_hash,
+            'reset_token' => NULL,
+            'reset_expire' => NULL
+        ]);
     }
     ////////////////////// .login 2026 /////////////////////////////////////////////////////////
 	//////////////////// get data 2025 /////////////////////////////////////////////////////////

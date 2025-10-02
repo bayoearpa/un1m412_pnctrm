@@ -139,41 +139,68 @@ class Camhtar extends CI_Controller {
         }
     }
 
-    // === LUPA PASSWORD ===
-    public function forgot_password()
-    {
+   // 🔹 Form lupa password
+    public function forgot_password() {
         if ($this->input->post()) {
             $email = $this->input->post('email', TRUE);
-            $user  = $this->catar->get_by_email($email);
+            $user = $this->catar->get_by_email($email);
 
             if ($user) {
-                $new_pass = substr(str_shuffle('ABCDEFGHJKLMNPQRSTUVWXYZ23456789'),0,8);
-                $hash     = password_hash($new_pass, PASSWORD_BCRYPT);
+                // generate token
+                $token = bin2hex(random_bytes(50));
+                $expire = date("Y-m-d H:i:s", strtotime("+1 hour"));
 
-                $this->catar->update_password($email, $hash);
+                // simpan ke db
+                $this->catar->save_token($email, $token, $expire);
 
-                // kirim email pakai config/email.php
-                $this->email->from($this->config->item('smtp_user'), 'PMB 2026');
-                $this->email->to($email);
-                $this->email->subject('Reset Password PMB 2026');
-                $this->email->message("
-                    Hai {$user->nama},<br><br>
-                    Password baru Anda: <b>{$new_pass}</b><br>
-                    Silakan login dan segera ubah password Anda.
-                ");
+                // kirim email
+                $reset_link = base_url("reset-password/".$token);
+                $this->_sendEmail($email, $reset_link);
 
-                if ($this->email->send()) {
-                    $data['success'] = 'Password baru sudah dikirim ke email Anda.';
-                } else {
-                    $data['error']   = 'Gagal mengirim email reset password.';
-                }
+                $this->session->set_flashdata('success', 'Link reset password sudah dikirim ke email Anda.');
+                redirect('forgot-password');
             } else {
-                $data['error'] = 'Email tidak terdaftar.';
+                $this->session->set_flashdata('error', 'Email tidak ditemukan.');
+                redirect('forgot-password');
             }
-            $this->load->view('auth2026/forgot_password', $data);
-        } else {
-            $this->load->view('auth2026/forgot_password');
         }
+
+        $this->load->view('camhtar/forgot_password');
+    }
+
+    // 🔹 Reset password (via token)
+    public function reset_password($token = NULL) {
+        if (!$token) show_404();
+
+        $user = $this->catar->get_by_token($token);
+
+        if (!$user || strtotime($user->reset_expire) < time()) {
+            $this->session->set_flashdata('error', 'Token tidak valid atau sudah kadaluarsa.');
+            redirect('forgot-password');
+        }
+
+        if ($this->input->post()) {
+            $password = $this->input->post('password');
+            $password_hash = password_hash($password, PASSWORD_BCRYPT);
+
+            $this->catar->update_password($user->email, $password_hash);
+
+            $this->session->set_flashdata('success', 'Password berhasil direset. Silakan login.');
+            redirect('login2026');
+        }
+
+        $data['token'] = $token;
+        $this->load->view('camhtar/reset_password', $data);
+    }
+
+    // 🔹 Kirim email reset
+    private function _sendEmail($to, $link) {
+        $this->email->from('noreply@pmb2026.unimar-amni.ac.id', 'PMB 2026 UNIMAR AMNI');
+        $this->email->to($to);
+        $this->email->subject('Reset Password PMB 2026');
+        $this->email->message("Klik link berikut untuk reset password Anda:\n\n".$link."\n\nLink berlaku 1 jam.");
+
+        $this->email->send();
     }
  ////////////////////////////////////////////////// .login 2026 //////////////////////////////////////////////////////////
 
