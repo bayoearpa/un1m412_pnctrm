@@ -147,7 +147,7 @@ class Camhtar extends CI_Controller {
 
             if ($user) {
                 // generate token
-                $token = bin2hex(random_bytes(50));
+                $token = $this->generateToken(50);
                 $expire = date("Y-m-d H:i:s", strtotime("+1 hour"));
 
                 // simpan ke db
@@ -167,6 +167,16 @@ class Camhtar extends CI_Controller {
 
         $this->load->view('camahatar/forgot_password');
     }
+    private function generateToken($length = 50) {
+    if (function_exists('random_bytes')) {
+        return bin2hex(random_bytes($length));
+    } elseif (function_exists('openssl_random_pseudo_bytes')) {
+        return bin2hex(openssl_random_pseudo_bytes($length));
+    } else {
+        // fallback sederhana
+        return bin2hex(substr(str_shuffle(md5(time())), 0, $length));
+    }
+}
 
     // 🔹 Reset password (via token)
     public function reset_password($token = NULL) {
