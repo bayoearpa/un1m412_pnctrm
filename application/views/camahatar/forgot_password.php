@@ -42,13 +42,13 @@
 <div class="login-box">
   <div class="login-logo">
   <img src="<?php echo base_url() ?>assets/front1/img/amni-png.png" width="20%">
-    <!-- <a href="../../index2.html"><b>Masuk</b> SI PMB</a> -->
+    <a href="#"><b>SI PMB</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg">Lupa Password</p>
+    <p class="login-box-msg">Silakan masukan email anda nanti akan kami akan kirimkan link reset akun ke email anda.</p>
 
-    <form action="<?php echo base_url().'proses_masuk26'?>" method="post">
+    <form method="post">
       <div class="form-group has-feedback">
         <input type="email" name="email" id="email" class="form-control" placeholder="Email">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
@@ -63,7 +63,7 @@
         </div> -->
         <!-- /.col -->
         <div class="col-xs-4">
-         <center> <button type="submit" class="btn btn-primary btn-block btn-flat">Masuk</button></center>
+         <center> <button type="submit" class="btn btn-primary btn-block btn-flat">Kirim</button></center>
         </div>
         <!-- /.col -->
       </div>
