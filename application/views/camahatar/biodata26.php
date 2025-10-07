@@ -135,9 +135,9 @@
                 <div class="form-group">
                 <label>Jurusan SLTA/SMK</label>
                 <select class="form-control select2" id="prodi_lama" name="prodi_lama" style="width: 100%;" onchange="toggleOtherInput()" <?php echo ($hs > 0) ? 'readonly' : ''; ?> required onchange="onJurusanChange()">
-                    <option value="<?php echo $key->prodi_lama ?>" data-boleh="<?= $j->boleh ?>"><?php echo $key->prodi_lama ?></option>
+                    <option value="<?php echo $key->prodi_lama ?>"><?php echo $key->prodi_lama ?></option>
                     <?php foreach ($jurusan as $j): ?>
-                        <option value="<?php echo $j->nama_jurusan; ?>"><?php echo $j->nama_jurusan; ?></option>
+                        <option value="<?php echo $j->nama_jurusan; ?>" data-boleh="<?= $j->boleh ?>"><?php echo $j->nama_jurusan; ?></option>
                     <?php endforeach; ?>
                     <option value="other">Lainnya</option>
                 </select>
