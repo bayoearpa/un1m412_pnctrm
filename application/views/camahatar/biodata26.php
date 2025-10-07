@@ -132,6 +132,7 @@
                     <?php //endforeach ?>
                   </select>
                 </div> -->
+                <div id="jurusan_sma_smk" style="display:none;">
                 <div class="form-group">
                 <label>Jurusan SLTA/SMK</label>
                 <select class="form-control select2" id="prodi_lama" name="prodi_lama" style="width: 100%;" onchange="toggleOtherInput()" <?php echo ($hs > 0) ? 'readonly' : ''; ?> required onchange="onJurusanChange()">
@@ -141,6 +142,7 @@
                     <?php endforeach; ?>
                     <option value="other">Lainnya</option>
                 </select>
+                </div>
                 </div>
 
                 <div class="form-group" id="otherInputContainer" style="display: none;">
