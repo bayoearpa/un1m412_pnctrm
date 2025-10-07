@@ -205,7 +205,7 @@ class Camhtar extends CI_Controller {
             $this->m_registrasi->update_password($user->email, $password_hash);
 
             $this->session->set_flashdata('success', 'Password berhasil direset. Silakan login.');
-            redirect('login2026');
+            redirect('masuk2026');
         }
 
         $data['token'] = $token;
@@ -214,11 +214,37 @@ class Camhtar extends CI_Controller {
 
     // 🔹 Kirim email reset
    private function _sendEmail($to, $link) {
+   		$message = "
+		<p>Salam hormat,</p>
+
+		<p>Kami telah menerima permintaan reset kata sandi untuk akun Anda. Silakan klik tombol di bawah untuk reset kata sandi Anda:</p>
+
+		<p style='text-align:center; margin:20px 0;'>
+		  <a href='".$link."' style='background:#007bff; color:#fff; padding:10px 20px; text-decoration:none; border-radius:5px; font-weight:bold;'>
+		    Reset Kata Sandi
+		  </a>
+		</p>
+
+		<h4>PENTING</h4>
+		<p>
+		Jika Anda tidak mengirimkan permintaan reset kata sandi, silakan abaikan email ini.
+		</p>
+
+		<p>
+		<b>Catatan:</b><br>
+		Tombol hanya aktif selama 1 jam. Jika masa berlaku telah habis, Anda perlu mengajukan permintaan reset kata sandi kembali.
+		</p>
+
+		<p>
+		Demikian informasi ini kami sampaikan. Mohon untuk tidak merespon email ini karena email dikirim oleh sistem. 
+		Jika terdapat kendala atau pertanyaan, jangan ragu untuk menghubungi CP.
+		</p>
+		";
 	    $this->load->library('email');
 	    $this->email->from('pencatarma.unimaramni@gmail.com', 'PMB UNIMAR AMNI SEMARANG');
 	    $this->email->to($to);
 	    $this->email->subject('Reset Password');
-	    $this->email->message("Klik link berikut untuk reset password Anda: <a href='".$link."'>Reset Password</a>");
+	    $this->email->message($message);
 
 	    if ($this->email->send()) {
 	        return true;
@@ -500,6 +526,41 @@ class Camhtar extends CI_Controller {
         $this->load->view('camahatar/biodata_js');
 
 	}
+	////////////////////////////////////////////biodata 26 ///////////////////////////////////////
+	public function biodata26()
+	{
+		# code...
+		# code...
+		$data['jurusan'] = $this->m_registrasi->get_data_all('tbl_jurusan')->result();
+		$data['provinsi'] = $this->m_registrasi->get_data_all('tbl_propinsi')->result();
+		$data['jalur'] = $this->session->userdata('jalur'); // ambil dari login
+
+		$no = $this->session->userdata('no');
+		$where = array(
+				'no' => $no,
+			);
+		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2025')->result();
+
+		//cek seleksi
+		$data['hs'] = $this->m_registrasi->get_data($where, 'tbl_catar_hasil_seleksi_2025')->num_rows();
+
+		foreach ($data['catar'] as $key) {
+			# code...
+			$data['getprovinsi'] = $this->getProvinsi($key->provinsi);
+			$data['getktkb'] = $this->getKotaKab($key->ktkb);
+			$data['informasi'] = $this->informasi($key->informasi);
+			$data['nmprodi'] = $this->getProdi($key->prodi);
+			$data['nmprodi2'] = $this->getProdi($key->prodi2);
+			$data['gel'] = $this->getGelombang("1");
+		}
+
+		$this->load->view('camahatar/header',$data);
+        $this->load->view('camahatar/biodata',$data);
+        $this->load->view('camahatar/footer');
+        $this->load->view('camahatar/biodata_js');
+
+	}
+	////////////////////////////////////////////biodata 26 ///////////////////////////////////////
 	public function get_kabkota(){
         $id=$this->input->post('id');
         $data=$this->m_registrasi->get_kabkota($id);
