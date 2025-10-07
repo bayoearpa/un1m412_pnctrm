@@ -539,10 +539,10 @@ class Camhtar extends CI_Controller {
 		$where = array(
 				'no' => $no,
 			);
-		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2025')->result();
+		$data['catar'] = $this->m_registrasi->get_data($where, 'tbl_catar_2026')->result();
 
 		//cek seleksi
-		$data['hs'] = $this->m_registrasi->get_data($where, 'tbl_catar_hasil_seleksi_2025')->num_rows();
+		$data['hs'] = $this->m_registrasi->get_data($where, 'tbl_catar_hasil_seleksi_2026')->num_rows();
 
 		foreach ($data['catar'] as $key) {
 			# code...
