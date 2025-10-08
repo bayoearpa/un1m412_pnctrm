@@ -39,12 +39,10 @@ function toggleOtherInput() {
         document.getElementById('prodi_lama_lainnya').value = '';
     }
 }
-
 function onKategoriChange() {
     const kategori = document.getElementById('kategori_sek').value;
     const jurusanDiv = document.getElementById('jurusan_sma_smk');
 
-    // Tampilkan dropdown jurusan hanya jika SMA/SMK/MA dipilih
     if (kategori === 'SMA' || kategori === 'SMK' || kategori === 'MA') {
         jurusanDiv.style.display = 'block';
     } else {
@@ -67,51 +65,80 @@ function onJurusanChange() {
     const prodiSelect = document.getElementById('prodi');
     const selectedOption = jurusanSelect.options[jurusanSelect.selectedIndex];
     const boleh = selectedOption.getAttribute('data-boleh');
-    const jalur = "<?= $this->session->userdata('jalur'); ?>"; // contoh: gdr1, reguler, rpl, dll
+    const jalur = "<?= $this->session->userdata('jalur'); ?>"; // ambil dari session
 
-    // Ambil semua option di dropdown Prodi
+    // Reset semua opsi prodi
     const allOptions = prodiSelect.querySelectorAll('option');
-
     allOptions.forEach(opt => {
-        // default: tampilkan semua
         opt.disabled = false;
         opt.style.display = 'block';
     });
 
-    // Filter prodi berdasarkan kolom 'boleh'
-    if (boleh === '2') {
-        // prodi D3 Teknika (value=2) tidak terbuka
-        const opt = prodiSelect.querySelector('option[value="2"]');
-        if (opt) {
-            opt.disabled = true;
-            opt.style.display = 'none';
-        }
-    } else if (boleh === '1') {
-        // prodi D3 Nautika (value=3) tidak terbuka
-        const opt = prodiSelect.querySelector('option[value="3"]');
-        if (opt) {
-            opt.disabled = true;
-            opt.style.display = 'none';
-        }
+    // ==========================
+    // 1️⃣ FILTER BERDASARKAN JALUR
+    // ==========================
+    switch (jalur) {
+        case 'gdr1':
+        case 'reguler':
+            // semua prodi terbuka
+            break;
+
+        case 'gdr2':
+        case 'rpl':
+            // hanya prodi transportasi (value = 4)
+            allOptions.forEach(opt => {
+                if (opt.value !== '4' && opt.value !== '') {
+                    opt.disabled = true;
+                    opt.style.display = 'none';
+                }
+            });
+            break;
+
+        case 'regulers':
+        case 'beayb':
+            // hanya prodi S1 (value >= 4)
+            allOptions.forEach(opt => {
+                if (parseInt(opt.value) < 4 && opt.value !== '') {
+                    opt.disabled = true;
+                    opt.style.display = 'none';
+                }
+            });
+            break;
     }
 
-    // Filter tambahan berdasarkan JALUR
-    // Contoh logika sederhana, bisa disesuaikan:
-    if (jalur === 'rpl') {
-        // Misal jalur RPL tidak boleh memilih prodi D3 Teknika (value=2)
-        const opt = prodiSelect.querySelector('option[value="2"]');
-        if (opt) {
-            opt.disabled = true;
-            opt.style.display = 'none';
-        }
-    } else if (jalur === 'gdr1') {
-        // Misal jalur GDR1 hanya untuk D3 Nautika dan D3 Teknika
-        allOptions.forEach(opt => {
-            if (opt.value !== '2' && opt.value !== '3' && opt.value !== '') {
-                opt.disabled = true;
-                opt.style.display = 'none';
-            }
-        });
+    // ==========================
+    // 2️⃣ FILTER BERDASARKAN JURUSAN
+    // ==========================
+    // Gunakan logika ‘boleh’
+    if (boleh === '0') {
+        // Nautika (3) dan Teknika (2) tertutup
+        hideOption(prodiSelect, '2');
+        hideOption(prodiSelect, '3');
+    } else if (boleh === '1') {
+        // Nautika tertutup
+        hideOption(prodiSelect, '3');
+    } else if (boleh === '2') {
+        // Teknika tertutup
+        hideOption(prodiSelect, '2');
+    } else if (boleh === '3') {
+        // semua prodi terbuka, tidak ada yang disembunyikan
+    }
+
+    // ==========================
+    // 3️⃣ KHUSUS JIKA JURUSAN IPS
+    // ==========================
+    const jurusanText = selectedOption.textContent.toLowerCase();
+    if (jurusanText.includes('ips')) {
+        hideOption(prodiSelect, '2'); // Teknika
+        hideOption(prodiSelect, '3'); // Nautika
+    }
+}
+
+function hideOption(select, value) {
+    const opt = select.querySelector('option[value="' + value + '"]');
+    if (opt) {
+        opt.disabled = true;
+        opt.style.display = 'none';
     }
 }
 
