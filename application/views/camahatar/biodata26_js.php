@@ -40,66 +40,80 @@ function toggleOtherInput() {
     }
 }
 
-// === TAMPILKAN SELECT JURUSAN JIKA KATEGORI SEK SMA/SMK/MA ===
 function onKategoriChange() {
     const kategori = document.getElementById('kategori_sek').value;
     const jurusanDiv = document.getElementById('jurusan_sma_smk');
-    jurusanDiv.style.display = (kategori === 'SMA' || kategori === 'SMK' || kategori === 'MA') ? 'block' : 'none';
-    filterProdi(); 
+
+    // Tampilkan dropdown jurusan hanya jika SMA/SMK/MA dipilih
+    if (kategori === 'SMA' || kategori === 'SMK' || kategori === 'MA') {
+        jurusanDiv.style.display = 'block';
+    } else {
+        jurusanDiv.style.display = 'none';
+    }
 }
 
-// === SAAT GANTI JURUSAN ===
+function toggleOtherInput() {
+    const selectJurusan = document.getElementById('prodi_lama');
+    const otherContainer = document.getElementById('otherInputContainer');
+    if (selectJurusan.value === 'other') {
+        otherContainer.style.display = 'block';
+    } else {
+        otherContainer.style.display = 'none';
+    }
+}
+
 function onJurusanChange() {
-    filterProdi();
-}
-
-// === FILTER PRODI BERDASARKAN JURUSAN & JALUR ===
-function filterProdi() {
-    const kategori = document.getElementById('kategori_sek').value;
     const jurusanSelect = document.getElementById('prodi_lama');
-    const selectedJurusan = jurusanSelect.options[jurusanSelect.selectedIndex];
-    const boleh = selectedJurusan ? selectedJurusan.getAttribute('data-boleh') : null;
     const prodiSelect = document.getElementById('prodi');
-    const jalur = '<?= $jalur ?>'; // dari session PHP
+    const selectedOption = jurusanSelect.options[jurusanSelect.selectedIndex];
+    const boleh = selectedOption.getAttribute('data-boleh');
+    const jalur = "<?= $this->session->userdata('jalur'); ?>"; // contoh: gdr1, reguler, rpl, dll
 
-    // reset semua opsi
-    Array.from(prodiSelect.options).forEach(opt => opt.style.display = 'block');
+    // Ambil semua option di dropdown Prodi
+    const allOptions = prodiSelect.querySelectorAll('option');
 
-    // 1️⃣ Filter berdasarkan kolom "boleh" dari tabel jurusan
+    allOptions.forEach(opt => {
+        // default: tampilkan semua
+        opt.disabled = false;
+        opt.style.display = 'block';
+    });
+
+    // Filter prodi berdasarkan kolom 'boleh'
     if (boleh === '2') {
-        hideOption('2'); // sembunyikan D3 Teknika
+        // prodi D3 Teknika (value=2) tidak terbuka
+        const opt = prodiSelect.querySelector('option[value="2"]');
+        if (opt) {
+            opt.disabled = true;
+            opt.style.display = 'none';
+        }
     } else if (boleh === '1') {
-        hideOption('3'); // sembunyikan D3 Nautika
+        // prodi D3 Nautika (value=3) tidak terbuka
+        const opt = prodiSelect.querySelector('option[value="3"]');
+        if (opt) {
+            opt.disabled = true;
+            opt.style.display = 'none';
+        }
     }
 
-    // 2️⃣ Filter tambahan berdasarkan "jalur"
-    switch (jalur) {
-        case 'gdr1':
-        case 'gdr2':
-        case 'reguler':
-            // semua prodi tampil
-            break;
-        case 'regulers':
-        case 'beayb':
-            // hanya prodi S1
-            showOnly(['4','5','6','7','8','10']);
-            break;
-        case 'rpl':
-            // hanya S1 Transportasi (value=4)
-            showOnly(['4']);
-            break;
-    }
-
-    function hideOption(value) {
-        const opt = prodiSelect.querySelector(`option[value="${value}"]`);
-        if (opt) opt.style.display = 'none';
-    }
-
-    function showOnly(values) {
-        Array.from(prodiSelect.options).forEach(opt => {
-            if (!values.includes(opt.value)) opt.style.display = 'none';
+    // Filter tambahan berdasarkan JALUR
+    // Contoh logika sederhana, bisa disesuaikan:
+    if (jalur === 'rpl') {
+        // Misal jalur RPL tidak boleh memilih prodi D3 Teknika (value=2)
+        const opt = prodiSelect.querySelector('option[value="2"]');
+        if (opt) {
+            opt.disabled = true;
+            opt.style.display = 'none';
+        }
+    } else if (jalur === 'gdr1') {
+        // Misal jalur GDR1 hanya untuk D3 Nautika dan D3 Teknika
+        allOptions.forEach(opt => {
+            if (opt.value !== '2' && opt.value !== '3' && opt.value !== '') {
+                opt.disabled = true;
+                opt.style.display = 'none';
+            }
         });
     }
 }
+
 </script>
 

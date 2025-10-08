@@ -132,7 +132,7 @@
                     <?php //endforeach ?>
                   </select>
                 </div> -->
-                            <div id="jurusan_sma_smk" style="display:none;">
+            <div id="jurusan_sma_smk" style="display:none;">
                 <div class="form-group">
                     <label>Jurusan SLTA/SMK</label>
                     <select 
