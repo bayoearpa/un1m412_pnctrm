@@ -1,91 +1,92 @@
 <script type="text/javascript">
-	$(document).ready(function(){
-        $('#provinsi').change(function(){
-            var id=$(this).val();
-            $.ajax({
-                url : "<?php echo base_url();?>getkabkota",
-                method : "POST",
-                data : {id: id},
-                async : false,
-                dataType : 'json',
-                success: function(data){
-                    var html = '';
-                    var i;
-                    for(i=0; i<data.length; i++){
-                        html += '<option value='+data[i].id_wil+'>'+data[i].nm_wil+'</option>';
-                    }
-                    $('.ktkb').html(html);
-                     
+$(document).ready(function() {
+
+    // === Ajax Provinsi - Kabupaten ===
+    $('#provinsi').change(function(){
+        var id = $(this).val();
+        $.ajax({
+            url : "<?php echo base_url();?>getkabkota",
+            method : "POST",
+            data : {id: id},
+            async : false,
+            dataType : 'json',
+            success: function(data){
+                var html = '';
+                for(let i = 0; i < data.length; i++){
+                    html += '<option value="'+data[i].id_wil+'">'+data[i].nm_wil+'</option>';
                 }
-            });
+                $('.ktkb').html(html);
+            }
         });
     });
-     function validateNumber(input) {
-            // Menghapus karakter selain angka
-            input.value = input.value.replace(/\D/g, '');
-        }
 
-        function toggleOtherInput() {
-            const select = document.getElementById('prodi_lama');
-            const otherInputContainer = document.getElementById('otherInputContainer');
+});
 
-            if (select.value === 'other') {
-                otherInputContainer.style.display = 'block';
-            } else {
-                otherInputContainer.style.display = 'none';
-                document.getElementById('prodi_lama_lainnya').value = ''; // Clear other input
-            }
-        }
+// === VALIDASI NOMOR ===
+function validateNumber(input) {
+    input.value = input.value.replace(/\D/g, '');
+}
 
-        function onKategoriChange() {
+// === JIKA PILIH "LAINNYA" ===
+function toggleOtherInput() {
+    const select = document.getElementById('prodi_lama');
+    const otherInputContainer = document.getElementById('otherInputContainer');
+
+    if (select.value === 'other') {
+        otherInputContainer.style.display = 'block';
+    } else {
+        otherInputContainer.style.display = 'none';
+        document.getElementById('prodi_lama_lainnya').value = '';
+    }
+}
+
+// === TAMPILKAN SELECT JURUSAN JIKA KATEGORI SEK SMA/SMK/MA ===
+function onKategoriChange() {
     const kategori = document.getElementById('kategori_sek').value;
     const jurusanDiv = document.getElementById('jurusan_sma_smk');
     jurusanDiv.style.display = (kategori === 'SMA' || kategori === 'SMK' || kategori === 'MA') ? 'block' : 'none';
-    filterProdi(); // panggil juga filter awal
+    filterProdi(); 
 }
 
+// === SAAT GANTI JURUSAN ===
 function onJurusanChange() {
     filterProdi();
 }
 
+// === FILTER PRODI BERDASARKAN JURUSAN & JALUR ===
 function filterProdi() {
     const kategori = document.getElementById('kategori_sek').value;
     const jurusanSelect = document.getElementById('prodi_lama');
     const selectedJurusan = jurusanSelect.options[jurusanSelect.selectedIndex];
     const boleh = selectedJurusan ? selectedJurusan.getAttribute('data-boleh') : null;
     const prodiSelect = document.getElementById('prodi');
-    const jalur = '<?= $jalur ?>'; // ambil dari session PHP
+    const jalur = '<?= $jalur ?>'; // dari session PHP
 
-    // reset
+    // reset semua opsi
     Array.from(prodiSelect.options).forEach(opt => opt.style.display = 'block');
 
-    // 1️⃣ Filter berdasarkan "boleh"
+    // 1️⃣ Filter berdasarkan kolom "boleh" dari tabel jurusan
     if (boleh === '2') {
-        // prodi D3 Teknika (value=2) disembunyikan
-        hideOption('2');
+        hideOption('2'); // sembunyikan D3 Teknika
     } else if (boleh === '1') {
-        // prodi D3 Nautika (value=3) disembunyikan
-        hideOption('3');
+        hideOption('3'); // sembunyikan D3 Nautika
     }
 
-    // 2️⃣ Filter berdasarkan "jalur"
+    // 2️⃣ Filter tambahan berdasarkan "jalur"
     switch (jalur) {
         case 'gdr1':
         case 'gdr2':
         case 'reguler':
-            // semua prodi tampil (no filter)
+            // semua prodi tampil
             break;
         case 'regulers':
-            // hanya S1 (value >=4)
+        case 'beayb':
+            // hanya prodi S1
             showOnly(['4','5','6','7','8','10']);
             break;
         case 'rpl':
             // hanya S1 Transportasi (value=4)
             showOnly(['4']);
-            break;
-        case 'beayb':
-            // hanya S1 juga (value >=4)
-            showOnly(['4','5','6','7','8','10']);
             break;
     }
 

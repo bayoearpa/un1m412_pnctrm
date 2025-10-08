@@ -132,23 +132,34 @@
                     <?php //endforeach ?>
                   </select>
                 </div> -->
-                <div id="jurusan_sma_smk" style="display:none;">
+                            <div id="jurusan_sma_smk" style="display:none;">
                 <div class="form-group">
-                <label>Jurusan SLTA/SMK</label>
-                <select class="form-control select2" id="prodi_lama" name="prodi_lama" style="width: 100%;" onchange="toggleOtherInput()" <?php echo ($hs > 0) ? 'readonly' : ''; ?> required onchange="onJurusanChange()">
-                    <option value="<?php echo $key->prodi_lama ?>"><?php echo $key->prodi_lama ?></option>
-                    <?php foreach ($jurusan as $j): ?>
-                        <option value="<?php echo $j->nama_jurusan; ?>" data-boleh="<?= $j->boleh ?>"><?php echo $j->nama_jurusan; ?></option>
-                    <?php endforeach; ?>
-                    <option value="other">Lainnya</option>
-                </select>
+                    <label>Jurusan SLTA/SMK</label>
+                    <select 
+                        class="form-control select2" 
+                        id="prodi_lama" 
+                        name="prodi_lama" 
+                        style="width: 100%;" 
+                        <?php echo ($hs > 0) ? 'readonly' : ''; ?> 
+                        required
+                        onchange="toggleOtherInput(); onJurusanChange();">
+                        <option value="<?php echo $key->prodi_lama ?>"><?php echo $key->prodi_lama ?></option>
+                        <?php foreach ($jurusan as $j): ?>
+                            <option value="<?php echo $j->nama_jurusan; ?>" data-boleh="<?= $j->boleh ?>">
+                                <?php echo $j->nama_jurusan; ?>
+                            </option>
+                        <?php endforeach; ?>
+                        <option value="other">Lainnya</option>
+                    </select>
                 </div>
-                </div>
+            </div>
 
-                <div class="form-group" id="otherInputContainer" style="display: none;">
-                    <label>Masukkan Jurusan SLTA/SMK Lainnya</label>
-                    <input type="text" class="form-control" id="prodi_lama_lainnya" name="prodi_lama_lainnya" placeholder="Masukkan Jurusan Lainnya">
+            <div id="otherInputContainer" style="display:none;">
+                <div class="form-group">
+                    <label>Jurusan SLTA/SMK Lainnya</label>
+                    <input type="text" id="prodi_lama_lainnya" name="prodi_lama_lainnya" class="form-control" placeholder="Masukkan jurusan lainnya...">
                 </div>
+            </div>
                 <!-- /.form-group -->
                 <div class="form-group">
                   <label for="exampleInputEmail1">Tahun Lulus</label>
