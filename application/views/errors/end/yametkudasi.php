@@ -89,7 +89,7 @@ footer {
 <body>
 	<div id="container">
 		<h1>Mohon Maaf, Pendaftaran Sudah Ditutup</h1>
-		<p>Pendaftaran Mahasiswa dan Taruna UNIMAR AMNI Semarang Tahun 2024 sudah kami tutup. Terima kasih atas minat Anda. Untuk informasi lebih lanjut, Anda dapat menghubungi kami melalui WA. 0851 6161 0180<!--  <a href="#">kontak ini</a> -->.</p>
+		<p>Pendaftaran Mahasiswa dan Taruna UNIMAR AMNI Semarang Tahun 2025 sudah kami tutup. Terima kasih atas minat Anda. Untuk informasi lebih lanjut, Anda dapat menghubungi kami melalui WA. 0851 6161 0180<!--  <a href="#">kontak ini</a> -->.</p>
 		<!-- Audio for background music -->
 		<audio id="playAudio" autoplay loop muted>
 		  <source src="<?php echo base_url() ?>assets/download/boba_date.mp3" type="audio/mpeg">
