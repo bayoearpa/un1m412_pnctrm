@@ -149,7 +149,7 @@
                                 <?php echo $j->nama_jurusan; ?>
                             </option>
                         <?php endforeach; ?>
-                        <option value="other">Lainnya</option>
+                        <option value="other" data-boleh="0">Lainnya</option>
                     </select>
                 </div>
             </div>
