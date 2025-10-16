@@ -90,7 +90,7 @@
                   <td>
                     <!-- Tombol Lihat File Sign Off -->
                     <?php if ($c->upload_ijd3) { ?>
-                        <button class="btn btn-info view-file-button-ijsh" alt="File Ijasah" data-filename="<?php echo $c->upload_ijd3; ?>"><i class="fa fa-fw fa-file-pdf-o"></i></button>
+                        <button class="btn btn-danger view-file-button-ijsh" alt="File Ijasah" data-filename="<?php echo $c->upload_ijd3; ?>"><i class="fa fa-fw fa-file-pdf-o"></i></button>
                     <?php } else { ?>
                         <!-- Tampilkan pesan jika file tidak ada -->
                         File tidak tersedia
@@ -99,7 +99,7 @@
                   <td>
                      <!-- Tombol Lihat File Sign Off -->
                     <?php if ($c->upload_transd3) { ?>
-                        <button class="btn btn-info view-file-button-trans" alt="File Transkip" data-filename="<?php echo $c->upload_transd3; ?>"><i class="fa fa-fw fa-file-pdf-o"></i></button>
+                        <button class="btn btn-warning view-file-button-trans" alt="File Transkip" data-filename="<?php echo $c->upload_transd3; ?>"><i class="fa fa-fw fa-file-pdf-o"></i></button>
                     <?php } else { ?>
                         <!-- Tampilkan pesan jika file tidak ada -->
                         File tidak tersedia
