@@ -1370,22 +1370,22 @@ class m_registrasi extends CI_Model
     	tbl_ref.nama as nama_pereferal, 
     	tbl_ref.alamat as alamat_pereferal, 
     	tbl_ref.no_telp as no_telp_pereferal,
-    	tbl_catar_2024.no as no,
-    	tbl_catar_2024.nama as nama, 
-    	COUNT(tbl_catar_2024.no) as total');
+    	tbl_catar_2025.no as no,
+    	tbl_catar_2025.nama as nama, 
+    	COUNT(tbl_catar_2025.no) as total');
     
     // Join with tbl_catar_2024
     $this->db->from('tbl_ref');
-    $this->db->join('tbl_catar_2024', 'tbl_ref.ref = tbl_catar_2024.ref', 'left');
+    $this->db->join('tbl_catar_2025', 'tbl_ref.ref = tbl_catar_2025.ref', 'left');
     
     // Add a subquery to check if 'no' exists in tbl_catar_daful_2024
-    $this->db->join('tbl_catar_daful_2024', 'tbl_catar_2024.no = tbl_catar_daful_2024.no', 'inner');
+    $this->db->join('tbl_catar_daful_2025', 'tbl_catar_2025.no = tbl_catar_daful_2025.no', 'inner');
 
     // Group by ref to get the count per ref
     $this->db->group_by('tbl_ref.ref');
     
     // Calculate total perolehan by multiplying the count by 300,000
-    $this->db->select('(COUNT(tbl_catar_2024.no) * 300000) as total_perolehan', false);
+    $this->db->select('(COUNT(tbl_catar_2025.no) * 300000) as total_perolehan', false);
     
     $query = $this->db->get();
     
@@ -1394,7 +1394,7 @@ class m_registrasi extends CI_Model
     
     public function get_ref_data_by_id_ref($no) {
         $this->db->select('*'); // Pilih semua kolom
-        $this->db->from('tbl_catar_2024'); // Ganti dengan nama tabel Anda
+        $this->db->from('tbl_catar_2025'); // Ganti dengan nama tabel Anda
         $this->db->where('ref', $no); // Filter berdasarkan kolom 'no'
         $query = $this->db->get();
 
