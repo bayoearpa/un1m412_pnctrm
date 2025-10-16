@@ -197,8 +197,8 @@ class Baak extends CI_Controller {
     {
         # code...
         $where = array(
-            'tbl_catar_2024.jalur' => 'reguler',
-            'tbl_catar_daful_2024.aktif' => '1'  
+            'tbl_catar_2025.jalur' => 'reguler',
+            'tbl_catar_daful_2025.aktif' => '1'  
         );
         $data['catar'] = $this->m_registrasi->get_data_sudah_daful($where)->result();
         $this->load->view('baak/header');
@@ -210,8 +210,8 @@ class Baak extends CI_Controller {
     {
         # code...
         $where = array(
-            'tbl_catar_2024.jalur' => 'kelastransfer',
-            'tbl_catar_daful_2024.aktif' => '1'  
+            'tbl_catar_2025.jalur' => 'kelastransfer',
+            'tbl_catar_daful_2025.aktif' => '1'  
         );
         $data['catar'] = $this->m_registrasi->get_data_sudah_daful($where)->result();
         $this->load->view('baak/header');
@@ -223,8 +223,8 @@ class Baak extends CI_Controller {
     {
         # code...
         $where = array(
-            'tbl_catar_2024.jalur' => 'gdr1',
-            'tbl_catar_daful_2024.aktif' => '1'  
+            'tbl_catar_2025.jalur' => 'gdr1',
+            'tbl_catar_daful_2025.aktif' => '1'  
         );
         $data['catar'] = $this->m_registrasi->get_data_sudah_daful($where)->result();
         $this->load->view('baak/header');
@@ -236,8 +236,8 @@ class Baak extends CI_Controller {
     {
         # code...
         $where = array(
-            'tbl_catar_2024.jalur' => 'gdr2',
-            'tbl_catar_daful_2024.aktif' => '1'  
+            'tbl_catar_2025.jalur' => 'gdr2',
+            'tbl_catar_daful_2025.aktif' => '1'  
         );
         $data['catar'] = $this->m_registrasi->get_data_sudah_daful($where)->result();
         $this->load->view('baak/header');
