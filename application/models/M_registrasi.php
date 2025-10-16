@@ -1111,6 +1111,9 @@ class m_registrasi extends CI_Model
             tbl_catar_2025.telp as telp,
             tbl_catar_2025.no as no,
             tbl_catar_2025.jk as jk,
+            tbl_catar_2025.upload_ktp as upload_ktp,
+            tbl_catar_2025.upload_ijd3 as upload_ijd3,
+            tbl_catar_2025.upload_transd3 as upload_transd3,
             tbl_catar_2025.bukti_bayar_daful as bukti_bayar_daful,
             tbl_catar_daful_2025.no as no_daful');
 
