@@ -169,6 +169,20 @@
         <!-- <li><a href="<?php //echo base_url() ?>baak/"><i class="fa fa-book"></i> <span>Home</span></a></li> -->
          <li class="treeview">
           <a href="#">
+            <i class="fa fa-dashboard"></i> <span>DATA</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo base_url() ?>baak/data_sudah_daful_reg"><i class="fa fa-paperclip"></i>Daful Reguler </a></li>
+            <li><a href="<?php echo base_url() ?>baak/data_sudah_daful_tf"><i class="fa fa-paperclip"></i>Daful Kelas Transfer</a></li>
+            <li><a href="<?php echo base_url() ?>baak/data_sudah_daful_gd"><i class="fa fa-paperclip"></i>Daful Gelombang Dini</a></li>
+            <li><a href="<?php echo base_url() ?>baak/data_sudah_daful_gdtf"><i class="fa fa-paperclip"></i>Daful Gelombang Dini TF</a></li>
+          </ul>
+        </li>
+         <li class="treeview">
+          <a href="#">
             <i class="fa fa-dashboard"></i> <span>Rekapitulasi Catar</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
@@ -205,7 +219,7 @@
       <?php } ?>
         <?php if ($this->session->userdata('id_admin') == '3') { ?>
         <li><a href="<?php echo base_url() ?>baak/"><i class="fa fa-book"></i> <span>Home</span></a></li>
-                 <li class="treeview">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>DATA</span>
             <span class="pull-right-container">
