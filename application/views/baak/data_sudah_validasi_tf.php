@@ -5,7 +5,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Data Pencatarma Sudah Validasi Gelombang Dini Transfer</h3>
+              <h3 class="box-title">Data Pencatarma Sudah Validasi TF</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -67,7 +67,7 @@
                       case '8':
                         $pick = "S1 PERDAGANGAN INTERNASIONAL";
                       break;
-                       case '9':
+                      case '9':
                         $pick = "D4 MPLM";
                       break;
                       case '10':

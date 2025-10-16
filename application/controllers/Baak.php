@@ -165,8 +165,9 @@ class Baak extends CI_Controller {
         );
         $data['catar'] = $this->m_registrasi->get_data_join_where($where)->result();
         $this->load->view('baak/header');
-        $this->load->view('baak/data_sudah_validasi',$data);
+        $this->load->view('baak/data_sudah_validasi_tf',$data);
         $this->load->view('baak/footer');
+        $this->load->view('baak/data_sudah_validasi_tf_js');
         $this->load->view('baak/footer_js');
     }
     public function data_sudah_validasi_gd()
